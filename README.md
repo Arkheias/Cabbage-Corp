@@ -1,4 +1,4 @@
-![cabbage corp cover](https://cloud.githubusercontent.com/assets/12108199/7443094/8852c102-f0f8-11e4-9e2e-d4d9410c6980.png)
+![cabbage corp cover](https://raw.githubusercontent.com/Arkheias/Cabbage-Corp/master/Resources/CCCabbageCorpCover.jpg)
 
 ####Mod Description
 
