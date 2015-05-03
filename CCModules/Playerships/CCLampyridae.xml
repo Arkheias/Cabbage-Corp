@@ -1,0 +1,354 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+	<!-- Player Ship: Lampyridae-class Stealth Transport -->
+
+	<ShipClass UNID="&scCCLampyridaeTauCeti;"
+			manufacturer=		"Cabbage Corp"
+			class=				"Lampyridae"
+			type=				"stealth transport"
+			
+            attributes=         "00200000_PlayerShip, PlayerShipDrone"
+            dockScreen=         "&dsPlayerShip;"
+            inherit=            "&baPlayerDroneBase;"
+			characterClass=		"&unidPilgrimClass;"
+			
+            size=               "74"
+			mass=				"600"
+			thrustRatio=		"0"
+			maxSpeed=			"0"
+			cargoSpace=			"750"
+
+			reactorPower=		"0"
+			fuelCapacity=		"10000"
+			fuelCriteria=		"f L:1"
+
+			maxArmor=			"20000"
+			maxCargoSpace=		"1000"
+			maxDevices=			"12"
+		>
+
+		<!-- Configuration -->
+		
+		<Maneuver
+			maxRotationRate=	"6.0"
+			rotationAccel=		"1.5"
+			rotationStopAccel=	"6.0"
+		/>
+		
+        <Armor>
+			<ArmorSection start="338" 	span="45" armorID="&itCCLightStealthPlating;"/>
+			<ArmorSection start="293" 	span="45" armorID="&itCCLightStealthPlating;"/>
+			<ArmorSection start="23" 	span="45" armorID="&itCCLightStealthPlating;"/>
+			<ArmorSection start="248" 	span="45" armorID="&itCCLightStealthPlating;"/>
+			<ArmorSection start="68" 	span="45" armorID="&itCCLightStealthPlating;"/>
+			<ArmorSection start="203" 	span="45" armorID="&itCCLightStealthPlating;"/>
+			<ArmorSection start="113" 	span="45" armorID="&itCCLightStealthPlating;"/>
+			<ArmorSection start="158" 	span="45" armorID="&itCCLightStealthPlating;"/>
+        </Armor>
+		
+		<Devices>
+			<DeviceSlot criteria="w +cabbageCorp" minFireArc="345" maxFireArc="15"	posAngle="0" posRadius="48" posZ="-4"/>
+			<DeviceSlot criteria="w -cabbageCorp"									posAngle="0" posRadius="48" posZ="-4"/>
+			
+			<Device deviceID="&itCCSavoyM2Howitzer;"/>
+			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
+			<Device deviceID="&itCCDualNapaS2Deflector;"/>
+			<Device deviceID="&itCCSiva5MWReactor;"/>
+			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
+			<Device deviceID="&itCCDualIonDrive;"/>
+			
+			<!--
+			<Device deviceID="&itCCSavoyM2Howitzer;"/>
+			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
+			<Device deviceID="&itCCDualNapaS2Deflector;"/>
+			<Device deviceID="&itCCSiva5MWReactor;"/>
+			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
+			<Device deviceID="&itCCDualIonDrive;"/>
+			-->
+			<!--
+			<Device deviceID="&itCCOmniB200MiningLance;"/>
+			<Device deviceID="&itCCDualB200MiningLance;"/>
+			<Device deviceID="&itCCDualB200MiningLance;"/>
+			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
+			<Device deviceID="&itCCDualNapaS150Deflector;"/>
+			<Device deviceID="&itCCDualSiva1000MWReactor;"/>
+			<Device deviceID="&itCCDualPteracniumMegaDrive;"/>
+			<Device deviceID="&itCCMarkVMiningLanceCapacitor;"/>
+			<Device deviceID="&itCCAutoRepairAI;"/>
+			<Device deviceID="&itCCHydrogenRamscoop;"/>
+			-->
+		</Devices>
+
+		<Items>
+			<Item count="6d8"	item="&itHelium3FuelRod;"/>
+			<Item count="4d6"	item="&it400HexageneMAG;"/>
+			<Item count="1"		item="&itCCPersonalBelongings;"/>
+		</Items>
+		
+		<!-- AI and Behavior -->
+		
+		<AISettings
+			fireRateAdj=		"10"
+			fireAccuracy=		"95"
+			perception=			"4"
+		/>
+
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCF120Lampyridae;" imageWidth="110" imageHeight="110" rotationCount="120" rotationColumns="12"/>
+
+		<Effects>
+			<Effect type="thrustMain"		posAngle="100"	posRadius="30"	posZ="0"	rotation="180"/>
+			<Effect type="thrustMain"		posAngle="-100"	posRadius="30"	posZ="0"	rotation="180"/>
+			
+			<Effect type="thrustMain"		posAngle="170"	posRadius="38"	posZ="6"	rotation="180"/>
+			<Effect type="thrustMain"		posAngle="170"	posRadius="38"	posZ="-6"	rotation="180"/>
+			<Effect type="thrustMain"		posAngle="-170"	posRadius="38"	posZ="6"	rotation="180"/>
+			<Effect type="thrustMain"		posAngle="-170"	posRadius="38"	posZ="-6"	rotation="180"/>
+		</Effects>
+			
+		<PlayerSettings
+			desc=               "Cabbage Corp began production of the Lampyridae series in 2361. The Lampyridae-class has a primary weapon hardpoint with a swivel mount compatible with all Cabbage Corp weapons, two secondary weapon hard-points, eight armor segments, and a base crew capacity of sixteen.  (Starts in Tau Ceti)"
+			largeimage=         "&rsCCLargeLampyridae;"
+			initialClass=       "true"
+            startingCredits=    "10d18+120"
+
+            startingSystem=     "TauCeti"
+            startingPos=        "Start"
+		>
+		
+			<ArmorDisplay>
+				<ShipImage imageID="&rsCCArmorHUDLampyridae;" imageWidth="136" imageHeight="136"/>
+				
+				;The armor images are just a black pixel (that the mask makes transparent) from the top-left corner of the armor HUD image
+				<ArmorSection name="forward"
+						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="55" destY="21" hpX="55" hpY="21"
+						nameY="8" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="fore-starboard"
+						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="83" destY="34" hpX="83" hpY="34"
+						nameY="20" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="fore-port"
+						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="27" destY="34" hpX="27" hpY="34"
+						nameY="32" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
+						
+				<ArmorSection name="starboard"
+						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="95" destY="61" hpX="95" hpY="61"
+						nameY="44" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="port"
+						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="15" destY="61" hpX="15" hpY="61"
+						nameY="56" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
+						
+				<ArmorSection name="aft-starboard"
+						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="83" destY="88" hpX="83" hpY="88"
+						nameY="68" nameBreakWidth="360" nameDestX="0" nameDestY="8" />	
+						
+				<ArmorSection name="aft-port"
+						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="27" destY="88" hpX="27" hpY="88"
+						nameY="80" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="aft"
+						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="55" destY="101" hpX="55" hpY="101"
+						nameY="92" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+			</ArmorDisplay>
+<!--
+				;I gave up on getting the armor segments aligned correctly
+                <ArmorSection name="forward"
+                        imageID="&rsArmor844;"  imageX="0" imageY="0" imageWidth="28" imageHeight="11"
+                        destX="55" destY="21" hpX="55" hpY="21"
+                        nameY="8" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="fore-starboard"
+                        imageID="&rsArmor844;"  imageX="28" imageY="0" imageWidth="23" imageHeight="23"
+                        destX="83" destY="34" hpX="83" hpY="34"
+                        nameY="20" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="fore-port"
+                        imageID="&rsArmor844;"  imageX="51" imageY="0" imageWidth="23" imageHeight="23"
+                        destX="27" destY="34" hpX="27" hpY="34"
+                        nameY="32" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
+
+                <ArmorSection name="starboard"
+                        imageID="&rsArmor844;"  imageX="74" imageY="0" imageWidth="11" imageHeight="26"
+                        destX="95" destY="61" hpX="95" hpY="61"
+                        nameY="44" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
+					
+                <ArmorSection name="port"
+                        imageID="&rsArmor844;"  imageX="85" imageY="0" imageWidth="11" imageHeight="26"
+                        destX="15" destY="61" hpX="15" hpY="61"
+                        nameY="56" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
+
+                <ArmorSection name="aft-starboard"
+                        imageID="&rsArmor844;"  imageX="96" imageY="0" imageWidth="23" imageHeight="23"
+                        destX="83" destY="88" hpX="83" hpY="88"
+                        nameY="68" nameBreakWidth="360" nameDestX="0" nameDestY="8" />	
+
+                <ArmorSection name="aft-port"
+                        imageID="&rsArmor844;"  imageX="119" imageY="0" imageWidth="23" imageHeight="23"
+                        destX="27" destY="88" hpX="27" hpY="88"
+                        nameY="80" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="aft"
+                        imageID="&rsArmor844;"  imageX="0" imageY="55" imageWidth="28" imageHeight="11"
+                        destX="55" destY="101" hpX="55" hpY="101"
+                        nameY="92" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+			</ArmorDisplay>
+-->
+
+			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;"/>
+
+            <ReactorDisplay>
+                <Image imageID="&rsZubrinReactor;" 
+                        imageX="0" imageY="0" imageWidth="256" imageHeight="60"/>
+
+                <PowerLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="60" imageWidth="202" imageHeight="14"
+                        destX="54" destY="9"/>
+
+                <FuelLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="74" imageWidth="194" imageHeight="14"
+                        destX="54" destY="37"/>
+
+                <FuelLowLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="88" imageWidth="194" imageHeight="14"/>
+
+                <ReactorText x="62" y="22" width="154" height="14"/>
+                <PowerLevelText x="62" y="0" width="154" height="9"/>
+                <FuelLevelText x="62" y="51" width="154" height="9"/>
+            </ReactorDisplay>
+		</PlayerSettings>
+		
+		<StaticData>
+			<drone912Data>
+				(   ; Index 0, ship UNID
+					&scCCLampyridaeTauCeti;
+					
+					; Index 1, items
+					; Level 2 components
+					(	
+						(&itCCSavoyM8Howitzer;					1)
+						(&itCCDualNapaS8Deflector;				1)
+						(&itCCDualSiva31MWReactor;				1)
+						(&itCCDualTritiumPropulsionUpgrade;		1)
+						(&itCC2xStealthArmor;					12)
+					)
+					
+					; Index 2, auto-link weapons from index 1
+					Nil
+					
+					; Index 3, description override.
+					"Cabbage Corp began production of the Lampyridae series in 2361. The Lampyridae-class has a primary weapon hardpoint with a swivel mount compatible with all Cabbage Corp weapons, two secondary weapon hard-points, eight armor segments and a base crew capacity of sixteen."
+					
+					; Index 4, ship icon for shipyards.
+					(&rsCCShipIcons; 0 2)
+				)
+			</drone912Data>
+			
+			<shipFirstPoint>
+				(   ; Order is: DevicePos (angle radius [Z]), DeviceFireArc (min max)
+					((0 44 -2) (345 15))
+				)
+			</shipFirstPoint>
+			
+			<shipPoints>
+				(   ; Order is: DevicePos (angle radius [Z]), DeviceFireArc (min max)
+					((60 26 4) (0 0) 'always)
+					((300 26 4) (0 0) 'always)
+				)
+			</shipPoints>
+			
+			<shipCanvas>
+				((0 -40) (-23 -14) (23 -14))
+			</shipCanvas>
+			
+			<drone912Shipyard>
+				; Index 0 = shipyard data.
+				;			subindex 0 = shipyard UNID
+				;			subindex 1 = (minimum level/rank required, maximum allowed)
+				;			subindex 2 = rank data string if defined, system level if Nil
+				; Index 1 = Alternate ship data override, see drone912Data for details.
+				(
+					; Commonwealth Dry Dock at level 2+ systems.
+					; Level 4 components
+					((&stCommonwealthDryDock; 2)
+						(&scCCLampyridaeTauCeti;
+							(	(&itCCSavoyM8Howitzer;					1)
+								(&itCCDualNapaS8Deflector;				1)
+								(&itCCDualSiva31MWReactor;				1)
+								(&itCCDualTritiumPropulsionUpgrade;		1)
+								(&itCC2xStealthArmor;					12)
+							)
+						)
+					
+					)
+					
+					; Commonwealth Dry Dock at Eridani.
+					; Level 1-2 components
+					((&stCommonwealthDryDock; (1 1))
+						(&scCCLampyridaeTauCeti;
+							(	(&itCCSavoyM2Howitzer;					1)
+								(&itCCDualNapaS2Deflector;				1)
+								(&itCCDualSiva5MWReactor;				1)
+								(&itCCDualIonDrive;						1)
+								(&itCCLightStealthPlating;				12)
+							)
+						)
+					)
+					
+					; St. K's Arcology
+					; Level 4 components
+					((&stStKatsArcology;)
+						(&scCCLampyridaeTauCeti;
+							(	(&itCCSavoyM8Howitzer;					1)
+								(&itCCKaleM6Repeater;					2)
+								(&itCCDualNapaS8Deflector;				1)
+								(&itCCDualSiva31MWReactor;				1)
+								(&itCCDualTritiumPropulsionUpgrade;		1)
+								(&itCC2xStealthArmor;					12)
+							)
+							(
+								(&itCCKaleM11Repeater;					1)
+								(&itCCKaleM11Repeater;					2)
+							)
+						)
+					)
+					
+					; Ringer Shipyard
+					; Level 6 components
+					(&stRingerShipyard;
+						; Index 1:  Alternate ship data.
+						(&scCCLampyridaeTauCeti;
+							(	(&itCCSavoyM30Howitzer;					1)
+								(&itCCKaleM20Repeater;					2)
+								(&itCCDualNapaS30Deflector;				1)
+								(&itCCDualSiva100MWReactor;				1)
+								(&itCCDualChronimiumPropulsionUpgrade;	1)
+								(&itCC2xHardenedStealthArmor;			12)
+							)
+							(
+								(&itCCKaleM38Repeater;					1)
+								(&itCCKaleM38Repeater;					2)
+							)
+						)
+					)
+				)
+			</drone912Shipyard>
+			
+			<maxAuxCrew>16</maxAuxCrew>
+		</StaticData>
+
+		<DockingPorts   portCount="2"  portRadius="48"  maxDist="3" />
+	</ShipClass>
+	
+</TranscendenceModule>

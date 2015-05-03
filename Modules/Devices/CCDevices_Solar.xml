@@ -1,0 +1,200 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+	
+<!-- ================================================================ -->
+							<!-- Solar Devices -->
+<!-- ================================================================ -->
+	
+;Solar devices appear to stack.
+	
+	<!-- Dirty Solar Panel Array -->
+
+	<ItemType UNID="&itCCDirtySolarPanelArray;"
+			name=				"dirty solar panel array"
+			attributes=			"cabbageCorp, majorItem, illegal"
+			
+			level=				"2"
+			frequency=			"veryrare"
+			
+			value=				"290"
+			mass=				"1100"
+
+			description=		"A solar panel array converts sunlight into energy usable by a ship's reactor. Most people consider it a crime to let a solar panel array get this dirty. Provides up to 3MW of power."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<SolarDevice
+			refuel=				"30"
+		/>
+
+	</ItemType>
+
+	<!-- Solar Panel Array -->
+
+	<ItemType UNID="&itCCSolarPanelArray;"
+			name=				"solar panel array"
+			attributes=			"cabbageCorp, majorItem"
+			  
+			level=				"3"
+			frequency=			"rare"
+
+			value=				"600"
+			mass=				"1000"
+			  
+			description=		"A solar panel array converts sunlight into energy usable by a ship's reactor. Provides up to 6MW of power."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<SolarDevice
+				refuel=			"60"
+		/>
+
+	</ItemType>
+	
+	<!-- Dirty Solar Concentrator -->
+
+	<ItemType UNID="&itCCDirtySolarConcentrator;"
+			name=				"dirty solar concentrator"
+			attributes=			"cabbageCorp, majorItem, illegal"
+			
+			level=				"4"
+			frequency=			"veryrare"
+			
+			value=				"1200"
+			mass=				"1750"
+
+			description=		"A solar concentrator converts non-ionizing solar radiation into energy usable by a ship's reactor. Most people consider it a crime to let a solar panel get this dirty. Provides up to 11MW of power."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<SolarDevice
+			refuel=				"110"
+		/>
+
+	</ItemType>
+	
+	<!-- Solar Concentrator -->
+
+	<ItemType UNID="&itCCSolarConcentrator;"
+			name=				"solar concentrator"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"5"
+			frequency=			"rare"
+			
+			value=				"2500"
+			mass=				"1500"
+
+			description=		"A solar concentrator converts non-ionizing solar radiation into energy usable by a ship's reactor. Provides up to 21MW of power."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<SolarDevice
+			refuel=				"210"
+		/>
+
+	</ItemType>
+	
+	<!-- Dirty Biohybrid Solar Dynamo -->
+
+	<ItemType UNID="&itCCDirtyBiohybridSolarDynamo;"
+			name=				"dirty biohybrid solar dynamo"
+			attributes=			"cabbageCorp, majorItem, illegal"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"5200"
+			mass=				"4500"
+
+			description=		"This device converts sunlight into fuel to power a dynamo which can produce up to 38MW of power to recharge the ship's reactor. Most people consider it a crime to let a solar panel get this dirty"
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<SolarDevice
+			refuel=				"380"
+		/>
+
+	</ItemType>
+	
+	<!-- Biohybrid Solar Dynamo -->
+
+	<ItemType UNID="&itCCBiohybridSolarDynamo;"
+			name=				"biohybrid solar dynamo"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"7"
+			frequency=			"rare"
+			
+			value=				"11000"
+			mass=				"4000"
+
+			description=		"This device converts sunlight into fuel to power a dynamo which can produce up to 71MW of power to recharge the ship's reactor."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<SolarDevice
+			refuel=				"710"
+		/>
+
+	</ItemType>
+	
+	<!-- Hydrogen Ramscoop -->
+
+	<ItemType UNID="&itCCHydrogenRamscoop;"
+			name=				"hydrogen ramscoop"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"9"
+			frequency=			"rare"
+			
+			value=				"45000"
+			mass=				"6000"
+
+			description=		"This device collects hydrogen expelled from nearby stars to fuel a backup reactor which can produce up to 200MW of power to recharge the ship's primary reactor."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<SolarDevice
+			refuel=				"2000"
+		/>
+
+	</ItemType>
+	
+	<!-- Bussard Collector -->
+
+	<ItemType UNID="&itCCBussardCollector;"
+			name=				"Bussard collector"
+			attributes=			"alien, cabbageCorp, majorItem, specialty"
+			
+			level=				"12"
+			frequency=			"veryrare"
+			
+			value=				"400000"
+			mass=				"12000"
+
+			description=		"This device utilizes a re-purposed shield to collect interstellar deuterium to fuel a backup reactor which can produce up to 1200 MW of power to recharge the ship's primary reactor.  Enhances installed shields by 25%."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<SolarDevice
+			refuel=				"12000"	
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"BussardShield"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:25;"
+				/>
+			</EnhancementAbilities>
+		</SolarDevice>
+	</ItemType>
+
+</TranscendenceModule>

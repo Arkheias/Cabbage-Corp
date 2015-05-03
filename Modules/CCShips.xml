@@ -1,0 +1,345 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!--
+Ship Level:		n
+Item		Item Level
+Armor			n
+Reactor			n
+Weapon			n-1, in case of secondary weapon adjust p by -1 and s by -1 for 1 s weapon, 
+														p by -1 and s by -2 for 2 s weapons
+														p by -1 and s by -3 for 4 s weapons
+Shield			n-2, +charges to use up all excess power
+DRADIS			n-3
+other			n-?
+-->
+
+<!-- ================================================================ -->
+						<!-- Small NPC Ships -->
+<!-- ================================================================ -->
+	
+	<!-- Lorry-class Stealth Transport -->
+	
+	<ShipClass UNID="&scCCLorryNPC;"
+			manufacturer=		"Cabbage Corp"
+			class=				"Lorry"
+			type=				"stealth transport"
+			level=				"5"
+
+			attributes=			"cabbageCorp, freighter, genericClass"
+			
+			size=				"46"
+			mass=				"200"
+			thrustRatio=		"0.4"
+			maxSpeed=			"12"
+			cargoSpace=			"150"
+			maxCargoSpace=		"400"
+			
+			explosionType=		"&vtThermoExplosion1;"
+	>
+
+		<Names definiteArticle="true">
+			transport Khamuzi; transport Dahlee; transport Udaranji;
+			transport Abanji; transport Bahdah; transport Ahdanji;
+			transport Tsabhira; transport Tsabhi; transport Arabhi;
+			transport Bhusaran; transport Habanji; transport Shabhira;
+			transport Kiseenaji; transport Udaran; transport Bahdahni;
+			transport Kiseena; transport Kiseen; transport Inerri;
+			transport Khamuz; transport Shabhi
+		</Names>
+		
+		<Armor>
+			<ArmorSection start="330" span="60" armorID="&itCC2xHardenedStealthArmor;" />
+            <ArmorSection start="270" span="60" armorID="&itCC2xHardenedStealthArmor;" />
+            <ArmorSection start="30"  span="60" armorID="&itCC2xHardenedStealthArmor;" />
+            <ArmorSection start="210" span="60" armorID="&itCC2xHardenedStealthArmor;" />
+            <ArmorSection start="90"  span="60" armorID="&itCC2xHardenedStealthArmor;" />
+            <ArmorSection start="150" span="60" armorID="&itCC2xHardenedStealthArmor;" />
+		</Armor>
+		
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="30"/>
+			
+			<Table>
+				<Group chance="45">
+					<Device item="&itCCOmniKaleM11Repeater;"/>						;150
+					<Device item="&itCCNapaS8Deflector;" charges="3"/>				;200
+					<Device item="&itCCMarkIIRepeaterHeatSink;"/>					;100
+				</Group>
+				
+				<Group chance="30">
+					<Device item="&itCCOmniSavoyM8Howitzer;"/>						;110
+					<Device item="&itCCNapaS8Deflector;" charges="4"/>				;240
+					<Device item="&itCCMarkIICabbageEnhancer;"/>					;100
+				</Group>
+				
+				<Group chance="25">
+					<Device item="&itCCOmniB9MiningLance;"/>						;120
+					<Device item="&itCCNapaS8Deflector;" charges="4"/>				;240
+					<Device item="&itCCMarkIIMiningLanceCapacitor;"/>				;100
+				</Group>
+			</Table>
+
+			<Table>
+				<Device chance="70" item="&itCCTritiumPropulsionUpgrade;"></Device>	;50
+				<Device chance="30" item="&itCCDualPlasmaDrive;"></Device>			;50
+			</Table>
+
+			<Table>
+				<Device chance="80" item="&itCCSiva57MWReactor;"></Device>
+				<Device chance="20" item="&itCCDualSiva31MWReactor;"></Device>
+			</Table>
+
+			<Table>
+				<Device chance="90" item="&itCCSolarPanelArray;"></Device>
+				<Device chance="10" item="&itCCDirtySolarPanelArray;"></Device>
+			</Table>
+			
+			<Table>
+				<Device chance="90" item="&itCCDualCargoHoldExpansion;"></Device>
+				<Device chance="10" item="&itCCDualDiplomatsCargoHold;"></Device>
+			</Table>
+			
+			<Table>
+				<Device chance="60" item="&itCCL4ShieldsEngineeringCrew;"></Device>
+				<Device chance="30" item="&itCCL5ShieldsEngineeringCrew;"></Device>
+				<Device chance="5" item="&itCCL6ShieldsEngineeringCrew;"></Device>
+				<Device chance="5" item="&itCCL6DamageControlCrew;"></Device>
+			</Table>
+			
+			<Device deviceID="&itCCMIDRADISModule;"/>								;100
+			<Device deviceID="&vtCCSavoyHowitzerRestrictionBolt;"/>
+		</Devices>
+
+		<Maneuver
+			maxRotationRate=    "7.5"
+			rotationAccel=      "1.0"
+		/>
+
+		<Items>
+			<Item count="4d8" item="&itXenotiteFuelRod;"/>
+		</Items>
+		
+
+		<Image imageID="&rsCCF120Lorry;" imageWidth="90" imageHeight="90" rotationCount="120" rotationColumns="12"/>
+
+		<Effects>
+			<Effect type="thrustMain"   posAngle="158"  posRadius="26"  posZ="8"  rotation="180" />
+			<Effect type="thrustMain"   posAngle="-158" posRadius="26"  posZ="8"  rotation="180" />
+		</Effects>
+
+		<AISettings
+			fireRateAdj=		"10"
+			fireAccuracy=		"90"
+			perception=			"4"
+			
+		/>
+
+		<!--
+		<StaticData>
+			<korolovContainerPrice>
+				(item
+					(list
+						0 ; no level 0
+						0 ; apprentices cannot escort
+
+						; Journeymen: 3000 - 6000 credits
+						; 240,000 - 480,000 cargo value
+						(multiply 100 (add (random 15 30) (random 15 30)))
+
+						; Masters: 6000 - 15000 credits
+						; 480,000 - 1,200,000 cargo value
+						(multiply 100 (add (random 30 75) (random 30 75)))
+
+						7500 ; legends don't escort, but add anyway
+						)
+					(typGetGlobalData &stKorolovShipping; "level")
+					)
+			</korolovContainerPrice>
+
+			<korolovEscortRate>30</korolovEscortRate>
+
+			<korolovMinLevel>2</korolovMinLevel>
+		</StaticData>
+		-->
+	</ShipClass>
+
+<!-- ================================================================ -->
+					<!-- Large NPC Ships -->
+<!-- ================================================================ -->
+
+	<!-- Blacklight-class stealth cruiser -->
+		
+	<ShipClass UNID="&scCCBlacklightNPC;"
+			manufacturer=		"Cabbage Corp"
+			class=				"Blacklight"
+			type=				"stealth cruiser"
+
+			attributes=			"cabbageCorp, genericClass, majorShip"
+			
+			size=				"83"
+			mass=				"1500"
+			thrustRatio=		"1.0"
+			maxSpeed=			"12"
+			cargoSpace=			"50"
+			maxCargoSpace=		"300"
+			
+			explosionType=		"&vtThermoExplosion3;"
+			leavesWreck=		"0"
+	>
+		
+		<Armor>
+			<ArmorSection start="330" span="60" armorID="&itCC4xAdvancedStealthArmor;" />
+            <ArmorSection start="270" span="60" armorID="&itCC4xAdvancedStealthArmor;" />
+            <ArmorSection start="30"  span="60" armorID="&itCC4xAdvancedStealthArmor;" />
+            <ArmorSection start="210" span="60" armorID="&itCC4xAdvancedStealthArmor;" />
+            <ArmorSection start="90"  span="60" armorID="&itCC4xAdvancedStealthArmor;" />
+            <ArmorSection start="150" span="60" armorID="&itCC4xAdvancedStealthArmor;" />
+		</Armor>
+		
+		<Devices>
+			<Device deviceID="&itCCBlacklightLauncher;"/>
+			<Device deviceID="&itCCJadeiteS100Deflector;" charges="6"/>
+			<Device deviceID="&itCCRadSiva1000MWReactor;"/>
+			<Device deviceID="&itCCB6MissileDefenseSystem;"/>
+			<Device deviceID="&itCCMarkIVCabbageEnhancer;"/>
+			
+			<Device deviceID="&itCCBiohybridSolarDynamo;"/>
+			<Device deviceID="&itCCAutoRepairVI;"/>
+			<Device deviceID="&itCCDualCobaltThoriumMegaDrive;"/>
+			<Device deviceID="&itCCMilitaryCargoBay;"/>
+		</Devices>
+
+		<Maneuver
+			maxRotationRate=    "9.0"
+			rotationAccel=      "1.0"
+			rotationStopAccel=	"3.0"
+		/>
+
+		<Items>
+			<Item count="4d20" item="&itCCXenotiteAssembly;"/>
+			<Item count="40d24+100" item="&itXM900Missile;"/>
+		</Items>
+		
+		<Image imageID="&rsCCF120Blacklight;" imageWidth="120" imageHeight="120" rotationCount="120" rotationColumns="12"/>
+
+		<Effects>
+			<Effect type="thrustMain"   posAngle="130"  posRadius="52"  posZ="0"  rotation="180"/>
+			
+			<Effect type="thrustMain"   posAngle="180" posRadius="38"  posZ="16"  rotation="180"/>
+			
+			<Effect type="thrustMain"   posAngle="-130" posRadius="52"  posZ="0"  rotation="180"/>
+		</Effects>
+
+		<AISettings
+			aggressor=			"true"
+			fireRateAdj=		"10"
+			fireAccuracy=		"85"
+			perception=			"6"
+			
+			ignoreShieldsDown=	"true"
+			
+			combatStyle=		"standOff"
+		/>
+
+	</ShipClass>
+
+<!-- ================================================================ -->
+					<!-- Capital NPC Ships -->
+<!-- ================================================================ -->
+
+<!-- Cheops-class warship -->
+
+	<ShipClass UNID="&scCCCheops;"
+			manufacturer=		"Cabbage Corp"
+			class=				"Cheops"
+			type=				"warship"
+
+			attributes=			"cabbageCorp, capitalShip, majorShip"
+			inherit=			"&baCSCBase;"
+
+			mass=				"6000000"
+			cargoSpace=			"5000"
+			thrustRatio=		"0.5"
+			maxSpeed=			"22"
+			cyberDefenseLevel=	"10"
+			
+			explosionType=		"&vtThermoExplosion4;"
+			leavesWreck=		"100"
+		>
+		
+		<Armor
+			armorID=			"&itCCGoldArmor;"
+			count=				"24"
+		/>
+
+		<Names definiteArticle="true">The Kraken</Names>
+		
+		<Devices>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="-30" posRadius="105"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="-20" posRadius="95"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="20" posRadius="95"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="30" posRadius="105"/>
+			
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="60" posRadius="105"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="70" posRadius="95"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="110" posRadius="95"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="120" posRadius="105"/>
+			
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="150" posRadius="105"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="160" posRadius="95"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="200" posRadius="95"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="210" posRadius="105"/>
+			
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="240" posRadius="105"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="250" posRadius="95"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="290" posRadius="95"/>
+			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="300" posRadius="105"/>
+			
+			<Device deviceID="&itCCDualNapaS150Deflector;" charges="4"/>
+			<Device deviceID="&itCCRadSiva10000MWReactor;"/>
+			<Device deviceID="&itCCBussardCollector;"/>
+			<Device deviceID="&itCCMarkVCabbageEnhancer;"/>
+			
+			<Device deviceID="&vtDamageControlParty;"/>
+			<Device deviceID="&vtDamageControlParty;"/>
+			<Device deviceID="&vtDamageControlParty;"/>
+			<Device deviceID="&vtDamageControlParty;"/>
+			<Device deviceID="&vtDamageControlParty;"/>
+			<Device deviceID="&vtDamageControlParty;"/>
+			<Device deviceID="&vtDamageControlParty;"/>
+			<Device deviceID="&vtDamageControlParty;"/>
+			<Device deviceID="&vtDamageControlParty;"/>
+			<Device deviceID="&vtDamageControlParty;"/>
+			<Device deviceID="&vtDamageControlParty;"/>
+			<Device deviceID="&vtDamageControlParty;"/>
+		</Devices>
+
+		<Maneuver
+			maxRotationRate=	"1.5"
+			rotationAccel=		"0.5"
+		/>
+
+		<Interior>
+			<Compartment name="interior"
+					hitPoints=	"2000"
+			/>
+		</Interior>
+		
+		<Items>
+			<Item count="4d20" item="&itGoldOre;"/>
+		</Items>
+
+		<AISettings
+			fireRateAdj=        "15"
+			fireAccuracy=       "95"
+			perception=         "6"
+			
+			ignoreShieldsDown=	"true"
+		/>
+
+		<Image imageID="&rsCCF120Cheops;" imageWidth="300" imageHeight="300" rotationCount="120" rotationColumns="12"/>
+
+	</ShipClass>
+
+</TranscendenceModule>

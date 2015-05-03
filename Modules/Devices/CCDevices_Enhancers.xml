@@ -1,0 +1,468 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!-- ================================================================ -->
+						<!-- Lance Focusing array -->
+<!-- ================================================================ -->
+
+	<!-- Mark I Mining Lance Capacitor -->
+
+	<ItemType UNID="&itCCMarkIMiningLanceCapacitor;"
+			name=				"mark I mining lance capacitor"
+			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
+			  
+			level=				"2"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer2;"
+
+			value=				"1500"
+			mass=				"1000"
+			  
+			description=		"This enhancer slightly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by twenty percent on average."
+	>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"10"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l +cabbageCorp; +energyWeapon"
+						 enhancement=	"+hpBonus:20;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+
+	<!-- Mark II Mining Lance Capacitor -->
+
+	<ItemType UNID="&itCCMarkIIMiningLanceCapacitor;"
+			name=				"mark II mining lance capacitor"
+			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
+			  
+			level=				"4"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer5;"
+
+			value=				"6000"
+			mass=				"1500"
+			  
+			description=		"This enhancer increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by forty percent on average."
+	>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"100"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l +cabbageCorp; +energyWeapon"
+						 enhancement=	"+hpBonus:40;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+
+	<!-- Mark III Mining Lance Capacitor -->
+
+	<ItemType UNID="&itCCMarkIIIMiningLanceCapacitor;"
+			name=				"mark III mining lance capacitor"
+			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
+			  
+			level=				"6"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer5;"
+
+			value=				"24000"
+			mass=				"2500"
+			  
+			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by sixty percent on average."
+	>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"250"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l +cabbageCorp; +energyWeapon"
+						 enhancement=	"+hpBonus:60;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+
+	<!-- Mark IV Mining Lance Capacitor -->
+
+	<ItemType UNID="&itCCMarkIVMiningLanceCapacitor;"
+			name=				"mark IV mining lance capacitor"
+			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
+			  
+			level=				"8"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer8;"
+
+			value=				"10000"
+			mass=				"4000"
+			  
+			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by eighty percent on average."
+	>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"450"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l +cabbageCorp; +energyWeapon"
+						 enhancement=	"+hpBonus:80;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+
+	<!-- Mark V Mining Lance Capacitor -->
+
+	<ItemType UNID="&itCCMarkVMiningLanceCapacitor;"
+			name=				"mark V mining lance capacitor"
+			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
+			  
+			level=				"10"
+			frequency=			"rare"
+
+			value=				"10000"
+			mass=				"6000"
+			  
+			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, doubling their potential damage output on average."
+	>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"800"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l +cabbageCorp; +energyWeapon"
+						 enhancement=	"+hpBonus:100;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+<!-- ================================================================ -->
+						<!-- Repeater Heat Sinks -->
+<!-- ================================================================ -->
+
+	<!-- Mark I Repeater Heat Sink -->
+
+	<ItemType UNID="&itCCMarkIRepeaterHeatSink;"
+			name=				"mark I repeater heat sink"
+			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
+			  
+			level=				"2"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer2;"
+
+			value=				"800"
+			mass=				"1000"
+			  
+			description=		"This heat sink slightly increases the fire rate of any installed Cabbage Corp repeater."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"10"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"repeaterHeatSink"
+						 criteria=		"w +repeater;"
+						 enhancement=	"+speed:90;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+
+	<!-- Mark II Repeater Heat Sink -->
+
+	<ItemType UNID="&itCCMarkIIRepeaterHeatSink;"
+			name=				"mark II repeater heat sink"
+			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
+			  
+			level=				"4"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer5;"
+
+			value=				"4000"
+			mass=				"2000"
+			  
+			description=		"This heat sink increases the fire rate of any installed Cabbage Corp repeater."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"100"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"repeaterHeatSink"
+						 criteria=		"w +repeater;"
+						 enhancement=	"+speed:80;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+
+	<!-- Mark III Repeater Heat Sink -->
+
+	<ItemType UNID="&itCCMarkIIIRepeaterHeatSink;"
+			name=				"mark III repeater heat sink"
+			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
+			  
+			level=				"6"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer5;"
+
+			value=				"16000"
+			mass=				"3000"
+			  
+			description=		"This heat sink greatly increases the fire rate of any installed Cabbage Corp repeater."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"250"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"repeaterHeatSink"
+						 criteria=		"w +repeater;"
+						 enhancement=	"+speed:70;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+
+	<!-- Mark IV Repeater Heat Sink -->
+
+	<ItemType UNID="&itCCMarkIVRepeaterHeatSink;"
+			name=				"mark IV repeater heat sink"
+			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
+			  
+			level=				"8"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer8;"
+
+			value=				"60000"
+			mass=				"4000"
+			  
+			description=		"This heat sink increases the fire rate of any installed Cabbage Corp repeater immensely."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"450"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"repeaterHeatSink"
+						 criteria=		"w +repeater;"
+						 enhancement=	"+speed:60;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+
+	<!-- Mark V Repeater Heat Sink -->
+
+	<ItemType UNID="&itCCMarkVRepeaterHeatSink;"
+			name=				"mark V repeater heat sink"
+			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
+			  
+			level=				"10"
+			frequency=			"rare"
+
+			value=				"240000"
+			mass=				"5000"
+			  
+			description=		"This heat sink increases the fire rate of any installed Cabbage Corp repeater immensely and slightly increases the damage of plasma based repeaters."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"800"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"repeaterHeatSink"
+						 criteria=		"w~l +repeater;"
+						 enhancement=	"+speed:60;"
+				/>
+				
+				<Enhance type=			"plasmaRepeater"
+						 criteria=		"w; +repeater; +damageType:plasma;"
+						 enhancement=	"+hpBonus:20;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+<!-- ================================================================ -->
+							<!-- Brand Enhancers -->
+<!-- ================================================================ -->
+	
+	<!-- Mark I Cabbage Enhancer -->
+
+	<ItemType UNID="&itCCMarkICabbageEnhancer;"
+			name=				"mark I Cabbage brand enhancer"
+			attributes=			"cabbageCorp, majorItem, specialty, weaponEnhancer"
+			
+			level=				"2"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer2;"
+			
+			value=				"1000"
+			mass=				"2000"
+
+			description=		"This device increases the effectiveness of installed Cabbage Corp weapons and shields by 10%."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"10"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"CabbageEnhancer"
+						 criteria=		"w s +cabbageCorp;"
+						 enhancement=	"+hpBonus:10;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Mark II Cabbage Enhancer -->
+
+	<ItemType UNID="&itCCMarkIICabbageEnhancer;"
+			name=				"mark II Cabbage brand enhancer"
+			attributes=			"cabbageCorp, majorItem, specialty, weaponEnhancer"
+			
+			level=				"4"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer5;"
+			
+			value=				"5000"
+			mass=				"2500"
+
+			description=		"This device increases the effectiveness of installed Cabbage Corp weapons and shields by 20%."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"100"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"CabbageEnhancer"
+						 criteria=		"w s +cabbageCorp;"
+						 enhancement=	"+hpBonus:20;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Mark III Cabbage Enhancer -->
+
+	<ItemType UNID="&itCCMarkIIICabbageEnhancer;"
+			name=				"mark III Cabbage brand enhancer"
+			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty, weaponEnhancer"
+			
+			level=				"6"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer5;"
+			
+			value=				"20000"
+			mass=				"3000"
+
+			description=		"This device uses a built-in Quantum CPU to increases the effectiveness of installed Cabbage Corp weapons and shields by 30%."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"250"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"CabbageEnhancer"
+						 criteria=		"w s +cabbageCorp;"
+						 enhancement=	"+hpBonus:30;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Mark IV Cabbage Enhancer -->
+
+	<ItemType UNID="&itCCMarkIVCabbageEnhancer;"
+			name=				"mark IV Cabbage brand enhancer"
+			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty, weaponEnhancer"
+			
+			level=				"8"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer8;"
+			
+			value=				"60000"
+			mass=				"4000"
+
+			description=		"This device uses a built-in Quantum CPU to increases the effectiveness of installed Cabbage Corp weapons and shields by 40%."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"600"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"CabbageEnhancer"
+						 criteria=		"w s +cabbageCorp;"
+						 enhancement=	"+hpBonus:40;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Mark V Cabbage Enhancer -->
+
+	<ItemType UNID="&itCCMarkVCabbageEnhancer;"
+			name=				"mark V Cabbage brand enhancer"
+			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty, weaponEnhancer"
+			
+			level=				"10"
+			frequency=			"rare"
+			
+			value=				"200000"
+			mass=				"5000"
+
+			description=		"This device uses a built-in Quantum CPU to increases the effectiveness of installed Cabbage Corp weapons and shields by 50%."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"900"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"CabbageEnhancer"
+						 criteria=		"w s +cabbageCorp;"
+						 enhancement=	"+hpBonus:50;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+
+</TranscendenceModule>

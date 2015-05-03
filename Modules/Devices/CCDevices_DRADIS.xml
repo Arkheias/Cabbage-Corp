@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+	
+<!-- ================================================================ -->
+						<!-- DRADIS Devices -->
+<!-- ================================================================ -->
+
+	<!-- mark I DRADIS module -->
+
+	<ItemType UNID="&itCCMIDRADISModule;"
+			name=				"mark I DRADIS module"
+			attributes=			"cabbageCorp, cabbageDRADIS, majorItem, specialty"
+			inherit=			"&baCCDRADISBase;"
+			
+			level=				"5"
+			frequency=			"veryrare"
+			
+			value=				"6000"
+			mass=				"4000"
+
+			description=		"This device increases the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"20"
+		/>
+		
+		<StaticData>
+			<CCDRADIS>
+				{minPerception:3 addPerception:1}
+			</CCDRADIS>
+		</StaticData>
+	</ItemType>
+	
+	<!-- mark II DRADIS module -->
+
+	<ItemType UNID="&itCCMIIDRADISModule;"
+			name=				"mark II DRADIS module"
+			attributes=			"cabbageCorp, cabbageDRADIS, majorItem, quantumCPU, specialty"
+			inherit=			"&baCCDRADISBase;"
+			
+			level=				"7"
+			frequency=			"veryrare"
+			
+			value=				"21000"
+			mass=				"4500"
+
+			description=		"This device utilizes a quantum CPU to increase the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"100"
+		/>
+		
+		<StaticData>
+			<CCDRADIS>
+				{minPerception:4 addPerception:2}
+			</CCDRADIS>
+		</StaticData>
+	</ItemType>
+	
+	<!-- mark III DRADIS module -->
+
+	<ItemType UNID="&itCCMIIIDRADISModule;"
+			name=				"mark III DRADIS module"
+			attributes=			"cabbageCorp, cabbageDRADIS, majorItem, quantumCPU, specialty"
+			inherit=			"&baCCDRADISBase;"
+			
+			level=				"9"
+			frequency=			"veryrare"
+			
+			value=				"80000"
+			mass=				"5000"
+
+			description=		"This device utilizes a dual-core quantum CPU to increase the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"400"
+		/>
+		
+		<StaticData>
+			<CCDRADIS>
+				{minPerception:5 addPerception:3}
+			</CCDRADIS>
+		</StaticData>
+	</ItemType>
+	
+	<!-- mark IV DRADIS module -->
+
+	<ItemType UNID="&itCCMIVDRADISModule;"
+			name=				"mark IV DRADIS module"
+			attributes=			"cabbageCorp, cabbageDRADIS, majorItem, quantumCPU, specialty"
+			inherit=			"&baCCDRADISBase;"
+			
+			level=				"11"
+			frequency=			"veryrare"
+			
+			value=				"270000"
+			mass=				"5500"
+
+			description=		"This device utilizes a quad-core quantum CPU to increase the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"1200"
+		/>
+		
+		<StaticData>
+			<CCDRADIS>
+				{minPerception:6 addPerception:4}
+			</CCDRADIS>
+		</StaticData>
+	</ItemType>
+	
+	<!-- mark V DRADIS module -->
+
+	<ItemType UNID="&itCCMVDRADISModule;"
+			name=				"mark V DRADIS module"
+			attributes=			"cabbageCorp, cabbageDRADIS, majorItem, positronicCPU, quantumCPU, specialty"
+			inherit=			"&baCCDRADISBase;"
+			
+			level=				"13"
+			frequency=			"veryrare"
+			
+			value=				"960000"
+			mass=				"6000"
+
+			description=		"This device utilizes a positronic CPU to increase the effective perception of a ship's targeting systems, greatly increasing the range at which it can detect hidden objects in space."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"2400"
+		/>
+		
+		<StaticData>
+			<CCDRADIS>
+				{minPerception:7 addPerception:5}
+			</CCDRADIS>
+		</StaticData>
+	</ItemType>
+	
+</TranscendenceModule>

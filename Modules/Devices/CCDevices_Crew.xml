@@ -1,0 +1,2090 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+	
+<!-- ================================================================ -->
+						<!-- Repairer Crew -->
+<!-- ================================================================ -->
+	
+	<!-- L1 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL1DamageControlCrew;"
+			name=				"L1 damage control crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"1"
+			frequency=			"notRandom"
+
+			value=				"5000"
+			mass=				"600"
+			 
+			description=		"This shameful civilian crew member crawls inside the ship's hull and repairs armor of up to technology level I."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"1"
+				powerUse=		"5"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L2 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL2DamageControlCrew;"
+			name=				"L2 damage control crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"2"
+			frequency=			"notRandom"
+
+			value=				"7200"
+			mass=				"600"
+			 
+			description=		"This tolerable civilian crew member crawls inside the ship's hull and repairs armor of up to technology level II."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"2, 2"
+				powerUse=		"6"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L3 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL3DamageControlCrew;"
+			name=				"L3 damage control crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"3"
+			frequency=			"notRandom"
+
+			value=				"10000"
+			mass=				"600"
+			 
+			description=		"This decent civilian crew member crawls inside the ship's hull and repairs armor of up to technology level III."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"3, 3, 2"
+				powerUse=		"8"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L4 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL4DamageControlCrew;"
+			name=				"L4 damage control crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"4"
+			frequency=			"notRandom"
+
+			value=				"14000"
+			mass=				"600"
+			 
+			description=		"This skilled civilian crew member crawls inside the ship's hull and repairs armor of up to technology level IV."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"5, 4, 3, 3"
+				powerUse=		"11"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L5 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL5DamageControlCrew;"
+			name=				"L5 damage control crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"5"
+			frequency=			"notRandom"
+
+			value=				"20000"
+			mass=				"600"
+			 
+			description=		"This exceptional civilian crew member crawls inside the ship's hull and repairs armor of up to technology level V."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"6, 5, 4, 4, 4"
+				powerUse=		"15"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L6 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL6DamageControlCrew;"
+			name=				"L6 damage control crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"6"
+			frequency=			"notRandom"
+
+			value=				"28000"
+			mass=				"600"
+			 
+			description=		"This shameful military crew member crawls inside the ship's hull and repairs armor of up to technology level VI."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"7, 6, 5, 5, 4, 4"
+				powerUse=		"20"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L7 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL7DamageControlCrew;"
+			name=				"L7 damage control crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"7"
+			frequency=			"notRandom"
+
+			value=				"40000"
+			mass=				"600"
+			 
+			description=		"This tolerable military crew member crawls inside the ship's hull and repairs armor of up to technology level VII."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"8, 7, 6, 6, 5, 4, 4"
+				powerUse=		"26"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L8 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL8DamageControlCrew;"
+			name=				"L8 damage control crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"8"
+			frequency=			"notRandom"
+
+			value=				"56000"
+			mass=				"600"
+			 
+			description=		"This decent military crew member crawls inside the ship's hull and repairs armor of up to technology level VIII."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"9, 8, 7, 7, 6, 5, 5, 4"
+				powerUse=		"33"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L9 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL9DamageControlCrew;"
+			name=				"L9 damage control crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"9"
+			frequency=			"notRandom"
+
+			value=				"80000"
+			mass=				"600"
+			 
+			description=		"This skilled military crew member crawls inside the ship's hull and repairs armor of up to technology level IX."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"10, 9, 7, 7, 6, 5, 5, 5, 4"
+				powerUse=		"41"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L10 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL10DamageControlCrew;"
+			name=				"L10 damage control crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"10"
+			frequency=			"notRandom"
+
+			value=				"110000"
+			mass=				"600"
+			 
+			description=		"This exceptional military crew member crawls inside the ship's hull and repairs armor of up to technology level X."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"11,10,8, 8, 7, 6, 6, 5, 4, 4"
+				powerUse=		"50"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L11 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL11DamageControlCrew;"
+			name=				"L11 damage control crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"11"
+			frequency=			"notRandom"
+
+			value=				"160000"
+			mass=				"600"
+			 
+			description=		"This shameful alien crew member crawls inside the ship's hull and repairs armor of up to technology level XI."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"12,11, 9, 9, 8, 7, 7, 6, 5, 5, 4"
+				powerUse=		"60"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L12 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL12DamageControlCrew;"
+			name=				"L12 damage control crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"12"
+			frequency=			"notRandom"
+
+			value=				"220000"
+			mass=				"600"
+			 
+			description=		"This tolerable alien crew member crawls inside the ship's hull and repairs armor of up to technology level XII."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"14, 12, 10, 10, 8, 7, 7, 6, 5, 5, 5, 4"
+				powerUse=		"71"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L13 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL13DamageControlCrew;"
+			name=				"L13 damage control crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"13"
+			frequency=			"notRandom"
+
+			value=				"320000"
+			mass=				"600"
+			 
+			description=		"This decent alien crew member crawls inside the ship's hull and repairs armor of up to technology level XIII."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"15, 13, 11, 11, 9, 8, 8, 7, 6, 6, 5, 5, 4"
+				powerUse=		"83"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L14 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL14DamageControlCrew;"
+			name=				"L14 damage control crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"14"
+			frequency=			"notRandom"
+
+			value=				"440000"
+			mass=				"600"
+			 
+			description=		"This skilled alien crew member crawls inside the ship's hull and repairs armor of up to technology level XIV."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"16, 14, 12, 12, 10, 8, 8, 7, 6, 6, 5, 5, 4, 4"
+				powerUse=		"96"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L15 Auxiliary Damage Control Crew -->
+
+	<ItemType UNID="&itCCL15DamageControlCrew;"
+			name=				"L15 damage control crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"15"
+			frequency=			"notRandom"
+
+			value=				"640000"
+			mass=				"600"
+			 
+			description=		"This exceptional alien crew member crawls inside the ship's hull and repairs armor of up to technology level XV."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<RepairerDevice
+				regen=			"17, 15, 12, 12, 11, 9, 9, 8, 7, 7, 6, 5, 5, 4, 4"
+				powerUse=		"110"
+				deviceSlots=	"0"
+		/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+<!-- ================================================================ -->
+					<!-- Gunner Crew -->
+<!-- ================================================================ -->
+
+	<!-- L1 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL1GunnerCrew;"
+			name=				"L1 gunner crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"1"
+			frequency=			"notRandom"
+
+			value=				"5000"
+			mass=				"600"
+			 
+			description=		"This shameful civilian crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"10"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:200;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L2 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL2GunnerCrew;"
+			name=				"L2 gunner crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"2"
+			frequency=			"notRandom"
+
+			value=				"7200"
+			mass=				"600"
+			 
+			description=		"This tolerable civilian crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"12"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:195;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L3 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL3GunnerCrew;"
+			name=				"L3 gunner crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"3"
+			frequency=			"notRandom"
+
+			value=				"10000"
+			mass=				"600"
+			 
+			description=		"This decent civilian crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"16"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:190;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L4 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL4GunnerCrew;"
+			name=				"L4 gunner crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"4"
+			frequency=			"notRandom"
+
+			value=				"14000"
+			mass=				"600"
+			 
+			description=		"This skilled civilian crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"22"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:185;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L5 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL5GunnerCrew;"
+			name=				"L5 gunner crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"5"
+			frequency=			"notRandom"
+
+			value=				"20000"
+			mass=				"600"
+			 
+			description=		"This exceptional civilian crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"30"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:180;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L6 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL6GunnerCrew;"
+			name=				"L6 gunner crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"6"
+			frequency=			"notRandom"
+
+			value=				"28000"
+			mass=				"600"
+			 
+			description=		"This shameful military crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"40"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:176;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L7 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL7GunnerCrew;"
+			name=				"L7 gunner crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"7"
+			frequency=			"notRandom"
+
+			value=				"40000"
+			mass=				"600"
+			 
+			description=		"This tolerable military crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"52"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:172;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L8 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL8GunnerCrew;"
+			name=				"L8 gunner crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"8"
+			frequency=			"notRandom"
+
+			value=				"56000"
+			mass=				"600"
+			 
+			description=		"This decent military crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"66"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:168;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L9 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL9GunnerCrew;"
+			name=				"L9 gunner crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"9"
+			frequency=			"notRandom"
+
+			value=				"80000"
+			mass=				"600"
+			 
+			description=		"This skilled military crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"82"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:164;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L10 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL10GunnerCrew;"
+			name=				"L10 gunner crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"10"
+			frequency=			"notRandom"
+
+			value=				"110000"
+			mass=				"600"
+			 
+			description=		"This exceptional military crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"100"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:160;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L11 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL11GunnerCrew;"
+			name=				"L11 gunner crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"11"
+			frequency=			"notRandom"
+
+			value=				"160000"
+			mass=				"600"
+			 
+			description=		"This shameful alien crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"120"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:157;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L12 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL12GunnerCrew;"
+			name=				"L12 gunner crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"12"
+			frequency=			"notRandom"
+
+			value=				"220000"
+			mass=				"600"
+			 
+			description=		"This tolerable alien crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"140"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:154;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L13 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL13GunnerCrew;"
+			name=				"L13 gunner crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"13"
+			frequency=			"notRandom"
+
+			value=				"320000"
+			mass=				"600"
+			 
+			description=		"This decent alien crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"170"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:151;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L14 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL14GunnerCrew;"
+			name=				"L14 gunner crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"14"
+			frequency=			"notRandom"
+
+			value=				"440000"
+			mass=				"600"
+			 
+			description=		"This skilled alien crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"190"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:148;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L15 Auxiliary Gunner Crew -->
+
+	<ItemType UNID="&itCCL15GunnerCrew;"
+			name=				"L15 gunner crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxGunnerCrewBase;"
+			 
+			level=				"15"
+			frequency=			"notRandom"
+
+			value=				"640000"
+			mass=				"600"
+			 
+			description=		"This exceptional alien crew member manually controls your primary weapons systems to provide omnidirectional fire at the cost of a decreased fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"220"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"gunnerCrew"
+						 criteria=		"pI;"
+						 enhancement=	"+speed:145;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+<!-- ================================================================ -->
+					<!-- Weapons Engineering Crew -->
+<!-- ================================================================ -->
+
+	<!-- L1 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL1WeaponsEngineeringCrew;"
+			name=				"L1 weapons engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"1"
+			frequency=			"notRandom"
+
+			value=				"7500"
+			mass=				"600"
+			 
+			description=		"This shameful civilian crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"15"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:97;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:8;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L2 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL2WeaponsEngineeringCrew;"
+			name=				"L2 weapons engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"2"
+			frequency=			"notRandom"
+
+			value=				"11000"
+			mass=				"600"
+			 
+			description=		"This tolerable civilian crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"18"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:94;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:11;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L3 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL3WeaponsEngineeringCrew;"
+			name=				"L3 weapons engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"3"
+			frequency=			"notRandom"
+
+			value=				"15000"
+			mass=				"600"
+			 
+			description=		"This decent civilian crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"24"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:91;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:14;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L4 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL4WeaponsEngineeringCrew;"
+			name=				"L4 weapons engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"4"
+			frequency=			"notRandom"
+
+			value=				"21000"
+			mass=				"600"
+			 
+			description=		"This skilled civilian crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"33"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:88;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:17;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L5 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL5WeaponsEngineeringCrew;"
+			name=				"L5 weapons engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"5"
+			frequency=			"notRandom"
+
+			value=				"30000"
+			mass=				"600"
+			 
+			description=		"This exceptional civilian crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"45"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:85;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:20;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L6 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL6WeaponsEngineeringCrew;"
+			name=				"L6 weapons engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"6"
+			frequency=			"notRandom"
+
+			value=				"42000"
+			mass=				"600"
+			 
+			description=		"This shameful military crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"60"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:83;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:22;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L7 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL7WeaponsEngineeringCrew;"
+			name=				"L7 weapons engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"7"
+			frequency=			"notRandom"
+
+			value=				"60000"
+			mass=				"600"
+			 
+			description=		"This tolerable military crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"78"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:81;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:24;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L8 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL8WeaponsEngineeringCrew;"
+			name=				"L8 weapons engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"8"
+			frequency=			"notRandom"
+
+			value=				"84000"
+			mass=				"600"
+			 
+			description=		"This decent military crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"100"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:79;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:26;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L9 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL9WeaponsEngineeringCrew;"
+			name=				"L9 weapons engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"9"
+			frequency=			"notRandom"
+
+			value=				"120000"
+			mass=				"600"
+			 
+			description=		"This skilled military crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"120"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:77;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:28;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L10 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL10WeaponsEngineeringCrew;"
+			name=				"L10 weapons engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"10"
+			frequency=			"notRandom"
+
+			value=				"160000"
+			mass=				"600"
+			 
+			description=		"This exceptional military crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"150"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:75;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:30;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L11 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL11WeaponsEngineeringCrew;"
+			name=				"L11 weapons engineering crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"11"
+			frequency=			"notRandom"
+
+			value=				"240000"
+			mass=				"600"
+			 
+			description=		"This shameful alien crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"180"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:74;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:31;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L12 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL12WeaponsEngineeringCrew;"
+			name=				"L12 weapons engineering crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"12"
+			frequency=			"notRandom"
+
+			value=				"330000"
+			mass=				"600"
+			 
+			description=		"This tolerable alien crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"210"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:73;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:32;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L13 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL13WeaponsEngineeringCrew;"
+			name=				"L13 weapons engineering crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"13"
+			frequency=			"notRandom"
+
+			value=				"480000"
+			mass=				"600"
+			 
+			description=		"This decent alien crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"250"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:72;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:33;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L14 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL14WeaponsEngineeringCrew;"
+			name=				"L14 weapons engineering crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"14"
+			frequency=			"notRandom"
+
+			value=				"660000"
+			mass=				"600"
+			 
+			description=		"This skilled alien crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"290"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:71;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:34;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L15 Auxiliary Weapons Engineering Crew -->
+
+	<ItemType UNID="&itCCL15WeaponsEngineeringCrew;"
+			name=				"L15 weapons engineering crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"15"
+			frequency=			"notRandom"
+
+			value=				"960000"
+			mass=				"600"
+			 
+			description=		"This exceptional alien crew member maintains and manages energy weapons to improve their damage output and matter weapons to improve their fire-rate."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"330"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"matterWeaponsEngineeringCrew"
+						 criteria=		"w~l -energyWeapon;"
+						 enhancement=	"+speed:70;"
+				 />
+				<Enhance type=			"energyWeaponsEngineeringCrew"
+						 criteria=		"w~l +energyWeapon;"
+						 enhancement=	"+hpBonus:35;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+<!-- ================================================================ -->
+					<!-- Shields Engineering Crew -->
+<!-- ================================================================ -->
+
+	<!-- L1 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL1ShieldsEngineeringCrew;"
+			name=				"L1 shields engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"1"
+			frequency=			"notRandom"
+
+			value=				"7500"
+			mass=				"600"
+			 
+			description=		"This shameful civilian crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"15"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:4;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L2 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL2ShieldsEngineeringCrew;"
+			name=				"L2 shields engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"2"
+			frequency=			"notRandom"
+
+			value=				"11000"
+			mass=				"600"
+			 
+			description=		"This tolerable civilian crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"18"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:8;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L3 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL3ShieldsEngineeringCrew;"
+			name=				"L3 shields engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"3"
+			frequency=			"notRandom"
+
+			value=				"15000"
+			mass=				"600"
+			 
+			description=		"This decent civilian crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"24"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:12;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L4 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL4ShieldsEngineeringCrew;"
+			name=				"L4 shields engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"4"
+			frequency=			"notRandom"
+
+			value=				"21000"
+			mass=				"600"
+			 
+			description=		"This skilled civilian crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"33"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:16;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L5 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL5ShieldsEngineeringCrew;"
+			name=				"L5 shields engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"5"
+			frequency=			"notRandom"
+
+			value=				"30000"
+			mass=				"600"
+			 
+			description=		"This exceptional civilian crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"45"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:20;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L6 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL6ShieldsEngineeringCrew;"
+			name=				"L6 shields engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"6"
+			frequency=			"notRandom"
+
+			value=				"42000"
+			mass=				"600"
+			 
+			description=		"This shameful military crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"60"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:23;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L7 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL7ShieldsEngineeringCrew;"
+			name=				"L7 shields engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"7"
+			frequency=			"notRandom"
+
+			value=				"60000"
+			mass=				"600"
+			 
+			description=		"This tolerable military crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"78"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:26;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L8 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL8ShieldsEngineeringCrew;"
+			name=				"L8 shields engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"8"
+			frequency=			"notRandom"
+
+			value=				"84000"
+			mass=				"600"
+			 
+			description=		"This decent military crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"100"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:29;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L9 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL9ShieldsEngineeringCrew;"
+			name=				"L9 shields engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"9"
+			frequency=			"notRandom"
+
+			value=				"120000"
+			mass=				"600"
+			 
+			description=		"This skilled military crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"120"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:32;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L10 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL10ShieldsEngineeringCrew;"
+			name=				"L10 shields engineering crew"
+			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"10"
+			frequency=			"notRandom"
+
+			value=				"160000"
+			mass=				"600"
+			 
+			description=		"This exceptional military crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"150"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:35;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L11 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL11ShieldsEngineeringCrew;"
+			name=				"L11 shields engineering crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"11"
+			frequency=			"notRandom"
+
+			value=				"240000"
+			mass=				"600"
+			 
+			description=		"This shameful alien crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"180"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:37;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+	
+	<!-- L12 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL12ShieldsEngineeringCrew;"
+			name=				"L12 shields engineering crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"12"
+			frequency=			"notRandom"
+
+			value=				"330000"
+			mass=				"600"
+			 
+			description=		"This tolerable alien crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"210"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:39;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L13 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL13ShieldsEngineeringCrew;"
+			name=				"L13 shields engineering crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"13"
+			frequency=			"notRandom"
+
+			value=				"480000"
+			mass=				"600"
+			 
+			description=		"This decent alien crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"250"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:41;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L14 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL14ShieldsEngineeringCrew;"
+			name=				"L14 shields engineering crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"14"
+			frequency=			"notRandom"
+
+			value=				"660000"
+			mass=				"600"
+			 
+			description=		"This skilled alien crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"290"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:43;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+	<!-- L15 Auxiliary Shields Engineering Crew -->
+
+	<ItemType UNID="&itCCL15ShieldsEngineeringCrew;"
+			name=				"L15 shields engineering crew"
+			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			inherit=			"&baCCAuxCrewBase;"
+			 
+			level=				"15"
+			frequency=			"notRandom"
+
+			value=				"960000"
+			mass=				"600"
+			 
+			description=		"This exceptional alien crew member maintains and manages shield generators to raise their damage absorption limit."
+	>
+	
+		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"330"
+				deviceSlots=	"0"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldsEngineeringCrew"
+						 criteria=		"s;"
+						 enhancement=	"+hpBonus:45;"
+				 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+	</ItemType>
+
+</TranscendenceModule>

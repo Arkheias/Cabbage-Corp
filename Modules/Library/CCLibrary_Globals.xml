@@ -1,0 +1,169 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+	 
+<!--
+	TECH LEVELS
+
+	  1		Personal (most humans can create/repair)
+	 2-3	Manufacturing (requires dedicated machines/devices)
+	 4-5	High-tech (requires special knowledge and/or sophisticated infrastructure)
+	 6-7	Restricted (technology available only to governments/corporations)
+	 8-9	Experimental (basic concepts understood; limited practice)
+	10-14	High Races (technology only available to Galactics)
+	15-20	Halo Races (technology only available to Ancients in globular clusters)
+	21-25	Hierodule (technology only available to hierodules)
+	26-50	Core Minds (technology only known to Core Minds)
+	 >50	Unknown (impossible or not known to be physically possible)
+-->
+<!-- ================================================================ -->
+						<!-- Cabbage Corp Globals -->
+<!-- ================================================================ -->
+	 
+
+<Globals>
+	(block Nil
+		(setq CCDeviceExchange 
+			(lambda (gReplacement)
+				(block Nil
+					(setq gCurrentFuel (shpGetFuelLeft gSource))
+					(setq gEnhancement (itmIsEnhanced gItem))
+					(setq gInitialDevice (itmGetType gItem))
+					
+					(shpRemoveDevice gSource gItem)
+					(objAddItem gSource (itmCreate gReplacement 1))
+					(shpInstallDevice gSource (itmCreate gReplacement 1))
+					(objRemoveItem gSource (itmCreate gInitialDevice 1))
+					
+					(if (not (eq gEnhancement Nil))
+						(block Nil
+							(switch
+								(itmMatches gInitialDevice "r")
+									(objEnumItems gSource "rI" theItem (shpEnhanceItem gSource theItem))
+								(itmMatches gInitialDevice "v")
+									(objEnumItems gSource "vI" theItem (shpEnhanceItem gSource theItem))
+							)
+						)
+					)
+					(setq gBaseFuel (shpGetFuelLeft gSource))
+					(shpConsumeFuel gSource (multiply (subtract gCurrentFuel gBaseFuel) -1))
+				)
+			)
+		)
+		
+		(setq intBuyModifiedItems 
+			(lambda (itemCount itemCost)
+				(block (itemsToBuy)
+					(setq itemsToBuy (itmCreate (itmGetType (scrGetItem gSCreen)) itemCount))
+					(objRemoveItem gSource gBaseItem 
+						(multiply itemCount 
+							(block Nil
+								(for counter 0	(subtract (count (itmGetStaticData gBaseItem 'CCBuyAndModify)) 1)
+									(if (eq (itmGetType (scrGetItem gScreen)) (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'Product))
+										(setq gCost (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'count))
+									)
+								)
+								gCost
+							)
+						)
+					)
+					(rpgBuyItem gSource itemsToBuy (multiply itemCount itemCost) (objGetDefaultCurrency gSource))
+				)
+			)
+		)
+		
+		(setq intCabbageGetFuelEfficiency 
+			(lambda (spaceObj)
+				(block (reactor)
+					(setq reactor (@ (objGetItems spaceObj "rI") 0))
+					(If (not reactor)
+						15		;The game defaults to 15 if no reactor is installed, so I didn't bother with a calculation for that case
+						(typGetDataField (itmGetType reactor) "fuelEfficiency")
+					)
+				)
+			)
+		)
+		
+		(setq intCabbageShpConsumePower 
+			(lambda (spaceObj fuelAmount)
+				(block (reactor)
+					(setq reactor (@ (objGetItems spaceObj "rI") 0))
+					(shpConsumeFuel gSource (divide (multiply fuelAmount 100)
+						(If (not reactor)
+							15
+							(typGetDataField (itmGetType reactor) "fuelEfficiency")
+						)
+					))
+				)
+			)
+		)
+		
+		(setq intCabbageCorpCrime 
+			(lambda (severity description)
+				(if (gr severity (int (objGetData gPlayerShip "CCCrimeSeverity")))
+					(block Nil
+						(objSetData gPlayerShip "CCCrimeSeverity" severity)
+						(objSetData gPlayerShip "CCCrime" description)
+					)
+				)
+			)
+		)
+		
+		(setq intCabbageCorpOnDestroy 
+			(lambda Nil
+				(block (CCKraken theDestroyer)
+					; Destroy items on the station
+					(intDestroyItems gSource)
+
+					; Create a Cabbage Corp Kraken to avenge the station
+					(setq CCKraken
+						(sysCreateShip &scCCCheops; (objGetNearestStargate gSource) &svCCCabbageCorp;)
+					)
+
+					; If someone destroyed the station, avenge
+					(setq theDestroyer aOrderGiver)
+					(if (and theDestroyer
+							(objCanAttack theDestroyer)
+							(not (eq (objGetSovereign theDestroyer) &svCCCabbageCorp;))
+						)
+						(block Nil
+							(objSendMessage gPlayerShip gSource "Security alert! Release the Kraken!")
+							(shpOrderAttack CCKraken theDestroyer)
+
+							; Since the cruiser is busy, deploy some transports to loot the station
+							(for i 1 (random 1 3)
+								(block (transport)
+									(setq transport
+										(sysCreateShip &scCCLorryNPC; (objGetNearestStargate gSource) &svCCCabbageCorp;)
+									)
+
+									(shpOrderLoot transport gSource)
+									(shpOrderGate transport)
+								)
+							)
+						)
+					)
+
+					; If the player destroyed the station, then she is banned
+					(if (and gPlayerShip (eq aOrderGiver gPlayerShip))
+						(intCabbageCorpCrime 3 (cat "the destruction of a " (objGetName gSource 4)))
+					)
+
+					; Take all the items from the station (so that others won't loot it)
+					(shpOrderLoot CCKraken gSource)
+
+					; Gate out
+					(shpOrderGate CCKraken)
+				)
+			)
+		)
+	)
+</Globals>
+
+<!--
+
+Add check for Cabbage Corp diplomatic immunity when being arrested for destroying stations, pay a fine instead of dying.
+Add check for cabbage corp premium membership at cabbage corp stations, buy a new identity and don't get arrested for having previously destroyed stations.
+
+-->
+	
+</TranscendenceModule>

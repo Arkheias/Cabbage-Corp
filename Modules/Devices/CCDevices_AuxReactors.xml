@@ -1,0 +1,413 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+	
+<!-- ================================================================ -->
+						<!-- Auxiliary Reactors-->
+<!-- ================================================================ -->
+
+	<!-- Auxiliary Siva 5MW reactor  -->
+
+	<ItemType UNID="&itCCAuxSiva5MWReactor;"
+			name=				"auxiliary S&#xed;va-5M reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"1"
+			frequency=			"veryrare"
+			value=				"900"
+			
+			mass=				"2000"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 5MW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-50"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:50		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 10MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva10MWReactor;"
+			name=				"auxiliary S&#xed;va-10M reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"2"
+			frequency=			"veryrare"
+			value=				"2100"
+			
+			mass=				"2500"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 10MW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-100"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:100		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 17MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva17MWReactor;"
+			name=				"auxiliary S&#xed;va-17M reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"3"
+			frequency=			"veryrare"
+			value=				"4000"
+			
+			mass=				"3000"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 17MW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-170"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:170		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 31MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva31MWReactor;"
+			name=				"auxiliary S&#xed;va-31M reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"4"
+			frequency=			"veryrare"
+			value=				"8200"
+			
+			mass=				"3500"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 31MW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-310"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:310		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 57MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva57MWReactor;"
+			name=				"auxiliary S&#xed;va-57M reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"5"
+			frequency=			"veryrare"
+			value=				"17400"
+			
+			mass=				"4000"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 57MW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-570"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:570		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 100MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva100MWReactor;"
+			name=				"auxiliary S&#xed;va-100M reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, military, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"6"
+			frequency=			"notRandom"
+			value=				"37000"
+			
+			mass=				"4500"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 100MW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-1000"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:1000		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 170MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva170MWReactor;"
+			name=				"auxiliary S&#xed;va-170M reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, military, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"7"
+			frequency=			"notRandom"
+			value=				"73000"
+			
+			mass=				"5000"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 150MW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-1700"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:1700		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 310MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva310MWReactor;"
+			name=				"auxiliary S&#xed;va-310M reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, military, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"8"
+			frequency=			"notRandom"
+			value=				"141000"
+			
+			mass=				"5500"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 310MW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-3100"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:3100		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 560MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva560MWReactor;"
+			name=				"auxiliary S&#xed;va-560M reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, military, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"9"
+			frequency=			"notRandom"
+			value=				"310000"
+			
+			mass=				"6000"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 560MW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-5600"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:5600		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 1000MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva1000MWReactor;"
+			name=				"auxiliary S&#xed;va-1G reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, military, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"10"
+			frequency=			"notRandom"
+			value=				"620000"
+			
+			mass=				"6500"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 1GW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-10000"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:10000		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 1700MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva1700MWReactor;"
+			name=				"auxiliary S&#xed;va-1.7G reactor"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"11"
+			frequency=			"notRandom"
+			value=				"1300000"
+			
+			mass=				"7000"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 1.7GW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-17000"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:17000		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 3000MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva3000MWReactor;"
+			name=				"auxiliary S&#xed;va-3G reactor"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"12"
+			frequency=			"notRandom"
+			value=				"2600000"
+			
+			mass=				"7500"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 3GW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-30000"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:30000		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 5500MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva5500MWReactor;"
+			name=				"auxiliary S&#xed;va-5.5G reactor"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"13"
+			frequency=			"notRandom"
+			value=				"5400000"
+			
+			mass=				"8000"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 5.5GW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-55000"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:55000		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 10000MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva10000MWReactor;"
+			name=				"auxiliary S&#xed;va-10G reactor"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"14"
+			frequency=			"notRandom"
+			value=				"11400000"
+			
+			mass=				"8500"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 10GW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-100000"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:100000		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auxiliary Siva 1800MW reactor -->
+
+	<ItemType UNID="&itCCAuxSiva18000MWReactor;"
+			name=				"auxiliary S&#xed;va-18G reactor"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, specialty"
+			inherit=			"&baCCAuxReactorBase;"
+			
+			level=				"15"
+			frequency=			"notRandom"
+			value=				"23000000"
+			
+			mass=				"9000"
+			
+			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 18GW, at the cost of slightly reduced efficiency."
+	>
+	
+		<Image imageID="&rsCCReactors;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"-180000"
+		/>
+		
+		<StaticData>
+			<CCAuxReactor>{powerUse:180000		efficiency:95}</CCAuxReactor>
+		</StaticData>
+	</ItemType>
+	
+</TranscendenceModule>

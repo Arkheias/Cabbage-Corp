@@ -1,0 +1,1114 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!--
+;showreference appears to do nothing for most weapons, including it anyway because vanilla game does that
+;45		1.3	shots/second	fast
+;20		3	shots/second	fast
+;15		3.8	shots/second	fast	
+;12		5	shots/second	fast	6	shots/second
+;10		6	shots/second	fast	
+;9		6	shots/second	fast	
+;8		7.5	shots/second	fast	
+;7		7.5	shots/second	fast	10	shots/second
+;6		10	shots/second	fast	15	shots/second
+;5		10	shots/second	fast	15	shots/second
+;4		15	shots/second	fast	15	shots/second
+;3		15	shots/second	fast	15	shots/second
+;2		30	shots/second	fast	30	shots/second
+;1		30	shots/second	fast	30	shots/second
+;0			shots/second	fast		shots/second
+;-1			shots/second	fast		shots/second
+-->
+
+
+<!-- ================================================================ -->
+				<!-- Launcher Howitzer Weapons -->
+<!-- ================================================================ -->
+<!-- Same scale as if it were an omni weapon -->
+<!-- Uses tracking modules as ammo? -->
+<!-- Need to add tracking effects-->
+<!-- Weapons work perfectly, but in the inventory, the ammo displays the amount of damage done by the first weapon that uses it (possibly).  Need to create dummy virtual weapon and find a way to have the ammo reference that weapon, thus not displaying false damage value.-->
+
+	<!-- Savoy M7 Launcher -->
+
+	<ItemType UNID="&itCCSavoyM7Launcher;"
+			name=				"Savoy M7 launcher"
+			level=				"4"
+			value=				"4300"
+			mass=				"3000"
+			frequency=			"veryrare"
+			attributes=			"Cabbage; MajorItem"
+
+			description=		"The Savoy M7 launcher was designed to fire light, guided rounds over long ranges.  Unfortunately, the weapon overheats quickly if fired continuously."
+			
+			sortName=			"Savoy M0007 launcher"
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+
+				fireRate=			"10"
+				powerUse=			"70"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+		>
+
+			<Missiles>
+				<Missile ammoID="&itCCT1GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"kinetic:3d4-1; momentum1; WMD1"
+						missileSpeed=	"50"
+						lifetime=		"120"
+						maneuverRate=	"1"
+
+						effect=			"&efKineticBoltDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+				
+				<Missile ammoID="&itCCT2GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"kinetic:3d4-1; momentum1; WMD1"
+						missileSpeed=	"55"
+						lifetime=		"110"
+						maneuverRate=	"3"
+
+						effect=			"&efKineticBoltDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+				
+				<Missile ammoID="&itCCT3GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"kinetic:3d4-1; momentum1; WMD1"
+						missileSpeed=	"60"
+						lifetime=		"100"
+						maneuverRate=	"10"
+
+						effect=			"&efKineticBoltDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+	
+	<!-- Savoy M16 Launcher -->
+
+	<ItemType UNID="&itCCSavoyM16Launcher;"
+			name=				"Savoy M12 launcher"
+			level=				"5"
+			value=				"10000"
+			mass=				"3000"
+			frequency=			"veryrare"
+			attributes=			"Cabbage; MajorItem"
+
+			description=		"The Savoy M16 launcher was designed to fire dense, guided rounds over long ranges.  Unfortunately, the weapon overheats quickly if fired continuously."
+			
+			sortName=			"Savoy M0016 launcher"
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+
+				fireRate=			"10"
+				powerUse=			"160"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+		>
+
+			<Missiles>
+				<Missile ammoID="&itCCT1GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"kinetic:5d4; momentum2; WMD1"
+						missileSpeed=	"50"
+						lifetime=		"120"
+						maneuverRate=	"1"
+
+						effect=			"&efKineticBoltDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+				
+				<Missile ammoID="&itCCT2GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"kinetic:5d4; momentum2; WMD1"
+						missileSpeed=	"55"
+						lifetime=		"110"
+						maneuverRate=	"3"
+
+						effect=			"&efKineticBoltDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+				
+				<Missile ammoID="&itCCT3GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"kinetic:5d4; momentum2; WMD1"
+						missileSpeed=	"60"
+						lifetime=		"100"
+						maneuverRate=	"10"
+
+						effect=			"&efKineticBoltDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+	
+	<!-- Savoy M32 Launcher -->
+
+	<ItemType UNID="&itCCSavoyM32Launcher;"
+			name=				"Savoy M32 launcher"
+			level=				"6"
+			value=				"26000"
+			mass=				"4000"
+			frequency=			"notrandom"
+			attributes=			"Cabbage; MajorItem; Military"
+
+			description=		"The Savoy M32 launcher was designed to fire heavy, guided rounds over long ranges.  Unfortunately, the weapon overheats quickly if fired continuously."
+			
+			sortName=			"Savoy M0032 launcher"
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+
+				fireRate=			"10"
+				powerUse=			"320"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+		>
+
+			<Missiles>
+				<Missile ammoID="&itCCT1GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=				"kinetic:3d12+1; momentum2; WMD2"
+						missileSpeed=	"50"
+						lifetime=		"120"
+						maneuverRate=	"1"
+						hitPoints=			"2"
+
+						effect=			"&efKineticBoltDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+				
+				<Missile ammoID="&itCCT2GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=				"kinetic:3d12+1; momentum2; WMD2"
+						missileSpeed=	"55"
+						lifetime=		"110"
+						maneuverRate=	"3"
+						hitPoints=			"2"
+
+						effect=			"&efKineticBoltDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+				
+				<Missile ammoID="&itCCT3GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=				"kinetic:3d12+1; momentum2; WMD2"
+						missileSpeed=	"60"
+						lifetime=		"100"
+						maneuverRate=	"10"
+						hitPoints=			"2"
+
+						effect=			"&efKineticBoltDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+
+	<!-- Savoy M55 Launcher -->
+
+	<ItemType UNID="&itCCSavoyM55Launcher;"
+			name=				"Savoy M55 launcher"
+			level=				"7"
+			value=				"56000"
+			mass=				"4000"
+			frequency=			"notrandom"
+			numberAppearing=	"1"
+			attributes=			"Cabbage; MajorItem; Military"
+
+			description=		"The Savoy M55 launcher was designed to fire guided, explosive shells over long ranges.  Unfortunately, the weapon overheats quickly if fired continuously."
+			
+			sortName=			"Savoy M0055 launcher"
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+
+				fireRate=			"10"
+				powerUse=			"550"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+		>
+
+			<Missiles>
+				<Missile ammoID="&itCCT1GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"blast:4d6+1; momentum3; WMD2"
+						missileSpeed=	"50"
+						lifetime=		"120"
+						maneuverRate=	"1"
+						hitPoints=		"4"
+
+						effect=			"&efBlastShellDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+				
+				<Missile ammoID="&itCCT2GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"blast:4d6+1; momentum3; WMD2"
+						missileSpeed=	"55"
+						lifetime=		"110"
+						maneuverRate=	"3"
+						hitPoints=		"4"
+
+						effect=			"&efBlastShellDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+				
+				<Missile ammoID="&itCCT3GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"blast:4d6+1; momentum3; WMD2"
+						missileSpeed=	"60"
+						lifetime=		"100"
+						maneuverRate=	"10"
+						hitPoints=		"4"
+
+						effect=			"&efBlastShellDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+	
+	<!-- Savoy M110 Launcher -->
+
+	<ItemType UNID="&itCCSavoyM110Launcher;"
+			name=				"Savoy M110 launcher"
+			level=				"8"
+			value=				"140000"
+			mass=				"5500"
+			frequency=			"notrandom"
+			numberAppearing=	"1"
+			attributes=			"Cabbage; MajorItem; Military"
+
+			description=		"The Savoy M110 launcher fires guided, high-explosive shells.  Unfortunately, the weapon overheats quickly if fired continuously."
+			
+			sortName=			"Savoy M0110 launcher"
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+
+				fireRate=			"10"
+				powerUse=			"1100"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+		>
+
+			<Missiles>
+				<Missile ammoID="&itCCT1GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"blast:4d12-1; momentum3; WMD3"
+						missileSpeed=	"50"
+						lifetime=		"120"
+						maneuverRate=	"1"
+						hitPoints=		"6"
+
+						effect=			"&efBlastShellDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+					</HitEffect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT2GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"blast:4d12-1; momentum3; WMD3"
+						missileSpeed=	"55"
+						lifetime=		"110"
+						maneuverRate=	"3"
+						hitPoints=		"6"
+
+						effect=			"&efBlastShellDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+					</HitEffect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT3GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"blast:4d12-1; momentum3; WMD3"
+						missileSpeed=	"60"
+						lifetime=		"100"
+						maneuverRate=	"10"
+						hitPoints=		"6"
+
+						effect=			"&efBlastShellDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+					</HitEffect>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+	
+	<!-- Savoy M160 Launcher -->
+		
+	<ItemType UNID="&itCCSavoyM160Launcher;"
+			name=				"Savoy M160 launcher"
+			level=				"9"
+			value=				"320000"
+			mass=				"6000"
+			frequency=			"veryrare"
+			numberAppearing=	"1"
+			attributes=			"Cabbage; MajorItem; Military"
+
+			description=		"The Savoy M160 launcher fires heavy, guided, high-explosive shells.  Unfortunately, the weapon overheats quickly if fired continuously."
+			
+			sortName=			"Savoy M0160 launcher"
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+
+				fireRate=			"10"
+				powerUse=			"1600"
+				recoil=				"2"
+
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+		>
+
+			<Missiles>
+				<Missile ammoID="&itCCT1GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"blast:6d12+1; momentum3; WMD4"
+						missileSpeed=	"50"
+						lifetime=		"120"
+						maneuverRate=	"1"
+						hitPoints=		"6"
+
+						effect=			"&efBlastShellDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+					</HitEffect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT2GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"blast:6d12+1; momentum3; WMD4"
+						missileSpeed=	"55"
+						lifetime=		"110"
+						maneuverRate=	"3"
+						hitPoints=		"6"
+
+						effect=			"&efBlastShellDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+					</HitEffect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT3GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"blast:6d12+1; momentum3; WMD4"
+						missileSpeed=	"60"
+						lifetime=		"100"
+						maneuverRate=	"10"
+						hitPoints=		"6"
+
+						effect=			"&efBlastShellDefault;"
+						fireEffect=		"&efBlastFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+					</HitEffect>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+	
+	<!-- Savoy M215 Launcher -->
+
+	<ItemType UNID="&itCCSavoyM215Launcher;"
+			name=				"Savoy M215 launcher"
+			level=				"10"
+			value=				"1000000"
+			mass=				"7000"
+			frequency=			"notrandom"
+			numberAppearing=	"1"
+			attributes=			"Cabbage; MajorItem; Military"
+
+			description=		"The Savoy M215 launcher fires light, guided, thermonuclear shells.  Unfortunately, the weapon overheats quickly if fired continuously."
+			
+			sortName=			"Savoy M0215 launcher"
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+
+				fireRate=			"9"
+				powerUse=			"2150"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+		>
+
+			<Missiles>
+				<Missile ammoID="&itCCT1GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"thermo:6d12+1; momentum3; WMD5"
+						missileSpeed=	"50"
+						lifetime=		"120"
+						maneuverRate=	"1"
+						hitPoints=		"10"
+
+						effect=			"&efThermoShellDefault;"
+						fireEffect=		"&efThermoFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+						<Flare
+								style=			"fadingBlast"
+								radius=			"100"
+								primaryColor=	"0xff, 0xff, 0xf0"
+								lifetime=		"8"
+						/>
+					</HitEffect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT2GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"thermo:6d12+1; momentum3; WMD5"
+						missileSpeed=	"55"
+						lifetime=		"110"
+						maneuverRate=	"3"
+						hitPoints=		"10"
+
+						effect=			"&efThermoShellDefault;"
+						fireEffect=		"&efThermoFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+						<Flare
+								style=			"fadingBlast"
+								radius=			"100"
+								primaryColor=	"0xff, 0xff, 0xf0"
+								lifetime=		"8"
+						/>
+					</HitEffect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT3GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"thermo:6d12+1; momentum3; WMD5"
+						missileSpeed=	"60"
+						lifetime=		"100"
+						maneuverRate=	"10"
+						hitPoints=		"10"
+
+						effect=			"&efThermoShellDefault;"
+						fireEffect=		"&efThermoFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+						<Flare
+								style=			"fadingBlast"
+								radius=			"100"
+								primaryColor=	"0xff, 0xff, 0xf0"
+								lifetime=		"8"
+						/>
+					</HitEffect>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+	
+	<!-- Savoy M550 Launcher -->
+
+	<ItemType UNID="&itCCSavoyM550Launcher;"
+			name=				"Savoy M550 launcher"
+			level=				"11"
+			value=				"1800000"
+			mass=				"7000"
+			frequency=			"veryrare"
+			numberAppearing=	"1"
+			attributes=			"Cabbage; MajorItem; Military"
+
+			description=		"The Savoy M550 launcher fires guided, thermonuclear shells.  Unfortunately, the weapon overheats quickly if fired continuously."
+			
+			sortName=			"Savoy M0550 launcher"
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+
+				fireRate=			"10"
+				powerUse=			"5500"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+		>
+
+			<Missiles>
+				<Missile ammoID="&itCCT1GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"thermo:10d12+4; momentum3; WMD5"
+						missileSpeed=	"50"
+						lifetime=		"120"
+						maneuverRate=	"1"
+						hitPoints=		"10"
+
+						effect=			"&efThermoShellDefault;"
+						fireEffect=		"&efThermoFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsExplosionsAG96;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="96" 
+								imageHeight="96"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+						<Flare
+								style=			"fadingBlast"
+								radius=			"150"
+								primaryColor=	"0xff, 0xff, 0xf0"
+								lifetime=		"8"
+						/>
+					</HitEffect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT2GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"thermo:10d12+4; momentum3; WMD5"
+						missileSpeed=	"55"
+						lifetime=		"110"
+						maneuverRate=	"3"
+						hitPoints=		"10"
+
+						effect=			"&efThermoShellDefault;"
+						fireEffect=		"&efThermoFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsExplosionsAG96;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="96" 
+								imageHeight="96"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+						<Flare
+								style=			"fadingBlast"
+								radius=			"150"
+								primaryColor=	"0xff, 0xff, 0xf0"
+								lifetime=		"8"
+						/>
+					</HitEffect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT3GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"thermo:10d12+4; momentum3; WMD5"
+						missileSpeed=	"60"
+						lifetime=		"100"
+						maneuverRate=	"10"
+						hitPoints=		"10"
+
+						effect=			"&efThermoShellDefault;"
+						fireEffect=		"&efThermoFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsExplosionsAG96;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="96" 
+								imageHeight="96"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+						<Flare
+								style=			"fadingBlast"
+								radius=			"150"
+								primaryColor=	"0xff, 0xff, 0xf0"
+								lifetime=		"8"
+						/>
+					</HitEffect>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+	
+	<!-- Savoy M1100 Launcher -->
+
+	<ItemType UNID="&itCCSavoyM1100Launcher;"
+			name=				"Savoy M1100 launcher"
+			level=				"12"
+			value=				"3640000"
+			mass=				"10000"
+			frequency=			"notrandom"
+			attributes=			"Cabbage; cabbageTwoSlots; MajorItem; Military"
+
+			description=		"The oversized Savoy M1100 launcher fires heavy, guided, thermonuclear shells.  Unfortunately, the weapon overheats quickly if fired continuously."
+			
+			sortName=			"Savoy M1100 launcher"
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+				deviceSlots=		"2"
+
+				damage=				"thermo:8d24+16; momentum5; WMD7"
+				fireRate=			"10"
+				powerUse=			"11000"
+				recoil=				"3"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+		>
+
+			<Missiles>
+				<Missile ammoID="&itCCT1GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"thermo:8d24+16; momentum5; WMD7"
+						missileSpeed=	"50"
+						lifetime=		"120"
+						maneuverRate=	"1"
+						hitPoints=		"20"
+
+						effect=			"&efThermoShellDefault;"
+						fireEffect=		"&efThermoFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+						<Flare
+								style=			"fadingBlast"
+								radius=			"180"
+								primaryColor=	"0xff, 0xff, 0xf0"
+								lifetime=		"8"
+						/>
+					</HitEffect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT2GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"thermo:8d24+16; momentum5; WMD7"
+						missileSpeed=	"55"
+						lifetime=		"110"
+						maneuverRate=	"3"
+						hitPoints=		"20"
+
+						effect=			"&efThermoShellDefault;"
+						fireEffect=		"&efThermoFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+						<Flare
+								style=			"fadingBlast"
+								radius=			"180"
+								primaryColor=	"0xff, 0xff, 0xf0"
+								lifetime=		"8"
+						/>
+					</HitEffect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT3GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"thermo:8d24+16; momentum5; WMD7"
+						missileSpeed=	"60"
+						lifetime=		"100"
+						maneuverRate=	"10"
+						hitPoints=		"20"
+
+						effect=			"&efThermoShellDefault;"
+						fireEffect=		"&efThermoFireDefault;"
+						sound=			"&snRecoillessCannon;"
+				>
+					<HitEffect
+							sound="&snArmorHit1;"
+					>
+						<Image imageID="&rsMediumExplosions;" 
+								imageX="0" 
+								imageY="0" 
+								imageWidth="64" 
+								imageHeight="64"
+								imageFrameCount="16"
+								imageTicksPerFrame="2"/>
+						<Flare
+								style=			"fadingBlast"
+								radius=			"180"
+								primaryColor=	"0xff, 0xff, 0xf0"
+								lifetime=		"8"
+						/>
+					</HitEffect>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+	
+	<!-- Savoy M1600 Launcher -->
+
+	<ItemType UNID="&itCCSavoyM1600Launcher;"
+			name=				"Savoy M1600 launcher"
+			level=				"13"
+			value=				"10700000"
+			mass=				"12000"
+			frequency=			"notrandom"
+			attributes=			"Alien; Cabbage; cabbageTwoSlots; MajorItem; NotForSale"
+
+			description=		"This alien launcher fires large, guided, plasma bursts.  Unfortunately, the weapon overheats quickly if fired continuously."
+			
+			sortName=			"Savoy M1600 launcher"
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+				deviceSlots=		"2"
+
+				fireRate=			"20"
+				powerUse=			"16000"
+				
+				counter=			"temperature"
+				counterActivate=	"3"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+		>
+
+			<Missiles>
+				<Missile ammoID="&itCCT1GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"plasma:18d24+6; WMD7"
+						missileSpeed=	"65"
+						lifetime=		"120"
+						maneuverRate=	"1"
+						hitPoints=		"30"
+
+						sound=			"&snLaserCannon;"
+						
+						vaporTrailLength=	"24"
+						vaporTrailWidth=	"150"
+						vaporTrailWidthInc=	"10"
+						vaporTrailColor=	"0x57, 0x38, 0x00"
+				>
+					<FireEffect>
+						<Flare
+								style=				"fadingBlast"
+								lifetime=			"6"
+								radius=				"80"
+								primaryColor=		"0xff, 0xff, 0xf0"
+						/>
+					</FireEffect>
+					
+					<Effect>
+						<MoltenBolt
+								width=				"8"
+								growth=				"24"
+								primaryColor=		"0xff, 0xed, 0xcd"
+								secondaryColor=		"0xff, 0xb3, 0x27"
+						/>
+					</Effect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT2GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"plasma:18d24+6; WMD7"
+						missileSpeed=	"70"
+						lifetime=		"111"
+						maneuverRate=	"3"
+						hitPoints=		"30"
+
+						sound=			"&snLaserCannon;"
+						
+						vaporTrailLength=	"24"
+						vaporTrailWidth=	"150"
+						vaporTrailWidthInc=	"10"
+						vaporTrailColor=	"0x57, 0x38, 0x00"
+				>
+					<FireEffect>
+						<Flare
+								style=				"fadingBlast"
+								lifetime=			"6"
+								radius=				"80"
+								primaryColor=		"0xff, 0xff, 0xf0"
+						/>
+					</FireEffect>
+					
+					<Effect>
+						<MoltenBolt
+								width=				"8"
+								growth=				"24"
+								primaryColor=		"0xff, 0xed, 0xcd"
+								secondaryColor=		"0xff, 0xb3, 0x27"
+						/>
+					</Effect>
+				</Missile>
+				
+				<Missile ammoID="&itCCT3GuidanceCartridge;"
+						type=			"missile"
+						
+						damage=			"plasma:18d24+6; WMD7"
+						missileSpeed=	"75"
+						lifetime=		"104"
+						maneuverRate=	"10"
+						hitPoints=		"30"
+
+						sound=			"&snLaserCannon;"
+						
+						vaporTrailLength=	"24"
+						vaporTrailWidth=	"150"
+						vaporTrailWidthInc=	"10"
+						vaporTrailColor=	"0x57, 0x38, 0x00"
+				>
+					<FireEffect>
+						<Flare
+								style=				"fadingBlast"
+								lifetime=			"6"
+								radius=				"80"
+								primaryColor=		"0xff, 0xff, 0xf0"
+						/>
+					</FireEffect>
+					
+					<Effect>
+						<MoltenBolt
+								width=				"8"
+								growth=				"24"
+								primaryColor=		"0xff, 0xed, 0xcd"
+								secondaryColor=		"0xff, 0xb3, 0x27"
+						/>
+					</Effect>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+
+	
+</TranscendenceModule>

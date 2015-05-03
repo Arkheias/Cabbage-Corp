@@ -1,0 +1,548 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!-- SHIP CLASSES -->
+
+<!--
+Object				Level	Value	Mass	Frequency
+Autosentinel		3		490		1000	common
+HeavyCeramicPlate	3		300		2500	uncommon
+LaserCannon			1		250		1000	common
+
+MIWraithAuton		2		380		1000	uncommon
+LightStealthPlating	2		130		2500	rare
+KaleMIRepeater		1		300		1000	uncommon
+-->
+
+	<!-- Auton, Mark I Wraith -->
+
+	<ShipClass UNID="&scCCMarkIWraithAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark I Wraith auton"
+			type=				""
+
+			attributes=			"auton, genericClass"
+			inherit=			"&baStdAutonBase;"
+			   
+			mass=				"1"
+			thrustRatio=		"6"
+			maxSpeed=			"25"
+			cargoSpace=			"0"
+
+			reactorPower=		"50"
+			maxArmor=			"2500"
+			maxDevices=			"3"
+			maxWeapons=			"1"
+
+			leavesWreck=		"0"
+	>
+
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCCLightStealthPlating;"
+			count=				"1"
+			enhancement=		"0x0B00"
+		/>	;the enhancement is radiation immunity
+		
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="6"/>
+			
+			<Device deviceID="&itCCKaleM1Repeater;"/>
+		</Devices>
+
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"6.0"
+		/>
+
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCF120Wraith;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+
+		<!-- AI and Behavior -->
+
+		<AISettings
+			fireRateAdj=		"15"
+			fireAccuracy=		"85"
+			perception=			"4"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			ignoreShieldsDown=	"true"
+		/>
+		
+		<Language>
+			<Text id="DeployAck">"\"mark I Wraith-class assault auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+<!--
+Object				Level	Value	Mass	Frequency
+300DDefender		4		2500	1000	rare
+PlasteelPlate		4		400		3000	common
+LaserCannon			1		250		1000	common
+HullPlateIonizer	2		1500	1500	uncommon
+MissileDefense		4		5000	1000	uncommon
+
+MIIWraithAuton		4		380		2000	veryrare
+1xStealthArmor		4		1000	5000	rare
+KaleM6Repeater		3		1500	2000	uncommon
+NapaS2Deflector		2		1000	1500	uncommon
+ArmorRepairDevice	4		3500	2000	rare
+-->
+
+	<!-- Auton, Mark II Wraith -->
+
+	<ShipClass UNID="&scCCMarkIIWraithAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark II Wraith auton"
+			type=				""
+
+			attributes=			"auton, genericClass"
+			inherit=			"&baStdAutonBase;"
+			   
+			mass=				"2"
+			thrustRatio=		"7"
+			maxSpeed=			"24"
+			cargoSpace=			"0"
+
+			reactorPower=		"200"
+			maxArmor=			"5000"
+			maxDevices=			"3"
+			maxWeapons=			"1"
+
+			leavesWreck=		"0"
+	>
+
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0B00"
+		/>	;the enhancement is radiation immunity
+		
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="6"/>
+			
+			<Device deviceID="&itCCKaleM6Repeater;"/>
+			<Device deviceID="&itCCNapaS2Deflector;" charges="4"/>
+			<Device deviceID="&itArmorRepairDevice;"/>
+		</Devices>
+
+		<Maneuver
+			maxRotationRate=	"12.0"
+			rotationAccel=		"4.0"
+		/>
+
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCF120Wraith;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+
+		<!-- AI and Behavior -->
+
+		<AISettings
+			fireRateAdj=		"15"
+			fireAccuracy=		"90"
+			perception=			"4"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			ignoreShieldsDown=	"true"
+		/>
+		
+		<Language>
+			<Text id="DeployAck">"\"mark II Wraith-class assault auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+<!--
+Object				Level	Value	Mass	Frequency
+1MBattleAuton		5		5000	5000	rare
+LightBlastPlate		5		1100	4000	uncommon
+ParticleBeamWeapon	4		3200	1500	common
+MonopoleDeflector	3		2200	1600	uncommon
+
+MIIIWraithAuton		6		12000	3000	veryrare
+1xHardStealthArmor	6		3600	5000	rare
+KaleM20Repeater		5		7400	2500	uncommon
+NapaS8Deflector		4		4000	3000	uncommon
+
+ArmorRepairDevice	4		3500	2000	rare
+
+RegeneratingNanos	4		350		1000	rare
+ShieldEnhancement	3		650		1		uncommon
+-->
+
+	<!-- Auton, Mark III Wraith -->
+
+	<ShipClass UNID="&scCCMarkIIIWraithAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark III Wraith auton"
+			type=				""
+
+			attributes=			"auton, genericClass"
+			inherit=			"&baStdAutonBase;"
+			   
+			mass=				"3"
+			thrustRatio=		"8"
+			maxSpeed=			"26"
+			cargoSpace=			"0"
+
+			reactorPower=		"600"
+			maxArmor=			"5000"
+			maxDevices=			"3"
+			maxWeapons=			"1"
+
+			leavesWreck=		"0"
+	>
+
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xHardenedStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0200"
+		/>	;the enhancement is regeneration
+		
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="6"/>
+			
+			<Device deviceID="&itCCKaleM20Repeater;"/>
+			<Device 
+				deviceID=		"&itCCNapaS8Deflector;"
+				charges=		"4"
+				enhancement=	"0x0103"
+			/>
+			<Device deviceID="&itArmorRepairDevice;"/>
+		</Devices>
+
+		<Maneuver
+			maxRotationRate=	"12.0"
+			rotationAccel=		"6.0"
+		/>
+
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCF120Wraith;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+
+		<!-- AI and Behavior -->
+
+		<AISettings
+			fireRateAdj=		"15"
+			fireAccuracy=		"95"
+			perception=			"4"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			ignoreShieldsDown=	"true"
+		/>
+		
+		<Language>
+			<Text id="DeployAck">"\"mark III Wraith-class assault auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+<!--
+Object				Level	Value	Mass	Frequency
+MIVWraithAuton		8		55000	4000	veryrare
+1xAdvStealthArmor	8		13000	5000	rare
+KaleM72Repeater		7		36000	3000	uncommon
+NapaS30Deflector	6		16000	5000	uncommon
+MIDRADISModule		5		6000	4000	veryrare
+
+RegeneratingNanos	4		350		1000	rare
+ShieldEnhancement	3		650		1		uncommon
+-->
+
+	<!-- Auton, Mark IV Wraith -->
+
+	<ShipClass UNID="&scCCMarkIVWraithAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark IV Wraith auton"
+			type=				""
+
+			attributes=			"auton, genericClass"
+			inherit=			"&baStdAutonBase;"
+			   
+			mass=				"4"
+			thrustRatio=		"9"
+			maxSpeed=			"28"
+			cargoSpace=			"0"
+
+			reactorPower=		"2000"
+			maxArmor=			"5000"
+			maxDevices=			"3"
+			maxWeapons=			"1"
+
+			leavesWreck=		"0"
+	>
+
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xAdvancedStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0200"
+		/>	;the enhancement is regeneration
+		
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="6"/>
+			
+			<Device deviceID="&itCCKaleM72Repeater;"/>
+			<Device 
+				deviceID=		"&itCCNapaS30Deflector;"
+				charges=		"4"
+				enhancement=	"0x0103"
+			/>
+			<Device deviceID="&itCCMIDRADISModule;"/>
+		</Devices>
+
+		<Maneuver
+			maxRotationRate=	"15.0"
+			rotationAccel=		"7.5"
+		/>
+
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCF120Wraith;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+
+		<!-- AI and Behavior -->
+
+		<AISettings
+			fireRateAdj=		"15"
+			fireAccuracy=		"95"
+			perception=			"4"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			ignoreShieldsDown=	"true"
+		/>
+		
+		<Language>
+			<Text id="DeployAck">"\"mark IV Wraith-class assault auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+<!--
+Object				Level	Value	Mass	Frequency
+MVWraithAuton		10		250000	5000	veryrare
+1xExpStealthArmor	10		45000	5000	rare
+KaleM260Repeater	9		190000	4000	uncommon
+NapaS100Deflector	8		65000	6000	uncommon
+MIIDRADISModule		7		21000	4500	veryrare
+
+RegeneratingNanos	4		350		1000	rare
+ShieldEnhancement	7		25000	10		common
+-->
+
+	<!-- Auton, Mark V Wraith -->
+
+	<ShipClass UNID="&scCCMarkVWraithAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark V Wraith auton"
+			type=				""
+
+			attributes=			"auton, genericClass"
+			inherit=			"&baStdAutonBase;"
+			   
+			mass=				"5"
+			thrustRatio=		"10"
+			maxSpeed=			"30"
+			cargoSpace=			"0"
+
+			reactorPower=		"6500"
+			maxArmor=			"5000"
+			maxDevices=			"3"
+			maxWeapons=			"1"
+
+			leavesWreck=		"0"
+	>
+
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xExperimentalStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0200"
+		/>	;the enhancement is regeneration
+		
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="6"/>
+			
+			<Device deviceID="&itCCKaleM260Repeater;"/>
+			<Device 
+				deviceID=		"&itCCNapaS100Deflector;"
+				charges=		"4"
+				enhancement=	"0x0103"
+			/>
+			<Device deviceID="&itCCMIIDRADISModule;"/>
+		</Devices>
+
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"9.0"
+		/>
+
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCF120Wraith;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+
+		<!-- AI and Behavior -->
+
+		<AISettings
+			fireRateAdj=		"15"
+			fireAccuracy=		"95"
+			perception=			"4"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			ignoreShieldsDown=	"true"
+		/>
+		
+		<Language>
+			<Text id="DeployAck">"\"mark V Wraith-class assault auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+<!-- ITEMS -->
+
+	<!-- Auton, Mark I Wraith -->
+
+	<ItemType UNID="&itCCMarkIWraithAuton;"
+			name=				"mark I Wraith auton;"
+			attributes=			"auton, cabbageCorp, minorItem"
+			  
+			level=				"2"
+			frequency=			"uncommon"
+			unknownType=		"&itUnknownAuton;"
+			  
+			value=				"380"
+			mass=				"1500"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+
+			description=		"For around 400 credits, Cabbage Corp's Wraith auton keeps you and your loved ones safe from harm. NOTE: For professional security needs, order the mark III version or higher."
+	>
+
+		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<autonShipClass>&scCCMarkIWraithAuton;</autonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark II Wraith -->
+
+	<ItemType UNID="&itCCMarkIIWraithAuton;"
+			name=				"mark II Wraith auton"
+			attributes=			"auton, commonwealth, minorItem"
+			  
+			level=				"4"
+			frequency=			"veryrare"
+			unknownType=		"&itUnknownAuton;"
+
+			value=				"2450"
+			mass=				"4000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+
+			description=		"This is a commercial auton primarily used for defending small stations. NOTE: For professional security needs, order the mark III version or higher."
+	>
+
+		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIIWraithAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark III Wraith -->
+
+	<ItemType UNID="&itCCMarkIIIWraithAuton;"
+			name=				"mark III Wraith auton"
+			attributes=			"auton, commonwealth, military, minorItem"
+			  
+			level=				"6"
+			frequency=			"veryrare"
+
+			value=				"12000"
+			mass=				"5000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+
+			description=		"The mark III Wraith auton was designed to provide security to stations in regions with high pirate activity. Commonwealth law restricts ownership of these autons without a military ID."
+	>
+
+		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIIIWraithAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark IV Wraith -->
+
+	<ItemType UNID="&itCCMarkIVWraithAuton;"
+			name=				"mark IV Wraith auton"
+			attributes=			"auton, commonwealth, military, minorItem"
+			  
+			level=				"8"
+			frequency=			"veryrare"
+
+			value=				"55000"
+			mass=				"7000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+
+			description=		"The mark IV Wraith auton was designed to provide protection for stations in regions with hostile alien activity. It utilizes a dedicated DRADIS system to aid in detecting hostile ships."
+	>
+
+		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIVWraithAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark V Wraith -->
+
+	<ItemType UNID="&itCCMarkVWraithAuton;"
+			name=				"mark V Wraith auton"
+			attributes=			"auton, commonwealth, military, minorItem"
+			  
+			level=				"10"
+			frequency=			"veryrare"
+
+			value=				"250000"
+			mass=				"8000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+
+			description=		"The experimental auton was designed to provide protection for reconnaissance vessels. It uses an advanced DRADIS system to aid in detecting hostile ships and experimental stealth armor to help avoid them."
+	>
+
+		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkVWraithAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+</TranscendenceModule>

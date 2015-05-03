@@ -1,0 +1,385 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!-- ================================================================ -->
+						<!-- Miscellaneous Base Devices -->
+<!-- ================================================================ -->
+<!-- Side-Mounted Device Base Class -->
+	
+	<ItemType UNID="&baCCAuxMountDeviceBase;"
+			name=				"(side-mounted device base class)"
+			virtual=			"true"
+			>
+
+		<Events>
+			
+			<CanBeInstalled>
+				(block (auxDeviceCount)
+					; Count the number of auxiliary devices installed
+					
+					(setq auxDeviceCount (count (objGetItems gSource "dI +auxMountDevice")))
+					
+					(switch
+						; We do not allow more than two auxiliary devices
+						(geq auxDeviceCount 2)
+							"Your ship already has two side-mounted devices; you cannot install another one."
+	
+						; Otherwise, we can install it
+						True
+						)
+					)
+			</CanBeInstalled>
+
+			<GetOverlayType>
+				(block (auxMountPos)
+					(setq auxMountPos (itmGetData gItem "auxMountPos"))
+					(switch
+						(eq auxMountPos 'frontLeft)
+							&ovAuxForwardLeftMount;
+							
+						(eq auxMountPos 'frontRight)
+							&ovAuxForwardRightMount;
+							
+						Nil
+						)
+					)
+			</GetOverlayType>
+
+			<OnInstall>
+				(block (leftFree rightFree)
+				
+					; At install time we mount this either on the left or the right of
+					; the ship's hull, depending on whether some weapon is already there.
+					
+					(setq leftFree True)
+					(setq rightFree True)
+					(enum (objGetItems gSource "dI +auxMountDevice") theDevice
+						(block (mountPos)
+							(setq mountPos (itmGetData theDevice "auxMountPos"))
+							(switch
+								(eq mountPos 'frontLeft)
+									(setq leftFree Nil)
+									
+								(eq mountPos 'frontRight)
+									(setq rightFree Nil)
+								)
+							)
+						)
+						
+					; Mount on the left or right
+					(switch
+						leftFree
+							(block Nil
+								(setq gItem (objSetItemData gSource gItem "auxMountPos" 'frontLeft))
+								(objSetDevicePos gSource gItem 75 20)
+								)
+								
+						rightFree
+							(block Nil
+								(setq gItem (objSetItemData gSource gItem "auxMountPos" 'frontRight))
+								(objSetDevicePos gSource gItem 285 20)
+								)
+						)
+					)
+			</OnInstall>
+
+			<OnUninstall>
+				(block Nil
+					; Clear out the mount position
+					(objSetItemData gSource gItem "auxMountPos" Nil)
+					)
+			</OnUninstall>
+		</Events>
+	</ItemType>
+
+<!-- Unshielded Side-Mounted Device Base Class -->
+	
+	<ItemType UNID="&baCCUnshieldedAuxMountDeviceBase;"
+			name=				"(unshielded side-mounted device base class)"
+			virtual=			"true"
+			>
+
+		<Events>
+			<OnUpdate>
+				(if (itmIsInstalled gItem)
+					(if (objIsDeviceEnabled gsource gItem)
+						(block (sum)
+							(setq armCount (shpGetArmorCount gplayership))
+							(for count 0 (subtract armCount 1)
+								(if (not (armIsRadiationImmune (objGetArmorType gPlayerShip count)))
+									(shpMakeRadioactive gSource)
+								)
+							)
+						)
+					)
+				)
+			</OnUpdate>
+			
+			<CanBeInstalled>
+				(block (auxDeviceCount)
+					; Count the number of auxiliary devices installed
+					
+					(setq auxDeviceCount (count (objGetItems gSource "dI +auxMountDevice")))
+					
+					(switch
+						; We do not allow more than two auxiliary devices
+						(geq auxDeviceCount 2)
+							"Your ship already has two side-mounted devices; you cannot install another one."
+	
+						; Otherwise, we can install it
+						True
+						)
+					)
+			</CanBeInstalled>
+
+			<GetOverlayType>
+				(block (auxMountPos)
+					(setq auxMountPos (itmGetData gItem "auxMountPos"))
+					(switch
+						(eq auxMountPos 'frontLeft)
+							&ovAuxForwardLeftMount;
+							
+						(eq auxMountPos 'frontRight)
+							&ovAuxForwardRightMount;
+							
+						Nil
+						)
+					)
+			</GetOverlayType>
+
+			<OnInstall>
+				(block (leftFree rightFree)
+				
+					; At install time we mount this either on the left or the right of
+					; the ship's hull, depending on whether some weapon is already there.
+					
+					(setq leftFree True)
+					(setq rightFree True)
+					(enum (objGetItems gSource "dI +auxMountDevice") theDevice
+						(block (mountPos)
+							(setq mountPos (itmGetData theDevice "auxMountPos"))
+							(switch
+								(eq mountPos 'frontLeft)
+									(setq leftFree Nil)
+									
+								(eq mountPos 'frontRight)
+									(setq rightFree Nil)
+								)
+							)
+						)
+						
+					; Mount on the left or right
+					(switch
+						leftFree
+							(block Nil
+								(setq gItem (objSetItemData gSource gItem "auxMountPos" 'frontLeft))
+								(objSetDevicePos gSource gItem 75 20)
+								)
+								
+						rightFree
+							(block Nil
+								(setq gItem (objSetItemData gSource gItem "auxMountPos" 'frontRight))
+								(objSetDevicePos gSource gItem 285 20)
+								)
+						)
+					)
+			</OnInstall>
+
+			<OnUninstall>
+				(block Nil
+					; Clear out the mount position
+					(objSetItemData gSource gItem "auxMountPos" Nil)
+					)
+			</OnUninstall>
+		</Events>
+	</ItemType>
+	
+<!-- ================================================================ -->
+						<!-- Miscellaneous Devices -->
+<!-- ================================================================ -->
+
+<!--
+;This was originally a joke... Now I intend for quantum CPUs to eventually become a form of upgrade currency.
+;The cyber defense is a result of the free antivirus software that comes with all Cabbage Corp CPU purchases.
+;I'm not sure if adding cyberdefense actually does anything yet.
+;The increased weight comes from the additional required cooling fan space radiator thingies (thermal paste not included).
+
+-->
+
+<!-- Dual Core Mnemonic Processor -->
+
+	<ItemType UNID="&itCCDualCoreProcessor;"
+			name=				"dual-core quantum CPU"
+			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty"
+			
+			level=				"6"
+			frequency=			"rare"
+			
+			value=				"16000"
+			mass=				"1500"
+
+			description=		"Cabbage Corp was the first commercial producer of dual-core quantum CPUs. Quantum CPUs are necessary for processing the instructions in a mnemonic memory cube.  This model has a cyber defense level of 6."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				cyberdefenselevel=	"6"
+				powerUse=			"30"
+		/>
+
+	</ItemType>
+	
+	<!-- Quad Core Mnemonic Processor -->
+
+	<ItemType UNID="&itCCQuadCoreProcessor;"
+			name=				"quad-core quantum CPU"
+			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty"
+			
+			level=				"7"
+			frequency=			"veryrare"
+			
+			value=				"34000"
+			mass=				"2500"
+
+			description=		"Cabbage Corp was the first commercial producer of quad-core quantum CPUs. Quantum CPUs are necessary for processing the instructions in a mnemonic memory cube.  This model has a cyber defense level of 7."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				cyberdefenselevel=	"7"
+				powerUse=			"45"
+		/>
+
+	</ItemType>
+	
+	<!-- Positronic Processor -->
+
+	<ItemType UNID="&itCCPositronicProcessor;"
+			name=				"Cabbage positronic CPU"
+			attributes=			"alien, cabbageCorp, majorItem, positronicCPU, quantumCPU, specialty"
+			
+			level=				"12"
+			frequency=			"notrandom"
+			
+			value=				"1500000"
+			mass=				"4000"
+
+			description=		"Cabbage Corp was the first producer of positronic CPUs. Positronic CPUs are necessary for processing the instructions in a mnemonic memory cube.  This model has a cyber defense level of 12."
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				cyberdefenselevel=	"12"
+				powerUse=			"300"
+		/>
+
+	</ItemType>
+	
+	<!-- micro Zero Point Module -->
+
+	<ItemType UNID="&itCCMicroZeroPointModule;"
+			name=				"micro Zero Point Module"
+			level=				"48"
+			value=				"335000000000000"
+			mass=				"2"
+			frequency=			"notrandom"
+			attributes=			"Alien; MajorItem; cabbageCorp; Specialty"
+
+			description=		"This alien device appears to work by extracting a near infinite amount of energy from an artificial universe.  Your ship can probably handle 5GW of power at most, at which rate the ZPM could last up to ten years."
+	>
+
+		<Image imageID="&rsCCReactors;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Invoke>
+				(intAutoInstall gSource gItem)
+		</Invoke>		
+		
+		<MiscellaneousDevice
+				deviceslots=	"0"
+				powerUse=		"-50000"
+		/>
+
+	</ItemType>
+	
+	<!-- Zero Point Module -->
+
+	<ItemType UNID="&itCCZeroPointModule;"
+			name=				"Zero Point Module"
+			level=				"72"
+			value=				"11000000000000000000000"
+			mass=				"6"
+			frequency=			"notrandom"
+			attributes=			"Alien; MajorItem; cabbageCorp; Specialty"
+
+			description=		"This alien device appears to work by extracting a near infinite amount of energy from an artificial universe.  Your ship can probably handle 5GW of power at most, at which rate the ZPM could last up to ten million years."
+	>
+
+		<Image imageID="&rsCCReactors;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Invoke>
+				(intAutoInstall gSource gItem)
+		</Invoke>		
+		
+		<MiscellaneousDevice
+				deviceslots=	"0"
+				powerUse=		"-50000"
+		/>
+
+	</ItemType>
+	
+	<!-- Diplomatic Identification Chip -->
+
+	<ItemType UNID="&itCCDiplomaticID;"
+			name=				"diplomatic identification chip"
+			level=				"5"
+			value=				"50000"
+			mass=				"0"
+			frequency=			"veryrare"
+			attributes=			"cabbageCorp, cabbagePolitical, cabbageDiplomaticID, ID, majorItem, smugglersHold, specialty"
+
+			description=		"This identification chip, once installed, will mark you as a diplomatic envoy of Cabbage Corp, thereby exempting your ship from being searched for contraband.  You can still be executed for crimes against humanity though."
+
+			sortName=			"identification chip, diplomatic"
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+		
+		<MiscellaneousDevice
+				deviceslots=	"0"
+				powerUse=		"0"
+		/>
+			
+		<Events>
+			<OnGlobalPaneInit>
+				; aScreenUNID is the UNID of the screen being shown
+				; aScreen is the screen name (if this is a local screen)
+				; aPane is the pane being shown
+				; Action only appears if a diplomatic identification chip is installed.
+				(if (eq (objGetItems gPlayership "*I +cabbageDiplomaticID") Nil)
+					Nil
+					(if (and (eq aScreenUNID &dsCorporateImprison;) (eq aPane "Default"))
+						(scrAddAction
+							gScreen
+							'Cabbage
+							0
+							"Use Diplomatic ID"
+							"U"
+							'default
+							(block Nil
+								(scrExitScreen gScreen 'forceUndock)
+							)
+						)
+					)
+				)
+			</OnGlobalPaneInit>
+		</Events>
+	</ItemType>
+
+</TranscendenceModule>

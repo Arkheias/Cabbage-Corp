@@ -1,0 +1,130 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!-- Playership: Lorry-class stealth transport, Eridani -->
+
+	<ShipClass UNID="&scCCLorryEridani;"
+			manufacturer=		"Cabbage Corp"
+			class=				"Lorry"
+			type=				"stealth transport"
+
+			attributes=			"00200000_PlayerShip,"
+			inherit=			"&scPlayerSapphireBase;"
+			characterClass=		"&unidPilgrimClass;"
+
+            size=               "58"
+			mass=				"200"
+			thrustRatio=		"0"
+			maxSpeed=			"0"
+			cargoSpace=			"150"
+			maxCargoSpace=		"400"
+
+			reactorPower=		"0"
+			fuelCapacity=		"10000"
+			fuelCriteria=		"f L:1"
+			
+			maxArmor=			"20000"
+			maxDevices=			"10"
+		>
+
+		<Armor>
+            <ArmorSection start="330" span="60" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="270" span="60" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="30"  span="60" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="210" span="60" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="90"  span="60" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="150" span="60" armorID="&itCCLightStealthPlating;" />
+		</Armor>
+
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="38"  posZ="6"  />
+			
+			<Device deviceID="&itCCOmniB1MiningLance;"/>
+			<Device deviceID="&itCCNapaS1Deflector;"/>
+			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
+			<Device deviceID="&itCCIonDrive;"/>
+		</Devices>
+
+		<Maneuver
+			maxRotationRate=    "4.5"
+			rotationAccel=      "0.5"
+		/>
+		
+		<Items>
+			<Item count="4d8"	item="&itHelium3FuelRod;"/>
+			<Item count="1"		item="&itCCPersonalBelongings;"/>
+		</Items>
+
+		<AISettings
+			fireRateAdj=        "10"
+			fireAccuracy=       "90"
+			perception=         "4"
+		/>
+
+		<Image imageID="&rsCCF120Lorry;" imageWidth="90" imageHeight="90" rotationCount="120" rotationColumns="12"/>
+
+		<Effects>
+			<Effect type="thrustMain"   posAngle="168"  posRadius="37"  posZ="0"  rotation="180" />
+			<Effect type="thrustMain"   posAngle="-168" posRadius="37"  posZ="0"  rotation="180" />
+		</Effects>
+
+		<PlayerSettings
+			desc=               "Cabbage Corp began production of the Lorry series in 2398. The Lorry-class was designed with minimal backup systems in order to maximize the available space for upgrades. It has six armor segments, a base crew capacity of four, and space for up to ten devices.  (Starts in Eridani)"
+			largeimage=         "&rsCCLargeLorry;"
+			initialClass=       "true"
+            startingCredits=    "10d12+80"
+		>
+
+
+			<ArmorDisplay>
+                <ShipImage imageID="&rsCCArmorHUDLorry;" imageWidth="136" imageHeight="136"/>
+
+				<ArmorSection name="forward"
+					imageID="&rsCCEIArmor6;" 
+					imageX="0" imageY="0" imageWidth="80" imageHeight="9"
+					destX="29" destY="24" hpX="55" hpY="18"
+					nameY="8" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
+
+				<ArmorSection name="fore-starboard"
+					imageID="&rsCCEIArmor6;" 
+					imageX="80" imageY="0" imageWidth="9" imageHeight="38"
+					destX="99" destY="31" hpX="90" hpY="44"
+					nameY="24" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+
+				<ArmorSection name="fore-port"
+					imageID="&rsCCEIArmor6;" 
+					imageX="89" imageY="0" imageWidth="9" imageHeight="38"
+					destX="29" destY="31" hpX="20" hpY="44"
+					nameY="40" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+				<ArmorSection name="aft-starboard"
+					imageID="&rsCCEIArmor6;" 
+					imageX="80" imageY="2" imageWidth="9" imageHeight="38"
+					destX="99" destY="69" hpX="90" hpY="80"
+					nameY="56" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+
+				<ArmorSection name="aft-port"
+					imageID="&rsCCEIArmor6;" 
+					imageX="89" imageY="2" imageWidth="9" imageHeight="38"
+					destX="29" destY="69" hpX="20" hpY="80"
+					nameY="72" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+				<ArmorSection name="aft"
+					imageID="&rsCCEIArmor6;" 
+					imageX="0" imageY="45" imageWidth="80" imageHeight="9"
+					destX="29" destY="105" hpX="55" hpY="105"
+					nameY="88" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+			</ArmorDisplay>
+
+			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;">
+			</ShieldDisplay>
+
+		</PlayerSettings>
+		
+		<StaticData>
+			<maxAuxCrew>4</maxAuxCrew>
+		</StaticData>
+	</ShipClass>
+	
+</TranscendenceModule>

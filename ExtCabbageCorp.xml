@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE TranscendenceExtension
+
+[
+<!ENTITY unidCCCabbageCorpLibrary				"0xDA27C000">
+
+<!ENTITY xtCCCabbageCorpExtension				"0xDA27C002">
+
+<!ENTITY rsCCCabbageCorpCover					"0xDA27CE40">
+
+
+]>
+
+<TranscendenceExtension UNID="&xtCCCabbageCorpExtension;" 
+    apiVersion=			"26"
+	Name=				"Cabbage Corp" 
+	credits=			"Arkheias"
+	coverImageID=		"&rsCCCabbageCorpCover;"
+>
+
+	<Library unid="&unidHumanSpaceLibrary;"/>
+    <Library unid="&unidCCCabbageCorpLibrary;"/>
+	
+	<Image UNID="&rsCCCabbageCorpCover;"	bitmap="Resources\CCCabbageCorpCover.jpg"				loadOnUse="true" />
+
+	
+</TranscendenceExtension>

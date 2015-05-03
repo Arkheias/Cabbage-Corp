@@ -1,0 +1,173 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+	<!-- Cabbage Corp Factory -->
+
+	<StationType UNID="&stCCFactory;"
+			name=				"Cabbage Corp manufacturing plant"
+			sovereign=			"&svCorporate;"
+			inherit=			"&baCCCabbageCorpStation;"
+			
+			dockScreen=			"Main"
+			abandonedScreen=	"&dsAbandonedStation;"
+			dockingPorts=		"8"
+			canAttack=			"true"
+
+			multiHull=			"true"
+			armorID=			"&itCC4xAdvancedTriniumArmor;"
+			hitPoints=			"800"
+			repairRate=			"5"
+			fireRateAdj=		"15"
+			explosionType=		"&vtThermoExplosion3;"
+			ejectaType=			"&vtWreckEjecta;"
+
+			attributes=			"cabbageCorp, corporateArms, corporateDecon, envAir, envEarth, envFire, envWater, friendly, independent, generic, human, majorStation, populated"
+			levelFrequency=		"-----  -rrur ----- ----- -----"
+			unique=				"inSystem"
+			locationCriteria=	"+planetary"
+			enemyExclusionRadius="75"
+
+			definiteArticle=	"true"
+	>
+
+		<Image imageID="&rsCCFactory;" imageX="0" imageY="0" imageWidth="160" imageHeight="256"/>
+
+		<Ships>
+			<Ship	count="1" class="&scCCMarkIVWraithAuton;" orders="patrol" patrolDist="30"/>
+			<Ship	count="1" class="&scCCMarkIVWraithAuton;" orders="patrol" patrolDist="25"/>
+			<Ship	count="1" class="&scCCMarkIVWraithAuton;" orders="patrol" patrolDist="20"/>
+			
+			<Lookup count="1" table="&tbCorpDefenders;"/>
+			<Lookup count="1d4" table="&tbCommPrivateCrafts;"/>
+		</Ships>
+
+		<Reinforcements minShips="4">
+			<Table>
+				<Ship	chance="15" class="&scCCMarkIVWraithAuton;" orders="patrol" patrolDist="30"/>
+				<Ship	chance="15" class="&scCCMarkIVWraithAuton;" orders="patrol" patrolDist="25"/>
+				<Ship	chance="15" class="&scCCMarkIVWraithAuton;" orders="patrol" patrolDist="20"/>
+				
+				<Lookup chance="30" table="&tbCorpDefenders;"/>
+				<Lookup chance="25" table="&tbCommPrivateCrafts;"/>
+			</Table>
+		</Reinforcements>
+
+		<Items>
+			<RandomItem count="2d6" 
+					criteria=		"w +cabbageCorp; -cabbageNotStandard; -NotForSale;"
+					levelFrequency=	"----- rucur"
+			/>
+
+			<RandomItem count="1d6" 
+					criteria=		"s +cabbageCorp; -cabbageNotStandard; -NotForSale;"
+					levelFrequency=	"----- rucur"
+			/>
+
+			<RandomItem count="2d6" 
+					criteria=		"d~w +cabbageCorp; -cabbageNotStandard; -NotForSale;"
+					levelFrequency=	"----- rucur"
+			/>
+
+			<RandomItem count="2d6" 
+					criteria=		"a +cabbageCorp; -cabbageNotStandard; -NotForSale;"
+					levelFrequency=	"----- rucur"
+			/>
+
+			<RandomItem count="1d6" 
+					criteria=		"* +cabbageCorp; -cabbageNotStandard; -NotForSale;"
+					levelFrequency=	"----- rucur"
+			/>
+		</Items>
+
+		<Trade currency="credit" max="200000" replenish="10000">
+			<Sell	criteria="m +cabbageCorp; -NotForSale;" priceAdj="110" inventoryAdj="400"/>
+			<Sell	criteria="*NU; -ID; -NotForSale;"	priceAdj="110"/>
+			
+			<buy	criteria="*NU -ID; -Illegal; -NotForSale;"	priceAdj="50"/>
+			<buy	criteria="*NU -ID; -Illegal; +NotForSale;"	priceAdj="10"/>
+			<buy	criteria="*DU -ID; -Illegal; -NotForSale;"	priceAdj="20"/>
+			<buy	criteria="*DU -ID; -Illegal; +NotForSale;"	priceAdj="4"/>
+
+			<Refuel			criteria="f +BasicFuel; L:1-11;" priceAdj="100"/>
+			<RepairArmor	criteria="a L:1-11;" priceAdj="100"/>
+			<ReplaceArmor	criteria="a L:1-11;" priceAdj="100"/>
+			<InstallDevice	criteria="d +cabbageCorp; L:1-11;" priceAdj="100"/>
+			<InstallDevice	criteria="d -cabbageCorp; L:1-11;" priceAdj="110"/>
+			<RemoveDevice	criteria="d L:1-11;" priceAdj="100"/>
+		</Trade>
+
+		<StaticData>
+			<NPCService>
+				(	;	service					level	margin
+					(	'repairArmor			10		100		)
+				)
+			</NPCService>
+		</StaticData>
+
+		<Events>
+			<OnContractGenerate>
+				(intGenerateIndustrialRequestContract1)
+			</OnContractGenerate>
+
+			<OnContractQuery>True</OnContractQuery>
+		</Events>
+
+		<DockScreens>
+			<Main>
+				<Panes>
+					<Default>
+						<OnPaneInit>
+							(scrSetDesc gScreen "Welcome to Cabbage Corp!")
+						</OnPaneInit>
+
+						<Actions>
+							
+							<Action name="Dock Services" key="D" default="1">
+								(rpgDockServices gPlayerShip {
+									checkMilitaryID: (not (objGetData gPlayerShip "CCPremiumIDImplant"))
+									})
+							</Action>
+
+							<Action name="Commodities Exchange" key="C">
+								(scrShowScreen gScreen &dsRPGCommoditiesExchange; {
+									checkMilitaryID: (not (objGetData gPlayerShip "CCPremiumIDImplant"))
+									})
+							</Action>
+
+							<Action name="Repair Items" key="R">
+								(scrShowScreen gScreen "&dsRPGRepairItem;" {
+									criteria: "*~aD +cabbageCorp; -alien;"
+									priceAdj: 65
+									})
+							</Action>
+							
+							<Action name="Special Deals" key="S">
+								(scrShowScreen gScreen "&dsCCCabbageCorpCurrentDeals;")
+							</Action>
+							
+							<Action name="Workshop" key="W">
+								(scrShowScreen gScreen "&dsCCCabbageCorpWorkshop;")
+							</Action>
+
+							<Action name="Undock" cancel="1" key="U">
+								<Exit/>
+							</Action>
+						</Actions>
+					</Default>
+				</Panes>
+			</Main>
+		</DockScreens>
+
+        <DockingPorts>
+            <Port x="29"    y="53" />
+            <Port x="81"    y="9" />
+            <Port x="94"    y="-52" />
+            <Port x="47"    y="-115" />
+            <Port x="-27"   y="-117" />
+            <Port x="-85"   y="-79" />
+            <Port x="-92"   y="-1" />
+            <Port x="-31"   y="53" />
+        </DockingPorts>
+	</StationType>
+
+</TranscendenceModule>

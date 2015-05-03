@@ -1,0 +1,290 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!-- ================================================================ -->
+						<!-- Standard Cargo Holds -->
+<!-- ================================================================ -->
+
+	<!-- Small Cargo Hold -->
+
+	<ItemType UNID="&itCCSmallCargoHold;"
+			name=				"small cargo hold"
+			attributes=			"cabbageCorp, crewQuarters, majorItem"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			  
+			level=				"1"
+			frequency=			"uncommon"
+			numberAppearing=	"1"
+
+			value=				"450"
+			mass=				"2000"
+			  
+			description=		"This pressurized cargo hold increases cargo capacity by up to 40 tons and includes crew quarters for one person."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<CargoHoldDevice
+				cargoSpace=		"40"
+		/>
+		
+		<StaticData>
+			<addCrewSpace>1</addCrewSpace>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualCargoHoldExpansion;	count:1		extraCost:0}
+					{product:&itCCCargoHoldExpansion;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+
+	<!-- Cargo Hold Expansion -->
+
+	<ItemType UNID="&itCCCargoHoldExpansion;"
+			name=				"cargo hold expansion"
+			attributes=			"cabbageCorp, crewQuarters, majorItem"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			  
+			level=				"3"
+			frequency=			"uncommon"
+			numberAppearing=	"1"
+
+			value=				"1500"
+			mass=				"1500"
+			  
+			description=		"This pressurized hold increases cargo capacity by up to 120 tons by utilizing an on-board VI to optimize cargo placement.  This model works in tandem with life support systems to increase crew capacity by two members."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<CargoHoldDevice
+				cargoSpace=		"120"
+		/>
+		
+		<StaticData>
+			<addCrewSpace>2</addCrewSpace>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualCargoHoldExpansion;	count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Miner's Cargo Bay -->
+
+	<ItemType UNID="&itCCMinersCargoBay;"
+			name=				"miners's cargo bay"
+			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, minersHold"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			  
+			level=				"4"
+			frequency=			"rare"
+
+			value=				"3500"
+			mass=				"2000"
+			  
+			description=		"This pressurized hold increases cargo capacity by up to 100 tons by utilizing an on-board VI to optimize cargo placement.  This model has grapples to bring both ore and autons on board and it works in tandem with life support systems to increase crew capacity by one member."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<CargoHoldDevice
+				cargoSpace=		"100"
+		/>
+		
+		<StaticData>
+			<addCrewSpace>1</addCrewSpace>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualMinersCargoBay;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Diplomat's Cargo Hold -->
+
+	<ItemType UNID="&itCCDiplomatsCargoHold;"
+			name=				"diplomat's cargo bay"
+			attributes=			"cabbageCorp, cabbagePolitical, crewQuarters, majorItem, smugglersHold"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			  
+			level=				"5"
+			frequency=			"rare"
+
+			value=				"5500"
+			mass=				"1500"
+			  
+			description=		"This scan-shielded hold increases cargo capacity by up to 70 tons by utilizing an on-board VI to optimize cargo placement. Stations will not officially check it for illegal items while it is installed and this model can work in tandem with life support systems to increase crew capacity by one member."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<CargoHoldDevice
+				cargoSpace=		"70"
+		/>
+		
+		<StaticData>
+			<addCrewSpace>1</addCrewSpace>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualDiplomatsCargoHold;	count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Military Cargo Bay -->
+
+	<ItemType UNID="&itCCMilitaryCargoBay;"
+			name=				"military cargo bay"
+			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, military, minersHold, smugglersHold"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			  
+			level=				"6"
+			frequency=			"veryrare"
+
+			value=				"12000"
+			mass=				"2500"
+			  
+			description=		"This scan-shielded hold increases cargo capacity by up to 50 tons by utilizing an on-board VI to optimize cargo placement. Stations will not check it for illegal items while it is installed and this model includes grapples to bring both ore and autons on board and can work in tandem with life support systems to increase crew capacity by one member."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<CargoHoldDevice
+				cargoSpace=		"50"
+		/>
+		
+		<StaticData>
+			<addCrewSpace>1</addCrewSpace>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualMilitaryCargoBay;	count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+<!-- ================================================================ -->
+						<!-- Expanded Cargo Holds -->
+<!-- ================================================================ -->
+
+<!-- Dual Cargo Hold Expansion -->
+
+	<ItemType UNID="&itCCDualCargoHoldExpansion;"
+			name=				"dual cargo hold expansion"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbageTwoSlots, crewQuarters, majorItem"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			
+			level=				"4"
+			frequency=			"rare"
+			numberAppearing=	"1"
+			
+			value=				"3200"
+			mass=				"4000"
+
+			description=		"This oversized hold increases cargo capacity by up to 250 tons by utilizing an on-board VI to optimize cargo placement.  This model works in tandem with life support systems to increase crew capacity by four members."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<CargoHoldDevice
+		        deviceSlots=    "2"
+				cargoSpace=		"250"
+		/>
+		
+		<StaticData>
+			<addCrewSpace>4</addCrewSpace>
+		</StaticData>
+	</ItemType>
+
+<!-- Expanded Miner's Cargo Bay -->
+
+	<ItemType UNID="&itCCDualMinersCargoBay;"
+			name=				"expanded miner's cargo bay"
+			attributes=			"autonBay, cabbageCorp, cabbageNotStandard, cabbageTwoSlots, crewQuarters, majorItem, minersHold"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			
+			level=				"5"
+			frequency=			"veryrare"
+			numberAppearing=	"1"
+			
+			value=				"7500"
+			mass=				"4500"
+
+			description=		"This oversized hold increases cargo capacity by up to 230 tons when by utilizing an on-board VI to optimize cargo placement.  This model has grapples to bring both ore and autons on board and it works in tandem with life support systems to increase crew capacity by three members."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<CargoHoldDevice
+		        deviceSlots=    "2"
+				cargoSpace=		"230"
+		/>
+		
+		<StaticData>
+			<addCrewSpace>3</addCrewSpace>
+		</StaticData>
+	</ItemType>
+
+	<!-- Expanded Diplomat's Cargo Hold -->
+
+	<ItemType UNID="&itCCDualDiplomatsCargoHold;"
+			name=				"expanded diplomat's cargo bay"
+			attributes=			"cabbageCorp, cabbageNotStandard, cabbagePolitical, cabbageTwoSlots, crewQuarters, majorItem, smugglersHold"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			  
+			level=				"6"
+			frequency=			"veryrare"
+
+			value=				"12000"
+			mass=				"4000"
+			  
+			description=		"This oversized scan-shielded hold increases cargo capacity by up to 200 tons by utilizing an on-board VI to optimize cargo placement. Stations will not officially check it for illegal items while it is installed and this model can work in tandem with life support systems to increase crew capacity by three members."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<CargoHoldDevice
+		        deviceSlots=    "2"
+				cargoSpace=		"200"
+		/>
+		
+		<StaticData>
+			<addCrewSpace>3</addCrewSpace>
+		</StaticData>
+	</ItemType>
+
+	<!-- Expanded Military Cargo Bay -->
+
+	<ItemType UNID="&itCCDualMilitaryCargoBay;"
+			name=				"expanded military cargo bay"
+			attributes=			"autonBay, cabbageCorp, cabbageNotStandard, cabbageTwoSlots, crewQuarters, majorItem, military, minersHold, smugglersHold"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			  
+			level=				"7"
+			frequency=			"notRandom"
+
+			value=				"26000"
+			mass=				"6000"
+			  
+			description=		"This oversized scan-shielded hold increases cargo capacity by up to 180 tons by utilizing an on-board VI to optimize cargo placement. Stations will not check it for illegal items while it is installed and this model includes grapples to bring both ore and autons on board and can work in tandem with life support systems to increase crew capacity by three members."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<CargoHoldDevice
+		        deviceSlots=    "2"
+				cargoSpace=		"180"
+		/>
+		
+		<StaticData>
+			<addCrewSpace>3</addCrewSpace>
+		</StaticData>
+	</ItemType>
+	
+</TranscendenceModule>

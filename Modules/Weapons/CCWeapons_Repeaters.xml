@@ -1,0 +1,2648 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+	
+<!-- ================================================================ -->
+					<!-- Standard Repeaters -->
+<!-- ================================================================ -->
+
+	<!-- Kale M1 Repeater -->
+
+	<ItemType UNID="&itCCKaleM1Repeater;"
+			name=				"Kale M1 repeater"
+			attributes=			"cabbageCorp, majorItem, repeater"
+			
+			level=				"1"
+			frequency=			"uncommon"
+			
+			value=				"300"
+			mass=				"1000"
+
+			description=		"The Kale M1 repeater fires a cluster of light, high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"kinetic:1; momentum1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"35"
+				powerUse=			"15"
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM1Repeater;		count:2		extraCost:0}
+					{product:&itCCOmniKaleM1Repeater;		count:1		extraCost:0}
+					{product:&itCCAuxKaleM1Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M3 Repeater -->
+
+	<ItemType UNID="&itCCKaleM3Repeater;"
+			name=				"Kale M3 repeater"
+			attributes=			"cabbageCorp, majorItem, repeater"
+			
+			level=				"2"
+			frequency=			"uncommon"
+			
+			value=				"670"
+			mass=				"1500"
+
+			description=		"The Kale M3 repeater fires a cluster of high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"kinetic:1d2; momentum1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"36"
+				powerUse=			"30"
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM3Repeater;		count:2		extraCost:0}
+					{product:&itCCOmniKaleM3Repeater;		count:1		extraCost:0}
+					{product:&itCCAuxKaleM3Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M6 Repeater -->
+
+	<ItemType UNID="&itCCKaleM6Repeater;"
+			name=				"Kale M6 repeater"
+			attributes=			"cabbageCorp, majorItem, repeater"
+			
+			level=				"3"
+			frequency=			"uncommon"
+			
+			value=				"1500"
+			mass=				"2000"
+
+			description=		"The Kale M6 repeater fires a cluster of dense, high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"kinetic:1d4; momentum1; WMD1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"38"
+				powerUse=			"60"
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM6Repeater;		count:2		extraCost:0}
+					{product:&itCCOmniKaleM6Repeater;		count:1		extraCost:0}
+					{product:&itCCAuxKaleM6Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M11 Repeater -->
+
+	<ItemType UNID="&itCCKaleM11Repeater;"
+			name=				"Kale M11 repeater"
+			attributes=			"cabbageCorp, majorItem, repeater"
+			
+			level=				"4"
+			frequency=			"uncommon"
+			
+			value=				"3200"
+			mass=				"2000"
+
+			description=		"The Kale M11 repeater fires a cluster of high-velocity explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"blast:1d4; momentum1; WMD2"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"40"
+				powerUse=			"110"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM11Repeater;		count:2		extraCost:0}
+					{product:&itCCOmniKaleM11Repeater;		count:1		extraCost:0}
+					{product:&itCCAuxKaleM11Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M20 Repeater -->
+
+	<ItemType UNID="&itCCKaleM20Repeater;"
+			name=				"Kale M20 repeater"
+			attributes=			"cabbageCorp, majorItem, repeater"
+			
+			level=				"5"
+			frequency=			"uncommon"
+			
+			value=				"7400"
+			mass=				"2500"
+
+			description=		"The Kale M20 repeater fires a cluster of high-velocity high-explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"blast:2d3; momentum1; WMD2"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"200"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM20Repeater;		count:2		extraCost:0}
+					{product:&itCCOmniKaleM20Repeater;		count:1		extraCost:0}
+					{product:&itCCAuxKaleM20Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M38 Repeater -->
+
+	<ItemType UNID="&itCCKaleM38Repeater;"
+			name=				"Kale M38 repeater"
+			attributes=			"cabbageCorp, majorItem, military, repeater"
+			
+			level=				"6"
+			frequency=			"uncommon"
+			
+			value=				"17000"
+			mass=				"3000"
+
+			description=		"The Kale M38 repeater fires a cluster of dense, high-velocity high-explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"blast:3d2+1; momentum1; WMD3"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"380"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM38Repeater;		count:2		extraCost:0}
+					{product:&itCCOmniKaleM38Repeater;		count:1		extraCost:0}
+					{product:&itCCAuxKaleM38Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M72 Repeater -->
+
+	<ItemType UNID="&itCCKaleM72Repeater;"
+			name=				"Kale M72 repeater"
+			attributes=			"cabbageCorp, majorItem, military, repeater"
+			
+			level=				"7"
+			frequency=			"uncommon"
+			
+			value=				"36000"
+			mass=				"3000"
+
+			description=		"The Kale M72 repeater fires a cluster of light, high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"thermo:3d4-1; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"45"
+				powerUse=			"720"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM72Repeater;		count:2		extraCost:0}
+					{product:&itCCOmniKaleM72Repeater;		count:1		extraCost:0}
+					{product:&itCCAuxKaleM72Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M140 Repeater -->
+
+	<ItemType UNID="&itCCKaleM140Repeater;"
+			name=				"Kale M140 repeater"
+			attributes=			"cabbageCorp, majorItem, military, repeater"
+			
+			level=				"8"
+			frequency=			"uncommon"
+			
+			value=				"83000"
+			mass=				"3500"
+
+			description=		"The Kale M140 repeater fires a cluster of high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"thermo:4d4-1; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"46"
+				powerUse=			"1400"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM140Repeater;		count:2		extraCost:0}
+					{product:&itCCOmniKaleM140Repeater;		count:1		extraCost:0}
+					{product:&itCCAuxKaleM140Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M260 Repeater -->
+
+	<ItemType UNID="&itCCKaleM260Repeater;"
+			name=				"Kale M260 repeater"
+			attributes=			"cabbageCorp, majorItem, military, repeater"
+			
+			level=				"9"
+			frequency=			"uncommon"
+			
+			value=				"190000"
+			mass=				"4000"
+
+			description=		"The Kale M260 repeater fires a cluster of dense, high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"thermo:5d4; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"48"
+				powerUse=			"2600"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM260Repeater;		count:2		extraCost:0}
+					{product:&itCCOmniKaleM260Repeater;		count:1		extraCost:0}
+					{product:&itCCAuxKaleM260Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M490 Repeater -->
+
+	<ItemType UNID="&itCCKaleM490Repeater;"
+			name=				"Kale M490 repeater"
+			attributes=			"cabbageCorp, majorItem, military, repeater"
+			
+			level=				"10"
+			frequency=			"uncommon"
+			
+			value=				"400000"
+			mass=				"4000"
+
+			description=		"The Kale M490 repeater fires a cluster of light, high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"plasma:4d6+1; momentum1; WMD5"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"40"
+				powerUse=			"4900"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM490Repeater;		count:2		extraCost:0}
+					{product:&itCCOmniKaleM490Repeater;		count:1		extraCost:0}
+					{product:&itCCAuxKaleM490Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M920 Repeater -->
+
+	<ItemType UNID="&itCCKaleM920Repeater;"
+			name=				"Kale M920 repeater"
+			attributes=			"alien, cabbageCorp, majorItem, repeater"
+			
+			level=				"11"
+			frequency=			"uncommon"
+			
+			value=				"940000"
+			mass=				"4500"
+
+			description=		"This alien dual repeater seems to fire a cluster of high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"plasma:6d6; momentum1; WMD6"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"9200"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM920Repeater;		count:2		extraCost:0}
+					{product:&itCCOmniKaleM920Repeater;		count:1		extraCost:0}
+					{product:&itCCAuxKaleM920Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M1700 Repeater -->
+
+	<ItemType UNID="&itCCKaleM1700Repeater;"
+			name=				"Kale M1700 repeater"
+			attributes=			"alien, cabbageCorp, majorItem, repeater"
+			
+			level=				"12"
+			frequency=			"uncommon"
+			
+			value=				"2200000"
+			mass=				"5000"
+
+			description=		"This alien dual repeater seems to fire a cluster of dense, high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"plasma:6d8+2; momentum1; WMD6"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"17000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM1700Repeater;	count:2		extraCost:0}
+					{product:&itCCOmniKaleM1700Repeater;	count:1		extraCost:0}
+					{product:&itCCAuxKaleM1700Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M3300 Repeater -->
+
+	<ItemType UNID="&itCCKaleM3300Repeater;"
+			name=				"Kale M3300 repeater"
+			attributes=			"alien, cabbageCorp, majorItem, repeater"
+			
+			level=				"13"
+			frequency=			"uncommon"
+			
+			value=				"4600000"
+			mass=				"5000"
+
+			description=		"This alien dual repeater seems to fire a cluster of light, high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"nano:7d8+3; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"33000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM3300Repeater;	count:2		extraCost:0}
+					{product:&itCCOmniKaleM3300Repeater;	count:1		extraCost:0}
+					{product:&itCCAuxKaleM3300Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M6300 Repeater -->
+
+	<ItemType UNID="&itCCKaleM6300Repeater;"
+			name=				"Kale M6300 repeater"
+			attributes=			"alien, cabbageCorp, majorItem, repeater"
+			
+			level=				"14"
+			frequency=			"uncommon"
+			
+			value=				"11000000"
+			mass=				"5500"
+
+			description=		"This alien dual repeater seems to fire a cluster of high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"nano:8d10+4; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"63000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM6300Repeater;	count:2		extraCost:0}
+					{product:&itCCOmniKaleM6300Repeater;	count:1		extraCost:0}
+					{product:&itCCAuxKaleM6300Repeater;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Kale M12000 Repeater -->
+
+	<ItemType UNID="&itCCKaleM12000Repeater;"
+			name=				"Kale M12000 repeater"
+			attributes=			"alien, cabbageCorp, majorItem, repeater"
+			
+			level=				"15"
+			frequency=			"uncommon"
+			
+			value=				"25000000"
+			mass=				"6000"
+
+			description=		"This alien dual repeater seems to fire a cluster of dense, high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"nano:10d12+2; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"45"
+				powerUse=			"120000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualKaleM12000Repeater;	count:2		extraCost:0}
+					{product:&itCCOmniKaleM12000Repeater;	count:1		extraCost:0}
+					{product:&itCCAuxKaleM12000Repeater;	count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+<!-- ================================================================ -->
+					<!-- Dual Repeaters -->
+<!-- ================================================================ -->
+
+	<!-- Dual Kale M1 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM1Repeater;"
+			name=				"dual Kale M1 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, repeater"
+			
+			level=				"2"
+			frequency=			"rare"
+			
+			value=				"640"
+			mass=				"2000"
+
+			description=		"The dual Kale M1 repeater fires a cluster of light, high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"kinetic:1; momentum1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"35"
+				powerUse=			"30"
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M3 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM3Repeater;"
+			name=				"dual Kale M3 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, repeater"
+			
+			level=				"3"
+			frequency=			"rare"
+			
+			value=				"1400"
+			mass=				"3000"
+
+			description=		"The dual Kale M3 repeater fires a cluster of high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"kinetic:1d2; momentum1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"36"
+				powerUse=			"60"
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M6 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM6Repeater;"
+			name=				"dual Kale M6 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, repeater"
+			
+			level=				"4"
+			frequency=			"rare"
+			
+			value=				"3200"
+			mass=				"4000"
+
+			description=		"The dual Kale M6 repeater fires a cluster of dense, high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"kinetic:1d4; momentum1; WMD1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"38"
+				powerUse=			"120"
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M11 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM11Repeater;"
+			name=				"dual Kale M11 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, repeater"
+			
+			level=				"5"
+			frequency=			"rare"
+			
+			value=				"6900"
+			mass=				"4000"
+
+			description=		"The dual Kale M11 repeater fires a cluster of high-velocity explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"blast:1d4; momentum1; WMD2"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"40"
+				powerUse=			"220"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M20 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM20Repeater;"
+			name=				"dual Kale M20 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, repeater"
+			
+			level=				"6"
+			frequency=			"rare"
+			
+			value=				"16000"
+			mass=				"5000"
+
+			description=		"The dual Kale M20 repeater fires a cluster of high-velocity high-explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"blast:2d3; momentum1; WMD2"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"400"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M38 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM38Repeater;"
+			name=				"dual Kale M38 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military, repeater"
+			
+			level=				"7"
+			frequency=			"rare"
+			
+			value=				"36000"
+			mass=				"6000"
+
+			description=		"The dual Kale M38 repeater fires a cluster of dense, high-velocity high-explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"blast:3d2+1; momentum1; WMD3"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"760"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M72 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM72Repeater;"
+			name=				"dual Kale M72 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military, repeater"
+			
+			level=				"8"
+			frequency=			"rare"
+			
+			value=				"77000"
+			mass=				"6000"
+
+			description=		"The dual Kale M72 repeater fires a cluster of light, high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"thermo:3d4-1; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"45"
+				powerUse=			"1400"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M140 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM140Repeater;"
+			name=				"dual Kale M140 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military, repeater"
+			
+			level=				"9"
+			frequency=			"rare"
+			
+			value=				"180000"
+			mass=				"7000"
+
+			description=		"The dual Kale M140 repeater fires a cluster of high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"thermo:4d4-1; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"46"
+				powerUse=			"2800"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M260 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM260Repeater;"
+			name=				"dual Kale M260 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military, repeater"
+			
+			level=				"10"
+			frequency=			"rare"
+			
+			value=				"410000"
+			mass=				"8000"
+
+			description=		"The dual Kale M260 repeater fires a cluster of dense, high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"thermo:5d4; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"48"
+				powerUse=			"5200"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M490 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM490Repeater;"
+			name=				"dual Kale M490 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military, repeater"
+			
+			level=				"11"
+			frequency=			"rare"
+			
+			value=				"860000"
+			mass=				"8000"
+
+			description=		"The dual Kale M490 repeater fires a cluster of light, high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"plasma:4d6+1; momentum1; WMD5"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"40"
+				powerUse=			"9600"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M920 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM920Repeater;"
+			name=				"dual Kale M920 repeater"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem, repeater"
+			
+			level=				"12"
+			frequency=			"rare"
+			
+			value=				"2000000"
+			mass=				"9000"
+
+			description=		"This alien dual repeater seems to fire a cluster of high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"plasma:6d6; momentum1; WMD6"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"18000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M1700 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM1700Repeater;"
+			name=				"dual Kale M1700 repeater"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem, repeater"
+			
+			level=				"13"
+			frequency=			"rare"
+			
+			value=				"4700000"
+			mass=				"10000"
+
+			description=		"This alien dual repeater seems to fire a cluster of dense, high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"plasma:6d8+2; momentum1; WMD6"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"34000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M3300 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM3300Repeater;"
+			name=				"dual Kale M3300 repeater"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem, repeater"
+			
+			level=				"14"
+			frequency=			"rare"
+			
+			value=				"10000000"
+			mass=				"10000"
+
+			description=		"This alien dual repeater seems to fire a cluster of light, high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"nano:7d8+3; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"66000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M6300 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM6300Repeater;"
+			name=				"dual Kale M6300 repeater"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem, repeater"
+			
+			level=				"15"
+			frequency=			"rare"
+			
+			value=				"24000000"
+			mass=				"11000"
+
+			description=		"This alien dual repeater seems to fire a cluster of high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"nano:8d10+4; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"130000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dual Kale M12000 Repeater -->
+
+	<ItemType UNID="&itCCDualKaleM12000Repeater;"
+			name=				"dual Kale M12000 repeater"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem, repeater"
+			
+			level=				"16"
+			frequency=			"rare"
+			
+			value=				"54000000"
+			mass=				"12000"
+
+			description=		"This alien dual repeater seems to fire a cluster of dense, high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"nano:10d12+2; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"45"
+				powerUse=			"240000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+	
+<!-- ================================================================ -->
+					<!-- Omnidirectional Repeaters -->
+<!-- ================================================================ -->
+
+	<!-- Omni Kale M1 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM1Repeater;"
+			name=				"omnidirectional Kale M1 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, omnidirectional, repeater"
+			
+			level=				"2"
+			frequency=			"veryrare"
+			
+			value=				"1300"
+			mass=				"2000"
+
+			description=		"This version of the Kale M1 repeater utilizes an automated targeting system for firing a cluster of light, high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"kinetic:1; momentum1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"35"
+				powerUse=			"20"
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M3 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM3Repeater;"
+			name=				"omnidirectional Kale M3 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, omnidirectional, repeater"
+			
+			level=				"3"
+			frequency=			"veryrare"
+			
+			value=				"2900"
+			mass=				"2500"
+
+			description=		"This version of the Kale M3 repeater utilizes an automated targeting system for firing a cluster of high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"kinetic:1d2; momentum1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"36"
+				powerUse=			"40"
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M6 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM6Repeater;"
+			name=				"omnidirectional Kale M6 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, omnidirectional, repeater"
+			
+			level=				"4"
+			frequency=			"veryrare"
+			
+			value=				"6400"
+			mass=				"3000"
+
+			description=		"This version of the Kale M6 repeater utilizes an automated targeting system for firing a cluster of dense, high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"kinetic:1d4; momentum1; WMD1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"38"
+				powerUse=			"80"
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M11 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM11Repeater;"
+			name=				"omnidirectional Kale M11 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, omnidirectional, repeater"
+			
+			level=				"5"
+			frequency=			"veryrare"
+			
+			value=				"14000"
+			mass=				"3000"
+
+			description=		"This version of the Kale M11 repeater utilizes an automated targeting system for firing a cluster of high-velocity explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"blast:1d4; momentum1; WMD2"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"40"
+				powerUse=			"150"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M20 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM20Repeater;"
+			name=				"omnidirectional Kale M20 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, omnidirectional, repeater"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"32000"
+			mass=				"3500"
+
+			description=		"This version of the Kale M20 repeater utilizes an automated targeting system for firing a cluster of high-velocity high-explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"blast:2d3; momentum1; WMD2"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"270"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M38 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM38Repeater;"
+			name=				"omnidirectional Kale M38 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military, omnidirectional, repeater"
+			
+			level=				"7"
+			frequency=			"veryrare"
+			
+			value=				"73000"
+			mass=				"4000"
+
+			description=		"This version of the Kale M38 repeater utilizes an automated targeting system for firing a cluster of dense, high-velocity high-explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"blast:3d2+1; momentum1; WMD3"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"510"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M72 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM72Repeater;"
+			name=				"omnidirectional Kale M72 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military, omnidirectional, repeater"
+			
+			level=				"8"
+			frequency=			"veryrare"
+			
+			value=				"150000"
+			mass=				"4000"
+
+			description=		"This version of the Kale M72 repeater utilizes an automated targeting system for firing a cluster of light, high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"thermo:3d4-1; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"45"
+				powerUse=			"960"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M140 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM140Repeater;"
+			name=				"omnidirectional Kale M140 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military, omnidirectional, repeater"
+			
+			level=				"9"
+			frequency=			"veryrare"
+			
+			value=				"360000"
+			mass=				"4500"
+
+			description=		"This version of the Kale M140 repeater utilizes an automated targeting system for firing a cluster of high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"thermo:4d4-1; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"46"
+				powerUse=			"1900"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M260 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM260Repeater;"
+			name=				"omnidirectional Kale M260 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military, omnidirectional, repeater"
+			
+			level=				"10"
+			frequency=			"veryrare"
+			
+			value=				"810000"
+			mass=				"5000"
+
+			description=		"This version of the Kale M260 repeater utilizes an automated targeting system for firing a cluster of dense, high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"thermo:5d4; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"48"
+				powerUse=			"3500"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M490 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM490Repeater;"
+			name=				"omnidirectional Kale M490 repeater"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military, omnidirectional, repeater"
+			
+			level=				"11"
+			frequency=			"veryrare"
+			
+			value=				"1700000"
+			mass=				"5000"
+
+			description=		"This version of the Kale M490 repeater utilizes an automated targeting system for firing a cluster of light, high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"plasma:4d6+1; momentum1; WMD5"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"40"
+				powerUse=			"6500"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M920 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM920Repeater;"
+			name=				"omnidirectional Kale M920 repeater"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, majorItem, omnidirectional, repeater"
+			
+			level=				"12"
+			frequency=			"veryrare"
+			
+			value=				"4000000"
+			mass=				"5500"
+
+			description=		"This alien repeater seems to utilize an automated targeting system for firing a cluster of high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"plasma:6d6; momentum1; WMD6"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"12000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M1700 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM1700Repeater;"
+			name=				"omnidirectional Kale M1700 repeater"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, majorItem, omnidirectional, repeater"
+			
+			level=				"13"
+			frequency=			"veryrare"
+			
+			value=				"9400000"
+			mass=				"6000"
+
+			description=		"This alien repeater seems to utilize an automated targeting system for firing a cluster of dense, high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"plasma:6d8+2; momentum1; WMD6"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"23000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M3300 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM3300Repeater;"
+			name=				"omnidirectional Kale M3300 repeater"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, majorItem, omnidirectional, repeater"
+			
+			level=				"14"
+			frequency=			"veryrare"
+			
+			value=				"20000000"
+			mass=				"6000"
+
+			description=		"This alien repeater seems to utilize an automated targeting system for firing a cluster of light, high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"nano:7d8+3; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"44000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M6300 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM6300Repeater;"
+			name=				"omnidirectional Kale M6300 repeater"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, majorItem, omnidirectional, repeater"
+			
+			level=				"15"
+			frequency=			"veryrare"
+			
+			value=				"47000000"
+			mass=				"6500"
+
+			description=		"This alien repeater seems to utilize an automated targeting system for firing a cluster of high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"nano:8d10+4; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"84000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni Kale M12000 Repeater -->
+
+	<ItemType UNID="&itCCOmniKaleM12000Repeater;"
+			name=				"omnidirectional Kale M12000 repeater"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, majorItem, omnidirectional, repeater"
+			
+			level=				"16"
+			frequency=			"veryrare"
+			
+			value=				"110000000"
+			mass=				"7000"
+
+			description=		"This alien repeater seems to utilize an automated targeting system for firing a cluster of dense, high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				repeating=			"5"
+				damage=				"nano:10d12+2; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"45"
+				powerUse=			"160000"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+	
+<!-- ================================================================ -->
+					<!-- Side-Mounted Repeaters -->
+<!-- ================================================================ -->
+
+	<!-- Side-Mounted Kale M1 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM1Repeater;"
+			name=				"side-mounted Kale M1 repeater"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"2"
+			frequency=			"veryrare"
+			
+			value=				"560"
+			mass=				"2000"
+
+			description=		"This version of the Kale M1 repeater has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires a cluster of light, high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"kinetic:1; momentum1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"35"
+				powerUse=			"15"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M3 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM3Repeater;"
+			name=				"side-mounted Kale M3 repeater"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"3"
+			frequency=			"veryrare"
+			
+			value=				"1250"
+			mass=				"2500"
+
+			description=		"This version of the Kale M3 repeater has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires a cluster of high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"kinetic:1d2; momentum1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"36"
+				powerUse=			"30"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M6 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM6Repeater;"
+			name=				"side-mounted Kale M6 repeater"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"4"
+			frequency=			"veryrare"
+			
+			value=				"2800"
+			mass=				"3000"
+
+			description=		"This version of the Kale M6 repeater has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires a cluster of dense, high-velocity kinetic projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"kinetic:1d4; momentum1; WMD1"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"38"
+				powerUse=			"60"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efKineticBoltDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M11 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM11Repeater;"
+			name=				"side-mounted Kale M11 repeater"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"5"
+			frequency=			"veryrare"
+			
+			value=				"6000"
+			mass=				"3000"
+
+			description=		"This version of the Kale M11 repeater has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires a cluster of high-velocity explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"blast:1d4; momentum1; WMD2"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"40"
+				powerUse=			"110"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M20 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM20Repeater;"
+			name=				"side-mounted Kale M20 repeater"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"14000"
+			mass=				"3500"
+
+			description=		"This version of the Kale M20 repeater has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires a cluster of high-velocity high-explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"blast:2d3; momentum1; WMD2"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"200"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M38 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM38Repeater;"
+			name=				"side-mounted Kale M38 repeater"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, military, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"7"
+			frequency=			"veryrare"
+			
+			value=				"32000"
+			mass=				"4000"
+
+			description=		"This version of the Kale M38 repeater has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires a cluster of dense, high-velocity high-explosive shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"blast:3d2+1; momentum1; WMD3"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"380"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M72 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM72Repeater;"
+			name=				"side-mounted Kale M72 repeater"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, military, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"8"
+			frequency=			"veryrare"
+			
+			value=				"67000"
+			mass=				"4000"
+
+			description=		"This version of the Kale M72 repeater has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires a cluster of light, high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"thermo:3d4-1; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"45"
+				powerUse=			"720"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M140 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM140Repeater;"
+			name=				"side-mounted Kale M140 repeater"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, military, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"9"
+			frequency=			"veryrare"
+			
+			value=				"155000"
+			mass=				"4500"
+
+			description=		"This version of the Kale M140 repeater has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires a cluster of high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"thermo:4d4-1; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"46"
+				powerUse=			"1400"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M260 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM260Repeater;"
+			name=				"side-mounted Kale M260 repeater"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, military, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"10"
+			frequency=			"veryrare"
+			
+			value=				"350000"
+			mass=				"5000"
+
+			description=		"This version of the Kale M260 repeater has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires a cluster of dense, high-velocity thermonuclear shells."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"thermo:5d4; momentum1; WMD4"
+				fireRate=			"20"
+				missileSpeed=		"60"
+				interaction=		"80"
+				lifetime=			"48"
+				powerUse=			"2600"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M490 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM490Repeater;"
+			name=				"side-mounted Kale M490 repeater"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, military, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"11"
+			frequency=			"veryrare"
+			
+			value=				"740000"
+			mass=				"5000"
+
+			description=		"This version of the Kale M490 repeater has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires a cluster of light, high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"plasma:4d6+1; momentum1; WMD5"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"40"
+				powerUse=			"4900"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M920 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM920Repeater;"
+			name=				"side-mounted Kale M920 repeater"
+			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"12"
+			frequency=			"veryrare"
+			
+			value=				"1700000"
+			mass=				"5500"
+
+			description=		"This alien repeater seems to have been modified for external mounting with its fire controls linked to a ship's primary weapon. It appears to fire a cluster of high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"plasma:6d6; momentum1; WMD6"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"9200"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M1700 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM1700Repeater;"
+			name=				"side-mounted Kale M1700 repeater"
+			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"13"
+			frequency=			"veryrare"
+			
+			value=				"4100000"
+			mass=				"6000"
+
+			description=		"This alien repeater seems to have been modified for external mounting with its fire controls linked to a ship's primary weapon. It appears to fire a cluster of dense, high-velocity plasma projectiles."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"plasma:6d8+2; momentum1; WMD6"
+				fireRate=			"20"
+				missileSpeed=		"65"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"17000"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M3300 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM3300Repeater;"
+			name=				"side-mounted Kale M3300 repeater"
+			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"14"
+			frequency=			"veryrare"
+			
+			value=				"8500000"
+			mass=				"6000"
+
+			description=		"This alien repeater seems to have been modified for external mounting with its fire controls linked to a ship's primary weapon. It appears to fire a cluster of light, high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"nano:7d8+3; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"41"
+				powerUse=			"33000"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M6300 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM6300Repeater;"
+			name=				"side-mounted Kale M6300 repeater"
+			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"15"
+			frequency=			"veryrare"
+			
+			value=				"20000000"
+			mass=				"6500"
+
+			description=		"This alien repeater seems to have been modified for external mounting with its fire controls linked to a ship's primary weapon. It appears to fire a cluster of high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"nano:8d10+4; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"43"
+				powerUse=			"63000"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+
+	<!-- Side-Mounted Kale M12000 Repeater -->
+
+	<ItemType UNID="&itCCAuxKaleM12000Repeater;"
+			name=				"side-mounted Kale M12000 repeater"
+			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, majorItem, repeater"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"16"
+			frequency=			"veryrare"
+			
+			value=				"46000000"
+			mass=				"7000"
+
+			description=		"This alien repeater seems to have been modified for external mounting with its fire controls linked to a ship's primary weapon. It appears to fire a cluster of dense, high-velocity nano bursts."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"5"
+				damage=				"nano:10d12+2; momentum1; WMD7"
+				fireRate=			"20"
+				missileSpeed=		"70"
+				interaction=		"80"
+				lifetime=			"45"
+				powerUse=			"120000"
+
+				deviceSlots=		"0"
+				external=			"true"	
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snRecoillessCannon;"
+		>
+
+			<Configuration aimTolerance="3">
+				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+	
+</TranscendenceModule>

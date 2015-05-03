@@ -1,0 +1,303 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!-- Playership: Oboroguruma-class stealth freighter, Eridani -->
+
+	<ShipClass UNID="&scCCOboroGurumaEridani;"
+			manufacturer=		"Cabbage Corp"
+			class=				"Oboroguruma"
+			type=				"stealth freighter"
+
+			attributes=			"00200000_PlayerShip, capitalShip, PlayerShipDrone"
+			dockscreen=			"&dsPlayerShip;"
+			inherit=			"&baPlayerDroneBase;"
+			characterClass=		"&unidPilgrimClass;"
+
+			size=				"155"
+			mass=				"6000"
+			thrustRatio=		"0"
+			maxSpeed=			"0"
+			cargoSpace=			"40000"
+			maxCargoSpace=		"50000"
+			
+
+			reactorPower=		"0"
+			fuelCapacity=		"10000"
+			fuelCriteria=		"f L:1"
+			
+			maxArmor=			"20000"
+			maxDevices=			"16"
+			
+			explosionType=		"&vtBlastExplosion4;"
+		>
+		
+		<Armor
+			armorID=			"&itCCLightStealthPlating;"
+			count=				"12"
+			/>
+
+		<Devices>
+			<DeviceSlot criteria="p" posAngle="0" posRadius="84" posZ="6"/>
+			
+			<Device deviceID="&itCCOmniSavoyM1Howitzer;"/>
+			<Device deviceID="&itCCDualNapaS1Deflector;"/>
+			<Device deviceID="&itCCDualSiva10MWReactor;"/>
+			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
+			<Device deviceID="&itCCDualPlasmaDrive;"/>
+		</Devices>
+
+		<Maneuver
+			maxRotationRate=	"3.0"
+			rotationAccel=		"0.5"
+		/>
+
+		<Interior>
+			<Compartment name="interior"
+					hitPoints=	"40"
+			/>
+			
+			<Compartment name="main drive"
+					type=		"mainDrive"
+					hitPoints=	"60"
+
+					posX=		"-45"
+					posY=		"0"
+					sizeX=		"30"
+					sizeY=		"15"
+					/>
+		</Interior>
+		
+		<Items>
+			<Item count="8d12"	item="&itHelium3FuelRod;"/>
+			<Item count="1"		item="&itCCPersonalBelongings;"/>
+		</Items>
+
+
+		<AISettings
+			fireRateAdj=		"10"
+			fireAccuracy=		"90"
+			perception=			"4"
+			
+			combatStyle=		"standOff"
+		/>
+
+		<Image imageID="&rsCCF120Oboroguruma;" imageWidth="180" imageHeight="180" rotationCount="120" rotationColumns="12"/>
+
+		<Effects>
+			<Effect type="thrustMain"		posAngle="167"	posRadius="63"	posZ="-2"	rotation="180"	effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"		posAngle="-167"	posRadius="63"	posZ="-2"	rotation="180"	effect="&efMainThrusterLarge;"/>
+			
+			<Effect type="thrustMain"		posAngle="165"	posRadius="63"	posZ="4"	rotation="180"	effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"		posAngle="-165"	posRadius="63"	posZ="4"	rotation="180"	effect="&efMainThrusterLarge;"/>
+		</Effects>
+			
+		<PlayerSettings
+			desc=               "The Oboroguruma-class stealth freighter is the oldest ship still in use in the Cabbage Corp fleet.  It has two secondary weapon hard-points each on the port and starboard sides that can swivel to attack any ship within a 190 degree range, twelve armor segments, and a base crew capacity of eight-hundred. (Starts in Eridani)"
+			largeimage=         "&rsCCLargeOboroguruma;"
+			initialClass=       "true"
+            startingCredits=    "10d24+160"
+		>
+
+
+			<ArmorDisplay>
+                <ShipImage imageID="&rsCCArmorHUDOboroguruma;" imageWidth="136" imageHeight="136"/>
+
+				;The armor images are just a black pixel (that the mask makes transparent) from the top-left corner of the armor HUD image
+                <ArmorSection name="0&#xb0; (forward)"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="55" hpY="15"
+                        nameY="5" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="300&#xb0;"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="85" hpY="29"
+                        nameY="14" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="30&#xb0;"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="25" hpY="29"
+                        nameY="23" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="300&#xb0;"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="88" hpY="45"
+                        nameY="32" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="60&#xb0;"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="22" hpY="45"
+                        nameY="41" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="270&#xb0; (starboard)"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="88" hpY="60"
+                        nameY="50" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="90&#xb0; (port)"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="22" hpY="60"
+                        nameY="59" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="240&#xb0;"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="89" hpY="75"
+                        nameY="68" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="120&#xb0;"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="21" hpY="75"
+                        nameY="77" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="210&#xb0;"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="81" hpY="93"
+                        nameY="86" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="150&#xb0;"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="29" hpY="93"
+                        nameY="95" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="180&#xb0; (aft)"
+                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+                        destX="0" destY="0" hpX="55" hpY="108"
+                        nameY="104" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+			</ArmorDisplay>
+
+			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;"/>
+
+            <ReactorDisplay>
+                <Image imageID="&rsZubrinReactor;" 
+                        imageX="0" imageY="0" imageWidth="256" imageHeight="60"/>
+
+                <PowerLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="60" imageWidth="202" imageHeight="14"
+                        destX="54" destY="9"/>
+
+                <FuelLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="74" imageWidth="194" imageHeight="14"
+                        destX="54" destY="37"/>
+
+                <FuelLowLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="88" imageWidth="194" imageHeight="14"/>
+
+                <ReactorText x="62" y="22" width="154" height="14"/>
+                <PowerLevelText x="62" y="0" width="154" height="9"/>
+                <FuelLevelText x="62" y="51" width="154" height="9"/>
+            </ReactorDisplay>
+		</PlayerSettings>
+		
+		<StaticData>
+			<drone912Data>
+				(   ; Index 0, ship UNID
+					&scCCOboroGurumaEridani;
+					
+					; Index 1, items
+					; Level 2 ship
+					(	
+						(&itCCOmniSavoyM1Howitzer;				1)
+						(&itCCDualNapaS1Deflector;				1)
+						(&itCCDualSiva10MWReactor;				1)
+						(&itCCAuxSiva5MWReactor;				1)
+						(&itCCDualPlasmaDrive;					1)
+						(&itCCLightStealthPlating;				12)
+					)
+					
+					; Index 2, auto-link weapons from index 1
+					
+					; Index 3, description override.
+					"The Oboroguruma-class stealth freighter is the oldest ship still in use in the Cabbage Corp fleet.  It has two secondary weapon hard-points each on the port and starboard sides that can swivel to attack any ship within a 190 degree range, twelve armor segments, and a base crew capacity of eight-hundred."
+					
+					; Index 4, ship icon for shipyards.
+					(&rsCCShipIcons; 2 2)
+				)
+			</drone912Data>
+			
+			<shipFirstPoint>
+				(   ; Order is: DevicePos (angle radius [Z]), DeviceFireArc (min max)
+					((0 84 6) (0 0))
+				)
+			</shipFirstPoint>
+			
+			<shipPoints>
+				(   ; Order is: DevicePos (angle radius [Z]), DeviceFireArc (min max)
+					((85 26 8) (350 180))
+					((85 26 -8) (350 180))
+					((-85 26 8) (180 10))
+					((-85 26 -8) (180 10))
+				)
+			</shipPoints>
+			
+			<shipCanvas>
+				((0 -80) (-23 -12) (-35 -12) (23 -12) (35 -12))
+			</shipCanvas>
+			
+			<drone912Shipyard>
+				; Index 0 = shipyard data.
+				;			subindex 0 = shipyard UNID
+				;			subindex 1 = (minimum level/rank required, maximum allowed)
+				;			subindex 2 = rank data string if defined, system level if Nil
+				; Index 1 = Alternate ship data override, see drone912Data for details.
+				(
+					; Commonwealth Dry Dock at level 2+ systems.
+					; Level 4 ship
+					((&stCommonwealthDryDock; 2)
+						(&scCCOboroGurumaEridani;
+							(	(&itCCOmniSavoyM2Howitzer;				1)
+								(&itCCDualNapaS2Deflector;				1)
+								(&itCCDualSiva17MWReactor;				1)
+								(&itCCDualTritiumPropulsionUpgrade;		1)
+								(&itCC2xStealthArmor;					12)
+							)
+						)
+					
+					)
+					
+					; Commonwealth Dry Dock at Eridani.
+					; Level 2 ship
+					((&stCommonwealthDryDock; (1 1))
+						(&scCCOboroGurumaEridani;
+							(	(&itCCSavoyM1Howitzer;					1)
+								(&itCCDualNapaS1Deflector;				1)
+								(&itCCDualSiva5MWReactor;				1)
+								(&itCCDualPlasmaDrive;					1)
+								(&itCCLightStealthPlating;				12)
+							)
+						)
+					)
+					
+					; St. K's Arcology
+					; Level 5 ship
+					((&stStKatsArcology;)
+						(&scCCOboroGurumaEridani;
+							(	(&itCCOmniSavoyM4Howitzer;				1)
+								(&itCCDualNapaS4Deflector;				1)
+								(&itCCDualSiva31MWReactor;				1)
+								(&itCCDualTritiumDrive;					1)
+								(&itCC4xStealthArmor;					12)
+							)
+						)
+					)
+					
+					; Ringer Shipyard
+					; Level 6 ship
+					(&stRingerShipyard;
+						; Index 1:  Alternate ship data.
+						(&scCCOboroGurumaEridani;
+							(	(&itCCOmniSavoyM8Howitzer;				1)
+								(&itCCDualNapaS8Deflector;				1)
+								(&itCCDualSiva57MWReactor;				1)
+								(&itCCDualChronimiumPropulsionUpgrade;	1)
+								(&itCC2xHardenedStealthArmor;			12)
+							)
+						)
+					)
+				)
+			</drone912Shipyard>
+			
+			<maxAuxCrew>800</maxAuxCrew>
+		</StaticData>
+	</ShipClass>
+
+
+</TranscendenceModule>

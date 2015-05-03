@@ -1,0 +1,231 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+	<!-- Cabbage Corp Outpost -->
+
+	<StationType UNID="&stCCOutpost;"
+			name=				"Cabbage Corp outpost"
+			sovereign=			"&svCorporate;"
+			inherit=			"&baCCCabbageCorpStation;"
+			
+			dockScreen=			"Main"
+			abandonedScreen=	"&dsAbandonedStation;"
+			dockingPorts=		"8"
+			noMapLabel=         "true"
+			canAttack=			"true"
+
+			multiHull=			"true"
+			armorID=			"&itCC4xExperimentalStealthArmor;"
+			hitPoints=			"1000"
+			repairRate=			"10"
+			fireRateAdj=		"10"
+			explosionType=		"&vtThermoExplosion4;"
+			ejectaType=			"&vtWreckEjecta;"
+
+			attributes=			"cabbageCorp, corporateArms, envAir, envEarth, envFire, envWater, friendly, independent, human, majorStation, populated"
+			levelFrequency=		"----- ---rr ur--- ----- -----"
+			unique=				"inSystem"
+			locationCriteria=	"-asteroids"
+			enemyExclusionRadius="100"
+
+			definiteArticle=	"true"
+	>
+	
+		<ImageVariants>
+			<Image	imageID="&rsMetallicAsteroids2;" imageX="210"  imageY="0"		imageWidth="140" imageHeight="140"/>
+			<Image	imageID="&rsMetallicAsteroids2;" imageX="210"  imageY="140"		imageWidth="140" imageHeight="140"/>
+			<Image	imageID="&rsMetallicAsteroids2;" imageX="210"  imageY="280"		imageWidth="140" imageHeight="140"/>
+		</ImageVariants>
+
+		<Ships>
+			<Ship	count="1" class="&scCCMarkVWraithAuton;" orders="patrol" patrolDist="24"/>
+			<Ship	count="1" class="&scCCMarkVWraithAuton;" orders="patrol" patrolDist="20"/>
+			<Ship	count="1" class="&scCCMarkVWraithAuton;" orders="patrol" patrolDist="16"/>
+			<Ship	count="1" class="&scCCMarkVWraithAuton;" orders="patrol" patrolDist="12"/>
+		</Ships>
+
+		<Reinforcements minShips="4">
+			<Table>
+				<Ship	chance="20" class="&scCCMarkVWraithAuton;" orders="patrol" patrolDist="24"/>
+				<Ship	chance="20" class="&scCCMarkVWraithAuton;" orders="patrol" patrolDist="20"/>
+				<Ship	chance="20" class="&scCCMarkVWraithAuton;" orders="patrol" patrolDist="16"/>
+				<Ship	chance="40" class="&scCCMarkVWraithAuton;" orders="patrol" patrolDist="12"/>
+			</Table>
+		</Reinforcements>
+
+		<Items>
+			<RandomItem count="2d6" 
+					criteria=		"w +cabbageCorp; -cabbageNotStandard; -NotForSale;"
+					levelFrequency=	"----- --ruc ur---"
+			/>
+
+			<RandomItem count="1d6" 
+					criteria=		"s +cabbageCorp; -cabbageNotStandard; -NotForSale;"
+					levelFrequency=	"----- --ruc ur---"
+			/>
+
+			<RandomItem count="1d6" 
+					criteria=		"d~w +cabbageCorp; -cabbageNotStandard; -NotForSale;"
+					levelFrequency=	"----- --ruc ur---"
+			/>
+
+			<RandomItem count="2d6" 
+					criteria=		"a +cabbageCorp; -cabbageNotStandard; -NotForSale;"
+					levelFrequency=	"----- --ruc ur---"
+			/>
+
+			<RandomItem count="1d6" 
+					criteria=		"* +cabbageCorp; -cabbageNotStandard; -NotForSale;"
+					levelFrequency=	"----- --ruc ur---"
+			/>
+		</Items>
+
+		<Trade currency="credit" max="200000" replenish="10000">
+			<Sell	criteria="m +cabbageCorp; -NotForSale;" priceAdj="120" inventoryAdj="400"/>
+			<Sell	criteria="*NU; -ID; -NotForSale;"	priceAdj="120"/>
+			
+			<buy	criteria="*NU -ID; -Illegal; -NotForSale;"	priceAdj="60"/>
+			<buy	criteria="*NU -ID; -Illegal; +NotForSale;"	priceAdj="15"/>
+			<buy	criteria="*DU -ID; -Illegal; -NotForSale;"	priceAdj="25"/>
+			<buy	criteria="*DU -ID; -Illegal; +NotForSale;"	priceAdj="5"/>
+
+			<Refuel			criteria="f +BasicFuel; L:1-13;" priceAdj="100"/>
+			<RepairArmor	criteria="a L:1-13;" priceAdj="100"/>
+			<ReplaceArmor	criteria="a L:1-13;" priceAdj="100"/>
+			<InstallDevice	criteria="d +cabbageCorp; L:1-13;" priceAdj="100"/>
+			<InstallDevice	criteria="d -cabbageCorp; L:1-13;" priceAdj="110"/>
+			<RemoveDevice	criteria="d L:1-13;" priceAdj="100"/>
+		</Trade>
+
+		<StaticData>
+			<NPCService>
+				(	;	service					level	margin
+					(	'repairArmor			12		100		)
+				)
+			</NPCService>
+		</StaticData>
+
+		<DockScreens>
+			<Main>
+				<Panes>
+					<Default>
+						<OnPaneInit>
+							(scrSetDesc gScreen "Welcome to one of Cabbage Corp's most top secret bases, please wait in the airlock while we get the nerve gas ready.")
+						</OnPaneInit>
+
+						<Actions>
+							
+							<Action name="Dock Services" key="D" default="1">
+								(rpgDockServices gPlayerShip {
+									checkMilitaryID: (not (objGetData gPlayerShip "CCPremiumIDImplant"))
+									})
+							</Action>
+
+							<Action name="Commodities Exchange" key="C">
+								(scrShowScreen gScreen &dsRPGCommoditiesExchange; {
+									checkMilitaryID: (not (objGetData gPlayerShip "CCPremiumIDImplant"))
+									})
+							</Action>
+
+							<Action name="Repair Items" key="R">
+								(scrShowScreen gScreen "&dsRPGRepairItem;" {
+									criteria: "*~aD +cabbageCorp;"
+									priceAdj: 70
+									})
+							</Action>
+							
+							<Action name="Special Deals" key="S">
+								(scrShowScreen gScreen "&dsCCCabbageCorpCurrentDeals;")
+							</Action>
+							
+							<Action name="Workshop" key="W">
+								(scrShowScreen gScreen "&dsCCCabbageCorpWorkshop;")
+							</Action>
+
+							<Action name="Undock" cancel="1" key="U">
+								<Exit/>
+							</Action>
+						</Actions>
+					</Default>
+				</Panes>
+			</Main>
+		</DockScreens>
+
+		<DockingPorts
+			portCount=  "8"
+			portRadius= "100"
+			maxDist=    "6"
+		/>
+
+		<Satellites>
+			<Orbitals distance="1d2+6" angle="1d31+14">
+				<Station type="&stCCOutpostTurret;"/>
+			</Orbitals>
+			<Orbitals distance="1d2+6" angle="1d31+74">
+				<Station type="&stCCOutpostTurret;"/>
+			</Orbitals>
+			<Orbitals distance="1d2+6" angle="1d31+134">
+				<Station type="&stCCOutpostTurret;"/>
+			</Orbitals>
+			<Orbitals distance="1d2+6" angle="1d31+194">
+				<Station type="&stCCOutpostTurret;"/>
+			</Orbitals>
+			<Orbitals distance="1d2+6" angle="1d31+254">
+				<Station type="&stCCOutpostTurret;"/>
+			</Orbitals>
+			<Orbitals distance="1d2+6" angle="1d31+314">
+				<Station type="&stCCOutpostTurret;"/>
+			</Orbitals>
+		</Satellites>
+	</StationType>
+
+	<!-- Cabbage Corp  Outpost Turret -->
+
+	<StationType UNID="&stCCOutpostTurret;"
+			name=               "Outpost defense turret"
+			sovereign=          "&svCCCabbageCorp;"
+			abandonedScreen=    "&dsAbandonedStation;"
+			noMapLabel=         "true"
+			canAttack=          "true"
+
+			mass=               "2000"
+			armorID=            "&itCC4xExperimentalStealthArmor;"
+			hitPoints=          "100"
+			repairRate=         "5"
+			structuralHitPoints="20"
+			fireRateAdj=        "10"
+			ejectaType=         "&vtWreckEjecta;"
+	>
+		<ImageVariants>
+			<Image	imageID="&rsMetallicAsteroids;" imageX="0"   imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	imageID="&rsMetallicAsteroids;" imageX="32"  imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	imageID="&rsMetallicAsteroids;" imageX="64"  imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	imageID="&rsMetallicAsteroids;" imageX="96"  imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	imageID="&rsMetallicAsteroids;" imageX="128" imageY="128"	imageWidth="32" imageHeight="32"/>
+
+			<Image	imageID="&rsMetallicAsteroids;" imageX="160"   imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	imageID="&rsMetallicAsteroids;" imageX="192"   imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	imageID="&rsMetallicAsteroids;" imageX="224"   imageY="128"	imageWidth="32" imageHeight="32"/>
+		</ImageVariants>
+
+		<Devices>
+			<Device deviceID="&itCCKaleM72Repeater;"  omnidirectional="true"/>
+			<Device deviceID="&itCCMarkIVCabbageEnhancer;"/>
+		</Devices>
+
+		<Language>
+			<Text id="AbandonedScreenDesc">
+				(cat "You are docked at a destroyed structure. "
+					"Leaking fluids and venting gases obscure the ruined machinery inside."
+				)
+			</Text>
+		</Language>
+
+		<DockingPorts
+			portCount=  "2"
+			portRadius= "24"
+			maxDist=    "3"
+		/>
+	</StationType>
+
+</TranscendenceModule>

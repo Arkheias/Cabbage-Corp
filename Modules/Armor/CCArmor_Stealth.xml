@@ -1,0 +1,542 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!--
+Inherent Armor Resistivities
+Armor Level		Immunity gained
+6				blinding immuity
+7				radiation immunity
+9				EMP immunity
+11				device damage immunity
+
+These values are hard-coded in the game and do not need to be listed for armor above the given level.
+
+I have decided based on a whim to have this stealth armor sorted such that the quadruple layered versions come after the double layered versions which come after the single layered versions.
+-->
+	
+<!-- ================================================================ -->
+						<!-- Standard Stealth Armor -->
+<!-- ================================================================ -->
+
+	<!-- Segment of Light Stealth Plating -->
+
+	<ItemType UNID="&itCCLightStealthPlating;"
+			name=				"[segment(s) of ] light stealth plating"
+			attributes=			"cabbageCorp, minorItem"
+			
+			level=				"2"
+			frequency=			"veryrare"
+			numberAppearing=	"1d4"
+			
+			value=				"5"
+			mass=				"2500"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a slightly reduced signature in most standard scanners, though they also make it slightly more difficult to repair."
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"40"
+				
+				repairTech=	"3"
+				
+				stealth=	"5"
+		/>
+	</ItemType>
+	
+	<!-- Segment of 1x Stealth Armor -->
+
+	<ItemType UNID="&itCC1xStealthArmor;"
+			name=				"[segment(s) of ] stealth armor"
+			attributes=			"cabbageCorp, minorItem"
+			
+			level=				"4"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			
+			value=				"1000"
+			mass=				"5000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a reduced signature in most standard scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"stealth armor, 1x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"125"
+				
+				repairTech=	"5"
+				
+				stealth=	"5"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCC2xStealthArmor;		count:2		extraCost:0}
+					{product:&itCC4xStealthArmor;		count:4		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+	<!-- Segment of 1x Hardened Stealth Armor -->
+
+	<ItemType UNID="&itCC1xHardenedStealthArmor;"
+			name=				"[segment(s) of ] hardened stealth armor"
+			attributes=			"cabbageCorp, military, minorItem"
+			
+			level=				"6"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			
+			value=				"3600"
+			mass=				"5000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a greatly reduced signature in most standard scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"hardened stealth armor, 1x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"190"
+				
+				repairTech=	"7"
+				
+				stealth=	"6"
+				radiationImmune=	"true"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCC2xHardenedStealthArmor;		count:2		extraCost:0}
+					{product:&itCC4xHardenedStealthArmor;		count:4		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+	<!-- Segment of 1x Advanced Stealth Armor -->
+
+	<ItemType UNID="&itCC1xAdvancedStealthArmor;"
+			name=				"[segment(s) of ] advanced stealth armor"
+			attributes=			"cabbageCorp, military, minorItem"
+			
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			
+			value=				"13000"
+			mass=				"5000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a greatly reduced signature in most scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"advanced stealth armor, 1x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"300"
+				
+				repairTech=	"9"
+				
+				stealth=	"7"
+				EMPImmune=			"true"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCC2xAdvancedStealthArmor;		count:2		extraCost:0}
+					{product:&itCC4xAdvancedStealthArmor;		count:4		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+	<!-- Segment of 1x Experimental Stealth Armor -->
+
+	<ItemType UNID="&itCC1xExperimentalStealthArmor;"
+			name=				"[segment(s) of ] experimental stealth armor"
+			attributes=			"cabbageCorp, military, minorItem"
+			
+			level=				"10"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			
+			value=				"50000"
+			mass=				"5000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a reduced signature in even the most advanced scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"experimental stealth armor, 1x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"500"
+				
+				repairTech=	"11"
+				
+				stealth=	"8"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCC2xExperimentalStealthArmor;		count:2		extraCost:0}
+					{product:&itCC4xExperimentalStealthArmor;		count:4		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+	<!-- Segment of 1x Theoretical Stealth Armor -->
+
+	<ItemType UNID="&itCC1xTheoreticalStealthArmor;"
+			name=				"[segment(s) of ] theoretical stealth armor"
+			attributes=			"cabbageCorp, alien, minorItem"
+			
+			level=				"12"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			
+			value=				"165000"
+			mass=				"5000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a greatly reduced signature in even the most advanced scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"theoretical stealth armor, 1x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"750"
+				
+				repairTech=	"13"
+				
+				stealth=	"9"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCC2xTheoreticalStealthArmor;		count:2		extraCost:0}
+					{product:&itCC4xTheoreticalStealthArmor;		count:4		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+<!-- ================================================================ -->
+						<!-- Dual Stealth Armor -->
+<!-- ================================================================ -->
+	
+	<!-- Segment of 2x Stealth Armor -->
+
+	<ItemType UNID="&itCC2xStealthArmor;"
+			name=				"[segment(s) of ] 2x-layered stealth armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			
+			level=				"4"
+			frequency=			"veryrare"
+			numberAppearing=	"1d4"
+			
+			value=				"2200"
+			mass=				"10000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a reduced signature in most standard scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"stealth armor, 2x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"250"
+				
+				repairTech=	"5"
+				
+				stealth=	"5"
+		/>
+	</ItemType>
+	
+	<!-- Segment of 2x Hardened Stealth Armor -->
+
+	<ItemType UNID="&itCC2xHardenedStealthArmor;"
+			name=				"[segment(s) of ] 2x-layered hardened stealth armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			numberAppearing=	"1d4"
+			
+			value=				"7700"
+			mass=				"10000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a greatly reduced signature in most standard scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"hardened stealth armor, 2x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"380"
+				
+				repairTech=	"7"
+				
+				stealth=	"6"
+				radiationImmune=	"true"
+		/>
+	</ItemType>
+	
+	<!-- Segment of 2x Advanced Stealth Armor -->
+
+	<ItemType UNID="&itCC2xAdvancedStealthArmor;"
+			name=				"[segment(s) of ] 2x-layered advanced stealth armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			
+			level=				"8"
+			frequency=			"veryrare"
+			numberAppearing=	"1d4"
+			
+			value=				"28000"
+			mass=				"10000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a greatly reduced signature in most scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"advanced stealth armor, 2x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"600"
+				
+				repairTech=	"9"
+				
+				stealth=	"7"
+				EMPImmune=			"true"
+		/>
+	</ItemType>
+	
+	<!-- Segment of 2x Experimental Stealth Armor -->
+
+	<ItemType UNID="&itCC2xExperimentalStealthArmor;"
+			name=				"[segment(s) of ] 2x-layered experimental stealth armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			
+			level=				"10"
+			frequency=			"veryrare"
+			numberAppearing=	"1d4"
+			
+			value=				"110000"
+			mass=				"10000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a reduced signature in even the most advanced scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"experimental stealth armor, 2x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="192" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"1000"
+				
+				repairTech=	"11"
+				
+				stealth=	"8"
+		/>
+	</ItemType>
+	
+	<!-- Segment of 2x Theoretical Stealth Armor -->
+
+	<ItemType UNID="&itCC2xTheoreticalStealthArmor;"
+			name=				"[segment(s) of ] 2x-layered theoretical stealth armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, alien, minorItem"
+			
+			level=				"12"
+			frequency=			"veryrare"
+			numberAppearing=	"1d4"
+			
+			value=				"350000"
+			mass=				"10000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a greatly reduced signature in even the most advanced scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"theoretical stealth armor, 2x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="192" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"1500"
+				
+				repairTech=	"13"
+				
+				stealth=	"9"
+		/>
+	</ItemType>
+	
+<!-- ================================================================ -->
+						<!-- Quad Stealth Armor -->
+<!-- ================================================================ -->
+	
+	<!-- Segment of 4x Stealth Armor -->
+
+	<ItemType UNID="&itCC4xStealthArmor;"
+			name=				"[segment(s) of ] 4x-layered stealth armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			
+			level=				"4"
+			frequency=			"notRandom"
+			numberAppearing=	"1d4"
+
+			value=				"4600"
+			mass=				"20000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a reduced signature in most standard scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"stealth armor, 4x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"500"
+				
+				repairTech=	"5"
+				
+				stealth=	"5"
+		/>
+	</ItemType>
+	
+	<!-- Segment of 4x Hardened Stealth Armor -->
+
+	<ItemType UNID="&itCC4xHardenedStealthArmor;"
+			name=				"[segment(s) of ] 4x-layered hardened stealth armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			
+			level=				"6"
+			frequency=			"notRandom"
+			numberAppearing=	"1d4"
+			
+			value=				"16500"
+			mass=				"20000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a greatly reduced signature in most standard scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"hardened stealth armor, 4x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"760"
+				
+				repairTech=	"7"
+				
+				stealth=	"6"
+				radiationImmune=	"true"
+		/>
+	</ItemType>
+	
+	<!-- Segment of 4x Advanced Stealth Armor -->
+
+	<ItemType UNID="&itCC4xAdvancedStealthArmor;"
+			name=				"[segment(s) of ] 4x-layered advanced stealth armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			
+			level=				"8"
+			frequency=			"notRandom"
+			numberAppearing=	"1d4"
+			
+			value=				"60000"
+			mass=				"20000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a greatly reduced signature in most scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"advanced stealth armor, 4x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"1200"
+				
+				repairTech=	"9"
+				
+				stealth=	"7"
+				EMPImmune=			"true"
+		/>
+	</ItemType>
+	
+	<!-- Segment of 4x Experimental Stealth Armor -->
+
+	<ItemType UNID="&itCC4xExperimentalStealthArmor;"
+			name=				"[segment(s) of ] 4x-layered experimental stealth armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			
+			level=				"10"
+			frequency=			"notRandom"
+			numberAppearing=	"1d4"
+			
+			value=				"230000"
+			mass=				"20000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a reduced signature in even the most advanced scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"experimental stealth armor, 4x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"2000"
+				
+				repairTech=	"11"
+				
+				stealth=	"8"
+		/>
+	</ItemType>
+	
+	<!-- Segment of 4x Theoretical Stealth Armor -->
+
+	<ItemType UNID="&itCC4xTheoreticalStealthArmor;"
+			name=				"[segment(s) of ] 4x-layered theoretical stealth armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, alien, minorItem"
+			
+			level=				"12"
+			frequency=			"notRandom"
+			numberAppearing=	"1d4"
+			
+			value=				"760000"
+			mass=				"20000"
+			
+			description=		"The special geometry and coatings of this armor provide a ship with a greatly reduced signature in even the most advanced scanners, though they also make it slightly more difficult to repair."
+
+			sortName=			"theoretical stealth armor, 4x"
+	>
+
+		<Image imageID="&rsCCArmorStealth;" imageX="288" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"3000"
+				
+				repairTech=	"13"
+				
+				stealth=	"9"
+		/>
+	</ItemType>
+	
+</TranscendenceModule>

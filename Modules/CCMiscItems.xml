@@ -1,0 +1,501 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+	
+<!-- ================================================================ -->
+							<!-- Cabbages -->
+<!-- ================================================================ -->
+
+;The value of each the cabbage types is based on the amount of calories in 250kg of them (unprepared if possible) according to WolframAlpha.
+
+
+	
+	<!-- Bok Choy -->
+	<ItemType UNID="&itCCBokChoy;"
+			name=				"[barrel(s) of ]bok choy"
+			level=				"1"
+			value=				"16"
+			mass=				"250"
+			frequency=			"uncommon"
+			numberAppearing=	"1d6"
+			attributes=			"cabbageCorp; Consumable; Food; Lux"
+
+			description=		"Bok choy is a type of headless cabbage that is more reminiscent of mustard or celery than actual cabbage."
+
+			sortName=			"bok choy, barrel of"
+	>
+
+		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	<!-- Napa Cabbages -->
+	<ItemType UNID="&itCCNapaCabbages;"
+			name=				"[barrel(s) of ]napa cabbages"
+			level=				"1"
+			value=				"20"
+			mass=				"250"
+			frequency=			"uncommon"
+			numberAppearing=	"1d6"
+			attributes=			"cabbageCorp; Consumable; Food; Lux;"
+
+			description=		"Napa cabbage is also know as celery cabbage, because some people though it looked like celery."
+
+			sortName=			"napa cabbages, barrel of"
+	>
+
+		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	<!-- Green Cabbages -->
+	<ItemType UNID="&itCCGreenCabbages;"
+			name=				"[barrel(s) of ]green cabbages"
+			level=				"1"
+			value=				"30"
+			mass=				"250"
+			frequency=			"common"
+			numberAppearing=	"1d6"
+			attributes=			"cabbageCorp; Consumable; Food; Lux"
+
+			description=		"Green cabbage is best cabbage."
+
+			sortName=			"green cabbages, barrel of"
+	>
+
+		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	<!-- Kohlrabi -->
+	<ItemType UNID="&itCCKohlrabi;"
+			name=				"[barrel(s) of ]kohlrabi"
+			level=				"1"
+			value=				"34"
+			mass=				"250"
+			frequency=			"uncommon"
+			numberAppearing=	"1d6"
+			attributes=			"cabbageCorp; Consumable; Food; Lux"
+
+			description=		"Kohlrabi is a type of cabbage that kind of looks like a turnip."
+
+			sortName=			"kohlrabi, barrel of"
+	>
+
+		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	<!-- Savoy Cabbages -->
+	<ItemType UNID="&itCCSavoyCabbages;"
+			name=				"[barrel(s) of ]savoy cabbages"
+			level=				"1"
+			value=				"34"
+			mass=				"250"
+			frequency=			"common"
+			numberAppearing=	"1d6"
+			attributes=			"cabbageCorp; Consumable; Food; Lux"
+
+			description=		"Savoy cabbages are among the pertiest of cabbages."
+
+			sortName=			"savoy cabbages, barrel of"
+	>
+
+		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	<!-- Red Cabbages -->
+	<ItemType UNID="&itCCRedCabbages;"
+			name=				"[barrel(s) of ]red cabbages"
+			level=				"1"
+			value=				"39"
+			mass=				"250"
+			frequency=			"common"
+			numberAppearing=	"1d6"
+			attributes=			"cabbageCorp; Consumable; Food; Lux"
+
+			description=		"Red cabbage is like green cabbage but more red (It's actually closer to magenta)."
+
+			sortName=			"red cabbages, barrel of"
+	>
+
+		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	<!-- Brussel Sprouts -->
+	<ItemType UNID="&itCCBrusselSprouts;"
+			name=				"[barrel(s) of ]brussel sprouts"
+			level=				"2"
+			value=				"54"
+			mass=				"250"
+			frequency=			"common"
+			numberAppearing=	"1d6"
+			attributes=			"cabbageCorp; Consumable; Food; Lux"
+
+			description=		"Brussels sprouts don't just look like tiny cabbages, they are!"
+
+			sortName=			"brussel Sprouts, barrel of"
+	>
+
+		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	<!-- Kale -->
+	<ItemType UNID="&itCCKale;"
+			name=				"[barrel(s) of ] kale"
+			level=				"2"
+			value=				"62"
+			mass=				"250"
+			frequency=			"uncommon"
+			numberAppearing=	"1d6"
+			attributes=			"cabbageCorp; Consumable; Food; Lux"
+
+			description=		"Kale is considered to be closer to wild cabbage than the domesticated forms of the vegetable."
+
+			sortName=			"kale, barrel of"
+	>
+
+		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+<!-- ================================================================ -->
+							<!-- Fuel -->
+<!-- ================================================================ -->
+
+	<!-- Fuel Unit-->
+
+	<ItemType UNID="&itCCFuelUnit;"
+			name=				"(Unit of Fuel)"
+			level=				"1"
+			value=				"1"
+			mass=				"1"
+			frequency=			"notrandom"
+			numberAppearing=	"0"
+			attributes=			"cabbageCorp; Consumable; Fuel; Res;"
+			virtual=			"True"
+			
+			data=				"1"
+
+			description=		"This is a single unit of fuel for using code to refuel ships, because telling the ship to consume negative fuel doesn't appear to refuel it."
+
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="672" imageWidth="96" imageHeight="96"/>
+		
+	</ItemType>
+
+	<!-- Uranium Assembly -->
+
+	<ItemType UNID="&itCCUraniumAssembly;"
+			name=				"uranium reactor assembly| uranium reactor assemblies"
+			level=				"6"
+			value=				"900"
+			mass=				"750"
+			frequency=			"uncommon"
+			numberAppearing=	"3d6"
+			attributes=			"cabbageCorp; Consumable; Fuel; Res;"
+			
+			data=				"30000"
+
+			description=		"This is an enriched bundle of uranium fuel rods.  Though more efficient than individual fuel rods, only reactors of tech level 6 or higher can accommodate them."
+
+			reverseArticle=		"true"
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="672" imageWidth="96" imageHeight="96"/>
+		
+		<Events>
+			<OnRefuel>
+				; Find or create an overlay that will generate radioactive waste
+				(if (eq gSource gPlayerShip)
+					(block (theID)
+						(enum (objGetOverlays gSource) theOverlay
+							(if (eq (objGetOverlayType gSource theOverlay) &ovCCUraniumWasteCheck;)
+								(setq theID theOverlay)
+								)
+							)
+							
+						(if theID
+							(objIncOverlayData gSource theID "wasteCount" (itmGetCount gItem))
+
+							(block Nil
+								(setq theID (objAddOverlay gSource &ovCCUraniumWasteCheck;))
+								(objSetOverlayData gSource theID "wasteCount" (multiply (itmGetCount gItem) 2))
+								(objSetOverlayData gSource theID "counter" 0)
+								)
+							)
+						)
+					)
+			</OnRefuel>
+		</Events>
+	</ItemType>
+	
+	<OverlayType UNID="&ovCCUraniumWasteCheck;">
+		<Events>
+			<OnUpdate>
+				; Create a barrel of waste every 50 cycles (25 seconds)
+				(if (geq (objIncOverlayData gSource aOverlayID "counter") 40)
+					(block (left)
+						(setq left (objIncOverlayData gSource aOverlayID "wasteCount" -1))
+						(objAddItem gSource (itmCreate &itRadioactiveWaste; 1))
+						(objSetOverlayData gSource aOverlayID "counter" 0)
+						
+						(plyMessage gPlayer "Uranium rod consumed")
+						
+						(if (eq left 0)
+							(objRemoveOverlay gSource aOverlayID)
+							)
+						)
+					)
+			</OnUpdate>
+		</Events>
+	</OverlayType>
+
+	<!-- Xenotite Assembly -->
+
+	<ItemType UNID="&itCCXenotiteAssembly;"
+			name=				"xe3000notite reactor assembly| xenotite reactor assemblies"
+			level=				"8"
+			value=				"1200"
+			mass=				"180"
+			frequency=			"common"
+			numberAppearing=	"3d6"
+			attributes=			"BasicFuel; cabbageCorp; Consumable; Fuel"
+
+			data=				"120000"
+			
+			description=		"This is an enriched bundle of xenotite fuel rods.  Though more efficient than individual fuel rods, only reactors of tech level 8 or higher can accommodate them."
+	>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	<!-- Pteracnium Assembly-->
+
+	<ItemType UNID="&itCCPteracniumAssembly;"
+			name=				"pteracnium reactor assembly| pteracnium reactor assemblies"
+			level=				"10"
+			value=				"3000"
+			mass=				"180"
+			frequency=			"common"
+			numberAppearing=	"3d6"
+			attributes=			"BasicFuel; cabbageCorp; Consumable; Fuel"
+
+			data=				"300000"
+			
+			description=		"This is an enriched bundle of pteracnium fuel rods.  Though more efficient than individual fuel rods, only reactors of tech level 10 or higher can accommodate them."
+	>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	<!-- Hadron-vacuum Assembly -->
+
+	<ItemType UNID="&itCCHadronVacuumModule;"
+			name=				"hadron-vacuum reactor module"
+			level=				"12"
+			value=				"15000"
+			mass=				"300"
+			frequency=			"common"
+			numberAppearing=	"3d6"
+			attributes=			"BasicFuel; cabbageCorp; Consumable; Fuel; ZeroPoint"
+
+			data=				"1500000"
+			
+			description=		"This is an enriched mass of hadron-vacuum fuel.  Though more efficient than individual fuel cells, only reactors of tech level 12 or higher can accommodate them."
+	>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	<!-- Zero-Point Crystal -->
+
+	<ItemType UNID="&itCCZeroPointCrystal;"
+			name=				"zero-point crystal"
+			level=				"9"
+			value=				"6000"
+			mass=				"2"
+			frequency=			"veryrare"
+			numberAppearing=	"1"
+			attributes=			"Alien; BasicFuel; cabbageCorp; Consumable; Fuel; ZeroPoint"
+
+			data=				"2500000"
+			
+			description=		"Zero-point crystals are a highly efficient form of fuel storage in development by Cabbage Corp.  ZPCs utilize a crystal matrix that exists partially in subspace to store massive amounts of zero-point energy in a relatively small physical space, though they have a tendency to disappear ships that use them.  Only reactors of tech level 9 or higher can utilize them."
+	>
+		
+		<Events>
+			<OnRefuel>
+				(if (leq (objGetDistance gSource (sysFindObject gSource "GN")) 3)
+					(if (find (sysGetNodes) "Othala")
+						(objGateTo gSource "Othala" "Start" &efStargateOut;)
+						(objSendMessage gSource Nil "Subspace unstable in this area!")
+					)
+					(objGateTo gSource "Othala" "Start" &efStargateOut;)
+				)
+			</OnRefuel>
+		</Events>
+		
+		<Image imageID="&rsCCItems;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+<!-- ================================================================ -->
+						<!-- Low Level Device Items -->
+<!-- ================================================================ -->
+	
+	<!-- Solar Panel -->
+	<ItemType UNID="&itCCSolarPanel;"
+			name=				"solar panel"
+			level=				"1"
+			value=				"20"
+			mass=				"250"
+			frequency=			"uncommon"
+			numberAppearing=	"1d6"
+			attributes=			"cabbageCorp; Consumable; Res"
+
+			description=		"Solar panel converts sunlight into energy usable by a ship's reactor.  At least six are required to form a working array."
+	>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+
+<!-- ================================================================ -->
+						<!-- Roms -->
+<!-- ================================================================ -->
+
+	<!-- Cabbage Corp Premium Membership ID -->
+
+	<ItemType UNID="&itCCPremiumID;"
+			name=				"Cabbage Corp premium membership ID"
+			level=				"3"
+			value=				"10000"
+			mass=				"1"
+			frequency=			"rare"
+			attributes=			"cabbageCorp; ID; Info; MajorItem; Specialty"
+
+			description=		"This ID marks you as a valued customer of Cabbage Corp, allowing you to bypass those pesky security checks when installing equipment at Cabbage Corp stations. Does not work until implanted."
+
+			sortName=			"identification chip, premium"
+	>
+
+		<Image imageID="&rsCCItems;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Invoke>
+			(block Nil
+				; Install
+				(if (objGetData gPlayerShip "CCPremiumIDImplant")
+					(objSendMessage gSource Nil "You already have a Cabbage Corp premium membership ID implanted.")
+					(block Nil
+						(objSetData gPlayerShip "CCPremiumIDImplant" True)
+						(objSendMessage gSource Nil "You stab yourself with the disposable chip implanter... ow!")
+						(objRemoveItem gSource gItem 1)
+					)
+				)
+			)
+		</Invoke>
+		
+		<Events>
+			<GetGlobalAchievements>
+				(block nil
+					(list
+						(if (objGetData gPlayerShip "CCPremiumIDImplant")
+							(list "Cabbage Corp premium membership ID" "Implanted")
+						)
+					)
+				)
+			</GetGlobalAchievements>
+		</Events>
+		
+	</ItemType>
+	
+<!--
+Using this item should (eventually) install it to your ship (and appear as an achievement)
+while you have that achievement, the features of the rom will appear in the Cabbage Corp Toolbox
+and the toolbox will always appear in the ship view regardless of whether you have any Cabbage Corp items installed
+-->
+
+	<!-- Cabbage Corp System Map ROM -->
+
+	<ItemType UNID="&itCCSystemMapROM;"
+			name=				"Cabbage Corp system map access ROM"
+			level=				"3"
+			value=				"2000"
+			mass=				"1"
+			frequency=			"veryrare"
+			attributes=			"cabbageCorp; Info"
+
+			description=		"This program utilizes the Cabbage Corp cartography libraries to generate a map of your current system, for a small fee. Can be reused indefinitely."
+	>
+
+		<Image imageID="&rsCCItems;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Invoke>
+			(if (geq (objGetBalance gSource) 200)
+				(block (obj mappedAll mapEnemy)
+					(setq mappedAll True)
+
+					; Compute the probability of mapping an enemy station
+					(switch
+						(geq (sysGetLevel) 7)
+							(setq mapEnemy 0)
+
+						(geq (sysGetLevel) 3)
+							(setq mapEnemy (subtract 360 (multiply 72 (subtract (sysGetLevel) 2))))
+
+						(setq mapEnemy 360)
+						)
+
+					; Iterate over all stations in the system
+					(enum (sysFindObject gSource "Ts") obj
+						(switch
+							(and (objIsEnemy gSource obj) (gr (add (objGetDestiny obj) 1) mapEnemy))
+								(setq mappedAll Nil)
+
+							(objHasAttribute obj "uncharted")
+								(setq mappedAll Nil)
+
+							(objSetKnown obj)
+							)
+						)
+
+					(if mappedAll
+						(objSendMessage gSource Nil "Mapped all stations in system")
+						(objSendMessage gSource Nil "Mapped charted stations in system")
+						)
+
+					; Identify the item
+					(itmSetKnown gItem)
+					
+					(objCharge gSource 200)
+					(objSendMessage gPlayerShip Nil "You have been charged 200 credits for purchasing this system map.")
+				)
+				(block Nil
+					(itmSetKnown gItem)
+					(objSendMessage gPlayerShip Nil "Not enough credits to purchase system map.")
+				)
+			)
+		</Invoke>
+	</ItemType>
+	
+<!-- ================================================================ -->
+							<!-- Valuables -->
+<!-- ================================================================ -->
+	
+;The consumable tag is in fact meant to imply that you also took all the food before leaving.
+	
+	<!-- Personal Belongings -->
+
+	<ItemType UNID="&itCCPersonalBelongings;"
+			name=				"your personal belongings"
+			attributes=			"consumable, lux, majorItem"
+			
+			level=				"1"
+			frequency=			"notrandom"
+			
+			value=				"250"
+			mass=				"1000"
+
+			description=		"You've been sent on a mission from Domina, might as well sell all of your family's stuff for cash.  They'll learn to live without."
+			
+			noArticle=			"true"
+	>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+
+</TranscendenceModule>

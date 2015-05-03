@@ -1,0 +1,1498 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!-- ================================================================ -->
+							<!-- Drives -->
+<!-- ================================================================ -->
+	
+	<!-- 0.16c Ion Drive -->
+	
+	<ItemType UNID="&itCCIonDrive;"
+			name=				"ion drive"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"1"
+			frequency=			"uncommon"
+			
+			value=				"240"
+			mass=				"1200"
+
+			description=		"This drive was designed with efficiency prioritized over speed.  It utilizes an electric field to accelerate ionized particles to near light speeds to get the most thrust out of its fuel.  Increases max speed to 0.16c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"16"
+				thrust=			"50"
+				powerUsed=		"15"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualIonDrive;		count:2		extraCost:0}
+					{product:&itCCAuxIonDrive;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.18c Plasma Drive -->
+	
+	<ItemType UNID="&itCCPlasmaDrive;"
+			name=				"plasma drive"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"2"
+			frequency=			"uncommon"
+			
+			value=				"450"
+			mass=				"1600"
+
+			description=		"This efficient drive was designed to reduce travel costs for freighters.  It utilizes a magnetic field to induce density waves in a plasma that accelerates the reaction mass to high velocities.  Increases max speed to 0.18c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"18"
+				thrust=			"70"
+				powerUsed=		"30"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualPlasmaDrive;		count:2		extraCost:0}
+					{product:&itCCAuxPlasmaDrive;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- 0.20c Tritium Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCTritiumPropulsionUpgrade;"
+			name=				"tritium propulsion upgrade"
+			attributes=			"cabbageCorp, majorItem"
+			  
+			level=				"3"
+			frequency=			"uncommon"
+
+			value=				"800"
+			mass=				"2000"
+			  
+			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful tritium plasma to increase the thrust of the engines.  Increases max speed to 0.20c."
+	>
+
+		<Image imageID="&rsItems1;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"20"
+				thrust=			"100"
+				powerUsed=		"50"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualTritiumPropulsionUpgrade;		count:2		extraCost:0}
+					{product:&itCCAuxTritiumPropulsionUpgrade;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.22c Tritium Drive -->
+	
+	<ItemType UNID="&itCCTritiumDrive;"
+			name=				"tritium drive"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"4"
+			frequency=			"uncommon"
+			
+			value=				"1500"
+			mass=				"2700"
+
+			description=		"This drive was specifically designed from the ground up to utilize a powerful tritium-plasma mix for propulsion.  Increases max speed to 0.22c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"22"
+				thrust=			"150"
+				powerUsed=		"90"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualTritiumDrive;		count:2		extraCost:0}
+					{product:&itCCAuxTritiumDrive;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- 0.23c Chronimium Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCChronimiumPropulsionUpgrade;"
+			name=				"chronimium propulsion upgrade"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"5"
+			frequency=			"uncommon"
+			
+			value=				"2800"
+			mass=				"3500"
+			  
+			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful chronimium plasma to greatly increase the thrust of the engines.  Increases max speed to 0.23c."
+			>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"23"
+				thrust=			"200"
+				powerUsed=		"170"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualChronimiumPropulsionUpgrade;		count:2		extraCost:0}
+					{product:&itCCAuxChronimiumPropulsionUpgrade;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.25c Chronimium Drive -->
+	
+	<ItemType UNID="&itCCChronimiumDrive;"
+			name=				"chronimium drive"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"6"
+			frequency=			"uncommon"
+			
+			value=				"5100"
+			mass=				"4600"
+
+			description=		"This drive was specifically designed from the ground up to utilize a powerful chronimium-plasma mix for propulsion.  Increases max speed to 0.25c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"25"
+				thrust=			"280"
+				powerUsed=		"310"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualChronimiumDrive;		count:2		extraCost:0}
+					{product:&itCCAuxChronimiumDrive;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.27c Cobalt-Thorium MegaDrive -->
+	
+	<ItemType UNID="&itCCCobaltThoriumMegaDrive;"
+			name=				"cobalt-thorium megadrive"
+			attributes=			"cabbageCorp, majorItem, military"
+			
+			level=				"7"
+			frequency=			"uncommon"
+			
+			value=				"9400"
+			mass=				"6000"
+
+			description=		"The cobalt-thorium megadrive is an old military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.27c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"27"
+				thrust=			"400"
+				powerUsed=		"580"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualCobaltThoriumMegaDrive;		count:2		extraCost:0}
+					{product:&itCCAuxCobaltThoriumMegaDrive;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.28c Xenotite MegaDrive -->
+	
+	<ItemType UNID="&itCCXenotiteMegaDrive;"
+			name=				"xenotite megadrive"
+			attributes=			"cabbageCorp, majorItem, military"
+			
+			level=				"8"
+			frequency=			"uncommon"
+			
+			value=				"17000"
+			mass=				"8000"
+
+			description=		"The xenotite megadrive is a reliable military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.28c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"28"
+				thrust=			"550"
+				powerUsed=		"1100"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualXenotiteMegaDrive;	count:2		extraCost:0}
+					{product:&itCCAuxXenotiteMegaDrive;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.30c Pteracnium MegaDrive -->
+	
+	<ItemType UNID="&itCCPteracniumMegaDrive;"
+			name=				"pteracnium megadrive"
+			attributes=			"cabbageCorp, majorItem, military"
+			
+			level=				"9"
+			frequency=			"uncommon"
+			
+			value=				"32000"
+			mass=				"10000"
+
+			description=		"The pteracnium megadrive is a recently developed military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.30c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"30"
+				thrust=			"770"
+				powerUsed=		"2000"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualPteracniumMegaDrive;		count:2		extraCost:0}
+					{product:&itCCAuxPteracniumMegaDrive;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- 0.32c Zero-Point Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCZeroPointPropulsionUpgrade;"
+			name=				"zero-point propulsion upgrade"
+			attributes=			"alien, cabbageCorp, majorItem"
+			
+			level=				"10"
+			frequency=			"uncommon"
+			
+			value=				"60000"
+			mass=				"14000"
+			  
+			description=		"This alien device upgrade utilizes powerful zero-point crystals to greatly increase the thrust of engines in both regular drives and megadrives.  Increases max speed to 0.32c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"32"
+				thrust=			"1100"
+				powerUsed=		"3600"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualZeroPointPropulsionUpgrade;		count:2		extraCost:0}
+					{product:&itCCAuxZeroPointPropulsionUpgrade;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.33c Zero-Point MegaDrive -->
+	
+	<ItemType UNID="&itCCZeroPointMegaDrive;"
+			name=				"zero-point megadrive"
+			attributes=			"alien, cabbageCorp, majorItem"
+			
+			level=				"11"
+			frequency=			"uncommon"
+			
+			value=				"100000"
+			mass=				"18000"
+
+			description=		"This alien megadrive appears to have been designed from the ground up to utilize powerful zero-point crystals to amplify its propulsion.  Increases max speed to 0.33c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"33"
+				thrust=			"1500"
+				powerUsed=		"6700"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualZeroPointMegaDrive;		count:2		extraCost:0}
+					{product:&itCCAuxZeroPointMegaDrive;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+	
+<!-- Impulse Drive built from ZPMDrive and two bussard collectors -->
+	
+	<!-- 0.35c Impulse Drive -->
+	
+	<ItemType UNID="&itCCImpulseDrive;"
+			name=				"impulse drive"
+			attributes=			"alien, cabbageCorp, majorItem, specialty"
+			
+			level=				"12"
+			frequency=			"veryrare"
+			
+			value=				"400000"
+			mass=				"23000"
+
+			description=		"This alien stardrive appears to utilize an array of built in Bussard collectors to produce enough reaction mass to achieve speeds further approaching that of light.  Increases max speed to 0.35c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"35"
+				thrust=			"2100"
+				powerUsed=		"10000"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualImpulseDrive;		count:2		extraCost:0}
+					{product:&itCCAuxImpulseDrive;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+<!-- ================================================================ -->
+							<!-- Auxiliary Drives -->
+<!-- ================================================================ -->
+	
+	<!-- 0.16c Auxiliary Ion Drive -->
+	
+	<ItemType UNID="&itCCAuxIonDrive;"
+			name=				"auxiliary ion drive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			
+			level=				"2"
+			frequency=			"veryrare"
+			
+			value=				"360"
+			mass=				"3800"
+
+			description=		"This drive provides a maximum velocity of 0.16c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"16"
+				thrust=			"50"
+				powerUsed=		"20"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadIonDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.18c Auxiliary Plasma Drive -->
+	
+	<ItemType UNID="&itCCAuxPlasmaDrive;"
+			name=				"auxiliary plasma drive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			
+			level=				"3"
+			frequency=			"veryrare"
+			
+			value=				"670"
+			mass=				"4400"
+
+			description=		"This drive provides a maximum velocity of 0.18c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"18"
+				thrust=			"70"
+				powerUsed=		"35"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadPlasmaDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+	<!-- 0.20c Auxiliary Tritium Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCAuxTritiumPropulsionUpgrade;"
+			name=				"auxiliary tritium propulsion upgrade"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			  
+			level=				"4"
+			frequency=			"veryrare"
+
+			value=				"1200"
+			mass=				"5100"
+			  
+			description=		"This propulsion upgrade provides a maximum velocity of 0.20c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+	>
+
+		<Image imageID="&rsItems1;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"20"
+				thrust=			"100"
+				powerUsed=		"60"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadTritiumPropulsionUpgrade;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.22c Auxiliary Tritium Drive -->
+	
+	<ItemType UNID="&itCCAuxTritiumDrive;"
+			name=				"auxiliary tritium drive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			
+			level=				"5"
+			frequency=			"veryrare"
+			
+			value=				"2300"
+			mass=				"6100"
+
+			description=		"This drive provides a maximum velocity of 0.22c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"22"
+				thrust=			"150"
+				powerUsed=		"110"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadTritiumDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+	<!-- 0.23c Auxiliary Chronimium Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCAuxChronimiumPropulsionUpgrade;"
+			name=				"auxiliary chronimium propulsion upgrade"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"4200"
+			mass=				"7300"
+			  
+			description=		"This propulsion upgrade provides a maximum velocity of 0.23c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"23"
+				thrust=			"200"
+				powerUsed=		"200"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadChronimiumPropulsionUpgrade;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.25c Auxiliary Chronimium Drive -->
+	
+	<ItemType UNID="&itCCAuxChronimiumDrive;"
+			name=				"auxiliary chronimium drive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			
+			level=				"7"
+			frequency=			"veryrare"
+			
+			value=				"7700"
+			mass=				"9000"
+
+			description=		"This drive provides a maximum velocity of 0.25c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"25"
+				thrust=			"280"
+				powerUsed=		"370"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadChronimiumDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.27c Auxiliary Cobalt-Thorium MegaDrive -->
+	
+	<ItemType UNID="&itCCAuxCobaltThoriumMegaDrive;"
+			name=				"auxiliary cobalt-thorium megadrive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem, military"
+			
+			level=				"8"
+			frequency=			"veryrare"
+			
+			value=				"14000"
+			mass=				"11000"
+
+			description=		"This megadrive provides a maximum velocity of 0.27c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"27"
+				thrust=			"400"
+				powerUsed=		"700"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadCobaltThoriumMegaDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.28c Auxiliary Xenotite MegaDrive -->
+	
+	<ItemType UNID="&itCCAuxXenotiteMegaDrive;"
+			name=				"auxiliary xenotite megadrive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem, military"
+			
+			level=				"9"
+			frequency=			"veryrare"
+			
+			value=				"26000"
+			mass=				"14000"
+
+			description=		"This megadrive provides a maximum velocity of 0.28c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"28"
+				thrust=			"550"
+				powerUsed=		"1300"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadXenotiteMegaDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.30c Auxiliary Pteracnium MegaDrive -->
+	
+	<ItemType UNID="&itCCAuxPteracniumMegaDrive;"
+			name=				"auxiliary pteracnium megadrive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem, military"
+			
+			level=				"10"
+			frequency=			"veryrare"
+			
+			value=				"48000"
+			mass=				"18000"
+
+			description=		"This megadrive provides a maximum velocity of 0.30c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"30"
+				thrust=			"770"
+				powerUsed=		"2400"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadPteracniumMegaDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+	<!-- 0.32c Auxiliary Zero-Point Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCAuxZeroPointPropulsionUpgrade;"
+			name=				"auxiliary zero-point propulsion upgrade"
+			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			
+			level=				"11"
+			frequency=			"veryrare"
+			
+			value=				"88000"
+			mass=				"22000"
+			  
+			description=		"This propulsion upgrade provides a maximum velocity of 0.32c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"32"
+				thrust=			"1100"
+				powerUsed=		"4400"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadZeroPointPropulsionUpgrade;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.33c Auxiliary Zero-Point MegaDrive -->
+	
+	<ItemType UNID="&itCCAuxZeroPointMegaDrive;"
+			name=				"auxiliary zero-point megadrive"
+			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			
+			level=				"12"
+			frequency=			"veryrare"
+			
+			value=				"160000"
+			mass=				"29000"
+
+			description=		"This megadrive provides a maximum velocity of 0.33c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"33"
+				thrust=			"1500"
+				powerUsed=		"8000"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadZeroPointMegaDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.35c Auxiliary Impulse Drive -->
+	
+	<ItemType UNID="&itCCAuxImpulseDrive;"
+			name=				"auxiliary impulse drive"
+			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem, specialty"
+			
+			level=				"13"
+			frequency=			"notrandom"
+			
+			value=				"600000"
+			mass=				"37000"
+
+			description=		"This alien stardrive provides a maximum velocity of 0.35c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"35"
+				thrust=			"2100"
+				powerUsed=		"12000"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadImpulseDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+<!-- ================================================================ -->
+							<!-- Unshielded Drives -->
+<!-- ================================================================ -->
+	
+	<!-- 0.17c Unshielded Ion Drive -->
+	
+	<ItemType UNID="&itCCRadIonDrive;"
+			name=				"unshielded ion drive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			
+			level=				"2"
+			frequency=			"notrandom"
+			
+			value=				"360"
+			mass=				"3800"
+
+			description=		"This auxiliary drive provides a maximum velocity of 0.17c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"17"
+				thrust=			"60"
+				powerUsed=		"25"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxIonDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.19c Unshielded Plasma Drive -->
+	
+	<ItemType UNID="&itCCRadPlasmaDrive;"
+			name=				"unshielded plasma drive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			
+			level=				"3"
+			frequency=			"notrandom"
+			
+			value=				"670"
+			mass=				"4400"
+
+			description=		"This auxiliary drive provides a maximum velocity of 0.19c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"19"
+				thrust=			"90"
+				powerUsed=		"40"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxPlasmaDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+	<!-- 0.21c Unshielded Tritium Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCRadTritiumPropulsionUpgrade;"
+			name=				"unshielded tritium propulsion upgrade"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			  
+			level=				"4"
+			frequency=			"notrandom"
+
+			value=				"1200"
+			mass=				"5100"
+			  
+			description=		"This auxiliary ropulsion upgrade provides a maximum velocity of 0.21c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+	>
+
+		<Image imageID="&rsItems1;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"21"
+				thrust=			"120"
+				powerUsed=		"75"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxTritiumPropulsionUpgrade;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.23c Unshielded Tritium Drive -->
+	
+	<ItemType UNID="&itCCRadTritiumDrive;"
+			name=				"unshielded tritium drive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			
+			level=				"5"
+			frequency=			"notrandom"
+			
+			value=				"2300"
+			mass=				"6100"
+
+			description=		"This auxiliary drive provides a maximum velocity of 0.23c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"23"
+				thrust=			"170"
+				powerUsed=		"140"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxTritiumDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+	<!-- 0.24c Unshielded Chronimium Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCRadChronimiumPropulsionUpgrade;"
+			name=				"unshielded chronimium propulsion upgrade"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			
+			level=				"6"
+			frequency=			"notrandom"
+			
+			value=				"4200"
+			mass=				"7300"
+			  
+			description=		"This auxiliary propulsion upgrade provides a maximum velocity of 0.24c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"24"
+				thrust=			"240"
+				powerUsed=		"250"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxChronimiumPropulsionUpgrade;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.26c Unshielded Chronimium Drive -->
+	
+	<ItemType UNID="&itCCRadChronimiumDrive;"
+			name=				"unshielded chronimium drive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			
+			level=				"7"
+			frequency=			"notrandom"
+			
+			value=				"7700"
+			mass=				"9000"
+
+			description=		"This auxiliary drive provides a maximum velocity of 0.26c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"26"
+				thrust=			"340"
+				powerUsed=		"470"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxChronimiumDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.28c Unshielded Cobalt-Thorium MegaDrive -->
+	
+	<ItemType UNID="&itCCRadCobaltThoriumMegaDrive;"
+			name=				"unshielded cobalt-thorium megadrive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem, military"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			
+			level=				"8"
+			frequency=			"notrandom"
+			
+			value=				"14000"
+			mass=				"11000"
+
+			description=		"This auxiliary megadrive provides a maximum velocity of 0.28c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"28"
+				thrust=			"470"
+				powerUsed=		"860"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxCobaltThoriumMegaDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.29c Unshielded Xenotite MegaDrive -->
+	
+	<ItemType UNID="&itCCRadXenotiteMegaDrive;"
+			name=				"unshielded xenotite megadrive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem, military"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			
+			level=				"9"
+			frequency=			"notrandom"
+			
+			value=				"26000"
+			mass=				"14000"
+
+			description=		"This auxiliary megadrive provides a maximum velocity of 0.29c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"29"
+				thrust=			"660"
+				powerUsed=		"1600"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxXenotiteMegaDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.31c Unshielded Pteracnium MegaDrive -->
+	
+	<ItemType UNID="&itCCRadPteracniumMegaDrive;"
+			name=				"unshielded pteracnium megadrive"
+			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem, military"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			
+			level=				"10"
+			frequency=			"notrandom"
+			
+			value=				"48000"
+			mass=				"18000"
+
+			description=		"This auxiliary megadrive provides a maximum velocity of 0.31c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"31"
+				thrust=			"930"
+				powerUsed=		"3000"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxPteracniumMegaDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+	<!-- 0.33c Unshielded Zero-Point Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCRadZeroPointPropulsionUpgrade;"
+			name=				"unshielded zero-point propulsion upgrade"
+			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			
+			level=				"11"
+			frequency=			"notrandom"
+			
+			value=				"88000"
+			mass=				"22000"
+			  
+			description=		"This auxiliary propulsion upgrade provides a maximum velocity of 0.33c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"33"
+				thrust=			"1300"
+				powerUsed=		"5500"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxZeroPointPropulsionUpgrade;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.34c Unshielded Zero-Point MegaDrive -->
+	
+	<ItemType UNID="&itCCRadZeroPointMegaDrive;"
+			name=				"unshielded zero-point megadrive"
+			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			
+			level=				"12"
+			frequency=			"notrandom"
+			
+			value=				"160000"
+			mass=				"29000"
+
+			description=		"This auxiliary megadrive provides a maximum velocity of 0.34c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"34"
+				thrust=			"1800"
+				powerUsed=		"10000"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxZeroPointMegaDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+	
+	<!-- 0.36c Unshielded Impulse Drive -->
+	
+	<ItemType UNID="&itCCRadImpulseDrive;"
+			name=				"unshielded impulse drive"
+			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem, specialty"
+			inherit=			"&baCCUnshieldedDeviceBase;"
+			
+			level=				"13"
+			frequency=			"notrandom"
+			
+			value=				"600000"
+			mass=				"37000"
+
+			description=		"This auxiliary alien stardrive provides a maximum velocity of 0.36c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"36"
+				thrust=			"2500"
+				powerUsed=		"15000"
+
+				deviceSlots=	"0"
+				external=		"true"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCAuxImpulseDrive;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+<!-- ================================================================ -->
+							<!-- Dual Drives -->
+<!-- ================================================================ -->
+	
+	<!-- 0.20c Dual Ion Drive -->
+	
+	<ItemType UNID="&itCCDualIonDrive;"
+			name=				"dual ion drive"
+			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			
+			level=				"2"
+			frequency=			"rare"
+			
+			value=				"520"
+			mass=				"3400"
+
+			description=		"This drive was designed with efficiency prioritized over speed.  It utilizes an electric field to accelerate ionized particles to near light speeds to get the most thrust out of its fuel.  Increases max speed to 0.20c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"20"
+				thrust=			"100"
+				powerUsed=		"30"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+	
+	<!-- 0.22c Dual Plasma Drive -->
+	
+	<ItemType UNID="&itCCDualPlasmaDrive;"
+			name=				"dual plasma drive"
+			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			
+			level=				"3"
+			frequency=			"rare"
+			
+			value=				"1000"
+			mass=				"4200"
+
+			description=		"This efficient drive was designed to reduce travel costs for freighters.  It utilizes a magnetic field to induce density waves in a plasma that accelerates the reaction mass to high velocities.  Increases max speed to 0.22c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"22"
+				thrust=			"150"
+				powerUsed=		"50"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+
+	<!-- 0.23c Dual Tritium Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCDualTritiumPropulsionUpgrade;"
+			name=				"dual tritium propulsion upgrade"
+			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			  
+			level=				"4"
+			frequency=			"rare"
+
+			value=				"1800"
+			mass=				"5200"
+			  
+			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful tritium plasma to increase the thrust of the engines.  Increases max speed to 0.23c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"23"
+				thrust=			"200"
+				powerUsed=		"100"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+	
+	<!-- 0.25c Dual Tritium Drive -->
+	
+	<ItemType UNID="&itCCDualTritiumDrive;"
+			name=				"dual tritium drive"
+			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			
+			level=				"5"
+			frequency=			"rare"
+			
+			value=				"3200"
+			mass=				"6500"
+
+			description=		"This drive was specifically designed from the ground up to utilize a powerful tritium-plasma mix for propulsion.  Increases max speed to 0.25c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"25"
+				thrust=			"290"
+				powerUsed=		"180"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+
+	<!-- 0.27c Dual Chronimium Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCDualChronimiumPropulsionUpgrade;"
+			name=				"dual chronimium propulsion upgrade"
+			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			
+			level=				"6"
+			frequency=			"rare"
+			
+			value=				"6000"
+			mass=				"8000"
+			  
+			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful chronimium plasma to greatly increase the thrust of the engines.  Increases max speed to 0.27c."
+			>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"27"
+				thrust=			"400"
+				powerUsed=		"340"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+	
+	<!-- 0.28c Dual Chronimium Drive -->
+	
+	<ItemType UNID="&itCCDualChronimiumDrive;"
+			name=				"dual chronimium drive"
+			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			
+			level=				"7"
+			frequency=			"rare"
+			
+			value=				"11000"
+			mass=				"10000"
+
+			description=		"This drive was specifically designed from the ground up to utilize a powerful chronimium-plasma mix for propulsion.  Increases max speed to 0.28c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"28"
+				thrust=			"570"
+				powerUsed=		"620"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+	
+	<!-- 0.30c Dual Cobalt-Thorium MegaDrive -->
+	
+	<ItemType UNID="&itCCDualCobaltThoriumMegaDrive;"
+			name=				"dual cobalt-thorium megadrive"
+			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem, military"
+			
+			level=				"8"
+			frequency=			"rare"
+			
+			value=				"20000"
+			mass=				"13000"
+
+			description=		"The cobalt-thorium megadrive is an old military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.30c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"30"
+				thrust=			"800"
+				powerUsed=		"1100"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+	
+	<!-- 0.32c Dual Xenotite MegaDrive -->
+	
+	<ItemType UNID="&itCCDualXenotiteMegaDrive;"
+			name=				"dual xenotite megadrive"
+			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem, military"
+			
+			level=				"9"
+			frequency=			"rare"
+			
+			value=				"37000"
+			mass=				"17000"
+
+			description=		"The xenotite megadrive is a reliable military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.32c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"32"
+				thrust=			"1100"
+				powerUsed=		"2100"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+	
+	<!-- 0.33c Dual Pteracnium MegaDrive -->
+	
+	<ItemType UNID="&itCCDualPteracniumMegaDrive;"
+			name=				"dual pteracnium megadrive"
+			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem, military"
+			
+			level=				"10"
+			frequency=			"rare"
+			
+			value=				"68000"
+			mass=				"22000"
+
+			description=		"The pteracnium megadrive is a recently developed military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.33c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"33"
+				thrust=			"1500"
+				powerUsed=		"3900"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+
+	<!-- 0.35c Dual Zero-Point Propulsion Upgrade -->
+
+	<ItemType UNID="&itCCDualZeroPointPropulsionUpgrade;"
+			name=				"dual zero-point propulsion upgrade"
+			attributes=			"alien, cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			
+			level=				"11"
+			frequency=			"rare"
+			
+			value=				"130000"
+			mass=				"28000"
+			  
+			description=		"This alien device upgrade utilizes powerful zero-point crystals to greatly increase the thrust of engines in both regular drives and megadrives.  Increases max speed to 0.35c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"35"
+				thrust=			"2200"
+				powerUsed=		"7300"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+	
+	<!-- 0.37c Dual Zero-Point MegaDrive -->
+	
+	<ItemType UNID="&itCCDualZeroPointMegaDrive;"
+			name=				"dual zero-point megadrive"
+			attributes=			"alien, cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			
+			level=				"12"
+			frequency=			"rare"
+			
+			value=				"230000"
+			mass=				"36000"
+
+			description=		"This alien megadrive appears to have been designed from the ground up to utilize powerful zero-point crystals to amplify its propulsion.  Increases max speed to 0.37c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"37"
+				thrust=			"3000"
+				powerUsed=		"13000"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+	
+	<!-- 0.38c Dual Impulse Drive -->
+	
+	<ItemType UNID="&itCCDualImpulseDrive;"
+			name=				"dual impulse drive"
+			attributes=			"alien, cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem, specialty"
+			
+			level=				"13"
+			frequency=			"notrandom"
+			
+			value=				"900000"
+			mass=				"47000"
+
+			description=		"This alien stardrive appears to utilize an array of built in Bussard collectors to produce enough reaction mass to achieve speeds further approaching that of light.  Increases max speed to 0.38c."
+	>
+
+		<Image imageID="&rsCCDrives;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<DriveDevice
+				maxSpeed=		"38"
+				thrust=			"4200"
+				powerUsed=		"20000"
+
+				deviceSlots=	"1"
+				external=		"true"
+		/>
+	</ItemType>
+
+</TranscendenceModule>

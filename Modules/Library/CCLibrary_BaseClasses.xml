@@ -1,0 +1,416 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+
+<!-- ================================================================ -->
+					<!-- Generic Base class -->
+<!-- ================================================================ -->
+
+<!-- Unshielded Device Base Class -->
+
+	<ItemType UNID="&baCCUnshieldedDeviceBase;"
+			name=				"(unshielded device base class)"
+			virtual=			"true"
+	>
+		
+		<Events>
+			<OnUpdate>
+				(if (itmIsInstalled gItem)
+					(if (objIsDeviceEnabled gsource gItem)
+						(if (not (shpIsRadiationImmune gSource))
+							(shpMakeRadioactive gSource)
+						)
+					)
+				)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+<!-- ================================================================ -->
+					<!-- Cargo Hold Base Class -->
+<!-- ================================================================ -->
+<!--
++20 cargo capacity from optimizing cargo placement seems about right 
+(+30) for optimizing, (-10) for VI computers, so +20 for optimized single cargo hold, and +50 for optimized dual cargo hold (use same VI computer for both holds)
+-20 cargo capacity for mining equipment (+auton retrieval equipment)
+-50 cargo capacity for scan-shielding equipment
+-80 cargo capacity for auton modification equipment
+dual cargo holds don't need a second set of grapples or scan-shielding equipment, so they get an additional +130 plain cargo hold (diplomat holds don't get this bonus)
+
++1 crew member for every 60 cargo space (rounded down)
++1 crew member for every 50 cargo space (for military  or Cabbage Corp holds)
+
+addCrewSpace stands for 'additional crew space'
+
+-->
+
+	<!-- Cargo Hold Base Class -->
+
+	<ItemType UNID="&vtCCCrewQuartersBaseClass;"
+			name=				"(crew quarters base class)"
+			virtual=			"true"
+	>
+
+		<Events>
+			<CanBeUninstalled>
+				(block (auxCrewCount addAuxCrew)
+					(setq auxCrewCount (count (objGetItems gSource "dI +auxCrew")))
+					(setq addAuxCrew 0)
+					
+					;If the object does not have a defined maxAuxCrew in its .xml, default it to 1
+					;If the object does have a defined maxAuxCrew in its .xml, use that value
+					
+					(enum (objGetItems gSource "dI +crewQuarters") gQuarters
+						(setq addAuxCrew (add addAuxCrew (itmGetStaticData gQuarters "addCrewSpace")))
+					)
+					
+					(if (not (objGetStaticData gSource "maxAuxCrew"))
+						(objSetData gSource "maxAuxCrew" (add 1 addAuxCrew))
+						(objSetData gSource "maxAuxCrew" (add (objGetStaticData gSource "maxAuxCrew") addAuxCrew))
+					)
+					
+					(switch
+						(gr auxCrewCount (subtract (objGetData gSource "maxAuxCrew") (itmGetStaticData gItem "addCrewSpace")))
+							(block Nil
+								"Your ship is currently operating at maximum occupancy.  You cannot remove this device."
+							)
+						True
+					)
+				)
+			</CanBeUninstalled>
+		</Events>
+	</ItemType>
+
+<!-- ================================================================ -->
+						<!-- Crew Base Classes -->
+<!-- ================================================================ -->
+
+<!--
+type					value	powerUse	L10 Effect
+virtual training rom?	1x		-			-	
+repairer				2x		1-6x (2x)	armor regen= 11@L1 - 4@L10 (stacks)
+gunner					2x		2x			omnidirectional + 1.6x slower primary weapon
+weapons engineer		3x		3x			energy weapons 1.30x stronger, matter weapons 1.33x faster
+shields engineer		3x		3x			shields 1.35x stronger
+
+The powerUse for the repairer is per armor segment, the game assumes two segments when it displays powerUse.
+
+One idea I've had for crew members is that they could be able to level up in the background, while only requiring some kind of mission/item to upgrade to military status (L 5->6, available at Cabbage Corp Factories), and some kind of genetic engineering mission/item to reach the alien levels (L 10->11, Cabbage Corp Outposts).
+
+The virtual training rom could be reusable, connect to Cabbage Corp private network (basically it only works in systems with a Cabbage Corp station) and allows you to access virtual training for all types of crew members, up to L5. To get to L6-10 you need a military training rom, and L11+ training is offered at Cabbage Corp Outposts but only one random class can be trained at any given station, and each crew member can only be trained in alien skills once per outpost.
+
+Possibly create cyborg attribute to use instead of alien?
+-->
+
+<!-- Auxiliary Crew Member Base Class -->
+
+	<ItemType UNID="&baCCAuxCrewBase;"
+			name=				"(auxiliary crew base class)"
+			virtual=			"true"
+	>
+
+		<Events>
+			<CanBeInstalled>
+				(block (auxCrewCount addCrewCount)
+					(setq auxCrewCount (count (objGetItems gSource "dI +auxCrew")))
+					(setq addAuxCrew 0)
+					
+					;If the object does not have a defined maxAuxCrew in its .xml, default it to 1
+					;If the object does have a defined maxAuxCrew in its .xml, use that value
+					
+					(enum (objGetItems gSource "dI +crewQuarters") gQuarters
+						(setq addAuxCrew (add addAuxCrew (itmGetStaticData gQuarters "addCrewSpace")))
+					)
+					
+					(switch
+						;default settings for vanilla playerships
+						(eq (objGetType gSource) &scSapphirePlayer;)
+							(objSetData gSource "maxAuxCrew" (add 1 addAuxCrew))
+						(eq (objGetType gSource) &scEI100XPlayer;)
+							(objSetData gSource "maxAuxCrew" (add 4 addAuxCrew))
+						(eq (objGetType gSource) &scWolfenPlayer;)
+							(objSetData gSource "maxAuxCrew" (add 0 addAuxCrew))
+							
+						(eq (shpGetClassName (objGetType gSource) 1) "Osaka-class transport")
+							(objSetData gSource "maxAuxCrew" (add 2 addAuxCrew))
+						
+						(eq (shpGetClassName (objGetType gSource) 1) "Constellation-class freighter")
+							(objSetData gSource "maxAuxCrew" (add 2 addAuxCrew))
+						(eq (shpGetClassName (objGetType gSource) 1) "Freyr-class gunship")
+							(objSetData gSource "maxAuxCrew" (add 1 addAuxCrew))
+						(eq (shpGetClassName (objGetType gSource) 1) "Manticore-class heavy gunship")
+							(objSetData gSource "maxAuxCrew" (add 1 addAuxCrew))
+						
+						;The Corporate Command player ships are not in a library so I had to use a workaround.
+						;The first three ships still use my original method for reference purposes.
+							
+						;case in which settings have been defined for the given ship and have not been defined as 0
+						(not (not (objGetStaticData gSource "maxAuxCrew")))
+							(objSetData gSource "maxAuxCrew" (add (objGetStaticData gSource "maxAuxCrew") addAuxCrew))
+						
+						;default settings for ships: cargo space divided by 50 and rounded down, +1 if transport (only applies to Osaka and Traveller).
+						(objSetData gSource "maxAuxCrew" (add (divide (shpGetDataField gSource "cargoSpace") 50) addAuxCrew))
+					)
+					
+					(switch
+						(geq auxCrewCount (objGetData gSource "maxAuxCrew"))
+							(block Nil
+								(objSendMessage gSource Nil "Your ship is already operating at maximum occupancy. You cannot use any more personnel.")
+								"Your ship is already operating at maximum occupancy. You cannot use any more personnel."
+							)
+						True
+					)
+				)
+			</CanBeInstalled>
+		</Events>
+	</ItemType>
+
+<!-- Auxiliary Gunner Crew Member Base Class -->
+
+	<ItemType UNID="&baCCAuxGunnerCrewBase;"
+			name=				"(auxiliary crew base class)"
+			inherit=			"&baCCAuxCrewBase;"
+			virtual=			"true"
+	>
+
+		<Events>
+			<OnInstall>
+				(block Nil
+					(enum (objGetItems gSource "pI") gPrimary
+						(block Nil
+							(objSetData gSource "CCPrimaryWeaponFireArc" (objGetItemProperty gSource gPrimary 'FireArc))
+							(objSetItemProperty gSource gPrimary 'fireArc 'omnidirectional)
+						)
+					)
+				)
+			</OnInstall>
+			<OnUninstall>
+				(block Nil
+					(enum (objGetItems gSource "pI") gPrimary
+						(objSetItemProperty gSource gPrimary 'fireArc (objGetData gSource "CCPrimaryWeaponFireArc"))
+					)
+				)
+			</OnUninstall>
+		</Events>
+	</ItemType>
+
+<!-- ================================================================ -->
+						<!-- DRADIS Base Class -->
+<!-- ================================================================ -->
+<!--
+These devices do not currently work for the player-ships because it is technically not controlled by AI settings even though their perception is controlled by the perception value in their AI settings.  These will work for everyone else Cabbage Corp sells them to though.
+-->
+
+<!-- DRADIS Base Class -->
+
+	<ItemType UNID="&baCCDRADISBase;"
+			name=				"(DRADIS base class)"
+			virtual=			"true"
+	>
+		
+		<Events>
+			<CanBeInstalled>
+				(switch
+					(not (not (objGetItems gSource "dI +cabbageDRADIS")))
+						(block Nil
+							(objSendMessage gSource Nil "You cannot install another DRADIS module as it will interfere with the one currently installed.")
+							"You cannot install another DRADIS module as it will interfere with the one currently installed."
+						)
+					True
+				)
+			</CanBeInstalled>
+			
+			<OnEnable>
+				(block Nil
+					(objSetData gSource "CCShipBasePerception" (shpGetAISetting gSource 'perception))
+					(shpSetAISetting gSource "perception" 
+						(max 
+							(add 
+								(objGetData gSource 'CCShipBasePerception)
+								(@ (itmGetStaticData gItem "CCDRADIS")'addPerception)
+							)
+							(@ (itmGetStaticData gItem "CCDRADIS") 'minPerception)
+						)
+					)
+				)
+			</OnEnable>
+			
+			<OnDisable>
+				(shpSetAISetting gSource "perception" (objGetData gSource 'CCShipBasePerception))
+			</OnDisable>
+		</Events>
+	</ItemType>
+	
+<!-- ================================================================ -->
+							<!-- Nanofac Base Class -->
+<!-- ================================================================ -->
+
+	<ItemType UNID="&baCCNanofacBase;"
+			name=				"(Nanofac base class)"
+			virtual=			"true"
+	>
+
+		<Events>
+			<OnInstall>
+				(block Nil
+					(objSetItemData gSource gItem "CCNanofacCounter" 1)
+				)
+			</OnInstall>
+			
+			<OnUpdate>
+				(if (and (itmGetProperty gItem 'installed)
+						(not (itmGetProperty gItem 'damaged))
+						(objGetItemProperty gSource gItem 'enabled)
+					)
+						(if (geq (itmGetData gItem 'CCNanofacCounter) (@ (itmGetStaticData gItem 'CCNanofac) 'interval))		;This function makes the nanofac only produce items every nth onUpdate event	
+							(block (theCount toCreate)
+								(setq theCount (objHasItem gSource (itmCreate (@ (itmGetStaticData gItem 'CCNanofac) 'product) 1)))		;This specifies how much ammo is currently on the ship
+								(setq toCreate 
+									(min 
+										(@ (itmGetStaticData gItem 'CCNanofac) 'count)		;This specifies the maximum ammo units that can be produced in each production cycle
+										(subtract (@ (itmGetStaticData gItem 'CCNanofac) 'maxCount) theCount)		;This is how much more ammo you can have stockpiled before exceeding the DRM limits of the nanofac
+										(divide (objGetCargoSpaceLeft gSource) (itmGetMass (@ (itmGetStaticData gItem 'CCNanofac) 'product)))		;This is how much more ammo your cargo hold can carry
+									)
+								)
+								(if (gr toCreate 0)
+									(block Nil
+										(objAddItem gSource (itmCreate (@ (itmGetStaticData gItem 'CCNanofac) 'product) toCreate))
+										(itmSetKnown (@ (itmGetStaticData gItem 'CCNanofac) 'product))		;This identifies the device if for some reason it was unknown before
+										(intCabbageShpConsumePower gSource 		;This is a custom function that consumes fuel whilst taking reactor efficiency into account
+											(divide 									;see the global functions module for more information
+												(multiply 
+													(multiply 
+														(@ (itmGetStaticData gItem 'CCNanofac) 'powerUse) 
+														(@ (itmGetStaticData gItem 'CCNanofac) 'interval)
+													)
+													30		;This specific number effectively converts the powerUse value into the equivalent in fuel units at 100 percent device efficiency
+												)
+												100			;The efficiency of this device itself is assumed to be 100 percent because I didn't want to add another variable to it
+											)
+										)
+									)
+								)
+								(objSetItemData gSource gItem "CCNanofacCounter" 1)		;This function resets the counter for the onUpdate event
+							)
+							(objSetItemData gSource gItem "CCNanofacCounter" (add (itmGetData gItem 'CCNanofacCounter) 1))		This function increments the counter for the onUpdate event
+						)
+				)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+<!-- ================================================================ -->
+					<!-- Reactor Base Classes -->
+<!-- ================================================================ -->
+<!--
+This does need to take into account reactor efficiency
+Should probably be slightly lower than 30 to approximate 100% efficiency, higher values lower efficiencies
+need to add function that disables it when less than 5% fuel, to allow ships to actually run out of power
+need to add function to prevent enabling the device when less than 5% fuel
+The function is apparently unnecessary now, ships with the device now run out of fuel when they are supposed to
+-->
+
+<!-- Auxiliary Reactor Base Class -->
+
+	<ItemType UNID="&baCCAuxReactorBase;"
+			name=				"(auxiliary reactor base class)"
+			virtual=			"true"
+	>
+		
+		<Events>
+			<OnUpdate>
+				(if (itmIsInstalled gItem)
+					(if (objIsDeviceEnabled gsource gItem)
+						(intCabbageShpConsumePower gSource		;Custom function that consumes fuel units while taking into account the current reactor efficiency
+							(divide 
+								(multiply 
+									(@ (itmGetStaticData gItem 'CCAuxReactor) 'powerUse)
+									30
+								) 
+								(@ (itmGetStaticData gItem 'CCAuxReactor) 'efficiency)	;Efficiency of auxiliary capacitor
+							)
+						)
+					)
+				)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+<!-- Unsafe Rractor Base Class -->
+
+	<ItemType UNID="&baCCUnsafeReactorBase;"
+			name=				"(unsafe reactor base class)"
+			virtual=			"true"
+	>
+
+		<Events>
+			<OnEnable>
+				(block Nil
+					(objSetData gSource "cabbageOverloading" 0)
+					(objSetData gSource "cabbageOverloadTimer" 0)
+					(objSetData gSource "cabbageExplosionTimer" 0)
+				)
+			</OnEnable>
+			
+			<OnUpdate>
+				(if (itmIsInstalled gItem)
+					(if (objIsDeviceEnabled gsource gItem)
+						(switch
+							(eq (objGetData gSource 'cabbageExplosionTimer) 1)
+								(block Nil
+									(shpRemoveDevice gSource gItem)
+									(sysCreateWeaponFire &itHighFluxMAG; Nil (objGetPos gSource) (rollDice 1 360) 5 Nil)
+									(objRemoveItem gSource (itmCreate (itmGetType gItem) 1))
+								)
+								
+							(gr (objGetData gSource 'cabbageExplosionTimer) 1)
+								(block Nil
+									(shpRemoveDevice gSource gItem)
+									(sysCreateWeaponFire &itHighFluxMAG; gSource (objGetPos gSource) (rollDice 1 360) 5 Nil)
+									(objRemoveItem gSource (itmCreate (itmGetType gItem) 1))
+									(objSendMessage gPlayership gSource (cat "Reactor successfully ejected."))
+								)
+								
+							(not (eq (objGetData gSource 'cabbageOverloadTimer) 0))
+								(if (eq (objGetData gSource 'cabbageOverloadTimer) 1)
+									(objSetData gSource "cabbageExplosionTimer" (rollDice 1 (itmGetLevel gItem)))
+									(block Nil
+										(objSetData gSource "cabbageOverloadTimer" (subtract (objGetData gSource 'cabbageOverloadTimer) 1))
+										(objSendMessage gPlayership gSource (cat "Reactor Warning: Restore containment within " (objGetData gSource 'cabbageOverloadTimer) " seconds"))
+									)
+								)
+								
+							(eq (objGetData gSource 'cabbageOverloading) 1)
+								(block Nil
+									(objSetData gSource "cabbageOverloadTimer" (multiply (itmGetLevel gItem) 5))
+								)
+							
+								(block Nil
+									(if (eq (rollDice 1 (multiply (itmGetLevel gItem) 50)) (multiply (itmGetLevel gItem) 50))
+										(objSetData gSource "cabbageOverloading" 1)
+									)
+								)
+						)
+					)
+				)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+<!-- ================================================================ -->
+					<!-- Station Base Classes -->
+<!-- ================================================================ -->
+	
+	<StationType unid="&baCCCabbageCorpStation;"
+			name=			"(Cabbage Corp station base class)"
+			virtual=		"true"
+			>
+		
+		<Events>
+			<OnDestroy>
+				(intCabbageCorpOnDestroy)
+			</OnDestroy>
+		</Events>
+	</StationType>
+
+</TranscendenceModule>

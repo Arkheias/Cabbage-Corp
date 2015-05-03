@@ -1,0 +1,1343 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!-- ================================================================ -->
+						<!-- Item DockScreens -->
+<!-- ================================================================ -->
+<!--
+Alternate idea: Make the shields have different maximum strength limits 
+	depending on whether they are civilian or military. Then allow for 
+	these limits to be bypassed if you have bought the appropriate 
+	Cabbage Corp item.
+-->
+	
+	<!-- Napa Shield Modifications -->
+
+	<DockScreen	UNID="&dsCCNapaShields;"
+			name= "Ship's Interior"
+			backgroundID= "&rsShipInterior;"
+	>
+
+		<InitialPane>	
+			(switch
+				(itmGetProperty gItem 'damaged)
+					"NoUse"
+
+				"Default"
+			)
+		</InitialPane>
+
+		<Panes>
+			<Default>
+
+				<OnPaneInit>
+					(block Nil
+						(setq desc 
+							(cat "The Napa series of deflectors provide protection directly proportional to the amount of power supplied to them."
+								"\n\n"
+								"Your "
+								(itmGetName gItem 1)
+								" is currently set to mode "
+								(itmGetCharges gItem)
+								"\n\n"
+								"What mode would you like to it to be set to?"
+							)
+						)
+						(scrSetDesc gScreen desc)
+					)
+				</OnPaneInit>
+				
+				<Actions>
+					<Action name="0) Set strength to 100%" key="0" default="1">
+						(block Nil
+							(objSetItemCharges gSource gItem 0)
+							(scrExitScreen gSource)
+						)
+					</Action>
+					<Action name="1) Set strength to 150%" key="1">
+						(block Nil
+							(objSetItemCharges gSource gItem 1)
+							(scrExitScreen gSource)
+						)
+					</Action>
+					<Action name="2) Set strength to 200%" key="2">
+						(block Nil
+							(objSetItemCharges gSource gItem 2)
+							(scrExitScreen gSource)
+						)
+					</Action>
+					<Action name="3) Set strength to 250%" key="3">
+						(block Nil
+							(objSetItemCharges gSource gItem 3)
+							(scrExitScreen gSource)
+						)
+					</Action>
+					<Action name="4) Set strength to 300%" key="4">
+						(block Nil
+							(objSetItemCharges gSource gItem 4)
+							(scrExitScreen gSource)
+						)
+					</Action>
+
+					<Action name="Cancel" key="C" cancel="1">
+						(scrExitScreen gSource)
+					</Action>
+				</Actions>
+			</Default>
+
+			<NoUse>
+				<OnPaneInit>
+					(scrSetDesc gScreen 
+						(cat
+							"This "
+							(if gItem (itmGetName gItem 0) 
+								"deflector is too damaged to further modify."
+							)
+						)
+					)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Done" key="D" default="1" cancel="1">
+						(scrExitScreen gSource)
+					</Action>
+				</Actions>
+			</NoUse>
+		</Panes>
+	</DockScreen>
+	
+	<!-- Jadeite Shield Modifications -->
+
+	<DockScreen	UNID="&dsCCJadeiteShields;"
+			name= "Ship's Interior"
+			backgroundID= "&rsShipInterior;"
+	>
+
+		<InitialPane>	
+			(switch
+				(itmGetProperty gItem 'damaged)
+					"NoUse"
+
+				"Default"
+			)
+		</InitialPane>
+
+		<Panes>
+			<Default>
+
+				<OnPaneInit>
+					(block Nil
+						(setq desc 
+							(cat "The Jadeite series of deflectors provide protection proportional to the amount of power supplied to them. Each step increases power usage by 50% of the base level."
+								"\n\n"
+								"Your "
+								(itmGetName gItem 1)
+								" is currently set to mode "
+								(itmGetCharges gItem)
+								"\n\n"
+								"What mode would you like to it to be set to?"
+							)
+						)
+						(scrSetDesc gScreen desc)
+					)
+				</OnPaneInit>
+				
+				<Actions>
+					<Action name="0) Set strength to 100%" key="0" default="1">
+						(block Nil
+							(objSetItemCharges gSource gItem 0)
+							(scrExitScreen gSource)
+						)
+					</Action>
+					<Action name="1) Set strength to 133%" key="1">
+						(block Nil
+							(objSetItemCharges gSource gItem 1)
+							(scrExitScreen gSource)
+						)
+					</Action>
+					<Action name="2) Set strength to 167%" key="2">
+						(block Nil
+							(objSetItemCharges gSource gItem 2)
+							(scrExitScreen gSource)
+						)
+					</Action>
+					<Action name="3) Set strength to 200%" key="3">
+						(block Nil
+							(objSetItemCharges gSource gItem 3)
+							(scrExitScreen gSource)
+						)
+					</Action>
+					<Action name="4) Set strength to 233%" key="4">
+						(block Nil
+							(objSetItemCharges gSource gItem 4)
+							(scrExitScreen gSource)
+						)
+					</Action>
+					<Action name="5) Set strength to 267%" key="5">
+						(block Nil
+							(objSetItemCharges gSource gItem 5)
+							(scrExitScreen gSource)
+						)
+					</Action>
+					<Action name="6) Set strength to 300%" key="6">
+						(block Nil
+							(objSetItemCharges gSource gItem 6)
+							(scrExitScreen gSource)
+						)
+					</Action>
+
+					<Action name="Cancel" key="C" cancel="1">
+						(scrExitScreen gSource)
+					</Action>
+				</Actions>
+			</Default>
+
+			<NoUse>
+				<OnPaneInit>
+					(scrSetDesc gScreen 
+						(cat
+							"This "
+							(if gItem (itmGetName gItem 0) 
+								"deflector is too damaged to further modify."
+							)
+						)
+					)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Done" key="D" default="1" cancel="1">
+						(scrExitScreen gSource)
+					</Action>
+				</Actions>
+			</NoUse>
+		</Panes>
+	</DockScreen>
+	
+	<!-- Ore Refinery -->
+
+	<DockScreen	UNID="&dsCCOreRefinery;"
+			name=                "Ship's Interior"
+			backgroundID=        "&rsShipInterior;"
+	>
+
+		<InitialPane>	
+			(switch
+				(itmGetProperty gItem 'damaged)
+					"NoUse"
+
+				"Default"
+			)
+		</InitialPane>
+
+		<Panes>
+			<Default  showCounter="true">
+				<OnPaneInit>
+					(block (desc theData theCount itemIn itemOut)
+
+						(setq gFuel (@ gPassThrough 0))
+						(setq gOre (@ gPassThrough 1))
+						(setq gFuelAmount (@ gPassThrough 2))
+						(setq gOreAmount (@ gPassThrough 3))
+						(setq gFuelMult (@ gPassThrough 4))
+						
+						(switch
+							(eq gOre &itHeliumRegolith;)
+								(setq gCount (@ (objGetItems gSource "* +unid:&itHeliumRegolith;") 0))
+							(eq gOre &itUraniumOre;)
+								(setq gCount (@ (objGetItems gSource "* +unid:&itUraniumOre;") 0))
+							(eq gOre &itXenotiteOre;)
+								(setq gCount (@ (objGetItems gSource "* +unid:&itXenotiteOre;") 0))
+							(eq gOre &itPteracniumOre;)
+								(setq gCount (@ (objGetItems gSource "* +unid:&itPteracniumOre;") 0))
+							(eq gOre &itHadronArcheolith;)
+								(setq gCount (@ (objGetItems gSource "* +unid:&itHadronArcheolith;") 0))
+								
+								(setq gCount (objHasItem gSource (itmCreate gOre 1)))		;This command doesn't actually work for some reason, but it won't affect any of my refineries so I will just fix it later
+						)
+						
+						(setq theItem gCount)
+						(setq theCount (if theItem (itmGetCount theItem) 0))
+						(setq itemIn  (itmCreate gOre 1))
+						(setq itemOut (itmCreate gFuel 1))
+						(setq desc 
+							(cat (itmGetName (itmCreate gOre 1) 3)
+								": "
+								theCount
+								"\n\n"
+
+								(if (ls theCount gOreAmount)
+									; YES:  Not enough!
+									(cat "You need a minimum of "
+										gOreAmount
+										" unit(s) of ore to refine any into fuel."
+									)
+
+									; NO:  Plenty.
+									(cat "Each batch requires "
+										gOreAmount
+										" unit(s) of ore to produce "
+										gFuelAmount
+										" "
+										(itmGetName itemOut 2)
+										". "
+										"\n\n"
+										"How many "
+										(itmGetName itemIn 2)
+										" do you wish to process?"
+									)
+								)
+							)
+						)
+						(scrEnableAction gScreen 0 (if (ls (divide theCount gOreAmount) 1) Nil True))
+						(scrSetDesc gScreen desc)
+					)
+				</OnPaneInit>
+
+				<Actions>
+					; Press [Esc] to exit
+					<Action name="Refine ore" key="R" default="1">
+						(block (theItem theCount)
+							(setq theCount (scrGetCounter gScreen))
+                            (setq theLimit
+                                (if (setq theItem gCount)
+                                    (itmGetCount theItem)
+                                    0
+                                )
+                            )
+
+							(switch
+                                (gr theCount theLimit)
+                                    (scrSetCounter gScreen (multiply (divide theLimit gOreAmount) gOreAmount))
+									
+                                (not (eq theCount (multiply (divide theCount gOreAmount) gOreAmount)))
+                                    (scrSetCounter gScreen (multiply (divide theCount gOreAmount) gOreAmount))
+									
+								(gr theCount 0)
+									(block (itemIn itemOut)
+										(setq itemIn  (itmCreate gOre theCount))
+										(setq itemOut (itmCreate gFuel (divide (multiply theCount gFuelAmount) gOreAmount)))
+										(block nil
+											(setq fuelUse (multiply thecount gFuelMult))
+											(if (geq (shpGetFuelLeft gPlayerShip) fuelUse)
+												(block nil
+													(objRemoveItem gSource itemIn)
+													(objAddItem gsource itemOut)
+													(shpConsumeFuel gplayership fuelUse)
+													(objSendMessage gSource Nil 
+														(cat (itmGetName itemIn 8)
+															" refined into "
+															(itmGetName itemOut 8)
+														)
+													)
+												)
+												(block nil (objSendMessage gPlayerShip Nil "Not enough fuel to finish refining.")(scrExitScreen gScreen))
+											)
+										)
+										(scrExitScreen gScreen 'forceUndock)
+									)
+							)
+						)
+					</Action>
+
+					<Action name="Cancel" key="C" cancel="1">
+						(scrExitScreen gScreen 'forceUndock)
+					</Action>
+
+				</Actions>
+
+			</Default>
+
+			<NoUse>
+				<OnPaneInit>
+					(scrSetDesc gScreen 
+						(cat
+							"This "
+							(if gItem (itmGetName gItem 0) "damaged helium regolith refinery")
+							" is nonfunctional."
+						)
+					)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Done" key="D" default="1" cancel="1">
+						(scrExitScreen gScreen 'forceUndock)
+					</Action>
+				</Actions>
+			</NoUse>
+		</Panes>
+	</DockScreen>
+
+<!-- ================================================================ -->
+						<!-- Ship DockScreens -->
+<!-- ================================================================ -->
+
+	<!-- Cabbage Corp Toolset -->
+
+	<DockScreen	UNID="&scCCCabbageModification;"
+			name=				"Cabbage Corp Toolset"
+			desc=				"Equipment Configuration"
+			type=				"itemPicker"
+			backgroundID=		"&rsItemListScreen;"
+			nestedScreen=		"true"
+	>
+			
+		<Events>
+			<OnGlobalPaneInit>
+				; aScreenUNID is the UNID of the screen being shown
+				; aScreen is the screen name (if this is a local screen)
+				; aPane is the pane being shown
+				; Action only appears if any item with the Cabbage attribute is installed.
+				(if (eq (objGetItems gSource "*I +cabbageCorp") Nil)
+					Nil
+					(if (and (eq aScreenUNID &dsShipInterior;) (eq aPane "Default"))
+						(scrAddAction
+							gScreen
+							'cabbageCorp
+							0
+							"Cabbage Corp Toolset"
+							"C"
+							Nil
+							(scrShowScreen gScreen "&scCCCabbageModification;")
+						)
+					)
+				)
+			</OnGlobalPaneInit>
+		</Events>
+
+		<ListOptions
+			dataFrom=	"player"
+			list=		"*I +cabbageCorp"
+		/>
+
+		<Panes>
+			<Default
+					desc=	"You are viewing the ship's configuration.">
+
+				<OnPaneInit>
+					(block (gItem desc)
+						(setq gItem (scrGetItem gScreen))
+
+						(if gItem
+							(block (theCategory)
+								(setq desc (cat "Unit mass: " (strMassString (itmGetMass gItem)) "\n\n"))
+
+								; Describe the item installation
+								(setq desc (cat desc (objGetInstalledItemDesc gPlayerShip gItem) "."))
+								
+								; Display
+								(scrSetDesc gScreen desc)
+							)
+						)
+						(scrEnableAction gScreen 0 (if (eq (itmGetStaticData gItem 'CCItemSwap) Nil) Nil True))
+						(scrEnableAction gScreen 1 (if (or (itmMatches gItem "a;") (itmIsDamaged gItem)) Nil True))
+						(scrEnableAction gScreen 2 (if (eq (itmGetStaticData gItem 'CCItemUse) Nil) Nil True))
+					)
+				</OnPaneInit>
+				<Actions>
+					
+					<Action name="Modify" key="M">
+						(block Nil
+							(setq gItem (scrGetItem gScreen))
+							(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+						)
+					</Action>
+					
+					<Action name="Factory Reset" key="F">
+						<ShowPane pane="CCFactoryReset"/>
+					</Action>
+					
+					<Action name="Use Equipment" key="U">
+						(block Nil
+							(setq gItem (scrGetItem gScreen))
+							(setq gPassThrough (itmGetStaticData gItem 'CCPassThrough))
+							(scrShowScreen gScreen (itmGetStaticData gItem 'CCItemUse))
+						)
+					</Action>
+					
+					<Action name="Done" cancel="1" key="D">
+						<Navigate screen="&dsShipInterior;"/>
+					</Action>
+
+				</Actions>
+
+			</Default>
+			
+			<CCFactoryReset
+							desc=	"Are you sure you wish to reset your Cabbage Corp device's software to its factory state?  This operation cannot be undone and all enhancements currently on the device will be lost.  This does not affect enhancements provided by other devices and cannot be used to undo physical alterations or damage to either armor or devices.">
+
+				<Actions>
+					<Action name="Apply Factory Reset" key="A">
+						(block Nil
+							(setq gItem (scrGetItem gScreen))
+							(setq gCurrentFuel (shpGetFuelLeft gSource))
+							(setq gBaseDevice (itmGetType gItem))
+							
+							(shpRemoveDevice gSource gItem)
+							(objRemoveItem gSource (itmCreate gBaseDevice 1))
+							(objAddItem gSource (itmCreate gBaseDevice 1))
+							(shpInstallDevice gSource (itmCreate gBaseDevice 1))
+							
+							(setq gBaseFuel (shpGetFuelLeft gSource))
+							(shpConsumeFuel gSource (multiply (subtract gCurrentFuel gBaseFuel) -1))
+						)
+					</Action>
+					
+					<Action name="Cancel" cancel="1" key="C">
+						<ShowPane pane="Default"/>
+					</Action>
+
+				</Actions>
+			</CCFactoryReset>
+		</Panes>
+	</DockScreen>
+
+<!-- ================================================================ -->
+					<!-- Station DockScreens-->
+<!-- ================================================================ -->
+
+	<!-- Cabbage Corp Buy and Modify -->
+
+	<DockScreen	UNID="&dsCCBuyAndModify;"
+			type=				"customItemPicker"
+			backgroundID=		"&rsItemListScreen;"
+			nestedScreen=		"true"
+	>
+			
+		<Events>
+			<OnGlobalPaneInit>
+				; aScreenUNID is the UNID of the screen being shown
+				; aScreen is the screen name (if this is a local screen)
+				; aPane is the pane being shown
+				; Action only appears if any item with the Cabbage attribute is installed.
+				(if (eq (objGetItems gSource "* +cabbageCorp") Nil)
+					Nil
+					(if (and 
+							(eq aScreenUNID &dsRPGCommoditiesExchangeBuy;) 
+							(eq aPane "Default")
+							(or
+								(eq (objGetType gSource) &stCCFranchise;)
+								(eq (objGetType gSource) &stCCDealer;)
+								(eq (objGetType gSource) &stCCFactory;)
+								(eq (objGetType gSource) &stCCOutpost;)
+							)
+							(not (eq (itmGetStaticData (scrGetItem gScreen) 'CCBuyAndModify) Nil))
+						)
+						(scrAddAction
+							gScreen
+							'buyAndModify
+							1
+							"Buy &amp; Modify"
+							"M"
+							'default
+							(block Nil
+								(setq gBaseItem (scrGetItem gScreen))
+								(scrShowScreen gScreen "&dsCCBuyAndModify;")
+							)
+						)
+					)
+				)
+			</OnGlobalPaneInit>
+		</Events>
+	
+		<List>
+			(map (itmGetStaticData gBaseItem 'CCBuyAndModify) theRecipe
+				(itmCreate (@ theRecipe 'product) (divide (itmGetCount gBaseItem) (@ theRecipe 'count)))
+			)
+		</List>
+
+		<Panes>
+			<Default
+					desc=			"There are no items here.">
+
+				<OnPaneInit>
+					(block (thisItem)
+						(setq thisItem (scrGetItem gScreen))
+						(if thisItem
+							(block (affordCount availCount currencyUsed desc fitCount)
+
+								; Set the currency
+
+								(setq currencyUsed (objGetDefaultCurrency gSource))
+								
+								; Compute the cost of this item.
+
+								(switch
+									; If gMargin is a function, then we call the function
+									; to evaluate the price.
+
+									(isfunction gMargin)
+										(block Nil
+											(objAddItem gSource thisItem)
+											(setq gCost 
+												(add (apply gMargin thisItem Nil)
+													(block Nil
+														(for counter 0	(subtract (count (itmGetStaticData gBaseItem 'CCBuyAndModify)) 1)
+															(if (eq (itmGetType thisItem) (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'Product))
+																(setq gCost (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'extraCost))
+															)
+														)
+														gCost
+													)
+												)
+											)
+										(objRemoveItem gSource thisItem)
+										)
+										
+									; Otherwise we let the station price the item
+									
+									(block Nil
+										(objAddItem gSource thisItem)
+										(setq gCost 
+											(add (objGetSellPrice gSource thisItem) 
+												(block Nil
+													(for counter 0	(subtract (count (itmGetStaticData gBaseItem 'CCBuyAndModify)) 1)
+														(if (eq (itmGetType thisItem) (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'Product))
+															(setq gCost (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'extraCost))
+														)
+													)
+													gCost
+												)
+											)
+										)
+										(objRemoveItem gSource thisItem)
+									)
+								)
+									
+								(if (not gCost) (setq gCost 0))
+
+								(setq availCount (itmGetCount thisItem))
+
+								(if (gr gCost 0)
+									(setq affordCount (divide (objGetBalance gPlayerShip currencyUsed) gCost))
+									(setq affordCount 0)
+									)
+
+								(setq fitCount (objGetFitCount gPlayerShip thisItem))
+								
+								(setq gMaxCount (min availCount affordCount fitCount))
+
+								; Set the price and description
+								(setq desc (cat "Unit price: " (if (eq gCost 0) "N/A" (fmtCurrency currencyUsed gCost))))
+								(if (gr gMaxCount 1)
+									(setq desc (cat desc " (" gMaxCount " for " (fmtCurrency currencyUsed (multiply gCost gMaxCount)) ")"))
+									)
+
+								(setq desc (cat desc "\nUnit mass: " (strMassString (itmGetMass thisItem))))
+								(if (gr gMaxCount 1)
+									(setq desc (cat desc " (" gMaxCount " at " (strMassString (multiply (itmGetMass thisItem) gMaxCount)) ")"))
+									)
+
+								(setq desc (cat desc "\n\n"))
+
+								(switch
+									(eq gCost 0)
+										(setq desc (cat desc "This item is not for sale."))
+									(eq affordCount 0)
+										(setq desc (cat desc "You do not have enough " (fmtCurrency currencyUsed True) " to purchase any."))
+									(eq fitCount 0)
+										(setq desc (cat desc "Unfortunately, you cannot fit any in your cargo hold."))
+									(and (gr availCount affordCount) (gr fitCount affordCount))
+										(setq desc (cat desc "You have enough " (fmtCurrency currencyUsed True) " to buy " affordCount "."))
+									(and (gr availCount fitCount))
+										(setq desc (cat desc "You have enough room in your cargo hold to carry " fitCount "."))
+									)
+
+								(scrSetDesc gScreen desc)
+							)
+							(setq gMaxCount 0)
+						)
+
+						; Enable/disable actions
+						(scrEnableAction gScreen 0 (gr gMaxCount 0))
+					)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Buy this Item" default="1" key="B">
+						(if (gr gMaxCount 1)
+							(scrShowPane gScreen "BuyQuantity")
+							(if (eq gMaxCount 1)
+								(block Nil
+									(setq gItem (scrGetItem gScreen))
+									(setq gInstallCriteria Nil)
+
+									; Install?
+									
+									(switch
+										(and gInstallCriteria
+												(item
+													(intInstallDevicePrepEx
+														gItem								; item to install
+														0									; specify cost of 0 because we check later
+														Nil									; install cost margin
+														(objGetDefaultCurrency gSource)		; currency to use
+														gTechLevel							; max tech level
+														gInstallCriteria					; install criteria
+														gCheckMilitaryID					; check military ID
+														True								; item is in cargo
+														True)								; buy and install
+													0)
+												)
+											(scrShowPane gScreen "InstallItem")
+											
+										; Otherwise...
+										
+										(block Nil
+											(intBuyModifiedItems 1 gCost)
+											(scrExitScreen gScreen)
+											)
+										)
+									)
+								)
+							)
+					</Action>
+
+					<Action name="Done" cancel="1" key="D">
+						(scrExitScreen gScreen)
+					</Action>
+				</Actions>
+			</Default>
+
+			<BuyQuantity
+					showCounter=	"true">
+
+				<OnPaneInit>
+					(block Nil
+						(scrSetDesc gScreen (cat "How many items do you wish to purchase at " (fmtCurrency (objGetDefaultCurrency gSource) gCost) " each?"))
+						(scrSetCounter gScreen gMaxCount)
+						)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Buy" default="1" key="B">
+						(block (count)
+							(setq gItem (scrGetItem gScreen))
+							(setq count (scrGetCounter gScreen))
+							(if (gr count gMaxCount)
+								(scrSetCounter gScreen gMaxCount)
+								
+								; Install?
+								(if (and gInstallCriteria
+										(eq count 1)
+										(item
+											(intInstallDevicePrepEx
+												gItem								; item to install
+												0									; specify cost of 0 because we check later
+												Nil									; install cost margin
+												(objGetDefaultCurrency gSource)		; currency to use
+												gTechLevel							; max tech level
+												gInstallCriteria					; install criteria
+												gCheckMilitaryID					; check military ID
+												True								; item is in cargo
+												True)								; buy and install
+											0)
+										)
+									(scrShowPane gScreen "InstallItem")
+									
+									; Otherwise...
+									
+									(block Nil
+										(intBuyModifiedItems count gCost)
+										(scrExitScreen gScreen)
+										)
+									)
+								)
+							)
+					</Action>
+
+					<Action name="Cancel" cancel="1" key="C">
+						<ShowPane pane="Default"/>
+					</Action>
+
+				</Actions>
+
+			</BuyQuantity>
+
+			<InstallItem
+					noListNavigation="true"
+					>
+				<OnPaneInit>
+					(block (currencyUsed desc installResult)
+						(setq gItem (itmSetCount (scrGetItem gScreen) 1))
+						(setq currencyUsed (objGetDefaultCurrency gSource))
+
+						(setq installResult						
+							(intInstallDevicePrepEx
+								gItem								; item to install
+								Nil									; compute installation cost
+								gInstallMargin						; install cost margin
+								currencyUsed						; currency to use
+								gTechLevel							; max tech level
+								gInstallCriteria					; install criteria
+								gCheckMilitaryID					; check military ID
+								True								; item is in cargo
+								True)								; buy and install
+							)
+
+						(setq gCanInstall (item installResult 0))
+						(setq gInstallCost (item installResult 1))
+						(setq gDesc (item installResult 2))
+
+						(switch
+							(gr (add gCost gInstallCost) (objGetBalance gPlayerShip currencyUsed))
+								(block Nil
+									(setq desc (cat gDesc
+										"\n\nUnfortunately, you cannot afford the installation cost. "
+										"Do you wish to buy it without installation for " (fmtCurrency currencyUsed gCost) "?"
+										))
+									(setq gCanInstall Nil)
+									)
+
+							(setq desc (cat gDesc
+								"\n\nDo you wish to buy and install it for " (fmtCurrency currencyUsed (add gCost gInstallCost)) ", "
+								"or do you wish to only buy it for " (fmtCurrency currencyUsed gCost) "?"
+								))
+							)
+
+						(scrSetDesc gScreen desc)
+
+						; Disable actions
+						(scrEnableAction gScreen 0 gCanInstall)
+						)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Buy &amp; Install" default="1" key="I">
+						(if gCanInstall
+							(block (itemInstalled)
+								;	We need to store gItem elsewhere in case it gets clobbered
+								;	after we buy it.
+								
+								(setq itemInstalled gItem)
+								(scrSetData gScreen 'itemInstalled itemInstalled)
+								
+								(intBuyModifiedItems 1 (add gCost gInstallCost))
+								
+								(shpInstallDevice gPlayerShip itemInstalled)
+								(typSetData &svPlayer; 'tutorialInstalled True)
+								(scrShowPane gScreen "InstallSuccess")
+								)
+							)
+					</Action>
+
+					<Action name="Buy Only" key="B">
+						(block Nil
+							(intBuyModifiedItems 1 gCost)
+						 	(scrExitScreen gScreen)
+							)
+					</Action>
+
+					<Action name="Cancel" cancel="1" key="C">
+						(scrShowPane gScreen "Default")
+					</Action>
+				</Actions>
+			</InstallItem>
+
+			<InstallSuccess
+					noListNavigation="true"
+					>
+				<OnPaneInit>
+					(block (itemInstalled)
+						(setq itemInstalled (scrGetData gScreen 'itemInstalled))
+						(scrSetDesc gScreen
+							(cat (itmGetName itemInstalled 0x01) " installed successfully.")
+							)
+						)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Continue" default="1" cancel="1" key="C">
+						 	(scrExitScreen gScreen)
+					</Action>
+				</Actions>
+			</InstallSuccess>
+		</Panes>
+	</DockScreen>
+		
+	<!-- Cabbage Corp Current Deals -->
+
+	<DockScreen	UNID="&dsCCCabbageCorpCurrentDeals;"
+			name=				"Current Deals"
+			desc=				"Current Deals"
+			nestedScreen=   	"true"
+	>
+
+		<Panes>
+					
+			<Default
+					desc=	"You are at a Cabbage Corp advertisement kiosk.">
+
+				<OnPaneInit>
+						(scrEnableAction gScreen 0 (or
+							(eq (objGetType gSource) &stCCFranchise;)
+							(eq (objGetType gSource) &stCCDealer;)
+							(eq (objGetType gSource) &stCCFactory;)
+							(eq (objGetType gSource) &stCCOutpost;)
+						))
+				</OnPaneInit>
+					
+				<Actions>
+					<Action name="View Special Deal" key="V">
+						(block (gType gMasterList gListLevel gSubList gPreItem)
+							(setq gType (modulo (@ (objGetPos gSource) 0) 3))		;Determines the deal based on station location
+							(setq gMasterList (typGetData &svCCCabbageCorp; 'SpecialDeal))
+							(setq gListLevel (subtract (sysGetLevel) 1))
+							(setq gSubList (@ gMasterList gListLevel))
+							(setq gPreItem (@ gSubList gType))
+							<!--
+							old code for completely random generation every time the screen is loaded
+							(setq gPreItem (randomTable 40 (@ gSubList 0) 20 (@ gSubList 1) 20 (@ gSubList 2) 20 (@ gSubList 3)))
+							-->
+							(setq gItem (itmCreate gPreItem 1))
+							
+							(setq gCost (add (itmGetPrice gItem) (divide (itmGetInstallCost gItem) 2)))
+							(setq gCheckMilitaryID (not (objGetData gPlayerShip "CCPremiumIDImplant")))
+							(scrShowScreen gScreen "&dsInstallSpecificDevice;")
+						)
+					</Action>
+
+					<Action name="Buy Cabbage Corp Diplomatic ID" key="D">
+						(block Nil
+							(setq gItem (itmCreate &itCCDiplomaticID; 1))
+							(setq gCheckMilitaryID (not (objGetData gPlayerShip "CCPremiumIDImplant")))
+							(scrShowPane gScreen "PurchaseSpecificItem")
+						)
+					</Action>
+
+					<Action name="Buy Cabbage Corp Premium Membership ID" key="P">
+						(block Nil
+							(setq gItem (itmCreate &itCCPremiumID; 1))
+							(setq gCheckMilitaryID (not (objGetData gPlayerShip "CCPremiumIDImplant")))
+							(scrShowPane gScreen "PurchaseSpecificItem")
+						)
+					</Action>
+
+					<Action name="Buy Cabbage Corp System Map Access ROM" key="S">
+						(block Nil
+							(setq gItem (itmCreate &itCCSystemMapROM; 1))
+							(setq gCheckMilitaryID (not (objGetData gPlayerShip "CCPremiumIDImplant")))
+							(scrShowPane gScreen "PurchaseSpecificItem")
+						)
+					</Action>
+					
+					<Action name="Done" cancel="1" key="N">
+						(scrExitScreen gSource)
+					</Action>
+				</Actions>
+			</Default>
+			
+			<PurchaseSpecificItem>
+
+				<OnPaneInit>
+					(block (desc)					
+						(setq desc (cat 
+							(itmGetProperty gItem 'description)
+							"\n\n"
+							"Cost: "
+							(itmGetPrice gItem)
+							" credits."
+						))
+						
+						(scrSetDesc gScreen desc)
+					
+						; Enable/disable buttons
+						(scrEnableAction gScreen 0 (geq (objGetBalance gPlayerShip) (itmGetPrice (itmGetType gItem))))
+					)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Purchase this Item" default="1" key="P">
+						(if (geq (objGetBalance gPlayerShip) (itmGetPrice (itmGetType gItem)))
+							(block (itemPrice)
+								; Add the item
+								(objAddItem gPlayerShip gItem)
+								(objCharge gPlayerShip (objGetDefaultCurrency gSource) (itmGetPrice gItem))
+								(typSetData &svPlayer; 'tutorialInstalled True)
+								
+								; If we're charging the player more than the cost of
+								; the device, then count it as a purchase
+								(setq itemPrice (itmGetPrice gItem (objGetDefaultCurrency gSource)))
+								(if (geq (itmGetPrice gItem) itemPrice)
+									(plyRecordBuyItem gPlayer gItem (objGetDefaultCurrency gSource) itemPrice)
+								)
+
+								(setq gResult True)
+								(scrShowPane gScreen "Default")
+							)
+						)
+					</Action>
+
+					<Action name="Cancel" cancel="1" key="C">
+						(block Nil
+							(setq gResult Nil)
+							(scrShowPane gScreen "Default")
+						)
+					</Action>
+				</Actions>
+			</PurchaseSpecificItem>
+		</Panes>
+	</DockScreen>
+		
+	<!-- Cabbage Corp Workshop -->
+
+	<DockScreen	UNID="&dsCCCabbageCorpWorkshop;"
+			name=				"Cabbage Corp Workshop"
+			desc=				"CabbageCorp Workshop"
+			nestedScreen=   	"true"
+	>
+
+		<Panes>
+					
+			<Default
+					desc=	"You are at a Cabbage Corp Workshop terminal.">
+					
+				<Actions>
+					<Action name="Custom Weapons" key="W">
+						(block Nil
+							(setq gSovereign &svCCCabbageCorp;)
+							(setq gRecipes 'WeaponRecipes)
+							(setq gTechLevel (objGetStaticData gSource "CCLevel"))
+							(scrShowScreen gScreen "&dsCCCabbageCustomWork;")
+						)
+					</Action>
+					
+					<Action name="Custom Armor" key="A">
+						(block Nil
+							(setq gSovereign &svCCCabbageCorp;)
+							(setq gRecipes 'ArmorRecipes)
+							(setq gTechLevel (objGetStaticData gSource "CCLevel"))
+							(scrShowScreen gScreen "&dsCCCabbageCustomWork;")
+						)
+					</Action>
+
+					<Action name="Custom Devices" key="D">
+						(block Nil
+							(setq gSovereign &svCCCabbageCorp;)
+							(setq gRecipes 'Recipes)
+							(setq gTechLevel (objGetStaticData gSource "CCLevel"))
+							(scrShowScreen gScreen "&dsCCCabbageCustomWork;")
+						)
+					</Action>
+
+					<Action name="Custom Modifications" key="M">
+						(block Nil
+							(setq gSovereign &svCCCabbageCorp;)
+							(setq gRecipes 'IllegalRecipes)
+							(setq gTechLevel (objGetStaticData gSource "CCLevel"))
+							(scrShowScreen gScreen "&dsCCCabbageCustomWork;")
+						)
+					</Action>
+					
+					<Action name="Repair Items" key="R">
+						(scrShowScreen gScreen "&dsRPGRepairItem;" 
+							{criteria: "*~aD +Cabbage;" priceAdj: 75}
+						)
+					</Action>
+					
+					<Action name="Done" cancel="1" key="N">
+						(scrExitScreen gSource)
+					</Action>
+				</Actions>
+			</Default>
+		</Panes>
+	</DockScreen>
+	
+		<!-- Cabbage Custom Work -->
+	
+	<DockScreen UNID="&dsCCCabbageCustomWork;"
+			type=           "customItemPicker"
+			backgroundID=   "&rsItemListScreen;"
+			nestedScreen=   "true"
+	>
+	
+		<List>
+			(map (typGetData gSovereign gRecipes) 'excludeNil theRecipe
+				(tinkerCreateItem theRecipe 1)
+			)
+		</List>
+		
+		<Panes>
+			<Default>
+			
+				<OnPaneInit>
+					
+					(block (theItem theRecipe theComponents desc componentDesc componentPrice workCost errorDesc missingComponents maxCount availableComponents)
+						(setq theItem (scrGetItem gScreen))
+						
+						;	Find the recipe for this item
+						
+						(setq theRecipe
+							(@ (filter (typGetData gSovereign gRecipes) theRecipe
+									(eq (@ theRecipe 'item) (itmGetType theItem))
+								)
+								0
+							)
+						)
+							
+						;	Describe the components needed
+						
+						(setq theComponents 
+							(map (@ theRecipe 'components) theDesc
+								(itmCreate (@ theDesc 'item) (@ theDesc 'count))
+							)
+						)
+
+						(setq componentDesc (strItemList theComponents 0x0108))
+							
+						;	Compute the total price of the components and compare to the
+						;	price of the result.
+						
+						(setq componentPrice 
+							(map theComponents 'reduceSum theComponent 
+								;	For devices we assume a damaged device
+								(if (itmMatches theComponent "d")
+									(multiply (itmGetCount theComponent) (itmGetPrice (itmSetProperty theComponent 'damaged True)))
+									(multiply (itmGetCount theComponent) (itmGetPrice theComponent))
+								)
+							)
+						)
+						
+						;	The total cost of the work compensates for any difference between
+						;	the input and output prices.
+						
+						(setq workCost 
+							(add
+								(max 
+									50
+									(intRoundUp (subtract (itmGetPrice theItem) componentPrice) 25)
+								)
+								(@ theRecipe 'extraCost)
+							)
+						)
+							
+						;	For each required component, add up the number of items the player
+						;	actually has. Note that we accept damaged items.
+						
+						(setq availableComponents
+							(map theComponents theComponent
+								(block (countAvailable)
+									(setq countAvailable 0)
+									
+									;	Add the number of non-damaged items we have
+								
+									(setq countAvailable (add countAvailable
+										(objHasItem gPlayerShip theComponent 1)
+										)
+									)
+										
+									;	Now add damaged items
+									
+									(setq countAvailable (add countAvailable
+										(objHasItem gPlayerShip (itmSetProperty theComponent 'damaged True) 1)
+										)
+									)
+										
+									;	Compose entry
+									
+									{	item: theComponent
+										available: countAvailable
+									}
+								)
+							)
+						)
+							
+						;	Generate a list of the number of items the player is missing.
+						;	Note that we accept damaged items.
+						
+						(setq missingComponents
+							(map availableComponents 'excludeNil theEntry
+								(block (countAvailable)
+									(switch
+										(eq (@ theEntry 'available) 0)
+											(cat "\n\nUnfortunately, you do not have any " (itmGetName (@ theEntry 'item) 0x102) ".")
+											
+										(ls (@ theEntry 'available) (itmGetCount (@ theEntry 'item)))
+											(cat "\n\nUnfortunately, you only have " (itmGetName (itmSetCount (@ theEntry 'item) (@ theEntry 'available)) 0x1100) ".")
+											
+										;	Otherwise we have enough, so these items are not missing
+										
+										Nil
+									)
+								)
+							)
+						)
+							
+						;	See if the player has the required components and money
+						
+						(switch
+							missingComponents
+								(block Nil
+									(setq maxCount 0)
+									(setq errorDesc (@ missingComponents 0))
+								)
+								
+							(leq (plyGetCredits gPlayer) workCost)
+								(block Nil
+									(setq maxCount 0)
+									(setq errorDesc "\n\nUnfortunately, you cannot afford the cost.")
+								)
+
+							(block Nil
+								;	Figure out the maximum number of items we could create
+						
+								(setq maxCount (divide (plyGetCredits gPlayer) workCost))
+								(enum availableComponents theEntry
+									(setq maxCount (min
+										maxCount
+										(divide (@ theEntry 'available) (itmGetCount (@ theEntry 'item)))
+										)
+									)
+								)
+									
+								(setq errorDesc "")
+							)
+						)
+						
+						;	Set the description
+						
+						(switch
+							(not componentDesc)
+								(scrSetDesc gScreen
+									"\"To fabricate " (itmGetName theItem 0x0108) " we charge " workCost " credits."
+									errorDesc
+									"\""
+								)
+								
+							(scrSetDesc gScreen
+								"\"To fabricate " (itmGetName theItem 0x0108) " we need "
+								componentDesc
+								" plus " workCost " credits."
+								errorDesc
+								"\""
+							)
+						)
+							
+						;	Remember the recipe, the components, and the cost for later
+						
+						
+						(scrSetData gScreen 'recipe theRecipe)
+						(scrSetData gScreen 'components theComponents)
+						(scrSetData gScreen 'cost workCost)
+						(scrSetData gScreen 'maxCount maxCount)
+							
+						;	Disable Fabricate action if we can't do it
+						
+						(scrEnableAction gScreen 0 (gr maxCount 0))
+						
+					)
+						
+						
+				</OnPaneInit>
+				
+				<Actions>
+					<Action name="Fabricate" default="1" key="F">
+						(if (gr (scrGetData gScreen 'maxCount) 1)
+							(scrShowPane gScreen "FabricateCount")
+							
+							(block Nil
+								(scrSetData gScreen 'result 
+									(tinkerFabricate 
+										(scrGetData gScreen 'recipe)
+										(scrGetData gScreen 'cost)
+										1
+										)
+									)
+								(scrShowPane gScreen "FabricateResult")
+								)
+							)
+					</Action>
+					
+					<Action name="Done" cancel="1" key="D">
+						(scrExitScreen gScreen)
+					</Action>
+				</Actions>
+				
+			</Default>
+			
+			<FabricateCount
+					showCounter=	"true"
+					>
+				<OnPaneInit>
+					(block Nil
+						(scrSetDesc gScreen (cat "How many items do you wish to fabricate?"))
+						(scrSetCounter gScreen (scrGetData gScreen 'maxCount))
+						)
+				</OnPaneInit>
+			
+				<Actions>
+					<Action name="Fabricate" default="1" key="F">
+						(block (count)
+							(setq count (scrGetCounter gScreen))
+							(if (gr count (scrGetData gScreen 'maxCount))
+								(scrSetCounter gScreen (scrGetData gScreen 'maxCount))
+								(block Nil
+									(scrSetData gScreen 'result 
+										(tinkerFabricate 
+											(scrGetData gScreen 'recipe)
+											(scrGetData gScreen 'cost)
+											count
+											)
+										)
+									(scrShowPane gScreen "FabricateResult")
+									)
+								)
+							)
+					</Action>
+					
+					<Action name="Cancel" cancel="1" key="C">
+						(scrShowPane gScreen "Default")
+					</Action>
+				</Actions>
+			</FabricateCount>
+				
+			<FabricateResult
+					noListNavigation="true"
+					>
+				<OnPaneInit>
+					(block (theResult)
+						(setq theResult (scrGetData gScreen 'result))
+						(scrSetDesc gScreen 
+							"After much work with the robots the technician returns with their creation: "
+							"\"Nothing to it once you know how these machines work.\"\n\n"
+							
+							"Fabricated: " (itmGetName (@ theResult 'itemsCreated) 0x08) ".\n"
+							"Consumed: " (strItemList (@ theResult 'itemsConsumed) 0x08) ".\n"
+							"Total Cost: " (@ theResult 'totalCost) " credits."
+							)
+						)
+				</OnPaneInit>
+			
+				<Actions>
+					<Action name="Done" default="1" cancel="1" key="D">
+						(scrExitScreen gScreen)
+					</Action>
+				</Actions>
+			</FabricateResult>
+			
+		</Panes>
+	</DockScreen>
+
+	<!-- Cabbage Corp Execution -->
+
+	<DockScreen UNID="&dsCCCabbageExecution;"	nestedScreen="true">
+
+		<Panes>
+			<Default>
+				<OnPaneInit>
+					(scrSetDesc gScreen (cat "As you enter the station you are surrounded by heavily armed soldiers. A Cabbage Corp officer approaches you: \"You are under arrest for " (objGetData gPlayerShip "CCCrime") "\"" ))
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Pan out" default="1" cancel="1" key="P">
+						(block Nil
+							(plyDestroyed gPlayer (cat "was executed for " (objGetData gPlayerShip "CCCrime")))
+							(scrExitScreen gScreen 'forceUndock)
+							)
+					</Action>
+				</Actions>
+
+			</Default>
+		</Panes>
+	</DockScreen>
+
+</TranscendenceModule>

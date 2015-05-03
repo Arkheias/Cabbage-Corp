@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+<!--
+Cabbage Corp franchises are independently owned an opperated and are thus limited to civilian goods.
+-->
+
+	<!-- Arms Dealer, Cabbage Corp -->
+
+	<StationType UNID="&stCCFranchise;"
+			name=				"Cabbage Corp franchise"
+			sovereign=			"&svCCCabbageCorp;"
+			inherit=			"&baCCCabbageCorpStation;"
+
+			dockScreen=			"Main"
+			abandonedScreen=	"&dsAbandonedStation;"
+			dockingPorts=		"8"
+			canAttack=			"true"
+
+			multiHull=			"true"
+			armorID=			"&itCC4xTriniumArmor;"
+			hitPoints=			"300"
+			repairRate=			"5"
+			fireRateAdj=		"20"
+			explosionType=		"&vtThermoExplosion1;"
+			ejectaType=			"&vtWreckEjecta;"
+
+			attributes=			"cabbageCorp, corporateArms, corporateDecon, envAir, envEarth, envFire, envWater, friendly, independent, generic, human, populated"
+			levelFrequency=		"rurv- ----- ----- ----- -----"
+			locationCriteria=	"+planetary"
+
+			noArticle=			"true"
+	>
+
+		<Image			imageID="&rsCCFranchise;" imageX="0" imageY="0" imageWidth="128" imageHeight="128"/>
+
+		<Ships>
+			<Ship	count="1" class="&scCCMarkIIWraithAuton;" orders="patrol" patrolDist="30"/>
+			<Ship	count="1" class="&scCCMarkIIWraithAuton;" orders="patrol" patrolDist="20"/>
+			
+			<Lookup count="2" table="&tbCorpDefenders;"/>
+			<Lookup count="1d4" table="&tbCommPrivateCrafts;"/>
+		</Ships>
+
+		<Reinforcements minShips="4">
+			<Table>
+				<Ship	chance="20" class="&scCCMarkIIWraithAuton;" orders="patrol" patrolDist="20"/>
+				<Lookup chance="60" table="&tbCorpDefenders;"/>
+				<Lookup chance="20" table="&tbCommPrivateCrafts;"/>
+			</Table>
+		</Reinforcements>
+
+		<Items>
+			<RandomItem count="1d6" 
+					criteria=		"w +cabbageCorp; -cabbageNotStandard; -Military; -Illegal; -NotForSale;"
+					levelFrequency=	"rucur -----"
+			/>
+			
+			<RandomItem count="1d6" 
+					criteria=		"s +cabbageCorp; -cabbageNotStandard; -Military; -Illegal; -NotForSale;"
+					levelFrequency=	"rucur -----"
+			/>
+
+			<RandomItem count="1d6" 
+					criteria=		"d~w +cabbageCorp; -cabbageNotStandard; -Military; -Illegal; -NotForSale;"
+					levelFrequency=	"rucur -----"
+			/>
+
+			<RandomItem count="2d6" 
+					criteria=		"a +cabbageCorp; -cabbageNotStandard; -Military; -Illegal; -NotForSale;"
+					levelFrequency=	"rucur -----"
+			/>
+
+			<RandomItem count="1d6" 
+					criteria=		"* +cabbageCorp; -cabbageNotStandard; -Military; -Illegal; -NotForSale;"
+					levelFrequency=	"rucur -----"
+			/>
+		</Items>
+
+		<Trade currency="credit" max="50000" replenish="2500">
+			<Sell	criteria="m +cabbageCorp; -Military; -Illegal; -NotForSale;" priceAdj="120" inventoryAdj="300"/>
+			<Sell	criteria="*NU -Military; -Illegal; -ID; -NotForSale;"	priceAdj="120"/>
+			
+			<buy	criteria="*NU -ID; -Illegal; -NotForSale;"	priceAdj="50"/>
+			<buy	criteria="*NU -ID; -Illegal; +NotForSale;"	priceAdj="10"/>
+			<buy	criteria="*DU -ID; -Illegal; -NotForSale;"	priceAdj="20"/>
+			<buy	criteria="*DU -ID; -Illegal; +NotForSale;"	priceAdj="4"/>
+
+			<Refuel			criteria="f +BasicFuel; L:1-6;" priceAdj="110"/>
+			<RepairArmor	criteria="a L:1-6;" priceAdj="100"/>
+			<ReplaceArmor	criteria="a L:1-6;" priceAdj="100"/>
+			<InstallDevice	criteria="d +cabbageCorp; L:1-6;" priceAdj="100"/>
+			<RemoveDevice	criteria="d L:1-6;" priceAdj="100"/>
+		</Trade>
+
+		<StaticData>
+			<LongName>"a Cabbage Corp franchise"</LongName>
+		</StaticData>
+
+		<Events>
+			<OnContractGenerate>
+				(intGenerateIndustrialRequestContract1)
+			</OnContractGenerate>
+
+			<OnContractQuery>True</OnContractQuery>
+		</Events>
+
+		<DockScreens>
+			<Main>
+				<Panes>
+					<Default>
+						<OnPaneInit>
+							(scrSetDesc gScreen "Welcome to Cabbage Corp! We've been serving customers since 2147.")
+						</OnPaneInit>
+
+						<Actions>
+							<Action name="Dock Services" key="D" default="1">
+								(rpgDockServices gPlayerShip {
+									checkMilitaryID: (not (objGetData gPlayerShip "CCPremiumIDImplant"))
+									})
+							</Action>
+
+							<Action name="Commodities Exchange" key="C">
+								(scrShowScreen gScreen &dsRPGCommoditiesExchange; {
+									checkMilitaryID: (not (objGetData gPlayerShip "CCPremiumIDImplant"))
+									})
+							</Action>
+							
+							<Action name="Special Deals" key="S">
+								(scrShowScreen gScreen "&dsCCCabbageCorpCurrentDeals;")
+							</Action>
+
+							<Action name="Undock" cancel="1" key="U">
+								<Exit/>
+							</Action>
+						</Actions>
+					</Default>
+				</Panes>
+			</Main>
+		</DockScreens>
+
+		<DockingPorts>
+			<Port x="0"		y="70" />
+			<Port x="0"		y="-70" />
+			<Port x="50"	y="50" />
+			<Port x="50"	y="-50" />
+			<Port x="70"	y="0" />
+			<Port x="-70"	y="0" />
+			<Port x="-50"	y="50" />
+			<Port x="-50"	y="-50" />
+		</DockingPorts>
+	</StationType>
+
+</TranscendenceModule>
