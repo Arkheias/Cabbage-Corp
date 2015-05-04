@@ -320,14 +320,34 @@ The function is apparently unnecessary now, ships with the device now run out of
 		<Events>
 			<OnUpdate>
 				(if (itmIsInstalled gItem)
-					(if (objIsDeviceEnabled gsource gItem)
-						(intCabbageShpConsumePower gSource		;Custom function that consumes fuel units while taking into account the current reactor efficiency
-							(divide 
-								(multiply 
-									(@ (itmGetStaticData gItem 'CCAuxReactor) 'powerUse)
-									30
-								) 
-								(@ (itmGetStaticData gItem 'CCAuxReactor) 'efficiency)	;Efficiency of auxiliary capacitor
+					(if (objIsDeviceEnabled gSource gItem)
+						(block nil
+							(intCabbageShpConsumePower gSource		;Custom function that consumes fuel units while taking into account the current reactor efficiency
+								(divide 
+									(multiply 
+										(@ (itmGetStaticData gItem 'CCAuxReactor) 'powerUse)
+										30
+									) 
+									(@ (itmGetStaticData gItem 'CCAuxReactor) 'efficiency)	;Efficiency of auxiliary capacitor
+								)
+							)
+							(if (leq 
+									(shpGetFuelLeft gSource) 
+									(divide 
+										(multiply 
+											(@ (itmGetStaticData gItem 'CCAuxReactor) 'powerUse)
+											6000
+										)
+										(multiply
+											(@ (itmGetStaticData gItem 'CCAuxReactor) 'efficiency)	;Efficiency of auxiliary capacitor
+											(intCabbageGetFuelEfficiency gSource)
+										)
+									)
+								)
+								(block nil
+									(objSetItemProperty gSource gItem 'enabled Nil)
+									(objSendMessage gSource gSource (cat "WARNING: Auxiliary reactor disabled due to insufficient fuel."))
+								)
 							)
 						)
 					)
@@ -336,7 +356,7 @@ The function is apparently unnecessary now, ships with the device now run out of
 		</Events>
 	</ItemType>
 
-<!-- Unsafe Rractor Base Class -->
+<!-- Unsafe Reactor Base Class -->
 
 	<ItemType UNID="&baCCUnsafeReactorBase;"
 			name=				"(unsafe reactor base class)"
@@ -368,7 +388,7 @@ The function is apparently unnecessary now, ships with the device now run out of
 									(shpRemoveDevice gSource gItem)
 									(sysCreateWeaponFire &itHighFluxMAG; gSource (objGetPos gSource) (rollDice 1 360) 5 Nil)
 									(objRemoveItem gSource (itmCreate (itmGetType gItem) 1))
-									(objSendMessage gPlayership gSource (cat "Reactor successfully ejected."))
+									(objSendMessage gSource gSource (cat "Reactor successfully ejected."))
 								)
 								
 							(not (eq (objGetData gSource 'cabbageOverloadTimer) 0))
@@ -376,7 +396,7 @@ The function is apparently unnecessary now, ships with the device now run out of
 									(objSetData gSource "cabbageExplosionTimer" (rollDice 1 (itmGetLevel gItem)))
 									(block Nil
 										(objSetData gSource "cabbageOverloadTimer" (subtract (objGetData gSource 'cabbageOverloadTimer) 1))
-										(objSendMessage gPlayership gSource (cat "Reactor Warning: Restore containment within " (objGetData gSource 'cabbageOverloadTimer) " seconds"))
+										(objSendMessage gSource gSource (cat "Reactor Warning: Restore containment within " (objGetData gSource 'cabbageOverloadTimer) " seconds"))
 									)
 								)
 								
