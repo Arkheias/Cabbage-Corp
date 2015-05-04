@@ -7,6 +7,9 @@ v0.7.4.0-development (2015-05-04)
 -----General Changes-----
 Moved changelog from the general readme file to its own readme file.
 Added hyphens underneath version numbers in the changelog.
+----Ships-----
+Fixed image for Oboroguruma-class stealth freighter in PSD menus.
+Lampyridae-class stealth transports now use the correct number (8) of armor segments in PSD.
 ----Items-----
 Auxiliary reactors should now shut themselves off automatically if your ship is really low on fuel.
 Added Phantom-class reconnaissance auton series (Levels 2, 4, 6, 8, and 10).

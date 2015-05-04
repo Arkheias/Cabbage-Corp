@@ -241,7 +241,7 @@
 						(&itCCDualNapaS8Deflector;				1)
 						(&itCCDualSiva31MWReactor;				1)
 						(&itCCDualTritiumPropulsionUpgrade;		1)
-						(&itCC2xStealthArmor;					12)
+						(&itCC2xStealthArmor;					8)
 					)
 					
 					; Index 2, auto-link weapons from index 1
@@ -287,7 +287,7 @@
 								(&itCCDualNapaS8Deflector;				1)
 								(&itCCDualSiva31MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
-								(&itCC2xStealthArmor;					12)
+								(&itCC2xStealthArmor;					8)
 							)
 						)
 					
@@ -301,7 +301,7 @@
 								(&itCCDualNapaS2Deflector;				1)
 								(&itCCDualSiva5MWReactor;				1)
 								(&itCCDualIonDrive;						1)
-								(&itCCLightStealthPlating;				12)
+								(&itCCLightStealthPlating;				8)
 							)
 						)
 					)
@@ -315,7 +315,7 @@
 								(&itCCDualNapaS8Deflector;				1)
 								(&itCCDualSiva31MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
-								(&itCC2xStealthArmor;					12)
+								(&itCC2xStealthArmor;					8)
 							)
 							(
 								(&itCCKaleM11Repeater;					1)
@@ -334,7 +334,7 @@
 								(&itCCDualNapaS30Deflector;				1)
 								(&itCCDualSiva100MWReactor;				1)
 								(&itCCDualChronimiumPropulsionUpgrade;	1)
-								(&itCC2xHardenedStealthArmor;			12)
+								(&itCC2xHardenedStealthArmor;			8)
 							)
 							(
 								(&itCCKaleM38Repeater;					1)

@@ -207,6 +207,7 @@
 					)
 					
 					; Index 2, auto-link weapons from index 1
+					Nil
 					
 					; Index 3, description override.
 					"The Oboroguruma-class stealth freighter is the oldest ship still in use in the Cabbage Corp fleet.  It has two secondary weapon hard-points each on the port and starboard sides that can swivel to attack any ship within a 190 degree range, twelve armor segments, and a base crew capacity of eight-hundred."
