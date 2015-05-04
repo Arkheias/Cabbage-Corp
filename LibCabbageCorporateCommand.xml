@@ -852,6 +852,19 @@
 <!ENTITY rsCCF120Shade							"0xDA27CEBA">
 <!ENTITY rsCCLargeShade							"0xDA27CEBB">
 <!ENTITY rsCCArmorHUDShade						"0xDA27CEBC">
+<!ENTITY itCCMarkIPhantomAuton					"0xDA27CEC0">
+<!ENTITY scCCMarkIPhantomAuton					"0xDA27CEC1">
+<!ENTITY itCCMarkIIPhantomAuton					"0xDA27CEC2">
+<!ENTITY scCCMarkIIPhantomAuton					"0xDA27CEC3">
+<!ENTITY itCCMarkIIIPhantomAuton				"0xDA27CEC4">
+<!ENTITY scCCMarkIIIPhantomAuton				"0xDA27CEC5">
+<!ENTITY itCCMarkIVPhantomAuton					"0xDA27CEC6">
+<!ENTITY scCCMarkIVPhantomAuton					"0xDA27CEC7">
+<!ENTITY itCCMarkVPhantomAuton					"0xDA27CEC8">
+<!ENTITY scCCMarkVPhantomAuton					"0xDA27CEC9">
+<!ENTITY rsCCF120Phantom						"0xDA27CECA">
+<!ENTITY rsCCLargePhantom						"0xDA27CECB">
+<!ENTITY rsCCArmorHUDPhantom					"0xDA27CECC">
 
 
 ]>
@@ -886,6 +899,9 @@ vt			= 	(virtual) Item Code
 	<Image UNID="&rsCCF120Shade;"					bitmap="Resources\Shade\CCF120Shade.jpg"				bitmask="Resources\Shade\CCF120ShadeMask.jpg"/>
 	<Image UNID="&rsCCLargeShade;"					bitmap="Resources\Shade\CCLargeShade.jpg"				bitmask="Resources\Shade\CCLargeShade.jpg"	loadOnUse="true"/>
 	<Image UNID="&rsCCArmorHudShade;"				bitmap="Resources\Shade\CCArmorHudShade.jpg"/>
+	<Image UNID="&rsCCF120Phantom;"					bitmap="Resources\Phantom\CCF120Phantom.jpg"			bitmask="Resources\Phantom\CCF120PhantomMask.jpg"/>
+	<Image UNID="&rsCCLargePhantom;"				bitmap="Resources\Phantom\CCLargePhantom.jpg"			bitmask="Resources\Phantom\CCLargePhantom.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCArmorHudPhantom;"				bitmap="Resources\Phantom\CCArmorHudPhantom.jpg"/>
 	
 	<!-- Small Ships -->
 	<Image UNID="&rsCCF120Lorry;"					bitmap="Resources\Lorry\CCF120Lorry.jpg"				bitmask="Resources\Lorry\CCF120LorryMask.jpg"/>
@@ -979,6 +995,7 @@ vt			= 	(virtual) Item Code
 	<Module fileName="Modules\Armor\CCArmor_Stealth.xml"/>
 	
 	<!-- Autons -->
+	<Module fileName="Modules\Autons\CCAutons_Phantom.xml"/>
 	<Module fileName="Modules\Autons\CCAutons_Wraith.xml"/>
 	<Module fileName="Modules\Autons\CCAutons_Shade.xml"/>
 	
