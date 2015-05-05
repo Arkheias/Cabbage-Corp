@@ -30,18 +30,28 @@
 			
 			explosionType=		"&vtBlastExplosion4;"
 		>
-		
-		<Armor
-			armorID=			"&itCCLightStealthPlating;"
-			count=				"12"
-			/>
+
+        <Armor>
+            <ArmorSection start="345" span="30" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="315" span="30" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="15"  span="30" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="285" span="30" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="45"  span="30" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="255" span="30" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="75"  span="30" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="225" span="30" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="105" span="30" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="195" span="30" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="135" span="30" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="165" span="30" armorID="&itCCLightStealthPlating;" />
+        </Armor>
 
 		<Devices>
 			<DeviceSlot criteria="p" posAngle="0" posRadius="84" posZ="6"/>
 			
 			<Device deviceID="&itCCOmniSavoyM1Howitzer;"/>
 			<Device deviceID="&itCCDualNapaS1Deflector;"/>
-			<Device deviceID="&itCCDualSiva10MWReactor;"/>
+			<Device deviceID="&itCCDualSiva5MWReactor;"/>
 			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
 			<Device deviceID="&itCCDualPlasmaDrive;"/>
 		</Devices>
@@ -103,69 +113,69 @@
                 <ShipImage imageID="&rsCCArmorHUDOboroguruma;" imageWidth="136" imageHeight="136"/>
 
 				;The armor images are just a black pixel (that the mask makes transparent) from the top-left corner of the armor HUD image
-                <ArmorSection name="0&#xb0; (forward)"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="55" hpY="15"
-                        nameY="5" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="300&#xb0;"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="85" hpY="29"
-                        nameY="14" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="30&#xb0;"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="25" hpY="29"
-                        nameY="23" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="300&#xb0;"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="88" hpY="45"
-                        nameY="32" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="60&#xb0;"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="22" hpY="45"
-                        nameY="41" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="270&#xb0; (starboard)"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="88" hpY="60"
-                        nameY="50" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="90&#xb0; (port)"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="22" hpY="60"
-                        nameY="59" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="240&#xb0;"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="89" hpY="75"
-                        nameY="68" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="120&#xb0;"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="21" hpY="75"
-                        nameY="77" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="210&#xb0;"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="81" hpY="93"
-                        nameY="86" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="150&#xb0;"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="29" hpY="93"
-                        nameY="95" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="180&#xb0; (aft)"
-                        imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-                        destX="0" destY="0" hpX="55" hpY="108"
-                        nameY="104" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+				<ArmorSection name="0&#xb0; (forward)"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="55" hpY="15"
+						nameY="5" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="330&#xb0;"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="85" hpY="30"
+						nameY="14" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="30&#xb0;"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="25" hpY="30"
+						nameY="23" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="300&#xb0;"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="85" hpY="45"
+						nameY="32" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="60&#xb0;"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="25" hpY="45"
+						nameY="41" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="270&#xb0; (starboard)"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="86" hpY="60"
+						nameY="50" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="90&#xb0; (port)"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="24" hpY="60"
+						nameY="59" nameBreakWidth="200" nameDestX="12" nameDestY="0" />
+						
+				<ArmorSection name="240&#xb0;"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="86" hpY="75"
+						nameY="68" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="120&#xb0;"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="24" hpY="75"
+						nameY="77" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="210&#xb0;"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="87" hpY="90"
+						nameY="86" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="150&#xb0;"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="23" hpY="90"
+						nameY="95" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="180&#xb0; (aft)"
+						imageID="&rsCCArmorHUDOboroguruma;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="55" hpY="108"
+						nameY="104" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
 			</ArmorDisplay>
-
+			
 			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;"/>
-
+			
             <ReactorDisplay>
                 <Image imageID="&rsZubrinReactor;" 
                         imageX="0" imageY="0" imageWidth="256" imageHeight="60"/>
@@ -197,7 +207,7 @@
 					(	
 						(&itCCOmniSavoyM1Howitzer;				1)
 						(&itCCDualNapaS1Deflector;				1)
-						(&itCCDualSiva10MWReactor;				1)
+						(&itCCDualSiva5MWReactor;				1)
 						(&itCCAuxSiva5MWReactor;				1)
 						(&itCCDualPlasmaDrive;					1)
 						(&itCCLightStealthPlating;				12)

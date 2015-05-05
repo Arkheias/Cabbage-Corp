@@ -48,15 +48,15 @@
         </Armor>
 		
 		<Devices>
-			<DeviceSlot criteria="w +cabbageCorp" minFireArc="345" maxFireArc="15"	posAngle="0" posRadius="48" posZ="-4"/>
-			<DeviceSlot criteria="w -cabbageCorp"									posAngle="0" posRadius="48" posZ="-4"/>
+			<DeviceSlot criteria="w +cabbageCorp" minFireArc="345" maxFireArc="15"	posAngle="0" posRadius="52" posZ="2"/>
+			<DeviceSlot criteria="w -cabbageCorp"									posAngle="0" posRadius="52" posZ="2"/>
 			
-			<Device deviceID="&itCCSavoyM2Howitzer;"/>
+			<Device deviceID="&itCCKaleM1Repeater;"/>
 			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
-			<Device deviceID="&itCCDualNapaS2Deflector;"/>
+			<Device deviceID="&itCCNapaS1Deflector;"/>
 			<Device deviceID="&itCCSiva5MWReactor;"/>
 			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
-			<Device deviceID="&itCCDualIonDrive;"/>
+			<Device deviceID="&itCCPlasmaDrive;"/>
 			
 			<!--
 			<Device deviceID="&itCCSavoyM2Howitzer;"/>
@@ -237,7 +237,7 @@
 					; Index 1, items
 					; Level 2 components
 					(	
-						(&itCCSavoyM8Howitzer;					1)
+						(&itCCKaleM11Repeater;					1)
 						(&itCCDualNapaS8Deflector;				1)
 						(&itCCDualSiva31MWReactor;				1)
 						(&itCCDualTritiumPropulsionUpgrade;		1)
@@ -283,7 +283,7 @@
 					; Level 4 components
 					((&stCommonwealthDryDock; 2)
 						(&scCCLampyridaeTauCeti;
-							(	(&itCCSavoyM8Howitzer;					1)
+							(	(&itCCKaleM11Repeater;					1)
 								(&itCCDualNapaS8Deflector;				1)
 								(&itCCDualSiva31MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
@@ -297,10 +297,11 @@
 					; Level 1-2 components
 					((&stCommonwealthDryDock; (1 1))
 						(&scCCLampyridaeTauCeti;
-							(	(&itCCSavoyM2Howitzer;					1)
-								(&itCCDualNapaS2Deflector;				1)
-								(&itCCDualSiva5MWReactor;				1)
-								(&itCCDualIonDrive;						1)
+							(	(&itCCKaleM3Repeater;					1)
+								(&itCCNapaS1Deflector;					1)
+								(&itCCSiva5MWReactor;					1)
+								(&itCCAuxSiva5MWReactor;				1)
+								(&itCCPlasmaDrive;						1)
 								(&itCCLightStealthPlating;				8)
 							)
 						)
