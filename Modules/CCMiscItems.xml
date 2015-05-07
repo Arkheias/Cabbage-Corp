@@ -1,156 +1,176 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
-	
+
 <!-- ================================================================ -->
 							<!-- Cabbages -->
 <!-- ================================================================ -->
 
-;The value of each the cabbage types is based on the amount of calories in 250kg of them (unprepared if possible) according to WolframAlpha.
-
-
-	
 	<!-- Bok Choy -->
+	
 	<ItemType UNID="&itCCBokChoy;"
-			name=				"[barrel(s) of ]bok choy"
-			level=				"1"
-			value=				"16"
-			mass=				"250"
-			frequency=			"uncommon"
-			numberAppearing=	"1d6"
-			attributes=			"cabbageCorp; Consumable; Food; Lux"
+			name=				"[crate(s) of ]bok choy"
+			attributes=			"cabbageCorp, consumable, food"
+			
+			level=				"2"
+			frequency=			"rare"
+			numberAppearing=	"2d4"
+			
+			value=				"120"
+			mass=				"100"
 
-			description=		"Bok choy is a type of headless cabbage that is more reminiscent of mustard or celery than actual cabbage."
+			description=		"Bok choy is sold alongside most low grade foodstuffs so that its antioxidant properties can help negate the carcinogens present in most vat-grown foods."
 
-			sortName=			"bok choy, barrel of"
+			sortName=			"bok choy, crate of"
 	>
 
-		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 	
 	<!-- Napa Cabbages -->
+	
 	<ItemType UNID="&itCCNapaCabbages;"
-			name=				"[barrel(s) of ]napa cabbages"
-			level=				"1"
-			value=				"20"
-			mass=				"250"
-			frequency=			"uncommon"
+			name=				"[crate(s) of ]napa cabbages"
+			attributes=			"cabbageCorp, consumable, food, lux"
+			
+			level=				"4"
+			frequency=			"rare"
 			numberAppearing=	"1d6"
-			attributes=			"cabbageCorp; Consumable; Food; Lux;"
+			
+			value=				"450"
+			mass=				"250"
+			
+			description=		"This type of cabbage is usually fermented to make a variety of dishes and is said to go well with Centauri rice."
 
-			description=		"Napa cabbage is also know as celery cabbage, because some people though it looked like celery."
-
-			sortName=			"napa cabbages, barrel of"
+			sortName=			"napa cabbages, crate of"
 	>
 
-		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 	
 	<!-- Green Cabbages -->
+	
 	<ItemType UNID="&itCCGreenCabbages;"
-			name=				"[barrel(s) of ]green cabbages"
-			level=				"1"
-			value=				"30"
-			mass=				"250"
-			frequency=			"common"
-			numberAppearing=	"1d6"
-			attributes=			"cabbageCorp; Consumable; Food; Lux"
+			name=				"[crate(s) of ]green cabbages"
+			attributes=			"cabbageCorp, consumable, food, lux"
+			
+			level=				"5"
+			frequency=			"rare"
+			numberAppearing=	"2d4"
+			
+			value=				"420"
+			mass=				"100"
 
-			description=		"Green cabbage is best cabbage."
+			description=		"A guilty pleasure of high-level Corporate officers, green cabbage has unique subtle flavors and is grown on nearly every Cabbage Corp station."
 
-			sortName=			"green cabbages, barrel of"
+			sortName=			"green cabbages, crate of"
 	>
 
-		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 	
 	<!-- Kohlrabi -->
+	
 	<ItemType UNID="&itCCKohlrabi;"
 			name=				"[barrel(s) of ]kohlrabi"
-			level=				"1"
-			value=				"34"
+			attributes=			"cabbageCorp, consumable, food"
+			
+			level=				"6"
+			frequency=			"rare"
+			numberAppearing=	"1d2"
+			
+			value=				"1250"
 			mass=				"250"
-			frequency=			"uncommon"
-			numberAppearing=	"1d6"
-			attributes=			"cabbageCorp; Consumable; Food; Lux"
 
-			description=		"Kohlrabi is a type of cabbage that kind of looks like a turnip."
+			description=		"Kohlrabi is mostly used as a deluxe animal feed due to the taste that connoisseurs believe it imparts on the meat."
 
-			sortName=			"kohlrabi, barrel of"
+			sortName=			"barrel, barrel of"
 	>
 
 		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 	
 	<!-- Savoy Cabbages -->
+	
 	<ItemType UNID="&itCCSavoyCabbages;"
-			name=				"[barrel(s) of ]savoy cabbages"
-			level=				"1"
-			value=				"34"
+			name=				"[crate(s) of ]savoy cabbages"
+			attributes=			"cabbageCorp, consumable, food, lux"
+			
+			level=				"7"
+			frequency=			"uncommon"
+			numberAppearing=	"1d3"
+			
+			value=				"1300"
 			mass=				"250"
-			frequency=			"common"
-			numberAppearing=	"1d6"
-			attributes=			"cabbageCorp; Consumable; Food; Lux"
 
-			description=		"Savoy cabbages are among the pertiest of cabbages."
+			description=		"Savoy cabbage is the most tender and sweet variety of cabbage and is currently considered trendy in the elite crowd."
 
-			sortName=			"savoy cabbages, barrel of"
+			sortName=			"savoy cabbages, crate of"
 	>
 
-		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 	
 	<!-- Red Cabbages -->
-	<ItemType UNID="&itCCRedCabbages;"
-			name=				"[barrel(s) of ]red cabbages"
-			level=				"1"
-			value=				"39"
-			mass=				"250"
-			frequency=			"common"
-			numberAppearing=	"1d6"
-			attributes=			"cabbageCorp; Consumable; Food; Lux"
-
-			description=		"Red cabbage is like green cabbage but more red (It's actually closer to magenta)."
-
-			sortName=			"red cabbages, barrel of"
-	>
-
-		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
-	</ItemType>
 	
-	<!-- Brussel Sprouts -->
-	<ItemType UNID="&itCCBrusselSprouts;"
-			name=				"[barrel(s) of ]brussel sprouts"
-			level=				"2"
-			value=				"54"
+	<ItemType UNID="&itCCRedCabbages;"
+			name=				"[barrel(s) of ]pickled red cabbages"
+			attributes=			"cabbageCorp, consumable, food, lux"
+			
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			
+			value=				"1500"
 			mass=				"250"
-			frequency=			"common"
-			numberAppearing=	"1d6"
-			attributes=			"cabbageCorp; Consumable; Food; Lux"
 
-			description=		"Brussels sprouts don't just look like tiny cabbages, they are!"
+			description=		"Red cabbage is only produced on Earth and is usually pickled for transport throughout human space. It is often used in gourmet dishes such as sauerkraut."
 
-			sortName=			"brussel Sprouts, barrel of"
+			sortName=			"pickled red cabbages, barrel of"
 	>
 
 		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 	
 	<!-- Kale -->
+	
 	<ItemType UNID="&itCCKale;"
-			name=				"[barrel(s) of ] kale"
-			level=				"2"
-			value=				"62"
-			mass=				"250"
+			name=				"[crate(s) of ] kale"
+			attributes=			"cabbageCorp, consumable, food, lux"
+			
+			level=				"9"
 			frequency=			"uncommon"
-			numberAppearing=	"1d6"
-			attributes=			"cabbageCorp; Consumable; Food; Lux"
+			numberAppearing=	"2d4"
+			
+			value=				"1350"
+			mass=				"250"
 
-			description=		"Kale is considered to be closer to wild cabbage than the domesticated forms of the vegetable."
+			description=		"Kale provides important nutrients to supplement those missing from standard rations. It is also one of the leading homoeopathic remedies to all known ills."
 
-			sortName=			"kale, barrel of"
+			sortName=			"kale, crate of"
 	>
 
-		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	<!-- Brussel Sprouts -->
+	
+	<ItemType UNID="&itCCBrusselSprouts;"
+			name=				"[chest(s) of ]brussel sprouts"
+			attributes=			"cabbageCorp, consumable, food, lux"
+			
+			level=				"10"
+			frequency=			"rare"
+			numberAppearing=	"3d4"
+			
+			value=				"3200"
+			mass=				"50"
+
+			description=		"This delicacy, only produced in Baja California on Earth, is carefully cryopreserved to enhance its taste as much as possible and to enable transport beyond the Sol system."
+
+			sortName=			"brussel Sprouts, chest of"
+	>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 	
 <!-- ================================================================ -->
@@ -161,13 +181,15 @@
 
 	<ItemType UNID="&itCCFuelUnit;"
 			name=				"(Unit of Fuel)"
-			level=				"1"
-			value=				"1"
-			mass=				"1"
+			attributes=			"cabbageCorp, consumable, fuel, res"
+			virtual=			"True"
+			
+			level=				"0"
 			frequency=			"notrandom"
 			numberAppearing=	"0"
-			attributes=			"cabbageCorp; Consumable; Fuel; Res;"
-			virtual=			"True"
+			
+			value=				"0"
+			mass=				"0"
 			
 			data=				"1"
 
@@ -183,16 +205,18 @@
 
 	<ItemType UNID="&itCCUraniumAssembly;"
 			name=				"uranium reactor assembly| uranium reactor assemblies"
+			attributes=			"cabbageCorp, consumable, fuel, res"
+			
 			level=				"6"
-			value=				"900"
-			mass=				"750"
 			frequency=			"uncommon"
 			numberAppearing=	"3d6"
-			attributes=			"cabbageCorp; Consumable; Fuel; Res;"
+			
+			value=				"900"
+			mass=				"750"
 			
 			data=				"30000"
 
-			description=		"This is an enriched bundle of uranium fuel rods.  Though more efficient than individual fuel rods, only reactors of tech level 6 or higher can accommodate them."
+			description=		"This is an enriched bundle of uranium fuel rods. Though more efficient than individual fuel rods, only reactors of tech level 6 or higher can accommodate them."
 
 			reverseArticle=		"true"
 			>
@@ -250,16 +274,18 @@
 
 	<ItemType UNID="&itCCXenotiteAssembly;"
 			name=				"xe3000notite reactor assembly| xenotite reactor assemblies"
+			attributes=			"basicFuel, cabbageCorp, consumable, fuel"
+			
 			level=				"8"
-			value=				"1200"
-			mass=				"180"
 			frequency=			"common"
 			numberAppearing=	"3d6"
-			attributes=			"BasicFuel; cabbageCorp; Consumable; Fuel"
+			
+			value=				"1200"
+			mass=				"180"
 
 			data=				"120000"
 			
-			description=		"This is an enriched bundle of xenotite fuel rods.  Though more efficient than individual fuel rods, only reactors of tech level 8 or higher can accommodate them."
+			description=		"This is an enriched bundle of xenotite fuel rods. Though more efficient than individual fuel rods, only reactors of tech level 8 or higher can accommodate them."
 	>
 
 		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -269,16 +295,18 @@
 
 	<ItemType UNID="&itCCPteracniumAssembly;"
 			name=				"pteracnium reactor assembly| pteracnium reactor assemblies"
+			attributes=			"basicFuel, cabbageCorp, consumable, fuel"
+			
 			level=				"10"
-			value=				"3000"
-			mass=				"180"
 			frequency=			"common"
 			numberAppearing=	"3d6"
-			attributes=			"BasicFuel; cabbageCorp; Consumable; Fuel"
+			
+			value=				"3000"
+			mass=				"180"
 
 			data=				"300000"
 			
-			description=		"This is an enriched bundle of pteracnium fuel rods.  Though more efficient than individual fuel rods, only reactors of tech level 10 or higher can accommodate them."
+			description=		"This is an enriched bundle of pteracnium fuel rods. Though more efficient than individual fuel rods, only reactors of tech level 10 or higher can accommodate them."
 	>
 
 		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -288,16 +316,18 @@
 
 	<ItemType UNID="&itCCHadronVacuumModule;"
 			name=				"hadron-vacuum reactor module"
+			attributes=			"basicFuel, cabbageCorp, consumable, fuel, zeroPoint"
+			
 			level=				"12"
-			value=				"15000"
-			mass=				"300"
 			frequency=			"common"
 			numberAppearing=	"3d6"
-			attributes=			"BasicFuel; cabbageCorp; Consumable; Fuel; ZeroPoint"
+
+			value=				"15000"
+			mass=				"300"
 
 			data=				"1500000"
 			
-			description=		"This is an enriched mass of hadron-vacuum fuel.  Though more efficient than individual fuel cells, only reactors of tech level 12 or higher can accommodate them."
+			description=		"This is an enriched mass of hadron-vacuum fuel. Though more efficient than individual fuel cells, only reactors of tech level 12 or higher can accommodate them."
 	>
 
 		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -307,16 +337,18 @@
 
 	<ItemType UNID="&itCCZeroPointCrystal;"
 			name=				"zero-point crystal"
+			attributes=			"alien, cabbageCorp, consumable, fuel, zeroPoint"
+			
 			level=				"9"
-			value=				"6000"
-			mass=				"2"
 			frequency=			"veryrare"
 			numberAppearing=	"1"
-			attributes=			"Alien; BasicFuel; cabbageCorp; Consumable; Fuel; ZeroPoint"
+			
+			value=				"6000"
+			mass=				"2"
 
 			data=				"2500000"
 			
-			description=		"Zero-point crystals are a highly efficient form of fuel storage in development by Cabbage Corp.  ZPCs utilize a crystal matrix that exists partially in subspace to store massive amounts of zero-point energy in a relatively small physical space, though they have a tendency to disappear ships that use them.  Only reactors of tech level 9 or higher can utilize them."
+			description=		"Zero-point crystals are a highly efficient form of fuel storage in development by Cabbage Corp. ZPCs utilize a crystal matrix that exists partially in subspace to store massive amounts of zero-point energy in a relatively small physical space, though they have a tendency to disappear ships that use them. Only reactors of tech level 9 or higher can utilize them."
 	>
 		
 		<Events>
@@ -341,14 +373,16 @@
 	<!-- Solar Panel -->
 	<ItemType UNID="&itCCSolarPanel;"
 			name=				"solar panel"
+			attributes=			"cabbageCorp, consumable, res"
+			
 			level=				"1"
-			value=				"20"
-			mass=				"250"
 			frequency=			"uncommon"
 			numberAppearing=	"1d6"
-			attributes=			"cabbageCorp; Consumable; Res"
+			
+			value=				"20"
+			mass=				"250"
 
-			description=		"Solar panel converts sunlight into energy usable by a ship's reactor.  At least six are required to form a working array."
+			description=		"Solar panel converts sunlight into energy usable by a ship's reactor. At least six are required to form a working array."
 	>
 
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -362,11 +396,13 @@
 
 	<ItemType UNID="&itCCPremiumID;"
 			name=				"Cabbage Corp premium membership ID"
+			attributes=			"cabbageCorp, ID, info, majorItemm specialty"
+			
 			level=				"3"
+			frequency=			"rare"
+			
 			value=				"10000"
 			mass=				"1"
-			frequency=			"rare"
-			attributes=			"cabbageCorp; ID; Info; MajorItem; Specialty"
 
 			description=		"This ID marks you as a valued customer of Cabbage Corp, allowing you to bypass those pesky security checks when installing equipment at Cabbage Corp stations. Does not work until implanted."
 
@@ -413,11 +449,13 @@ and the toolbox will always appear in the ship view regardless of whether you ha
 
 	<ItemType UNID="&itCCSystemMapROM;"
 			name=				"Cabbage Corp system map access ROM"
+			attributes=			"cabbageCorp, info"
+			
 			level=				"3"
+			frequency=			"veryrare"
+			
 			value=				"2000"
 			mass=				"1"
-			frequency=			"veryrare"
-			attributes=			"cabbageCorp; Info"
 
 			description=		"This program utilizes the Cabbage Corp cartography libraries to generate a map of your current system, for a small fee. Can be reused indefinitely."
 	>
@@ -490,7 +528,7 @@ and the toolbox will always appear in the ship view regardless of whether you ha
 			value=				"250"
 			mass=				"1000"
 
-			description=		"You've been sent on a mission from Domina, might as well sell all of your family's stuff for cash.  They'll learn to live without."
+			description=		"You've been sent on a mission from Domina, might as well sell all of your family's stuff for cash. They'll learn to live without."
 			
 			noArticle=			"true"
 	>

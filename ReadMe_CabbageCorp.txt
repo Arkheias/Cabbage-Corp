@@ -5,7 +5,7 @@
 Game Version:  1.6b2
  API Version:  26
  Mod Version:  v0.7.4.0-development (Still an alpha release)
-Release Date:  2015-05-05
+Release Date:  2015-05-06
       Author:  Arkheias
      License:  CC BY-NC-SA (Creative Commons Attribution-NonCommercial-ShareAlike)
 ==============================================================
