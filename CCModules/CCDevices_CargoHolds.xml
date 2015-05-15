@@ -25,7 +25,7 @@
 			useInstalledOnly=	"true"
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 				cargoSpace=		"20"
@@ -65,7 +65,7 @@
 			useInstalledOnly=	"true"
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 		        deviceSlots=    "2"
@@ -97,7 +97,7 @@
 			useInstalledOnly=	"true"
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 		        deviceSlots=    "2"
