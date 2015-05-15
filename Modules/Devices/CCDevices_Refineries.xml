@@ -46,7 +46,7 @@
 			description=        "This device can refine helium regolith into helium&#xb3; fuel rods.  Conversion produces six fuel rods for each ton of ore consumed."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"20"
@@ -81,7 +81,7 @@
 			description=        "This device can refine helium regolith into helium&#xb3; reactor assemblies.  Conversion produces two reactor assemblies for each ton of ore consumed.  Requires two device slots."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				deviceSlots=	"2"
@@ -110,7 +110,7 @@
 			description=        "This device can refine uranium ore into uranium fuel rods.  Conversion produces three fuel rods for each ton of ore consumed."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"50"
@@ -138,7 +138,7 @@
 			description=        "This device can refine uranium ore into uranium reactor assemblies.  Conversion produces one reactor assembly for each ton of ore consumed.  Requires two device slots."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				deviceSlots=	"2"
@@ -167,7 +167,7 @@
 			description=        "This device can refine xenotite ore into xenotite fuel rods.  Conversion produces three fuel rods for each ton of ore consumed."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"120"
@@ -195,7 +195,7 @@
 			description=        "This device can refine xenotite ore into xenotite reactor assemblies.  Conversion produces one reactor assembly for each ton of ore consumed.  Requires two device slots."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				deviceSlots=	"2"
@@ -224,7 +224,7 @@
 			description=        "This device can refine pteracnium ore into pteracnium fuel rods.  Conversion produces three fuel rods for each ton of ore consumed."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"400"
@@ -252,7 +252,7 @@
 			description=        "This device can refine pteracnium ore into pteracnium reactor assemblies.  Conversion produces one reactor assembly for each ton of ore consumed.  Requires two device slots."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				deviceslots=	"2"
@@ -281,7 +281,7 @@
 			description=        "This device can refine hadron archeolith into hadron-vacuum fuel cells.  Conversion produces three fuel cells for each ton of ore consumed"
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"600"
@@ -309,7 +309,7 @@
 			description=        "This device can refine hadron archeolith into hadron-vacuum reactor modules.  Conversion produces one reactor module for each ton of ore consumed.  Requires two device slots."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				deviceslots=	"2"

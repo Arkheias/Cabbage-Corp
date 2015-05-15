@@ -2,7 +2,7 @@
 Changelog
 ---------
 
-v0.7.4.0-development (2015-05-06)
+v0.7.4.0-development (2015-05-14)
 ---------------------------------
 -----General Changes-----
 Moved changelog from the general readme file to its own readme file.
@@ -19,6 +19,10 @@ Fixed typo in the name of the mark I wraith auton.
 Fixed typo in the description of the mark V wraith auton.
 Balanced cabbages and updated their descriptions.
 Reformated misc. items to match new standard.
+Added new image for solar devices.
+Added new image for DRADIS devices.
+Added new images for autodefense devices.
+Reorganized generic device images into separate file from items.
 
 
 

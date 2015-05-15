@@ -25,7 +25,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures two KM100 Longbow missiles every three seconds.  DRM prevents stockpiling more than 130 missiles."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=			"25"
@@ -53,7 +53,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures one KM120 Brute missile every two seconds.  DRM prevents stockpiling more than 40 missiles."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=			"30"
@@ -80,7 +80,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures two XM300 Reaper missiles every three seconds.  DRM prevents stockpiling more than 50 missiles."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=			"140"
@@ -107,7 +107,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures three White Strelka missiles every second.  DRM prevents stockpiling more than 150 missiles."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=			"55"
@@ -135,7 +135,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures three Green Strelka missiles every second.  DRM prevents stockpiling more than 120 missiles."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=			"90"
@@ -163,7 +163,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures five Red Strelka missiles every two seconds.  DRM prevents stockpiling more than 100 missiles."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=			"120"
@@ -191,7 +191,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures two Gotha-10 missiles every three seconds.  DRM prevents stockpiling more than 70 missiles."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=			"70"
@@ -218,7 +218,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures one M2 Vulcan missile every four seconds.  DRM prevents stockpiling more than 12 missiles."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=			"55"
@@ -246,7 +246,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures one M5 Nemesis missile every five seconds.  DRM prevents stockpiling more than 6 missiles."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=			"160"

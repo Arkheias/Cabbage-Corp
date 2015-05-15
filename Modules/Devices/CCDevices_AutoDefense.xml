@@ -20,7 +20,7 @@
 			description=		"This device combines a DRADIS system with a targeting computer. Hostile missiles within a short range are blasted into dust by an overcharged laser cannon."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<AutoDefenseDevice
 				target=				"missiles"
@@ -68,7 +68,7 @@
 			description=		"This device combines a DRADIS system with a targeting computer. Hostile missiles within a short range are blasted into dust by a charged turbolaser cannon."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<AutoDefenseDevice
 				target=				"missiles"
@@ -116,7 +116,7 @@
 			description=		"This device combines a DRADIS system with a targeting computer. Hostile missiles within a short range are blasted into dust by an overcharged turbolaser cannon."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<AutoDefenseDevice
 				target=				"missiles"

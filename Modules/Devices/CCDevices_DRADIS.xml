@@ -21,7 +21,7 @@
 			description=		"This device increases the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
 		
 		<MiscellaneousDevice
 				powerUse=		"20"
@@ -50,7 +50,7 @@
 			description=		"This device utilizes a quantum CPU to increase the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
 		
 		<MiscellaneousDevice
 				powerUse=		"100"
@@ -79,7 +79,7 @@
 			description=		"This device utilizes a dual-core quantum CPU to increase the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
 		
 		<MiscellaneousDevice
 				powerUse=		"400"
@@ -108,7 +108,7 @@
 			description=		"This device utilizes a quad-core quantum CPU to increase the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
 		
 		<MiscellaneousDevice
 				powerUse=		"1200"
@@ -137,7 +137,7 @@
 			description=		"This device utilizes a positronic CPU to increase the effective perception of a ship's targeting systems, greatly increasing the range at which it can detect hidden objects in space."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
 		
 		<MiscellaneousDevice
 				powerUse=		"2400"

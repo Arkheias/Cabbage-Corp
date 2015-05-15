@@ -21,7 +21,7 @@
 			description=		"This enhancer slightly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by twenty percent on average."
 	>
 
-		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"10"
@@ -51,7 +51,7 @@
 			description=		"This enhancer increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by forty percent on average."
 	>
 
-		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"100"
@@ -81,7 +81,7 @@
 			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by sixty percent on average."
 	>
 
-		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"250"
@@ -111,7 +111,7 @@
 			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by eighty percent on average."
 	>
 
-		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"450"
@@ -140,7 +140,7 @@
 			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, doubling their potential damage output on average."
 	>
 
-		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"800"
@@ -174,7 +174,7 @@
 			description=		"This heat sink slightly increases the fire rate of any installed Cabbage Corp repeater."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"10"
@@ -204,7 +204,7 @@
 			description=		"This heat sink increases the fire rate of any installed Cabbage Corp repeater."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"100"
@@ -234,7 +234,7 @@
 			description=		"This heat sink greatly increases the fire rate of any installed Cabbage Corp repeater."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"250"
@@ -264,7 +264,7 @@
 			description=		"This heat sink increases the fire rate of any installed Cabbage Corp repeater immensely."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"450"
@@ -293,7 +293,7 @@
 			description=		"This heat sink increases the fire rate of any installed Cabbage Corp repeater immensely and slightly increases the damage of plasma based repeaters."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"800"
@@ -332,7 +332,7 @@
 			description=		"This device increases the effectiveness of installed Cabbage Corp weapons and shields by 10%."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"10"
@@ -362,7 +362,7 @@
 			description=		"This device increases the effectiveness of installed Cabbage Corp weapons and shields by 20%."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"100"
@@ -392,7 +392,7 @@
 			description=		"This device uses a built-in Quantum CPU to increases the effectiveness of installed Cabbage Corp weapons and shields by 30%."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"250"
@@ -422,7 +422,7 @@
 			description=		"This device uses a built-in Quantum CPU to increases the effectiveness of installed Cabbage Corp weapons and shields by 40%."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"600"
@@ -451,7 +451,7 @@
 			description=		"This device uses a built-in Quantum CPU to increases the effectiveness of installed Cabbage Corp weapons and shields by 50%."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"900"

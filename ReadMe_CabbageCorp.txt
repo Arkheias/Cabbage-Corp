@@ -5,7 +5,7 @@
 Game Version:  1.6b2
  API Version:  26
  Mod Version:  v0.7.4.0-development (Still an alpha release)
-Release Date:  2015-05-06
+Release Date:  2015-05-14
       Author:  Arkheias
      License:  CC BY-NC-SA (Creative Commons Attribution-NonCommercial-ShareAlike)
 ==============================================================
@@ -192,3 +192,6 @@ The images and masks (CCCrewMembers.jpg and CCCrewMembersMask.jpg) used for the 
 	http://www.iconarchive.com/show/elite-soldiers-icons-by-icontexto.html
 	http://www.iconarchive.com/artist/icontexto.html
 	http://creativecommons.org/licenses/by-nc/4.0/
+
+The images and masks used for the solar panels are derivatives of this image provided by OpenClips, used under CC0 Public Domain.
+	http://pixabay.com/en/solar-cell-polycrystalline-silicium-162055/

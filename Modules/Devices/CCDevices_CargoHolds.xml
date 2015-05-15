@@ -22,7 +22,7 @@
 			description=		"This pressurized cargo hold increases cargo capacity by up to 40 tons and includes crew quarters for one person."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 				cargoSpace=		"40"
@@ -57,7 +57,7 @@
 			description=		"This pressurized hold increases cargo capacity by up to 120 tons by utilizing an on-board VI to optimize cargo placement.  This model works in tandem with life support systems to increase crew capacity by two members."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 				cargoSpace=		"120"
@@ -89,7 +89,7 @@
 			description=		"This pressurized hold increases cargo capacity by up to 100 tons by utilizing an on-board VI to optimize cargo placement.  This model has grapples to bring both ore and autons on board and it works in tandem with life support systems to increase crew capacity by one member."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 				cargoSpace=		"100"
@@ -121,7 +121,7 @@
 			description=		"This scan-shielded hold increases cargo capacity by up to 70 tons by utilizing an on-board VI to optimize cargo placement. Stations will not officially check it for illegal items while it is installed and this model can work in tandem with life support systems to increase crew capacity by one member."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 				cargoSpace=		"70"
@@ -153,7 +153,7 @@
 			description=		"This scan-shielded hold increases cargo capacity by up to 50 tons by utilizing an on-board VI to optimize cargo placement. Stations will not check it for illegal items while it is installed and this model includes grapples to bring both ore and autons on board and can work in tandem with life support systems to increase crew capacity by one member."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 				cargoSpace=		"50"
@@ -190,7 +190,7 @@
 			description=		"This oversized hold increases cargo capacity by up to 250 tons by utilizing an on-board VI to optimize cargo placement.  This model works in tandem with life support systems to increase crew capacity by four members."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 		        deviceSlots=    "2"
@@ -219,7 +219,7 @@
 			description=		"This oversized hold increases cargo capacity by up to 230 tons when by utilizing an on-board VI to optimize cargo placement.  This model has grapples to bring both ore and autons on board and it works in tandem with life support systems to increase crew capacity by three members."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 		        deviceSlots=    "2"
@@ -247,7 +247,7 @@
 			description=		"This oversized scan-shielded hold increases cargo capacity by up to 200 tons by utilizing an on-board VI to optimize cargo placement. Stations will not officially check it for illegal items while it is installed and this model can work in tandem with life support systems to increase crew capacity by three members."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 		        deviceSlots=    "2"
@@ -275,7 +275,7 @@
 			description=		"This oversized scan-shielded hold increases cargo capacity by up to 180 tons by utilizing an on-board VI to optimize cargo placement. Stations will not check it for illegal items while it is installed and this model includes grapples to bring both ore and autons on board and can work in tandem with life support systems to increase crew capacity by three members."
 	>
 
-		<Image imageID="&rsCCItems;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
 
 		<CargoHoldDevice
 		        deviceSlots=    "2"
