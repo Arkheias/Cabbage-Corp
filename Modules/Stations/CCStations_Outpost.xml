@@ -188,7 +188,6 @@
 			noMapLabel=         "true"
 			canAttack=          "true"
 
-			mass=               "2000"
 			armorID=            "&itCC4xExperimentalStealthArmor;"
 			hitPoints=          "100"
 			repairRate=         "5"

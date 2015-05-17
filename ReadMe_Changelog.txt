@@ -2,17 +2,20 @@
 Changelog
 ---------
 
-v0.7.4.0-development (2015-05-14)
+v0.7.4.0-development (2015-05-17)
 ---------------------------------
 -----General Changes-----
 Moved changelog from the general readme file to its own readme file.
 Added hyphens underneath version numbers in the changelog.
+----Stations-----
+Removed mass from outpost turrets, they weren't even marked as mobile and (some) stars have gravity now.
 ----Ships-----
 Fixed image for Oboroguruma-class stealth freighter in PSD menus.
 Lampyridae-class stealth transports now use the correct number (8) of armor segments in PSD.
 Adjusted the starting and PSD equipment on the Lampyridae and Oboroguruma.
 The locations of the armor segments on the Oboroguruma now correspond to the actual locations of the armor segments on the Oboroguruma
 ----Items-----
+The Cabbage Corp Toolset has been fixed so that it does not appear unless the playership has Cabbage Corp equipment installed, like I originally advertised it.
 Auxiliary reactors should now shut themselves off automatically if your ship is really low on fuel.
 Added Phantom-class reconnaissance auton series (Levels 2, 4, 6, 8, and 10).
 Fixed typo in the name of the mark I wraith auton.
@@ -23,6 +26,7 @@ Added new image for solar devices.
 Added new image for DRADIS devices.
 Added new images for autodefense devices.
 Reorganized generic device images into separate file from items.
+Auxiliary reactors are now half as efficient when damaged.
 
 
 

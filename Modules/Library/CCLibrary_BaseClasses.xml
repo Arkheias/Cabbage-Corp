@@ -30,8 +30,8 @@
 					<!-- Cargo Hold Base Class -->
 <!-- ================================================================ -->
 <!--
-+20 cargo capacity from optimizing cargo placement seems about right 
-(+30) for optimizing, (-10) for VI computers, so +20 for optimized single cargo hold, and +50 for optimized dual cargo hold (use same VI computer for both holds)
++20 cargo capacity from using included VI to optimize cargo placement seems about right 
+(+30) for optimizing, (-10) for VI computers, so +20 for optimized single cargo hold, and +50 for optimized dual cargo hold (same VI computer used for both holds)
 -20 cargo capacity for mining equipment (+auton retrieval equipment)
 -50 cargo capacity for scan-shielding equipment
 -80 cargo capacity for auton modification equipment
@@ -262,38 +262,38 @@ These devices do not currently work for the player-ships because it is technical
 						(not (itmGetProperty gItem 'damaged))
 						(objGetItemProperty gSource gItem 'enabled)
 					)
-						(if (geq (itmGetData gItem 'CCNanofacCounter) (@ (itmGetStaticData gItem 'CCNanofac) 'interval))		;This function makes the nanofac only produce items every nth onUpdate event	
-							(block (theCount toCreate)
-								(setq theCount (objHasItem gSource (itmCreate (@ (itmGetStaticData gItem 'CCNanofac) 'product) 1)))		;This specifies how much ammo is currently on the ship
-								(setq toCreate 
-									(min 
-										(@ (itmGetStaticData gItem 'CCNanofac) 'count)		;This specifies the maximum ammo units that can be produced in each production cycle
-										(subtract (@ (itmGetStaticData gItem 'CCNanofac) 'maxCount) theCount)		;This is how much more ammo you can have stockpiled before exceeding the DRM limits of the nanofac
-										(divide (objGetCargoSpaceLeft gSource) (itmGetMass (@ (itmGetStaticData gItem 'CCNanofac) 'product)))		;This is how much more ammo your cargo hold can carry
-									)
+					(if (geq (itmGetData gItem 'CCNanofacCounter) (@ (itmGetStaticData gItem 'CCNanofac) 'interval))		;This function makes the nanofac only produce items every nth onUpdate event	
+						(block (theCount toCreate)
+							(setq theCount (objHasItem gSource (itmCreate (@ (itmGetStaticData gItem 'CCNanofac) 'product) 1)))		;This specifies how much ammo is currently on the ship
+							(setq toCreate 
+								(min 
+									(@ (itmGetStaticData gItem 'CCNanofac) 'count)		;This specifies the maximum ammo units that can be produced in each production cycle
+									(subtract (@ (itmGetStaticData gItem 'CCNanofac) 'maxCount) theCount)		;This is how much more ammo you can have stockpiled before exceeding the DRM limits of the nanofac
+									(divide (objGetCargoSpaceLeft gSource) (itmGetMass (@ (itmGetStaticData gItem 'CCNanofac) 'product)))		;This is how much more ammo your cargo hold can carry
 								)
-								(if (gr toCreate 0)
-									(block Nil
-										(objAddItem gSource (itmCreate (@ (itmGetStaticData gItem 'CCNanofac) 'product) toCreate))
-										(itmSetKnown (@ (itmGetStaticData gItem 'CCNanofac) 'product))		;This identifies the device if for some reason it was unknown before
-										(intCabbageShpConsumePower gSource 		;This is a custom function that consumes fuel whilst taking reactor efficiency into account
-											(divide 									;see the global functions module for more information
+							)
+							(if (gr toCreate 0)
+								(block Nil
+									(objAddItem gSource (itmCreate (@ (itmGetStaticData gItem 'CCNanofac) 'product) toCreate))
+									(itmSetKnown (@ (itmGetStaticData gItem 'CCNanofac) 'product))		;This identifies the device if for some reason it was unknown before
+									(intCabbageShpConsumePower gSource 		;This is a custom function that consumes fuel whilst taking reactor efficiency into account
+										(divide 									;see the global functions module for more information
+											(multiply 
 												(multiply 
-													(multiply 
-														(@ (itmGetStaticData gItem 'CCNanofac) 'powerUse) 
-														(@ (itmGetStaticData gItem 'CCNanofac) 'interval)
-													)
-													30		;This specific number effectively converts the powerUse value into the equivalent in fuel units at 100 percent device efficiency
+													(@ (itmGetStaticData gItem 'CCNanofac) 'powerUse) 
+													(@ (itmGetStaticData gItem 'CCNanofac) 'interval)
 												)
-												100			;The efficiency of this device itself is assumed to be 100 percent because I didn't want to add another variable to it
+												30		;This specific number effectively converts the powerUse value into the equivalent in fuel units at 100 percent device efficiency
 											)
+											100			;The efficiency of this device itself is assumed to be 100 percent because I didn't want to add another variable to it
 										)
 									)
 								)
-								(objSetItemData gSource gItem "CCNanofacCounter" 1)		;This function resets the counter for the onUpdate event
 							)
-							(objSetItemData gSource gItem "CCNanofacCounter" (add (itmGetData gItem 'CCNanofacCounter) 1))		This function increments the counter for the onUpdate event
+							(objSetItemData gSource gItem "CCNanofacCounter" 1)		;This function resets the counter for the onUpdate event
 						)
+						(objSetItemData gSource gItem "CCNanofacCounter" (add (itmGetData gItem 'CCNanofacCounter) 1))		This function increments the counter for the onUpdate event
+					)
 				)
 			</OnUpdate>
 		</Events>
@@ -302,13 +302,6 @@ These devices do not currently work for the player-ships because it is technical
 <!-- ================================================================ -->
 					<!-- Reactor Base Classes -->
 <!-- ================================================================ -->
-<!--
-This does need to take into account reactor efficiency
-Should probably be slightly lower than 30 to approximate 100% efficiency, higher values lower efficiencies
-need to add function that disables it when less than 5% fuel, to allow ships to actually run out of power
-need to add function to prevent enabling the device when less than 5% fuel
-The function is apparently unnecessary now, ships with the device now run out of fuel when they are supposed to
--->
 
 <!-- Auxiliary Reactor Base Class -->
 
@@ -323,11 +316,14 @@ The function is apparently unnecessary now, ships with the device now run out of
 					(if (objIsDeviceEnabled gSource gItem)
 						(block nil
 							(intCabbageShpConsumePower gSource		;Custom function that consumes fuel units while taking into account the current reactor efficiency
-								(divide 
+								(divide			;The divide function comes last to minimize rounding errors
 									(multiply 
 										(@ (itmGetStaticData gItem 'CCAuxReactor) 'powerUse)
-										30
-									) 
+										(if (itmGetProperty gItem 'damaged)
+											60		;This makes the device effectively use twice as much power when damaged
+											30		;This constant is used to convert powerUse into the equivalent amount of fuel units at 100 percent reactor efficiency
+										)
+									)
 									(@ (itmGetStaticData gItem 'CCAuxReactor) 'efficiency)	;Efficiency of auxiliary capacitor
 								)
 							)

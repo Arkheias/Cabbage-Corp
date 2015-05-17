@@ -387,18 +387,19 @@ Alternate idea: Make the shields have different maximum strength limits
 				; aScreen is the screen name (if this is a local screen)
 				; aPane is the pane being shown
 				; Action only appears if any item with the Cabbage attribute is installed.
-				(if (eq (objGetItems gSource "*I +cabbageCorp") Nil)
-					Nil
-					(if (and (eq aScreenUNID &dsShipInterior;) (eq aPane "Default"))
-						(scrAddAction
-							gScreen
-							'cabbageCorp
-							0
-							"Cabbage Corp Toolset"
-							"C"
-							Nil
-							(scrShowScreen gScreen "&scCCCabbageModification;")
-						)
+				(if (and
+						(objGetItems gPlayership "*I +cabbageCorp")		;if the list exists then it counts as returning a non Nil value which here is effectively a true value
+						(eq aScreenUNID &dsShipInterior;)
+						(eq aPane "Default")
+					)
+					(scrAddAction
+						gScreen
+						'cabbageCorp
+						0
+						"Cabbage Corp Toolset"
+						"C"
+						Nil
+						(scrShowScreen gScreen "&scCCCabbageModification;")
 					)
 				)
 			</OnGlobalPaneInit>
