@@ -21,7 +21,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of Light Stealth Plating -->
 
 	<ItemType UNID="&itCCLightStealthPlating;"
-			name=				"[segment(s) of ] light stealth plating"
+			name=				"[segment(s) of ]light stealth plating"
 			attributes=			"cabbageCorp, minorItem"
 			
 			level=				"2"
@@ -48,7 +48,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 1x Stealth Armor -->
 
 	<ItemType UNID="&itCC1xStealthArmor;"
-			name=				"[segment(s) of ] stealth armor"
+			name=				"[segment(s) of ]stealth armor"
 			attributes=			"cabbageCorp, minorItem"
 			
 			level=				"4"
@@ -86,7 +86,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 1x Hardened Stealth Armor -->
 
 	<ItemType UNID="&itCC1xHardenedStealthArmor;"
-			name=				"[segment(s) of ] hardened stealth armor"
+			name=				"[segment(s) of ]hardened stealth armor"
 			attributes=			"cabbageCorp, military, minorItem"
 			
 			level=				"6"
@@ -125,7 +125,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 1x Advanced Stealth Armor -->
 
 	<ItemType UNID="&itCC1xAdvancedStealthArmor;"
-			name=				"[segment(s) of ] advanced stealth armor"
+			name=				"[segment(s) of ]advanced stealth armor"
 			attributes=			"cabbageCorp, military, minorItem"
 			
 			level=				"8"
@@ -164,7 +164,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 1x Experimental Stealth Armor -->
 
 	<ItemType UNID="&itCC1xExperimentalStealthArmor;"
-			name=				"[segment(s) of ] experimental stealth armor"
+			name=				"[segment(s) of ]experimental stealth armor"
 			attributes=			"cabbageCorp, military, minorItem"
 			
 			level=				"10"
@@ -202,7 +202,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 1x Theoretical Stealth Armor -->
 
 	<ItemType UNID="&itCC1xTheoreticalStealthArmor;"
-			name=				"[segment(s) of ] theoretical stealth armor"
+			name=				"[segment(s) of ]theoretical stealth armor"
 			attributes=			"cabbageCorp, alien, minorItem"
 			
 			level=				"12"
@@ -244,7 +244,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 2x Stealth Armor -->
 
 	<ItemType UNID="&itCC2xStealthArmor;"
-			name=				"[segment(s) of ] 2x-layered stealth armor"
+			name=				"[segment(s) of ]2x-layered stealth armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
 			
 			level=				"4"
@@ -273,7 +273,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 2x Hardened Stealth Armor -->
 
 	<ItemType UNID="&itCC2xHardenedStealthArmor;"
-			name=				"[segment(s) of ] 2x-layered hardened stealth armor"
+			name=				"[segment(s) of ]2x-layered hardened stealth armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"6"
@@ -303,7 +303,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 2x Advanced Stealth Armor -->
 
 	<ItemType UNID="&itCC2xAdvancedStealthArmor;"
-			name=				"[segment(s) of ] 2x-layered advanced stealth armor"
+			name=				"[segment(s) of ]2x-layered advanced stealth armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"8"
@@ -333,7 +333,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 2x Experimental Stealth Armor -->
 
 	<ItemType UNID="&itCC2xExperimentalStealthArmor;"
-			name=				"[segment(s) of ] 2x-layered experimental stealth armor"
+			name=				"[segment(s) of ]2x-layered experimental stealth armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"10"
@@ -362,7 +362,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 2x Theoretical Stealth Armor -->
 
 	<ItemType UNID="&itCC2xTheoreticalStealthArmor;"
-			name=				"[segment(s) of ] 2x-layered theoretical stealth armor"
+			name=				"[segment(s) of ]2x-layered theoretical stealth armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, alien, minorItem"
 			
 			level=				"12"
@@ -395,7 +395,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 4x Stealth Armor -->
 
 	<ItemType UNID="&itCC4xStealthArmor;"
-			name=				"[segment(s) of ] 4x-layered stealth armor"
+			name=				"[segment(s) of ]4x-layered stealth armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
 			
 			level=				"4"
@@ -424,7 +424,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 4x Hardened Stealth Armor -->
 
 	<ItemType UNID="&itCC4xHardenedStealthArmor;"
-			name=				"[segment(s) of ] 4x-layered hardened stealth armor"
+			name=				"[segment(s) of ]4x-layered hardened stealth armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"6"
@@ -454,7 +454,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 4x Advanced Stealth Armor -->
 
 	<ItemType UNID="&itCC4xAdvancedStealthArmor;"
-			name=				"[segment(s) of ] 4x-layered advanced stealth armor"
+			name=				"[segment(s) of ]4x-layered advanced stealth armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"8"
@@ -484,7 +484,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 4x Experimental Stealth Armor -->
 
 	<ItemType UNID="&itCC4xExperimentalStealthArmor;"
-			name=				"[segment(s) of ] 4x-layered experimental stealth armor"
+			name=				"[segment(s) of ]4x-layered experimental stealth armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"10"
@@ -513,7 +513,7 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 	<!-- Segment of 4x Theoretical Stealth Armor -->
 
 	<ItemType UNID="&itCC4xTheoreticalStealthArmor;"
-			name=				"[segment(s) of ] 4x-layered theoretical stealth armor"
+			name=				"[segment(s) of ]4x-layered theoretical stealth armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, alien, minorItem"
 			
 			level=				"12"

@@ -29,7 +29,7 @@
 
 	<ItemType UNID="&itCCWeigeltCannon;"
 			name=				"Weigelt cannon"
-			attributes=			"alien, cabbageCorp, cabbageTwoSlots, energyHowitzer, illegal, majorItem"
+			attributes=			"alien, cabbageCorp, energyHowitzer, illegal, majorItem"
 			  
 			level=				"9"
 			frequency=			"notrandom"

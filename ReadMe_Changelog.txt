@@ -2,13 +2,18 @@
 Changelog
 ---------
 
-v0.7.4.0-development (2015-05-17)
+v0.7.4.0-development (2015-07-10)
 ---------------------------------
 -----General Changes-----
+Updated to API v27 for Transcendence v1.6b5.
 Moved changelog from the general readme file to its own readme file.
 Added hyphens underneath version numbers in the changelog.
 ----Stations-----
 Removed mass from outpost turrets, they weren't even marked as mobile and (some) stars have gravity now.
+Changed Cabbage Corp outposts and their turrets to use image variants that match their asteroid fields.
+Updated the Buy & Modify item screen to use the same implementation as the new default item buying screens.
+ -It no longer shows items for which the station does not have the resources to make, previously it showed them but deactivated the button to buy them.
+ -(The options are all standardized anyway and there is another menu to show all potential custom devices/armor.)
 ----Ships-----
 Fixed image for Oboroguruma-class stealth freighter in PSD menus.
 Lampyridae-class stealth transports now use the correct number (8) of armor segments in PSD.
@@ -27,6 +32,17 @@ Added new image for DRADIS devices.
 Added new images for autodefense devices.
 Reorganized generic device images into separate file from items.
 Auxiliary reactors are now half as efficient when damaged.
+Fixed typo in the attributes list for the Cabbage Corp premium memberhip ID and changed frequency to notRandom.
+Added Cabbage Corp Tinkerer ID (Will eventually unlock aditional options when modifying Cabbage Corp devices).
+Added proto-Cabbagium catalyst.
+Added pygmy ostrich horses.
+Added Cabbagium armor sets.
+Removed trinium armor sets and organic armor sets.
+Removed excess spacing in the names of stealth and sivaya armor sets.
+Added the default hit-effects to the mining lances.
+Added miningEquipment attribute to mining lances, refineries and miner's cargo holds so that they will appear in vanilla v1.6b5 mining stations.
+Changed the firing rate of most mining lances to 4 (from 2) and doubled the damage so that they will work better with the new mining update.
+Increased the level of all scanning mining lances by 1.
 
 
 

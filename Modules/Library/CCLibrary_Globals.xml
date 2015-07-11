@@ -59,10 +59,10 @@
 							(block Nil
 								(for counter 0	(subtract (count (itmGetStaticData gBaseItem 'CCBuyAndModify)) 1)
 									(if (eq (itmGetType (scrGetItem gScreen)) (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'Product))
-										(setq gCost (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'count))
+										(setq itemCost (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'count))
 									)
 								)
-								gCost
+								itemCost
 							)
 						)
 					)

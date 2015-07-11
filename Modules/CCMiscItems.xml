@@ -379,11 +379,32 @@
 			frequency=			"uncommon"
 			numberAppearing=	"1d6"
 			
-			value=				"20"
+			value=				"30"
 			mass=				"250"
 
 			description=		"Solar panel converts sunlight into energy usable by a ship's reactor. At least six are required to form a working array."
 	>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+
+	<!-- proto-Cabbagium catalyst -->
+
+	<ItemType UNID="&itCCCabbagiumCatalyst;"
+			name=				"[container(s) of ]proto-Cabbagium catalyst"
+			attributes=			"cabbageCorp, consumable, res, zeroPoint"
+			
+			level=				"9"
+			frequency=			"veryrare"
+			numberAppearing=	"1d2"
+			
+			value=				"16000"
+			mass=				"10"
+
+			description=		"This exotic substance catalyses the radioactive growth of certain classified transuranic elements via the absorption of high energy solar particles."
+
+			sortName=			"proto-Cabbagium catalyst container of"
+			>
 
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
@@ -396,10 +417,10 @@
 
 	<ItemType UNID="&itCCPremiumID;"
 			name=				"Cabbage Corp premium membership ID"
-			attributes=			"cabbageCorp, ID, info, majorItemm specialty"
+			attributes=			"cabbageCorp, ID, info, majorItem, specialty"
 			
 			level=				"3"
-			frequency=			"rare"
+			frequency=			"notRandom"
 			
 			value=				"10000"
 			mass=				"1"
@@ -509,12 +530,59 @@ and the toolbox will always appear in the ship view regardless of whether you ha
 			)
 		</Invoke>
 	</ItemType>
+
+	<!-- Cabbage Corp Tinkerer ID -->
+
+	<ItemType UNID="&itCCTinkererID;"
+			name=				"Cabbage Corp tinkerer ID"
+			attributes=			"cabbageCorp, ID, info, majorItem, specialty"
+			
+			level=				"7"
+			frequency=			"notRandom"
+			
+			value=				"200000"
+			mass=				"1"
+
+			description=		"This ID marks you as a licensed Tinkerer of Cabbage Corp, allowing you to bypass those pesky safety limits when modifying Cabbage Corp devices. Does not work until implanted."
+
+			sortName=			"identification chip, tinkerer"
+	>
+
+		<Image imageID="&rsCCItems;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Invoke>
+			(block Nil
+				; Install
+				(if (objGetData gPlayerShip "CCTinkererIDImplant")
+					(objSendMessage gSource Nil "You already have a Cabbage Corp Tinkerer ID implanted.")
+					(block Nil
+						(objSetData gPlayerShip "CCTinkererIDImplant" True)
+						(objSendMessage gSource Nil "You stab yourself with the disposable chip implanter... ow!")
+						(objRemoveItem gSource gItem 1)
+					)
+				)
+			)
+		</Invoke>
+		
+		<Events>
+			<GetGlobalAchievements>
+				(block nil
+					(list
+						(if (objGetData gPlayerShip "CCTinkererIDImplant")
+							(list "Cabbage Corp Tinkerer ID" "Implanted")
+						)
+					)
+				)
+			</GetGlobalAchievements>
+		</Events>
+		
+	</ItemType>
 	
 <!-- ================================================================ -->
 							<!-- Valuables -->
 <!-- ================================================================ -->
 	
-;The consumable tag is in fact meant to imply that you also took all the food before leaving.
+	;	Here, the consumable tag is in fact meant to imply that you also took all the food before leaving.
 	
 	<!-- Personal Belongings -->
 
@@ -534,6 +602,26 @@ and the toolbox will always appear in the ship view regardless of whether you ha
 	>
 
 		<Image imageID="&rsItems1;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+	
+	;	I know damn well what all this item description is implying.
+	
+	<!-- Pygmy Ostrich Horse -->
+
+	<ItemType UNID="&itCCPygmyOstrichHorse;"
+			name=				"pygmy ostrich horse"
+			attributes=			"cabbageCorp, consumable, lux"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"1200"
+			mass=				"100"
+
+			description=		"These pets are the result of early 23rd century research into creating a hulk by inseminating ostrich foetuses with horse semen while exposing them to gamma radiation. Cabbage Corp created the pygmy version shortly after obtaining the patents when the original researcher declared bankruptcy."
+	>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 
 </TranscendenceModule>

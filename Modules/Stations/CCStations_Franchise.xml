@@ -17,7 +17,7 @@ Cabbage Corp franchises are independently owned an opperated and are thus limite
 			canAttack=			"true"
 
 			multiHull=			"true"
-			armorID=			"&itCC4xTriniumArmor;"
+			armorID=			"&itCC4xSivayaArmor;"
 			hitPoints=			"300"
 			repairRate=			"5"
 			fireRateAdj=		"20"

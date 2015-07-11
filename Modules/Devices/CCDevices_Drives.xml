@@ -411,7 +411,7 @@
 	
 	<ItemType UNID="&itCCAuxIonDrive;"
 			name=				"auxiliary ion drive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"2"
 			frequency=			"veryrare"
@@ -442,7 +442,7 @@
 	
 	<ItemType UNID="&itCCAuxPlasmaDrive;"
 			name=				"auxiliary plasma drive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"3"
 			frequency=			"veryrare"
@@ -473,7 +473,7 @@
 
 	<ItemType UNID="&itCCAuxTritiumPropulsionUpgrade;"
 			name=				"auxiliary tritium propulsion upgrade"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			  
 			level=				"4"
 			frequency=			"veryrare"
@@ -504,7 +504,7 @@
 	
 	<ItemType UNID="&itCCAuxTritiumDrive;"
 			name=				"auxiliary tritium drive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"5"
 			frequency=			"veryrare"
@@ -535,7 +535,7 @@
 
 	<ItemType UNID="&itCCAuxChronimiumPropulsionUpgrade;"
 			name=				"auxiliary chronimium propulsion upgrade"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"6"
 			frequency=			"veryrare"
@@ -566,7 +566,7 @@
 	
 	<ItemType UNID="&itCCAuxChronimiumDrive;"
 			name=				"auxiliary chronimium drive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"7"
 			frequency=			"veryrare"
@@ -597,7 +597,7 @@
 	
 	<ItemType UNID="&itCCAuxCobaltThoriumMegaDrive;"
 			name=				"auxiliary cobalt-thorium megadrive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military"
 			
 			level=				"8"
 			frequency=			"veryrare"
@@ -628,7 +628,7 @@
 	
 	<ItemType UNID="&itCCAuxXenotiteMegaDrive;"
 			name=				"auxiliary xenotite megadrive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military"
 			
 			level=				"9"
 			frequency=			"veryrare"
@@ -659,7 +659,7 @@
 	
 	<ItemType UNID="&itCCAuxPteracniumMegaDrive;"
 			name=				"auxiliary pteracnium megadrive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military"
 			
 			level=				"10"
 			frequency=			"veryrare"
@@ -690,7 +690,7 @@
 
 	<ItemType UNID="&itCCAuxZeroPointPropulsionUpgrade;"
 			name=				"auxiliary zero-point propulsion upgrade"
-			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"11"
 			frequency=			"veryrare"
@@ -721,7 +721,7 @@
 	
 	<ItemType UNID="&itCCAuxZeroPointMegaDrive;"
 			name=				"auxiliary zero-point megadrive"
-			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"12"
 			frequency=			"veryrare"
@@ -752,7 +752,7 @@
 	
 	<ItemType UNID="&itCCAuxImpulseDrive;"
 			name=				"auxiliary impulse drive"
-			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, majorItem, specialty"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, majorItem, specialty"
 			
 			level=				"13"
 			frequency=			"notrandom"
@@ -787,7 +787,7 @@
 	
 	<ItemType UNID="&itCCRadIonDrive;"
 			name=				"unshielded ion drive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, illegal, majorItem"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			
 			level=				"2"
@@ -819,7 +819,7 @@
 	
 	<ItemType UNID="&itCCRadPlasmaDrive;"
 			name=				"unshielded plasma drive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, illegal, majorItem"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			
 			level=				"3"
@@ -851,7 +851,7 @@
 
 	<ItemType UNID="&itCCRadTritiumPropulsionUpgrade;"
 			name=				"unshielded tritium propulsion upgrade"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, illegal, majorItem"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			  
 			level=				"4"
@@ -883,7 +883,7 @@
 	
 	<ItemType UNID="&itCCRadTritiumDrive;"
 			name=				"unshielded tritium drive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, illegal, majorItem"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			
 			level=				"5"
@@ -915,7 +915,7 @@
 
 	<ItemType UNID="&itCCRadChronimiumPropulsionUpgrade;"
 			name=				"unshielded chronimium propulsion upgrade"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, illegal, majorItem"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			
 			level=				"6"
@@ -947,7 +947,7 @@
 	
 	<ItemType UNID="&itCCRadChronimiumDrive;"
 			name=				"unshielded chronimium drive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, illegal, majorItem"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			
 			level=				"7"
@@ -979,7 +979,7 @@
 	
 	<ItemType UNID="&itCCRadCobaltThoriumMegaDrive;"
 			name=				"unshielded cobalt-thorium megadrive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, illegal, majorItem, military"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			
 			level=				"8"
@@ -1011,7 +1011,7 @@
 	
 	<ItemType UNID="&itCCRadXenotiteMegaDrive;"
 			name=				"unshielded xenotite megadrive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, illegal, majorItem, military"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			
 			level=				"9"
@@ -1043,7 +1043,7 @@
 	
 	<ItemType UNID="&itCCRadPteracniumMegaDrive;"
 			name=				"unshielded pteracnium megadrive"
-			attributes=			"cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, illegal, majorItem, military"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			
 			level=				"10"
@@ -1075,7 +1075,7 @@
 
 	<ItemType UNID="&itCCRadZeroPointPropulsionUpgrade;"
 			name=				"unshielded zero-point propulsion upgrade"
-			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, illegal, majorItem"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			
 			level=				"11"
@@ -1107,7 +1107,7 @@
 	
 	<ItemType UNID="&itCCRadZeroPointMegaDrive;"
 			name=				"unshielded zero-point megadrive"
-			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, illegal, majorItem"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			
 			level=				"12"
@@ -1139,7 +1139,7 @@
 	
 	<ItemType UNID="&itCCRadImpulseDrive;"
 			name=				"unshielded impulse drive"
-			attributes=			"alien, cabbageCorp, cabbageNoSlots, cabbageNotStandard, illegal, majorItem, specialty"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, illegal, majorItem, specialty"
 			inherit=			"&baCCUnshieldedDeviceBase;"
 			
 			level=				"13"
@@ -1175,7 +1175,7 @@
 	
 	<ItemType UNID="&itCCDualIonDrive;"
 			name=				"dual ion drive"
-			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"2"
 			frequency=			"rare"
@@ -1202,7 +1202,7 @@
 	
 	<ItemType UNID="&itCCDualPlasmaDrive;"
 			name=				"dual plasma drive"
-			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"3"
 			frequency=			"rare"
@@ -1229,7 +1229,7 @@
 
 	<ItemType UNID="&itCCDualTritiumPropulsionUpgrade;"
 			name=				"dual tritium propulsion upgrade"
-			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			  
 			level=				"4"
 			frequency=			"rare"
@@ -1256,7 +1256,7 @@
 	
 	<ItemType UNID="&itCCDualTritiumDrive;"
 			name=				"dual tritium drive"
-			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"5"
 			frequency=			"rare"
@@ -1283,7 +1283,7 @@
 
 	<ItemType UNID="&itCCDualChronimiumPropulsionUpgrade;"
 			name=				"dual chronimium propulsion upgrade"
-			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"6"
 			frequency=			"rare"
@@ -1310,7 +1310,7 @@
 	
 	<ItemType UNID="&itCCDualChronimiumDrive;"
 			name=				"dual chronimium drive"
-			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"7"
 			frequency=			"rare"
@@ -1337,7 +1337,7 @@
 	
 	<ItemType UNID="&itCCDualCobaltThoriumMegaDrive;"
 			name=				"dual cobalt-thorium megadrive"
-			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military"
 			
 			level=				"8"
 			frequency=			"rare"
@@ -1364,7 +1364,7 @@
 	
 	<ItemType UNID="&itCCDualXenotiteMegaDrive;"
 			name=				"dual xenotite megadrive"
-			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military"
 			
 			level=				"9"
 			frequency=			"rare"
@@ -1391,7 +1391,7 @@
 	
 	<ItemType UNID="&itCCDualPteracniumMegaDrive;"
 			name=				"dual pteracnium megadrive"
-			attributes=			"cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military"
 			
 			level=				"10"
 			frequency=			"rare"
@@ -1418,7 +1418,7 @@
 
 	<ItemType UNID="&itCCDualZeroPointPropulsionUpgrade;"
 			name=				"dual zero-point propulsion upgrade"
-			attributes=			"alien, cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"11"
 			frequency=			"rare"
@@ -1445,7 +1445,7 @@
 	
 	<ItemType UNID="&itCCDualZeroPointMegaDrive;"
 			name=				"dual zero-point megadrive"
-			attributes=			"alien, cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, majorItem"
 			
 			level=				"12"
 			frequency=			"rare"
@@ -1472,7 +1472,7 @@
 	
 	<ItemType UNID="&itCCDualImpulseDrive;"
 			name=				"dual impulse drive"
-			attributes=			"alien, cabbageCorp, cabbageOneSlot, cabbageNotStandard, majorItem, specialty"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, majorItem, specialty"
 			
 			level=				"13"
 			frequency=			"notrandom"

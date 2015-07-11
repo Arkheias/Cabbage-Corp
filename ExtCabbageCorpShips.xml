@@ -21,7 +21,7 @@
 ]>
 
 <TranscendenceExtension UNID="&xtCCShipsAndStuffExtension;" 
-    apiVersion=			"26"
+    apiVersion=			"27"
 	Name=				"Cabbage Corp Ships &#38; Stuff" 
 	credits=			"Arkheias"
 	coverImageID=		"&rsCCCabbageCorpCover;"

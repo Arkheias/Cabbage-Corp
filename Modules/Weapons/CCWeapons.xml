@@ -29,7 +29,7 @@
 
 	<ItemType UNID="&itCCSavoyEqualizer;"
 			name=				"Savoy Equalizer"
-			attributes=			"alien, cabbageCorp, cabbageTwoSlots, majorItem"
+			attributes=			"alien, cabbageCorp, majorItem"
 			  
 			level=				"15"
 			frequency=			"rare"

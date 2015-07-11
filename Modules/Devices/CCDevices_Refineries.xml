@@ -1,6 +1,11 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
-	
+
+<!--
+The miningEquipment attribute makes the items appear in mining stations from v1.6b5 onwards.
+The minerGear attribute makes the items appear in mining stations from the mining pack mod (in  pre v1.6b5 versions at least).
+-->
+
 <!-- ================================================================ -->
 						<!-- Refinery Devices -->
 <!-- ================================================================ -->
@@ -35,7 +40,7 @@
 	
 	<ItemType UNID="&itCCHeliumRegolithRefinery;"
 			name=               "helium regolith refinery | helium regolith refineries"
-			attributes=         "cabbageCorp, majorItem, minerGear, refinery"
+			attributes=         "cabbageCorp, majorItem, minerGear, miningEquipment, refinery"
 			
 			level=              "2"
 			frequency=          "rare"
@@ -70,7 +75,7 @@
 	
 	<ItemType UNID="&itCCAdvHeliumRegolithRefinery;"
 			name=               "advanced helium regolith refinery | advanced helium regolith refineries"
-			attributes=         "cabbageCorp, cabbageTwoSlots, majorItem, minerGear, refinery"
+			attributes=         "cabbageCorp, majorItem, minerGear, miningEquipment, refinery"
 			
 			level=              "4"
 			frequency=          "veryrare"
@@ -99,7 +104,7 @@
 	
 	<ItemType UNID="&itCCUraniumOreRefinery;"
 			name=               "uranium ore refinery | uranium ore refineries"
-			attributes=         "cabbageCorp, majorItem, minerGear, refinery"
+			attributes=         "cabbageCorp, majorItem, minerGear, miningEquipment, refinery"
 			
 			level=              "3"
 			frequency=          "rare"
@@ -127,7 +132,7 @@
 	
 	<ItemType UNID="&itCCAdvUraniumOreRefinery;"
 			name=               "advanced uranium ore refinery | advanced uranium ore refineries"
-			attributes=         "cabbageCorp, cabbageTwoSlots, majorItem, minerGear, refinery"
+			attributes=         "cabbageCorp, majorItem, minerGear, miningEquipment, refinery"
 			
 			level=              "6"
 			frequency=          "veryrare"
@@ -156,7 +161,7 @@
 	
 	<ItemType UNID="&itCCXenotiteOreRefinery;"
 			name=               "xenotite ore refinery | xenotite ore refineries"
-			attributes=         "cabbageCorp, majorItem, minerGear, refinery"
+			attributes=         "cabbageCorp, majorItem, minerGear, miningEquipment, refinery"
 			
 			level=              "5"
 			frequency=          "rare"
@@ -184,7 +189,7 @@
 	
 	<ItemType UNID="&itCCAdvXenotiteOreRefinery;"
 			name=               "advanced xenotite ore refinery | advanced xenotite ore refineries"
-			attributes=         "cabbageCorp, cabbageTwoSlots, majorItem, minerGear, refinery"
+			attributes=         "cabbageCorp, majorItem, minerGear, miningEquipment, refinery"
 			
 			level=              "8"
 			frequency=          "veryrare"
@@ -213,7 +218,7 @@
 	
 	<ItemType UNID="&itCCPteracniumOreRefinery;"
 			name=               "pteracnium ore refinery | pteracnium ore refineries"
-			attributes=         "cabbageCorp, majorItem, minerGear, refinery"
+			attributes=         "cabbageCorp, majorItem, minerGear, miningEquipment, refinery"
 			
 			level=              "7"
 			frequency=          "rare"
@@ -241,7 +246,7 @@
 	
 	<ItemType UNID="&itCCAdvPteracniumOreRefinery;"
 			name=               "advanced pteracnium ore refinery | advanced pteracnium ore refineries"
-			attributes=         "cabbageCorp, cabbageTwoSlots, majorItem, minerGear, refinery"
+			attributes=         "cabbageCorp, majorItem, minerGear, miningEquipment, refinery"
 			
 			level=              "10"
 			frequency=          "veryrare"
@@ -270,7 +275,7 @@
 	
 	<ItemType UNID="&itCCHadronArcheolithRefinery;"
 			name=               "hadron archeolith refinery | hadron archeolith refineries"
-			attributes=         "cabbageCorp, majorItem, minerGear, refinery"
+			attributes=         "cabbageCorp, majorItem, minerGear, miningEquipment, refinery"
 			
 			level=              "9"
 			frequency=          "rare"
@@ -298,7 +303,7 @@
 	
 	<ItemType UNID="&itCCAdvHadronArcheolithRefinery;"
 			name=               "advanced hadron archeolith refinery | advanced hadron archeolith refineries"
-			attributes=         "cabbageCorp, cabbageTwoSlots, majorItem, minerGear, refinery"
+			attributes=         "cabbageCorp, majorItem, minerGear, miningEquipment, refinery"
 			
 			level=              "12"
 			frequency=          "veryrare"

@@ -1028,7 +1028,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva5MWReactor;"
 			name=				"dual S&#xed;va-5M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"1"
 			frequency=			"rare"
@@ -1059,7 +1059,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva10MWReactor;"
 			name=				"dual S&#xed;va-10M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"2"
 			frequency=			"rare"
@@ -1090,7 +1090,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva17MWReactor;"
 			name=				"dual S&#xed;va-17M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"3"
 			frequency=			"rare"
@@ -1121,7 +1121,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva31MWReactor;"
 			name=				"dual S&#xed;va-31M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"4"
 			frequency=			"rare"
@@ -1152,7 +1152,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva57MWReactor;"
 			name=				"dual S&#xed;va-57M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"5"
 			frequency=			"rare"
@@ -1183,7 +1183,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva100MWReactor;"
 			name=				"dual S&#xed;va-100M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"6"
 			frequency=			"veryrare"
@@ -1214,7 +1214,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva170MWReactor;"
 			name=				"dual S&#xed;va-170M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"7"
 			frequency=			"veryrare"
@@ -1245,7 +1245,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva310MWReactor;"
 			name=				"dual S&#xed;va-310M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"8"
 			frequency=			"veryrare"
@@ -1276,7 +1276,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva560MWReactor;"
 			name=				"dual S&#xed;va-560M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"9"
 			frequency=			"veryrare"
@@ -1307,7 +1307,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva1000MWReactor;"
 			name=				"dual S&#xed;va-1G reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem, military"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"10"
 			frequency=			"veryrare"
@@ -1338,7 +1338,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva1700MWReactor;"
 			name=				"dual S&#xed;va-1.7G reactor"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"11"
 			frequency=			"notRandom"
@@ -1369,7 +1369,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva3000MWReactor;"
 			name=				"dual S&#xed;va-3G reactor"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"12"
 			frequency=			"notRandom"
@@ -1400,7 +1400,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva5500MWReactor;"
 			name=				"dual S&#xed;va-5.5G reactor"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"13"
 			frequency=			"notRandom"
@@ -1431,7 +1431,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva10000MWReactor;"
 			name=				"dual S&#xed;va-10G reactor"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"14"
 			frequency=			"notRandom"
@@ -1462,7 +1462,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCDualSiva18000MWReactor;"
 			name=				"dual S&#xed;va-18G reactor"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, cabbageTwoSlots, dual, majorItem"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"15"
 			frequency=			"notRandom"
@@ -1497,7 +1497,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva5MWReactor;"
 			name=				"dual S&#xed;va-5M reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, notForSale"
+			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"1"
@@ -1529,7 +1529,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva10MWReactor;"
 			name=				"dual S&#xed;va-10M reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, notForSale"
+			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"2"
@@ -1561,7 +1561,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva17MWReactor;"
 			name=				"dual S&#xed;va-17M reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, notForSale"
+			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"3"
@@ -1593,7 +1593,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva31MWReactor;"
 			name=				"dual S&#xed;va-31M reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, notForSale"
+			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"4"
@@ -1625,7 +1625,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva57MWReactor;"
 			name=				"dual S&#xed;va-57M reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, notForSale"
+			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"5"
@@ -1657,7 +1657,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva100MWReactor;"
 			name=				"dual S&#xed;va-100M reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, military, notForSale"
+			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"6"
@@ -1689,7 +1689,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva170MWReactor;"
 			name=				"dual S&#xed;va-170M reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, military, notForSale"
+			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"7"
@@ -1721,7 +1721,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva310MWReactor;"
 			name=				"dual S&#xed;va-310M reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, military, notForSale"
+			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"8"
@@ -1753,7 +1753,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva560MWReactor;"
 			name=				"dual S&#xed;va-560M reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, military, notForSale"
+			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"9"
@@ -1785,7 +1785,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva1000MWReactor;"
 			name=				"dual S&#xed;va-1G reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, military, notForSale"
+			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"10"
@@ -1817,7 +1817,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva1700MWReactor;"
 			name=				"dual S&#xed;va-1.7G reactor"
-			attributes=			"alien, cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, notForSale"
+			attributes=			"alien, cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"11"
@@ -1849,7 +1849,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva3000MWReactor;"
 			name=				"dual S&#xed;va-3G reactor"
-			attributes=			"alien, cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, notForSale"
+			attributes=			"alien, cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"12"
@@ -1881,7 +1881,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva5500MWReactor;"
 			name=				"dual S&#xed;va-5.5G reactor"
-			attributes=			"alien, cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, notForSale"
+			attributes=			"alien, cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"13"
@@ -1913,7 +1913,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva10000MWReactor;"
 			name=				"dual S&#xed;va-10G reactor"
-			attributes=			"alien, cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, notForSale"
+			attributes=			"alien, cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"14"
@@ -1945,7 +1945,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 
 	<ItemType UNID="&itCCRadDualSiva18000MWReactor;"
 			name=				"dual S&#xed;va-18G reactor"
-			attributes=			"alien, cabbageCorp, cabbageNoContainment, cabbageTwoSlots, dual, majorItem, notForSale"
+			attributes=			"alien, cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"15"

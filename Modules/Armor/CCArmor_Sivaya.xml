@@ -21,7 +21,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of Light Sivaya Plating -->
 
 	<ItemType UNID="&itCCLightSivayaPlating;"
-			name=				"[segment(s) of ] light S&#xed;vaya plating"
+			name=				"[segment(s) of ]light S&#xed;vaya plating"
 			attributes=			"cabbageCorp, minorItem"
 			
 			level=				"2"
@@ -53,7 +53,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 1x Sivaya Armor -->
 
 	<ItemType UNID="&itCC1xSivayaArmor;"
-			name=				"[segment(s) of ] S&#xed;vaya armor"
+			name=				"[segment(s) of ]S&#xed;vaya armor"
 			attributes=			"cabbageCorp, minorItem"
 			
 			level=				"4"
@@ -96,7 +96,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 1x Hardened Sivaya Armor -->
 
 	<ItemType UNID="&itCC1xHardenedSivayaArmor;"
-			name=				"[segment(s) of ] hardened S&#xed;vaya armor"
+			name=				"[segment(s) of ]hardened S&#xed;vaya armor"
 			attributes=			"cabbageCorp, military, minorItem"
 			
 			level=				"6"
@@ -140,7 +140,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 1x Advanced Sivaya Armor -->
 
 	<ItemType UNID="&itCC1xAdvancedSivayaArmor;"
-			name=				"[segment(s) of ] advanced S&#xed;vaya armor"
+			name=				"[segment(s) of ]advanced S&#xed;vaya armor"
 			attributes=			"cabbageCorp, military, minorItem"
 			
 			level=				"8"
@@ -184,7 +184,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 1x Experimental Sivaya Armor -->
 
 	<ItemType UNID="&itCC1xExperimentalSivayaArmor;"
-			name=				"[segment(s) of ] experimental S&#xed;vaya armor"
+			name=				"[segment(s) of ]experimental S&#xed;vaya armor"
 			attributes=			"cabbageCorp, military, minorItem"
 			
 			level=				"10"
@@ -227,7 +227,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 1x Theoretical Sivaya Armor -->
 
 	<ItemType UNID="&itCC1xTheoreticalSivayaArmor;"
-			name=				"[segment(s) of ] theoretical S&#xed;vaya armor"
+			name=				"[segment(s) of ]theoretical S&#xed;vaya armor"
 			attributes=			"cabbageCorp, alien, minorItem"
 			
 			level=				"12"
@@ -274,7 +274,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 2x Sivaya Armor -->
 
 	<ItemType UNID="&itCC2xSivayaArmor;"
-			name=				"[segment(s) of ] 2x-layered S&#xed;vaya armor"
+			name=				"[segment(s) of ]2x-layered S&#xed;vaya armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
 			
 			level=				"4"
@@ -308,7 +308,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 2x Hardened Sivaya Armor -->
 
 	<ItemType UNID="&itCC2xHardenedSivayaArmor;"
-			name=				"[segment(s) of ] 2x-layered hardened S&#xed;vaya armor"
+			name=				"[segment(s) of ]2x-layered hardened S&#xed;vaya armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"6"
@@ -343,7 +343,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 2x Advanced Sivaya Armor -->
 
 	<ItemType UNID="&itCC2xAdvancedSivayaArmor;"
-			name=				"[segment(s) of ] 2x-layered advanced S&#xed;vaya armor"
+			name=				"[segment(s) of ]2x-layered advanced S&#xed;vaya armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"8"
@@ -378,7 +378,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 2x Experimental Sivaya Armor -->
 
 	<ItemType UNID="&itCC2xExperimentalSivayaArmor;"
-			name=				"[segment(s) of ] 2x-layered experimental S&#xed;vaya armor"
+			name=				"[segment(s) of ]2x-layered experimental S&#xed;vaya armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"10"
@@ -412,7 +412,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 2x Theoretical Sivaya Armor -->
 
 	<ItemType UNID="&itCC2xTheoreticalSivayaArmor;"
-			name=				"[segment(s) of ] 2x-layered theoretical S&#xed;vaya armor"
+			name=				"[segment(s) of ]2x-layered theoretical S&#xed;vaya armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, alien, minorItem"
 			
 			level=				"12"
@@ -450,7 +450,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 4x Sivaya Armor -->
 
 	<ItemType UNID="&itCC4xSivayaArmor;"
-			name=				"[segment(s) of ] 4x-layered S&#xed;vaya armor"
+			name=				"[segment(s) of ]4x-layered S&#xed;vaya armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
 			
 			level=				"4"
@@ -484,7 +484,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 4x Hardened Sivaya Armor -->
 
 	<ItemType UNID="&itCC4xHardenedSivayaArmor;"
-			name=				"[segment(s) of ] 4x-layered hardened S&#xed;vaya armor"
+			name=				"[segment(s) of ]4x-layered hardened S&#xed;vaya armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"6"
@@ -519,7 +519,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 4x Advanced Sivaya Armor -->
 
 	<ItemType UNID="&itCC4xAdvancedSivayaArmor;"
-			name=				"[segment(s) of ] 4x-layered advanced S&#xed;vaya armor"
+			name=				"[segment(s) of ]4x-layered advanced S&#xed;vaya armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"8"
@@ -554,7 +554,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 4x Experimental Sivaya Armor -->
 
 	<ItemType UNID="&itCC4xExperimentalSivayaArmor;"
-			name=				"[segment(s) of ] 4x-layered experimental S&#xed;vaya armor"
+			name=				"[segment(s) of ]4x-layered experimental S&#xed;vaya armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
 			
 			level=				"10"
@@ -588,7 +588,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 	<!-- Segment of 4x Theoretical Sivaya Armor -->
 
 	<ItemType UNID="&itCC4xTheoreticalSivayaArmor;"
-			name=				"[segment(s) of ] 4x-layered theoretical S&#xed;vaya armor"
+			name=				"[segment(s) of ]4x-layered theoretical S&#xed;vaya armor"
 			attributes=			"cabbageCorp, cabbageNotStandard, alien, minorItem"
 			
 			level=				"12"

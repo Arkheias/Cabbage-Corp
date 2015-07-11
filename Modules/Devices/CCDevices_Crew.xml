@@ -9,7 +9,7 @@
 
 	<ItemType UNID="&itCCL1DamageControlCrew;"
 			name=				"L1 damage control crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"1"
@@ -38,7 +38,7 @@
 
 	<ItemType UNID="&itCCL2DamageControlCrew;"
 			name=				"L2 damage control crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"2"
@@ -67,7 +67,7 @@
 
 	<ItemType UNID="&itCCL3DamageControlCrew;"
 			name=				"L3 damage control crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"3"
@@ -96,7 +96,7 @@
 
 	<ItemType UNID="&itCCL4DamageControlCrew;"
 			name=				"L4 damage control crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"4"
@@ -125,7 +125,7 @@
 
 	<ItemType UNID="&itCCL5DamageControlCrew;"
 			name=				"L5 damage control crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"5"
@@ -154,7 +154,7 @@
 
 	<ItemType UNID="&itCCL6DamageControlCrew;"
 			name=				"L6 damage control crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"6"
@@ -183,7 +183,7 @@
 
 	<ItemType UNID="&itCCL7DamageControlCrew;"
 			name=				"L7 damage control crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"7"
@@ -212,7 +212,7 @@
 
 	<ItemType UNID="&itCCL8DamageControlCrew;"
 			name=				"L8 damage control crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"8"
@@ -241,7 +241,7 @@
 
 	<ItemType UNID="&itCCL9DamageControlCrew;"
 			name=				"L9 damage control crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"9"
@@ -270,7 +270,7 @@
 
 	<ItemType UNID="&itCCL10DamageControlCrew;"
 			name=				"L10 damage control crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"10"
@@ -299,7 +299,7 @@
 
 	<ItemType UNID="&itCCL11DamageControlCrew;"
 			name=				"L11 damage control crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"11"
@@ -328,7 +328,7 @@
 
 	<ItemType UNID="&itCCL12DamageControlCrew;"
 			name=				"L12 damage control crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"12"
@@ -357,7 +357,7 @@
 
 	<ItemType UNID="&itCCL13DamageControlCrew;"
 			name=				"L13 damage control crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"13"
@@ -386,7 +386,7 @@
 
 	<ItemType UNID="&itCCL14DamageControlCrew;"
 			name=				"L14 damage control crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"14"
@@ -415,7 +415,7 @@
 
 	<ItemType UNID="&itCCL15DamageControlCrew;"
 			name=				"L15 damage control crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"15"
@@ -448,7 +448,7 @@
 
 	<ItemType UNID="&itCCL1GunnerCrew;"
 			name=				"L1 gunner crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"1"
@@ -483,7 +483,7 @@
 
 	<ItemType UNID="&itCCL2GunnerCrew;"
 			name=				"L2 gunner crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"2"
@@ -518,7 +518,7 @@
 
 	<ItemType UNID="&itCCL3GunnerCrew;"
 			name=				"L3 gunner crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"3"
@@ -553,7 +553,7 @@
 
 	<ItemType UNID="&itCCL4GunnerCrew;"
 			name=				"L4 gunner crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"4"
@@ -588,7 +588,7 @@
 
 	<ItemType UNID="&itCCL5GunnerCrew;"
 			name=				"L5 gunner crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"5"
@@ -623,7 +623,7 @@
 
 	<ItemType UNID="&itCCL6GunnerCrew;"
 			name=				"L6 gunner crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"6"
@@ -658,7 +658,7 @@
 
 	<ItemType UNID="&itCCL7GunnerCrew;"
 			name=				"L7 gunner crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"7"
@@ -693,7 +693,7 @@
 
 	<ItemType UNID="&itCCL8GunnerCrew;"
 			name=				"L8 gunner crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"8"
@@ -728,7 +728,7 @@
 
 	<ItemType UNID="&itCCL9GunnerCrew;"
 			name=				"L9 gunner crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"9"
@@ -763,7 +763,7 @@
 
 	<ItemType UNID="&itCCL10GunnerCrew;"
 			name=				"L10 gunner crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"10"
@@ -798,7 +798,7 @@
 
 	<ItemType UNID="&itCCL11GunnerCrew;"
 			name=				"L11 gunner crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"11"
@@ -833,7 +833,7 @@
 
 	<ItemType UNID="&itCCL12GunnerCrew;"
 			name=				"L12 gunner crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"12"
@@ -868,7 +868,7 @@
 
 	<ItemType UNID="&itCCL13GunnerCrew;"
 			name=				"L13 gunner crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"13"
@@ -903,7 +903,7 @@
 
 	<ItemType UNID="&itCCL14GunnerCrew;"
 			name=				"L14 gunner crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"14"
@@ -938,7 +938,7 @@
 
 	<ItemType UNID="&itCCL15GunnerCrew;"
 			name=				"L15 gunner crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxGunnerCrewBase;"
 			 
 			level=				"15"
@@ -977,7 +977,7 @@
 
 	<ItemType UNID="&itCCL1WeaponsEngineeringCrew;"
 			name=				"L1 weapons engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"1"
@@ -1016,7 +1016,7 @@
 
 	<ItemType UNID="&itCCL2WeaponsEngineeringCrew;"
 			name=				"L2 weapons engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"2"
@@ -1055,7 +1055,7 @@
 
 	<ItemType UNID="&itCCL3WeaponsEngineeringCrew;"
 			name=				"L3 weapons engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"3"
@@ -1094,7 +1094,7 @@
 
 	<ItemType UNID="&itCCL4WeaponsEngineeringCrew;"
 			name=				"L4 weapons engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"4"
@@ -1133,7 +1133,7 @@
 
 	<ItemType UNID="&itCCL5WeaponsEngineeringCrew;"
 			name=				"L5 weapons engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"5"
@@ -1172,7 +1172,7 @@
 
 	<ItemType UNID="&itCCL6WeaponsEngineeringCrew;"
 			name=				"L6 weapons engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"6"
@@ -1211,7 +1211,7 @@
 
 	<ItemType UNID="&itCCL7WeaponsEngineeringCrew;"
 			name=				"L7 weapons engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"7"
@@ -1250,7 +1250,7 @@
 
 	<ItemType UNID="&itCCL8WeaponsEngineeringCrew;"
 			name=				"L8 weapons engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"8"
@@ -1289,7 +1289,7 @@
 
 	<ItemType UNID="&itCCL9WeaponsEngineeringCrew;"
 			name=				"L9 weapons engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"9"
@@ -1328,7 +1328,7 @@
 
 	<ItemType UNID="&itCCL10WeaponsEngineeringCrew;"
 			name=				"L10 weapons engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"10"
@@ -1367,7 +1367,7 @@
 
 	<ItemType UNID="&itCCL11WeaponsEngineeringCrew;"
 			name=				"L11 weapons engineering crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"11"
@@ -1406,7 +1406,7 @@
 
 	<ItemType UNID="&itCCL12WeaponsEngineeringCrew;"
 			name=				"L12 weapons engineering crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"12"
@@ -1445,7 +1445,7 @@
 
 	<ItemType UNID="&itCCL13WeaponsEngineeringCrew;"
 			name=				"L13 weapons engineering crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"13"
@@ -1484,7 +1484,7 @@
 
 	<ItemType UNID="&itCCL14WeaponsEngineeringCrew;"
 			name=				"L14 weapons engineering crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"14"
@@ -1523,7 +1523,7 @@
 
 	<ItemType UNID="&itCCL15WeaponsEngineeringCrew;"
 			name=				"L15 weapons engineering crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"15"
@@ -1566,7 +1566,7 @@
 
 	<ItemType UNID="&itCCL1ShieldsEngineeringCrew;"
 			name=				"L1 shields engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"1"
@@ -1601,7 +1601,7 @@
 
 	<ItemType UNID="&itCCL2ShieldsEngineeringCrew;"
 			name=				"L2 shields engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"2"
@@ -1636,7 +1636,7 @@
 
 	<ItemType UNID="&itCCL3ShieldsEngineeringCrew;"
 			name=				"L3 shields engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"3"
@@ -1671,7 +1671,7 @@
 
 	<ItemType UNID="&itCCL4ShieldsEngineeringCrew;"
 			name=				"L4 shields engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"4"
@@ -1706,7 +1706,7 @@
 
 	<ItemType UNID="&itCCL5ShieldsEngineeringCrew;"
 			name=				"L5 shields engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"5"
@@ -1741,7 +1741,7 @@
 
 	<ItemType UNID="&itCCL6ShieldsEngineeringCrew;"
 			name=				"L6 shields engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"6"
@@ -1776,7 +1776,7 @@
 
 	<ItemType UNID="&itCCL7ShieldsEngineeringCrew;"
 			name=				"L7 shields engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"7"
@@ -1811,7 +1811,7 @@
 
 	<ItemType UNID="&itCCL8ShieldsEngineeringCrew;"
 			name=				"L8 shields engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"8"
@@ -1846,7 +1846,7 @@
 
 	<ItemType UNID="&itCCL9ShieldsEngineeringCrew;"
 			name=				"L9 shields engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"9"
@@ -1881,7 +1881,7 @@
 
 	<ItemType UNID="&itCCL10ShieldsEngineeringCrew;"
 			name=				"L10 shields engineering crew"
-			attributes=			"auxCrew, cabbageCorp, cabbageNoSlots, majorItem, military, notForSale, soul, specialty"
+			attributes=			"auxCrew, cabbageCorp, majorItem, military, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"10"
@@ -1916,7 +1916,7 @@
 
 	<ItemType UNID="&itCCL11ShieldsEngineeringCrew;"
 			name=				"L11 shields engineering crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"11"
@@ -1951,7 +1951,7 @@
 
 	<ItemType UNID="&itCCL12ShieldsEngineeringCrew;"
 			name=				"L12 shields engineering crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"12"
@@ -1986,7 +1986,7 @@
 
 	<ItemType UNID="&itCCL13ShieldsEngineeringCrew;"
 			name=				"L13 shields engineering crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"13"
@@ -2021,7 +2021,7 @@
 
 	<ItemType UNID="&itCCL14ShieldsEngineeringCrew;"
 			name=				"L14 shields engineering crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"14"
@@ -2056,7 +2056,7 @@
 
 	<ItemType UNID="&itCCL15ShieldsEngineeringCrew;"
 			name=				"L15 shields engineering crew"
-			attributes=			"alien, auxCrew, cabbageCorp, cabbageNoSlots, majorItem, notForSale, soul, specialty"
+			attributes=			"alien, auxCrew, cabbageCorp, majorItem, notForSale, soul, specialty"
 			inherit=			"&baCCAuxCrewBase;"
 			 
 			level=				"15"
