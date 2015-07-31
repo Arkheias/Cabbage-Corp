@@ -9,8 +9,7 @@
 			type=				"stealth freighter"
 
 			attributes=			"00200000_PlayerShip, capitalShip, PlayerShipDrone"
-			dockscreen=			"&dsPlayerShip;"
-			inherit=			"&baPlayerDroneBase;"
+			inherit=			"&scPlayerSapphireBase;"
 			characterClass=		"&unidPilgrimClass;"
 
 			size=				"155"
@@ -25,8 +24,8 @@
 			fuelCapacity=		"10000"
 			fuelCriteria=		"f L:1"
 			
-			maxArmor=			"20000"
-			maxDevices=			"16"
+			maxArmor=			"40000"
+			maxDevices=			"15"
 			
 			explosionType=		"&vtBlastExplosion4;"
 		>

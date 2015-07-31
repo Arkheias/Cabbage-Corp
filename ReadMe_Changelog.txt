@@ -2,47 +2,75 @@
 Changelog
 ---------
 
-v0.7.4.0-development (2015-07-10)
+v0.7.4.0-development (2015-07-30)
 ---------------------------------
 -----General Changes-----
-Updated to API v27 for Transcendence v1.6b5.
+Updated to API v27 for Transcendence v1.6.1.
+Temporarily removed Playership Drones (PSD) support due to changes in v1.6 making it not work correctly.
 Moved changelog from the general readme file to its own readme file.
-Added hyphens underneath version numbers in the changelog.
+Added a line of hyphens underneath version numbers in the changelog.
+Added version information to extension and library header files.
+
 ----Stations-----
-Removed mass from outpost turrets, they weren't even marked as mobile and (some) stars have gravity now.
+Removed mass from outpost turrets (they weren't even marked as mobile and (some) stars have gravity now).
 Changed Cabbage Corp outposts and their turrets to use image variants that match their asteroid fields.
 Updated the Buy & Modify item screen to use the same implementation as the new default item buying screens.
  -It no longer shows items for which the station does not have the resources to make, previously it showed them but deactivated the button to buy them.
  -(The options are all standardized anyway and there is another menu to show all potential custom devices/armor.)
+
 ----Ships-----
+The Corporate Command playerships extension now includes the Eridani starting location for playerships in addition to Tau Ceti.
 Fixed image for Oboroguruma-class stealth freighter in PSD menus.
 Lampyridae-class stealth transports now use the correct number (8) of armor segments in PSD.
 Adjusted the starting and PSD equipment on the Lampyridae and Oboroguruma.
 The locations of the armor segments on the Oboroguruma now correspond to the actual locations of the armor segments on the Oboroguruma
+Reduced device slots on ships because not having a default reactor is no longer adequate justification due to v1.6b5 changes.
+ -The Lorry-class now has 9 device slots instead of 10.
+ -The Lampyridae-class now has 10 device slots instead of 12.
+ -The Oboroguruma-class now has 15 device slots instead of 16.
+Increased maximum armor capacity of the Oboroguruma-class to 40 tons from 20 tons.
+
 ----Items-----
-The Cabbage Corp Toolset has been fixed so that it does not appear unless the playership has Cabbage Corp equipment installed, like I originally advertised it.
-Auxiliary reactors should now shut themselves off automatically if your ship is really low on fuel.
-Added Phantom-class reconnaissance auton series (Levels 2, 4, 6, 8, and 10).
-Fixed typo in the name of the mark I wraith auton.
-Fixed typo in the description of the mark V wraith auton.
-Balanced cabbages and updated their descriptions.
-Reformated misc. items to match new standard.
 Added new image for solar devices.
 Added new image for DRADIS devices.
 Added new images for autodefense devices.
-Reorganized generic device images into separate file from items.
-Auxiliary reactors are now half as efficient when damaged.
-Fixed typo in the attributes list for the Cabbage Corp premium memberhip ID and changed frequency to notRandom.
+Added Phantom-class reconnaissance auton series (Levels 2, 4, 6, 8, and 10).
 Added Cabbage Corp Tinkerer ID (Will eventually unlock aditional options when modifying Cabbage Corp devices).
 Added proto-Cabbagium catalyst.
 Added pygmy ostrich horses.
-Added Cabbagium armor sets.
+Added Cabbagium armor sets to replace both trinium and organic armor sets.
+Added the default hit-effects to the mining lances.
+Added miningEquipment attribute to mining lances, refineries and miner's cargo holds so that they will appear in v1.6 mining stations.
+Changed the Cabbage Corp Toolset to not appear unless the playership has Cabbage Corp equipment installed (like I originally advertised it).
+Added Microsaur scanner effects and scripts.
+Added Microsaur condemnation pods and relevant effects.
+Changed auxiliary reactors to now shut themselves off automatically if your ship is really low on fuel.
+Changed auxiliary reactors to now be half as efficient when damaged.
+Changed auxiliary reactor efficiencies (civilian: 85%, military: 90%, alien: 95%).
+Changed dual reactors to appear less often (Levels 3-5 veryrare, everything else is notRandom).
+Changed low level (Levels 1-2) reactors to notRandom.
+Changed cabbages for balance and updated their descriptions.
+Changed misc. items to match new whitespace standard.
+Changed generic device images to be reorganized into separate file from generic item images.
+Changed the damage of most mining lances to be twice as high so that they will work better with the new mining update.
+Changed the firing rate of most mining lances to 4 (from 2) to fire half as fast to balance them accordingly.
+Changed the level of all scanning mining lances by 1 level higher than their standard versions.
+Changed ore scanner effects and scripts by moving them to the appropriate dedicated files.
+Changed MiscItems.xml to be split into MiscItems.xml and UsefulItems.xml for usable items.
+Fixed typo in the name of the mark I wraith auton.
+Fixed typo in the description of the mark V wraith auton.
+Fixed typo in the attributes list for the Cabbage Corp premium memberhip ID and changed frequency to notRandom.
+Fixed bug where side-mounted repeaters did not actually fire alongside the primary weapon.
+Fixed bug where dual repeaters fired both sets of shots from the same location.
 Removed trinium armor sets and organic armor sets.
 Removed excess spacing in the names of stealth and sivaya armor sets.
-Added the default hit-effects to the mining lances.
-Added miningEquipment attribute to mining lances, refineries and miner's cargo holds so that they will appear in vanilla v1.6b5 mining stations.
-Changed the firing rate of most mining lances to 4 (from 2) and doubled the damage so that they will work better with the new mining update.
-Increased the level of all scanning mining lances by 1.
+Removed minerGear Attribute from mining related devices as it has been replaced by miningEquipment.
+
+-----Known Bugs-----
+Mining colonies reset their inventory of miningEquipment labelled devices each time you enter their system
+ *They normally have one of every item labelled as miningEquipment but I have added a script that runs when you enter their systems
+  that removes all their Cabbage Corp mining devices and replaces them with just a few random Cabbage Corp mining weapons (up to 1d4 devices)
+  and a few random Cabbage Corp mining non-weapons (up to 1d4 devices).
 
 
 

@@ -13,10 +13,12 @@
 ]>
 
 <TranscendenceExtension UNID="&xtCCCabbageCorpExtension;" 
-    apiVersion=			"27"
-	Name=				"Cabbage Corp" 
-	credits=			"Arkheias"
-	coverImageID=		"&rsCCCabbageCorpCover;"
+		Name=			"Cabbage Corp" 
+		release=		"1"
+		version=		"0.7.4.0"
+		apiVersion=		"27"
+		credits=		"Arkheias"
+		coverImageID=	"&rsCCCabbageCorpCover;"
 >
 
 	<Library unid="&unidHumanSpaceLibrary;"/>

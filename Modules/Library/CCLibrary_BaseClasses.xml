@@ -420,7 +420,7 @@ These devices do not currently work for the player-ships because it is technical
 	<StationType unid="&baCCCabbageCorpStation;"
 			name=			"(Cabbage Corp station base class)"
 			virtual=		"true"
-			>
+	>
 		
 		<Events>
 			<OnDestroy>
@@ -428,5 +428,51 @@ These devices do not currently work for the player-ships because it is technical
 			</OnDestroy>
 		</Events>
 	</StationType>
+
+<!-- ================================================================ -->
+					<!-- Microsaur Scanner Base Classes -->
+<!-- ================================================================ -->
+	
+	<ItemType UNID="&baCCMicrosaurScannerPower;"
+			name=				"(Microsaur warder base class)"
+			virtual=			"true"
+			level=				"4"
+	>
+
+		<Events>
+			<OnCreateShot>
+				(block Nil
+					(objSetData gSource 'asteroidsFound 0)
+				)
+			</OnCreateShot>
+			
+			<OnDamageAbandoned>
+				(block ((podType (typGetStaticData aWeaponType 'podType)))
+					
+					(if (CCMicrosaurScanObj gSource podType)
+						(objIncData aCause 'asteroidsFound 1)
+					)
+						
+					;	We return Nil to indicate that we want the default damage
+					;	to apply.
+					
+					Nil
+				)
+			</OnDamageAbandoned>
+		
+			<OnDestroyShot>
+				(switch
+					;	If we found some Microsaurs, then nothing to do (we've marked the Microsaurs found).
+					
+					(!= (objGetData gSource 'asteroidsFound) 0)
+						Nil
+						
+					;	If we found no Microsaurs, tell the player/orderGiver
+					
+					(objSendMessage aOrderGiver Nil (typTranslate &ovCCMicrosaurDetectionCount; 'msgNoOreFound))
+				)
+			</OnDestroyShot>
+		</Events>
+	</ItemType>
 
 </TranscendenceModule>

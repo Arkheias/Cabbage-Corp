@@ -1,11 +1,6 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
-<!--
-The miningEquipment attribute makes the items appear in mining stations from v1.6b5 onwards.
-The minerGear attribute makes the items appear in mining stations from the mining pack mod (in  pre v1.6b5 versions at least).
--->
-
 <!-- ================================================================ -->
 						<!-- Standard Cargo Holds -->
 <!-- ================================================================ -->
@@ -82,7 +77,7 @@ The minerGear attribute makes the items appear in mining stations from the minin
 
 	<ItemType UNID="&itCCMinersCargoBay;"
 			name=				"miners's cargo bay"
-			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, minerGear, minersHold, miningEquipment"
+			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, minersHold, miningEquipment"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
 			  
 			level=				"4"
@@ -146,7 +141,7 @@ The minerGear attribute makes the items appear in mining stations from the minin
 
 	<ItemType UNID="&itCCMilitaryCargoBay;"
 			name=				"military cargo bay"
-			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, military, minerGear, minersHold, miningEquipment, smugglersHold"
+			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, military, minersHold, miningEquipment, smugglersHold"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
 			  
 			level=				"6"
@@ -211,7 +206,7 @@ The minerGear attribute makes the items appear in mining stations from the minin
 
 	<ItemType UNID="&itCCDualMinersCargoBay;"
 			name=				"expanded miner's cargo bay"
-			attributes=			"autonBay, cabbageCorp, cabbageNotStandard, crewQuarters, majorItem, minerGear, minersHold, miningEquipment"
+			attributes=			"autonBay, cabbageCorp, cabbageNotStandard, crewQuarters, majorItem, minersHold, miningEquipment"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
 			
 			level=				"5"
@@ -268,7 +263,7 @@ The minerGear attribute makes the items appear in mining stations from the minin
 
 	<ItemType UNID="&itCCDualMilitaryCargoBay;"
 			name=				"expanded military cargo bay"
-			attributes=			"autonBay, cabbageCorp, cabbageNotStandard, crewQuarters, majorItem, military, minerGear, minersHold, miningEquipment, smugglersHold"
+			attributes=			"autonBay, cabbageCorp, cabbageNotStandard, crewQuarters, majorItem, military, minersHold, miningEquipment, smugglersHold"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
 			  
 			level=				"7"

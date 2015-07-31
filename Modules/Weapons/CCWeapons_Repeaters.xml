@@ -791,7 +791,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -831,7 +831,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -871,7 +871,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -912,7 +912,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -953,7 +953,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -994,7 +994,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1035,7 +1035,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1076,7 +1076,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1117,7 +1117,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1158,7 +1158,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1199,7 +1199,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1240,7 +1240,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1281,7 +1281,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1322,7 +1322,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1363,7 +1363,7 @@
 
 			<Configuration aimTolerance="3">
 				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
+				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2008,6 +2008,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"kinetic:1; momentum1"
@@ -2051,6 +2052,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"kinetic:1d2; momentum1"
@@ -2094,6 +2096,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"kinetic:1d4; momentum1; WMD1"
@@ -2137,6 +2140,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"blast:1d4; momentum1; WMD2"
@@ -2181,6 +2185,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"blast:2d3; momentum1; WMD2"
@@ -2225,6 +2230,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"blast:3d2+1; momentum1; WMD3"
@@ -2269,6 +2275,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"thermo:3d4-1; momentum1; WMD4"
@@ -2313,6 +2320,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"thermo:4d4-1; momentum1; WMD4"
@@ -2357,6 +2365,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"thermo:5d4; momentum1; WMD4"
@@ -2401,6 +2410,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"plasma:4d6+1; momentum1; WMD5"
@@ -2445,6 +2455,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"plasma:6d6; momentum1; WMD6"
@@ -2489,6 +2500,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"plasma:6d8+2; momentum1; WMD6"
@@ -2533,6 +2545,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"nano:7d8+3; momentum1; WMD7"
@@ -2577,6 +2590,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"nano:8d10+4; momentum1; WMD7"
@@ -2621,6 +2635,7 @@
 
 		<Weapon
 				type=				"missile"
+				linkedFire=			"always"
 
 				repeating=			"5"
 				damage=				"nano:10d12+2; momentum1; WMD7"

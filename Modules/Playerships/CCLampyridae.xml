@@ -9,8 +9,7 @@
 			type=				"stealth transport"
 			
             attributes=         "00200000_PlayerShip, PlayerShipDrone"
-            dockScreen=         "&dsPlayerShip;"
-            inherit=            "&baPlayerDroneBase;"
+            inherit=            "&scPlayerSapphireBase;"
 			characterClass=		"&unidPilgrimClass;"
 			
             size=               "74"
@@ -25,7 +24,7 @@
 
 			maxArmor=			"20000"
 			maxCargoSpace=		"1000"
-			maxDevices=			"12"
+			maxDevices=			"10"
 		>
 
 		<!-- Configuration -->
@@ -54,8 +53,7 @@
 			<Device deviceID="&itCCKaleM1Repeater;"/>
 			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
 			<Device deviceID="&itCCNapaS1Deflector;"/>
-			<Device deviceID="&itCCSiva5MWReactor;"/>
-			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
+			<Device deviceID="&itCCSiva10MWReactor;"/>
 			<Device deviceID="&itCCPlasmaDrive;"/>
 		</Devices>
 
@@ -324,8 +322,6 @@
 			
 			<maxAuxCrew>16</maxAuxCrew>
 		</StaticData>
-
-		<DockingPorts   portCount="2"  portRadius="48"  maxDist="3" />
 	</ShipClass>
 	
 </TranscendenceModule>

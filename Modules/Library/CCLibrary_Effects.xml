@@ -1,6 +1,8 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
+	<!-- Color Coded Shield HUD -->
+
 	<Effect UNID="&efCCShieldsHUD;">
 		<Variants>
 			<Effect maxValue="0">
@@ -28,6 +30,94 @@
 			</Effect>
 		</Variants>
 	</Effect>
+
+	<!-- Ore Detection Effect -->
+	
+	<Effect UNID="&efCCOreMarker;">
+		<StarBurst
+					style= "plain"
+					lifetime= "60"
+					spikeCount= "4d6"
+					spikeLength= "6d6"
+					primaryColor= "0x00, 0xff, 0x00"
+					secondaryColor= "0x00, 0x80, 0x00"
+		/>
+		<Shockwave
+					speed= "12"
+					lifetime= "40"
+					fadeStart= "15"
+					style= "glowRing"
+					width= "1"
+					glowSize= "1"
+					primaryColor= "0x00, 0xaa, 0x00"
+					secondaryColor= "0x00, 0xaa, 0x00"
+		/>
+	</Effect>
+
+	<!-- Microsaur Detection Effect -->
+	
+	<Effect UNID="&efCCMicrosaurMarker;">
+		<StarBurst
+					style= "plain"
+					lifetime= "60"
+					spikeCount= "4d6"
+					spikeLength= "6d6"
+					primaryColor= "0xff, 0x00, 0x00"
+					secondaryColor= "0x80, 0x00, 0x00"
+		/>
+		<Shockwave
+					speed= "12"
+					lifetime= "40"
+					fadeStart= "15"
+					style= "glowRing"
+					width= "1"
+					glowSize= "1"
+					primaryColor= "0xaa, 0x00, 0x00"
+					secondaryColor= "0xaa, 0x00, 0x00"
+		/>
+	</Effect>
+	
+	<OverlayType UNID="&ovCCMicrosaurDetectionCount;"
+			attributes=		"microsaurCount"
+	>
+		<Counter style=		"flag"
+				color=		"#5ff12a"
+				showOnMap=	"true"
+		/>
+	
+		<Events>
+			<OnUpdate>
+				(block (
+					(oreFound (objGetItems gSource "t +unid:0x00004033;"))
+					(tons (or 
+						(map oreFound 'reduceSum theItem (itmGetCount theItem))
+						0
+						))
+					)
+					
+					(if (= tons 0)
+						(objRemoveOverlay gSource aOverlayID)
+						(block Nil
+							(objSetOverlayProperty gSource aOverlayID 'counter tons)
+							(objSetOverlayProperty gSource aOverlayID 'counterLabel (typTranslate &ovCCMicrosaurDetectionCount; 'msgTonsOfOre { count:tons }))
+						)
+					)
+				)
+			</OnUpdate>
+		</Events>
+	
+		<Language>
+			<Text id="msgNoOreFound">"No Microsaurs found"</Text>
+			<Text id="msgScanning">"Scanning..."</Text>
+			<Text id="msgTonsOfOre">
+				(if (= (@ gData 'count) 1)
+					"Microsaur"
+					"Microsaurs"
+				)
+			</Text>
+		</Language>
+	</OverlayType>
+	
 <!--
 	create the following:
 	

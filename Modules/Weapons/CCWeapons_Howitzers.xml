@@ -104,6 +104,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM1Howitzer;		count:2		extraCost:0}
 					{product:&itCCOmniSavoyM1Howitzer;		count:1		extraCost:0}
+					{product:&itCCAdvSavoyM1Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM1Howitzer;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -155,6 +156,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM2Howitzer;		count:2		extraCost:0}
 					{product:&itCCOmniSavoyM2Howitzer;		count:1		extraCost:0}
+					{product:&itCCAdvSavoyM2Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM2Howitzer;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -206,6 +208,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM4Howitzer;		count:2		extraCost:0}
 					{product:&itCCOmniSavoyM4Howitzer;		count:1		extraCost:0}
+					{product:&itCCAdvSavoyM4Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM4Howitzer;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -257,6 +260,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM8Howitzer;		count:2		extraCost:0}
 					{product:&itCCOmniSavoyM8Howitzer;		count:1		extraCost:0}
+					{product:&itCCAdvSavoyM8Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM8Howitzer;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -308,6 +312,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM15Howitzer;		count:2		extraCost:0}
 					{product:&itCCOmniSavoyM15Howitzer;		count:1		extraCost:0}
+					{product:&itCCAdvSavoyM15Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM15Howitzer;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -359,6 +364,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM30Howitzer;		count:2		extraCost:0}
 					{product:&itCCOmniSavoyM30Howitzer;		count:1		extraCost:0}
+					{product:&itCCAdvSavoyM30Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM30Howitzer;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -410,6 +416,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM56Howitzer;		count:2		extraCost:0}
 					{product:&itCCOmniSavoyM56Howitzer;		count:1		extraCost:0}
+					{product:&itCCAdvSavoyM56Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM56Howitzer;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -461,6 +468,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM110Howitzer;	count:2		extraCost:0}
 					{product:&itCCOmniSavoyM110Howitzer;	count:1		extraCost:0}
+					{product:&itCCAdvSavoyM110Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM110Howitzer;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -512,6 +520,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM210Howitzer;	count:2		extraCost:0}
 					{product:&itCCOmniSavoyM210Howitzer;	count:1		extraCost:0}
+					{product:&itCCAdvSavoyM210Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM210Howitzer;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -563,6 +572,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM400Howitzer;	count:2		extraCost:0}
 					{product:&itCCOmniSavoyM400Howitzer;	count:1		extraCost:0}
+					{product:&itCCAdvSavoyM400Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM400Howitzer;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -614,6 +624,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM770Howitzer;	count:2		extraCost:0}
 					{product:&itCCOmniSavoyM770Howitzer;	count:1		extraCost:0}
+					{product:&itCCAdvSavoyM770Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM770Howitzer;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -665,6 +676,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM1500Howitzer;	count:2		extraCost:0}
 					{product:&itCCOmniSavoyM1500Howitzer;	count:1		extraCost:0}
+					{product:&itCCAdvSavoyM1500Howitzer;	count:1		extraCost:0}
 					{product:&itCCAuxSavoyM1500Howitzer;	count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -716,6 +728,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM2900Howitzer;	count:2		extraCost:0}
 					{product:&itCCOmniSavoyM2900Howitzer;	count:1		extraCost:0}
+					{product:&itCCAdvSavoyM2900Howitzer;	count:1		extraCost:0}
 					{product:&itCCAuxSavoyM2900Howitzer;	count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -767,6 +780,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM5600Howitzer;	count:2		extraCost:0}
 					{product:&itCCOmniSavoyM5600Howitzer;	count:1		extraCost:0}
+					{product:&itCCAdvSavoyM5600Howitzer;	count:1		extraCost:0}
 					{product:&itCCAuxSavoyM5600Howitzer;	count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -818,6 +832,7 @@ Need to create generic plasma and nano effects.
 				(
 					{product:&itCCDualSavoyM11000Howitzer;	count:2		extraCost:0}
 					{product:&itCCOmniSavoyM11000Howitzer;	count:1		extraCost:0}
+					{product:&itCCAdvSavoyM11000Howitzer;	count:1		extraCost:0}
 					{product:&itCCAuxSavoyM11000Howitzer;	count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
@@ -1457,6 +1472,7 @@ Need to create generic plasma and nano effects.
 		>
 		</Weapon>
 	</ItemType>
+	
 <!-- ================================================================ -->
 					<!-- Omnidirectional Weapons -->
 <!-- ================================================================ -->
@@ -2090,6 +2106,731 @@ Need to create generic plasma and nano effects.
 		>
 		</Weapon>
 	</ItemType>
+	
+<!-- ================================================================ -->
+					<!-- Scanning Weapons -->
+<!-- ================================================================ -->
+
+	<!-- Scanning Savoy M1 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM1Howitzer;"
+			name=				"scanning Savoy M1 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			 
+			level=				"2"
+			frequency=			"notRandom"
+
+			value=				"430"
+			mass=				"4000"
+			 
+			description=		"The Savoy M1 howitzer was designed to fire light rounds over long ranges. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 3 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:1d6; momentum1; WMD1"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"4"
+				powerUse=			"15"
+				idlePowerUse=		"6"
+				recoil=				"1"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efKineticBoltDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snCCHowitzerFireKineticLight;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 3)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M2 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM2Howitzer;"
+			name=				"scanning Savoy M2 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			 
+			level=				"3"
+			frequency=			"notRandom"
+
+			value=				"1000"
+			mass=				"4500"
+			 
+			description=		"The Savoy M2 howitzer was designed to fire dense rounds over long ranges. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 4 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:2d4; momentum1; WMD2"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"6"
+				powerUse=			"30"
+				idlePowerUse=		"12"
+				recoil=				"1"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efKineticBoltDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snCCHowitzerFireKineticMedium;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 4)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M4 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM4Howitzer;"
+			name=				"scanning Savoy M4 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			 
+			level=				"4"
+			frequency=			"notRandom"
+
+			value=				"2150"
+			mass=				"5000"
+			 
+			description=		"The Savoy M4 howitzer was designed to fire heavy rounds over long ranges. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 5 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:2d6; momentum1; WMD3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"8"
+				powerUse=			"60"
+				idlePowerUse=		"25"
+				recoil=				"2"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efKineticBoltDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efKineticHitDefault;"
+				sound=				"&snCCHowitzerFireKineticHeavy;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 5)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M8 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM8Howitzer;"
+			name=				"scanning Savoy M8 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			 
+			level=				"5"
+			frequency=			"notRandom"
+
+			value=				"4900"
+			mass=				"5000"
+			 
+			description=		"The Savoy M8 howitzer was designed to fire explosive shells over long ranges. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 6 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"blast:2d6; momentum2; WMD3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"6"
+				powerUse=			"120"
+				idlePowerUse=		"50"
+				recoil=				"2"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastLight;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 6)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M15 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM15Howitzer;"
+			name=				"scanning Savoy M15 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			 
+			level=				"6"
+			frequency=			"notRandom"
+
+			value=				"11000"
+			mass=				"5500"
+			 
+			description=		"The Savoy M15 howitzer fires high-explosive shells. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 8 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"blast:4d6; momentum2; WMD4"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"9"
+				powerUse=			"225"
+				idlePowerUse=		"50"
+				recoil=				"2"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastMedium;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 8)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M30 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM30Howitzer;"
+			name=				"scanning Savoy M30 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
+			 
+			level=				"7"
+			frequency=			"notRandom"
+
+			value=				"24000"
+			mass=				"6000"
+			 
+			description=		"The Savoy M30 howitzer fires heavy, high-explosive shells. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 10 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"blast:4d8; momentum2; WMD5"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"12"
+				powerUse=			"450"
+				idlePowerUse=		"50"
+				recoil=				"3"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastHeavy;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 10)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M56 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM56Howitzer;"
+			name=				"scanning Savoy M56 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
+			 
+			level=				"8"
+			frequency=			"notRandom"
+
+			value=				"54000"
+			mass=				"6000"
+			 
+			description=		"The Savoy M56 howitzer fires light, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 13 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:6d6; momentum3; WMD5"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"8"
+				powerUse=			"840"
+				idlePowerUse=		"180"
+				recoil=				"2"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoLight;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 13)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M110 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM110Howitzer;"
+			name=				"scanning Savoy M110 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
+			 
+			level=				"9"
+			frequency=			"notRandom"
+
+			value=				"120000"
+			mass=				"6500"
+			 
+			description=		"The Savoy M110 howitzer fires thermonuclear shells. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 16 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:4d13; momentum3; WMD6"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"12"
+				powerUse=			"1650"
+				idlePowerUse=		"400"
+				recoil=				"2"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoMedium;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 16)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M210 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM210Howitzer;"
+			name=				"scanning Savoy M210 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
+			 
+			level=				"10"
+			frequency=			"notRandom"
+
+			value=				"270000"
+			mass=				"7000"
+			 
+			description=		"The Savoy M210 howitzer fires heavy, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 20 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:6d12; momentum3; WMD7"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"16"
+				powerUse=			"3150"
+				idlePowerUse=		"750"
+				recoil=				"3"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoHeavy;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 20)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M400 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM400Howitzer;"
+			name=				"scanning Savoy M400 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
+			 
+			level=				"11"
+			frequency=			"veryrare"
+
+			value=				"600000"
+			mass=				"7000"
+			 
+			description=		"The Savoy M400 howitzer fires large plasma bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 24 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"plasma:8d12; momentum4; WMD7"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"10"
+				powerUse=			"6000"
+				idlePowerUse=		"1500"
+				recoil=				"2"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snCCHowitzerFirePlasmaLight;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 24)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M770 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM770Howitzer;"
+			name=				"scanning Savoy M770 howitzer"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			 
+			level=				"12"
+			frequency=			"notRandom"
+
+			value=				"1300000"
+			mass=				"7500"
+			 
+			description=		"This alien howitzer appears to fire dense plasma bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 30 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"plasma:7d20; momentum4; WMD7; shatter1"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"15"
+				powerUse=			"11500"
+				idlePowerUse=		"3000"
+				recoil=				"2"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snCCHowitzerFirePlasmaMedium;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 30)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M1500 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM1500Howitzer;"
+			name=				"scanning Savoy M1500 howitzer"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			 
+			level=				"13"
+			frequency=			"notRandom"
+
+			value=				"3000000"
+			mass=				"8000"
+			 
+			description=		"This alien howitzer appears to fire heavy plasma bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 36 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"plasma:9d22; momentum4; WMD7; shatter2"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"20"
+				powerUse=			"22500"
+				idlePowerUse=		"5500"
+				recoil=				"3"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snCCHowitzerFirePlasmaHeavy;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 36)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M2900 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM2900Howitzer;"
+			name=				"scanning Savoy M2900 howitzer"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			 
+			level=				"14"
+			frequency=			"notRandom"
+
+			value=				"6600000"
+			mass=				"8000"
+			 
+			description=		"This alien howitzer appears to fire light nano bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 42 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"nano:9d24; momentum5; WMD7; shatter2"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"12"
+				powerUse=			"44000"
+				idlePowerUse=		"11000"
+				recoil=				"2"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snCCHowitzerFireNanoLight;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 42)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M5600 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM5600Howitzer;"
+			name=				"scanning Savoy M5600 howitzer"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			 
+			level=				"15"
+			frequency=			"notRandom"
+
+			value=				"14000000"
+			mass=				"8500"
+			 
+			description=		"This alien howitzer appears to fire dense nano bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 50 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"nano:16d20; momentum5; WMD7; shatter3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"18"
+				powerUse=			"84000"
+				idlePowerUse=		"21000"
+				recoil=				"2"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snCCHowitzerFireNanoMedium;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 50)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+	<!-- Scanning Savoy M11000 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM11000Howitzer;"
+			name=				"scanning Savoy M11000 howitzer"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			 
+			level=				"16"
+			frequency=			"notRandom"
+
+			value=				"33000000"
+			mass=				"9000"
+			 
+			description=		"This alien howitzer appears to fire heavy nano bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 60 light-seconds."
+	>
+
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"nano:20d24; momentum5; WMD7; shatter4"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"100"
+				hitPoints=			"24"
+				powerUse=			"165000"
+				idlePowerUse=		"40000"
+				recoil=				"3"
+					
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efPlasmaHitDefault;"
+				sound=				"&snCCHowitzerFireNanoHeavy;"
+		>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCAsteroidScanner 60)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+	
 <!-- ================================================================ -->
 					<!-- Side-Mounted Weapons -->
 <!-- ================================================================ -->

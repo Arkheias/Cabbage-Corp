@@ -523,23 +523,38 @@
 <!ENTITY itCCOmniSavoyM2900Howitzer				"0xDA27CC2D">
 <!ENTITY itCCOmniSavoyM5600Howitzer				"0xDA27CC2E">
 <!ENTITY itCCOmniSavoyM11000Howitzer			"0xDA27CC2F">
-<!ENTITY itCCAuxSavoyM1Howitzer					"0xDA27CC31">
-<!ENTITY itCCAuxSavoyM2Howitzer					"0xDA27CC32">
-<!ENTITY itCCAuxSavoyM4Howitzer					"0xDA27CC33">
-<!ENTITY itCCAuxSavoyM8Howitzer					"0xDA27CC34">
-<!ENTITY itCCAuxSavoyM15Howitzer				"0xDA27CC35">
-<!ENTITY itCCAuxSavoyM30Howitzer				"0xDA27CC36">
-<!ENTITY itCCAuxSavoyM56Howitzer				"0xDA27CC37">
-<!ENTITY itCCAuxSavoyM110Howitzer				"0xDA27CC38">
-<!ENTITY itCCAuxSavoyM210Howitzer				"0xDA27CC39">
-<!ENTITY itCCAuxSavoyM400Howitzer				"0xDA27CC3A">
-<!ENTITY itCCAuxSavoyM770Howitzer				"0xDA27CC3B">
-<!ENTITY itCCAuxSavoyM1500Howitzer				"0xDA27CC3C">
-<!ENTITY itCCAuxSavoyM2900Howitzer				"0xDA27CC3D">
-<!ENTITY itCCAuxSavoyM5600Howitzer				"0xDA27CC3E">
-<!ENTITY itCCAuxSavoyM11000Howitzer				"0xDA27CC3F">
+<!ENTITY itCCAdvSavoyM1Howitzer					"0xDA27CC31">
+<!ENTITY itCCAdvSavoyM2Howitzer					"0xDA27CC32">
+<!ENTITY itCCAdvSavoyM4Howitzer					"0xDA27CC33">
+<!ENTITY itCCAdvSavoyM8Howitzer					"0xDA27CC34">
+<!ENTITY itCCAdvSavoyM15Howitzer				"0xDA27CC35">
+<!ENTITY itCCAdvSavoyM30Howitzer				"0xDA27CC36">
+<!ENTITY itCCAdvSavoyM56Howitzer				"0xDA27CC37">
+<!ENTITY itCCAdvSavoyM110Howitzer				"0xDA27CC38">
+<!ENTITY itCCAdvSavoyM210Howitzer				"0xDA27CC39">
+<!ENTITY itCCAdvSavoyM400Howitzer				"0xDA27CC3A">
+<!ENTITY itCCAdvSavoyM770Howitzer				"0xDA27CC3B">
+<!ENTITY itCCAdvSavoyM1500Howitzer				"0xDA27CC3C">
+<!ENTITY itCCAdvSavoyM2900Howitzer				"0xDA27CC3D">
+<!ENTITY itCCAdvSavoyM5600Howitzer				"0xDA27CC3E">
+<!ENTITY itCCAdvSavoyM11000Howitzer				"0xDA27CC3F">
+<!ENTITY itCCAuxSavoyM1Howitzer					"0xDA27CC41">
+<!ENTITY itCCAuxSavoyM2Howitzer					"0xDA27CC42">
+<!ENTITY itCCAuxSavoyM4Howitzer					"0xDA27CC43">
+<!ENTITY itCCAuxSavoyM8Howitzer					"0xDA27CC44">
+<!ENTITY itCCAuxSavoyM15Howitzer				"0xDA27CC45">
+<!ENTITY itCCAuxSavoyM30Howitzer				"0xDA27CC46">
+<!ENTITY itCCAuxSavoyM56Howitzer				"0xDA27CC47">
+<!ENTITY itCCAuxSavoyM110Howitzer				"0xDA27CC48">
+<!ENTITY itCCAuxSavoyM210Howitzer				"0xDA27CC49">
+<!ENTITY itCCAuxSavoyM400Howitzer				"0xDA27CC4A">
+<!ENTITY itCCAuxSavoyM770Howitzer				"0xDA27CC4B">
+<!ENTITY itCCAuxSavoyM1500Howitzer				"0xDA27CC4C">
+<!ENTITY itCCAuxSavoyM2900Howitzer				"0xDA27CC4D">
+<!ENTITY itCCAuxSavoyM5600Howitzer				"0xDA27CC4E">
+<!ENTITY itCCAuxSavoyM11000Howitzer				"0xDA27CC4F">
 
-<!ENTITY vtCCSavoyHowitzer						"0xDA27CC40">
+<!ENTITY vtCCSavoyHowitzer						"0xDA27CC50">
 
 <!ENTITY itCCKaleM1Repeater						"0xDA27CC51">
 <!ENTITY itCCKaleM3Repeater						"0xDA27CC52">
@@ -664,11 +679,12 @@
 <!ENTITY itCCAuxB1500MiningLance				"0xDA27CCEB">
 
 <!ENTITY efCCOreMarker							"0xDA27CCF0">
-<!ENTITY itCCT1GuidanceCartridge				"0xDA27CCF1">
-<!ENTITY itCCT2GuidanceCartridge				"0xDA27CCF2">
-<!ENTITY itCCT3GuidanceCartridge				"0xDA27CCF3">
-<!ENTITY itCCAdvancedSlamCannon					"0xDA27CCF4">
-<!ENTITY itCCAdvancedHeavySlamCannon			"0xDA27CCF5">
+<!ENTITY efCCMicrosaurMarker					"0xDA27CCF1">
+<!ENTITY itCCT1GuidanceCartridge				"0xDA27CCF2">
+<!ENTITY itCCT2GuidanceCartridge				"0xDA27CCF3">
+<!ENTITY itCCT3GuidanceCartridge				"0xDA27CCF4">
+<!ENTITY itCCAdvancedSlamCannon					"0xDA27CCF5">
+<!ENTITY itCCAdvancedHeavySlamCannon			"0xDA27CCF6">
 
 <!ENTITY itCCWeigeltCannon						"0xDA27CCFA">
 <!ENTITY ovCCWeigeltParalysis					"0xDA27CCFB">
@@ -702,6 +718,20 @@
 <!ENTITY itCCTinkererID							"0xDA27CD15">
 <!ENTITY itCCPersonalBelongings					"0xDA27CD16">
 <!ENTITY itCCPygmyOstrichHorse					"0xDA27CD17">
+
+<!ENTITY trCCMiningWeapon1						"0xDA27CD21">
+<!ENTITY trCCMiningWeapon2						"0xDA27CD22">
+<!ENTITY trCCMiningWeapon3						"0xDA27CD23">
+<!ENTITY trCCMiningDevice1						"0xDA27CD24">
+<!ENTITY trCCMiningDevice2						"0xDA27CD25">
+<!ENTITY trCCMiningDevice3						"0xDA27CD26">
+
+<!ENTITY baCCMicrosaurScannerPower				"0xDA27CD31">
+<!ENTITY ovCCMicrosaurDetectionCount			"0xDA27CD32">
+<!ENTITY itCCMicrosaurCondemnationPod			"0xDA27CD33">
+<!ENTITY vtCCMicrosaurScannerPower				"0xDA27CD34">
+<!ENTITY itCCAdvMicrosaurCondemnationPod		"0xDA27CD35">
+<!ENTITY vtCCAdvMicrosaurScannerPower			"0xDA27CD36">
 
 
 
@@ -837,10 +867,12 @@
 ]>
 
 <TranscendenceLibrary UNID="&unidCCCabbageCorpLibrary;" 
-    apiVersion=			"27"
-	Name=				"Cabbage Corp Library" 
-	credits=			"Arkheias"
-	coverImageID=		"&rsCCCabbageCorpCover;"
+		Name=			"Cabbage Corp Library" 
+		release=		"1"
+		version=		"0.7.4.0"
+		apiVersion=		"27"
+		credits=		"Arkheias"
+		coverImageID=	"&rsCCCabbageCorpCover;"
 >
 
 	<Library unid="&unidHumanSpaceLibrary;"/>
@@ -991,11 +1023,13 @@ vt			= 	(virtual) Item Code
 	<Module fileName="Modules\Library\CCLibrary_Effects.xml"/>
 	<Module fileName="Modules\Library\CCLibrary_Globals.xml"/>
 	<Module fileName="Modules\Library\CCLibrary_Sovereign.xml"/>
+	<Module fileName="Modules\Library\CCLibrary_Tables.xml"/>
 	
 	<!-- Other -->
 	<Module fileName="Modules\CCOthala.xml"/>
 	<Module fileName="Modules\CCPraclarush.xml"/>
 	<Module fileName="Modules\CCMiscItems.xml"/>
+	<Module fileName="Modules\CCUsefulItems.xml"/>
 	<Module fileName="Modules\CCShips.xml"/>
 	
 	<!-- Other -->

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
-<!-- Playership: Lorry-class stealth transport, Eridani -->
+<!-- Playership: Lorry-class stealth transport, Tau Ceti -->
 
 	<ShipClass UNID="&scCCLorryTauCeti;"
 			manufacturer=		"Cabbage Corp"
@@ -24,7 +24,7 @@
 			fuelCriteria=		"f L:1"
 			
 			maxArmor=			"20000"
-			maxDevices=			"10"
+			maxDevices=			"9"
 		>
 
 		<Armor>
@@ -39,8 +39,9 @@
 		<Devices>
 			<DeviceSlot criteria="w" posAngle="0" posRadius="38"  posZ="6"  />
 			
-			<Device deviceID="&itCCOmniB1MiningLance;"/>
+			<Device deviceID="&itCCOmniB2MiningLance;"/>
 			<Device deviceID="&itCCNapaS1Deflector;"/>
+			<Device deviceID="&itCCSiva5MWReactor;"/>
 			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
 			<Device deviceID="&itCCIonDrive;"/>
 		</Devices>

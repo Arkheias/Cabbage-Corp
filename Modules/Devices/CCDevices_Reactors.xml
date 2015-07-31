@@ -33,7 +33,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, majorItem"
 			
 			level=				"1"
-			frequency=			"uncommon"
+			frequency=			"notRandom"
 			
 			value=				"700"
 			mass=				"2500"
@@ -69,7 +69,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, majorItem"
 			
 			level=				"2"
-			frequency=			"uncommon"
+			frequency=			"notRandom"
 			
 			value=				"1600"
 			mass=				"3000"
@@ -1031,7 +1031,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"1"
-			frequency=			"rare"
+			frequency=			"notRandom"
 			
 			value=				"1500"
 			mass=				"5000"
@@ -1062,7 +1062,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"2"
-			frequency=			"rare"
+			frequency=			"notRandom"
 			
 			value=				"3400"
 			mass=				"6000"
@@ -1093,7 +1093,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"3"
-			frequency=			"rare"
+			frequency=			"veryrare"
 			
 			value=				"6500"
 			mass=				"7000"
@@ -1124,7 +1124,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"4"
-			frequency=			"rare"
+			frequency=			"veryrare"
 			
 			value=				"13500"
 			mass=				"8000"
@@ -1155,7 +1155,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"5"
-			frequency=			"rare"
+			frequency=			"veryrare"
 			
 			value=				"28500"
 			mass=				"9000"
@@ -1186,7 +1186,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"6"
-			frequency=			"veryrare"
+			frequency=			"notRandom"
 			
 			value=				"61500"
 			mass=				"11000"
@@ -1217,7 +1217,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"7"
-			frequency=			"veryrare"
+			frequency=			"notRandom"
 			
 			value=				"121000"
 			mass=				"12000"
@@ -1248,7 +1248,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"8"
-			frequency=			"veryrare"
+			frequency=			"notRandom"
 			
 			value=				"243000"
 			mass=				"13000"
@@ -1279,7 +1279,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"9"
-			frequency=			"veryrare"
+			frequency=			"notRandom"
 			
 			value=				"510000"
 			mass=				"14000"
@@ -1310,7 +1310,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"10"
-			frequency=			"veryrare"
+			frequency=			"notRandom"
 			
 			value=				"1000000"
 			mass=				"15000"

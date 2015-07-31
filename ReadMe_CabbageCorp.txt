@@ -2,10 +2,10 @@
 ==============================================================
        Title:  Cabbage Corp + Cabbage Corporate Command       
 ==============================================================
-Game Version:  1.6b5
- API Version:  26
+Game Version:  1.6.1
+ API Version:  27
  Mod Version:  v0.7.4.0-development (Still an alpha release)
-Release Date:  2015-07-10
+Release Date:  2015-07-30
       Author:  Arkheias
      License:  CC BY-NC-SA (Creative Commons Attribution-NonCommercial-ShareAlike)
 ==============================================================

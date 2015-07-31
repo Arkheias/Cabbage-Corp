@@ -4,16 +4,14 @@
 
 [
 <!ENTITY unidCCCabbageCorpLibrary					"0xDA27C000">
-;From 'Playership Drones v6+'
-<!ENTITY unidPlayerShipDrones						"0xd9120000">
 
 <!ENTITY xtCCShipsAndStuffExtension					"0xDA27D000">
 
-<!ENTITY scCCLorryEridani							"0xDA27D001">
+<!ENTITY scCCLorryEridani							"0xDA27D010">
 
-<!ENTITY scCCLampyridaeEridani						"0xDA27D002">
+<!ENTITY scCCLampyridaeEridani						"0xDA27D020">
 
-<!ENTITY scCCOborogurumaEridani						"0xDA27D003">
+<!ENTITY scCCOborogurumaEridani						"0xDA27D030">
 
 <!ENTITY rsCCCabbageCorpCover						"0xDA27CE40">
 
@@ -21,16 +19,17 @@
 ]>
 
 <TranscendenceExtension UNID="&xtCCShipsAndStuffExtension;" 
-    apiVersion=			"27"
-	Name=				"Cabbage Corp Ships &#38; Stuff" 
-	credits=			"Arkheias"
-	coverImageID=		"&rsCCCabbageCorpCover;"
+		Name=			"Cabbage Corp Ships &#38; Stuff" 
+		release=		"1"
+		version=		"0.7.4.0"
+		apiVersion=		"27"
+		credits=		"Arkheias"
+		coverImageID=	"&rsCCCabbageCorpCover;"
 >
 
 	<Library unid="&unidHumanSpaceLibrary;"/>
 	
     <Library unid="&unidCCCabbageCorpLibrary;"/>
-    <Library unid="&unidPlayerShipDrones;"/>
 	
 	<Module fileName="Modules\Playerships\CCLorry.xml"/>
 	<Module fileName="Modules\Playerships\CCLampyridae.xml"/>
