@@ -25,32 +25,11 @@
 					<!-- Standard Weapons -->
 <!-- ================================================================ -->
 
-	<Effect UNID="&efCCOreMarker;">
-		<StarBurst
-					style= "plain"
-					lifetime= "60"
-					spikeCount= "4d6"
-					spikeLength= "6d6"
-					primaryColor= "0x00, 0xff, 0x00"
-					secondaryColor= "0x00, 0x80, 0x00"
-		/>
-		<Shockwave
-					speed= "12"
-					lifetime= "40"
-					fadeStart= "15"
-					style= "glowRing"
-					width= "1"
-					glowSize= "1"
-					primaryColor= "0x00, 0xaa, 0x00"
-					secondaryColor= "0x00, 0xaa, 0x00"
-		/>
-	</Effect>
-
 	<!-- B1 Mining Lance -->
 
 	<ItemType UNID="&itCCB1MiningLance;"
 			name=				"B1 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"1"
 			frequency=			"uncommon"
@@ -66,11 +45,12 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"laser:1; mining7"
+				damage=				"laser:1; mining1"
 				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"10"
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserLight;"
 		>
 			<Effect>
@@ -99,7 +79,7 @@
 
 	<ItemType UNID="&itCCB2MiningLance;"
 			name=				"B2 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"2"
 			frequency=			"uncommon"
@@ -120,6 +100,7 @@
 				lifetime=			"30"
 				powerUse=			"20"
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserMedium;"
 		>
 			<Effect>
@@ -148,7 +129,7 @@
 
 	<ItemType UNID="&itCCB5MiningLance;"
 			name=				"B5 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"3"
 			frequency=			"uncommon"
@@ -164,11 +145,12 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"laser:1; mining3"
-				fireRate=			"2"
+				damage=				"laser:1d4; mining3"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"50"
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserHeavy;"
 		>
 			<Effect>
@@ -197,7 +179,7 @@
 
 	<ItemType UNID="&itCCB9MiningLance;"
 			name=				"B9 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"4"
 			frequency=			"uncommon"
@@ -213,11 +195,12 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"particle:1; mining3"
-				fireRate=			"2"
+				damage=				"particle:1d4; mining3"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"90"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleLight;"
 		>
 			<Effect>
@@ -246,7 +229,7 @@
 
 	<ItemType UNID="&itCCB20MiningLance;"
 			name=				"B20 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"5"
 			frequency=			"uncommon"
@@ -262,11 +245,12 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"particle:2; mining4"
-				fireRate=			"2"
+				damage=				"particle:2d3; mining4"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"200"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleMedium;"
 		>
 			<Effect>
@@ -295,7 +279,7 @@
 
 	<ItemType UNID="&itCCB32MiningLance;"
 			name=				"B32 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"6"
 			frequency=			"uncommon"
@@ -311,11 +295,12 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"particle:1d4; mining5; WMD1"
-				fireRate=			"2"
+				damage=				"particle:2d4; mining5; WMD1"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"320"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleHeavy;"
 		>
 			<Effect>
@@ -344,7 +329,7 @@
 
 	<ItemType UNID="&itCCB60MiningLance;"
 			name=				"B60 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, military, minerGear"
+			attributes=			"cabbageCorp, energyWeapon, majorItem, military, miningEquipment"
 			 
 			level=				"7"
 			frequency=			"uncommon"
@@ -360,11 +345,12 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"ion:2d2; mining5; WMD1"
-				fireRate=			"2"
+				damage=				"ion:1d6+2; mining5; WMD1"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"600"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonLight;"
 		>
 			<Effect>
@@ -399,7 +385,7 @@
 
 	<ItemType UNID="&itCCB110MiningLance;"
 			name=				"B110 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, military, minerGear"
+			attributes=			"cabbageCorp, energyWeapon, majorItem, military, miningEquipment"
 			 
 			level=				"8"
 			frequency=			"uncommon"
@@ -415,11 +401,12 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"ion:2d3; mining6; WMD2"
-				fireRate=			"2"
+				damage=				"ion:2d4+3; mining6; WMD2"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"1100"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonMedium;"
 		>
 			<Effect>
@@ -454,7 +441,7 @@
 
 	<ItemType UNID="&itCCB200MiningLance;"
 			name=				"B200 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, military, minerGear"
+			attributes=			"cabbageCorp, energyWeapon, majorItem, military, miningEquipment"
 			 
 			level=				"9"
 			frequency=			"uncommon"
@@ -470,11 +457,12 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"ion:1d8+1; mining7; WMD2"
-				fireRate=			"2"
+				damage=				"ion:4d4+1; mining7; WMD2"
+				fireRate=			"1"
 				lifetime=			"30"
 				powerUse=			"2000"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonHeavy;"
 		>
 			<Effect>
@@ -509,7 +497,7 @@
 
 	<ItemType UNID="&itCCB450MiningLance;"
 			name=				"B450 mining lance"
-			attributes=			"alien, cabbageCorp, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, cabbageCorp, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"10"
 			frequency=			"uncommon"
@@ -525,11 +513,12 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"positron:3d4; mining7; WMD3"
-				fireRate=			"2"
+				damage=				"positron:5d4+1; mining7; WMD3"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"4500"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronLight;"
 		>
 			<Effect>
@@ -564,7 +553,7 @@
 
 	<ItemType UNID="&itCCB800MiningLance;"
 			name=				"B800 mining lance"
-			attributes=			"alien, cabbageCorp, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, cabbageCorp, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"11"
 			frequency=			"uncommon"
@@ -580,11 +569,12 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"positron:3d6; mining7; WMD4"
-				fireRate=			"2"
+				damage=				"positron:5d6+2; mining7; WMD4"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"8000"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronMedium;"
 		>
 			<Effect>
@@ -619,7 +609,7 @@
 
 	<ItemType UNID="&itCCB1500MiningLance;"
 			name=				"B1500 mining lance"
-			attributes=			"alien, cabbageCorp, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, cabbageCorp, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"12"
 			frequency=			"uncommon"
@@ -635,11 +625,12 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"positron:6d4; mining7; WMD5"
-				fireRate=			"2"
+				damage=				"positron:8d6+1; mining7; WMD5"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"15000"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronHeavy;"
 		>
 			<Effect>
@@ -678,7 +669,7 @@
 
 	<ItemType UNID="&itCCDualB1MiningLance;"
 			name=				"dual B1 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"2"
 			frequency=			"rare"
@@ -700,6 +691,7 @@
 				lifetime=			"30"
 				powerUse=			"20"
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserLight;"
 		>
 			<Effect>
@@ -717,7 +709,7 @@
 
 	<ItemType UNID="&itCCDualB2MiningLance;"
 			name=				"dual B2 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"3"
 			frequency=			"rare"
@@ -739,6 +731,7 @@
 				lifetime=			"30"
 				powerUse=			"40"
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserMedium;"
 		>
 			<Effect>
@@ -756,7 +749,7 @@
 
 	<ItemType UNID="&itCCDualB5MiningLance;"
 			name=				"dual B5 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"4"
 			frequency=			"rare"
@@ -773,11 +766,12 @@
 				type=				"beam"
 
 				configuration=		"dual"
-				damage=				"laser:1; mining3"
-				fireRate=			"2"
+				damage=				"laser:1d4; mining3"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"100"
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserHeavy;"
 		>
 			<Effect>
@@ -795,7 +789,7 @@
 
 	<ItemType UNID="&itCCDualB9MiningLance;"
 			name=				"dual B9 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"5"
 			frequency=			"rare"
@@ -812,11 +806,12 @@
 				type=				"beam"
 
 				configuration=		"dual"
-				damage=				"particle:1; mining3"
-				fireRate=			"2"
+				damage=				"particle:1d4; mining3"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"180"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleLight;"
 		>
 			<Effect>
@@ -834,7 +829,7 @@
 
 	<ItemType UNID="&itCCDualB20MiningLance;"
 			name=				"dual B20 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"6"
 			frequency=			"rare"
@@ -851,11 +846,12 @@
 				type=				"beam"
 
 				configuration=		"dual"
-				damage=				"particle:2; mining4"
-				fireRate=			"2"
+				damage=				"particle:2d3; mining4"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"400"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleMedium;"
 		>
 			<Effect>
@@ -873,7 +869,7 @@
 
 	<ItemType UNID="&itCCDualB32MiningLance;"
 			name=				"dual B32 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"7"
 			frequency=			"rare"
@@ -890,11 +886,12 @@
 				type=				"beam"
 
 				configuration=		"dual"
-				damage=				"particle:1d4; mining5; WMD1"
-				fireRate=			"2"
+				damage=				"particle:2d4; mining5; WMD1"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"640"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleHeavy;"
 		>
 			<Effect>
@@ -912,7 +909,7 @@
 
 	<ItemType UNID="&itCCDualB60MiningLance;"
 			name=				"dual B60 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
 			 
 			level=				"8"
 			frequency=			"rare"
@@ -929,11 +926,12 @@
 				type=				"beam"
 
 				configuration=		"dual"
-				damage=				"ion:2d2; mining5; WMD1"
-				fireRate=			"2"
+				damage=				"ion:1d6+2; mining5; WMD1"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"1200"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonLight;"
 		>
 			<Effect>
@@ -957,7 +955,7 @@
 
 	<ItemType UNID="&itCCDualB110MiningLance;"
 			name=				"dual B110 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
 			 
 			level=				"9"
 			frequency=			"rare"
@@ -974,11 +972,12 @@
 				type=				"beam"
 
 				configuration=		"dual"
-				damage=				"ion:2d3; mining6; WMD2"
-				fireRate=			"2"
+				damage=				"ion:2d4+3; mining6; WMD2"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"2200"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonMedium;"
 		>
 			<Effect>
@@ -1002,7 +1001,7 @@
 
 	<ItemType UNID="&itCCDualB200MiningLance;"
 			name=				"dual B200 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
 			 
 			level=				"10"
 			frequency=			"rare"
@@ -1019,11 +1018,12 @@
 				type=				"beam"
 
 				configuration=		"dual"
-				damage=				"ion:1d8+1; mining7; WMD2"
-				fireRate=			"2"
+				damage=				"ion:4d4+1; mining7; WMD2"
+				fireRate=			"1"
 				lifetime=			"30"
 				powerUse=			"4000"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonHeavy;"
 		>
 			<Effect>
@@ -1047,7 +1047,7 @@
 
 	<ItemType UNID="&itCCDualB450MiningLance;"
 			name=				"dual B450 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"11"
 			frequency=			"rare"
@@ -1064,11 +1064,12 @@
 				type=				"beam"
 
 				configuration=		"dual"
-				damage=				"positron:3d4; mining7; WMD3"
-				fireRate=			"2"
+				damage=				"positron:5d4+1; mining7; WMD3"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"9000"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronLight;"
 		>
 			<Effect>
@@ -1092,7 +1093,7 @@
 
 	<ItemType UNID="&itCCDualB800MiningLance;"
 			name=				"dual B800 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"12"
 			frequency=			"rare"
@@ -1109,11 +1110,12 @@
 				type=				"beam"
 
 				configuration=		"dual"
-				damage=				"positron:3d6; mining7; WMD4"
-				fireRate=			"2"
+				damage=				"positron:5d6+2; mining7; WMD4"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"16000"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronMedium;"
 		>
 			<Effect>
@@ -1137,7 +1139,7 @@
 
 	<ItemType UNID="&itCCDualB1500MiningLance;"
 			name=				"dual B1500 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"13"
 			frequency=			"rare"
@@ -1154,11 +1156,12 @@
 				type=				"beam"
 
 				configuration=		"dual"
-				damage=				"positron:6d4; mining7; WMD5"
-				fireRate=			"2"
+				damage=				"positron:8d6+1; mining7; WMD5"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"30000"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronHeavy;"
 		>
 			<Effect>
@@ -1186,7 +1189,7 @@
 
 	<ItemType UNID="&itCCOmniB1MiningLance;"
 			name=				"omnidirectional B1 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"2"
 			frequency=			"veryrare"
@@ -1208,6 +1211,7 @@
 				lifetime=			"30"
 				powerUse=			"15"
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserLight;"
 		>
 			<Effect>
@@ -1225,7 +1229,7 @@
 
 	<ItemType UNID="&itCCOmniB2MiningLance;"
 			name=				"omnidirectional B2 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"3"
 			frequency=			"veryrare"
@@ -1247,6 +1251,7 @@
 				lifetime=			"30"
 				powerUse=			"30"
 				
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserMedium;"
 		>
 			<Effect>
@@ -1264,7 +1269,7 @@
 
 	<ItemType UNID="&itCCOmniB5MiningLance;"
 			name=				"omnidirectional B5 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"4"
 			frequency=			"veryrare"
@@ -1281,11 +1286,12 @@
 				type=				"beam"
 
 				omnidirectional=	"true"
-				damage=				"laser:1; mining3"
-				fireRate=			"2"
+				damage=				"laser:1d4; mining3"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"70"
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserHeavy;"
 		>
 			<Effect>
@@ -1303,7 +1309,7 @@
 
 	<ItemType UNID="&itCCOmniB9MiningLance;"
 			name=				"omnidirectional B9 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"5"
 			frequency=			"veryrare"
@@ -1320,11 +1326,12 @@
 				type=				"beam"
 
 				omnidirectional=	"true"
-				damage=				"particle:1; mining3"
-				fireRate=			"2"
+				damage=				"particle:1d4; mining3"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"120"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleLight;"
 		>
 			<Effect>
@@ -1342,7 +1349,7 @@
 
 	<ItemType UNID="&itCCOmniB20MiningLance;"
 			name=				"omnidirectional B20 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"6"
 			frequency=			"veryrare"
@@ -1359,11 +1366,12 @@
 				type=				"beam"
 
 				omnidirectional=	"true"
-				damage=				"particle:2; mining4"
-				fireRate=			"2"
+				damage=				"particle:2d3; mining4"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"270"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleMedium;"
 		>
 			<Effect>
@@ -1381,7 +1389,7 @@
 
 	<ItemType UNID="&itCCOmniB32MiningLance;"
 			name=				"omnidirectional B32 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"7"
 			frequency=			"veryrare"
@@ -1398,11 +1406,12 @@
 				type=				"beam"
 
 				omnidirectional=	"true"
-				damage=				"particle:1d4; mining5; WMD1"
-				fireRate=			"2"
+				damage=				"particle:2d4; mining5; WMD1"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"430"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleHeavy;"
 		>
 			<Effect>
@@ -1420,7 +1429,7 @@
 
 	<ItemType UNID="&itCCOmniB60MiningLance;"
 			name=				"omnidirectional B60 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
 			 
 			level=				"8"
 			frequency=			"veryrare"
@@ -1437,11 +1446,12 @@
 				type=				"beam"
 
 				omnidirectional=	"true"
-				damage=				"ion:2d2; mining5; WMD1"
-				fireRate=			"2"
+				damage=				"ion:1d6+2; mining5; WMD1"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"800"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonLight;"
 		>
 			<Effect>
@@ -1465,7 +1475,7 @@
 
 	<ItemType UNID="&itCCOmniB110MiningLance;"
 			name=				"omnidirectional B110 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
 			 
 			level=				"9"
 			frequency=			"veryrare"
@@ -1482,11 +1492,12 @@
 				type=				"beam"
 
 				omnidirectional=	"true"
-				damage=				"ion:2d3; mining6; WMD2"
-				fireRate=			"2"
+				damage=				"ion:2d4+3; mining6; WMD2"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"1500"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonMedium;"
 		>
 			<Effect>
@@ -1510,7 +1521,7 @@
 
 	<ItemType UNID="&itCCOmniB200MiningLance;"
 			name=				"omnidirectional B200 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
 			 
 			level=				"10"
 			frequency=			"veryrare"
@@ -1527,11 +1538,12 @@
 				type=				"beam"
 
 				omnidirectional=	"true"
-				damage=				"ion:1d8+1; mining7; WMD2"
-				fireRate=			"2"
+				damage=				"ion:4d4+1; mining7; WMD2"
+				fireRate=			"1"
 				lifetime=			"30"
 				powerUse=			"2700"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonHeavy;"
 		>
 			<Effect>
@@ -1555,7 +1567,7 @@
 
 	<ItemType UNID="&itCCOmniB450MiningLance;"
 			name=				"omnidirectional B450 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"11"
 			frequency=			"veryrare"
@@ -1572,11 +1584,12 @@
 				type=				"beam"
 
 				omnidirectional=	"true"
-				damage=				"positron:3d4; mining7; WMD3"
-				fireRate=			"2"
+				damage=				"positron:5d4+1; mining7; WMD3"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"6000"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronLight;"
 		>
 			<Effect>
@@ -1600,7 +1613,7 @@
 
 	<ItemType UNID="&itCCOmniB800MiningLance;"
 			name=				"omnidirectional B800 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"12"
 			frequency=			"veryrare"
@@ -1617,11 +1630,12 @@
 				type=				"beam"
 
 				omnidirectional=	"true"
-				damage=				"positron:3d6; mining7; WMD4"
-				fireRate=			"2"
+				damage=				"positron:5d6+2; mining7; WMD4"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"11000"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronMedium;"
 		>
 			<Effect>
@@ -1645,7 +1659,7 @@
 
 	<ItemType UNID="&itCCOmniB1500MiningLance;"
 			name=				"omnidirectional B1500 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			 
 			level=				"13"
 			frequency=			"veryrare"
@@ -1662,11 +1676,12 @@
 				type=				"beam"
 
 				omnidirectional=	"true"
-				damage=				"positron:6d4; mining7; WMD5"
-				fireRate=			"2"
+				damage=				"positron:8d6+1; mining7; WMD5"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"20000"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronHeavy;"
 		>
 			<Effect>
@@ -1694,9 +1709,9 @@
 
 	<ItemType UNID="&itCCAdvB1MiningLance;"
 			name=				"scanning B1 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
 			 
-			level=				"1"
+			level=				"2"
 			frequency=			"veryrare"
 
 			value=				"350"
@@ -1716,6 +1731,7 @@
 				powerUse=			"20"
 				idlePowerUse=		"10"
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserLight;"
 		>
 			<Effect>
@@ -1739,9 +1755,9 @@
 
 	<ItemType UNID="&itCCAdvB2MiningLance;"
 			name=				"scanning B2 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
 			 
-			level=				"2"
+			level=				"3"
 			frequency=			"veryrare"
 
 			value=				"850"
@@ -1761,6 +1777,7 @@
 				powerUse=			"40"
 				idlePowerUse=		"15"
 				
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserMedium;"
 		>
 			<Effect>
@@ -1784,9 +1801,9 @@
 
 	<ItemType UNID="&itCCAdvB5MiningLance;"
 			name=				"scanning B5 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
 			 
-			level=				"3"
+			level=				"4"
 			frequency=			"veryrare"
 
 			value=				"2000"
@@ -1800,12 +1817,13 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"laser:1; mining3"
-				fireRate=			"2"
+				damage=				"laser:1d4; mining3"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"90"
 				idlePowerUse=		"30"
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserHeavy;"
 		>
 			<Effect>
@@ -1829,9 +1847,9 @@
 
 	<ItemType UNID="&itCCAdvB9MiningLance;"
 			name=				"scanning B9 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
 			 
-			level=				"4"
+			level=				"5"
 			frequency=			"veryrare"
 
 			value=				"4300"
@@ -1845,12 +1863,13 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"particle:1; mining3"
-				fireRate=			"2"
+				damage=				"particle:1d4; mining3"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"150"
 				idlePowerUse=		"50"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleLight;"
 		>
 			<Effect>
@@ -1874,9 +1893,9 @@
 
 	<ItemType UNID="&itCCAdvB20MiningLance;"
 			name=				"scanning B20 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
 			 
-			level=				"5"
+			level=				"6"
 			frequency=			"veryrare"
 
 			value=				"10000"
@@ -1890,12 +1909,13 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"particle:2; mining4"
-				fireRate=			"2"
+				damage=				"particle:2d3; mining4"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"300"
 				idlePowerUse=		"100"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleMedium;"
 		>
 			<Effect>
@@ -1919,9 +1939,9 @@
 
 	<ItemType UNID="&itCCAdvB32MiningLance;"
 			name=				"scanning B32 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
 			 
-			level=				"6"
+			level=				"7"
 			frequency=			"veryrare"
 
 			value=				"21000"
@@ -1935,12 +1955,13 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"particle:1d4; mining5; WMD1"
-				fireRate=			"2"
+				damage=				"particle:2d4; mining5; WMD1"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"480"
 				idlePowerUse=		"160"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleHeavy;"
 		>
 			<Effect>
@@ -1964,9 +1985,9 @@
 
 	<ItemType UNID="&itCCAdvB60MiningLance;"
 			name=				"scanning B60 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment, specialty"
 			 
-			level=				"7"
+			level=				"8"
 			frequency=			"veryrare"
 
 			value=				"64000"
@@ -1980,12 +2001,13 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"ion:2d2; mining5; WMD1"
-				fireRate=			"2"
+				damage=				"ion:1d6+2; mining5; WMD1"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"900"
 				idlePowerUse=		"300"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonLight;"
 		>
 			<Effect>
@@ -2015,9 +2037,9 @@
 
 	<ItemType UNID="&itCCAdvB110MiningLance;"
 			name=				"scanning B110 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment, specialty"
 			 
-			level=				"8"
+			level=				"9"
 			frequency=			"veryrare"
 
 			value=				"140000"
@@ -2031,12 +2053,13 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"ion:2d3; mining6; WMD2"
-				fireRate=			"2"
+				damage=				"ion:2d4+3; mining6; WMD2"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"1650"
 				idlePowerUse=		"550"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonMedium;"
 		>
 			<Effect>
@@ -2066,9 +2089,9 @@
 
 	<ItemType UNID="&itCCAdvB200MiningLance;"
 			name=				"scanning B200 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment, specialty"
 			 
-			level=				"9"
+			level=				"10"
 			frequency=			"veryrare"
 
 			value=				"300000"
@@ -2082,12 +2105,13 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"ion:1d8+1; mining7; WMD2"
-				fireRate=			"2"
+				damage=				"ion:4d4+1; mining7; WMD2"
+				fireRate=			"1"
 				lifetime=			"30"
 				powerUse=			"3000"
 				idlePowerUse=		"1000"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonHeavy;"
 		>
 			<Effect>
@@ -2117,9 +2141,9 @@
 
 	<ItemType UNID="&itCCAdvB450MiningLance;"
 			name=				"scanning B450 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear, specialty"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
 			 
-			level=				"10"
+			level=				"11"
 			frequency=			"veryrare"
 
 			value=				"600000"
@@ -2133,12 +2157,13 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"positron:3d4; mining7; WMD3"
-				fireRate=			"2"
+				damage=				"positron:5d4+1; mining7; WMD3"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"6750"
 				idlePowerUse=		"2000"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronLight;"
 		>
 			<Effect>
@@ -2168,9 +2193,9 @@
 
 	<ItemType UNID="&itCCAdvB800MiningLance;"
 			name=				"scanning B800 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear, specialty"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
 			 
-			level=				"11"
+			level=				"12"
 			frequency=			"veryrare"
 
 			value=				"1100000"
@@ -2184,12 +2209,13 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"positron:3d6; mining7; WMD4"
-				fireRate=			"2"
+				damage=				"positron:5d6+2; mining7; WMD4"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"12000"
 				idlePowerUse=		"3600"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronMedium;"
 		>
 			<Effect>
@@ -2219,9 +2245,9 @@
 
 	<ItemType UNID="&itCCAdvB1500MiningLance;"
 			name=				"scanning B1500 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear, specialty"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
 			 
-			level=				"12"
+			level=				"13"
 			frequency=			"veryrare"
 
 			value=				"2000000"
@@ -2235,12 +2261,13 @@
 		<Weapon
 				type=				"beam"
 
-				damage=				"positron:6d4; mining7; WMD5"
-				fireRate=			"2"
+				damage=				"positron:8d6+1; mining7; WMD5"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"22500"
 				idlePowerUse=		"6750"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronHeavy;"
 		>
 			<Effect>
@@ -2274,7 +2301,7 @@
 
 	<ItemType UNID="&itCCAuxB1MiningLance;"
 			name=				"side-mounted B1 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"2"
@@ -2300,6 +2327,7 @@
 				deviceSlots=		"0"
 				external=			"true"				
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserLight;"
 		>
 			<Effect>
@@ -2317,7 +2345,7 @@
 
 	<ItemType UNID="&itCCAuxB2MiningLance;"
 			name=				"side-mounted B2 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"3"
@@ -2343,6 +2371,7 @@
 				deviceSlots=		"0"
 				external=			"true"				
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserMedium;"
 		>
 			<Effect>
@@ -2360,7 +2389,7 @@
 
 	<ItemType UNID="&itCCAuxB5MiningLance;"
 			name=				"side-mounted B5 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"4"
@@ -2378,14 +2407,15 @@
 				type=				"beam"
 				linkedFire=			"always"
 
-				damage=				"laser:1; mining3"
-				fireRate=			"2"
+				damage=				"laser:1d4; mining3"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"50"
 
 				deviceSlots=		"0"
 				external=			"true"
 
+				hitEffect=			"&efLaserHitDefault;"
 				sound=				"&snCCLanceFireLaserHeavy;"
 		>
 			<Effect>
@@ -2403,7 +2433,7 @@
 
 	<ItemType UNID="&itCCAuxB9MiningLance;"
 			name=				"side-mounted B9 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"5"
@@ -2421,14 +2451,15 @@
 				type=				"beam"
 				linkedFire=			"always"
 
-				damage=				"particle:1; mining3"
-				fireRate=			"2"
+				damage=				"particle:1d4; mining3"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"90"
 
 				deviceSlots=		"0"
 				external=			"true"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleLight;"
 		>
 			<Effect>
@@ -2446,7 +2477,7 @@
 
 	<ItemType UNID="&itCCAuxB20MiningLance;"
 			name=				"side-mounted B20 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"6"
@@ -2464,14 +2495,15 @@
 				type=				"beam"
 				linkedFire=			"always"
 
-				damage=				"particle:2; mining4"
-				fireRate=			"2"
+				damage=				"particle:2d3; mining4"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"200"
 
 				deviceSlots=		"0"
 				external=			"true"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleMedium;"
 		>
 			<Effect>
@@ -2489,7 +2521,7 @@
 
 	<ItemType UNID="&itCCAuxB32MiningLance;"
 			name=				"side-mounted B32 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"7"
@@ -2507,14 +2539,15 @@
 				type=				"beam"
 				linkedFire=			"always"
 
-				damage=				"particle:1d4; mining5; WMD1"
-				fireRate=			"2"
+				damage=				"particle:2d4; mining5; WMD1"
+				fireRate=			"4"
 				lifetime=			"40"
 				powerUse=			"320"
 
 				deviceSlots=		"0"
 				external=			"true"
 
+				hitEffect=			"&efParticleHitDefault;"
 				sound=				"&snCCLanceFireParticleHeavy;"
 		>
 			<Effect>
@@ -2532,7 +2565,7 @@
 
 	<ItemType UNID="&itCCAuxB60MiningLance;"
 			name=				"side-mounted B60 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"8"
@@ -2550,14 +2583,15 @@
 				type=				"beam"
 				linkedFire=			"always"
 
-				damage=				"ion:2d2; mining5; WMD1"
-				fireRate=			"2"
+				damage=				"ion:1d6+2; mining5; WMD1"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"600"
 
 				deviceSlots=		"0"
 				external=			"true"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonLight;"
 		>
 			<Effect>
@@ -2581,7 +2615,7 @@
 
 	<ItemType UNID="&itCCAuxB110MiningLance;"
 			name=				"side-mounted B110 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"9"
@@ -2599,14 +2633,15 @@
 				type=				"beam"
 				linkedFire=			"always"
 
-				damage=				"ion:2d3; mining6; WMD2"
-				fireRate=			"2"
+				damage=				"ion:2d4+3; mining6; WMD2"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"1100"
 
 				deviceSlots=		"0"
 				external=			"true"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonMedium;"
 		>
 			<Effect>
@@ -2630,7 +2665,7 @@
 
 	<ItemType UNID="&itCCAuxB200MiningLance;"
 			name=				"side-mounted B200 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, minerGear"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"10"
@@ -2648,14 +2683,15 @@
 				type=				"beam"
 				linkedFire=			"always"
 
-				damage=				"ion:1d8+1; mining7; WMD2"
-				fireRate=			"2"
+				damage=				"ion:4d4+1; mining7; WMD2"
+				fireRate=			"1"
 				lifetime=			"30"
 				powerUse=			"2000"
 
 				deviceSlots=		"0"
 				external=			"true"
 
+				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonHeavy;"
 		>
 			<Effect>
@@ -2679,7 +2715,7 @@
 
 	<ItemType UNID="&itCCAuxB450MiningLance;"
 			name=				"side-mounted B450 mining lance"
-			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"11"
@@ -2697,14 +2733,15 @@
 				type=				"beam"
 				linkedFire=			"always"
 
-				damage=				"positron:3d4; mining7; WMD3"
-				fireRate=			"2"
+				damage=				"positron:5d4+1; mining7; WMD3"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"4500"
 
 				deviceSlots=		"0"
 				external=			"true"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronLight;"
 		>
 			<Effect>
@@ -2728,7 +2765,7 @@
 
 	<ItemType UNID="&itCCAuxB800MiningLance;"
 			name=				"side-mounted B800 mining lance"
-			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"12"
@@ -2746,14 +2783,15 @@
 				type=				"beam"
 				linkedFire=			"always"
 
-				damage=				"positron:3d6; mining7; WMD4"
-				fireRate=			"2"
+				damage=				"positron:5d6+2; mining7; WMD4"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"8000"
 
 				deviceSlots=		"0"
 				external=			"true"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronMedium;"
 		>
 			<Effect>
@@ -2777,7 +2815,7 @@
 
 	<ItemType UNID="&itCCAuxB1500MiningLance;"
 			name=				"side-mounted B1500 mining lance"
-			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, minerGear"
+			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
 			 
 			level=				"13"
@@ -2795,14 +2833,15 @@
 				type=				"beam"
 				linkedFire=			"always"
 
-				damage=				"positron:6d4; mining7; WMD5"
-				fireRate=			"2"
+				damage=				"positron:8d6+1; mining7; WMD5"
+				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"15000"
 
 				deviceSlots=		"0"
 				external=			"true"
 
+				hitEffect=			"&efPositronHitDefault;"
 				sound=				"&snCCLanceFirePositronHeavy;"
 		>
 			<Effect>
@@ -2821,233 +2860,5 @@
 			</Effect>
 		</Weapon>
 	</ItemType>
-
-<!-- ================================================================ -->
-				<!-- Unshielded Mining Lances -->
-<!-- ================================================================ -->
-
-<!-- ================================================================ -->
-					<!-- Background Stuff-->
-<!-- ================================================================ -->
-
-<!--
-	I was originally planning on the asteroid scanning feature being toggle-able via a dockscreen, but unfortunately the powerBonusPerCharge attribute only works on shields.
-				
-		powerBonusPerCharge="7500"
-		
-		<StaticData>
-			<CCPassThrough>36</CCPassThrough>
-			<CCItemUse>&dsCCMiningLanceOreScanner;</CCItemUse>
-		</StaticData>
-		
---------------------------------------------------------------------------
-		
-	<DockScreen	UNID="&dsCCMiningLanceOreScanner;"
-			name= "Ship's Interior"
-			backgroundID= "&rsShipInterior;"
-	>
-
-		<InitialPane>	
-			(switch
-				(itmGetProperty gItem 'damaged)
-					"NoUse"
-
-				"Default"
-			)
-		</InitialPane>
-
-		<Panes>
-			<Default>
-
-				<OnPaneInit>
-					(block Nil
-						(setq desc 
-							(cat "Cabbage Corp mining lances come equiped with an ore scanner that can detect the presence of minable ores in nearby asteroids."
-								"\n\n"
-								"This model can detect ores within a range of "
-								gPassThrough
-								" light-seconds when activated."
-								"\n\n"
-								"Would you like to enable or disable the ore scanner feature?"
-							)
-						)
-						(scrSetDesc gScreen desc)
-					)
-				</OnPaneInit>
-				
-				<Actions>
-					<Action name="Enable" key="E" default="1">
-						(block Nil
-							(objSetItemCharges gSource gItem 1)
-							(scrShowScreen gScreen &scCCCabbageModification;)
-						)
-					</Action>
-					
-					<Action name="Disable" key="D">
-						(block Nil
-							(objSetItemCharges gSource gItem 0)
-							(scrShowScreen gScreen &scCCCabbageModification;)
-						)
-					</Action>
-					
-					<Action name="Cancel" key="C" cancel="1">
-							(scrShowScreen gScreen &scCCCabbageModification;)
-					</Action>
-				</Actions>
-			</Default>
-
-			<NoUse>
-				<OnPaneInit>
-					(scrSetDesc gScreen 
-						(cat
-							"This "
-							(if gItem (itmGetName gItem 0) 
-								"device is too damaged to further modify."
-							)
-						)
-					)
-				</OnPaneInit>
-
-				<Actions>
-					<Action name="Done" key="D" default="1" cancel="1">
-							(scrShowScreen gScreen &scCCCabbageModification;)
-					</Action>
-				</Actions>
-			</NoUse>
-		</Panes>
-	</DockScreen>
-
--->
-
-<Globals>
-	(setq CCAsteroidScanner
-		(lambda (gRange)
-			(if (and	(eq gSource gPlayerShip)		;continues if this event is being run from the playership, if the item is installed and if it is also active
-						(itmIsInstalled gItem) 
-						(objIsDeviceEnabled gsource gItem)
-				)
-				(block (gAsteroids)
-					(switch
-						(eq gRange 1)
-							(setq gAsteroids 												;variable that contains the list of viable asteroids defined in the following lines
-								(filter	(sysFindObject gSource "t +asteroid; N:1;")			;list to be filtered (stations that are asteroids and within specified range)
-										asteroid											;arbitrary placeholder in the following function for each item from the previously defined list
-										(gr (count (objGetItems asteroid "t +Ore;")) 0)		;function to filter the list (asteroids that still contain ore)
-								)
-							)
-						(eq gRange 2)														;I can't directly pass the range value into the criteria, so I make it check for each range up to 50 light-seconds
-							(setq gAsteroids												;I had to use the same workaround for the refinery devices
-								(filter	(sysFindObject gSource "t +asteroid; N:2;")			;If there is some specific format for "N:gRange;" that works, I ain't found it yet.
-										asteroid
-										(gr (count (objGetItems asteroid "t +Ore;")) 0)
-								)
-							)
-						(eq gRange 3)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:3;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 4)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:4;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 5)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:5;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 6)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:6;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 7)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:7;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 8)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:8;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 9)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:9;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 10)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:10;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 11)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:11;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 12)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:12;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 13)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:13;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 14)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:14;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 15)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:15;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 16)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:16;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 17)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:17;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 18)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:18;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 19)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:19;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 20)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:20;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 21)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:21;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 22)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:22;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 23)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:23;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 24)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:24;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 25)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:25;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 26)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:26;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 27)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:27;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 28)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:28;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 29)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:29;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 30)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:30;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 31)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:31;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 32)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:32;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 33)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:33;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 34)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:34;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 35)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:35;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 36)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:36;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 37)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:37;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 38)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:38;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 39)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:39;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 40)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:40;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 41)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:41;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 42)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:42;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 43)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:43;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 44)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:44;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 45)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:45;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 46)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:46;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 47)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:47;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 48)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:48;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 49)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:49;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-						(eq gRange 50)
-							(setq gAsteroids (filter (sysFindObject gSource "t +asteroid; N:50;") asteroid (gr (count (objGetItems asteroid "t +Ore;")) 0)))
-					)
-					(if (gr (count gAsteroids) 0)												;continues if there was at least one asteroid that contains ore
-						(enum	gAsteroids 														;list of items to which the following function will be applied
-								spaceObj														;arbitrary placeholder in the following function for each item from the previously defined list
-								(sysCreateEffect &efCCOreMarker; spaceObj (objGetPos spaceObj))	;creates this effect as if the object called up the effect, and at the position of the object
-						)
-					)
-				)
-			)
-		)
-	)
-</Globals>
+	
 </TranscendenceModule>

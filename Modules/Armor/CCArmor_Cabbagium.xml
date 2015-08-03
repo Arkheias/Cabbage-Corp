@@ -1,0 +1,1123 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+<!-- ================================================================ -->
+						<!-- Cabbagium Armor -->
+<!-- ================================================================ -->
+
+Level	Light				Single				Double				Quadruple			Hextuple			Octuple
+1		150, 50				
+2		200, 100			
+3		250, 100			
+
+4		300, 150, 50		
+5		400, 200, 100		
+6		500, 250, 100		
+
+7		***, 300, 150, 50	
+8		***, 400, 200, 100	
+9		***, 500, 250, 100	
+
+<!-- ================================================================ -->
+						<!-- Light Cabbagium Plating -->
+<!-- ================================================================ -->
+
+	<!-- Segment of Light Cabbagium Plating -->
+
+	<ItemType UNID="&itCCLightCabbagiumPlating;"
+			name=				"[segment(s) of ]light Cabbagium plating"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"2"
+			frequency=			"veryrare"
+			numberAppearing=	"1d6"
+
+			value=				"190"
+			mass=				"2500"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium plating, light"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"25"
+				hpBonus=		"+200, +200, +100, +100"
+
+				repairTech=		"12"
+				installCostAdj=	"150"
+				
+				decay=			"0.05"
+
+				regen=			"1"
+				photoRepair=	"true"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCC1xCabbagiumArmor;		count:2		extraCost:0}
+					{product:&itCC2xCabbagiumArmor;		count:4		extraCost:0}
+					{product:&itCC4xCabbagiumArmor;		count:8		extraCost:0}
+					{product:&itCC6xCabbagiumArmor;		count:12	extraCost:0}
+					{product:&itCC8xCabbagiumArmor;		count:16	extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Segment of Hardened Cabbagium Plating -->
+
+	<ItemType UNID="&itCCHardenedCabbagiumPlating;"
+			name=				"[segment(s) of ]hardened Cabbagium plating"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"5"
+			frequency=			"veryrare"
+			numberAppearing=	"1d6"
+
+			value=				"1300"
+			mass=				"2500"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium plating, hardened"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"50"
+				hpBonus=		"+400, +400, +200, +200, +100, +100"
+
+				repairTech=		"13"
+				installCostAdj=	"150"
+				
+				decay=			"0.10"
+
+				regen=			"2"
+				photoRepair=	"true"
+				radiationImmune="true"
+		/>
+	</ItemType>
+
+	<!-- Segment of Advanced Cabbagium Plating -->
+
+	<ItemType UNID="&itCCAdvancedCabbagiumPlating;"
+			name=				"[segment(s) of ]advanced Cabbagium plating"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			  
+			level=				"8"
+			frequency=			"veryrare"
+			numberAppearing=	"1d6"
+
+			value=				"8600"
+			mass=				"2500"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium plating, advanced"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"90"
+				hpBonus=		"***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"14"
+				installCostAdj=	"150"
+				
+				decay=			"0.15"
+
+				regen=			"3"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of Experimental Cabbagium Plating -->
+
+	<ItemType UNID="&itCCExperimentalCabbagiumPlating;"
+			name=				"[segment(s) of ]experimental Cabbagium plating"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			  
+			level=				"11"
+			frequency=			"veryrare"
+			numberAppearing=	"1d6"
+
+			value=				"58000"
+			mass=				"2500"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium plating, experimental"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"180"
+				hpBonus=		"***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"15"
+				installCostAdj=	"150"
+				
+				decay=			"0.25"
+
+				regen=			"5"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of Theoretical Cabbagium Plating -->
+
+	<ItemType UNID="&itCCTheoreticalCabbagiumPlating;"
+			name=				"[segment(s) of ]theoretical Cabbagium plating"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"14"
+			frequency=			"veryrare"
+			numberAppearing=	"1d6"
+
+			value=				"385000"
+			mass=				"2500"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium plating, theoretical"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"360"
+				hpBonus=		"***, ***, ***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"16"
+				installCostAdj=	"150"
+				
+				decay=			"0.45"
+
+				regen=			"9"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+<!-- ================================================================ -->
+						<!-- Standard Cabbagium Armor -->
+<!-- ================================================================ -->
+
+	<!-- Segment of 1x Cabbagium Armor -->
+
+	<ItemType UNID="&itCC1xCabbagiumArmor;"
+			name=				"[segment(s) of ]Cabbagium armor"
+			attributes=			"cabbageCorp, minorItem"
+			  
+			level=				"2"
+			frequency=			"veryrare"
+			numberAppearing=	"1d4"
+
+			value=				"410"
+			mass=				"5000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 1x"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"50"
+				hpBonus=		"+200, +200, +100, +100"
+
+				repairTech=		"12"
+				installCostAdj=	"150"
+				
+				decay=			"0.10"
+
+				regen=			"1"
+				photoRepair=	"true"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCC2xHardenedCabbagiumArmor;		count:2		extraCost:0}
+					{product:&itCC4xHardenedCabbagiumArmor;		count:4		extraCost:0}
+					{product:&itCC6xHardenedCabbagiumArmor;		count:6		extraCost:0}
+					{product:&itCC8xHardenedCabbagiumArmor;		count:8		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Segment of 1x Hardened Cabbagium Armor -->
+
+	<ItemType UNID="&itCC1xHardenedCabbagiumArmor;"
+			name=				"[segment(s) of ]hardened Cabbagium armor"
+			attributes=			"cabbageCorp, minorItem"
+			  
+			level=				"5"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"2750"
+			mass=				"5000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 1x hardened"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"100"
+				hpBonus=		"+400, +400, +200, +200, +100, +100"
+
+				repairTech=		"13"
+				installCostAdj=	"150"
+				
+				decay=			"0.20"
+
+				regen=			"2"
+				photoRepair=	"true"
+				radiationImmune="true"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCC2xHardenedCabbagiumArmor;		count:2		extraCost:0}
+					{product:&itCC4xHardenedCabbagiumArmor;		count:4		extraCost:0}
+					{product:&itCC6xHardenedCabbagiumArmor;		count:6		extraCost:0}
+					{product:&itCC8xHardenedCabbagiumArmor;		count:8		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Segment of 1x Advanced Cabbagium Armor -->
+
+	<ItemType UNID="&itCC1xAdvancedCabbagiumArmor;"
+			name=				"[segment(s) of ]advanced Cabbagium armor"
+			attributes=			"cabbageCorp, military, minorItem"
+			  
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"18500"
+			mass=				"5000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 1x advanced"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"180"
+				hpBonus=		"***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"14"
+				installCostAdj=	"150"
+				
+				decay=			"0.30"
+
+				regen=			"3"
+				photoRepair=	"true"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCC2xAdvancedCabbagiumArmor;		count:2		extraCost:0}
+					{product:&itCC4xAdvancedCabbagiumArmor;		count:4		extraCost:0}
+					{product:&itCC6xAdvancedCabbagiumArmor;		count:6		extraCost:0}
+					{product:&itCC8xAdvancedCabbagiumArmor;		count:8		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Segment of 1x Experimental Cabbagium Armor -->
+
+	<ItemType UNID="&itCC1xExperimentalCabbagiumArmor;"
+			name=				"[segment(s) of ]experimental Cabbagium armor"
+			attributes=			"cabbageCorp, military, minorItem"
+			  
+			level=				"11"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"123000"
+			mass=				"5000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 1x experimental"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"360"
+				hpBonus=		"***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"15"
+				installCostAdj=	"150"
+				
+				decay=			"0.50"
+
+				regen=			"5"
+				photoRepair=	"true"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCC2xExperimentalCabbagiumArmor;		count:2		extraCost:0}
+					{product:&itCC4xExperimentalCabbagiumArmor;		count:4		extraCost:0}
+					{product:&itCC6xExperimentalCabbagiumArmor;		count:6		extraCost:0}
+					{product:&itCC8xExperimentalCabbagiumArmor;		count:8		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Segment of 1x Theoretical Cabbagium Armor -->
+
+	<ItemType UNID="&itCC1xTheoreticalCabbagiumArmor;"
+			name=				"[segment(s) of ]theoretical Cabbagium armor"
+			attributes=			"alien, cabbageCorp, minorItem"
+			  
+			level=				"14"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"825000"
+			mass=				"5000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 1x theoretical"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"720"
+				hpBonus=		"***, ***, ***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"16"
+				installCostAdj=	"150"
+				
+				decay=			"0.90"
+
+				regen=			"9"
+				photoRepair=	"true"
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCC2xTheoreticalCabbagiumArmor;		count:2		extraCost:0}
+					{product:&itCC4xTheoreticalCabbagiumArmor;		count:4		extraCost:0}
+					{product:&itCC6xTheoreticalCabbagiumArmor;		count:6		extraCost:0}
+					{product:&itCC8xTheoreticalCabbagiumArmor;		count:8		extraCost:0}
+				)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+<!-- ================================================================ -->
+						<!-- Dual Cabbagium Armor -->
+<!-- ================================================================ -->
+
+	<!-- Segment of 2x Cabbagium Armor -->
+
+	<ItemType UNID="&itCC2xCabbagiumArmor;"
+			name=				"[segment(s) of ]2x-layered Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"2"
+			frequency=			"notRandom"
+			numberAppearing=	"1d2"
+
+			value=				"900"
+			mass=				"10000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 2x"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"100"
+				hpBonus=		"+200, +200, +100, +100"
+
+				repairTech=		"12"
+				installCostAdj=	"150"
+				
+				decay=			"0.20"
+
+				regen=			"1"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 2x Hardened Cabbagium Armor -->
+
+	<ItemType UNID="&itCC2xHardenedCabbagiumArmor;"
+			name=				"[segment(s) of ]2x-layered hardened Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"5"
+			frequency=			"veryrare"
+			numberAppearing=	"1d2"
+
+			value=				"5900"
+			mass=				"10000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 2x hardened"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"200"
+				hpBonus=		"+400, +400, +200, +200, +100, +100"
+
+				repairTech=		"13"
+				installCostAdj=	"150"
+				
+				decay=			"0.40"
+
+				regen=			"2"
+				photoRepair=	"true"
+				radiationImmune="true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 2x Advanced Cabbagium Armor -->
+
+	<ItemType UNID="&itCC2xAdvancedCabbagiumArmor;"
+			name=				"[segment(s) of ]2x-layered advanced Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			  
+			level=				"8"
+			frequency=			"veryrare"
+			numberAppearing=	"1d2"
+
+			value=				"40000"
+			mass=				"10000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 2x advanced"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"360"
+				hpBonus=		"***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"14"
+				installCostAdj=	"150"
+				
+				decay=			"0.60"
+
+				regen=			"3"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 2x Experimental Cabbagium Armor -->
+
+	<ItemType UNID="&itCC2xExperimentalCabbagiumArmor;"
+			name=				"[segment(s) of ]2x-layered experimental Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			  
+			level=				"11"
+			frequency=			"veryrare"
+			numberAppearing=	"1d2"
+
+			value=				"264000"
+			mass=				"10000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 2x experimental"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="192" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"720"
+				hpBonus=		"***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"15"
+				installCostAdj=	"150"
+				
+				decay=			"1.00"
+
+				regen=			"5"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 2x Theoretical Cabbagium Armor -->
+
+	<ItemType UNID="&itCC2xTheoreticalCabbagiumArmor;"
+			name=				"[segment(s) of ]2x-layered theoretical Cabbagium armor"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"14"
+			frequency=			"veryrare"
+			numberAppearing=	"1d2"
+
+			value=				"1750000"
+			mass=				"10000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 2x theoretical"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="192" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"1440"
+				hpBonus=		"***, ***, ***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"16"
+				installCostAdj=	"150"
+				
+				decay=			"1.80"
+
+				regen=			"9"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+<!-- ================================================================ -->
+						<!-- Quad Cabbagium Armor -->
+<!-- ================================================================ -->
+
+	<!-- Segment of 4x Cabbagium Armor -->
+
+	<ItemType UNID="&itCC4xCabbagiumArmor;"
+			name=				"[segment(s) of ]4x-layered Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"2"
+			frequency=			"notRandom"
+
+			value=				"1900"
+			mass=				"20000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 4x"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"200"
+				hpBonus=		"+200, +200, +100, +100"
+
+				repairTech=		"12"
+				installCostAdj=	"150"
+				
+				decay=			"0.40"
+
+				regen=			"1"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 4x Hardened Cabbagium Armor -->
+
+	<ItemType UNID="&itCC4xHardenedCabbagiumArmor;"
+			name=				"[segment(s) of ]4x-layered hardened Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"5"
+			frequency=			"notRandom"
+
+			value=				"12700"
+			mass=				"20000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 4x hardened"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"400"
+				hpBonus=		"+400, +400, +200, +200, +100, +100"
+
+				repairTech=		"13"
+				installCostAdj=	"150"
+				
+				decay=			"0.80"
+
+				regen=			"2"
+				photoRepair=	"true"
+				radiationImmune="true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 4x Advanced Cabbagium Armor -->
+
+	<ItemType UNID="&itCC4xAdvancedCabbagiumArmor;"
+			name=				"[segment(s) of ]4x-layered advanced Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			  
+			level=				"8"
+			frequency=			"notRandom"
+
+			value=				"85000"
+			mass=				"20000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 4x advanced"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"720"
+				hpBonus=		"***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"14"
+				installCostAdj=	"150"
+				
+				decay=			"1.20"
+
+				regen=			"3"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 4x Experimental Cabbagium Armor -->
+
+	<ItemType UNID="&itCC4xExperimentalCabbagiumArmor;"
+			name=				"[segment(s) of ]4x-layered experimental Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			  
+			level=				"11"
+			frequency=			"notRandom"
+
+			value=				"566000"
+			mass=				"20000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 4x experimental"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"1440"
+				hpBonus=		"***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"15"
+				installCostAdj=	"150"
+				
+				decay=			"2.00"
+
+				regen=			"5"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 4x Theoretical Cabbagium Armor -->
+
+	<ItemType UNID="&itCC4xTheoreticalCabbagiumArmor;"
+			name=				"[segment(s) of ]4x-layered theoretical Cabbagium armor"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"14"
+			frequency=			"notRandom"
+
+			value=				"3800000"
+			mass=				"20000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 4x theoretical"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="288" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"2880"
+				hpBonus=		"***, ***, ***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"16"
+				installCostAdj=	"150"
+				
+				decay=			"3.60"
+
+				regen=			"9"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+<!-- ================================================================ -->
+						<!-- Hex Cabbagium Armor -->
+<!-- ================================================================ -->
+
+	<!-- Segment of 6x Cabbagium Armor -->
+
+	<ItemType UNID="&itCC6xCabbagiumArmor;"
+			name=				"[segment(s) of ]6x-layered Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"2"
+			frequency=			"notRandom"
+
+			value=				"3000"
+			mass=				"30000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 6x"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"300"
+				hpBonus=		"+200, +200, +100, +100"
+
+				repairTech=		"12"
+				installCostAdj=	"150"
+				
+				decay=			"0.60"
+
+				regen=			"1"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 6x Hardened Cabbagium Armor -->
+
+	<ItemType UNID="&itCC6xHardenedCabbagiumArmor;"
+			name=				"[segment(s) of ]6x-layered hardened Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"5"
+			frequency=			"notRandom"
+
+			value=				"20000"
+			mass=				"30000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 6x hardened"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="384" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"600"
+				hpBonus=		"+400, +400, +200, +200, +100, +100"
+
+				repairTech=		"13"
+				installCostAdj=	"150"
+				
+				decay=			"1.20"
+
+				regen=			"2"
+				photoRepair=	"true"
+				radiationImmune="true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 6x Advanced Cabbagium Armor -->
+
+	<ItemType UNID="&itCC6xAdvancedCabbagiumArmor;"
+			name=				"[segment(s) of ]6x-layered advanced Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			  
+			level=				"8"
+			frequency=			"notRandom"
+
+			value=				"133000"
+			mass=				"30000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 6x advanced"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="384" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"1080"
+				hpBonus=		"***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"14"
+				installCostAdj=	"150"
+				
+				decay=			"1.80"
+
+				regen=			"3"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 6x Experimental Cabbagium Armor -->
+
+	<ItemType UNID="&itCC6xExperimentalCabbagiumArmor;"
+			name=				"[segment(s) of ]6x-layered experimental Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			  
+			level=				"11"
+			frequency=			"notRandom"
+
+			value=				"890000"
+			mass=				"30000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 6x experimental"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="384" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"2160"
+				hpBonus=		"***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"15"
+				installCostAdj=	"150"
+				
+				decay=			"3.00"
+
+				regen=			"5"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 6x Theoretical Cabbagium Armor -->
+
+	<ItemType UNID="&itCC6xTheoreticalCabbagiumArmor;"
+			name=				"[segment(s) of ]6x-layered theoretical Cabbagium armor"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"14"
+			frequency=			"notRandom"
+
+			value=				"5900000"
+			mass=				"30000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 6x theoretical"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="384" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"4320"
+				hpBonus=		"***, ***, ***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"16"
+				installCostAdj=	"150"
+				
+				decay=			"5.40"
+
+				regen=			"9"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+<!-- ================================================================ -->
+						<!-- Hex Cabbagium Armor -->
+<!-- ================================================================ -->
+
+	<!-- Segment of 8x Cabbagium Armor -->
+
+	<ItemType UNID="&itCC8xCabbagiumArmor;"
+			name=				"[segment(s) of ]8x-layered Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"2"
+			frequency=			"notRandom"
+
+			value=				"4000"
+			mass=				"40000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 8x"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="480" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"400"
+				hpBonus=		"+200, +200, +100, +100"
+
+				repairTech=		"12"
+				installCostAdj=	"150"
+				
+				decay=			"0.80"
+
+				regen=			"1"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 8x Hardened Cabbagium Armor -->
+
+	<ItemType UNID="&itCC8xHardenedCabbagiumArmor;"
+			name=				"[segment(s) of ]8x-layered hardened Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"5"
+			frequency=			"notRandom"
+
+			value=				"27000"
+			mass=				"40000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 8x hardened"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="480" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"800"
+				hpBonus=		"+400, +400, +200, +200, +100, +100"
+
+				repairTech=		"13"
+				installCostAdj=	"150"
+				
+				decay=			"1.60"
+
+				regen=			"2"
+				photoRepair=	"true"
+				radiationImmune="true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 8x Advanced Cabbagium Armor -->
+
+	<ItemType UNID="&itCC8xAdvancedCabbagiumArmor;"
+			name=				"[segment(s) of ]8x-layered advanced Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			  
+			level=				"8"
+			frequency=			"notRandom"
+
+			value=				"180000"
+			mass=				"40000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 8x advanced"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="480" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"1440"
+				hpBonus=		"***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"14"
+				installCostAdj=	"150"
+				
+				decay=			"2.40"
+
+				regen=			"3"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 8x Experimental Cabbagium Armor -->
+
+	<ItemType UNID="&itCC8xExperimentalCabbagiumArmor;"
+			name=				"[segment(s) of ]8x-layered experimental Cabbagium armor"
+			attributes=			"cabbageCorp, cabbageNotStandard, military, minorItem"
+			  
+			level=				"11"
+			frequency=			"notRandom"
+
+			value=				"1200000"
+			mass=				"40000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 8x experimental"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="480" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"2880"
+				hpBonus=		"***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"15"
+				installCostAdj=	"150"
+				
+				decay=			"4.00"
+
+				regen=			"5"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+	<!-- Segment of 8x Theoretical Cabbagium Armor -->
+
+	<ItemType UNID="&itCC8xTheoreticalCabbagiumArmor;"
+			name=				"[segment(s) of ]8x-layered theoretical Cabbagium armor"
+			attributes=			"alien, cabbageCorp, cabbageNotStandard, minorItem"
+			  
+			level=				"14"
+			frequency=			"notRandom"
+
+			value=				"8100000"
+			mass=				"40000"
+			  
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+
+			sortName=			"Cabbagium armor, 8x theoretical"
+	>
+
+		<Image imageID="&rsCCArmorCabbagium;" imageX="480" imageY="384" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"5760"
+				hpBonus=		"***, ***, ***, ***, ***, ***, +400, +400, +200, +200, +100, +100"
+
+				repairTech=		"16"
+				installCostAdj=	"150"
+				
+				decay=			"7.20"
+
+				regen=			"9"
+				photoRepair=	"true"
+		/>
+	</ItemType>
+
+</TranscendenceModule>

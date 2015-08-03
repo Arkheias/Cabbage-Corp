@@ -42,6 +42,21 @@
 					{ item:&itCCOmniSavoyM2900Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM2900Howitzer; count:1 } )												extraCost:0 }
 					{ item:&itCCOmniSavoyM5600Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM5600Howitzer; count:1 } )												extraCost:0 }
 					{ item:&itCCOmniSavoyM11000Howitzer;		enhancement:Nil		components:( { item:&itCCSavoyM11000Howitzer; count:1 } )												extraCost:0 }
+					{ item:&itCCAdvSavoyM1Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM1Howitzer; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvSavoyM2Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM2Howitzer; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvSavoyM4Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM4Howitzer; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvSavoyM8Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM8Howitzer; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvSavoyM15Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM15Howitzer; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvSavoyM30Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM30Howitzer; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvSavoyM56Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM56Howitzer; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvSavoyM110Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM110Howitzer; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvSavoyM210Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM210Howitzer; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvSavoyM400Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM400Howitzer; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvSavoyM770Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM770Howitzer; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvSavoyM1500Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM1500Howitzer; count:1 } )												extraCost:0 }
+					{ item:&itCCAdvSavoyM2900Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM2900Howitzer; count:1 } )												extraCost:0 }
+					{ item:&itCCAdvSavoyM5600Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM5600Howitzer; count:1 } )												extraCost:0 }
+					{ item:&itCCAdvSavoyM11000Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM11000Howitzer; count:1 } )												extraCost:0 }
 					{ item:&itCCAuxSavoyM1Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM1Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSavoyM2Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM2Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSavoyM4Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM4Howitzer; count:1 } )													extraCost:0 }
@@ -157,16 +172,26 @@
 			
 			<ArmorRecipes>
 				(
-					{ item:&itCC2xOrganicArmor;					enhancement:Nil		components:( { item:&itCC1xOrganicArmor; count:2 } )													extraCost:0 }
-					{ item:&itCC4xOrganicArmor;					enhancement:Nil		components:( { item:&itCC2xOrganicArmor; count:2 } )													extraCost:0 }
-					{ item:&itCC2xHardenedOrganicArmor;			enhancement:Nil		components:( { item:&itCC1xHardenedOrganicArmor; count:2 } )											extraCost:0 }
-					{ item:&itCC4xHardenedOrganicArmor;			enhancement:Nil		components:( { item:&itCC2xHardenedOrganicArmor; count:2 } )											extraCost:0 }
-					{ item:&itCC2xAdvancedOrganicArmor;			enhancement:Nil		components:( { item:&itCC1xAdvancedOrganicArmor; count:2 } )											extraCost:0 }
-					{ item:&itCC4xAdvancedOrganicArmor;			enhancement:Nil		components:( { item:&itCC2xAdvancedOrganicArmor; count:2 } )											extraCost:0 }
-					{ item:&itCC2xExperimentalOrganicArmor;		enhancement:Nil		components:( { item:&itCC1xExperimentalOrganicArmor; count:2 } )										extraCost:0 }
-					{ item:&itCC4xExperimentalOrganicArmor;		enhancement:Nil		components:( { item:&itCC2xExperimentalOrganicArmor; count:2 } )										extraCost:0 }
-					{ item:&itCC2xTheoreticalOrganicArmor;		enhancement:Nil		components:( { item:&itCC1xTheoreticalOrganicArmor; count:2 } )											extraCost:0 }
-					{ item:&itCC4xTheoreticalOrganicArmor;		enhancement:Nil		components:( { item:&itCC2xTheoreticalOrganicArmor; count:2 } )											extraCost:0 }
+					{ item:&itCC2xCabbagiumArmor;				enhancement:Nil		components:( { item:&itCC1xCabbagiumArmor; count:2 } )													extraCost:0 }
+					{ item:&itCC4xCabbagiumArmor;				enhancement:Nil		components:( { item:&itCC2xCabbagiumArmor; count:2 } )													extraCost:0 }
+					{ item:&itCC6xCabbagiumArmor;				enhancement:Nil		components:( { item:&itCC2xCabbagiumArmor; count:3 } )													extraCost:0 }
+					{ item:&itCC8xCabbagiumArmor;				enhancement:Nil		components:( { item:&itCC4xCabbagiumArmor; count:2 } )													extraCost:0 }
+					{ item:&itCC2xHardenedCabbagiumArmor;		enhancement:Nil		components:( { item:&itCC1xHardenedCabbagiumArmor; count:2 } )											extraCost:0 }
+					{ item:&itCC4xHardenedCabbagiumArmor;		enhancement:Nil		components:( { item:&itCC2xHardenedCabbagiumArmor; count:2 } )											extraCost:0 }
+					{ item:&itCC6xHardenedCabbagiumArmor;		enhancement:Nil		components:( { item:&itCC2xHardenedCabbagiumArmor; count:3 } )											extraCost:0 }
+					{ item:&itCC8xHardenedCabbagiumArmor;		enhancement:Nil		components:( { item:&itCC4xHardenedCabbagiumArmor; count:2 } )											extraCost:0 }
+					{ item:&itCC2xAdvancedCabbagiumArmor;		enhancement:Nil		components:( { item:&itCC1xAdvancedCabbagiumArmor; count:2 } )											extraCost:0 }
+					{ item:&itCC4xAdvancedCabbagiumArmor;		enhancement:Nil		components:( { item:&itCC2xAdvancedCabbagiumArmor; count:2 } )											extraCost:0 }
+					{ item:&itCC6xAdvancedCabbagiumArmor;		enhancement:Nil		components:( { item:&itCC2xAdvancedCabbagiumArmor; count:3 } )											extraCost:0 }
+					{ item:&itCC8xAdvancedCabbagiumArmor;		enhancement:Nil		components:( { item:&itCC4xAdvancedCabbagiumArmor; count:2 } )											extraCost:0 }
+					{ item:&itCC2xExperimentalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC1xExperimentalCabbagiumArmor; count:2 } )										extraCost:0 }
+					{ item:&itCC4xExperimentalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC2xExperimentalCabbagiumArmor; count:2 } )										extraCost:0 }
+					{ item:&itCC6xExperimentalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC2xExperimentalCabbagiumArmor; count:3 } )										extraCost:0 }
+					{ item:&itCC8xExperimentalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC4xExperimentalCabbagiumArmor; count:2 } )										extraCost:0 }
+					{ item:&itCC2xTheoreticalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC1xTheoreticalCabbagiumArmor; count:2 } )										extraCost:0 }
+					{ item:&itCC4xTheoreticalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC2xTheoreticalCabbagiumArmor; count:2 } )										extraCost:0 }
+					{ item:&itCC6xTheoreticalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC2xTheoreticalCabbagiumArmor; count:3 } )										extraCost:0 }
+					{ item:&itCC8xTheoreticalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC4xTheoreticalCabbagiumArmor; count:2 } )										extraCost:0 }
 					
 					{ item:&itCC2xSivayaArmor;					enhancement:Nil		components:( { item:&itCC1xSivayaArmor; count:2 } )														extraCost:0 }
 					{ item:&itCC4xSivayaArmor;					enhancement:Nil		components:( { item:&itCC2xSivayaArmor; count:2 } )														extraCost:0 }
@@ -178,17 +203,6 @@
 					{ item:&itCC4xExperimentalSivayaArmor;		enhancement:Nil		components:( { item:&itCC2xExperimentalSivayaArmor; count:2 } )											extraCost:0 }
 					{ item:&itCC2xTheoreticalSivayaArmor;		enhancement:Nil		components:( { item:&itCC1xTheoreticalSivayaArmor; count:2 } )											extraCost:0 }
 					{ item:&itCC4xTheoreticalSivayaArmor;		enhancement:Nil		components:( { item:&itCC2xTheoreticalSivayaArmor; count:2 } )											extraCost:0 }
-					
-					{ item:&itCC2xTriniumArmor;					enhancement:Nil		components:( { item:&itCC1xTriniumArmor; count:2 } )													extraCost:0 }
-					{ item:&itCC4xTriniumArmor;					enhancement:Nil		components:( { item:&itCC2xTriniumArmor; count:2 } )													extraCost:0 }
-					{ item:&itCC2xHardenedTriniumArmor;			enhancement:Nil		components:( { item:&itCC1xHardenedTriniumArmor; count:2 } )											extraCost:0 }
-					{ item:&itCC4xHardenedTriniumArmor;			enhancement:Nil		components:( { item:&itCC2xHardenedTriniumArmor; count:2 } )											extraCost:0 }
-					{ item:&itCC2xAdvancedTriniumArmor;			enhancement:Nil		components:( { item:&itCC1xAdvancedTriniumArmor; count:2 } )											extraCost:0 }
-					{ item:&itCC4xAdvancedTriniumArmor;			enhancement:Nil		components:( { item:&itCC2xAdvancedTriniumArmor; count:2 } )											extraCost:0 }
-					{ item:&itCC2xExperimentalTriniumArmor;		enhancement:Nil		components:( { item:&itCC1xExperimentalTriniumArmor; count:2 } )										extraCost:0 }
-					{ item:&itCC4xExperimentalTriniumArmor;		enhancement:Nil		components:( { item:&itCC2xExperimentalTriniumArmor; count:2 } )										extraCost:0 }
-					{ item:&itCC2xTheoreticalTriniumArmor;		enhancement:Nil		components:( { item:&itCC1xTheoreticalTriniumArmor; count:2 } )											extraCost:0 }
-					{ item:&itCC4xTheoreticalTriniumArmor;		enhancement:Nil		components:( { item:&itCC2xTheoreticalTriniumArmor; count:2 } )											extraCost:0 }
 					
 					{ item:&itCC2xStealthArmor;					enhancement:Nil		components:( { item:&itCC1xStealthArmor; count:2 } )													extraCost:0 }
 					{ item:&itCC4xStealthArmor;					enhancement:Nil		components:( { item:&itCC2xStealthArmor; count:2 } )													extraCost:0 }
@@ -244,6 +258,9 @@
 					
 					{ item:&itCCAdvancedSlamCannon;				enhancement:Nil		components:( { item:&itSlamCannon; count:1 } )															extraCost:0 }
 					{ item:&itCCAdvancedHeavySlamCannon;		enhancement:Nil		components:( { item:&itHeavySlamCannon; count:1 } )														extraCost:0 }
+					
+					{ item:&itCCMicrosaurCondemnationPod;		enhancement:Nil		components:( { item:&itSeismicScannerPod; count:1 } )													extraCost:0 }
+					{ item:&itCCAdvMicrosaurCondemnationPod;	enhancement:Nil		components:( { item:&itAdvancedScannerPod; count:1 } )													extraCost:0 }
 				)
 			</IllegalRecipes>
 			
@@ -333,44 +350,92 @@
 		<Events>
 			<GetGlobalDockScreen>
 				(switch
-					; This only applies to Cabbage Corp stations
+				
+					;	This only applies to Cabbage Corp stations
+					
 					(not (objMatches gSource Nil "sTAV +Cabbage;"))
 						Nil
 						
-					; If the ship is radioactive then we refuse docking
+					;	If the ship is radioactive then we refuse docking
+					
 					(shpIsRadioactive gPlayerShip)
 						(if (objHasAttribute gSource "corporateDecon")
 							(list &dsCommonwealthDecon; 10)
 							(list &dsRefuseContamination; 10)
 						)
 						
-					; If the player has committed crimes, then they're in trouble
+					;	If the player has committed crimes, then they're in trouble
+					
 					(geq (int (objGetData gPlayerShip "CCCrimeSeverity")) 2)
 						(list &dsCCCabbageExecution; 8)
 						
 					Nil
 				)
 			</GetGlobalDockScreen>
+			
+			<OnGlobalPlayerEnteredSystem>
+			;	This script runs every time because the stations reset their inventories every time you enter the system.
+			;	This script seems to be unreliable, it may not run if you spawn in the system and may not properly detect
+			;	  the system name.
+			
+				(block Nil
+					(enum (sysFindObject Nil "T +unid:0x00102003;") theMiningStation
+					;	Applies to every Commonwealth mining colony in the system
+					
+						(block Nil
+							(objEnumItems theMiningStation "* +cabbageCorp;" theMiningItem
+								(objRemoveItem theMiningStation theMiningItem)
+							)
+							;	Remove all Cabbage Corp items to start from scratch
+							
+							(if (eq (sysGetName) "Eridani")
+								(block Nil
+									(objAddRandomItems theMiningStation &trCCMiningWeapon1; (random 1 3))
+									(objAddRandomItems theMiningStation &trCCMiningDevice1; (random 1 2))
+								)
+								;	Adds 1d3 random mining weapons and 1d2 random mining devices
+								;	  between levels 1 and 3 if the system is "Eridani"
+								
+								(block Nil
+									(objAddRandomItems theMiningStation &trCCMiningWeapon2; (random 1 3))
+									(objAddRandomItems theMiningStation &trCCMiningDevice2; (random 1 3))
+								)
+								;	Adds 1d3 random mining weapons and 1d3 random mining devices
+								;	  between levels 1 and 5 if the system is not "Eridani"
+							)
+						)
+					)
+					(enum (sysFindObject Nil "T +unid:0x008102D2;") theMiningStation
+					;	Applies to every IMU Local station in the system
+					
+						(block Nil
+							(objEnumItems theMiningStation "* +cabbageCorp;" theMiningItem
+								(objRemoveItem theMiningStation theMiningItem)
+							)
+							;	Remove all Cabbage Corp items to start from scratch
+							
+							(block Nil
+								(objAddRandomItems theMiningStation &trCCMiningWeapon3; (random 1 4))
+								(objAddRandomItems theMiningStation &trCCMiningDevice3; (random 1 4))
+							)
+							;	Adds 1d4 random mining weapons and 1d4 random mining devices
+							;	between levels 4 and 8
+						)
+					)
+					(sysSetData "CabbageMiningBalance" 1)
+				)
+			</OnGlobalPlayerEnteredSystem>
 		</Events>
 		
 		<DisplayAttributes>
-			; Applies company name or generic label to items
+			;	Applies company name or generic label to items
 			<ItemAttribute label="Cabbage Corp"			criteria="* +cabbageCorp;"/>
 			
-			<ItemAttribute label="no device slots"		labelType="advantage"		criteria="* +cabbageNoSlots;"/>
-			
-			;This is used for external devices that still require one device slot
-			<ItemAttribute label="one device slot"									criteria="* +cabbageOneSlot;"/>
-			
-			<ItemAttribute label="two device slots"		labelType="disadvantage"	criteria="* +cabbageTwoSlots;"/>
-			
-			;This is used for devices that can be modified, to differentiate between modified and unmodified versions
+			;	This is used for devices that can be modified, to differentiate between modified and unmodified versions
 			<ItemAttribute label="no containment"		labelType="disadvantage"	criteria="* +cabbageNoContainment;"/>
 			
-			;Things man was not meant to know
+			;	Things man was not meant to know
 			<ItemAttribute label="political"			labelType="disadvantage"	criteria="* +cabbagePolitical;"/>
 		</DisplayAttributes>
-		
 	</Sovereign>
-
 </TranscendenceModule>

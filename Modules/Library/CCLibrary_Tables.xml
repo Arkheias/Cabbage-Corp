@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<TranscendenceModule>
+
+	<!-- Commonwealth mining colonies in Eridani -->
+
+	<ItemTable UNID="&trCCMiningWeapon1;">
+		<RandomItem	
+				criteria=			"w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale; -NotStandard"
+				levelFrequency=		"ucu-- -----"
+		/>
+	</ItemTable>	
+	
+	<ItemTable UNID="&trCCMiningDevice1;">
+		<RandomItem	
+				criteria=			"d~w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale; -NotStandard"
+				levelFrequency=		"ucu-- -----"
+		/>
+	</ItemTable>	
+	
+	<!-- Commonwealth mining colonies elsewhere -->
+
+	<ItemTable UNID="&trCCMiningWeapon2;">
+		<RandomItem	
+				criteria=			"w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale; -NotStandard"
+				levelFrequency=		"rucur -----"
+		/>
+	</ItemTable>	
+	
+	<ItemTable UNID="&trCCMiningDevice2;">
+		<RandomItem	
+				criteria=			"d~w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale; -NotStandard"
+				levelFrequency=		"rucur -----"
+		/>
+	</ItemTable>
+	
+	<!-- IMU Local stations -->
+
+	<ItemTable UNID="&trCCMiningWeapon3;">
+		<RandomItem	
+				criteria=			"w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale"
+				levelFrequency=		"---ru cur--"
+		/>
+	</ItemTable>	
+	
+	<ItemTable UNID="&trCCMiningDevice3;">
+		<RandomItem	
+				criteria=			"d~w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale"
+				levelFrequency=		"---ru cur--"
+		/>
+	</ItemTable>
+	
+</TranscendenceModule>

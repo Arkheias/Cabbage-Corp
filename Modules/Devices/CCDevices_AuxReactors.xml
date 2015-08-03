@@ -13,9 +13,9 @@
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"1"
-			frequency=			"veryrare"
-			value=				"900"
+			frequency=			"notRandom"
 			
+			value=				"900"
 			mass=				"2000"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 5MW, at the cost of slightly reduced efficiency."
@@ -28,7 +28,7 @@
 		/>
 		
 		<StaticData>
-			<CCAuxReactor>{powerUse:50		efficiency:95}</CCAuxReactor>
+			<CCAuxReactor>{powerUse:50		efficiency:85}</CCAuxReactor>
 		</StaticData>
 	</ItemType>
 
@@ -40,9 +40,9 @@
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"2"
-			frequency=			"veryrare"
-			value=				"2100"
+			frequency=			"notRandom"
 			
+			value=				"2100"
 			mass=				"2500"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 10MW, at the cost of slightly reduced efficiency."
@@ -55,7 +55,7 @@
 		/>
 		
 		<StaticData>
-			<CCAuxReactor>{powerUse:100		efficiency:95}</CCAuxReactor>
+			<CCAuxReactor>{powerUse:100		efficiency:85}</CCAuxReactor>
 		</StaticData>
 	</ItemType>
 
@@ -68,8 +68,8 @@
 			
 			level=				"3"
 			frequency=			"veryrare"
-			value=				"4000"
 			
+			value=				"4000"
 			mass=				"3000"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 17MW, at the cost of slightly reduced efficiency."
@@ -82,7 +82,7 @@
 		/>
 		
 		<StaticData>
-			<CCAuxReactor>{powerUse:170		efficiency:95}</CCAuxReactor>
+			<CCAuxReactor>{powerUse:170		efficiency:85}</CCAuxReactor>
 		</StaticData>
 	</ItemType>
 
@@ -95,8 +95,8 @@
 			
 			level=				"4"
 			frequency=			"veryrare"
-			value=				"8200"
 			
+			value=				"8200"
 			mass=				"3500"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 31MW, at the cost of slightly reduced efficiency."
@@ -109,7 +109,7 @@
 		/>
 		
 		<StaticData>
-			<CCAuxReactor>{powerUse:310		efficiency:95}</CCAuxReactor>
+			<CCAuxReactor>{powerUse:310		efficiency:85}</CCAuxReactor>
 		</StaticData>
 	</ItemType>
 
@@ -122,8 +122,8 @@
 			
 			level=				"5"
 			frequency=			"veryrare"
-			value=				"17400"
 			
+			value=				"17400"
 			mass=				"4000"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 57MW, at the cost of slightly reduced efficiency."
@@ -136,7 +136,7 @@
 		/>
 		
 		<StaticData>
-			<CCAuxReactor>{powerUse:570		efficiency:95}</CCAuxReactor>
+			<CCAuxReactor>{powerUse:570		efficiency:85}</CCAuxReactor>
 		</StaticData>
 	</ItemType>
 
@@ -149,8 +149,8 @@
 			
 			level=				"6"
 			frequency=			"notRandom"
-			value=				"37000"
 			
+			value=				"37000"
 			mass=				"4500"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 100MW, at the cost of slightly reduced efficiency."
@@ -163,7 +163,7 @@
 		/>
 		
 		<StaticData>
-			<CCAuxReactor>{powerUse:1000		efficiency:95}</CCAuxReactor>
+			<CCAuxReactor>{powerUse:1000		efficiency:90}</CCAuxReactor>
 		</StaticData>
 	</ItemType>
 
@@ -176,8 +176,8 @@
 			
 			level=				"7"
 			frequency=			"notRandom"
-			value=				"73000"
 			
+			value=				"73000"
 			mass=				"5000"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 150MW, at the cost of slightly reduced efficiency."
@@ -190,7 +190,7 @@
 		/>
 		
 		<StaticData>
-			<CCAuxReactor>{powerUse:1700		efficiency:95}</CCAuxReactor>
+			<CCAuxReactor>{powerUse:1700		efficiency:90}</CCAuxReactor>
 		</StaticData>
 	</ItemType>
 
@@ -203,8 +203,8 @@
 			
 			level=				"8"
 			frequency=			"notRandom"
-			value=				"141000"
 			
+			value=				"141000"
 			mass=				"5500"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 310MW, at the cost of slightly reduced efficiency."
@@ -217,7 +217,7 @@
 		/>
 		
 		<StaticData>
-			<CCAuxReactor>{powerUse:3100		efficiency:95}</CCAuxReactor>
+			<CCAuxReactor>{powerUse:3100		efficiency:90}</CCAuxReactor>
 		</StaticData>
 	</ItemType>
 
@@ -230,8 +230,8 @@
 			
 			level=				"9"
 			frequency=			"notRandom"
-			value=				"310000"
 			
+			value=				"310000"
 			mass=				"6000"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 560MW, at the cost of slightly reduced efficiency."
@@ -244,7 +244,7 @@
 		/>
 		
 		<StaticData>
-			<CCAuxReactor>{powerUse:5600		efficiency:95}</CCAuxReactor>
+			<CCAuxReactor>{powerUse:5600		efficiency:90}</CCAuxReactor>
 		</StaticData>
 	</ItemType>
 
@@ -257,8 +257,8 @@
 			
 			level=				"10"
 			frequency=			"notRandom"
-			value=				"620000"
 			
+			value=				"620000"
 			mass=				"6500"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 1GW, at the cost of slightly reduced efficiency."
@@ -271,7 +271,7 @@
 		/>
 		
 		<StaticData>
-			<CCAuxReactor>{powerUse:10000		efficiency:95}</CCAuxReactor>
+			<CCAuxReactor>{powerUse:10000		efficiency:90}</CCAuxReactor>
 		</StaticData>
 	</ItemType>
 
@@ -284,8 +284,8 @@
 			
 			level=				"11"
 			frequency=			"notRandom"
-			value=				"1300000"
 			
+			value=				"1300000"
 			mass=				"7000"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 1.7GW, at the cost of slightly reduced efficiency."
@@ -311,8 +311,8 @@
 			
 			level=				"12"
 			frequency=			"notRandom"
-			value=				"2600000"
 			
+			value=				"2600000"
 			mass=				"7500"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 3GW, at the cost of slightly reduced efficiency."
@@ -338,8 +338,8 @@
 			
 			level=				"13"
 			frequency=			"notRandom"
-			value=				"5400000"
 			
+			value=				"5400000"
 			mass=				"8000"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 5.5GW, at the cost of slightly reduced efficiency."
@@ -365,8 +365,8 @@
 			
 			level=				"14"
 			frequency=			"notRandom"
-			value=				"11400000"
 			
+			value=				"11400000"
 			mass=				"8500"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 10GW, at the cost of slightly reduced efficiency."
@@ -392,8 +392,8 @@
 			
 			level=				"15"
 			frequency=			"notRandom"
-			value=				"23000000"
 			
+			value=				"23000000"
 			mass=				"9000"
 			
 			description=		"This auxiliary reactor increases the total power you can extract from your primary reactor by 18GW, at the cost of slightly reduced efficiency."
@@ -406,7 +406,7 @@
 		/>
 		
 		<StaticData>
-			<CCAuxReactor>{powerUse:180000		efficiency:95}</CCAuxReactor>
+			<CCAuxReactor>{powerUse:180000		efficiency:90}</CCAuxReactor>
 		</StaticData>
 	</ItemType>
 	

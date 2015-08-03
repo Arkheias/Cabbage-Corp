@@ -1,6 +1,8 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
+	<!-- Color Coded Shield HUD -->
+
 	<Effect UNID="&efCCShieldsHUD;">
 		<Variants>
 			<Effect maxValue="0">
@@ -28,6 +30,970 @@
 			</Effect>
 		</Variants>
 	</Effect>
+
+	<!-- Ore Detection Effect -->
+	
+	<Effect UNID="&efCCOreMarker;">
+		<StarBurst
+					style= "plain"
+					lifetime= "60"
+					spikeCount= "4d6"
+					spikeLength= "6d6"
+					primaryColor= "0x00, 0xff, 0x00"
+					secondaryColor= "0x00, 0x80, 0x00"
+		/>
+		<Shockwave
+					speed= "12"
+					lifetime= "40"
+					fadeStart= "15"
+					style= "glowRing"
+					width= "1"
+					glowSize= "1"
+					primaryColor= "0x00, 0xaa, 0x00"
+					secondaryColor= "0x00, 0xaa, 0x00"
+		/>
+	</Effect>
+
+	<!-- Microsaur Detection Effect -->
+	
+	<Effect UNID="&efCCMicrosaurMarker;">
+		<StarBurst
+					style= "plain"
+					lifetime= "60"
+					spikeCount= "4d6"
+					spikeLength= "6d6"
+					primaryColor= "0xff, 0x00, 0x00"
+					secondaryColor= "0x80, 0x00, 0x00"
+		/>
+		<Shockwave
+					speed= "12"
+					lifetime= "40"
+					fadeStart= "15"
+					style= "glowRing"
+					width= "1"
+					glowSize= "1"
+					primaryColor= "0xaa, 0x00, 0x00"
+					secondaryColor= "0xaa, 0x00, 0x00"
+		/>
+	</Effect>
+	
+	<OverlayType UNID="&ovCCMicrosaurDetectionCount;"
+			attributes=		"microsaurCount"
+	>
+		<Counter style=		"flag"
+				color=		"#5ff12a"
+				showOnMap=	"true"
+		/>
+	
+		<Events>
+			<OnUpdate>
+				(block (
+					(oreFound (objGetItems gSource "t +unid:0x00004033;"))
+					(tons (or 
+						(map oreFound 'reduceSum theItem (itmGetCount theItem))
+						0
+						))
+					)
+					
+					(if (= tons 0)
+						(objRemoveOverlay gSource aOverlayID)
+						(block Nil
+							(objSetOverlayProperty gSource aOverlayID 'counter tons)
+							(objSetOverlayProperty gSource aOverlayID 'counterLabel (typTranslate &ovCCMicrosaurDetectionCount; 'msgTonsOfOre { count:tons }))
+						)
+					)
+				)
+			</OnUpdate>
+		</Events>
+	
+		<Language>
+			<Text id="msgNoOreFound">"No Microsaurs found"</Text>
+			<Text id="msgScanning">"Scanning..."</Text>
+			<Text id="msgTonsOfOre">
+				(if (= (@ gData 'count) 1)
+					"Microsaur"
+					"Microsaurs"
+				)
+			</Text>
+		</Language>
+	</OverlayType>
+	
+
+<!-- ================================================================ -->
+					<!-- Reactor Overload Effects -->
+<!-- ================================================================ -->
+
+	<!-- Reactor Explosion 1 -->
+
+	<ItemType UNID="&vtCCReactorExplosion1;"
+			name=				"reactor explosion 1"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:4d4; momentum1; radiation1; WMD1"
+				
+				hitPoints=		"25"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsAG96;"
+						imageX="0"
+						imageY="0"
+						imageWidth="96"
+						imageHeight="96"
+						imageFrameCount="16"
+						imageTicksPerFrame="2"/>
+						
+				<Flare
+						style=			"fadingBlast"
+						radius=			"140"
+						primaryColor=	"0xff, 0xff, 0xf0"
+						lifetime=		"6"
+				/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:4d4; momentum1; radiation1; WMD1"
+					minRadius=		"2"
+					maxRadius=		"3"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+							style=			"fadingBlast"
+							radius=			"140"
+							primaryColor=	"0xff, 0xff, 0xf0"
+							lifetime=		"6"
+				/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 2 -->
+
+	<ItemType UNID="&vtCCReactorExplosion2;"
+			name=				"reactor explosion 2"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:6d6; momentum1; radiation1; WMD2"
+				
+				hitPoints=		"30"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsAG96;"
+						imageX="0"
+						imageY="0"
+						imageWidth="96"
+						imageHeight="96"
+						imageFrameCount="16"
+						imageTicksPerFrame="2"/>
+						
+				<Flare
+						style=			"fadingBlast"
+						radius=			"140"
+						primaryColor=	"0xff, 0xff, 0xf0"
+						lifetime=		"6"
+				/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:6d6; momentum1; radiation1; WMD2"
+					minRadius=		"2"
+					maxRadius=		"3"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+							style=			"fadingBlast"
+							radius=			"140"
+							primaryColor=	"0xff, 0xff, 0xf0"
+							lifetime=		"6"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 3 -->
+
+	<ItemType UNID="&vtCCReactorExplosion3;"
+			name=				"reactor explosion 3"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:8d8; momentum1; radiation1; WMD3"
+				
+				hitPoints=		"35"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsAG96;"
+						imageX="0"
+						imageY="0"
+						imageWidth="96"
+						imageHeight="96"
+						imageFrameCount="16"
+						imageTicksPerFrame="2"/>
+						
+				<Flare
+						style=			"fadingBlast"
+						radius=			"140"
+						primaryColor=	"0xff, 0xff, 0xf0"
+						lifetime=		"6"
+				/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:8d8; momentum1; radiation1; WMD3"
+					minRadius=		"2"
+					maxRadius=		"3"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+							style=			"fadingBlast"
+							radius=			"140"
+							primaryColor=	"0xff, 0xff, 0xf0"
+							lifetime=		"6"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 4 -->
+
+	<ItemType UNID="&vtCCReactorExplosion4;"
+			name=				"reactor explosion 4"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:10d10; momentum2; radiation1; WMD3"
+				
+				hitPoints=		"40"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsAG128;"
+						imageX="0"
+						imageY="0"
+						imageWidth="128"
+						imageHeight="128"
+						imageFrameCount="16"
+						imageTicksPerFrame="2"/>
+						
+				<Flare
+						style=			"fadingBlast"
+						radius=			"190"
+						primaryColor=	"0xff, 0xff, 0xf0"
+						lifetime=		"8"
+				/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:10d10; momentum2; radiation1; WMD3"
+					minRadius=		"3"
+					maxRadius=		"4"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+							style=			"fadingBlast"
+							radius=			"190"
+							primaryColor=	"0xff, 0xff, 0xf0"
+							lifetime=		"8"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 5 -->
+
+	<ItemType UNID="&vtCCReactorExplosion5;"
+			name=				"reactor explosion 5"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:12d12; momentum2; radiation1; WMD4"
+				
+				hitPoints=		"45"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsAG128;"
+						imageX="0"
+						imageY="0"
+						imageWidth="128"
+						imageHeight="128"
+						imageFrameCount="16"
+						imageTicksPerFrame="2"/>
+						
+				<Flare
+						style=			"fadingBlast"
+						radius=			"190"
+						primaryColor=	"0xff, 0xff, 0xf0"
+						lifetime=		"8"
+				/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:12d12; momentum2; radiation1; WMD4"
+					minRadius=		"3"
+					maxRadius=		"4"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+							style=			"fadingBlast"
+							radius=			"190"
+							primaryColor=	"0xff, 0xff, 0xf0"
+							lifetime=		"8"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 6 -->
+
+	<ItemType UNID="&vtCCReactorExplosion6;"
+			name=				"reactor explosion 6"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:14d14; momentum2; radiation2; WMD5"
+				
+				hitPoints=		"55"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsAG128;"
+						imageX="0"
+						imageY="0"
+						imageWidth="128"
+						imageHeight="128"
+						imageFrameCount="16"
+						imageTicksPerFrame="2"/>
+						
+				<Flare
+						style=			"fadingBlast"
+						radius=			"190"
+						primaryColor=	"0xff, 0xff, 0xf0"
+						lifetime=		"8"
+				/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:14d14; momentum2; radiation2; WMD5"
+					minRadius=		"3"
+					maxRadius=		"4"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+							style=			"fadingBlast"
+							radius=			"190"
+							primaryColor=	"0xff, 0xff, 0xf0"
+							lifetime=		"8"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 7 -->
+
+	<ItemType UNID="&vtCCReactorExplosion7;"
+			name=				"reactor explosion 7"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:16d16; momentum3; radiation2; WMD5"
+				
+				hitPoints=		"60"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsA20G192;"
+						imageX="0"
+						imageY="0"
+						imageWidth="192"
+						imageHeight="192"
+						imageFrameCount="20"
+						imageTicksPerFrame="2"/>
+						
+				<Flare
+						style=				"fadingBlast"
+						radius=				"300"
+						lifetime=			"12"
+						primaryColor=		"0xff, 0xff, 0xf0"
+				/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:16d16; momentum3; radiation2; WMD5"
+					minRadius=		"4"
+					maxRadius=		"5"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+							style=				"fadingBlast"
+							radius=				"300"
+							lifetime=			"12"
+							primaryColor=		"0xff, 0xff, 0xf0"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 8 -->
+
+	<ItemType UNID="&vtCCReactorExplosion8;"
+			name=				"reactor explosion 8"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:18d18; momentum3; radiation2; WMD6"
+				
+				hitPoints=		"65"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsA20G192;"
+						imageX="0"
+						imageY="0"
+						imageWidth="192"
+						imageHeight="192"
+						imageFrameCount="20"
+						imageTicksPerFrame="2"/>
+						
+				<Flare
+						style=				"fadingBlast"
+						radius=				"300"
+						lifetime=			"12"
+						primaryColor=		"0xff, 0xff, 0xf0"
+				/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:18d18; momentum3; radiation2; WMD6"
+					minRadius=		"4"
+					maxRadius=		"5"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+							style=				"fadingBlast"
+							radius=				"300"
+							lifetime=			"12"
+							primaryColor=		"0xff, 0xff, 0xf0"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 9 -->
+
+	<ItemType UNID="&vtCCReactorExplosion9;"
+			name=				"reactor explosion 9"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:20d20; momentum3; radiation2; WMD7"
+				
+				hitPoints=		"70"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsA20G192;"
+						imageX="0"
+						imageY="0"
+						imageWidth="192"
+						imageHeight="192"
+						imageFrameCount="20"
+						imageTicksPerFrame="2"/>
+						
+				<Flare
+						style=				"fadingBlast"
+						radius=				"300"
+						lifetime=			"12"
+						primaryColor=		"0xff, 0xff, 0xf0"
+				/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:20d20; momentum3; radiation2; WMD7"
+					minRadius=		"4"
+					maxRadius=		"5"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+
+					<Flare
+							style=				"fadingBlast"
+							radius=				"300"
+							lifetime=			"12"
+							primaryColor=		"0xff, 0xff, 0xf0"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 10 -->
+
+	<ItemType UNID="&vtCCReactorExplosion10;"
+			name=				"reactor explosion 10"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:22d22; momentum4; radiation2; WMD7"
+				
+				hitPoints=		"75"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsA20G256;"
+						imageX="0"
+						imageY="0"
+						imageWidth="256"
+						imageHeight="256"
+						imageFrameCount="20"
+						imageTicksPerFrame="2"/>
+
+				<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+						/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:22d22; momentum4; radiation2; WMD7"
+					minRadius=		"5"
+					maxRadius=		"6"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 11 -->
+
+	<ItemType UNID="&vtCCReactorExplosion11;"
+			name=				"reactor explosion 11"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:24d24; momentum4; radiation3; WMD7"
+				
+				hitPoints=		"85"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsA20G256;"
+						imageX="0"
+						imageY="0"
+						imageWidth="256"
+						imageHeight="256"
+						imageFrameCount="20"
+						imageTicksPerFrame="2"/>
+
+				<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+						/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:24d24; momentum4; radiation3; WMD7"
+					minRadius=		"5"
+					maxRadius=		"6"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 12 -->
+
+	<ItemType UNID="&vtCCReactorExplosion12;"
+			name=				"reactor explosion 12"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:26d26; momentum4; radiation4; WMD7"
+				
+				hitPoints=		"85"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsA20G256;"
+						imageX="0"
+						imageY="0"
+						imageWidth="256"
+						imageHeight="256"
+						imageFrameCount="20"
+						imageTicksPerFrame="2"/>
+
+				<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+						/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:26d26; momentum4; radiation4; WMD7"
+					minRadius=		"5"
+					maxRadius=		"6"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 13 -->
+
+	<ItemType UNID="&vtCCReactorExplosion13;"
+			name=				"reactor explosion 13"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:28d28; momentum4; radiation5; WMD7"
+				
+				hitPoints=		"90"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsA20G256;"
+						imageX="0"
+						imageY="0"
+						imageWidth="256"
+						imageHeight="256"
+						imageFrameCount="20"
+						imageTicksPerFrame="2"/>
+
+				<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+						/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:28d28; momentum4; radiation5; WMD7"
+					minRadius=		"5"
+					maxRadius=		"6"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 14 -->
+
+	<ItemType UNID="&vtCCReactorExplosion14;"
+			name=				"reactor explosion 14"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:30d30; momentum4; radiation6; WMD7"
+				
+				hitPoints=		"95"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsA20G256;"
+						imageX="0"
+						imageY="0"
+						imageWidth="256"
+						imageHeight="256"
+						imageFrameCount="20"
+						imageTicksPerFrame="2"/>
+
+				<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+						/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:30d30; momentum4; radiation6; WMD7"
+					minRadius=		"5"
+					maxRadius=		"6"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+
+	<!-- Reactor Explosion 15 -->
+
+	<ItemType UNID="&vtCCReactorExplosion15;"
+			name=				"reactor explosion 15"
+			virtual=			"true"
+	>
+		
+		<Weapon
+				type=			"missile"
+				damage=			"thermo:32d32; momentum4; radiation7; WMD7"
+				
+				hitPoints=		"100"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+		>
+
+			<HitEffect
+					sound="&snArmorHit1;"
+			>
+				<Image imageID="&rsExplosionsA20G256;"
+						imageX="0"
+						imageY="0"
+						imageWidth="256"
+						imageHeight="256"
+						imageFrameCount="20"
+						imageTicksPerFrame="2"/>
+
+				<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+						/>
+			</HitEffect>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:32d32; momentum4; radiation7; WMD7"
+					minRadius=		"5"
+					maxRadius=		"6"
+					missileSpeed=	"0"
+			>
+
+				<Effect>
+					<Flare
+						style=				"fadingBlast"
+						radius=				"400"
+						lifetime=			"16"
+						primaryColor=		"0xff, 0xff, 0xf0"
+					/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+	
 <!--
 	create the following:
 	

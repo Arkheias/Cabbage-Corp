@@ -5,16 +5,17 @@
 [
 <!ENTITY unidCorporateHierarchyVol01				"0x00810000">
 <!ENTITY unidCCCabbageCorporateCommandLibrary		"0xDA27C001">
-;From 'Playership Drones v6+'
-<!ENTITY unidPlayerShipDrones						"0xd9120000">
 
 <!ENTITY xtCCCorporateCommandShipsAndStuffExtension	"0xDA27D010">
 
+<!ENTITY scCCLorryEridani							"0xDA27D010">
 <!ENTITY scCCLorryTauCeti							"0xDA27D011">
 
-<!ENTITY scCCLampyridaeTauCeti						"0xDA27D012">
+<!ENTITY scCCLampyridaeEridani						"0xDA27D020">
+<!ENTITY scCCLampyridaeTauCeti						"0xDA27D021">
 
-<!ENTITY scCCOborogurumaTauCeti						"0xDA27D013">
+<!ENTITY scCCOborogurumaEridani						"0xDA27D030">
+<!ENTITY scCCOborogurumaTauCeti						"0xDA27D031">
 
 <!ENTITY rsCCCabbageCorpCover						"0xDA27CE40">
 
@@ -22,17 +23,22 @@
 ]>
 
 <TranscendenceExtension UNID="&xtCCCorporateCommandShipsAndStuffExtension;" 
-    apiVersion=			"26"
-	Name=				"Cabbage Corporate Command Ships &#38; Stuff" 
-	credits=			"Arkheias"
-	coverImageID=		"&rsCCCabbageCorpCover;"
+		Name=			"Cabbage Corporate Command Ships &#38; Stuff" 
+		release=		"1"
+		version=		"0.7.4.0"
+		apiVersion=		"27"
+		credits=		"Arkheias"
+		coverImageID=	"&rsCCCabbageCorpCover;"
 >
 
 	<Library unid="&unidHumanSpaceLibrary;"/>
     <Library unid="&unidCorporateHierarchyVol01;"/>
 	
     <Library unid="&unidCCCabbageCorporateCommandLibrary;"/>
-    <Library unid="&unidPlayerShipDrones;"/>
+	
+	<Module fileName="Modules\Playerships\CCLorry.xml"/>
+	<Module fileName="Modules\Playerships\CCLampyridae.xml"/>
+	<Module fileName="Modules\Playerships\CCOboroguruma.xml"/>
 	
 	<Module fileName="CCModules\Playerships\CCLorry.xml"/>
 	<Module fileName="CCModules\Playerships\CCLampyridae.xml"/>

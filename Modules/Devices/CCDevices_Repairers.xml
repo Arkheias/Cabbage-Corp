@@ -23,7 +23,7 @@
 			description=		"The basic servicing system, standardized several hundred years ago, is a set of manually controlled arms that attach to a ship's hull and repair any damaged armor up to technology level VI."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<RepairerDevice
 				regen=			" 3, 2, 2, 1, 1, 1"
@@ -45,7 +45,7 @@
 			description=		"This device generates nanomachines and uses your ship's computer to direct them to automatically repair any damaged armor up to technology level XI."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<RepairerDevice
 				regen=			" 9, 5, 4, 3, 3, 3, 2, 2, 2, 2, 2"
@@ -67,7 +67,7 @@
 			description=		"This VI generates nanomachines and utilizes a built-in quantum CPU to direct them to automatically repair any damaged armor up to technology level XIII."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<RepairerDevice
 				regen=			" 14, 9, 7, 6, 5, 4, 4, 4, 3, 3, 3, 3, 3"
@@ -89,7 +89,7 @@
 			description=		"This AI generates nanomachines and utilizes a built-in quantum CPUs that automatically repair any damaged armor up to technology level XV."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<RepairerDevice
 				regen=			" 24, 15, 11, 9, 8, 7, 6, 6, 5, 5, 5, 4, 4, 4, 4"
@@ -111,7 +111,7 @@
 			description=		"These sentient alien nanomachines automatically repair any damaged armor up to technology level XVIII.  They do this because they like to, not because you tell them to."
 	>
 
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<RepairerDevice
 				regen=			" 39, 24, 19, 15, 13, 12, 11, 10, 9, 8, 8, 7, 7, 7, 6, 6, 6, 6"

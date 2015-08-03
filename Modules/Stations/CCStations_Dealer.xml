@@ -14,7 +14,7 @@
 			canAttack=			"true"
 
 			multiHull=			"true"
-			armorID=			"&itCC4xHardenedTriniumArmor;"
+			armorID=			"&itCC4xHardenedSivayaArmor;"
 			hitPoints=			"350"
 			repairRate=			"5"
 			fireRateAdj=		"15"

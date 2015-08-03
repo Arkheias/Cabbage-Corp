@@ -25,16 +25,28 @@
 			attributes=			"cabbageCorp, corporateArms, envAir, envEarth, envFire, envWater, friendly, independent, human, majorStation, populated"
 			levelFrequency=		"----- ---rr ur--- ----- -----"
 			unique=				"inSystem"
-			locationCriteria=	"-asteroids"
+			locationCriteria=	"-asteroids, +outerSystem, -planetary"
 			enemyExclusionRadius="100"
 
 			definiteArticle=	"true"
 	>
 	
 		<ImageVariants>
-			<Image	imageID="&rsMetallicAsteroids2;" imageX="210"  imageY="0"		imageWidth="140" imageHeight="140"/>
-			<Image	imageID="&rsMetallicAsteroids2;" imageX="210"  imageY="140"		imageWidth="140" imageHeight="140"/>
-			<Image	imageID="&rsMetallicAsteroids2;" imageX="210"  imageY="280"		imageWidth="140" imageHeight="140"/>
+			<Image	criteria="*ice"			imageID="&rsIceAsteroids;"			imageX="200" imageY="0"			imageWidth="140" imageHeight="140"/>
+			<Image	criteria="*ice"			imageID="&rsIceAsteroids;"			imageX="200" imageY="140"		imageWidth="140" imageHeight="140"/>
+			<Image	criteria="*metallic"	imageID="&rsMetallicAsteroids2;"	imageX="210"  imageY="0"		imageWidth="140" imageHeight="140"/>
+			<Image	criteria="*metallic"	imageID="&rsMetallicAsteroids2;"	imageX="210"  imageY="140"		imageWidth="140" imageHeight="140"/>
+			<Image	criteria="*metallic"	imageID="&rsMetallicAsteroids2;"	imageX="210"  imageY="280"		imageWidth="140" imageHeight="140"/>
+			<Image	criteria="*primordial"	imageID="&rsPrimordialAsteroids;"	imageX="370" imageY="0"			imageWidth="130" imageHeight="130"/>
+			<Image	criteria="*primordial"	imageID="&rsPrimordialAsteroids;"	imageX="370" imageY="130"		imageWidth="130" imageHeight="130"/>
+			<Image	criteria="*primordial"	imageID="&rsPrimordialAsteroids;"	imageX="370" imageY="260"		imageWidth="130" imageHeight="130"/>
+			<Image	criteria="*volcanic"	imageID="&rsVolcanicAsteroids;"		imageX="200"  imageY="0"		imageWidth="130" imageHeight="130"/>
+			<Image	criteria="*volcanic"	imageID="&rsVolcanicAsteroids;"		imageX="200"  imageY="130"		imageWidth="130" imageHeight="130"/>
+			<Image	criteria="*volcanic"	imageID="&rsVolcanicAsteroids;"		imageX="200"  imageY="260"		imageWidth="130" imageHeight="130"/>
+			
+			<Image	criteria="*~"			imageID="&rsRockyAsteroids;"		imageX="400" imageY="0"			imageWidth="130" imageHeight="130"/>
+			<Image	criteria="*~"			imageID="&rsRockyAsteroids;"		imageX="400" imageY="130"		imageWidth="130" imageHeight="130"/>
+			<Image	criteria="*~"			imageID="&rsRockyAsteroids;"		imageX="400" imageY="260"		imageWidth="130" imageHeight="130"/>
 		</ImageVariants>
 
 		<Ships>
@@ -188,7 +200,6 @@
 			noMapLabel=         "true"
 			canAttack=          "true"
 
-			mass=               "2000"
 			armorID=            "&itCC4xExperimentalStealthArmor;"
 			hitPoints=          "100"
 			repairRate=         "5"
@@ -197,15 +208,47 @@
 			ejectaType=         "&vtWreckEjecta;"
 	>
 		<ImageVariants>
-			<Image	imageID="&rsMetallicAsteroids;" imageX="0"   imageY="128"	imageWidth="32" imageHeight="32"/>
-			<Image	imageID="&rsMetallicAsteroids;" imageX="32"  imageY="128"	imageWidth="32" imageHeight="32"/>
-			<Image	imageID="&rsMetallicAsteroids;" imageX="64"  imageY="128"	imageWidth="32" imageHeight="32"/>
-			<Image	imageID="&rsMetallicAsteroids;" imageX="96"  imageY="128"	imageWidth="32" imageHeight="32"/>
-			<Image	imageID="&rsMetallicAsteroids;" imageX="128" imageY="128"	imageWidth="32" imageHeight="32"/>
-
-			<Image	imageID="&rsMetallicAsteroids;" imageX="160"   imageY="128"	imageWidth="32" imageHeight="32"/>
-			<Image	imageID="&rsMetallicAsteroids;" imageX="192"   imageY="128"	imageWidth="32" imageHeight="32"/>
-			<Image	imageID="&rsMetallicAsteroids;" imageX="224"   imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*ice"			imageID="&rsIceAsteroids;"			imageX="0"   imageY="0"		imageWidth="40" imageHeight="40"/>
+			<Image	criteria="*ice"			imageID="&rsIceAsteroids;"			imageX="0"   imageY="40"	imageWidth="40" imageHeight="40"/>
+			<Image	criteria="*ice"			imageID="&rsIceAsteroids;"			imageX="0"   imageY="80"	imageWidth="40" imageHeight="40"/>
+			<Image	criteria="*ice"			imageID="&rsIceAsteroids;"			imageX="0"   imageY="120"	imageWidth="40" imageHeight="40"/>
+			<Image	criteria="*ice"			imageID="&rsIceAsteroids;"			imageX="40"  imageY="0"		imageWidth="40" imageHeight="40"/>
+			<Image	criteria="*ice"			imageID="&rsIceAsteroids;"			imageX="40"  imageY="40"	imageWidth="40" imageHeight="40"/>
+			<Image	criteria="*ice"			imageID="&rsIceAsteroids;"			imageX="40"  imageY="80"	imageWidth="40" imageHeight="40"/>
+			<Image	criteria="*ice"			imageID="&rsIceAsteroids;"			imageX="40"  imageY="120"	imageWidth="40" imageHeight="40"/>
+			<Image	criteria="*metallic"	imageID="&rsMetallicAsteroids;"		imageX="0"   imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*metallic"	imageID="&rsMetallicAsteroids;"		imageX="32"  imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*metallic"	imageID="&rsMetallicAsteroids;"		imageX="64"  imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*metallic"	imageID="&rsMetallicAsteroids;"		imageX="96"  imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*metallic"	imageID="&rsMetallicAsteroids;"		imageX="128" imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*metallic"	imageID="&rsMetallicAsteroids;"		imageX="160" imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*metallic"	imageID="&rsMetallicAsteroids;"		imageX="192" imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*metallic"	imageID="&rsMetallicAsteroids;"		imageX="224" imageY="128"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*primordial"	imageID="&rsPrimordialAsteroids;"	imageX="0"   imageY="0"		imageWidth="40"  imageHeight="40"/>
+			<Image	criteria="*primordial"	imageID="&rsPrimordialAsteroids;"	imageX="40"	 imageY="0"		imageWidth="40"  imageHeight="40"/>
+			<Image	criteria="*primordial"	imageID="&rsPrimordialAsteroids;"	imageX="0"	 imageY="40"	imageWidth="40"  imageHeight="40"/>
+			<Image	criteria="*primordial"	imageID="&rsPrimordialAsteroids;"	imageX="40"  imageY="40"	imageWidth="40"  imageHeight="40"/>
+			<Image	criteria="*primordial"	imageID="&rsPrimordialAsteroids;"	imageX="0"   imageY="80"	imageWidth="40"  imageHeight="40"/>
+			<Image	criteria="*primordial"	imageID="&rsPrimordialAsteroids;"	imageX="40"  imageY="80"	imageWidth="40"  imageHeight="40"/>
+			<Image	criteria="*primordial"	imageID="&rsPrimordialAsteroids;"	imageX="0"   imageY="120"	imageWidth="40"  imageHeight="40"/>
+			<Image	criteria="*primordial"	imageID="&rsPrimordialAsteroids;"	imageX="40"  imageY="120"	imageWidth="40"  imageHeight="40"/>
+			<Image	criteria="*volcanic"	imageID="&rsWorlds2;"				imageX="192" imageY="768"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*volcanic"	imageID="&rsWorlds2;"				imageX="192" imageY="800"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*volcanic"	imageID="&rsWorlds2;"				imageX="192" imageY="832"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*volcanic"	imageID="&rsWorlds2;"				imageX="192" imageY="864"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*volcanic"	imageID="&rsWorlds2;"				imageX="192" imageY="896"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*volcanic"	imageID="&rsWorlds2;"				imageX="192" imageY="928"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*volcanic"	imageID="&rsWorlds2;"				imageX="192" imageY="960"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*volcanic"	imageID="&rsWorlds2;"				imageX="192" imageY="992"	imageWidth="32" imageHeight="32"/>
+			
+			<Image	criteria="*~"			imageID="&rsWorlds1;"				imageX="224" imageY="768"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*~"			imageID="&rsWorlds1;"				imageX="224" imageY="800"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*~"			imageID="&rsWorlds1;"				imageX="224" imageY="832"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*~"			imageID="&rsWorlds1;"				imageX="224" imageY="864"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*~"			imageID="&rsWorlds1;"				imageX="224" imageY="896"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*~"			imageID="&rsWorlds1;"				imageX="224" imageY="928"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*~"			imageID="&rsWorlds1;"				imageX="224" imageY="960"	imageWidth="32" imageHeight="32"/>
+			<Image	criteria="*~"			imageID="&rsWorlds1;"				imageX="224" imageY="992"	imageWidth="32" imageHeight="32"/>
 		</ImageVariants>
 
 		<Devices>

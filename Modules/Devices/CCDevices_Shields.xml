@@ -409,7 +409,7 @@
 	
 	<ItemType UNID="&itCCAuxNapaS1Deflector;"
 			name=				"External-Napa S1 deflector"
-			attributes=			"cabbageCorp, cabbageNoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"2"
@@ -445,7 +445,7 @@
 	
 	<ItemType UNID="&itCCAuxNapaS2Deflector;"
 			name=				"External-Napa S2 deflector"
-			attributes=			"cabbageCorp, cabbageNoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"3"
@@ -481,7 +481,7 @@
 	
 	<ItemType UNID="&itCCAuxNapaS4Deflector;"
 			name=				"External-Napa S4 deflector"
-			attributes=			"cabbageCorp, cabbageNoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"4"
@@ -517,7 +517,7 @@
 	
 	<ItemType UNID="&itCCAuxNapaS8Deflector;"
 			name=				"External-Napa S8 deflector"
-			attributes=			"cabbageCorp, cabbageNoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"5"
@@ -553,7 +553,7 @@
 	
 	<ItemType UNID="&itCCAuxNapaS20Deflector;"
 			name=				"External-Napa S20 deflector"
-			attributes=			"cabbageCorp, cabbageNoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"6"
@@ -589,7 +589,7 @@
 	
 	<ItemType UNID="&itCCAuxNapaS30Deflector;"
 			name=				"External-Napa S30 Deflector"
-			attributes=			"cabbageCorp, cabbageNoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"7"
@@ -625,7 +625,7 @@
 	
 	<ItemType UNID="&itCCAuxNapaS50Deflector;"
 			name=				"External-Napa S50 Deflector"
-			attributes=			"cabbageCorp, cabbageNoSlots, majorItem, military"
+			attributes=			"cabbageCorp, majorItem, military"
 			showReference=		"true"
 			
 			level=				"8"
@@ -661,7 +661,7 @@
 	
 	<ItemType UNID="&itCCAuxNapaS100Deflector;"
 			name=				"External-Napa S100 Deflector"
-			attributes=			"cabbageCorp, cabbageNoSlots, majorItem, military"
+			attributes=			"cabbageCorp, majorItem, military"
 			showReference=		"true"
 			
 			level=				"9"
@@ -697,7 +697,7 @@
 	
 	<ItemType UNID="&itCCAuxNapaS120Deflector;"
 			name=				"External-Napa S120 Deflector"
-			attributes=			"cabbageCorp, cabbageNoSlots, majorItem, military"
+			attributes=			"cabbageCorp, majorItem, military"
 			showReference=		"true"
 			
 			level=				"10"
@@ -733,7 +733,7 @@
 	
 	<ItemType UNID="&itCCAuxNapaS150Deflector;"
 			name=				"External-Napa S150 Deflector"
-			attributes=			"cabbageCorp, cabbageNoSlots, majorItem, military"
+			attributes=			"cabbageCorp, majorItem, military"
 			showReference=		"true"
 			
 			level=				"11"
@@ -769,7 +769,7 @@
 	
 	<ItemType UNID="&itCCAuxNapaS260Deflector;"
 			name=				"External-Napa S260 Deflector"
-			attributes=			"alien, cabbageCorp, cabbageNoSlots, majorItem"
+			attributes=			"alien, cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"12"
@@ -805,7 +805,7 @@
 
 	<ItemType UNID="&itCCAuxNapaS400Deflector;"
 			name=				"External-Napa S400 deflector"
-			attributes=			"alien, cabbageCorp, cabbageNoSlots, majorItem"
+			attributes=			"alien, cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"13"
@@ -845,7 +845,7 @@
 	
 	<ItemType UNID="&itCCDualNapaS1Deflector;"
 			name=				"dual Napa S1 deflector"
-			attributes=			"cabbageCorp, cabbageTwoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"1"
@@ -880,7 +880,7 @@
 	
 	<ItemType UNID="&itCCDualNapaS2Deflector;"
 			name=				"dual Napa S2 deflector"
-			attributes=			"cabbageCorp, cabbageTwoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"2"
@@ -915,7 +915,7 @@
 	
 	<ItemType UNID="&itCCDualNapaS4Deflector;"
 			name=				"dual Napa S4 deflector"
-			attributes=			"cabbageCorp, cabbageTwoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"3"
@@ -950,7 +950,7 @@
 	
 	<ItemType UNID="&itCCDualNapaS8Deflector;"
 			name=				"dual Napa S8 deflector"
-			attributes=			"cabbageCorp, cabbageTwoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"4"
@@ -985,7 +985,7 @@
 	
 	<ItemType UNID="&itCCDualNapaS20Deflector;"
 			name=				"dual Napa S20 deflector"
-			attributes=			"cabbageCorp, cabbageTwoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"5"
@@ -1020,7 +1020,7 @@
 		
 	<ItemType UNID="&itCCDualNapaS30Deflector;"
 			name=				"dual Napa S30 Deflector"
-			attributes=			"cabbageCorp, cabbageTwoSlots, majorItem"
+			attributes=			"cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"6"
@@ -1055,7 +1055,7 @@
 	
 	<ItemType UNID="&itCCDualNapaS50Deflector;"
 			name=				"dual Napa S50 Deflector"
-			attributes=			"cabbageCorp, cabbageTwoSlots, majorItem, military"
+			attributes=			"cabbageCorp, majorItem, military"
 			showReference=		"true"
 			
 			level=				"7"
@@ -1090,7 +1090,7 @@
 	
 	<ItemType UNID="&itCCDualNapaS100Deflector;"
 			name=				"dual Napa S100 Deflector"
-			attributes=			"cabbageCorp, cabbageTwoSlots, majorItem, military"
+			attributes=			"cabbageCorp, majorItem, military"
 			showReference=		"true"
 			
 			level=				"8"
@@ -1125,7 +1125,7 @@
 	
 	<ItemType UNID="&itCCDualNapaS120Deflector;"
 			name=				"dual Napa S120 shield deflector"
-			attributes=			"cabbageCorp, cabbageTwoSlots, majorItem, military"
+			attributes=			"cabbageCorp, majorItem, military"
 			showReference=		"true"
 			
 			level=				"9"
@@ -1160,7 +1160,7 @@
 	
 	<ItemType UNID="&itCCDualNapaS150Deflector;"
 			name=				"dual Napa S150 Deflector"
-			attributes=			"cabbageCorp, cabbageTwoSlots, majorItem, military"
+			attributes=			"cabbageCorp, majorItem, military"
 			showReference=		"true"
 			
 			level=				"10"
@@ -1195,7 +1195,7 @@
 	
 	<ItemType UNID="&itCCDualNapaS260Deflector;"
 			name=				"dual Napa S260 Deflector"
-			attributes=			"alien, cabbageCorp, cabbageTwoSlots, majorItem"
+			attributes=			"alien, cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"11"
@@ -1230,7 +1230,7 @@
 
 	<ItemType UNID="&itCCDualNapaS400Deflector;"
 			name=				"dual Napa S400 deflector"
-			attributes=			"alien, cabbageCorp, cabbageTwoSlots, majorItem"
+			attributes=			"alien, cabbageCorp, majorItem"
 			showReference=		"true"
 			
 			level=				"12"

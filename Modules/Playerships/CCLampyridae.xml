@@ -9,8 +9,7 @@
 			type=				"stealth transport"
 			
             attributes=         "00200000_PlayerShip, PlayerShipDrone"
-            dockScreen=         "&dsPlayerShip;"
-            inherit=            "&baPlayerDroneBase;"
+            inherit=            "&scPlayerSapphireBase;"
 			characterClass=		"&unidPilgrimClass;"
 			
             size=               "74"
@@ -25,7 +24,7 @@
 
 			maxArmor=			"20000"
 			maxCargoSpace=		"1000"
-			maxDevices=			"12"
+			maxDevices=			"10"
 		>
 
 		<!-- Configuration -->
@@ -48,15 +47,14 @@
         </Armor>
 		
 		<Devices>
-			<DeviceSlot criteria="w +cabbageCorp" minFireArc="345" maxFireArc="15"	posAngle="0" posRadius="48" posZ="-4"/>
-			<DeviceSlot criteria="w -cabbageCorp"									posAngle="0" posRadius="48" posZ="-4"/>
+			<DeviceSlot criteria="w +cabbageCorp" minFireArc="345" maxFireArc="15"	posAngle="0" posRadius="52" posZ="2"/>
+			<DeviceSlot criteria="w -cabbageCorp"									posAngle="0" posRadius="52" posZ="2"/>
 			
-			<Device deviceID="&itCCSavoyM2Howitzer;"/>
+			<Device deviceID="&itCCKaleM1Repeater;"/>
 			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
-			<Device deviceID="&itCCDualNapaS2Deflector;"/>
-			<Device deviceID="&itCCSiva5MWReactor;"/>
-			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
-			<Device deviceID="&itCCDualIonDrive;"/>
+			<Device deviceID="&itCCNapaS1Deflector;"/>
+			<Device deviceID="&itCCSiva10MWReactor;"/>
+			<Device deviceID="&itCCPlasmaDrive;"/>
 		</Devices>
 
 		<Items>
@@ -213,11 +211,11 @@
 					; Index 1, items
 					; Level 2 components
 					(	
-						(&itCCSavoyM8Howitzer;					1)
+						(&itCCKaleM11Repeater;					1)
 						(&itCCDualNapaS8Deflector;				1)
 						(&itCCDualSiva31MWReactor;				1)
 						(&itCCDualTritiumPropulsionUpgrade;		1)
-						(&itCC2xStealthArmor;					12)
+						(&itCC2xStealthArmor;					8)
 					)
 					
 					; Index 2, auto-link weapons from index 1
@@ -259,11 +257,11 @@
 					; Level 4 components
 					((&stCommonwealthDryDock; 2)
 						(&scCCLampyridaeEridani;
-							(	(&itCCSavoyM8Howitzer;					1)
+							(	(&itCCKaleM11Repeater;					1)
 								(&itCCDualNapaS8Deflector;				1)
 								(&itCCDualSiva31MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
-								(&itCC2xStealthArmor;					12)
+								(&itCC2xStealthArmor;					8)
 							)
 						)
 					
@@ -273,11 +271,12 @@
 					; Level 1-2 components
 					((&stCommonwealthDryDock; (1 1))
 						(&scCCLampyridaeEridani;
-							(	(&itCCSavoyM2Howitzer;					1)
-								(&itCCDualNapaS2Deflector;				1)
-								(&itCCDualSiva5MWReactor;				1)
-								(&itCCDualIonDrive;						1)
-								(&itCCLightStealthPlating;				12)
+							(	(&itCCKaleM3Repeater;					1)
+								(&itCCNapaS1Deflector;					1)
+								(&itCCSiva5MWReactor;					1)
+								(&itCCAuxSiva5MWReactor;				1)
+								(&itCCPlasmaDrive;						1)
+								(&itCCLightStealthPlating;				8)
 							)
 						)
 					)
@@ -291,7 +290,7 @@
 								(&itCCDualNapaS8Deflector;				1)
 								(&itCCDualSiva31MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
-								(&itCC2xStealthArmor;					12)
+								(&itCC2xStealthArmor;					8)
 							)
 							(
 								(&itCCKaleM11Repeater;					1)
@@ -310,7 +309,7 @@
 								(&itCCDualNapaS30Deflector;				1)
 								(&itCCDualSiva100MWReactor;				1)
 								(&itCCDualChronimiumPropulsionUpgrade;	1)
-								(&itCC2xHardenedStealthArmor;			12)
+								(&itCC2xHardenedStealthArmor;			8)
 							)
 							(
 								(&itCCKaleM38Repeater;					1)
@@ -323,8 +322,6 @@
 			
 			<maxAuxCrew>16</maxAuxCrew>
 		</StaticData>
-
-		<DockingPorts   portCount="2"  portRadius="48"  maxDist="3" />
 	</ShipClass>
 	
 </TranscendenceModule>

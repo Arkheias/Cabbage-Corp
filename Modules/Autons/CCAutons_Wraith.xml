@@ -406,7 +406,7 @@ ShieldEnhancement	7		25000	10		common
 	<!-- Auton, Mark I Wraith -->
 
 	<ItemType UNID="&itCCMarkIWraithAuton;"
-			name=				"mark I Wraith auton;"
+			name=				"mark I Wraith auton"
 			attributes=			"auton, cabbageCorp, minorItem"
 			  
 			level=				"2"
@@ -531,7 +531,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"The experimental auton was designed to provide protection for reconnaissance vessels. It uses an advanced DRADIS system to aid in detecting hostile ships and experimental stealth armor to help avoid them."
+			description=		"This experimental auton was designed to provide protection for reconnaissance vessels. It uses an advanced DRADIS system to aid in detecting hostile ships and experimental stealth armor to help avoid them."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>

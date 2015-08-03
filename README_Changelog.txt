@@ -1,147 +1,85 @@
-(This file is best viewed with a monospaced font)
-==============================================================
-       Title:  Cabbage Corp + Cabbage Corporate Command       
-==============================================================
-Game Version:  1.6b2
-    API Version:  26
-  Mod Version:  v0.7.3.0 (Still an alpha release)
- Release Date:  2015-05-01
-           Author:  Arkheias
-          License:  CC BY-NC-SA (Creative Commons Attribution-NonCommercial-ShareAlike)
-==============================================================
-
------------
-Description
------------
-
-This adds a corporate empire known as Cabbage Corp which manufactures/produces weapons, armor, reactors, drives, autons, shields, bok choy, napa Cabbages, green cabbages, red cabbages, kohlrabi, savoy cabbages, brussel sprouts, kale and other various items/devices.  Cabbage Corp runs their own stations and refineries, and each of their devices comes with a Cabbage Corp Toolset so that it can be modified for your survival.  
-
-This is an alpha release, I am currently going back through the mod and rewriting items so they are all nearly perfectly balanced. I got excel sheets for each set of items and everything.  I have tested this out well enough so that nothing should be blowing up on accident, but I haven't actually played through a game using this mod in several months (I started working on it around July 2014).
-
-
-
------------------------
-How to install this mod
------------------------
-
-Download and extract the mod into your "Extensions" folder, which should be in your Transcendence folder.
-
-*Don't mess with the folder hierarchy
-
-
-Start the game.
-
-
-If you don't have Corporate Command installed and don't want new and fancy playerships,
-enable "Cabbage Corp".
-
-If you have Corporate Command installed and don't want new and fancy playerships,
-enable "Cabbage Corporate Command".
-
-
-If you don't have Corporate Command installed and want new and fancy playerships,
-enable "Cabbage Corp Ships & Stuff".
-
-If you have Corporate Command installed and want new and fancy playerships,
-enable "Cabbage Corporate Command Ships & Stuff".
-
-
-Do not use more than one version at the same time.
-
-
-
-------------
-Crew Members
-------------
-Hiring crew members is a way to increase the strength of your ship even after you have run out of device slots.  Crew member's contracts are generally more expensive than the equivalent devices, and crew members can only be hired from Cabbage Corp stations by viewing their special deals.  They are balanced by only being obtainable via paying large amounts of credits and requiring power from your ship for their life support and powered tools.  Ships are also limited in how many crew members they can support due to life support system constraints, which can be increased by installing cargo holds with support for extended life-support systems.  Damage control crews are the only crew members whose job benefits from having multiple crews working side-by-side.
-
-Current crew members that can be hired include:
- -Damage control crews which repair damage to armor.
- -Weapons engineering crews which make energy weapons more powerful and make non-energy weapons fire faster.
- -Shields engineering crews which strengthen shields.
-
- *I will hopefully eventually enable gunner crews which will make your primary weapons omnidirectional at the cost of a reduced firing-rate.
-
-
-For custom ships:
-
-To specify the base crew capacity of a ship, add this to it:
-
-
-	<StaticData>
-		<maxAuxCrew>##</maxAuxCrew>
-	</StaticData>
-</ShipClass>
-
-See CCShips.xml for examples.
-
-
-To specify the additional crew capacity provided by a device, add the following to it:
-
-	"crewQuarters" 
-		;to the device's attributes
-
-	inherit=			"&vtCCCrewQuartersBaseClass;"
-		;after  "attribute="
-		
-	<StaticData>
-		<addCrewSpace>##</addCrewSpace>
-	</StaticData>
-</ItemType>
-		;to replace the end of the ItemType definition.
-
-See CCDevices_CargoHolds.xml for examples.
-
-
-From the default settings:
-Player ships:			base crew capacity:
-
-EI500-class freighter		4
-Sapphire-class yacht		1
-Wolfen-class gunship		0
-
-Osaka-class transport		2
-
-Constellation-class freighter		2
-Freyr-class gunship			1
-Manticore-class heavy gunship	1
-
-Ships without a defined crew capacity:	(cargo capacity / 50), rounded down
-
-suggested base crew capacity:	(cargo capacity / 50), rounded down, +1 if transport
-
--------------
-Compatibility
--------------
-
-Base game:
-Does not overwrite any items, objects or things from the base game though it does add new actions to existing dockscreens.
-
-If you have any Cabbage Corp devices installed on your ship, you can access the Cabbage Corp Toolbox to modify or use them in the case of refineries.
-
-I have added a new action to the arrest screens of corporate stations that will appear if you have a diplomatic ID so that you have the option to undock.  I will eventually change this into an option to bribe away your criminal record, but for now it just lets you undock with an implied claim of diplomatic immunity.
-
-
-Mining Pack:
-Includes an alternative to the magic-omni-refinery (specialized refineries for each fuel ore that create roughly 1.5x more fuel.
--There are also advanced refineries that create assembly versions of fuel rods (3x more efficient than the omni refinery).
-Includes a set of continuous mining beams (includes dual, omni, side-mounted and scanning versions).
-*These all have the attribute minerGear and will possibly show up in Mining Pack mining stations.
-
-*I will hopefully eventually include mining weapons that don't do damage to enemy ships.  (I'm thinking that they won't actually fire anything, but upon pressing the button to fire them an <OnFireWeapon> event could be used to generate a mining beam from a virtual mining weapon that wouldn't be associated with any ship and would only do EMP damage just so that it counts as weaponsfire and can hit targets.
-
-
-Black Market Expansion (BME):
-Includes an alternative to smuggler's cargo holds.  It's an expensive slotless miscellaneous device with the attribute smugglersHold.  I mention this because I'm not exactly sure how BME changes how your ship is searched for contraband, but this item will still probably help to some extent.
--This also includes a diplomat's cargo hold and military cargo holds.
-
-
-
-----------
+---------
 Changelog
-----------
+---------
+v0.7.4.0-development (2015-08-03)
+---------------------------------
+-----General Changes-----
+Updated to API v27 for Transcendence v1.6.1.
+Temporarily removed Playership Drones (PSD) support due to changes in v1.6 making it not work correctly.
+Moved changelog from the general readme file to its own readme file.
+Added a line of hyphens underneath version numbers in the changelog.
+Added version information to extension and library header files.
+Changed the general readme into a fancy .pdf file.
+
+----Stations-----
+Removed mass from outpost turrets (they weren't even marked as mobile and (some) stars have gravity now).
+Changed Cabbage Corp outposts and their turrets to use image variants that match their asteroid fields.
+Updated the Buy & Modify item screen to use the same implementation as the new default item buying screens.
+ -It no longer shows items for which the station does not have the resources to make, previously it showed them but deactivated the button to buy them.
+ -(The options are all standardized anyway and there is another menu to show all potential custom devices/armor.)
+
+----Ships-----
+The Corporate Command playerships extension now includes the Eridani starting location for playerships in addition to Tau Ceti.
+Fixed image for Oboroguruma-class stealth freighter in PSD menus.
+Lampyridae-class stealth transports now use the correct number (8) of armor segments in PSD.
+Adjusted the starting and PSD equipment on the Lampyridae and Oboroguruma.
+The locations of the armor segments on the Oboroguruma now correspond to the actual locations of the armor segments on the Oboroguruma
+Reduced device slots on ships because not having a default reactor is no longer adequate justification due to v1.6b5 changes.
+ -The Lorry-class now has 9 device slots instead of 10.
+ -The Lampyridae-class now has 10 device slots instead of 12.
+ -The Oboroguruma-class now has 15 device slots instead of 16.
+Increased maximum armor capacity of the Oboroguruma-class to 40 tons from 20 tons.
+
+----Items-----
+Added new image for solar devices.
+Added new image for DRADIS devices.
+Added new images for autodefense devices.
+Added Phantom-class reconnaissance auton series (Levels 2, 4, 6, 8, and 10).
+Added Cabbage Corp Tinkerer ID (Will eventually unlock aditional options when modifying Cabbage Corp devices).
+Added proto-Cabbagium catalyst.
+Added pygmy ostrich horses.
+Added Cabbagium armor sets to replace both trinium and organic armor sets.
+Added the default hit-effects to the mining lances.
+Added miningEquipment attribute to mining lances, refineries and miner's cargo holds so that they will appear in v1.6 mining stations.
+Changed the Cabbage Corp Toolset to not appear unless the playership has Cabbage Corp equipment installed (like I originally advertised it).
+Added Microsaur scanner effects and scripts.
+Added Microsaur condemnation pods and relevant effects.
+Changed low level (Levels 1-2) reactors to notRandom.
+Changed dual reactors to appear less often (Levels 3-5 veryrare, everything else is notRandom).
+Changed auxiliary reactors to now shut themselves off automatically if your ship is really low on fuel.
+Changed auxiliary reactors to now be half as efficient when damaged.
+Changed auxiliary reactor efficiencies (civilian: 85%, military: 90%, alien: 95%).
+Changed unstable reactors to now have custom explosions when they overload.
+Changed unstable dual reactors to now explode twice when they overload.
+Changed unstable reactor to have a higher chance of exploding at lower levels but a much lower chance at higher levels.
+Changed unstable reactors to last slightly longer before exploding, once they start overloading.
+Changed cabbages for balance and updated their descriptions.
+Changed misc. items to match new whitespace standard.
+Changed generic device images to be reorganized into separate file from generic item images.
+Changed the damage of most mining lances to be twice as high so that they will work better with the new mining update.
+Changed the firing rate of most mining lances to 4 (from 2) to fire half as fast to balance them accordingly.
+Changed the level of all scanning mining lances by 1 level higher than their standard versions.
+Changed ore scanner effects and scripts by moving them to the appropriate dedicated files.
+Changed MiscItems.xml to be split into MiscItems.xml and UsefulItems.xml for usable items.
+Fixed typo in the name of the mark I wraith auton.
+Fixed typo in the description of the mark V wraith auton.
+Fixed typo in the attributes list for the Cabbage Corp premium memberhip ID and changed frequency to notRandom.
+Fixed bug where side-mounted repeaters did not actually fire alongside the primary weapon.
+Fixed bug where dual repeaters fired both sets of shots from the same location.
+Removed trinium armor sets and organic armor sets.
+Removed excess spacing in the names of stealth and sivaya armor sets.
+Removed minerGear Attribute from mining related devices as it has been replaced by miningEquipment.
+
+-----Known Bugs-----
+Mining colonies reset their inventory of miningEquipment labelled devices each time you enter their system
+ *They normally have one of every item labelled as miningEquipment but I have added a script that runs when you enter their systems
+  that removes all their Cabbage Corp mining devices and replaces them with just a few random Cabbage Corp mining weapons (up to 1d4 devices)
+  and a few random Cabbage Corp mining non-weapons (up to 1d4 devices).
+
+
 
 v0.7.3.0 (2015-05-01)
+---------------------
 -----General Changes-----
 Switched to ISO 8601
 Updated deprecated functions.
@@ -209,11 +147,13 @@ Forgot about a bunch of other changes that I made.
 
 
 v0.7.2.1 (01/27/2015)
+---------------------
 Fixed the descriptions for Cabbage Corp brand enhancers to show the correct enhancement from the change in the v0.7.2 update.
 
 
 
 v0.7.2 (01/27/2015)
+-------------------
 Replaced autodefense devices.
 Rebalanced solar devices (and impulse drives)
 Nerfed Cabbage Corp brand enhancers and added fancy graphics to them.
@@ -250,6 +190,7 @@ Added credits for public domain stuff and new licensed stuff.
 
 
 v0.7.1 (01/09/2015)
+-------------------
 Added Dual, Omni and side-mounted Savoy howitzers.
 Added damage control crew.
  -Created a pseudo-class of devices that simulate having crew members on your ship.
@@ -268,62 +209,5 @@ Moved resources necessary to making the Cheops-class Warship playable over to it
 
 
 v0.7.0 (01/01/2015)
+-------------------
 Initial release
-
-
-
----------------------------------------------------------------------
-Blender Rotation Code (because this should be more readily available)
----------------------------------------------------------------------
-
-http://forums.kronosaur.com/viewtopic.php?f=5&t=5683&p=51673&hilit=steelwing#p51673
-
-# Transcendence - Render facings for ship model
-# by steelwing, edited by RPC, further edited by Arkheias for 120 facings
-# Make sure you've got your ship set up facing the right way to start.
-# Your ship must be the only selected object.
-
-# Set this for the path and filename to use.  Leave the %i intact, as it's used to number the files.
-output_filepath = '//facings2\\facing_%i.png'
-# specify render format (make sure the extension above matches)
-output_format = 'PNG'
-
-import bpy
-from math import radians
-# Set output format
-bpy.context.scene
-
-#loop for 120 facings
-for x in range(1,121,1):
- bpy.context.scene.render.filepath = format(output_filepath % x) # set filename to save to
- bpy.ops.render.render(write_still=True) # perform render
- bpy.ops.transform.rotate(value=(radians(3),)) # rotate to next angle
-
-#After this, use a program such as Irfanview to stitch the facings together into a vertical panorama
-#May be beneficial to use a program such as advanced renamer to make sure that all images have the same number of digits in them so that they can appear in the right order without manually sorting them
-#i.e., convert 1, 2, 3, ... 9, 10, 11, ... 99, 100, 101, ... to 001, 002, 003, ... 009, 010, 011, ... 099, 100, 101, ...
-#something something masks...
-
----------------------------
-*Special Thanks and Credits
----------------------------
-
-George Moromisato - The author of Transcendence.
-
-PM - Made the 120 facing graphics for the Kobol ship (cause I still have no idea how to manipulate the files from TransArt101.zip) and the armor huds that I appropriated for my reinterpretation of the Kobol Ship and the code for the helium fuel converters that I appropriated and rewrote into fuel-ore refinery devices
-
-Star Weaver - Made a working implementation of implantable ID chips... (someone should really make an updated version of that mod, I only included implantable versions of Cabbage Corp IDs).
-
-Kiel Cravatta - Made The original version of the image which I have edited into CCPraclarushHangar.jpg (Google Images reported it as "labeled for reuse with modification" and implied that commercial use was fine too).
-	http://kielcravatta.com/
-
-The image used for the cover (CCCabbageCorpCover.jpg) is a derivative of the public domain image "M74: The Perfect Spiral" and a picture of a cabbage.
-	http://apod.nasa.gov/apod/ap130811.html
-	http://www.dreamstime.com/stock-images-green-cabbage-isolated-image21864594 © Neil Overy | Dreamstime.com
-	*Derivatives of this cabbage are also included in other resources
-
-The images and masks (CCCrewMembers.jpg and CCCrewMembersMask.jpg) used for the crew members are derivatives of the "Elite Captains Icons" iconset and the "Elite Soldiers Icons" iconset by IconTexto (Bruno Maia), used under CC BY-NC.
-	http://www.iconarchive.com/show/elite-captains-icons-by-icontexto.html
-	http://www.iconarchive.com/show/elite-soldiers-icons-by-icontexto.html
-	http://www.iconarchive.com/artist/icontexto.html
-	http://creativecommons.org/licenses/by-nc/4.0/

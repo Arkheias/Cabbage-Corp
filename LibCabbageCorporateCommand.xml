@@ -16,6 +16,7 @@
 
 	<!-- Effects -->
 <!ENTITY efCCShieldsHUD		 					"0xDA27C010">
+<!ENTITY efCCShieldsHUD		 					"0xDA27C010">
 
 
 	<!-- Stations -->
@@ -47,56 +48,53 @@
 
 
 	<!-- Armor -->
-<!ENTITY itCCLightOrganicArmor					"0xDA27C100">
-<!ENTITY itCC1xOrganicArmor						"0xDA27C101">
-<!ENTITY itCC2xOrganicArmor						"0xDA27C102">
-<!ENTITY itCC4xOrganicArmor						"0xDA27C103">
-<!ENTITY itCC1xHardenedOrganicArmor				"0xDA27C104">
-<!ENTITY itCC2xHardenedOrganicArmor				"0xDA27C105">
-<!ENTITY itCC4xHardenedOrganicArmor				"0xDA27C106">
-<!ENTITY itCC1xAdvancedOrganicArmor				"0xDA27C107">
-<!ENTITY itCC2xAdvancedOrganicArmor				"0xDA27C108">
-<!ENTITY itCC4xAdvancedOrganicArmor				"0xDA27C109">
-<!ENTITY itCC1xExperimentalOrganicArmor			"0xDA27C10A">
-<!ENTITY itCC2xExperimentalOrganicArmor			"0xDA27C10B">
-<!ENTITY itCC4xExperimentalOrganicArmor			"0xDA27C10C">
-<!ENTITY itCC1xTheoreticalOrganicArmor			"0xDA27C10D">
-<!ENTITY itCC2xTheoreticalOrganicArmor			"0xDA27C10E">
-<!ENTITY itCC4xTheoreticalOrganicArmor			"0xDA27C10F">
+<!ENTITY itCCLightCabbagiumPlating				"0xDA27C101">
+<!ENTITY itCC1xCabbagiumArmor					"0xDA27C102">
+<!ENTITY itCC2xCabbagiumArmor					"0xDA27C103">
+<!ENTITY itCC4xCabbagiumArmor					"0xDA27C104">
+<!ENTITY itCC6xCabbagiumArmor					"0xDA27C105">
+<!ENTITY itCC8xCabbagiumArmor					"0xDA27C106">
+<!ENTITY itCCHardenedCabbagiumPlating			"0xDA27C107">
+<!ENTITY itCC1xHardenedCabbagiumArmor			"0xDA27C108">
+<!ENTITY itCC2xHardenedCabbagiumArmor			"0xDA27C109">
+<!ENTITY itCC4xHardenedCabbagiumArmor			"0xDA27C10A">
+<!ENTITY itCC6xHardenedCabbagiumArmor			"0xDA27C10B">
+<!ENTITY itCC8xHardenedCabbagiumArmor			"0xDA27C10C">
+<!ENTITY itCCAdvancedCabbagiumPlating			"0xDA27C10D">
+<!ENTITY itCC1xAdvancedCabbagiumArmor			"0xDA27C10E">
+<!ENTITY itCC2xAdvancedCabbagiumArmor			"0xDA27C10F">
+<!ENTITY itCC4xAdvancedCabbagiumArmor			"0xDA27C111">
+<!ENTITY itCC6xAdvancedCabbagiumArmor			"0xDA27C112">
+<!ENTITY itCC8xAdvancedCabbagiumArmor			"0xDA27C113">
+<!ENTITY itCCExperimentalCabbagiumPlating		"0xDA27C114">
+<!ENTITY itCC1xExperimentalCabbagiumArmor		"0xDA27C115">
+<!ENTITY itCC2xExperimentalCabbagiumArmor		"0xDA27C116">
+<!ENTITY itCC4xExperimentalCabbagiumArmor		"0xDA27C117">
+<!ENTITY itCC6xExperimentalCabbagiumArmor		"0xDA27C118">
+<!ENTITY itCC8xExperimentalCabbagiumArmor		"0xDA27C119">
+<!ENTITY itCCTheoreticalCabbagiumPlating		"0xDA27C11A">
+<!ENTITY itCC1xTheoreticalCabbagiumArmor		"0xDA27C11B">
+<!ENTITY itCC2xTheoreticalCabbagiumArmor		"0xDA27C11C">
+<!ENTITY itCC4xTheoreticalCabbagiumArmor		"0xDA27C11D">
+<!ENTITY itCC6xTheoreticalCabbagiumArmor		"0xDA27C11E">
+<!ENTITY itCC8xTheoreticalCabbagiumArmor		"0xDA27C11F">
 
-<!ENTITY itCCLightSivayaPlating					"0xDA27C110">
-<!ENTITY itCC1xSivayaArmor						"0xDA27C111">
-<!ENTITY itCC2xSivayaArmor						"0xDA27C112">
-<!ENTITY itCC4xSivayaArmor						"0xDA27C113">
-<!ENTITY itCC1xHardenedSivayaArmor				"0xDA27C114">
-<!ENTITY itCC2xHardenedSivayaArmor				"0xDA27C115">
-<!ENTITY itCC4xHardenedSivayaArmor				"0xDA27C116">
-<!ENTITY itCC1xAdvancedSivayaArmor				"0xDA27C117">
-<!ENTITY itCC2xAdvancedSivayaArmor				"0xDA27C118">
-<!ENTITY itCC4xAdvancedSivayaArmor				"0xDA27C119">
-<!ENTITY itCC1xExperimentalSivayaArmor			"0xDA27C11A">
-<!ENTITY itCC2xExperimentalSivayaArmor			"0xDA27C11B">
-<!ENTITY itCC4xExperimentalSivayaArmor			"0xDA27C11C">
-<!ENTITY itCC1xTheoreticalSivayaArmor			"0xDA27C11D">
-<!ENTITY itCC2xTheoreticalSivayaArmor			"0xDA27C11E">
-<!ENTITY itCC4xTheoreticalSivayaArmor			"0xDA27C11F">
-
-<!ENTITY itCCLightTriniumArmor					"0xDA27C120">
-<!ENTITY itCC1xTriniumArmor						"0xDA27C121">
-<!ENTITY itCC2xTriniumArmor						"0xDA27C122">
-<!ENTITY itCC4xTriniumArmor						"0xDA27C123">
-<!ENTITY itCC1xHardenedTriniumArmor				"0xDA27C124">
-<!ENTITY itCC2xHardenedTriniumArmor				"0xDA27C125">
-<!ENTITY itCC4xHardenedTriniumArmor				"0xDA27C126">
-<!ENTITY itCC1xAdvancedTriniumArmor				"0xDA27C127">
-<!ENTITY itCC2xAdvancedTriniumArmor				"0xDA27C128">
-<!ENTITY itCC4xAdvancedTriniumArmor				"0xDA27C129">
-<!ENTITY itCC1xExperimentalTriniumArmor			"0xDA27C12A">
-<!ENTITY itCC2xExperimentalTriniumArmor			"0xDA27C12B">
-<!ENTITY itCC4xExperimentalTriniumArmor			"0xDA27C12C">
-<!ENTITY itCC1xTheoreticalTriniumArmor			"0xDA27C12D">
-<!ENTITY itCC2xTheoreticalTriniumArmor			"0xDA27C12E">
-<!ENTITY itCC4xTheoreticalTriniumArmor			"0xDA27C12F">
+<!ENTITY itCCLightSivayaPlating					"0xDA27C120">
+<!ENTITY itCC1xSivayaArmor						"0xDA27C121">
+<!ENTITY itCC2xSivayaArmor						"0xDA27C122">
+<!ENTITY itCC4xSivayaArmor						"0xDA27C123">
+<!ENTITY itCC1xHardenedSivayaArmor				"0xDA27C124">
+<!ENTITY itCC2xHardenedSivayaArmor				"0xDA27C125">
+<!ENTITY itCC4xHardenedSivayaArmor				"0xDA27C126">
+<!ENTITY itCC1xAdvancedSivayaArmor				"0xDA27C127">
+<!ENTITY itCC2xAdvancedSivayaArmor				"0xDA27C128">
+<!ENTITY itCC4xAdvancedSivayaArmor				"0xDA27C129">
+<!ENTITY itCC1xExperimentalSivayaArmor			"0xDA27C12A">
+<!ENTITY itCC2xExperimentalSivayaArmor			"0xDA27C12B">
+<!ENTITY itCC4xExperimentalSivayaArmor			"0xDA27C12C">
+<!ENTITY itCC1xTheoreticalSivayaArmor			"0xDA27C12D">
+<!ENTITY itCC2xTheoreticalSivayaArmor			"0xDA27C12E">
+<!ENTITY itCC4xTheoreticalSivayaArmor			"0xDA27C12F">
 
 <!ENTITY itCCLightStealthPlating				"0xDA27C130">
 <!ENTITY itCC1xStealthArmor						"0xDA27C131">
@@ -412,6 +410,22 @@
 <!ENTITY itCCAuxSiva10000MWReactor				"0xDA27C84E">
 <!ENTITY itCCAuxSiva18000MWReactor				"0xDA27C84F">
 
+<!ENTITY vtCCReactorExplosion1					"0xDA27C851">
+<!ENTITY vtCCReactorExplosion2					"0xDA27C852">
+<!ENTITY vtCCReactorExplosion3					"0xDA27C853">
+<!ENTITY vtCCReactorExplosion4					"0xDA27C854">
+<!ENTITY vtCCReactorExplosion5					"0xDA27C855">
+<!ENTITY vtCCReactorExplosion6					"0xDA27C856">
+<!ENTITY vtCCReactorExplosion7					"0xDA27C857">
+<!ENTITY vtCCReactorExplosion8					"0xDA27C858">
+<!ENTITY vtCCReactorExplosion9					"0xDA27C859">
+<!ENTITY vtCCReactorExplosion10					"0xDA27C85A">
+<!ENTITY vtCCReactorExplosion11					"0xDA27C85B">
+<!ENTITY vtCCReactorExplosion12					"0xDA27C85C">
+<!ENTITY vtCCReactorExplosion13					"0xDA27C85D">
+<!ENTITY vtCCReactorExplosion14					"0xDA27C85E">
+<!ENTITY vtCCReactorExplosion15					"0xDA27C85F">
+
 
 	<!-- Repairers -->
 <!ENTITY itCCBasicServicingSystem				"0xDA27C901">
@@ -557,23 +571,38 @@
 <!ENTITY itCCOmniSavoyM2900Howitzer				"0xDA27CC2D">
 <!ENTITY itCCOmniSavoyM5600Howitzer				"0xDA27CC2E">
 <!ENTITY itCCOmniSavoyM11000Howitzer			"0xDA27CC2F">
-<!ENTITY itCCAuxSavoyM1Howitzer					"0xDA27CC31">
-<!ENTITY itCCAuxSavoyM2Howitzer					"0xDA27CC32">
-<!ENTITY itCCAuxSavoyM4Howitzer					"0xDA27CC33">
-<!ENTITY itCCAuxSavoyM8Howitzer					"0xDA27CC34">
-<!ENTITY itCCAuxSavoyM15Howitzer				"0xDA27CC35">
-<!ENTITY itCCAuxSavoyM30Howitzer				"0xDA27CC36">
-<!ENTITY itCCAuxSavoyM56Howitzer				"0xDA27CC37">
-<!ENTITY itCCAuxSavoyM110Howitzer				"0xDA27CC38">
-<!ENTITY itCCAuxSavoyM210Howitzer				"0xDA27CC39">
-<!ENTITY itCCAuxSavoyM400Howitzer				"0xDA27CC3A">
-<!ENTITY itCCAuxSavoyM770Howitzer				"0xDA27CC3B">
-<!ENTITY itCCAuxSavoyM1500Howitzer				"0xDA27CC3C">
-<!ENTITY itCCAuxSavoyM2900Howitzer				"0xDA27CC3D">
-<!ENTITY itCCAuxSavoyM5600Howitzer				"0xDA27CC3E">
-<!ENTITY itCCAuxSavoyM11000Howitzer				"0xDA27CC3F">
+<!ENTITY itCCAdvSavoyM1Howitzer					"0xDA27CC31">
+<!ENTITY itCCAdvSavoyM2Howitzer					"0xDA27CC32">
+<!ENTITY itCCAdvSavoyM4Howitzer					"0xDA27CC33">
+<!ENTITY itCCAdvSavoyM8Howitzer					"0xDA27CC34">
+<!ENTITY itCCAdvSavoyM15Howitzer				"0xDA27CC35">
+<!ENTITY itCCAdvSavoyM30Howitzer				"0xDA27CC36">
+<!ENTITY itCCAdvSavoyM56Howitzer				"0xDA27CC37">
+<!ENTITY itCCAdvSavoyM110Howitzer				"0xDA27CC38">
+<!ENTITY itCCAdvSavoyM210Howitzer				"0xDA27CC39">
+<!ENTITY itCCAdvSavoyM400Howitzer				"0xDA27CC3A">
+<!ENTITY itCCAdvSavoyM770Howitzer				"0xDA27CC3B">
+<!ENTITY itCCAdvSavoyM1500Howitzer				"0xDA27CC3C">
+<!ENTITY itCCAdvSavoyM2900Howitzer				"0xDA27CC3D">
+<!ENTITY itCCAdvSavoyM5600Howitzer				"0xDA27CC3E">
+<!ENTITY itCCAdvSavoyM11000Howitzer				"0xDA27CC3F">
+<!ENTITY itCCAuxSavoyM1Howitzer					"0xDA27CC41">
+<!ENTITY itCCAuxSavoyM2Howitzer					"0xDA27CC42">
+<!ENTITY itCCAuxSavoyM4Howitzer					"0xDA27CC43">
+<!ENTITY itCCAuxSavoyM8Howitzer					"0xDA27CC44">
+<!ENTITY itCCAuxSavoyM15Howitzer				"0xDA27CC45">
+<!ENTITY itCCAuxSavoyM30Howitzer				"0xDA27CC46">
+<!ENTITY itCCAuxSavoyM56Howitzer				"0xDA27CC47">
+<!ENTITY itCCAuxSavoyM110Howitzer				"0xDA27CC48">
+<!ENTITY itCCAuxSavoyM210Howitzer				"0xDA27CC49">
+<!ENTITY itCCAuxSavoyM400Howitzer				"0xDA27CC4A">
+<!ENTITY itCCAuxSavoyM770Howitzer				"0xDA27CC4B">
+<!ENTITY itCCAuxSavoyM1500Howitzer				"0xDA27CC4C">
+<!ENTITY itCCAuxSavoyM2900Howitzer				"0xDA27CC4D">
+<!ENTITY itCCAuxSavoyM5600Howitzer				"0xDA27CC4E">
+<!ENTITY itCCAuxSavoyM11000Howitzer				"0xDA27CC4F">
 
-<!ENTITY vtCCSavoyHowitzer						"0xDA27CC40">
+<!ENTITY vtCCSavoyHowitzer						"0xDA27CC50">
 
 
 <!ENTITY itCCKaleM1Repeater						"0xDA27CC51">
@@ -700,11 +729,12 @@
 <!ENTITY itCCAuxB1500MiningLance				"0xDA27CCEB">
 
 <!ENTITY efCCOreMarker							"0xDA27CCF0">
-<!ENTITY itCCT1GuidanceCartridge				"0xDA27CCF1">
-<!ENTITY itCCT2GuidanceCartridge				"0xDA27CCF2">
-<!ENTITY itCCT3GuidanceCartridge				"0xDA27CCF3">
-<!ENTITY itCCAdvancedSlamCannon					"0xDA27CCF4">
-<!ENTITY itCCAdvancedHeavySlamCannon			"0xDA27CCF5">
+<!ENTITY efCCMicrosaurMarker					"0xDA27CCF1">
+<!ENTITY itCCT1GuidanceCartridge				"0xDA27CCF2">
+<!ENTITY itCCT2GuidanceCartridge				"0xDA27CCF3">
+<!ENTITY itCCT3GuidanceCartridge				"0xDA27CCF4">
+<!ENTITY itCCAdvancedSlamCannon					"0xDA27CCF5">
+<!ENTITY itCCAdvancedHeavySlamCannon			"0xDA27CCF6">
 
 <!ENTITY itCCWeigeltCannon						"0xDA27CCFA">
 <!ENTITY ovCCWeigeltParalysis					"0xDA27CCFB">
@@ -732,20 +762,37 @@
 <!ENTITY itCCZeroPointCrystal					"0xDA27CD0E">
 
 <!ENTITY itCCSolarPanel							"0xDA27CD11">
-<!ENTITY itCCPremiumID							"0xDA27CD12">
-<!ENTITY itCCSystemMapROM						"0xDA27CD13">
-<!ENTITY itCCPersonalBelongings					"0xDA27CD14">
+<!ENTITY itCCCabbagiumCatalyst					"0xDA27CD12">
+<!ENTITY itCCPremiumID							"0xDA27CD13">
+<!ENTITY itCCSystemMapROM						"0xDA27CD14">
+<!ENTITY itCCTinkererID							"0xDA27CD15">
+<!ENTITY itCCPersonalBelongings					"0xDA27CD16">
+<!ENTITY itCCPygmyOstrichHorse					"0xDA27CD17">
+
+<!ENTITY trCCMiningWeapon1						"0xDA27CD21">
+<!ENTITY trCCMiningWeapon2						"0xDA27CD22">
+<!ENTITY trCCMiningWeapon3						"0xDA27CD23">
+<!ENTITY trCCMiningDevice1						"0xDA27CD24">
+<!ENTITY trCCMiningDevice2						"0xDA27CD25">
+<!ENTITY trCCMiningDevice3						"0xDA27CD26">
+
+<!ENTITY baCCMicrosaurScannerPower				"0xDA27CD31">
+<!ENTITY ovCCMicrosaurDetectionCount			"0xDA27CD32">
+<!ENTITY itCCMicrosaurCondemnationPod			"0xDA27CD33">
+<!ENTITY vtCCMicrosaurScannerPower				"0xDA27CD34">
+<!ENTITY itCCAdvMicrosaurCondemnationPod		"0xDA27CD35">
+<!ENTITY vtCCAdvMicrosaurScannerPower			"0xDA27CD36">
 
 
 
 
 	<!-- Item Images -->
 <!ENTITY rsCCItems								"0xDA27CE00">
-<!ENTITY rsCCShipIcons							"0xDA27CE01">
-<!ENTITY rsCCArmorGold							"0xDA27CE02">
-<!ENTITY rsCCArmorOrganic						"0xDA27CE03">
-<!ENTITY rsCCArmorSivaya						"0xDA27CE04">
-<!ENTITY rsCCArmorTrinium						"0xDA27CE05">
+<!ENTITY rsCCDevices							"0xDA27CE01">
+<!ENTITY rsCCShipIcons							"0xDA27CE02">
+<!ENTITY rsCCArmorCabbagium						"0xDA27CE03">
+<!ENTITY rsCCArmorGold							"0xDA27CE04">
+<!ENTITY rsCCArmorSivaya						"0xDA27CE05">
 <!ENTITY rsCCArmorStealth						"0xDA27CE06">
 <!ENTITY rsCCDrives								"0xDA27CE07">
 <!ENTITY rsCCGuns								"0xDA27CE08">
@@ -852,15 +899,30 @@
 <!ENTITY rsCCF120Shade							"0xDA27CEBA">
 <!ENTITY rsCCLargeShade							"0xDA27CEBB">
 <!ENTITY rsCCArmorHUDShade						"0xDA27CEBC">
+<!ENTITY itCCMarkIPhantomAuton					"0xDA27CEC0">
+<!ENTITY scCCMarkIPhantomAuton					"0xDA27CEC1">
+<!ENTITY itCCMarkIIPhantomAuton					"0xDA27CEC2">
+<!ENTITY scCCMarkIIPhantomAuton					"0xDA27CEC3">
+<!ENTITY itCCMarkIIIPhantomAuton				"0xDA27CEC4">
+<!ENTITY scCCMarkIIIPhantomAuton				"0xDA27CEC5">
+<!ENTITY itCCMarkIVPhantomAuton					"0xDA27CEC6">
+<!ENTITY scCCMarkIVPhantomAuton					"0xDA27CEC7">
+<!ENTITY itCCMarkVPhantomAuton					"0xDA27CEC8">
+<!ENTITY scCCMarkVPhantomAuton					"0xDA27CEC9">
+<!ENTITY rsCCF120Phantom						"0xDA27CECA">
+<!ENTITY rsCCLargePhantom						"0xDA27CECB">
+<!ENTITY rsCCArmorHUDPhantom					"0xDA27CECC">
 
 
 ]>
 
 <TranscendenceLibrary UNID="&unidCCCabbageCorporateCommandLibrary;" 
-    apiVersion=			"26"
-	Name=				"Cabbage Corporate Command Library" 
-	credits=			"Arkheias"
-	coverImageID=		"&rsCCCabbageCorpCover;"
+		Name=			"Cabbage Corporate Command Library" 
+		release=		"1"
+		version=		"0.7.4.0"
+		apiVersion=		"27"
+		credits=		"Arkheias"
+		coverImageID=	"&rsCCCabbageCorpCover;"
 >
 
 	<Library unid="&unidHumanSpaceLibrary;"/>
@@ -886,6 +948,9 @@ vt			= 	(virtual) Item Code
 	<Image UNID="&rsCCF120Shade;"					bitmap="Resources\Shade\CCF120Shade.jpg"				bitmask="Resources\Shade\CCF120ShadeMask.jpg"/>
 	<Image UNID="&rsCCLargeShade;"					bitmap="Resources\Shade\CCLargeShade.jpg"				bitmask="Resources\Shade\CCLargeShade.jpg"	loadOnUse="true"/>
 	<Image UNID="&rsCCArmorHudShade;"				bitmap="Resources\Shade\CCArmorHudShade.jpg"/>
+	<Image UNID="&rsCCF120Phantom;"					bitmap="Resources\Phantom\CCF120Phantom.jpg"			bitmask="Resources\Phantom\CCF120PhantomMask.jpg"/>
+	<Image UNID="&rsCCLargePhantom;"				bitmap="Resources\Phantom\CCLargePhantom.jpg"			bitmask="Resources\Phantom\CCLargePhantom.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCArmorHudPhantom;"				bitmap="Resources\Phantom\CCArmorHudPhantom.jpg"/>
 	
 	<!-- Small Ships -->
 	<Image UNID="&rsCCF120Lorry;"					bitmap="Resources\Lorry\CCF120Lorry.jpg"				bitmask="Resources\Lorry\CCF120LorryMask.jpg"/>
@@ -922,11 +987,11 @@ vt			= 	(virtual) Item Code
 
 	<!-- Items -->
     <Image UNID="&rsCCItems;"						bitmap="Resources\Items\CCItems.jpg"					bitmask="Resources\Items\CCItemsMask.bmp"/>
+    <Image UNID="&rsCCDevices;"						bitmap="Resources\Items\CCDevices.jpg"					bitmask="Resources\Items\CCDevicesMask.bmp"/>
     <Image UNID="&rsCCShipIcons;"					bitmap="Resources\Items\CCShipIcons.jpg"				bitmask="Resources\Items\CCShipIconsMask.bmp"/>
+    <Image UNID="&rsCCArmorCabbagium;"				bitmap="Resources\Items\CCArmorCabbagium.jpg"			bitmask="Resources\Items\CCArmorCabbagiumMask.jpg"/>
     <Image UNID="&rsCCArmorGold;"					bitmap="Resources\Items\CCArmorGold.jpg"				bitmask="Resources\Items\CCArmorMask.jpg"/>
-    <Image UNID="&rsCCArmorOrganic;"				bitmap="Resources\Items\CCArmorOrganic.jpg"				bitmask="Resources\Items\CCArmorMask.jpg"/>
     <Image UNID="&rsCCArmorSivaya;"					bitmap="Resources\Items\CCArmorSivaya.jpg"				bitmask="Resources\Items\CCArmorSivayaMask.jpg"/>
-    <Image UNID="&rsCCArmorTrinium;"				bitmap="Resources\Items\CCArmorTrinium.jpg"				bitmask="Resources\Items\CCArmorFullMask.jpg"/>
     <Image UNID="&rsCCArmorStealth;"				bitmap="Resources\Items\CCArmorStealth.jpg"				bitmask="Resources\Items\CCArmorStealthMask.jpg"/>
     <Image UNID="&rsCCDrives;"						bitmap="Resources\Items\CCDrives.jpg"					bitmask="Resources\Items\CCDrivesMask.jpg"/>
     <Image UNID="&rsCCGuns;"						bitmap="Resources\Items\CCGuns.jpg"						bitmask="Resources\Items\CCGunsMask.jpg"/>
@@ -975,10 +1040,12 @@ vt			= 	(virtual) Item Code
 	
 	<!-- Armor -->
 	<Module fileName="Modules\Armor\CCArmor.xml"/>
+	<Module fileName="Modules\Armor\CCArmor_Cabbagium.xml"/>
 	<Module fileName="Modules\Armor\CCArmor_Sivaya.xml"/>
 	<Module fileName="Modules\Armor\CCArmor_Stealth.xml"/>
 	
 	<!-- Autons -->
+	<Module fileName="Modules\Autons\CCAutons_Phantom.xml"/>
 	<Module fileName="Modules\Autons\CCAutons_Wraith.xml"/>
 	<Module fileName="Modules\Autons\CCAutons_Shade.xml"/>
 	
@@ -1007,11 +1074,13 @@ vt			= 	(virtual) Item Code
 	<Module fileName="Modules\Library\CCLibrary_Effects.xml"/>
 	<Module fileName="Modules\Library\CCLibrary_Globals.xml"/>
 	<Module fileName="CCModules\CCLibrary_Sovereign.xml"/>
+	<Module fileName="Modules\Library\CCLibrary_Tables.xml"/>
 	
 	<!-- Other -->
 	<Module fileName="Modules\CCOthala.xml"/>
 	<Module fileName="Modules\CCPraclarush.xml"/>
 	<Module fileName="Modules\CCMiscItems.xml"/>
+	<Module fileName="Modules\CCUsefulItems.xml"/>
 	<Module fileName="Modules\CCShips.xml"/>
 	
 	<!-- Other -->

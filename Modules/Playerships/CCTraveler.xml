@@ -24,7 +24,7 @@
 			fuelCriteria=		"f L:0"
 			
 			maxArmor=			"20000"
-			maxDevices=			"10"
+			maxDevices=			"9"
 			maxWeapons=			"4"
 		>
 
