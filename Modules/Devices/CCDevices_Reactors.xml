@@ -597,6 +597,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva5MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion1;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -627,6 +628,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva10MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion2;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -657,6 +659,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva17MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion3;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -687,6 +690,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva31MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion4;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -717,6 +721,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva57MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion5;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -747,6 +752,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva100MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion6;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -777,6 +783,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva170MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion7;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -807,6 +814,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva310MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion8;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -837,6 +845,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva560MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion9;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -867,6 +876,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva1000MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion10;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -897,6 +907,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva1700MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion11;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -927,6 +938,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva3000MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion12;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -957,6 +969,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva5500MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion13;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -987,6 +1000,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva10000MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion14;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1017,6 +1031,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva18000MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion15;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 	
@@ -1522,6 +1537,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva5MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion1;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1554,6 +1570,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva10MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion2;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1586,6 +1603,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva17MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion3;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1618,6 +1636,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva31MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion4;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1650,6 +1669,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva57MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion5;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1682,6 +1702,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva100MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion6;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1714,6 +1735,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva170MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion7;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1746,6 +1768,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva310MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion8;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1778,6 +1801,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva560MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion9;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1810,6 +1834,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva1000MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion10;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1842,6 +1867,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva1700MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion11;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1874,6 +1900,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva3000MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion12;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1906,6 +1933,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva5500MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion13;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1938,6 +1966,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva10000MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion14;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
@@ -1970,6 +1999,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva18000MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion15;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 	

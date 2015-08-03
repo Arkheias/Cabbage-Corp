@@ -364,7 +364,7 @@ These devices do not currently work for the player-ships because it is technical
 				(block Nil
 					(objSetData gSource "cabbageOverloading" 0)
 					(objSetData gSource "cabbageOverloadTimer" 0)
-					(objSetData gSource "cabbageExplosionTimer" 0)
+					(objSetData gSource "cabbageEjectionChance" 0)
 				)
 			</OnEnable>
 			
@@ -372,24 +372,58 @@ These devices do not currently work for the player-ships because it is technical
 				(if (itmIsInstalled gItem)
 					(if (objIsDeviceEnabled gsource gItem)
 						(switch
-							(eq (objGetData gSource 'cabbageExplosionTimer) 1)
+							(eq (objGetData gSource 'cabbageEjectionChance) 1)
 								(block Nil
 									(shpRemoveDevice gSource gItem)
-									(sysCreateWeaponFire &itHighFluxMAG; Nil (objGetPos gSource) (rollDice 1 360) 5 Nil)
+									(sysCreateWeaponFire
+											(itmGetStaticData gItem 'CCExplosionType)
+											Nil
+											(objGetPos gSource)
+											(rollDice 1 360)
+											5
+											Nil
+									)
+									(if (itmHasAttribute gItem "dual")
+										(sysCreateWeaponFire
+											(itmGetStaticData gItem 'CCExplosionType)
+											Nil
+											(objGetPos gSource)
+											(rollDice 1 360)
+											5
+											Nil
+										)
+									)
 									(objRemoveItem gSource (itmCreate (itmGetType gItem) 1))
 								)
 								
-							(gr (objGetData gSource 'cabbageExplosionTimer) 1)
+							(gr (objGetData gSource 'cabbageEjectionChance) 1)
 								(block Nil
 									(shpRemoveDevice gSource gItem)
-									(sysCreateWeaponFire &itHighFluxMAG; gSource (objGetPos gSource) (rollDice 1 360) 5 Nil)
+									(sysCreateWeaponFire
+											(itmGetStaticData gItem 'CCExplosionType)
+											gSource
+											(objGetPos gSource)
+											(rollDice 1 360)
+											5
+											Nil
+									)
+									(if (itmHasAttribute gItem "dual")
+										(sysCreateWeaponFire
+											(itmGetStaticData gItem 'CCExplosionType)
+											gSource
+											(objGetPos gSource)
+											(rollDice 1 360)
+											5
+											Nil
+										)
+									)
 									(objRemoveItem gSource (itmCreate (itmGetType gItem) 1))
 									(objSendMessage gSource gSource (cat "Reactor successfully ejected."))
 								)
 								
 							(not (eq (objGetData gSource 'cabbageOverloadTimer) 0))
 								(if (eq (objGetData gSource 'cabbageOverloadTimer) 1)
-									(objSetData gSource "cabbageExplosionTimer" (rollDice 1 (itmGetLevel gItem)))
+									(objSetData gSource "cabbageEjectionChance" (rollDice 1 (itmGetLevel gItem)))
 									(block Nil
 										(objSetData gSource "cabbageOverloadTimer" (subtract (objGetData gSource 'cabbageOverloadTimer) 1))
 										(objSendMessage gSource gSource (cat "Reactor Warning: Restore containment within " (objGetData gSource 'cabbageOverloadTimer) " seconds"))
@@ -398,11 +432,11 @@ These devices do not currently work for the player-ships because it is technical
 								
 							(eq (objGetData gSource 'cabbageOverloading) 1)
 								(block Nil
-									(objSetData gSource "cabbageOverloadTimer" (multiply (itmGetLevel gItem) 5))
+									(objSetData gSource "cabbageOverloadTimer" (add (multiply (itmGetLevel gItem) 5) (random 0 10)))
 								)
 							
 								(block Nil
-									(if (eq (rollDice 1 (multiply (itmGetLevel gItem) 50)) (multiply (itmGetLevel gItem) 50))
+									(if (eq (rollDice 1 (multiply (power (itmGetLevel gItem) 2) 20)) 1)
 										(objSetData gSource "cabbageOverloading" 1)
 									)
 								)

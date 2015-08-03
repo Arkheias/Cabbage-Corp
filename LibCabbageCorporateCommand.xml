@@ -410,6 +410,22 @@
 <!ENTITY itCCAuxSiva10000MWReactor				"0xDA27C84E">
 <!ENTITY itCCAuxSiva18000MWReactor				"0xDA27C84F">
 
+<!ENTITY vtCCReactorExplosion1					"0xDA27C851">
+<!ENTITY vtCCReactorExplosion2					"0xDA27C852">
+<!ENTITY vtCCReactorExplosion3					"0xDA27C853">
+<!ENTITY vtCCReactorExplosion4					"0xDA27C854">
+<!ENTITY vtCCReactorExplosion5					"0xDA27C855">
+<!ENTITY vtCCReactorExplosion6					"0xDA27C856">
+<!ENTITY vtCCReactorExplosion7					"0xDA27C857">
+<!ENTITY vtCCReactorExplosion8					"0xDA27C858">
+<!ENTITY vtCCReactorExplosion9					"0xDA27C859">
+<!ENTITY vtCCReactorExplosion10					"0xDA27C85A">
+<!ENTITY vtCCReactorExplosion11					"0xDA27C85B">
+<!ENTITY vtCCReactorExplosion12					"0xDA27C85C">
+<!ENTITY vtCCReactorExplosion13					"0xDA27C85D">
+<!ENTITY vtCCReactorExplosion14					"0xDA27C85E">
+<!ENTITY vtCCReactorExplosion15					"0xDA27C85F">
+
 
 	<!-- Repairers -->
 <!ENTITY itCCBasicServicingSystem				"0xDA27C901">

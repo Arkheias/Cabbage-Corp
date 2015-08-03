@@ -2,7 +2,7 @@
 Changelog
 ---------
 
-v0.7.4.0-development (2015-07-30)
+v0.7.4.0-development (2015-08-03)
 ---------------------------------
 -----General Changes-----
 Updated to API v27 for Transcendence v1.6.1.
@@ -10,6 +10,7 @@ Temporarily removed Playership Drones (PSD) support due to changes in v1.6 makin
 Moved changelog from the general readme file to its own readme file.
 Added a line of hyphens underneath version numbers in the changelog.
 Added version information to extension and library header files.
+Changed the general readme into a fancy .pdf file.
 
 ----Stations-----
 Removed mass from outpost turrets (they weren't even marked as mobile and (some) stars have gravity now).
@@ -44,11 +45,15 @@ Added miningEquipment attribute to mining lances, refineries and miner's cargo h
 Changed the Cabbage Corp Toolset to not appear unless the playership has Cabbage Corp equipment installed (like I originally advertised it).
 Added Microsaur scanner effects and scripts.
 Added Microsaur condemnation pods and relevant effects.
+Changed low level (Levels 1-2) reactors to notRandom.
+Changed dual reactors to appear less often (Levels 3-5 veryrare, everything else is notRandom).
 Changed auxiliary reactors to now shut themselves off automatically if your ship is really low on fuel.
 Changed auxiliary reactors to now be half as efficient when damaged.
 Changed auxiliary reactor efficiencies (civilian: 85%, military: 90%, alien: 95%).
-Changed dual reactors to appear less often (Levels 3-5 veryrare, everything else is notRandom).
-Changed low level (Levels 1-2) reactors to notRandom.
+Changed unstable reactors to now have custom explosions when they overload.
+Changed unstable dual reactors to now explode twice when they overload.
+Changed unstable reactor to have a higher chance of exploding at lower levels but a much lower chance at higher levels.
+Changed unstable reactors to last slightly longer before exploding, once they start overloading.
 Changed cabbages for balance and updated their descriptions.
 Changed misc. items to match new whitespace standard.
 Changed generic device images to be reorganized into separate file from generic item images.
