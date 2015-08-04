@@ -595,6 +595,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				fuelCriteria=	"f L:1;" 
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCSiva5MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion1;</CCExplosionType>
@@ -625,6 +632,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				maxFuel=		"31000"
 				fuelCriteria=	"f L:1-2;" 
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva10MWReactor;</CCItemSwap>
@@ -657,6 +671,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				fuelCriteria=	"f L:1-3;" 
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCSiva17MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion3;</CCExplosionType>
@@ -687,6 +708,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				maxFuel=		"125000"
 				fuelCriteria=	"f L:2-4;" 
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva31MWReactor;</CCItemSwap>
@@ -719,6 +747,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				fuelCriteria=	"f L:3-5;" 
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCSiva57MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion5;</CCExplosionType>
@@ -749,6 +784,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				maxFuel=		"560000"
 				fuelCriteria=	"f L:4-6;" 
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva100MWReactor;</CCItemSwap>
@@ -781,6 +823,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				fuelCriteria=	"f L:5-7;" 
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCSiva170MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion7;</CCExplosionType>
@@ -811,6 +860,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				maxFuel=		"2200000"
 				fuelCriteria=	"f L:6-8;" 
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva310MWReactor;</CCItemSwap>
@@ -843,6 +899,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				fuelCriteria=	"f L:7-9;" 
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCSiva560MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion9;</CCExplosionType>
@@ -873,6 +936,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				maxFuel=		"9300000"
 				fuelCriteria=	"f L:8-10;" 
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva1000MWReactor;</CCItemSwap>
@@ -905,6 +975,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				fuelCriteria=	"f L:9-11;" 
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCSiva1700MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion11;</CCExplosionType>
@@ -935,6 +1012,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				maxFuel=		"39000000"
 				fuelCriteria=	"f L:10-12;" 
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva3000MWReactor;</CCItemSwap>
@@ -967,6 +1051,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				fuelCriteria=	"f L:11-13;" 
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCSiva5500MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion13;</CCExplosionType>
@@ -998,6 +1089,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				fuelCriteria=	"f L:12-14;" 
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCSiva10000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion14;</CCExplosionType>
@@ -1028,6 +1126,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				maxFuel=		"340000000"
 				fuelCriteria=	"f L:13-15;" 
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCSiva18000MWReactor;</CCItemSwap>
@@ -1535,6 +1640,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				deviceslots=	"2"
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva5MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion1;</CCExplosionType>
@@ -1567,6 +1679,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				
 				deviceslots=	"2"
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva10MWReactor;</CCItemSwap>
@@ -1601,6 +1720,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				deviceslots=	"2"
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva17MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion3;</CCExplosionType>
@@ -1633,6 +1759,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				
 				deviceslots=	"2"
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva31MWReactor;</CCItemSwap>
@@ -1667,6 +1800,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				deviceslots=	"2"
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva57MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion5;</CCExplosionType>
@@ -1699,6 +1839,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				
 				deviceslots=	"2"
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva100MWReactor;</CCItemSwap>
@@ -1733,6 +1880,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				deviceslots=	"2"
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva170MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion7;</CCExplosionType>
@@ -1765,6 +1919,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				
 				deviceslots=	"2"
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva310MWReactor;</CCItemSwap>
@@ -1799,6 +1960,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				deviceslots=	"2"
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva560MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion9;</CCExplosionType>
@@ -1831,6 +1999,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				
 				deviceslots=	"2"
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva1000MWReactor;</CCItemSwap>
@@ -1865,6 +2040,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				deviceslots=	"2"
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva1700MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion11;</CCExplosionType>
@@ -1897,6 +2079,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				
 				deviceslots=	"2"
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva3000MWReactor;</CCItemSwap>
@@ -1931,6 +2120,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				deviceslots=	"2"
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva5500MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion13;</CCExplosionType>
@@ -1964,6 +2160,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				deviceslots=	"2"
 		/>
 		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva10000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion14;</CCExplosionType>
@@ -1996,6 +2199,13 @@ The game does not provide a way to keep reactors from being sold at stations wit
 				
 				deviceslots=	"2"
 		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
 		
 		<StaticData>
 			<CCItemSwap>&itCCDualSiva18000MWReactor;</CCItemSwap>

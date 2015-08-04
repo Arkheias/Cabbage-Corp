@@ -1,6 +1,29 @@
 ---------
 Changelog
 ---------
+
+v0.7.4.1-development (2015-08-04)
+---------------------------------
+
+----Ships-----
+Fixed error in the description of the lorry-class stealth transport that starts in Tau Ceti.
+
+----Items-----
+Added invoke button to Siva reactors when they are being run without containment so that you can quickly restore containment.
+Changed unstable Siva reactors to explode sooner once they start overloading.
+Changed mining lance enhancers to provide different bonuses depending on the level of the weapon they are enhancing.
+Changed the descriptions of mining lance enhancers to match their new effects.
+Changed the effect of the mark V repeater heat sink to match the trend of the other heat sinks.
+Changed the descriptions of the repeater heat sinks.
+Changed really high level enhancers to use the alien unknown device type.
+Changed the level 1-4 reactor explosion to do more damage.
+Changed the level 11-15 reactor explosions to do plasma damage.
+Fixed values of higher level mining lance enhancers because I forgot to set them correctly when I first created them.
+Fixed a bug in the criteria for the mining lance enhancers that would enable them to affect the other unrelated Cabbage Corp energy weapon.
+
+
+
+
 v0.7.4.0-development (2015-08-03)
 ---------------------------------
 -----General Changes-----
