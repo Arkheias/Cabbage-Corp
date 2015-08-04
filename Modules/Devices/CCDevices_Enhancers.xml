@@ -18,7 +18,7 @@
 			value=				"1500"
 			mass=				"1000"
 			  
-			description=		"This enhancer slightly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by twenty percent on average."
+			description=		"This enhancer slightly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their damage output by up to 75% depending on their original power requirements. Does not affect mining lances over tech level five."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
@@ -28,8 +28,32 @@
 		>
 			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l +cabbageCorp; +energyWeapon"
-						 enhancement=	"+hpBonus:20;"
+						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:75;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:50;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:30;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:15;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:5;"
 				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
@@ -48,7 +72,7 @@
 			value=				"6000"
 			mass=				"1500"
 			  
-			description=		"This enhancer increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by forty percent on average."
+			description=		"This enhancer increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by up to 140% depending on their original power requirements. Does not affect mining lances over tech level seven."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
@@ -58,8 +82,44 @@
 		>
 			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l +cabbageCorp; +energyWeapon"
-						 enhancement=	"+hpBonus:40;"
+						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:140;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:105;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:75;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:50;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:30;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:15;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:5;"
 				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
@@ -78,7 +138,7 @@
 			value=				"24000"
 			mass=				"2500"
 			  
-			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by sixty percent on average."
+			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by up to 225% depending on their original power requirements. Does not affect mining lances over tech level nine."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
@@ -88,8 +148,56 @@
 		>
 			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l +cabbageCorp; +energyWeapon"
-						 enhancement=	"+hpBonus:60;"
+						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:225;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:180;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:140;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:105;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:75;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:50;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:30;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:8; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:15;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:9; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:5;"
 				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
@@ -105,10 +213,10 @@
 			frequency=			"rare"
 			unknownType=		"&itUnknownEnhancer8;"
 
-			value=				"10000"
+			value=				"60000"
 			mass=				"4000"
 			  
-			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by eighty percent on average."
+			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by up to 330% depending on their original power requirements. Does not affect mining lances over tech level eleven."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
@@ -118,8 +226,68 @@
 		>
 			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l +cabbageCorp; +energyWeapon"
-						 enhancement=	"+hpBonus:80;"
+						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:330;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:275;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:225;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:180;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:140;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:105;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:75;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:8; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:50;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:9; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:30;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:10; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:15;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:11; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:5;"
 				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
@@ -133,11 +301,12 @@
 			  
 			level=				"10"
 			frequency=			"rare"
+			unknownType=		"&itUnknownAlienDevice10;"
 
-			value=				"10000"
+			value=				"400000"
 			mass=				"6000"
 			  
-			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, doubling their potential damage output on average."
+			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by up to 455% depending on their original power requirements. Does not affect mining lances over tech level thirteen."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
@@ -147,8 +316,80 @@
 		>
 			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l +cabbageCorp; +energyWeapon"
-						 enhancement=	"+hpBonus:100;"
+						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:455;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:390;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:330;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:270;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:225;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:180;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:140;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:8; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:105;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:9; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:75;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:10; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:50;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:11; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:30;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:12; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:15;"
+				/>
+			</EnhancementAbilities>
+			<EnhancementAbilities>
+				<Enhance type=			"cabbageLanceEnhancer"
+						 criteria=		"w~l L:13; +cabbageCorp; +energyWeapon; +miningEquipment"
+						 enhancement=	"+hpBonus:5;"
 				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
@@ -261,7 +502,7 @@
 			value=				"60000"
 			mass=				"4000"
 			  
-			description=		"This heat sink increases the fire rate of any installed Cabbage Corp repeater immensely."
+			description=		"This heat sink exceedingly increases the fire rate of any installed Cabbage Corp repeater."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
@@ -286,11 +527,12 @@
 			  
 			level=				"10"
 			frequency=			"rare"
+			unknownType=		"&itUnknownAlienDevice10;"
 
 			value=				"240000"
 			mass=				"5000"
 			  
-			description=		"This heat sink increases the fire rate of any installed Cabbage Corp repeater immensely and slightly increases the damage of plasma based repeaters."
+			description=		"This heat sink increases the fire rate of any installed Cabbage Corp repeater immensely."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
@@ -301,12 +543,7 @@
 			<EnhancementAbilities>
 				<Enhance type=			"repeaterHeatSink"
 						 criteria=		"w~l +repeater;"
-						 enhancement=	"+speed:60;"
-				/>
-				
-				<Enhance type=			"plasmaRepeater"
-						 criteria=		"w; +repeater; +damageType:plasma;"
-						 enhancement=	"+hpBonus:20;"
+						 enhancement=	"+speed:50;"
 				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
@@ -444,6 +681,7 @@
 			
 			level=				"10"
 			frequency=			"rare"
+			unknownType=		"&itUnknownAlienDevice10;"
 			
 			value=				"200000"
 			mass=				"5000"

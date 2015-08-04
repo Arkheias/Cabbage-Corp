@@ -132,7 +132,7 @@
 		
 		<Weapon
 				type=			"missile"
-				damage=			"thermo:4d4; momentum1; radiation1; WMD1"
+				damage=			"thermo:8d8; momentum1; radiation1; WMD1"
 				
 				hitPoints=		"25"
 						 
@@ -163,7 +163,7 @@
 					count=			"1"
 					type=			"radius"
 
-					damage=			"thermo:4d4; momentum1; radiation1; WMD1"
+					damage=			"thermo:8d8; momentum1; radiation1; WMD1"
 					minRadius=		"2"
 					maxRadius=		"3"
 					missileSpeed=	"0"
@@ -190,7 +190,7 @@
 		
 		<Weapon
 				type=			"missile"
-				damage=			"thermo:6d6; momentum1; radiation1; WMD2"
+				damage=			"thermo:9d9; momentum1; radiation1; WMD2"
 				
 				hitPoints=		"30"
 						 
@@ -221,7 +221,7 @@
 					count=			"1"
 					type=			"radius"
 
-					damage=			"thermo:6d6; momentum1; radiation1; WMD2"
+					damage=			"thermo:9d9; momentum1; radiation1; WMD2"
 					minRadius=		"2"
 					maxRadius=		"3"
 					missileSpeed=	"0"
@@ -248,7 +248,7 @@
 		
 		<Weapon
 				type=			"missile"
-				damage=			"thermo:8d8; momentum1; radiation1; WMD3"
+				damage=			"thermo:10d10; momentum1; radiation1; WMD3"
 				
 				hitPoints=		"35"
 						 
@@ -279,7 +279,7 @@
 					count=			"1"
 					type=			"radius"
 
-					damage=			"thermo:8d8; momentum1; radiation1; WMD3"
+					damage=			"thermo:10d10; momentum1; radiation1; WMD3"
 					minRadius=		"2"
 					maxRadius=		"3"
 					missileSpeed=	"0"
@@ -306,7 +306,7 @@
 		
 		<Weapon
 				type=			"missile"
-				damage=			"thermo:10d10; momentum2; radiation1; WMD3"
+				damage=			"thermo:11d11; momentum2; radiation1; WMD3"
 				
 				hitPoints=		"40"
 						 
@@ -337,7 +337,7 @@
 					count=			"1"
 					type=			"radius"
 
-					damage=			"thermo:10d10; momentum2; radiation1; WMD3"
+					damage=			"thermo:11d11; momentum2; radiation1; WMD3"
 					minRadius=		"3"
 					maxRadius=		"4"
 					missileSpeed=	"0"
@@ -713,7 +713,7 @@
 		
 		<Weapon
 				type=			"missile"
-				damage=			"thermo:24d24; momentum4; radiation3; WMD7"
+				damage=			"plasma:24d24; momentum4; radiation3; WMD7"
 				
 				hitPoints=		"85"
 						 
@@ -744,7 +744,7 @@
 					count=			"1"
 					type=			"radius"
 
-					damage=			"thermo:24d24; momentum4; radiation3; WMD7"
+					damage=			"plasma:24d24; momentum4; radiation3; WMD7"
 					minRadius=		"5"
 					maxRadius=		"6"
 					missileSpeed=	"0"
@@ -771,7 +771,7 @@
 		
 		<Weapon
 				type=			"missile"
-				damage=			"thermo:26d26; momentum4; radiation4; WMD7"
+				damage=			"plasma:26d26; momentum4; radiation4; WMD7"
 				
 				hitPoints=		"85"
 						 
@@ -802,7 +802,7 @@
 					count=			"1"
 					type=			"radius"
 
-					damage=			"thermo:26d26; momentum4; radiation4; WMD7"
+					damage=			"plasma:26d26; momentum4; radiation4; WMD7"
 					minRadius=		"5"
 					maxRadius=		"6"
 					missileSpeed=	"0"
@@ -829,7 +829,7 @@
 		
 		<Weapon
 				type=			"missile"
-				damage=			"thermo:28d28; momentum4; radiation5; WMD7"
+				damage=			"plasma:28d28; momentum4; radiation5; WMD7"
 				
 				hitPoints=		"90"
 						 
@@ -860,7 +860,7 @@
 					count=			"1"
 					type=			"radius"
 
-					damage=			"thermo:28d28; momentum4; radiation5; WMD7"
+					damage=			"plasma:28d28; momentum4; radiation5; WMD7"
 					minRadius=		"5"
 					maxRadius=		"6"
 					missileSpeed=	"0"
@@ -887,7 +887,7 @@
 		
 		<Weapon
 				type=			"missile"
-				damage=			"thermo:30d30; momentum4; radiation6; WMD7"
+				damage=			"plasma:30d30; momentum4; radiation6; WMD7"
 				
 				hitPoints=		"95"
 						 
@@ -918,7 +918,7 @@
 					count=			"1"
 					type=			"radius"
 
-					damage=			"thermo:30d30; momentum4; radiation6; WMD7"
+					damage=			"plasma:30d30; momentum4; radiation6; WMD7"
 					minRadius=		"5"
 					maxRadius=		"6"
 					missileSpeed=	"0"
@@ -945,7 +945,7 @@
 		
 		<Weapon
 				type=			"missile"
-				damage=			"thermo:32d32; momentum4; radiation7; WMD7"
+				damage=			"plasma:32d32; momentum4; radiation7; WMD7"
 				
 				hitPoints=		"100"
 						 
@@ -976,7 +976,7 @@
 					count=			"1"
 					type=			"radius"
 
-					damage=			"thermo:32d32; momentum4; radiation7; WMD7"
+					damage=			"plasma:32d32; momentum4; radiation7; WMD7"
 					minRadius=		"5"
 					maxRadius=		"6"
 					missileSpeed=	"0"

@@ -70,7 +70,7 @@
 		</Effects>
 
 		<PlayerSettings
-			desc=               "Cabbage Corp began production of the Lorry series in 2398. The Lorry-class was designed with minimal backup systems in order to maximize the available space for upgrades. It has six armor segments, a base crew capacity of four, and space for up to eleven devices.  (Starts in Tau Ceti)"
+			desc=               "Cabbage Corp began production of the Lorry series in 2398. The Lorry-class was designed with minimal backup systems in order to maximize the available space for upgrades. It has six armor segments, a base crew capacity of four, and space for up to ten devices.  (Starts in Tau Ceti)"
 			largeimage=         "&rsCCLargeLorry;"
 			initialClass=       "true"
             startingCredits=    "10d12+80"
