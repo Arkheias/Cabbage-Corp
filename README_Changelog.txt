@@ -6,6 +6,7 @@ v0.7.4.3-development (2015-08-05)
 ---------------------------------
 ----Ships-----
 Added remaining cargo space counter to the dockscreens for Shade-class autons.
+Changed maxCargoCapacity on Shade-class autons to be twice the standard cargoCapacity.
 Fixed error where docking with any Shade-class auton showed the description "You are docked with a mark I Shade auton."
 
 
