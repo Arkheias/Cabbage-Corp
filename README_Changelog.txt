@@ -10,16 +10,15 @@ Fixed error where docking with any Shade-class auton showed the description "You
 
 
 
-
-v0.7.4.2-development (2015-08-04)
----------------------------------
+v0.7.4.2 (2015-08-04)
+---------------------
 ----Stations-----
 Fixed bug where buying a modified item from a Cabbage Corp Station via the "Buy & Modify" button gave you the item for free (or basically free).
 
 
 
-v0.7.4.1-development (2015-08-04)
----------------------------------
+v0.7.4.1 (2015-08-04)
+---------------------
 ----Ships-----
 Fixed error in the description of the lorry-class stealth transport that starts in Tau Ceti.
 
@@ -38,8 +37,8 @@ Fixed a bug in the criteria for the mining lance enhancers that would enable the
 
 
 
-v0.7.4.0-development (2015-08-03)
----------------------------------
+v0.7.4.0 (2015-08-03)
+---------------------
 -----General Changes-----
 Updated to API v27 for Transcendence v1.6.1.
 Temporarily removed Playership Drones (PSD) support due to changes in v1.6 making it not work correctly.
