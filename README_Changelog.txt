@@ -2,9 +2,15 @@
 Changelog
 ---------
 
+v0.7.4.2-development (2015-08-04)
+---------------------------------
+----Stations-----
+Fixed bug where buying a modified item from a Cabbage Corp Station via the "Buy & Modify" button gave you the item for free (or basically free).
+
+
+
 v0.7.4.1-development (2015-08-04)
 ---------------------------------
-
 ----Ships-----
 Fixed error in the description of the lorry-class stealth transport that starts in Tau Ceti.
 
@@ -20,7 +26,6 @@ Changed the level 1-4 reactor explosion to do more damage.
 Changed the level 11-15 reactor explosions to do plasma damage.
 Fixed values of higher level mining lance enhancers because I forgot to set them correctly when I first created them.
 Fixed a bug in the criteria for the mining lance enhancers that would enable them to affect the other unrelated Cabbage Corp energy weapon.
-
 
 
 

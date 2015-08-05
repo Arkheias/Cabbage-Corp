@@ -95,7 +95,7 @@ shields engineer		3x		3x			shields 1.35x stronger
 
 The powerUse for the repairer is per armor segment, the game assumes two segments when it displays powerUse.
 
-One idea I've had for crew members is that they could be able to level up in the background, while only requiring some kind of mission/item to upgrade to military status (L 5->6, available at Cabbage Corp Factories), and some kind of genetic engineering mission/item to reach the alien levels (L 10->11, Cabbage Corp Outposts).
+One idea I've had for crew members is that they could be able to level up in the background, while only requiring some kind of mission/item to upgrade to military status (L 5->6, available at Cabbage Corp factories), and some kind of genetic engineering mission/item to reach the alien levels (L 10->11, available at Cabbage Corp outposts).
 
 The virtual training rom could be reusable, connect to Cabbage Corp private network (basically it only works in systems with a Cabbage Corp station) and allows you to access virtual training for all types of crew members, up to L5. To get to L6-10 you need a military training rom, and L11+ training is offered at Cabbage Corp Outposts but only one random class can be trained at any given station, and each crew member can only be trained in alien skills once per outpost.
 

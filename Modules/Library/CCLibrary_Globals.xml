@@ -52,17 +52,22 @@
 		
 		(setq intBuyModifiedItems 
 			(lambda (itemCount itemCost)
-				(block (itemsToBuy)
+				(block (itemMult itemsToBuy)
 					(setq itemsToBuy (itmCreate (itmGetType (scrGetItem gSCreen)) itemCount))
 					(objRemoveItem gSource gBaseItem 
 						(multiply itemCount 
 							(block Nil
 								(for counter 0	(subtract (count (itmGetStaticData gBaseItem 'CCBuyAndModify)) 1)
+								;	for every item in the CCBuyAndModifyArray
+								
 									(if (eq (itmGetType (scrGetItem gScreen)) (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'Product))
-										(setq itemCost (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'count))
+									;	if the current item from the array matches the item being purchased then
+									
+										(setq itemMult (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'count))
+										;	set the itemMult equal to the base items required to build the new item
 									)
 								)
-								itemCost
+								itemMult
 							)
 						)
 					)

@@ -504,10 +504,10 @@ Alternate idea: Make the shields have different maximum strength limits
 			
 		<Events>
 			<OnGlobalPaneInit>
-				; aScreenUNID is the UNID of the screen being shown
-				; aScreen is the screen name (if this is a local screen)
-				; aPane is the pane being shown
-				; Action only appears if any item with the Cabbage attribute is installed.
+				;	aScreenUNID is the UNID of the screen being shown
+				;	aScreen is the screen name (if this is a local screen)
+				;	aPane is the pane being shown
+				;	Action only appears if any item with the Cabbage attribute is installed.
 				(if (eq (objGetItems gSource "* +cabbageCorp") Nil)
 					Nil
 					(if (and 
@@ -541,7 +541,7 @@ Alternate idea: Make the shields have different maximum strength limits
 		<List>
 			(map (itmGetStaticData gBaseItem 'CCBuyAndModify) theRecipe
 			
-				;	Only add items to thelist if the station has the resources to make them.
+				;	Only add items to the list if the station has the resources to make them.
 			
 				(if (gr (divide (itmGetCount gBaseItem) (@ theRecipe 'count)) 0)
 					(itmCreate (@ theRecipe 'product) (divide (itmGetCount gBaseItem) (@ theRecipe 'count)))
@@ -668,7 +668,7 @@ Alternate idea: Make the shields have different maximum strength limits
 						(scrShowAction gScreen 'actionShowInstallables (and (scrGetData gScreen 'installablesOption) (not (typGetData &dsRPGCommoditiesExchangeBuy; 'showInstallables))))
 						(scrShowAction gScreen 'actionHideInstallables (and (scrGetData gScreen 'installablesOption) (typGetData &dsRPGCommoditiesExchangeBuy; 'showInstallables)))
 					)
-						
+					
 					(objRemoveItem gSource thisItem)
 				)
 				</OnPaneInit>
@@ -698,23 +698,23 @@ Alternate idea: Make the shields have different maximum strength limits
 								(block Nil
 									(intBuyModifiedItems 1 itemCost)
 									(scrExitScreen gScreen)
-									)
 								)
 							)
+						)
 					</Action>
 					
 					<Action id="actionShowInstallables" minor="true">
 						(block Nil
 							(typSetData &dsRPGCommoditiesExchangeBuy; 'showInstallables True)
 							(scrRefreshScreen gScreen)
-							)
+						)
 					</Action>
 					
 					<Action id="actionHideInstallables" minor="true">
 						(block Nil
 							(typSetData &dsRPGCommoditiesExchangeBuy; 'showInstallables Nil)
 							(scrRefreshScreen gScreen)
-							)
+						)
 					</Action>
 					
 					<Action id="actionDone" cancel="1">
@@ -730,11 +730,11 @@ Alternate idea: Make the shields have different maximum strength limits
 					(block (
 						(maxCount (scrGetData gScreen 'maxCount))
 						(itemCost (scrGetData gScreen 'itemCost))
-						)
+					)
 						
 						(scrSetDescTranslate gScreen 'descBuyQuantity { value: (fmtCurrency (objGetDefaultCurrency gSource) itemCost) })
 						(scrSetCounter gScreen maxCount)
-						)
+					)
 				</OnPaneInit>
 
 				<Actions>
@@ -757,9 +757,9 @@ Alternate idea: Make the shields have different maximum strength limits
 								(block Nil
 									(intBuyModifiedItems countToBuy itemCost)
 									(scrExitScreen gScreen)
-									)
 								)
 							)
+						)
 					</Action>
 
 					<Action id="actionCancel" cancel="1">
@@ -793,11 +793,11 @@ Alternate idea: Make the shields have different maximum strength limits
 									installValue: (fmtCurrency currencyUsed installCost) 
 									})
 								(setq canInstall True)
-								)
 							)
+						)
 							
 						(scrEnableAction gScreen 'actionBuyAndInstall canInstall)
-						)
+					)
 				</OnPaneInit>
 
 				<Actions>
@@ -816,7 +816,7 @@ Alternate idea: Make the shields have different maximum strength limits
 							(shpInstallDevice gPlayerShip itemInstalled)
 							(typSetData &svPlayer; 'tutorialInstalled True)
 							(scrShowPane gScreen "InstallSuccess")
-							)
+						)
 					</Action>
 
 					<Action id="actionBuyOnly">
@@ -826,7 +826,7 @@ Alternate idea: Make the shields have different maximum strength limits
 							
 							(intBuyModifiedItems 1 itemCost)
 							(scrExitScreen gScreen)
-							)
+						)
 					</Action>
 
 					<Action id="actionCancel" cancel="1">
@@ -837,7 +837,7 @@ Alternate idea: Make the shields have different maximum strength limits
 			
 			<InstallSuccess
 					noListNavigation="true"
-					>
+			>
 				<OnPaneInit>
 					(scrSetDescTranslate gScreen 'descInstallationSuccessful { 
 						item: (scrGetData gScreen 'itemInstalled)
@@ -864,12 +864,12 @@ Alternate idea: Make the shields have different maximum strength limits
 					(cat
 						"Unit price: " (@ gData 'value) " (" (@ gData 'max) " for " (@ gData 'maxValue) ")\n"
 						"Unit mass: " (@ gData 'mass) " (" (@ gData 'max) " for " (@ gData 'maxMass) ")\n\n"
-						)
+					)
 					(cat
 						"Unit price: " (@ gData 'value) "\n"
 						"Unit mass: " (@ gData 'mass) "\n\n"
-						)
 					)
+				)
 			</Text>
 			<Text id="descBuyOrInstall">
 				(cat
@@ -877,7 +877,7 @@ Alternate idea: Make the shields have different maximum strength limits
 					
 					"Do you wish to buy and install it for " (@ gData 'installValue) ", "
 					"or do you wish to only buy it for " (@ gData 'buyValue) "?"
-					)
+				)
 			</Text>
 			<Text id="descNotForSale">
 				"This item is not for sale."
@@ -885,7 +885,7 @@ Alternate idea: Make the shields have different maximum strength limits
 			<Text id="descNotEnoughMoney">
 				(cat
 					"You do not have enough " (@ gData 'currency) " to purchase any."
-					)
+				)
 			</Text>
 			<Text id="descNotEnoughMoneyToInstall">
 				(cat
@@ -893,7 +893,7 @@ Alternate idea: Make the shields have different maximum strength limits
 					
 					"Unfortunately, you cannot afford the installation cost. "
 					"Do you wish to buy it without installation for " (@ gData 'value) "?"
-					)
+				)
 			</Text>
 			<Text id="descNotEnoughRoom">
 				"Unfortunately, you cannot fit any in your cargo hold."
@@ -901,22 +901,22 @@ Alternate idea: Make the shields have different maximum strength limits
 			<Text id="descNotEnoughMoneyForAll">
 				(cat
 					"You have enough " (@ gData 'currency) " to buy " (@ gData 'value) "."
-					)
+				)
 			</Text>
 			<Text id="descNotEnoughRoomForAll">
 				(cat
 					"You have enough room in your cargo hold to carry " (@ gData 'value) "."
-					)
+				)
 			</Text>
 			<Text id="descBuyQuantity">
 				(cat
 					"How many items do you wish to purchase at " (@ gData 'value) " each?"
-					)
+				)
 			</Text>
 			<Text id="descInstallationSuccessful">
 				(cat 
 					(itmGetName (@ gData 'item) 0x01) " installed successfully."
-					)
+				)
 			</Text>
 			
 			<Text id="errorNoItemsToBuy">"There are no items available for sale."</Text>

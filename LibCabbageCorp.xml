@@ -885,7 +885,7 @@
 <TranscendenceLibrary UNID="&unidCCCabbageCorpLibrary;" 
 		Name=			"Cabbage Corp Library" 
 		release=		"1"
-		version=		"0.7.4.0"
+		version=		"0.7.4.2"
 		apiVersion=		"27"
 		credits=		"Arkheias"
 		coverImageID=	"&rsCCCabbageCorpCover;"
