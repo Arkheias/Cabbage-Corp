@@ -53,24 +53,52 @@ addCrewSpace stands for 'additional crew space'
 
 		<Events>
 			<CanBeUninstalled>
-				(block (auxCrewCount addAuxCrew)
+				(block (auxCrewCount addAuxCrew maxAuxCrew)
+				
 					(setq auxCrewCount (count (objGetItems gSource "dI +auxCrew")))
 					(setq addAuxCrew 0)
-					
-					;If the object does not have a defined maxAuxCrew in its .xml, default it to 1
-					;If the object does have a defined maxAuxCrew in its .xml, use that value
 					
 					(enum (objGetItems gSource "dI +crewQuarters") gQuarters
 						(setq addAuxCrew (add addAuxCrew (itmGetStaticData gQuarters "addCrewSpace")))
 					)
 					
-					(if (not (objGetStaticData gSource "maxAuxCrew"))
-						(objSetData gSource "maxAuxCrew" (add 1 addAuxCrew))
-						(objSetData gSource "maxAuxCrew" (add (objGetStaticData gSource "maxAuxCrew") addAuxCrew))
+					(switch
+						
+						(eq (objGetType gSource) &scSapphirePlayer;)
+							(setq maxAuxCrew (add 1 addAuxCrew))
+						(eq (objGetType gSource) &scEI100XPlayer;)
+							(setq maxAuxCrew (add 4 addAuxCrew))
+						(eq (objGetType gSource) &scWolfenPlayer;)
+							(setq maxAuxCrew (add 0 addAuxCrew))
+							
+						(eq (shpGetClassName (objGetType gSource) 1) "Osaka-class transport")
+							(setq maxAuxCrew (add 2 addAuxCrew))
+						
+						(eq (shpGetClassName (objGetType gSource) 1) "Constellation-class freighter")
+							(setq maxAuxCrew (add 2 addAuxCrew))
+						(eq (shpGetClassName (objGetType gSource) 1) "Freyr-class gunship")
+							(setq maxAuxCrew (add 1 addAuxCrew))
+						(eq (shpGetClassName (objGetType gSource) 1) "Manticore-class heavy gunship")
+							(setq maxAuxCrew (add 1 addAuxCrew))
+
+						;	The Corporate Command player ships are not in a library so I had to use a workaround.
+						;	The first three ships still use my original method for reference purposes.
+							
+						;	If the object has a defined crewCapacity in its .xml and it is not 0. Use that value.
+						
+						(not (not (objGetStaticData gSource "crewCapacity")))
+							(setq maxAuxCrew (add (objGetStaticData gSource "crewCapacity") addAuxCrew))
+							
+						;	Otherwise, define the maxAuxCrew to be as follows:
+						
+						(setq maxAuxCrew (add (divide (shpGetDataField gSource "cargoSpace") 50) addAuxCrew))
+						
+						;	The default settings for ships is: cargo space divided by 50 and rounded down.
+						;	When manually specifying, it is suggested to add 1 if the ship is supposed to be a transport.
 					)
 					
 					(switch
-						(gr auxCrewCount (subtract (objGetData gSource "maxAuxCrew") (itmGetStaticData gItem "addCrewSpace")))
+						(gr auxCrewCount (subtract maxAuxCrew (itmGetStaticData gItem "addCrewSpace")))
 							(block Nil
 								"Your ship is currently operating at maximum occupancy.  You cannot remove this device."
 							)
@@ -111,49 +139,53 @@ Possibly create cyborg attribute to use instead of alien?
 
 		<Events>
 			<CanBeInstalled>
-				(block (auxCrewCount addCrewCount)
+				(block (auxCrewCount addCrewCount maxAuxCrew)
+					
 					(setq auxCrewCount (count (objGetItems gSource "dI +auxCrew")))
 					(setq addAuxCrew 0)
 					
-					;If the object does not have a defined maxAuxCrew in its .xml, default it to 1
-					;If the object does have a defined maxAuxCrew in its .xml, use that value
 					
 					(enum (objGetItems gSource "dI +crewQuarters") gQuarters
 						(setq addAuxCrew (add addAuxCrew (itmGetStaticData gQuarters "addCrewSpace")))
 					)
 					
 					(switch
-						;default settings for vanilla playerships
+						
 						(eq (objGetType gSource) &scSapphirePlayer;)
-							(objSetData gSource "maxAuxCrew" (add 1 addAuxCrew))
+							(setq maxAuxCrew (add 1 addAuxCrew))
 						(eq (objGetType gSource) &scEI100XPlayer;)
-							(objSetData gSource "maxAuxCrew" (add 4 addAuxCrew))
+							(setq maxAuxCrew (add 4 addAuxCrew))
 						(eq (objGetType gSource) &scWolfenPlayer;)
-							(objSetData gSource "maxAuxCrew" (add 0 addAuxCrew))
+							(setq maxAuxCrew (add 0 addAuxCrew))
 							
 						(eq (shpGetClassName (objGetType gSource) 1) "Osaka-class transport")
-							(objSetData gSource "maxAuxCrew" (add 2 addAuxCrew))
+							(setq maxAuxCrew (add 2 addAuxCrew))
 						
 						(eq (shpGetClassName (objGetType gSource) 1) "Constellation-class freighter")
-							(objSetData gSource "maxAuxCrew" (add 2 addAuxCrew))
+							(setq maxAuxCrew (add 2 addAuxCrew))
 						(eq (shpGetClassName (objGetType gSource) 1) "Freyr-class gunship")
-							(objSetData gSource "maxAuxCrew" (add 1 addAuxCrew))
+							(setq maxAuxCrew (add 1 addAuxCrew))
 						(eq (shpGetClassName (objGetType gSource) 1) "Manticore-class heavy gunship")
-							(objSetData gSource "maxAuxCrew" (add 1 addAuxCrew))
-						
-						;The Corporate Command player ships are not in a library so I had to use a workaround.
-						;The first three ships still use my original method for reference purposes.
+							(setq maxAuxCrew (add 1 addAuxCrew))
+
+						;	The Corporate Command player ships are not in a library so I had to use a workaround.
+						;	The first three ships still use my original method for reference purposes.
 							
-						;case in which settings have been defined for the given ship and have not been defined as 0
-						(not (not (objGetStaticData gSource "maxAuxCrew")))
-							(objSetData gSource "maxAuxCrew" (add (objGetStaticData gSource "maxAuxCrew") addAuxCrew))
+						;	If the object has a defined crewCapacity in its .xml and it is not 0. Use that value.
 						
-						;default settings for ships: cargo space divided by 50 and rounded down, +1 if transport (only applies to Osaka and Traveller).
-						(objSetData gSource "maxAuxCrew" (add (divide (shpGetDataField gSource "cargoSpace") 50) addAuxCrew))
+						(not (not (objGetStaticData gSource "crewCapacity")))
+							(setq maxAuxCrew (add (objGetStaticData gSource "crewCapacity") addAuxCrew))
+							
+						;	Otherwise, define the maxAuxCrew to be as follows:
+						
+						(setq maxAuxCrew (add (divide (shpGetDataField gSource "cargoSpace") 50) addAuxCrew))
+						
+						;	The default settings for ships is: cargo space divided by 50 and rounded down.
+						;	When manually specifying, it is suggested to add 1 if the ship is supposed to be a transport.
 					)
 					
 					(switch
-						(geq auxCrewCount (objGetData gSource "maxAuxCrew"))
+						(geq auxCrewCount maxAuxCrew)
 							(block Nil
 								(objSendMessage gSource Nil "Your ship is already operating at maximum occupancy. You cannot use any more personnel.")
 								"Your ship is already operating at maximum occupancy. You cannot use any more personnel."

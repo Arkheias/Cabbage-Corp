@@ -344,7 +344,7 @@
 				)
 			</drone912Shipyard>
 			
-			<maxAuxCrew>16</maxAuxCrew>
+			<crewCapacity>16</crewCapacity>
 		</StaticData>
 	</ShipClass>
 	
