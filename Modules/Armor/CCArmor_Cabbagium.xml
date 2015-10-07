@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
-<!-- ================================================================ -->
-						<!-- Cabbagium Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Cabbagium Armor -->							
+<!-- ======================================================================= -->
 
 Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 1		150, 50				
@@ -18,9 +18,9 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 8		***, 400, 200, 100	
 9		***, 500, 250, 100	
 
-<!-- ================================================================ -->
-						<!-- Light Cabbagium Plating -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Light Cabbagium Plating -->						
+<!-- ======================================================================= -->
 
 	<!-- Segment of Light Cabbagium Plating -->
 
@@ -35,7 +35,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"190"
 			mass=				"2500"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium plating utilizes a proprietary alloy known only to Cabbage Corp. Its strength slowly fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
 
 			sortName=			"Cabbagium plating, light"
 	>
@@ -81,7 +81,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"1300"
 			mass=				"2500"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium plating utilizes a proprietary alloy known only to Cabbage Corp. Its strength slowly fades as its elements decay into baser forms, though it regenerates while exposed to sunlight."
 
 			sortName=			"Cabbagium plating, hardened"
 	>
@@ -116,7 +116,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"8600"
 			mass=				"2500"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium plating utilizes a proprietary alloy known only to Cabbage Corp. Its strength slowly fades as its elements decay into baser forms, though it quickly regenerates while exposed to sunlight."
 
 			sortName=			"Cabbagium plating, advanced"
 	>
@@ -150,7 +150,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"58000"
 			mass=				"2500"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium plating utilizes a proprietary alloy known only to Cabbage Corp. Its strength slowly fades as its elements decay into baser forms, though it rapidly regenerates while exposed to sunlight."
 
 			sortName=			"Cabbagium plating, experimental"
 	>
@@ -184,7 +184,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"385000"
 			mass=				"2500"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium plating utilizes a proprietary alloy known only to Cabbage Corp. Its strength slowly fades as its elements decay into baser forms, though it regenerates swiftly while exposed to sunlight."
 
 			sortName=			"Cabbagium plating, theoretical"
 	>
@@ -205,9 +205,9 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 		/>
 	</ItemType>
 
-<!-- ================================================================ -->
-						<!-- Standard Cabbagium Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Standard Cabbagium Armor -->						
+<!-- ======================================================================= -->
 
 	<!-- Segment of 1x Cabbagium Armor -->
 
@@ -267,7 +267,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"2750"
 			mass=				"5000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it regenerates while exposed to sunlight."
 
 			sortName=			"Cabbagium armor, 1x hardened"
 	>
@@ -313,7 +313,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"18500"
 			mass=				"5000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it quickly regenerates while exposed to sunlight."
 
 			sortName=			"Cabbagium armor, 1x advanced"
 	>
@@ -358,7 +358,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"123000"
 			mass=				"5000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it rapidly regenerates while exposed to sunlight."
 
 			sortName=			"Cabbagium armor, 1x experimental"
 	>
@@ -403,7 +403,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"825000"
 			mass=				"5000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it regenerates swiftly while exposed to sunlight."
 
 			sortName=			"Cabbagium armor, 1x theoretical"
 	>
@@ -435,9 +435,9 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 		</StaticData>
 	</ItemType>
 
-<!-- ================================================================ -->
-						<!-- Dual Cabbagium Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Duo-Cabbagium Armor -->						
+<!-- ======================================================================= -->
 
 	<!-- Segment of 2x Cabbagium Armor -->
 
@@ -452,7 +452,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"900"
 			mass=				"10000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 2x"
 	>
@@ -486,7 +486,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"5900"
 			mass=				"10000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 2x hardened"
 	>
@@ -521,7 +521,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"40000"
 			mass=				"10000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it quickly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 2x advanced"
 	>
@@ -555,7 +555,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"264000"
 			mass=				"10000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it rapidly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 2x experimental"
 	>
@@ -589,7 +589,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"1750000"
 			mass=				"10000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it regenerates swiftly while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 2x theoretical"
 	>
@@ -610,9 +610,9 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 		/>
 	</ItemType>
 
-<!-- ================================================================ -->
-						<!-- Quad Cabbagium Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Quadro-Cabbagium Armor -->							
+<!-- ======================================================================= -->
 
 	<!-- Segment of 4x Cabbagium Armor -->
 
@@ -626,7 +626,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"1900"
 			mass=				"20000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 4x"
 	>
@@ -659,7 +659,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"12700"
 			mass=				"20000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 4x hardened"
 	>
@@ -693,7 +693,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"85000"
 			mass=				"20000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it quickly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 4x advanced"
 	>
@@ -726,7 +726,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"566000"
 			mass=				"20000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it rapidly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 4x experimental"
 	>
@@ -759,7 +759,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"3800000"
 			mass=				"20000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it regenerates swiftly while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 4x theoretical"
 	>
@@ -780,9 +780,9 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 		/>
 	</ItemType>
 
-<!-- ================================================================ -->
-						<!-- Hex Cabbagium Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Hexa-Cabbagium Armor -->							
+<!-- ======================================================================= -->
 
 	<!-- Segment of 6x Cabbagium Armor -->
 
@@ -796,7 +796,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"3000"
 			mass=				"30000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 6x"
 	>
@@ -829,7 +829,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"20000"
 			mass=				"30000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 6x hardened"
 	>
@@ -863,7 +863,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"133000"
 			mass=				"30000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it quickly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 6x advanced"
 	>
@@ -896,7 +896,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"890000"
 			mass=				"30000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it rapidly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 6x experimental"
 	>
@@ -929,7 +929,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"5900000"
 			mass=				"30000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it regenerates swiftly while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 6x theoretical"
 	>
@@ -950,9 +950,9 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 		/>
 	</ItemType>
 
-<!-- ================================================================ -->
-						<!-- Hex Cabbagium Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Octo-Cabbagium Armor -->							
+<!-- ======================================================================= -->
 
 	<!-- Segment of 8x Cabbagium Armor -->
 
@@ -966,7 +966,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"4000"
 			mass=				"40000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 8x"
 	>
@@ -999,7 +999,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"27000"
 			mass=				"40000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 8x hardened"
 	>
@@ -1033,7 +1033,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"180000"
 			mass=				"40000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it quickly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 8x advanced"
 	>
@@ -1066,7 +1066,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"1200000"
 			mass=				"40000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it rapidly regenerates while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 8x experimental"
 	>
@@ -1099,7 +1099,7 @@ Level	Light				Single				Double				Quadruple			Hextuple			Octuple
 			value=				"8100000"
 			mass=				"40000"
 			  
-			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it slowly regenerates while exposed to sunlight."
+			description=		"Cabbagium armor utilizes a proprietary alloy known only to Cabbage Corp. Its strength fades as its elements decay into baser forms, though it regenerates swiftly while exposed to sunlight. Heavier armors segments decay more rapidly."
 
 			sortName=			"Cabbagium armor, 8x theoretical"
 	>

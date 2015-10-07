@@ -2,17 +2,34 @@
 Changelog
 ---------
 
-v0.7.4.3-development (2015-08-011)
+v0.7.4.3 (2015-10-07)
 ---------------------------------
+-----General Changes-----
+Updated to API v28 for Transcendence v1.6.3 (nothing had to actually be fixed).
+Added new data for various devices to the readme.
+Changed the readme to have more consistency.
+
 -----Ships-----
-Added remaining cargo space counter to the dockscreens for Shade-class autons.
+Added 'remaining cargo space' indicator to the dockscreens for Shade-class autons.
 Changed maxCargoCapacity on Shade-class autons to be twice the standard cargoCapacity.
-Fixed error where docking with any Shade-class auton showed the description "You are docked with a mark I Shade auton."
 Changed <StaticData> name for a ship's base crew capacity from "maxAuxCrew" to "crewCapacity".
+Fixed error where docking with any Shade-class auton showed the description "You are docked with a mark I Shade auton."
 
 -----Items-----
 Changed auxiliary crew installation checks to be more efficient and readable.
-Fixed crew quarters uninstallation checks to be correct and readable.
+Changed the name of the "diplomat's cargo bay" variations to "diplomat's cargo hold".
+Changed descriptions of Shade-class autons.
+Changed descriptions of Wraith-class autons.
+Changed descriptions of Cabbagium armors.
+Changed descriptions of DRADIS modules.
+Changed descriptions of auton bays.
+Changed descriptions of a miscellaneous item.
+Changed descriptions of cargo holds.
+Changed the whitespace and commenting standards for various things, not completely updated yet.
+Fixed crew quarters uninstallation checks to be correct, efficient and readable.
+Fixed crew related installation/uninstallation checks to allow for base crew capacity to be explicitly defined as 0.
+Fixed Military crew members so they will no longer be arrested when you dock at commonwealth stations without a military ID.
+
 
 
 v0.7.4.2 (2015-08-04)

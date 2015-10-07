@@ -14,9 +14,9 @@ These values are hard-coded in the game and do not need to be listed for armor a
 I have decided based on a whim to have this stealth armor sorted such that the quadruple layered versions come after the double layered versions which come after the single layered versions.
 -->
 	
-<!-- ================================================================ -->
-						<!-- Standard Stealth Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Standard Stealth Armor -->							
+<!-- ======================================================================= -->
 
 	<!-- Segment of Light Stealth Plating -->
 
@@ -237,9 +237,9 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 		</StaticData>
 	</ItemType>
 	
-<!-- ================================================================ -->
-						<!-- Dual Stealth Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Dual Stealth Armor -->							
+<!-- ======================================================================= -->
 	
 	<!-- Segment of 2x Stealth Armor -->
 
@@ -388,9 +388,9 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 		/>
 	</ItemType>
 	
-<!-- ================================================================ -->
-						<!-- Quad Stealth Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Quad Stealth Armor -->							
+<!-- ======================================================================= -->
 	
 	<!-- Segment of 4x Stealth Armor -->
 

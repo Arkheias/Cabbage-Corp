@@ -2,9 +2,9 @@
 <TranscendenceModule>
 
 
-<!-- ================================================================ -->
-					<!-- Generic Base class -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Generic Base class -->								
+<!-- ======================================================================= -->
 
 <!-- Unshielded Device Base Class -->
 
@@ -26,9 +26,9 @@
 		</Events>
 	</ItemType>
 
-<!-- ================================================================ -->
-					<!-- Cargo Hold Base Class -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Cargo Hold Base Classes -->						
+<!-- ======================================================================= -->
 <!--
 +20 cargo capacity from using included VI to optimize cargo placement seems about right 
 (+30) for optimizing, (-10) for VI computers, so +20 for optimized single cargo hold, and +50 for optimized dual cargo hold (same VI computer used for both holds)
@@ -44,7 +44,7 @@ addCrewSpace stands for 'additional crew space'
 
 -->
 
-	<!-- Cargo Hold Base Class -->
+	<!-- Crew Quarters Base Class -->
 
 	<ItemType UNID="&vtCCCrewQuartersBaseClass;"
 			name=				"(crew quarters base class)"
@@ -63,6 +63,7 @@ addCrewSpace stands for 'additional crew space'
 					)
 					
 					(switch
+						;	If the object is one of the vanilla playerships, use the specified data
 						
 						(eq (objGetType gSource) &scSapphirePlayer;)
 							(setq maxAuxCrew (add 1 addAuxCrew))
@@ -84,9 +85,9 @@ addCrewSpace stands for 'additional crew space'
 						;	The Corporate Command player ships are not in a library so I had to use a workaround.
 						;	The first three ships still use my original method for reference purposes.
 							
-						;	If the object has a defined crewCapacity in its .xml and it is not 0. Use that value.
+						;	If the object has a defined crewCapacity in its .xml, then use that value.
 						
-						(not (not (objGetStaticData gSource "crewCapacity")))
+						(isInt (objGetStaticData gSource "crewCapacity"))
 							(setq maxAuxCrew (add (objGetStaticData gSource "crewCapacity") addAuxCrew))
 							
 						;	Otherwise, define the maxAuxCrew to be as follows:
@@ -109,9 +110,9 @@ addCrewSpace stands for 'additional crew space'
 		</Events>
 	</ItemType>
 
-<!-- ================================================================ -->
-						<!-- Crew Base Classes -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Crew Base Classes -->							
+<!-- ======================================================================= -->
 
 <!--
 type					value	powerUse	L10 Effect
@@ -150,6 +151,7 @@ Possibly create cyborg attribute to use instead of alien?
 					)
 					
 					(switch
+						;	If the object is one of the vanilla playerships, use the specified data
 						
 						(eq (objGetType gSource) &scSapphirePlayer;)
 							(setq maxAuxCrew (add 1 addAuxCrew))
@@ -171,9 +173,9 @@ Possibly create cyborg attribute to use instead of alien?
 						;	The Corporate Command player ships are not in a library so I had to use a workaround.
 						;	The first three ships still use my original method for reference purposes.
 							
-						;	If the object has a defined crewCapacity in its .xml and it is not 0. Use that value.
+						;	If the object has a defined crewCapacity in its .xml, then use that value.
 						
-						(not (not (objGetStaticData gSource "crewCapacity")))
+						(isInt (objGetStaticData gSource "crewCapacity"))
 							(setq maxAuxCrew (add (objGetStaticData gSource "crewCapacity") addAuxCrew))
 							
 						;	Otherwise, define the maxAuxCrew to be as follows:
@@ -226,9 +228,9 @@ Possibly create cyborg attribute to use instead of alien?
 		</Events>
 	</ItemType>
 
-<!-- ================================================================ -->
-						<!-- DRADIS Base Class -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- DRADIS Base Class -->							
+<!-- ======================================================================= -->
 <!--
 These devices do not currently work for the player-ships because it is technically not controlled by AI settings even though their perception is controlled by the perception value in their AI settings.  These will work for everyone else Cabbage Corp sells them to though.
 -->
@@ -273,9 +275,9 @@ These devices do not currently work for the player-ships because it is technical
 		</Events>
 	</ItemType>
 	
-<!-- ================================================================ -->
-							<!-- Nanofac Base Class -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Nanofac Base Class -->							
+<!-- ======================================================================= -->
 
 	<ItemType UNID="&baCCNanofacBase;"
 			name=				"(Nanofac base class)"
@@ -331,9 +333,9 @@ These devices do not currently work for the player-ships because it is technical
 		</Events>
 	</ItemType>
 
-<!-- ================================================================ -->
-					<!-- Reactor Base Classes -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Reactor Base Classes -->							
+<!-- ======================================================================= -->
 
 <!-- Auxiliary Reactor Base Class -->
 
@@ -479,9 +481,9 @@ These devices do not currently work for the player-ships because it is technical
 		</Events>
 	</ItemType>
 
-<!-- ================================================================ -->
-					<!-- Station Base Classes -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Station Base Classes -->							
+<!-- ======================================================================= -->
 	
 	<StationType unid="&baCCCabbageCorpStation;"
 			name=			"(Cabbage Corp station base class)"
@@ -495,9 +497,9 @@ These devices do not currently work for the player-ships because it is technical
 		</Events>
 	</StationType>
 
-<!-- ================================================================ -->
-					<!-- Microsaur Scanner Base Classes -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+					<!-- Microsaur Scanner Base Classes -->						
+<!-- ======================================================================= -->
 	
 	<ItemType UNID="&baCCMicrosaurScannerPower;"
 			name=				"(Microsaur warder base class)"

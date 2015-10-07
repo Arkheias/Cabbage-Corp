@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
-<!-- ================================================================ -->
-							<!-- Cabbages -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+								<!-- Cabbages -->								
+<!-- ======================================================================= -->
 
 	<!-- Bok Choy -->
 	
@@ -173,9 +173,9 @@
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 	
-<!-- ================================================================ -->
-							<!-- Fuel -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+								<!-- Fuel -->									
+<!-- ======================================================================= -->
 
 	<!-- Fuel Unit-->
 
@@ -366,11 +366,12 @@
 		<Image imageID="&rsCCItems;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 	
-<!-- ================================================================ -->
-						<!-- Low Level Device Items -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Low Level Device Items -->							
+<!-- ======================================================================= -->
 	
 	<!-- Solar Panel -->
+	
 	<ItemType UNID="&itCCSolarPanel;"
 			name=				"solar panel"
 			attributes=			"cabbageCorp, consumable, res"
@@ -409,9 +410,9 @@
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 	
-<!-- ================================================================ -->
-							<!-- Valuables -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+								<!-- Valuables -->								
+<!-- ======================================================================= -->
 	
 	;	Here, the consumable tag is in fact meant to imply that you also took all the food before leaving.
 	
@@ -449,7 +450,7 @@
 			value=				"1200"
 			mass=				"100"
 
-			description=		"These pets are the result of early 23rd century research into creating a hulk by inseminating ostrich foetuses with horse semen while exposing them to gamma radiation. Cabbage Corp created the pygmy version shortly after obtaining the patents when the original researcher declared bankruptcy."
+			description=		"These pets are the result of early 23rd century research into creating a hulk by inseminating ostrich foetuses with horse semen while exposing them to gamma radiation. Cabbage Corp created the pygmy version shortly after obtaining the patents when the original researchers declared bankruptcy."
 	>
 
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>

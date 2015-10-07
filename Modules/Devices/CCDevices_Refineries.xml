@@ -1,11 +1,14 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
-<!-- ================================================================ -->
-						<!-- Refinery Devices -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Standard Refinery Devices -->						
+<!-- ======================================================================= -->
+
 <!--
-	to convert these items so that they are used by invoking them, add this back in
+	The following instructions may no longer work due to additional updates that may have broken them:
+	
+	To convert these items so that they are used by invoking them, add this back in:
 
 			useScreen=          "Main"
 			useInstalledOnly=   "true"
@@ -28,7 +31,7 @@
 			</Main>
 		</DockScreens>
 		
-		then just remove the redundant lines from the top of the actual dockscreen
+		Then just remove the redundant lines from the top of the actual dockscreen.
 -->
 
 	<!-- Helium Regolith Refinery -->
@@ -56,12 +59,13 @@
 			<CCPassThrough>(&itHelium3FuelRod; &itHeliumRegolith; 6 1 200)</CCPassThrough>
 			<CCItemUse>&dsCCOreRefinery;</CCItemUse>
 		</StaticData>
+		
 		<!-- In order from left to right on CCPassThrough:
-		;The item to be produced
-		;The item to be consumed
-		;The amount of fuel to be produced per specified amount of ore consumed
-		;The amount of ore consumed to produce specified units of fuel
-		;The power required to process each unit of gOre
+			The item to be produced
+			The item to be consumed
+			The amount of fuel to be produced per specified amount of ore consumed
+			The amount of ore consumed to produce specified units of fuel
+			The power required to process each unit of gOre
 		-->
 		
 	</ItemType>
@@ -179,6 +183,10 @@
 		</StaticData>
 		
 	</ItemType>
+	
+<!-- ======================================================================= -->
+						<!-- Advanced Refinery Devices -->						
+<!-- ======================================================================= -->
 	
 	<!-- Advanced Xenotite Ore Refinery -->
 	

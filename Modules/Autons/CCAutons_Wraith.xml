@@ -447,7 +447,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"This is a commercial auton primarily used for defending small stations. NOTE: For professional security needs, order the mark III version or higher."
+			description=		"This commercial auton is primarily used for defending small stations. NOTE: For professional security needs, order the mark III version or higher."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>

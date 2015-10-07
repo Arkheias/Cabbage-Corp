@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
-<!-- ================================================================ -->
-						<!-- Standard Cargo Holds -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Standard Cargo Holds -->							
+<!-- ======================================================================= -->
 
 	<!-- Small Cargo Hold -->
 
@@ -108,7 +108,7 @@
 	<!-- Diplomat's Cargo Hold -->
 
 	<ItemType UNID="&itCCDiplomatsCargoHold;"
-			name=				"diplomat's cargo bay"
+			name=				"diplomat's cargo hold"
 			attributes=			"cabbageCorp, cabbagePolitical, crewQuarters, majorItem, smugglersHold"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
 			  
@@ -169,9 +169,9 @@
 		</StaticData>
 	</ItemType>
 	
-<!-- ================================================================ -->
-						<!-- Expanded Cargo Holds -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Expanded Cargo Holds -->							
+<!-- ======================================================================= -->
 
 <!-- Dual Cargo Hold Expansion -->
 
@@ -234,7 +234,7 @@
 	<!-- Expanded Diplomat's Cargo Hold -->
 
 	<ItemType UNID="&itCCDualDiplomatsCargoHold;"
-			name=				"expanded diplomat's cargo bay"
+			name=				"expanded diplomat's cargo hold"
 			attributes=			"cabbageCorp, cabbageNotStandard, cabbagePolitical, crewQuarters, majorItem, smugglersHold"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
 			  

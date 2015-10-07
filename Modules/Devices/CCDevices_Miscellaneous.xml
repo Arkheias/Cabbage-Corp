@@ -1,9 +1,10 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
-<!-- ================================================================ -->
-						<!-- Miscellaneous Base Devices -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Miscellaneous Base Devices -->						
+<!-- ======================================================================= -->
+
 <!-- Side-Mounted Device Base Class -->
 	
 	<ItemType UNID="&baCCAuxMountDeviceBase;"
@@ -194,16 +195,15 @@
 		</Events>
 	</ItemType>
 	
-<!-- ================================================================ -->
-						<!-- Miscellaneous Devices -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Miscellaneous Devices -->							
+<!-- ======================================================================= -->
 
 <!--
-;This was originally a joke... Now I intend for quantum CPUs to eventually become a form of upgrade currency.
-;The cyber defense is a result of the free antivirus software that comes with all Cabbage Corp CPU purchases.
-;I'm not sure if adding cyberdefense actually does anything yet.
-;The increased weight comes from the additional required cooling fan space radiator thingies (thermal paste not included).
-
+	This was originally a joke... Now I intend for quantum CPUs to eventually become a form of upgrade currency.
+	The cyber defense is a result of the free antivirus software that comes with all Cabbage Corp CPU purchases.
+	(I'm not sure if adding cyberdefense actually does anything yet.)
+	The increased weight comes from the additional required cooling fan space radiator thingies (thermal paste not included).
 -->
 
 <!-- Dual Core Mnemonic Processor -->

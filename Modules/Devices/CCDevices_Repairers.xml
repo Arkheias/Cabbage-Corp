@@ -1,14 +1,16 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 	
-<!-- ================================================================ -->
-						<!-- Repairer Devices -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Repairer Devices -->							
+<!-- ======================================================================= -->
 
-;Repairer devices appear to stack.
-;showReference does nothing here.
-;powerUse is multiplied by the number of armor segments being repaired
-;The displayed power (in-game) assumes that two armor segments are being repaired simultaneously
+<!--
+	Repairer devices appear to stack.
+	showReference does nothing here.
+	powerUse is multiplied by the number of armor segments being repaired
+	The displayed power (in-game) assumes that two armor segments are being repaired simultaneously
+-->
 
 	<!-- Basic Servicing System -->
 

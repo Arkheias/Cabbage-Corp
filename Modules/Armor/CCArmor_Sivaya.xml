@@ -14,9 +14,9 @@ These values are hard-coded in the game and do not need to be listed for armor a
 I have decided based on a whim to have this S&#xed;vaya armor sorted such that the quadruple layered versions come after the double layered versions which come after the single layered versions.
 -->
 	
-<!-- ================================================================ -->
-						<!-- Standard Sivaya Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Standard Sivaya Armor -->							
+<!-- ======================================================================= -->
 
 	<!-- Segment of Light Sivaya Plating -->
 
@@ -267,9 +267,9 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 		</StaticData>
 	</ItemType>
 	
-<!-- ================================================================ -->
-						<!-- Dual Sivaya Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Dual Sivaya Armor -->							
+<!-- ======================================================================= -->
 	
 	<!-- Segment of 2x Sivaya Armor -->
 
@@ -443,9 +443,9 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 		/>
 	</ItemType>
 	
-<!-- ================================================================ -->
-						<!-- Quad Sivaya Armor -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Quad Sivaya Armor -->							
+<!-- ======================================================================= -->
 	
 	<!-- Segment of 4x Sivaya Armor -->
 

@@ -658,7 +658,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"Dock with this auton to store supplies on its cargo platform. This auton has space for 50 tons of cargo. "
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 50 tons of cargo."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -687,7 +687,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"Dock with this auton to store supplies on its cargo platform. This auton has space for 75 tons of cargo. "
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 75 tons of cargo."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -715,7 +715,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"Dock with this auton to store supplies on its cargo platform. This auton has space for 100 tons of cargo. "
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 100 tons of cargo."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -743,7 +743,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"Dock with this auton to store supplies on its cargo platform. This auton has space for 125 tons of cargo. "
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 125 tons of cargo."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -771,7 +771,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"Dock with this auton to store supplies on its cargo platform. This auton has space for 150 tons of cargo. "
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 150 tons of cargo."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
