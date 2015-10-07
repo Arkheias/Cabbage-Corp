@@ -29,6 +29,7 @@ RegeneratingNanos	4		350		1000	rare
 			thrustRatio=		"6"
 			maxSpeed=			"20"
 			cargoSpace=			"50"
+			maxCargoSpace=		"100"
 
 			reactorPower=		"50"
 			maxArmor=			"2500"
@@ -80,8 +81,24 @@ RegeneratingNanos	4		350		1000	rare
 			>
 
 				<Panes>
-					<Default
-							desc="You are docked with a mark I Shade auton.">
+					<Default>
+						<OnPaneInit>
+							(block Nil
+								(setq desc 
+									(cat "You are docked with a mark I Shade auton."
+										"\n\n"
+										"Cargo Space: "
+										(objGetCargoSpaceLeft gSource)
+										(if (eq (objGetCargoSpaceLeft gSource) 1)
+											" kg"
+											" kgs"
+										)
+									)
+								)
+								(scrSetDesc gScreen desc)
+							)
+						</OnPaneInit>
+
 
 						<Actions>
 							<Action name="Loot" key="L" default="1" >
@@ -132,6 +149,7 @@ ArmorRepairDevice	4		3500	2000	rare
 			thrustRatio=		"7"
 			maxSpeed=			"19"
 			cargoSpace=			"75"
+			maxCargoSpace=		"150"
 
 			reactorPower=		"200"
 			maxArmor=			"5000"
@@ -188,8 +206,23 @@ ArmorRepairDevice	4		3500	2000	rare
 			>
 
 				<Panes>
-					<Default
-							desc="You are docked with a mark I Shade auton.">
+					<Default>
+						<OnPaneInit>
+							(block Nil
+								(setq desc 
+									(cat "You are docked with a mark II Shade auton."
+										"\n\n"
+										"Cargo Space: "
+										(objGetCargoSpaceLeft gSource)
+										(if (eq (objGetCargoSpaceLeft gSource) 1)
+											" kg"
+											" kgs"
+										)
+									)
+								)
+								(scrSetDesc gScreen desc)
+							)
+						</OnPaneInit>
 
 						<Actions>
 							<Action name="Loot" key="L" default="1" >
@@ -243,6 +276,7 @@ ShieldEnhancement	3		650		1		uncommon
 			thrustRatio=		"8"
 			maxSpeed=			"21"
 			cargoSpace=			"100"
+			maxCargoSpace=		"200"
 
 			reactorPower=		"600"
 			maxArmor=			"5000"
@@ -303,8 +337,23 @@ ShieldEnhancement	3		650		1		uncommon
 			>
 
 				<Panes>
-					<Default
-							desc="You are docked with a mark I Shade auton.">
+					<Default>
+						<OnPaneInit>
+							(block Nil
+								(setq desc 
+									(cat "You are docked with a mark III Shade auton."
+										"\n\n"
+										"Cargo Space: "
+										(objGetCargoSpaceLeft gSource)
+										(if (eq (objGetCargoSpaceLeft gSource) 1)
+											" kg"
+											" kgs"
+										)
+									)
+								)
+								(scrSetDesc gScreen desc)
+							)
+						</OnPaneInit>
 
 						<Actions>
 							<Action name="Loot" key="L" default="1" >
@@ -358,6 +407,7 @@ ShieldEnhancement	3		650		1		uncommon
 			thrustRatio=		"9"
 			maxSpeed=			"23"
 			cargoSpace=			"125"
+			maxCargoSpace=		"250"
 
 			reactorPower=		"2000"
 			maxArmor=			"5000"
@@ -417,8 +467,23 @@ ShieldEnhancement	3		650		1		uncommon
 			>
 
 				<Panes>
-					<Default
-							desc="You are docked with a mark I Shade auton.">
+					<Default>
+						<OnPaneInit>
+							(block Nil
+								(setq desc 
+									(cat "You are docked with a mark IV Shade auton."
+										"\n\n"
+										"Cargo Space: "
+										(objGetCargoSpaceLeft gSource)
+										(if (eq (objGetCargoSpaceLeft gSource) 1)
+											" kg"
+											" kgs"
+										)
+									)
+								)
+								(scrSetDesc gScreen desc)
+							)
+						</OnPaneInit>
 
 						<Actions>
 							<Action name="Loot" key="L" default="1" >
@@ -471,6 +536,7 @@ ShieldEnhancement	7		25000	10		common
 			thrustRatio=		"10"
 			maxSpeed=			"25"
 			cargoSpace=			"150"
+			maxCargoSpace=		"300"
 
 			reactorPower=		"6500"
 			maxArmor=			"5000"
@@ -530,8 +596,23 @@ ShieldEnhancement	7		25000	10		common
 			>
 
 				<Panes>
-					<Default
-							desc="You are docked with a mark I Shade auton.">
+					<Default>
+						<OnPaneInit>
+							(block Nil
+								(setq desc 
+									(cat "You are docked with a mark V Shade auton."
+										"\n\n"
+										"Cargo Space: "
+										(objGetCargoSpaceLeft gSource)
+										(if (eq (objGetCargoSpaceLeft gSource) 1)
+											" kg"
+											" kgs"
+										)
+									)
+								)
+								(scrSetDesc gScreen desc)
+							)
+						</OnPaneInit>
 
 						<Actions>
 							<Action name="Loot" key="L" default="1" >
@@ -577,7 +658,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"Dock with this auton to store supplies on its cargo platform. This auton has space for 50 tons of cargo. "
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 50 tons of cargo."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -606,7 +687,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"Dock with this auton to store supplies on its cargo platform. This auton has space for 75 tons of cargo. "
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 75 tons of cargo."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -634,7 +715,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"Dock with this auton to store supplies on its cargo platform. This auton has space for 100 tons of cargo. "
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 100 tons of cargo."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -662,7 +743,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"Dock with this auton to store supplies on its cargo platform. This auton has space for 125 tons of cargo. "
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 125 tons of cargo."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -690,7 +771,7 @@ ShieldEnhancement	7		25000	10		common
 			charges=			"0"
 			massBonusPerCharge=	"1000"
 
-			description=		"Dock with this auton to store supplies on its cargo platform. This auton has space for 150 tons of cargo. "
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 150 tons of cargo."
 	>
 
 		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>

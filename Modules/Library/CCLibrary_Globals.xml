@@ -12,12 +12,14 @@
 	10-14	High Races (technology only available to Galactics)
 	15-20	Halo Races (technology only available to Ancients in globular clusters)
 	21-25	Hierodule (technology only available to hierodules)
+	
 	26-50	Core Minds (technology only known to Core Minds)
 	 >50	Unknown (impossible or not known to be physically possible)
 -->
-<!-- ================================================================ -->
-						<!-- Cabbage Corp Globals -->
-<!-- ================================================================ -->
+
+<!-- ======================================================================= -->
+						<!-- Cabbage Corp Globals -->							
+<!-- ======================================================================= -->
 	 
 
 <Globals>
@@ -462,10 +464,8 @@
 </Globals>
 
 <!--
-
-Add check for Cabbage Corp diplomatic immunity when being arrested for destroying stations, pay a fine instead of dying.
-Add check for cabbage corp premium membership at cabbage corp stations, buy a new identity and don't get arrested for having previously destroyed stations.
-
+	Add check for Cabbage Corp diplomatic immunity when being arrested for destroying stations, pay a fine instead of dying.
+	Add check for cabbage corp premium membership at cabbage corp stations, buy a new identity and don't get arrested for having previously destroyed stations.
 -->
 	
 </TranscendenceModule>

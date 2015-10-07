@@ -6,10 +6,10 @@ Cabbage Corp is a mod for the game Transcendence that adds a corporate empire wh
 
 Version |  Information
 ------------: | :------------ 
-Game Version: | 1.6.1
-API Version: | 27
-Mod Version: | v0.7.4.2 (still an alpha release)
-Release Date: | 2015-08-04
+Game Version: | 1.6.3
+API Version: | 28
+Mod Version: | v0.7.4.3 (still an alpha release)
+Release Date: | 2015-10-07
 Authors: | Arkheias
 License: | CC BY-NC-SA (Creative Commons Attribution-NonCommercial-ShareAlike)
 

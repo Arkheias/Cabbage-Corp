@@ -124,7 +124,7 @@
 		</PlayerSettings>
 		
 		<StaticData>
-			<maxAuxCrew>4</maxAuxCrew>
+			<crewCapacity>4</crewCapacity>
 		</StaticData>
 	</ShipClass>
 	

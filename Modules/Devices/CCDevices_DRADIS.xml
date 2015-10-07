@@ -1,9 +1,18 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 	
-<!-- ================================================================ -->
-						<!-- DRADIS Devices -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- DRADIS Devices -->
+<!-- ======================================================================= -->
+<!--
+	Note: addPerception is the additional perception value added to the ship's
+			default perception value while the device is installed.
+			
+	Note: minPerception is the minimum perception value that the ship can then
+			have after addPerception has been taken into account.
+			
+	Note: These devices currently only affect NPC ships.
+-->
 
 	<!-- mark I DRADIS module -->
 
@@ -18,7 +27,7 @@
 			value=				"6000"
 			mass=				"4000"
 
-			description=		"This device increases the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
+			description=		"This device increases the effective resolution of a ship's targeting sensors, increasing the range at which it can detect hidden objects in space."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -47,7 +56,7 @@
 			value=				"21000"
 			mass=				"4500"
 
-			description=		"This device utilizes a quantum CPU to increase the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
+			description=		"This device utilizes a quantum CPU to increase the effective resolution of a ship's targeting sensors, increasing the range at which it can detect hidden objects in space."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -76,7 +85,7 @@
 			value=				"80000"
 			mass=				"5000"
 
-			description=		"This device utilizes a dual-core quantum CPU to increase the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
+			description=		"This device utilizes a dual-core quantum CPU to increase the effective resolution of a ship's targeting sensors, increasing the range at which it can detect hidden objects in space."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -105,7 +114,7 @@
 			value=				"270000"
 			mass=				"5500"
 
-			description=		"This device utilizes a quad-core quantum CPU to increase the effective perception of a ship's targeting systems, increasing the range at which it can detect hidden objects in space."
+			description=		"This device utilizes a quad-core quantum CPU to increase the effective resolution of a ship's targeting sensors, increasing the range at which it can detect hidden objects in space."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -134,7 +143,7 @@
 			value=				"960000"
 			mass=				"6000"
 
-			description=		"This device utilizes a positronic CPU to increase the effective perception of a ship's targeting systems, greatly increasing the range at which it can detect hidden objects in space."
+			description=		"This device utilizes a positronic CPU to increase the effective resolution of a ship's targeting sensors, greatly increasing the range at which it can detect hidden objects in space."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>

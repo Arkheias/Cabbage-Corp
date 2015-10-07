@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
-<!-- ================================================================ -->
-						<!-- Condemnation Pods -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Condemnation Pods -->							
+<!-- ======================================================================= -->
 
 	<!-- Level 4: Microsaur Condemnation Pod -->
 
@@ -159,9 +159,9 @@
 		</StaticData>
 	</ItemType>
 
-<!-- ================================================================ -->
-						<!-- Roms -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+								<!-- Roms -->									
+<!-- ======================================================================= -->
 
 	<!-- Cabbage Corp Premium Membership ID -->
 
@@ -211,9 +211,9 @@
 	</ItemType>
 	
 <!--
-Using this item should (eventually) install it to your ship (and appear as an achievement)
-while you have that achievement, the features of the rom will appear in the Cabbage Corp Toolbox
-and the toolbox will always appear in the ship view regardless of whether you have any Cabbage Corp items installed
+	Using the above item should (eventually) install it to your ship (and appear as an achievement)
+	While you have that achievement, the features of the rom will appear in the Cabbage Corp Toolbox
+		and the toolbox will always appear in the ship view regardless of whether you have any Cabbage Corp items installed
 -->
 
 	<!-- Cabbage Corp System Map ROM -->
@@ -325,7 +325,6 @@ and the toolbox will always appear in the ship view regardless of whether you ha
 				)
 			</GetGlobalAchievements>
 		</Events>
-		
 	</ItemType>
 	
 </TranscendenceModule>

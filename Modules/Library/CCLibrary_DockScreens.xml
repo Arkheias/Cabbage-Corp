@@ -1,14 +1,15 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
-<!-- ================================================================ -->
-						<!-- Item DockScreens -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Item DockScreens -->							
+<!-- ======================================================================= -->
+
 <!--
-Alternate idea: Make the shields have different maximum strength limits 
-	depending on whether they are civilian or military. Then allow for 
-	these limits to be bypassed if you have bought the appropriate 
-	Cabbage Corp item.
+	Alternate idea: Make the shields have different maximum strength limits 
+		depending on whether they are civilian or military. Then allow for 
+		these limits to be bypassed if you have bought the appropriate 
+		Cabbage Corp item.
 -->
 	
 	<!-- Napa Shield Modifications -->
@@ -367,9 +368,9 @@ Alternate idea: Make the shields have different maximum strength limits
 		</Panes>
 	</DockScreen>
 
-<!-- ================================================================ -->
-						<!-- Ship DockScreens -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Ship DockScreens -->							
+<!-- ======================================================================= -->
 
 	<!-- Cabbage Corp Toolset -->
 
@@ -492,9 +493,9 @@ Alternate idea: Make the shields have different maximum strength limits
 		</Panes>
 	</DockScreen>
 
-<!-- ================================================================ -->
-					<!-- Station DockScreens-->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Station DockScreens-->							
+<!-- ======================================================================= -->
 	
 	<DockScreen unid="&dsCCBuyAndModify;"
 			type=				"customItemPicker"

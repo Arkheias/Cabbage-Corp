@@ -22,9 +22,9 @@ The game does not provide a way to keep reactors from being sold at stations wit
 *add function to eject reactors and detonate them to create massive explosions, which will also send a signal to cabbage corp to send a ship to install a replacement reactor (doomdsday type weapon) (L1-4 blast, L5-8 Thermo, L9-12 antimatter?).
 -->
 
-<!-- ================================================================ -->
-					<!-- Standard Reactors -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Standard Reactors -->							
+<!-- ======================================================================= -->
 
 	<!-- Siva 5MW reactor -->
 
@@ -566,9 +566,9 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</StaticData>
 	</ItemType>
 	
-<!-- ================================================================ -->
-					<!-- Alternate Reactors -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Alternate Reactors -->							
+<!-- ======================================================================= -->
 
 	<!-- Siva 5MW reactor (no containment) -->
 
@@ -1140,9 +1140,9 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</StaticData>
 	</ItemType>
 	
-<!-- ================================================================ -->
-					<!-- Dual Reactors -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Dual Reactors -->								
+<!-- ======================================================================= -->
 
 	<!-- Dual Siva 5MW reactor -->
 
@@ -1609,9 +1609,9 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</StaticData>
 	</ItemType>
 	
-<!-- ================================================================ -->
-					<!-- Alternate Dual Reactors -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+						<!-- Alternate Dual Reactors -->						
+<!-- ======================================================================= -->
 
 	<!-- Dual Siva 5MW reactor (no containment) -->
 

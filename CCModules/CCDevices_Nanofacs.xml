@@ -1,15 +1,16 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
-<!--
-The production rate and mass of the devices are balanced based on the mass of the missiles
-The value and powerUse are balanced based on the value of the missiles and the production rate
--->
 	
-<!-- ================================================================ -->
-							<!-- Missile Nanofacs -->
-<!-- ================================================================ -->
+<!-- ======================================================================= -->
+							<!-- Missile Nanofacs -->							
+<!-- ======================================================================= -->
 
-<!-- KM100 Nanofac -->
+<!--
+	The production rate and mass of the devices are balanced based on the mass of the missiles.
+	The value and powerUse are balanced based on the value of the missiles and the production rate.
+-->
+
+	<!-- KM100 Nanofac -->
 
 	<ItemType UNID="&itCCKM100Nanofac;"
 			name=				"KM100 missile nanofac"
@@ -36,7 +37,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 		</StaticData>
 	</ItemType>
 
-<!-- KM120 Nanofac -->
+	<!-- KM120 Nanofac -->
 
 	<ItemType UNID="&itCCKM120Nanofac;"
 			name=				"KM120 missile nanofac"
@@ -64,7 +65,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 		</StaticData>
 	</ItemType>
 
-<!-- XM300 Nanofac -->
+	<!-- XM300 Nanofac -->
 
 	<ItemType UNID="&itCCXM300Nanofac;"
 			name=				"XM300 missile nanofac"
@@ -91,7 +92,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 		</StaticData>
 	</ItemType>
 
-<!-- White Strelka Nanofac -->
+	<!-- White Strelka Nanofac -->
 
 	<ItemType UNID="&itCCStrelkaWhiteNanofac;"
 			name=				"White Strelka missile nanofac"
@@ -118,7 +119,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 		</StaticData>
 	</ItemType>
 
-<!-- Green Strelka Nanofac -->
+	<!-- Green Strelka Nanofac -->
 
 	<ItemType UNID="&itCCStrelkaGreenNanofac;"
 			name=				"Green Strelka missile nanofac"
@@ -146,7 +147,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 		</StaticData>
 	</ItemType>
 
-<!-- Red Strelka Nanofac -->
+	<!-- Red Strelka Nanofac -->
 
 	<ItemType UNID="&itCCStrelkaRedNanofac;"
 			name=				"Red Strelka missile nanofac"
@@ -174,7 +175,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 		</StaticData>
 	</ItemType>
 
-<!-- Gotha-10 Nanofac -->
+	<!-- Gotha-10 Nanofac -->
 
 	<ItemType UNID="&itCCGotha10Nanofac;"
 			name=				"Gotha-10 missile nanofac"
@@ -202,7 +203,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 		</StaticData>
 	</ItemType>
 
-<!-- M2 Nanofac -->
+	<!-- M2 Nanofac -->
 
 	<ItemType UNID="&itCCM2Nanofac;"
 			name=				"M2 Vulcan missile nanofac"
@@ -230,7 +231,7 @@ The value and powerUse are balanced based on the value of the missiles and the p
 		</StaticData>
 	</ItemType>
 
-<!-- M5 Nanofac -->
+	<!-- M5 Nanofac -->
 
 	<ItemType UNID="&itCCM5Nanofac;"
 			name=				"M5 Nemesis missile nanofac"
@@ -257,6 +258,5 @@ The value and powerUse are balanced based on the value of the missiles and the p
 			<CCNanofac>{product:&itM5Missile;		interval:5	count:1		maxCount:6	powerUse:160}</CCNanofac>
 		</StaticData>
 	</ItemType>
-
 
 </TranscendenceModule>

@@ -2,19 +2,49 @@
 Changelog
 ---------
 
-v0.7.4.2-development (2015-08-04)
+v0.7.4.3 (2015-10-07)
 ---------------------------------
-----Stations-----
+-----General Changes-----
+Updated to API v28 for Transcendence v1.6.3 (nothing had to actually be fixed).
+Added new data for various devices to the readme.
+Changed the readme to have more consistency.
+
+-----Ships-----
+Added 'remaining cargo space' indicator to the dockscreens for Shade-class autons.
+Changed maxCargoCapacity on Shade-class autons to be twice the standard cargoCapacity.
+Changed <StaticData> name for a ship's base crew capacity from "maxAuxCrew" to "crewCapacity".
+Fixed error where docking with any Shade-class auton showed the description "You are docked with a mark I Shade auton."
+
+-----Items-----
+Changed auxiliary crew installation checks to be more efficient and readable.
+Changed the name of the "diplomat's cargo bay" variations to "diplomat's cargo hold".
+Changed descriptions of Shade-class autons.
+Changed descriptions of Wraith-class autons.
+Changed descriptions of Cabbagium armors.
+Changed descriptions of DRADIS modules.
+Changed descriptions of auton bays.
+Changed descriptions of a miscellaneous item.
+Changed descriptions of cargo holds.
+Changed the whitespace and commenting standards for various things, not completely updated yet.
+Fixed crew quarters uninstallation checks to be correct, efficient and readable.
+Fixed crew related installation/uninstallation checks to allow for base crew capacity to be explicitly defined as 0.
+Fixed Military crew members so they will no longer be arrested when you dock at commonwealth stations without a military ID.
+
+
+
+v0.7.4.2 (2015-08-04)
+---------------------
+-----Stations-----
 Fixed bug where buying a modified item from a Cabbage Corp Station via the "Buy & Modify" button gave you the item for free (or basically free).
 
 
 
-v0.7.4.1-development (2015-08-04)
----------------------------------
-----Ships-----
+v0.7.4.1 (2015-08-04)
+---------------------
+-----Ships-----
 Fixed error in the description of the lorry-class stealth transport that starts in Tau Ceti.
 
-----Items-----
+-----Items-----
 Added invoke button to Siva reactors when they are being run without containment so that you can quickly restore containment.
 Changed unstable Siva reactors to explode sooner once they start overloading.
 Changed mining lance enhancers to provide different bonuses depending on the level of the weapon they are enhancing.
@@ -29,8 +59,8 @@ Fixed a bug in the criteria for the mining lance enhancers that would enable the
 
 
 
-v0.7.4.0-development (2015-08-03)
----------------------------------
+v0.7.4.0 (2015-08-03)
+---------------------
 -----General Changes-----
 Updated to API v27 for Transcendence v1.6.1.
 Temporarily removed Playership Drones (PSD) support due to changes in v1.6 making it not work correctly.
@@ -39,14 +69,14 @@ Added a line of hyphens underneath version numbers in the changelog.
 Added version information to extension and library header files.
 Changed the general readme into a fancy .pdf file.
 
-----Stations-----
+-----Stations-----
 Removed mass from outpost turrets (they weren't even marked as mobile and (some) stars have gravity now).
 Changed Cabbage Corp outposts and their turrets to use image variants that match their asteroid fields.
 Updated the Buy & Modify item screen to use the same implementation as the new default item buying screens.
  -It no longer shows items for which the station does not have the resources to make, previously it showed them but deactivated the button to buy them.
  -(The options are all standardized anyway and there is another menu to show all potential custom devices/armor.)
 
-----Ships-----
+-----Ships-----
 The Corporate Command playerships extension now includes the Eridani starting location for playerships in addition to Tau Ceti.
 Fixed image for Oboroguruma-class stealth freighter in PSD menus.
 Lampyridae-class stealth transports now use the correct number (8) of armor segments in PSD.
@@ -58,7 +88,7 @@ Reduced device slots on ships because not having a default reactor is no longer 
  -The Oboroguruma-class now has 15 device slots instead of 16.
 Increased maximum armor capacity of the Oboroguruma-class to 40 tons from 20 tons.
 
-----Items-----
+-----Items-----
 Added new image for solar devices.
 Added new image for DRADIS devices.
 Added new images for autodefense devices.
@@ -151,7 +181,7 @@ Ships now have their facings image organized like the ships from eternity port. 
 Ships now have fancy inventory icons (some are fancier than others, I think).
 Fixed bug that appeared at some point and may have allowed players to install 5x more crew members than they should have been able to for custom playerships without specified crew capacities.
 
-----Items-----
+-----Items-----
 Replaced Kale series of repeaters. It now has standard, dual, omni, and side-mounted versions.
 Updated enhancers
  -Removed general enhancers, and dual enhancers
