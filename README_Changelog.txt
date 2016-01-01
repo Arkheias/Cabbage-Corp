@@ -13,7 +13,6 @@ Added Cabbage Corp School of Science to the S. Katherines Arcology University Qu
 Changed the stargate in Othala to actually transport the player back to the main stargate network instead of itself.
 Removed the text from the stargate in Othala that mocked the player after trapping them there.
 
-
 -----Ships-----
 Changed the reactors installed on ships due to rebalancing of said reactors (nearly all are higher capacity).
 Changed the fireAccuracy value on wraith autons.
