@@ -13,7 +13,7 @@
 -->
 
 <!--
-The game will only show up to around 21,474,847 fuel, meaning that if your reactor has twice that amount of fuel then the fuel bar will only appear when it is half-empty/full, but it will appear at the right place.
+The fuel indicator will only show up to around 21,474,847 fuel, give or take, meaning that if your reactor has three times that amount of fuel then the fuel bar will only be visible when it is one-third full, but the fuel indicator will appear at the right level.
 
 Note: &#xed; is the hex code for an 'i with an acute symbol' thingy.
 
@@ -26,554 +26,554 @@ The game does not provide a way to keep reactors from being sold at stations wit
 							<!-- Standard Reactors -->							
 <!-- ======================================================================= -->
 
-	<!-- Siva 5MW reactor -->
+	<!-- Siva 8MW reactor -->
 
-	<ItemType UNID="&itCCSiva5MWReactor;"
-			name=				"S&#xed;va-5M reactor"
+	<ItemType UNID="&itCCSiva8MWReactor;"
+			name=				"S&#xed;va-8M reactor"
 			attributes=			"cabbageCorp, majorItem"
 			
 			level=				"1"
 			frequency=			"notRandom"
 			
 			value=				"700"
-			mass=				"2500"
+			mass=				"1500"
 
-			description=		"This fuel efficient reactor has a peak power output of 5MW and accepts tech level 1 fuel. It can be freely modified with the included Cabbage Corp Toolset to output 8MW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 8MW in efficiency mode and 12MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"50"
-				fuelEfficiency=	"24"
-				maxFuel=		"14000"
-				fuelCriteria=	"f L:1;" 
-		/>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualSiva5MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva5MWReactor;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-			
-			<CCItemSwap>&itCCRadSiva5MWReactor;</CCItemSwap>
-		</StaticData>
-	</ItemType>
-
-	<!-- Siva 10MW reactor -->
-
-	<ItemType UNID="&itCCSiva10MWReactor;"
-			name=				"S&#xed;va-10M reactor"
-			attributes=			"cabbageCorp, majorItem"
-			
-			level=				"2"
-			frequency=			"notRandom"
-			
-			value=				"1600"
-			mass=				"3000"
-
-			description=		"This fuel efficient reactor has a peak power output of 10MW and accepts fuel of tech level 1-2. It can be freely modified with the included Cabbage Corp Toolset to output 15MW at the cost of decreased fuel efficiency."
-	>
-
-		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<ReactorDevice
-				maxPower=		"100"
-				fuelEfficiency=	"24"
-				maxFuel=		"31000"
-				fuelCriteria=	"f L:1-2;" 
-		/>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualSiva10MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva10MWReactor;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-			
-			<CCItemSwap>&itCCRadSiva10MWReactor;</CCItemSwap>
-		</StaticData>
-	</ItemType>
-
-	<!-- Siva 17MW reactor -->
-
-	<ItemType UNID="&itCCSiva17MWReactor;"
-			name=				"S&#xed;va-17M reactor"
-			attributes=			"cabbageCorp, majorItem"
-			
-			level=				"3"
-			frequency=			"uncommon"
-			
-			value=				"3100"
-			mass=				"3500"
-
-			description=		"This fuel efficient reactor has a peak power output of 17MW and accepts fuel of tech level 1-3. It can be freely modified with the included Cabbage Corp Toolset to output 26MW at the cost of decreased fuel efficiency."
-	>
-
-		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<ReactorDevice
-				maxPower=		"170"
-				fuelEfficiency=	"24"
-				maxFuel=		"60000"
+				maxPower=		"80"
+				fuelEfficiency=	"20"
+				maxFuel=		"30000"
 				fuelCriteria=	"f L:1-3;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva17MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva17MWReactor;		count:1		extraCost:0}
+					{product:&itCCDualSiva8MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva8MWReactor;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva17MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva8MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 31MW reactor -->
+	<!-- Siva 12MW reactor -->
 
-	<ItemType UNID="&itCCSiva31MWReactor;"
-			name=				"S&#xed;va-31M reactor"
+	<ItemType UNID="&itCCSiva12MWReactor;"
+			name=				"S&#xed;va-12M reactor"
 			attributes=			"cabbageCorp, majorItem"
 			
-			level=				"4"
-			frequency=			"uncommon"
+			level=				"2"
+			frequency=			"notRandom"
 			
-			value=				"6400"
-			mass=				"4000"
+			value=				"900"
+			mass=				"2000"
 
-			description=		"This fuel efficient reactor has a peak power output of 31MW and accepts fuel of tech level 2-4. It can be freely modified with the included Cabbage Corp Toolset to output 47MW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 12MW in efficiency mode and 18MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"310"
-				fuelEfficiency=	"24"
-				maxFuel=		"125000"
+				maxPower=		"120"
+				fuelEfficiency=	"21"
+				maxFuel=		"45900"
+				fuelCriteria=	"f L:1-3;" 
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualSiva12MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva12MWReactor;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+			
+			<CCItemSwap>&itCCRadSiva12MWReactor;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+	<!-- Siva 20MW reactor -->
+
+	<ItemType UNID="&itCCSiva20MWReactor;"
+			name=				"S&#xed;va-20M reactor"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"3"
+			frequency=			"uncommon"
+			
+			value=				"2700"
+			mass=				"3000"
+
+			description=		"This reactor has a peak power output of 20MW in efficiency mode and 30MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+	>
+
+		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"200"
+				fuelEfficiency=	"22"
+				maxFuel=		"79500"
+				fuelCriteria=	"f L:1-3;" 
+		/>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualSiva20MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva20MWReactor;		count:1		extraCost:0}
+				)
+			</CCBuyAndModify>
+			
+			<CCItemSwap>&itCCRadSiva20MWReactor;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+	<!-- Siva 40MW reactor -->
+
+	<ItemType UNID="&itCCSiva40MWReactor;"
+			name=				"S&#xed;va-40M reactor"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"4"
+			frequency=			"uncommon"
+			
+			value=				"5000"
+			mass=				"3500"
+
+			description=		"This reactor has a peak power output of 40MW in efficiency mode and 60MW in overdrive. It accepts fuel rated between L2 and L4, and can easily switch modes with the built-in Cabbage Corp Toolset."
+	>
+
+		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"400"
+				fuelEfficiency=	"22"
+				maxFuel=		"168000"
 				fuelCriteria=	"f L:2-4;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva31MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva31MWReactor;		count:1		extraCost:0}
+					{product:&itCCDualSiva40MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva40MWReactor;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva31MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva40MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 57MW reactor -->
+	<!-- Siva 80MW reactor -->
 
-	<ItemType UNID="&itCCSiva57MWReactor;"
-			name=				"S&#xed;va-57M reactor"
+	<ItemType UNID="&itCCSiva80MWReactor;"
+			name=				"S&#xed;va-80M reactor"
 			attributes=			"cabbageCorp, majorItem"
 			
 			level=				"5"
 			frequency=			"uncommon"
 			
-			value=				"13500"
-			mass=				"4500"
+			value=				"9000"
+			mass=				"4000"
 
-			description=		"This fuel efficient reactor has a peak power output of 57MW and accepts fuel of tech level 3-5. It can be freely modified with the included Cabbage Corp Toolset to output 85MW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 80MW in efficiency mode and 120MW in overdrive. It accepts fuel rated between L3 and L5, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"570"
-				fuelEfficiency=	"24"
-				maxFuel=		"260000"
+				maxPower=		"800"
+				fuelEfficiency=	"22"
+				maxFuel=		"360000"
 				fuelCriteria=	"f L:3-5;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva57MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva57MWReactor;		count:1		extraCost:0}
+					{product:&itCCDualSiva80MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva80MWReactor;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva57MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva80MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 100MW reactor -->
+	<!-- Siva 120MW reactor -->
 
-	<ItemType UNID="&itCCSiva100MWReactor;"
-			name=				"S&#xed;va-100M reactor"
+	<ItemType UNID="&itCCSiva120MWReactor;"
+			name=				"S&#xed;va-120M reactor"
 			attributes=			"cabbageCorp, majorItem, military"
 			
 			level=				"6"
 			frequency=			"rare"
 			
-			value=				"29000"
-			mass=				"5500"
+			value=				"18000"
+			mass=				"5000"
 
-			description=		"This fuel efficient reactor has a peak power output of 100MW and accepts fuel of tech level 4-6. It can be freely modified with the included Cabbage Corp Toolset to output 140MW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 120MW in efficiency mode and 180MW in overdrive. It accepts fuel rated between L4 and L6, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"1000"
-				fuelEfficiency=	"26"
-				maxFuel=		"560000"
+				maxPower=		"1200"
+				fuelEfficiency=	"23"
+				maxFuel=		"585000"
 				fuelCriteria=	"f L:4-6;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva100MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva100MWReactor;		count:1		extraCost:0}
+					{product:&itCCDualSiva120MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva120MWReactor;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva100MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva120MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 170MW reactor -->
+	<!-- Siva 200MW reactor -->
 
-	<ItemType UNID="&itCCSiva170MWReactor;"
-			name=				"S&#xed;va-170M reactor"
+	<ItemType UNID="&itCCSiva200MWReactor;"
+			name=				"S&#xed;va-200M reactor"
 			attributes=			"cabbageCorp, majorItem, military"
 			
 			level=				"7"
 			frequency=			"rare"
 			
-			value=				"57000"
-			mass=				"6000"
+			value=				"54000"
+			mass=				"5500"
 
-			description=		"This fuel efficient reactor has a peak power output of 170MW and accepts fuel of tech level 5-7. It can be freely modified with the included Cabbage Corp Toolset to output 260MW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 200MW in efficiency mode and 300MW in overdrive. It accepts fuel rated between L5 and L7, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"1700"
-				fuelEfficiency=	"26"
-				maxFuel=		"1100000"
+				maxPower=		"2000"
+				fuelEfficiency=	"24"
+				maxFuel=		"1065000"
 				fuelCriteria=	"f L:5-7;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva170MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva170MWReactor;		count:1		extraCost:0}
+					{product:&itCCDualSiva200MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva200MWReactor;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva170MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva200MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 310MW reactor -->
+	<!-- Siva 400MW reactor -->
 
-	<ItemType UNID="&itCCSiva310MWReactor;"
-			name=				"S&#xed;va-310M reactor"
+	<ItemType UNID="&itCCSiva400MWReactor;"
+			name=				"S&#xed;va-400M reactor"
 			attributes=			"cabbageCorp, majorItem, military"
 			
 			level=				"8"
 			frequency=			"rare"
 			
-			value=				"110000"
-			mass=				"6500"
+			value=				"90000"
+			mass=				"6000"
 
-			description=		"This fuel efficient reactor has a peak power output of 310MW and accepts fuel of tech level 6-8. It can be freely modified with the included Cabbage Corp Toolset to output 460MW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 400MW in efficiency mode and 600MW in overdrive. It accepts fuel rated between L6 and L8, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"3100"
-				fuelEfficiency=	"26"
-				maxFuel=		"2200000"
+				maxPower=		"4000"
+				fuelEfficiency=	"24"
+				maxFuel=		"2340000"
 				fuelCriteria=	"f L:6-8;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva310MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva310MWReactor;		count:1		extraCost:0}
+					{product:&itCCDualSiva400MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva400MWReactor;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva310MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva400MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 560MW reactor -->
+	<!-- Siva 800MW reactor -->
 
-	<ItemType UNID="&itCCSiva560MWReactor;"
-			name=				"S&#xed;va-560M reactor"
+	<ItemType UNID="&itCCSiva800MWReactor;"
+			name=				"S&#xed;va-800M reactor"
 			attributes=			"cabbageCorp, majorItem, military"
 			
 			level=				"9"
 			frequency=			"rare"
 			
-			value=				"240000"
-			mass=				"7000"
+			value=				"180000"
+			mass=				"6500"
 
-			description=		"This fuel efficient reactor has a peak power output of 560MW and accepts fuel of tech level 7-9. It can be freely modified with the included Cabbage Corp Toolset to output 840MW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 800MW in efficiency mode and 1200MW in overdrive. It accepts fuel rated between L7 and L9, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"5600"
-				fuelEfficiency=	"26"
-				maxFuel=		"4600000"
+				maxPower=		"8000"
+				fuelEfficiency=	"24"
+				maxFuel=		"5160000"
 				fuelCriteria=	"f L:7-9;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva560MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva560MWReactor;		count:1		extraCost:0}
+					{product:&itCCDualSiva800MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva800MWReactor;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva560MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva800MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 1000MW reactor -->
+	<!-- Siva 1200MW reactor -->
 
-	<ItemType UNID="&itCCSiva1000MWReactor;"
-			name=				"S&#xed;va-1G reactor"
+	<ItemType UNID="&itCCSiva1200MWReactor;"
+			name=				"S&#xed;va-1200M reactor"
 			attributes=			"cabbageCorp, majorItem, military"
 			
 			level=				"10"
 			frequency=			"rare"
 			
-			value=				"480000"
-			mass=				"7500"
+			value=				"360000"
+			mass=				"7000"
 
-			description=		"This fuel efficient reactor has a peak power output of 1GW and accepts fuel of tech level 8-10. It can be freely modified with the included Cabbage Corp Toolset to output 1.5GW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 1200MW in efficiency mode and 1800MW in overdrive. It accepts fuel rated between L8 and L10, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"10000"
-				fuelEfficiency=	"26"
-				maxFuel=		"9300000"
+				maxPower=		"12000"
+				fuelEfficiency=	"25"
+				maxFuel=		"8550000"
 				fuelCriteria=	"f L:8-10;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva1000MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva1000MWReactor;		count:1		extraCost:0}
+					{product:&itCCDualSiva1200MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva1200MWReactor;			count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva1000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva1200MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 1700MW reactor -->
+	<!-- Siva 2000MW reactor -->
 
-	<ItemType UNID="&itCCSiva1700MWReactor;"
-			name=				"S&#xed;va-1.7G reactor"
+	<ItemType UNID="&itCCSiva2000MWReactor;"
+			name=				"S&#xed;va-2G reactor"
 			attributes=			"alien, cabbageCorp, majorItem"
 			
 			level=				"11"
 			frequency=			"veryrare"
 			
-			value=				"1000000"
+			value=				"1100000"
 			mass=				"8000"
 
-			description=		"This alien reactor seems to have a peak power output of 1.7GW and can accept fuel of tech level 9-11. It can probably be freely modified with the included Cabbage Corp Toolset to output 2.5GW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 2GW in efficiency mode and 3GW in overdrive. It accepts fuel rated between L9 and L11, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"17000"
-				fuelEfficiency=	"28"
-				maxFuel=		"19000000"
+				maxPower=		"20000"
+				fuelEfficiency=	"26"
+				maxFuel=		"15750000"
 				fuelCriteria=	"f L:9-11;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva1700MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva1700MWReactor;		count:1		extraCost:0}
+					{product:&itCCDualSiva2000MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva2000MWReactor;			count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva1700MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva2000MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 3000MW reactor -->
+	<!-- Siva 4000MW reactor -->
 
-	<ItemType UNID="&itCCSiva3000MWReactor;"
-			name=				"S&#xed;va-3G reactor"
+	<ItemType UNID="&itCCSiva4000MWReactor;"
+			name=				"S&#xed;va-4G reactor"
 			attributes=			"alien, cabbageCorp, majorItem"
 			
 			level=				"12"
 			frequency=			"veryrare"
 			
-			value=				"2000000"
+			value=				"1800000"
 			mass=				"8500"
 
-			description=		"This alien reactor seems to have a peak power output of 3GW and can accept fuel of tech level 10-12. It can probably be freely modified with the included Cabbage Corp Toolset to output 4.6GW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 4GW in efficiency mode and 6GW in overdrive. It accepts fuel rated between L10 and L12, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"30000"
-				fuelEfficiency=	"28"
-				maxFuel=		"39000000"
+				maxPower=		"40000"
+				fuelEfficiency=	"26"
+				maxFuel=		"34800000"
 				fuelCriteria=	"f L:10-12;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva3000MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva3000MWReactor;			count:1		extraCost:0}
+					{product:&itCCDualSiva4000MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva4000MWReactor;			count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva3000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva4000MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 5500MW reactor -->
+	<!-- Siva 8000MW reactor -->
 
-	<ItemType UNID="&itCCSiva5500MWReactor;"
-			name=				"S&#xed;va-5.5G reactor"
+	<ItemType UNID="&itCCSiva8000MWReactor;"
+			name=				"S&#xed;va-8G reactor"
 			attributes=			"alien, cabbageCorp, majorItem"
 			
 			level=				"13"
 			frequency=			"veryrare"
 			
-			value=				"4200000"
+			value=				"3600000"
 			mass=				"9000"
 
-			description=		"This alien reactor seems to have a peak power output of 5.5GW and can accept fuel of tech level 11-13. It can probably be freely modified with the included Cabbage Corp Toolset to output 8.2GW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 8GW in efficiency mode and 12GW in overdrive. It accepts fuel rated between L11 and L13, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"55000"
-				fuelEfficiency=	"28"
-				maxFuel=		"81000000"
+				maxPower=		"80000"
+				fuelEfficiency=	"26"
+				maxFuel=		"76800000"
 				fuelCriteria=	"f L:11-13;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva5500MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva5500MWReactor;			count:1		extraCost:0}
+					{product:&itCCDualSiva8000MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva8000MWReactor;			count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva5500MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva8000MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 10000MW reactor -->
+	<!-- Siva 12000MW reactor -->
 
-	<ItemType UNID="&itCCSiva10000MWReactor;"
-			name=				"S&#xed;va-10G reactor"
+	<ItemType UNID="&itCCSiva12000MWReactor;"
+			name=				"S&#xed;va-12G reactor"
 			attributes=			"alien, cabbageCorp, majorItem"
 			
 			level=				"14"
 			frequency=			"veryrare"
 			
-			value=				"8900000"
+			value=				"7200000"
 			mass=				"9500"
 
-			description=		"This alien reactor seems to have a peak power output of 10GW and can accept fuel of tech level 12-14. It can probably be freely modified with the included Cabbage Corp Toolset to output 15GW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 12GW in efficiency mode and 18GW in overdrive. It accepts fuel rated between L12 and L14, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"100000"
-				fuelEfficiency=	"28"
-				maxFuel=		"170000000"
+				maxPower=		"120000"
+				fuelEfficiency=	"27"
+				maxFuel=		"126900000"
 				fuelCriteria=	"f L:12-14;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva10000MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva10000MWReactor;		count:1		extraCost:0}
+					{product:&itCCDualSiva12000MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva12000MWReactor;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva10000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva12000MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 18000MW reactor -->
+	<!-- Siva 20000MW reactor -->
 
-	<ItemType UNID="&itCCSiva18000MWReactor;"
-			name=				"S&#xed;va-18G reactor"
+	<ItemType UNID="&itCCSiva20000MWReactor;"
+			name=				"S&#xed;va-20G reactor"
 			attributes=			"alien, cabbageCorp, majorItem"
 			
 			level=				"15"
 			frequency=			"veryrare"
 			
-			value=				"18000000"
+			value=				"22000000"
 			mass=				"10000"
 
-			description=		"This alien reactor seems to have a peak power output of 18GW and can accept fuel of tech level 13-15. It can probably be freely modified with the included Cabbage Corp Toolset to output 27GW at the cost of decreased fuel efficiency."
+			description=		"This reactor has a peak power output of 20GW in efficiency mode and 30GW in overdrive. It accepts fuel rated between L13 and L15, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"180000"
+				maxPower=		"200000"
 				fuelEfficiency=	"28"
-				maxFuel=		"340000000"
+				maxFuel=		"232500000"
 				fuelCriteria=	"f L:13-15;" 
 		/>
 		
 		<StaticData>
 			<CCBuyAndModify>
 				(
-					{product:&itCCDualSiva18000MWReactor;		count:2		extraCost:0}
-					{product:&itCCAuxSiva18000MWReactor;		count:1		extraCost:0}
+					{product:&itCCDualSiva20000MWReactor;		count:2		extraCost:0}
+					{product:&itCCAuxSiva20000MWReactor;		count:1		extraCost:0}
 				)
 			</CCBuyAndModify>
 			
-			<CCItemSwap>&itCCRadSiva18000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadSiva20000MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
-	
+
 <!-- ======================================================================= -->
 							<!-- Alternate Reactors -->							
 <!-- ======================================================================= -->
 
-	<!-- Siva 5MW reactor (no containment) -->
+	<!-- Siva 8MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva5MWReactor;"
-			name=				"S&#xed;va-5M reactor"
+	<ItemType UNID="&itCCRadSiva8MWReactor;"
+			name=				"S&#xed;va-8M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
@@ -581,93 +581,17 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			frequency=			"notRandom"
 			
 			value=				"700"
-			mass=				"2500"
+			mass=				"1500"
 
-			description=		"This reactor has been modified to run with a power output of 8MW and accepts tech level 1 fuel. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 8MW in efficiency mode and 12MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"80"
-				fuelEfficiency=	"12"
-				maxFuel=		"14000"
-				fuelCriteria=	"f L:1;" 
-		/>
-		
-		<Invoke installedOnly="true" key="R">
-			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
-				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
-			)
-		</Invoke>
-		
-		<StaticData>
-			<CCItemSwap>&itCCSiva5MWReactor;</CCItemSwap>
-			<CCExplosionType>&vtCCReactorExplosion1;</CCExplosionType>
-		</StaticData>
-	</ItemType>
-
-	<!-- Siva 10MW reactor (no containment) -->
-
-	<ItemType UNID="&itCCRadSiva10MWReactor;"
-			name=				"S&#xed;va-10M reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, notForSale"
-			inherit=			"&baCCUnsafeReactorBase;"
-			
-			level=				"2"
-			frequency=			"notRandom"
-			
-			value=				"1600"
-			mass=				"3000"
-
-			description=		"This reactor has been modified to run with a power output of 15MW and accepts fuel of tech level 1-2. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
-	>
-
-		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<ReactorDevice
-				maxPower=		"150"
-				fuelEfficiency=	"12"
-				maxFuel=		"31000"
-				fuelCriteria=	"f L:1-2;" 
-		/>
-		
-		<Invoke installedOnly="true" key="R">
-			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
-				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
-			)
-		</Invoke>
-		
-		<StaticData>
-			<CCItemSwap>&itCCSiva10MWReactor;</CCItemSwap>
-			<CCExplosionType>&vtCCReactorExplosion2;</CCExplosionType>
-		</StaticData>
-	</ItemType>
-
-	<!-- Siva 17MW reactor (no containment) -->
-
-	<ItemType UNID="&itCCRadSiva17MWReactor;"
-			name=				"S&#xed;va-17M reactor"
-			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, notForSale"
-			inherit=			"&baCCUnsafeReactorBase;"
-			
-			level=				"3"
-			frequency=			"notRandom"
-			
-			value=				"3100"
-			mass=				"3500"
-
-			description=		"This reactor has been modified to run with a power output of 26MW and accepts fuel of tech level 1-3. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
-	>
-
-		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<ReactorDevice
-				maxPower=		"260"
-				fuelEfficiency=	"12"
-				maxFuel=		"60000"
+				maxPower=		"120"
+				fuelEfficiency=	"10"
+				maxFuel=		"30000"
 				fuelCriteria=	"f L:1-3;" 
 		/>
 		
@@ -679,33 +603,109 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva17MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva8MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion1;</CCExplosionType>
+		</StaticData>
+	</ItemType>
+
+	<!-- Siva 12MW reactor (no containment) -->
+
+	<ItemType UNID="&itCCRadSiva12MWReactor;"
+			name=				"S&#xed;va-12M reactor"
+			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, notForSale"
+			inherit=			"&baCCUnsafeReactorBase;"
+			
+			level=				"2"
+			frequency=			"notRandom"
+			
+			value=				"900"
+			mass=				"2000"
+
+			description=		"This reactor has a peak power output of 12MW in efficiency mode and 18MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+	>
+
+		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"180"
+				fuelEfficiency=	"11"
+				maxFuel=		"45900"
+				fuelCriteria=	"f L:1-3;" 
+		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
+		<StaticData>
+			<CCItemSwap>&itCCSiva12MWReactor;</CCItemSwap>
+			<CCExplosionType>&vtCCReactorExplosion2;</CCExplosionType>
+		</StaticData>
+	</ItemType>
+
+	<!-- Siva 20MW reactor (no containment) -->
+
+	<ItemType UNID="&itCCRadSiva20MWReactor;"
+			name=				"S&#xed;va-20M reactor"
+			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, notForSale"
+			inherit=			"&baCCUnsafeReactorBase;"
+			
+			level=				"3"
+			frequency=			"notRandom"
+			
+			value=				"2700"
+			mass=				"3000"
+
+			description=		"This reactor has a peak power output of 20MW in efficiency mode and 30MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+	>
+
+		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"300"
+				fuelEfficiency=	"11"
+				maxFuel=		"79500"
+				fuelCriteria=	"f L:1-3;" 
+		/>
+		
+		<Invoke installedOnly="true" key="R">
+			(block Nil
+				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
+			)
+		</Invoke>
+		
+		<StaticData>
+			<CCItemSwap>&itCCSiva20MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion3;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 31MW reactor (no containment) -->
+	<!-- Siva 40MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva31MWReactor;"
-			name=				"S&#xed;va-31M reactor"
+	<ItemType UNID="&itCCRadSiva40MWReactor;"
+			name=				"S&#xed;va-40M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"4"
 			frequency=			"notRandom"
 			
-			value=				"6400"
-			mass=				"4000"
+			value=				"5000"
+			mass=				"3500"
 
-			description=		"This reactor has been modified to run with a power output of 47MW and accepts fuel of tech level 2-4. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 40MW in efficiency mode and 60MW in overdrive. It accepts fuel rated between L2 and L4, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"470"
-				fuelEfficiency=	"12"
-				maxFuel=		"125000"
+				maxPower=		"600"
+				fuelEfficiency=	"11"
+				maxFuel=		"168000"
 				fuelCriteria=	"f L:2-4;" 
 		/>
 		
@@ -717,33 +717,33 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva31MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva40MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion4;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 57MW reactor (no containment) -->
+	<!-- Siva 80MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva57MWReactor;"
-			name=				"S&#xed;va-57M reactor"
+	<ItemType UNID="&itCCRadSiva80MWReactor;"
+			name=				"S&#xed;va-80M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"5"
 			frequency=			"notRandom"
 			
-			value=				"13500"
-			mass=				"4500"
+			value=				"9000"
+			mass=				"4000"
 
-			description=		"This reactor has been modified to run with a power output of 85MW and accepts fuel of tech level 3-5. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 80MW in efficiency mode and 120MW in overdrive. It accepts fuel rated between L3 and L5, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"850"
-				fuelEfficiency=	"12"
-				maxFuel=		"260000"
+				maxPower=		"1200"
+				fuelEfficiency=	"11"
+				maxFuel=		"360000"
 				fuelCriteria=	"f L:3-5;" 
 		/>
 		
@@ -755,33 +755,33 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva57MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva80MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion5;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 100MW reactor (no containment) -->
+	<!-- Siva 120MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva100MWReactor;"
-			name=				"S&#xed;va-100M reactor"
+	<ItemType UNID="&itCCRadSiva120MWReactor;"
+			name=				"S&#xed;va-120M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"6"
 			frequency=			"notRandom"
 			
-			value=				"29000"
-			mass=				"5500"
+			value=				"18000"
+			mass=				"5000"
 
-			description=		"This reactor has been modified to run with a power output of 140MW and accepts fuel of tech level 4-6. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 120MW in efficiency mode and 180MW in overdrive. It accepts fuel rated between L4 and L6, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"1400"
-				fuelEfficiency=	"13"
-				maxFuel=		"560000"
+				maxPower=		"1800"
+				fuelEfficiency=	"12"
+				maxFuel=		"585000"
 				fuelCriteria=	"f L:4-6;" 
 		/>
 		
@@ -793,33 +793,33 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva100MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva120MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion6;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 170MW reactor (no containment) -->
+	<!-- Siva 200MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva170MWReactor;"
-			name=				"S&#xed;va-170M reactor"
+	<ItemType UNID="&itCCRadSiva200MWReactor;"
+			name=				"S&#xed;va-200M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"7"
 			frequency=			"notRandom"
 			
-			value=				"57000"
-			mass=				"6000"
+			value=				"54000"
+			mass=				"5500"
 
-			description=		"This reactor has been modified to run with a power output of 260MW and accepts fuel of tech level 5-7. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 200MW in efficiency mode and 300MW in overdrive. It accepts fuel rated between L5 and L7, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"2600"
-				fuelEfficiency=	"13"
-				maxFuel=		"1100000"
+				maxPower=		"3000"
+				fuelEfficiency=	"12"
+				maxFuel=		"1065000"
 				fuelCriteria=	"f L:5-7;" 
 		/>
 		
@@ -831,33 +831,33 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva170MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva200MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion7;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 310MW reactor (no containment) -->
+	<!-- Siva 400MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva310MWReactor;"
-			name=				"S&#xed;va-310M reactor"
+	<ItemType UNID="&itCCRadSiva400MWReactor;"
+			name=				"S&#xed;va-400M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"8"
 			frequency=			"notRandom"
 			
-			value=				"110000"
-			mass=				"6500"
+			value=				"90000"
+			mass=				"6000"
 
-			description=		"This reactor has been modified to run with a power output of 460MW and accepts fuel of tech level 6-8. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 400MW in efficiency mode and 600MW in overdrive. It accepts fuel rated between L6 and L8, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"4600"
-				fuelEfficiency=	"13"
-				maxFuel=		"2200000"
+				maxPower=		"6000"
+				fuelEfficiency=	"12"
+				maxFuel=		"2340000"
 				fuelCriteria=	"f L:6-8;" 
 		/>
 		
@@ -869,33 +869,33 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva310MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva400MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion8;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 560MW reactor (no containment) -->
+	<!-- Siva 800MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva560MWReactor;"
-			name=				"S&#xed;va-560M reactor"
+	<ItemType UNID="&itCCRadSiva800MWReactor;"
+			name=				"S&#xed;va-800M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"9"
 			frequency=			"notRandom"
 			
-			value=				"240000"
-			mass=				"7000"
+			value=				"180000"
+			mass=				"6500"
 
-			description=		"This reactor has been modified to run with a power output of 840MW and accepts fuel of tech level 7-9. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 800MW in efficiency mode and 1200MW in overdrive. It accepts fuel rated between L7 and L9, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"8400"
-				fuelEfficiency=	"13"
-				maxFuel=		"4600000"
+				maxPower=		"12000"
+				fuelEfficiency=	"12"
+				maxFuel=		"5160000"
 				fuelCriteria=	"f L:7-9;" 
 		/>
 		
@@ -907,33 +907,33 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva560MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva800MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion9;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 1000MW reactor (no containment) -->
+	<!-- Siva 1200MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva1000MWReactor;"
-			name=				"S&#xed;va-1G reactor"
+	<ItemType UNID="&itCCRadSiva1200MWReactor;"
+			name=				"S&#xed;va-1200M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"10"
 			frequency=			"notRandom"
 			
-			value=				"480000"
-			mass=				"7500"
+			value=				"360000"
+			mass=				"7000"
 
-			description=		"This reactor has been modified to run with a power output of 1.5GW and accepts fuel of tech level 8-10. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 1200MW in efficiency mode and 1800MW in overdrive. It accepts fuel rated between L8 and L10, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"15000"
+				maxPower=		"18000"
 				fuelEfficiency=	"13"
-				maxFuel=		"9300000"
+				maxFuel=		"8550000"
 				fuelCriteria=	"f L:8-10;" 
 		/>
 		
@@ -945,33 +945,33 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva1000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva1200MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion10;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 1700MW reactor (no containment) -->
+	<!-- Siva 2000MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva1700MWReactor;"
-			name=				"S&#xed;va-1.7G reactor"
+	<ItemType UNID="&itCCRadSiva2000MWReactor;"
+			name=				"S&#xed;va-2G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNoContainment, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"11"
 			frequency=			"notRandom"
 			
-			value=				"1000000"
+			value=				"1100000"
 			mass=				"8000"
 
-			description=		"This alien reactor seems to have been modified to run with a power output of 2.5GW and can accept fuel of tech level 9-11. It can probably be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 2GW in efficiency mode and 3GW in overdrive. It accepts fuel rated between L9 and L11, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"25000"
-				fuelEfficiency=	"14"
-				maxFuel=		"19000000"
+				maxPower=		"30000"
+				fuelEfficiency=	"13"
+				maxFuel=		"15750000"
 				fuelCriteria=	"f L:9-11;" 
 		/>
 		
@@ -983,33 +983,33 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva1700MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva2000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion11;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 3000MW reactor (no containment) -->
+	<!-- Siva 4000MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva3000MWReactor;"
-			name=				"S&#xed;va-3G reactor"
+	<ItemType UNID="&itCCRadSiva4000MWReactor;"
+			name=				"S&#xed;va-4G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNoContainment, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"12"
 			frequency=			"notRandom"
 			
-			value=				"2000000"
+			value=				"1800000"
 			mass=				"8500"
 
-			description=		"This alien reactor seems to have been modified to run with a power output of 4.6GW and can accept fuel of tech level 10-12. It can probably be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 4GW in efficiency mode and 6GW in overdrive. It accepts fuel rated between L10 and L12, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"46000"
-				fuelEfficiency=	"14"
-				maxFuel=		"39000000"
+				maxPower=		"60000"
+				fuelEfficiency=	"13"
+				maxFuel=		"34800000"
 				fuelCriteria=	"f L:10-12;" 
 		/>
 		
@@ -1021,33 +1021,33 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva3000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva4000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion12;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 5500MW reactor (no containment) -->
+	<!-- Siva 8000MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva5500MWReactor;"
-			name=				"S&#xed;va-5.5G reactor"
+	<ItemType UNID="&itCCRadSiva8000MWReactor;"
+			name=				"S&#xed;va-8G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNoContainment, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"13"
 			frequency=			"notRandom"
 			
-			value=				"4200000"
+			value=				"3600000"
 			mass=				"9000"
 
-			description=		"This alien reactor seems to have been modified to run with a power output of 8.2GW and can accept fuel of tech level 11-13. It can probably be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 8GW in efficiency mode and 12GW in overdrive. It accepts fuel rated between L11 and L13, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"82000"
-				fuelEfficiency=	"14"
-				maxFuel=		"81000000"
+				maxPower=		"120000"
+				fuelEfficiency=	"13"
+				maxFuel=		"76800000"
 				fuelCriteria=	"f L:11-13;" 
 		/>
 		
@@ -1059,33 +1059,33 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva5500MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva8000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion13;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Siva 10000MW reactor (no containment) -->
+	<!-- Siva 12000MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva10000MWReactor;"
-			name=				"S&#xed;va-10G reactor"
+	<ItemType UNID="&itCCRadSiva12000MWReactor;"
+			name=				"S&#xed;va-12G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNoContainment, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"14"
 			frequency=			"notRandom"
 			
-			value=				"8900000"
+			value=				"7200000"
 			mass=				"9500"
 
-			description=		"This alien reactor seems to have been modified to run with a power output of 15GW and can accept fuel of tech level 12-14. It can probably be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 12GW in efficiency mode and 18GW in overdrive. It accepts fuel rated between L12 and L14, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"150000"
+				maxPower=		"180000"
 				fuelEfficiency=	"14"
-				maxFuel=		"170000000"
+				maxFuel=		"126900000"
 				fuelCriteria=	"f L:12-14;" 
 		/>
 		
@@ -1097,33 +1097,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva10000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva12000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion14;</CCExplosionType>
 		</StaticData>
 	</ItemType>
+		
 
-	<!-- Siva 18000MW reactor (no containment) -->
+	<!-- Siva 20000MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadSiva18000MWReactor;"
-			name=				"S&#xed;va-18G reactor"
+	<ItemType UNID="&itCCRadSiva20000MWReactor;"
+			name=				"S&#xed;va-20G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNoContainment, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"15"
 			frequency=			"notRandom"
 			
-			value=				"18000000"
+			value=				"22000000"
 			mass=				"10000"
 
-			description=		"This alien reactor seems to have been modified to run with a power output of 27GW and can accept fuel of tech level 13-15. It can probably be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This reactor has a peak power output of 20GW in efficiency mode and 30GW in overdrive. It accepts fuel rated between L13 and L15, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"270000"
+				maxPower=		"300000"
 				fuelEfficiency=	"14"
-				maxFuel=		"340000000"
+				maxFuel=		"232500000"
 				fuelCriteria=	"f L:13-15;" 
 		/>
 		
@@ -1135,488 +1136,488 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCSiva18000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCSiva20000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion15;</CCExplosionType>
 		</StaticData>
 	</ItemType>
-	
+
 <!-- ======================================================================= -->
-							<!-- Dual Reactors -->								
+							<!-- Dual Reactors -->							
 <!-- ======================================================================= -->
 
-	<!-- Dual Siva 5MW reactor -->
+	<!-- Dual Siva 8MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva5MWReactor;"
-			name=				"dual S&#xed;va-5M reactor"
+	<ItemType UNID="&itCCDualSiva8MWReactor;"
+			name=				"dual S&#xed;va-8M reactor"
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"1"
 			frequency=			"notRandom"
 			
 			value=				"1500"
-			mass=				"5000"
+			mass=				"3000"
 
-			description=		"This oversized fuel efficient reactor has a peak power output of 11MW and accepts tech level 1 fuel. It can be freely modified with the included Cabbage Corp Toolset to output 16MW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 16MW in efficiency mode and 24MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"110"
-				fuelEfficiency=	"26"
-				maxFuel=		"27000"
-				fuelCriteria=	"f L:1;" 
-				
-				deviceslots=	"2"
-		/>
-		
-		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva5MWReactor;</CCItemSwap>
-		</StaticData>
-	</ItemType>
-
-	<!-- Dual Siva 10MW reactor -->
-
-	<ItemType UNID="&itCCDualSiva10MWReactor;"
-			name=				"dual S&#xed;va-10M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
-			
-			level=				"2"
-			frequency=			"notRandom"
-			
-			value=				"3400"
-			mass=				"6000"
-
-			description=		"This oversized fuel efficient reactor has a peak power output of 19MW and accepts fuel of tech level 1-2. It can be freely modified with the included Cabbage Corp Toolset to output 29MW at the cost of decreased fuel efficiency."
-	>
-
-		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<ReactorDevice
-				maxPower=		"190"
-				fuelEfficiency=	"26"
-				maxFuel=		"62000"
-				fuelCriteria=	"f L:1-2;" 
-				
-				deviceslots=	"2"
-		/>
-		
-		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva10MWReactor;</CCItemSwap>
-		</StaticData>
-	</ItemType>
-
-	<!-- Dual Siva 17MW reactor -->
-
-	<ItemType UNID="&itCCDualSiva17MWReactor;"
-			name=				"dual S&#xed;va-17M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
-			
-			level=				"3"
-			frequency=			"veryrare"
-			
-			value=				"6500"
-			mass=				"7000"
-
-			description=		"This oversized fuel efficient reactor has a peak power output of 35MW and accepts fuel of tech level 1-3. It can be freely modified with the included Cabbage Corp Toolset to output 52MW at the cost of decreased fuel efficiency."
-	>
-
-		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<ReactorDevice
-				maxPower=		"350"
-				fuelEfficiency=	"26"
-				maxFuel=		"120000"
+				maxPower=		"160"
+				fuelEfficiency=	"24"
+				maxFuel=		"66000"
 				fuelCriteria=	"f L:1-3;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva17MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva8MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 31MW reactor -->
+	<!-- Dual Siva 12MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva31MWReactor;"
-			name=				"dual S&#xed;va-31M reactor"
+	<ItemType UNID="&itCCDualSiva12MWReactor;"
+			name=				"dual S&#xed;va-12M reactor"
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
-			level=				"4"
-			frequency=			"veryrare"
+			level=				"2"
+			frequency=			"notRandom"
 			
-			value=				"13500"
-			mass=				"8000"
+			value=				"2000"
+			mass=				"4000"
 
-			description=		"This oversized fuel efficient reactor has a peak power output of 62MW and accepts fuel of tech level 2-4. It can be freely modified with the included Cabbage Corp Toolset to output 94MW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 24MW in efficiency mode and 36MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"630"
+				maxPower=		"240"
+				fuelEfficiency=	"25"
+				maxFuel=		"100800"
+				fuelCriteria=	"f L:1-3;" 
+				
+				deviceslots=	"2"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadDualSiva12MWReactor;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+	<!-- Dual Siva 20MW reactor -->
+
+	<ItemType UNID="&itCCDualSiva20MWReactor;"
+			name=				"dual S&#xed;va-20M reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
+			
+			level=				"3"
+			frequency=			"rare"
+			
+			value=				"6000"
+			mass=				"6000"
+
+			description=		"This oversized reactor has a peak power output of 40MW in efficiency mode and 60MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+	>
+
+		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"400"
 				fuelEfficiency=	"26"
-				maxFuel=		"250000"
+				maxFuel=		"174000"
+				fuelCriteria=	"f L:1-3;" 
+				
+				deviceslots=	"2"
+		/>
+		
+		<StaticData>
+			<CCItemSwap>&itCCRadDualSiva20MWReactor;</CCItemSwap>
+		</StaticData>
+	</ItemType>
+
+	<!-- Dual Siva 40MW reactor -->
+
+	<ItemType UNID="&itCCDualSiva40MWReactor;"
+			name=				"dual S&#xed;va-40M reactor"
+			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
+			
+			level=				"4"
+			frequency=			"rare"
+			
+			value=				"11000"
+			mass=				"7000"
+
+			description=		"This oversized reactor has a peak power output of 80MW in efficiency mode and 120MW in overdrive. It accepts fuel rated between L2 and L4, and can easily switch modes with the built-in Cabbage Corp Toolset."
+	>
+
+		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"800"
+				fuelEfficiency=	"26"
+				maxFuel=		"366000"
 				fuelCriteria=	"f L:2-4;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva31MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva40MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 57MW reactor -->
+	<!-- Dual Siva 80MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva57MWReactor;"
-			name=				"dual S&#xed;va-57M reactor"
+	<ItemType UNID="&itCCDualSiva80MWReactor;"
+			name=				"dual S&#xed;va-80M reactor"
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"5"
-			frequency=			"veryrare"
+			frequency=			"rare"
 			
-			value=				"28500"
-			mass=				"9000"
+			value=				"20000"
+			mass=				"8000"
 
-			description=		"This oversized fuel efficient reactor has a peak power output of 115MW and accepts fuel of tech level 3-5. It can be freely modified with the included Cabbage Corp Toolset to output 170MW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 160MW in efficiency mode and 240MW in overdrive. It accepts fuel rated between L3 and L5, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"1150"
+				maxPower=		"1600"
 				fuelEfficiency=	"26"
-				maxFuel=		"520000"
+				maxFuel=		"780000"
 				fuelCriteria=	"f L:3-5;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva57MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva80MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 100MW reactor -->
+	<!-- Dual Siva 120MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva100MWReactor;"
-			name=				"dual S&#xed;va-100M reactor"
+	<ItemType UNID="&itCCDualSiva120MWReactor;"
+			name=				"dual S&#xed;va-120M reactor"
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"6"
-			frequency=			"notRandom"
+			frequency=			"veryrare"
 			
-			value=				"61500"
-			mass=				"11000"
+			value=				"40000"
+			mass=				"10000"
 
-			description=		"This oversized fuel efficient reactor has a peak power output of 200MW and accepts fuel of tech level 4-6. It can be freely modified with the included Cabbage Corp Toolset to output 280MW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 240MW in efficiency mode and 360MW in overdrive. It accepts fuel rated between L4 and L6, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"2000"
-				fuelEfficiency=	"28"
-				maxFuel=		"1100000"
+				maxPower=		"2400"
+				fuelEfficiency=	"27"
+				maxFuel=		"1260000"
 				fuelCriteria=	"f L:4-6;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva100MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva120MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 170MW reactor -->
+	<!-- Dual Siva 200MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva170MWReactor;"
-			name=				"dual S&#xed;va-170M reactor"
+	<ItemType UNID="&itCCDualSiva200MWReactor;"
+			name=				"dual S&#xed;va-200M reactor"
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"7"
-			frequency=			"notRandom"
+			frequency=			"veryrare"
 			
-			value=				"121000"
-			mass=				"12000"
+			value=				"120000"
+			mass=				"11000"
 
-			description=		"This oversized fuel efficient reactor has a peak power output of 340MW and accepts fuel of tech level 5-7. It can be freely modified with the included Cabbage Corp Toolset to output 510MW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 400MW in efficiency mode and 600MW in overdrive. It accepts fuel rated between L5 and L7, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"3400"
+				maxPower=		"4000"
 				fuelEfficiency=	"28"
-				maxFuel=		"2200000"
+				maxFuel=		"2280000"
 				fuelCriteria=	"f L:5-7;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva170MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva200MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 310MW reactor -->
+	<!-- Dual Siva 400MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva310MWReactor;"
-			name=				"dual S&#xed;va-310M reactor"
+	<ItemType UNID="&itCCDualSiva400MWReactor;"
+			name=				"dual S&#xed;va-400M reactor"
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"8"
-			frequency=			"notRandom"
+			frequency=			"veryrare"
 			
-			value=				"243000"
-			mass=				"13000"
+			value=				"200000"
+			mass=				"12000"
 
-			description=		"This oversized fuel efficient reactor has a peak power output of 620MW and accepts fuel of tech level 6-8. It can be freely modified with the included Cabbage Corp Toolset to output 930MW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 800MW in efficiency mode and 1200MW in overdrive. It accepts fuel rated between L6 and L8, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"6200"
+				maxPower=		"8000"
 				fuelEfficiency=	"28"
-				maxFuel=		"4400000"
+				maxFuel=		"4980000"
 				fuelCriteria=	"f L:6-8;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva310MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva400MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 560MW reactor -->
+	<!-- Dual Siva 800MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva560MWReactor;"
-			name=				"dual S&#xed;va-560M reactor"
+	<ItemType UNID="&itCCDualSiva800MWReactor;"
+			name=				"dual S&#xed;va-800M reactor"
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"9"
-			frequency=			"notRandom"
+			frequency=			"veryrare"
 			
-			value=				"510000"
-			mass=				"14000"
+			value=				"400000"
+			mass=				"13000"
 
-			description=		"This oversized fuel efficient reactor has a peak power output of 1.1GW and accepts fuel of tech level 7-9. It can be freely modified with the included Cabbage Corp Toolset to output 1.7GW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 1600MW in efficiency mode and 2400MW in overdrive. It accepts fuel rated between L7 and L9, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"11000"
+				maxPower=		"16000"
 				fuelEfficiency=	"28"
-				maxFuel=		"9200000"
+				maxFuel=		"10920000"
 				fuelCriteria=	"f L:7-9;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva560MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva800MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 1000MW reactor -->
+	<!-- Dual Siva 1200MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva1000MWReactor;"
-			name=				"dual S&#xed;va-1G reactor"
+	<ItemType UNID="&itCCDualSiva1200MWReactor;"
+			name=				"dual S&#xed;va-1200M reactor"
 			attributes=			"cabbageCorp, cabbageNotStandard, dual, majorItem, military"
 			
 			level=				"10"
-			frequency=			"notRandom"
+			frequency=			"veryrare"
 			
-			value=				"1000000"
-			mass=				"15000"
+			value=				"800000"
+			mass=				"14000"
 
-			description=		"This oversized fuel efficient reactor has a peak power output of 2GW and accepts fuel of tech level 8-10. It can be freely modified with the included Cabbage Corp Toolset to output 3GW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 2400MW in efficiency mode and 3600MW in overdrive. It accepts fuel rated between L8 and L10, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"20000"
-				fuelEfficiency=	"28"
-				maxFuel=		"19000000"
+				maxPower=		"24000"
+				fuelEfficiency=	"29"
+				maxFuel=		"18000000"
 				fuelCriteria=	"f L:8-10;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva1000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva1200MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 1700MW reactor -->
+	<!-- Dual Siva 2000MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva1700MWReactor;"
-			name=				"dual S&#xed;va-1.7G reactor"
+	<ItemType UNID="&itCCDualSiva2000MWReactor;"
+			name=				"dual S&#xed;va-2G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"11"
 			frequency=			"notRandom"
 			
-			value=				"2100000"
+			value=				"2400000"
 			mass=				"16000"
 
-			description=		"This oversized alien reactor seems to have a peak power output of 3.4GW and can accept fuel of tech level 9-11. It can probably be freely modified with the included Cabbage Corp Toolset to output 5GW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 4GW in efficiency mode and 6GW in overdrive. It accepts fuel rated between L9 and L11, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"34000"
+				maxPower=		"40000"
 				fuelEfficiency=	"30"
-				maxFuel=		"39000000"
+				maxFuel=		"33000000"
 				fuelCriteria=	"f L:9-11;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva1700MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva2000MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 3000MW reactor -->
+	<!-- Dual Siva 4000MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva3000MWReactor;"
-			name=				"dual S&#xed;va-3G reactor"
+	<ItemType UNID="&itCCDualSiva4000MWReactor;"
+			name=				"dual S&#xed;va-4G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"12"
 			frequency=			"notRandom"
 			
-			value=				"4350000"
-			mass=				"17000"
+			value=				"4000000"
+			mass=				"1700"
 
-			description=		"This oversized alien reactor seems to have a peak power output of 6GW and can accept fuel of tech level 10-12. It can probably be freely modified with the included Cabbage Corp Toolset to output 9GW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 8GW in efficiency mode and 12GW in overdrive. It accepts fuel rated between L10 and L12, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"60000"
+				maxPower=		"80000"
 				fuelEfficiency=	"30"
-				maxFuel=		"78000000"
+				maxFuel=		"72600000"
 				fuelCriteria=	"f L:10-12;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva3000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva4000MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 5500MW reactor -->
+	<!-- Dual Siva 8000MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva5500MWReactor;"
-			name=				"dual S&#xed;va-5.5G reactor"
+	<ItemType UNID="&itCCDualSiva8000MWReactor;"
+			name=				"dual S&#xed;va-8G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"13"
 			frequency=			"notRandom"
 			
-			value=				"9100000"
+			value=				"8000000"
 			mass=				"18000"
 
-			description=		"This oversized alien reactor seems to have a peak power output of 11GW and can accept fuel of tech level 11-13. It can probably be freely modified with the included Cabbage Corp Toolset to output 16GW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 16GW in efficiency mode and 24GW in overdrive. It accepts fuel rated between L11 and L13, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"110000"
+				maxPower=		"160000"
 				fuelEfficiency=	"30"
-				maxFuel=		"160000000"
+				maxFuel=		"159600000"
 				fuelCriteria=	"f L:11-13;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva5500MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva8000MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 10000MW reactor -->
+	<!-- Dual Siva 12000MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva10000MWReactor;"
-			name=				"dual S&#xed;va-10G reactor"
+	<ItemType UNID="&itCCDualSiva12000MWReactor;"
+			name=				"dual S&#xed;va-12G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"14"
 			frequency=			"notRandom"
 			
-			value=				"19000000"
+			value=				"16000000"
 			mass=				"19000"
 
-			description=		"This oversized alien reactor seems to have a peak power output of 20GW and can accept fuel of tech level 12-14. It can probably be freely modified with the included Cabbage Corp Toolset to output 30GW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 24GW in efficiency mode and 36GW in overdrive. It accepts fuel rated between L12 and L14, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"200000"
-				fuelEfficiency=	"30"
-				maxFuel=		"340000000"
+				maxPower=		"240000"
+				fuelEfficiency=	"31"
+				maxFuel=		"262800000"
 				fuelCriteria=	"f L:12-14;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva10000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva12000MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 18000MW reactor -->
+	<!-- Dual Siva 20000MW reactor -->
 
-	<ItemType UNID="&itCCDualSiva18000MWReactor;"
-			name=				"dual S&#xed;va-18G reactor"
+	<ItemType UNID="&itCCDualSiva20000MWReactor;"
+			name=				"dual S&#xed;va-20G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNotStandard, dual, majorItem"
 			
 			level=				"15"
 			frequency=			"notRandom"
 			
-			value=				"38200000"
+			value=				"48000000"
 			mass=				"20000"
 
-			description=		"This oversized alien reactor seems to have a peak power output of 36GW and can accept fuel of tech level 13-15. It can probably be freely modified with the included Cabbage Corp Toolset to output 55GW at the cost of decreased fuel efficiency."
+			description=		"This oversized reactor has a peak power output of 40GW in efficiency mode and 60GW in overdrive. It accepts fuel rated between L13 and L15, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"360000"
-				fuelEfficiency=	"30"
-				maxFuel=		"690000000"
-				fuelCriteria=	"f L:13-15;"
+				maxPower=		"400000"
+				fuelEfficiency=	"32"
+				maxFuel=		"480000000"
+				fuelCriteria=	"f L:13-15;" 
 				
 				deviceslots=	"2"
 		/>
 		
 		<StaticData>
-			<CCItemSwap>&itCCRadDualSiva18000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCRadDualSiva20000MWReactor;</CCItemSwap>
 		</StaticData>
 	</ItemType>
-	
+
 <!-- ======================================================================= -->
-						<!-- Alternate Dual Reactors -->						
+							<!-- Dual Alternate Reactors -->							
 <!-- ======================================================================= -->
 
-	<!-- Dual Siva 5MW reactor (no containment) -->
+	<!-- Dual Siva 8MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva5MWReactor;"
-			name=				"dual S&#xed;va-5M reactor"
+	<ItemType UNID="&itCCRadDualSiva8MWReactor;"
+			name=				"dual S&#xed;va-8M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
@@ -1624,20 +1625,18 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			frequency=			"notRandom"
 			
 			value=				"1500"
-			mass=				"5000"
+			mass=				"3000"
 
-			description=		"This oversized reactor has been modified to run with a power output of 16MW and accepts tech level 1 fuel. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 16MW in efficiency mode and 24MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"160"
-				fuelEfficiency=	"13"
-				maxFuel=		"27000"
-				fuelCriteria=	"f L:1;" 
-				
-				deviceslots=	"2"
+				maxPower=		"240"
+				fuelEfficiency=	"12"
+				maxFuel=		"66000"
+				fuelCriteria=	"f L:1-3;" 
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -1648,36 +1647,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva5MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva8MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion1;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 10MW reactor (no containment) -->
+	<!-- Dual Siva 12MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva10MWReactor;"
-			name=				"dual S&#xed;va-10M reactor"
+	<ItemType UNID="&itCCRadDualSiva12MWReactor;"
+			name=				"dual S&#xed;va-12M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"2"
 			frequency=			"notRandom"
 			
-			value=				"3400"
-			mass=				"6000"
+			value=				"2000"
+			mass=				"4000"
 
-			description=		"This oversized reactor has been modified to run with a power output of 29MW and accepts fuel of tech level 1-2. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 24MW in efficiency mode and 36MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"290"
+				maxPower=		"360"
 				fuelEfficiency=	"13"
-				maxFuel=		"62000"
-				fuelCriteria=	"f L:1-2;" 
-				
-				deviceslots=	"2"
+				maxFuel=		"100800"
+				fuelCriteria=	"f L:1-3;" 
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -1688,36 +1685,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva10MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva12MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion2;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 17MW reactor (no containment) -->
+	<!-- Dual Siva 20MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva17MWReactor;"
-			name=				"dual S&#xed;va-17M reactor"
+	<ItemType UNID="&itCCRadDualSiva20MWReactor;"
+			name=				"dual S&#xed;va-20M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"3"
 			frequency=			"notRandom"
 			
-			value=				"6500"
-			mass=				"7000"
+			value=				"6000"
+			mass=				"6000"
 
-			description=		"This oversized reactor has been modified to run with a power output of 52MW and accepts fuel of tech level 1-3. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 40MW in efficiency mode and 60MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"520"
+				maxPower=		"600"
 				fuelEfficiency=	"13"
-				maxFuel=		"120000"
+				maxFuel=		"174000"
 				fuelCriteria=	"f L:1-3;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -1728,36 +1723,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva17MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva20MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion3;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 31MW reactor (no containment) -->
+	<!-- Dual Siva 40MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva31MWReactor;"
-			name=				"dual S&#xed;va-31M reactor"
+	<ItemType UNID="&itCCRadDualSiva40MWReactor;"
+			name=				"dual S&#xed;va-40M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"4"
 			frequency=			"notRandom"
 			
-			value=				"13500"
-			mass=				"8000"
+			value=				"11000"
+			mass=				"7000"
 
-			description=		"This oversized reactor has been modified to run with a power output of 94MW and accepts fuel of tech level 2-4. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 80MW in efficiency mode and 120MW in overdrive. It accepts fuel rated between L2 and L4, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"940"
+				maxPower=		"1200"
 				fuelEfficiency=	"13"
-				maxFuel=		"250000"
+				maxFuel=		"366000"
 				fuelCriteria=	"f L:2-4;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -1768,36 +1761,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva31MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva40MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion4;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 57MW reactor (no containment) -->
+	<!-- Dual Siva 80MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva57MWReactor;"
-			name=				"dual S&#xed;va-57M reactor"
+	<ItemType UNID="&itCCRadDualSiva80MWReactor;"
+			name=				"dual S&#xed;va-80M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"5"
 			frequency=			"notRandom"
 			
-			value=				"28500"
-			mass=				"9000"
+			value=				"20000"
+			mass=				"8000"
 
-			description=		"This oversized reactor has been modified to run with a power output of 170MW and accepts fuel of tech level 3-5. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 160MW in efficiency mode and 240MW in overdrive. It accepts fuel rated between L3 and L5, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"1700"
+				maxPower=		"2400"
 				fuelEfficiency=	"13"
-				maxFuel=		"520000"
+				maxFuel=		"780000"
 				fuelCriteria=	"f L:3-5;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -1808,36 +1799,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva57MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva80MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion5;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 100MW reactor (no containment) -->
+	<!-- Dual Siva 120MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva100MWReactor;"
-			name=				"dual S&#xed;va-100M reactor"
+	<ItemType UNID="&itCCRadDualSiva120MWReactor;"
+			name=				"dual S&#xed;va-120M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"6"
 			frequency=			"notRandom"
 			
-			value=				"61500"
-			mass=				"11000"
+			value=				"40000"
+			mass=				"10000"
 
-			description=		"This oversized reactor has been modified to run with a power output of 300MW and accepts fuel of tech level 4-6. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 240MW in efficiency mode and 360MW in overdrive. It accepts fuel rated between L4 and L6, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"3000"
+				maxPower=		"3600"
 				fuelEfficiency=	"14"
-				maxFuel=		"1100000"
+				maxFuel=		"1260000"
 				fuelCriteria=	"f L:4-6;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -1848,36 +1837,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva100MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva120MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion6;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 170MW reactor (no containment) -->
+	<!-- Dual Siva 200MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva170MWReactor;"
-			name=				"dual S&#xed;va-170M reactor"
+	<ItemType UNID="&itCCRadDualSiva200MWReactor;"
+			name=				"dual S&#xed;va-200M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"7"
 			frequency=			"notRandom"
 			
-			value=				"121000"
-			mass=				"12000"
+			value=				"120000"
+			mass=				"11000"
 
-			description=		"This oversized reactor has been modified to run with a power output of 510MW and accepts fuel of tech level 5-7. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 300MW in efficiency mode and 600MW in overdrive. It accepts fuel rated between L5 and L7, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"5100"
+				maxPower=		"6000"
 				fuelEfficiency=	"14"
-				maxFuel=		"2200000"
+				maxFuel=		"2280000"
 				fuelCriteria=	"f L:5-7;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -1888,36 +1875,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva170MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva200MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion7;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 310MW reactor (no containment) -->
+	<!-- Dual Siva 400MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva310MWReactor;"
-			name=				"dual S&#xed;va-310M reactor"
+	<ItemType UNID="&itCCRadDualSiva400MWReactor;"
+			name=				"dual S&#xed;va-400M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"8"
 			frequency=			"notRandom"
 			
-			value=				"243000"
-			mass=				"13000"
+			value=				"200000"
+			mass=				"12000"
 
-			description=		"This oversized reactor has been modified to run with a power output of 930MW and accepts fuel of tech level 6-8. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 800MW in efficiency mode and 1200MW in overdrive. It accepts fuel rated between L6 and L8, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"9300"
+				maxPower=		"12000"
 				fuelEfficiency=	"14"
-				maxFuel=		"4400000"
+				maxFuel=		"4980000"
 				fuelCriteria=	"f L:6-8;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -1928,36 +1913,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva310MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva400MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion8;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 560MW reactor (no containment) -->
+	<!-- Dual Siva 800MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva560MWReactor;"
-			name=				"dual S&#xed;va-560M reactor"
+	<ItemType UNID="&itCCRadDualSiva800MWReactor;"
+			name=				"dual S&#xed;va-800M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"9"
 			frequency=			"notRandom"
 			
-			value=				"510000"
-			mass=				"14000"
+			value=				"400000"
+			mass=				"13000"
 
-			description=		"This oversized reactor has been modified to run with a power output of 1.7GW and accepts fuel of tech level 7-9. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 1600MW in efficiency mode and 2400MW in overdrive. It accepts fuel rated between L7 and L9, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"17000"
+				maxPower=		"24000"
 				fuelEfficiency=	"14"
-				maxFuel=		"9200000"
+				maxFuel=		"10920000"
 				fuelCriteria=	"f L:7-9;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -1968,36 +1951,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva560MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva800MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion9;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 1000MW reactor (no containment) -->
+	<!-- Dual Siva 1200MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva1000MWReactor;"
-			name=				"dual S&#xed;va-1G reactor"
+	<ItemType UNID="&itCCRadDualSiva1200MWReactor;"
+			name=				"dual S&#xed;va-1200M reactor"
 			attributes=			"cabbageCorp, cabbageNoContainment, dual, majorItem, military, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"10"
 			frequency=			"notRandom"
 			
-			value=				"1000000"
-			mass=				"15000"
+			value=				"800000"
+			mass=				"14000"
 
-			description=		"This oversized reactor has been modified to run with a power output of 3GW and accepts fuel of tech level 8-10. It can be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 2400MW in efficiency mode and 3600MW in overdrive. It accepts fuel rated between L8 and L10, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"30000"
-				fuelEfficiency=	"14"
-				maxFuel=		"19000000"
+				maxPower=		"36000"
+				fuelEfficiency=	"15"
+				maxFuel=		"18000000"
 				fuelCriteria=	"f L:8-10;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -2008,36 +1989,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva1000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva1200MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion10;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 1700MW reactor (no containment) -->
+	<!-- Dual Siva 2000MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva1700MWReactor;"
-			name=				"dual S&#xed;va-1.7G reactor"
+	<ItemType UNID="&itCCRadDualSiva2000MWReactor;"
+			name=				"dual S&#xed;va-2G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"11"
 			frequency=			"notRandom"
 			
-			value=				"2100000"
+			value=				"2400000"
 			mass=				"16000"
 
-			description=		"This oversized alien reactor seems to have been modified to run with a power output of 5GW and can accept fuel of tech level 9-11. It can probably be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 4GW in efficiency mode and 6GW in overdrive. It accepts fuel rated between L9 and L11, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"50000"
+				maxPower=		"60000"
 				fuelEfficiency=	"15"
-				maxFuel=		"39000000"
+				maxFuel=		"33000000"
 				fuelCriteria=	"f L:9-11;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -2048,36 +2027,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva1700MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva2000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion11;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 3000MW reactor (no containment) -->
+	<!-- Dual Siva 4000MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva3000MWReactor;"
-			name=				"dual S&#xed;va-3G reactor"
+	<ItemType UNID="&itCCRadDualSiva4000MWReactor;"
+			name=				"dual S&#xed;va-4G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"12"
 			frequency=			"notRandom"
 			
-			value=				"4350000"
+			value=				"4000000"
 			mass=				"17000"
 
-			description=		"This oversized alien reactor seems to have been modified to run with a power output of 9GW and can accept fuel of tech level 10-12. It can probably be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 8GW in efficiency mode and 12GW in overdrive. It accepts fuel rated between L10 and L12, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"90000"
+				maxPower=		"120000"
 				fuelEfficiency=	"15"
-				maxFuel=		"78000000"
+				maxFuel=		"72600000"
 				fuelCriteria=	"f L:10-12;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -2088,36 +2065,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva3000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva4000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion12;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 5500MW reactor (no containment) -->
+	<!-- Dual Siva 8000MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva5500MWReactor;"
-			name=				"dual S&#xed;va-5.5G reactor"
+	<ItemType UNID="&itCCRadDualSiva8000MWReactor;"
+			name=				"dual S&#xed;va-8G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"13"
 			frequency=			"notRandom"
 			
-			value=				"9100000"
+			value=				"8000000"
 			mass=				"18000"
 
-			description=		"This oversized alien reactor seems to have been modified to run with a power output of 16GW and can accept fuel of tech level 11-13. It can probably be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 16GW in efficiency mode and 24GW in overdrive. It accepts fuel rated between L11 and L13, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"160000"
+				maxPower=		"240000"
 				fuelEfficiency=	"15"
-				maxFuel=		"160000000"
+				maxFuel=		"159600000"
 				fuelCriteria=	"f L:11-13;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -2128,36 +2103,34 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva5500MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva8000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion13;</CCExplosionType>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Siva 10000MW reactor (no containment) -->
+	<!-- Dual Siva 12000MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva10000MWReactor;"
-			name=				"dual S&#xed;va-10G reactor"
+	<ItemType UNID="&itCCRadDualSiva12000MWReactor;"
+			name=				"dual S&#xed;va-12G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"14"
 			frequency=			"notRandom"
 			
-			value=				"19000000"
+			value=				"16000000"
 			mass=				"19000"
 
-			description=		"This oversized alien reactor seems to have been modified to run with a power output of 30GW and can accept fuel of tech level 12-14. It can probably be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 24GW in efficiency mode and 36GW in overdrive. It accepts fuel rated between L12 and L14, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"300000"
-				fuelEfficiency=	"15"
-				maxFuel=		"340000000"
+				maxPower=		"360000"
+				fuelEfficiency=	"16"
+				maxFuel=		"262800000"
 				fuelCriteria=	"f L:12-14;" 
-				
-				deviceslots=	"2"
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -2168,36 +2141,35 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva10000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva12000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion14;</CCExplosionType>
 		</StaticData>
 	</ItemType>
+		
 
-	<!-- Dual Siva 18000MW reactor (no containment) -->
+	<!-- Dual Siva 20000MW reactor (no containment) -->
 
-	<ItemType UNID="&itCCRadDualSiva18000MWReactor;"
-			name=				"dual S&#xed;va-18G reactor"
+	<ItemType UNID="&itCCRadDualSiva20000MWReactor;"
+			name=				"dual S&#xed;va-20G reactor"
 			attributes=			"alien, cabbageCorp, cabbageNoContainment, dual, majorItem, notForSale"
 			inherit=			"&baCCUnsafeReactorBase;"
 			
 			level=				"15"
 			frequency=			"notRandom"
 			
-			value=				"38200000"
+			value=				"48000000"
 			mass=				"20000"
 
-			description=		"This oversized alien reactor seems to have been modified to run with a power output of 36GW and can accept fuel of tech level 13-15. It can probably be freely modified with the included Cabbage Corp Toolset to increase fuel efficiency at the cost of decreased power output."
+			description=		"This oversized reactor has a peak power output of 40GW in efficiency mode and 60GW in overdrive. It accepts fuel rated between L13 and L15, and can easily switch modes with the built-in Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
 		<ReactorDevice
-				maxPower=		"550000"
-				fuelEfficiency=	"15"
-				maxFuel=		"690000000"
-				fuelCriteria=	"f L:13-15;"
-				
-				deviceslots=	"2"
+				maxPower=		"600000"
+				fuelEfficiency=	"16"
+				maxFuel=		"480000000"
+				fuelCriteria=	"f L:13-15;" 
 		/>
 		
 		<Invoke installedOnly="true" key="R">
@@ -2208,9 +2180,9 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		</Invoke>
 		
 		<StaticData>
-			<CCItemSwap>&itCCDualSiva18000MWReactor;</CCItemSwap>
+			<CCItemSwap>&itCCDualSiva20000MWReactor;</CCItemSwap>
 			<CCExplosionType>&vtCCReactorExplosion15;</CCExplosionType>
 		</StaticData>
 	</ItemType>
-	
+
 </TranscendenceModule>

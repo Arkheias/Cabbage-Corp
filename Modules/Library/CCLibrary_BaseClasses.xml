@@ -3,7 +3,7 @@
 
 
 <!-- ======================================================================= -->
-						<!-- Generic Base class -->								
+						<!-- Generic Base classes -->							
 <!-- ======================================================================= -->
 
 <!-- Unshielded Device Base Class -->
@@ -274,6 +274,52 @@ These devices do not currently work for the player-ships because it is technical
 			</OnDisable>
 		</Events>
 	</ItemType>
+
+<!-- ======================================================================= -->
+					<!-- Microsaur Scanner Base Classes -->						
+<!-- ======================================================================= -->
+	
+	<ItemType UNID="&baCCMicrosaurScannerPower;"
+			name=				"(Microsaur warder base class)"
+			virtual=			"true"
+			level=				"4"
+	>
+
+		<Events>
+			<OnCreateShot>
+				(block Nil
+					(objSetData gSource 'asteroidsFound 0)
+				)
+			</OnCreateShot>
+			
+			<OnDamageAbandoned>
+				(block ((podType (typGetStaticData aWeaponType 'podType)))
+					
+					(if (CCMicrosaurScanObj gSource podType)
+						(objIncData aCause 'asteroidsFound 1)
+					)
+						
+					;	We return Nil to indicate that we want the default damage
+					;	to apply.
+					
+					Nil
+				)
+			</OnDamageAbandoned>
+		
+			<OnDestroyShot>
+				(switch
+					;	If we found some Microsaurs, then nothing to do (we've marked the Microsaurs found).
+					
+					(!= (objGetData gSource 'asteroidsFound) 0)
+						Nil
+						
+					;	If we found no Microsaurs, tell the player/orderGiver
+					
+					(objSendMessage aOrderGiver Nil (typTranslate &ovCCMicrosaurDetectionCount; 'msgNoOreFound))
+				)
+			</OnDestroyShot>
+		</Events>
+	</ItemType>
 	
 <!-- ======================================================================= -->
 							<!-- Nanofac Base Class -->							
@@ -292,9 +338,10 @@ These devices do not currently work for the player-ships because it is technical
 			</OnInstall>
 			
 			<OnUpdate>
-				(if (and (itmGetProperty gItem 'installed)
-						(not (itmGetProperty gItem 'damaged))
+				(if (and
+						(itmGetProperty gItem 'installed)
 						(objGetItemProperty gSource gItem 'enabled)
+						(not (itmGetProperty gItem 'damaged))
 					)
 					(if (geq (itmGetData gItem 'CCNanofacCounter) (@ (itmGetStaticData gItem 'CCNanofac) 'interval))		;This function makes the nanofac only produce items every nth onUpdate event	
 						(block (theCount toCreate)
@@ -346,38 +393,39 @@ These devices do not currently work for the player-ships because it is technical
 		
 		<Events>
 			<OnUpdate>
-				(if (itmIsInstalled gItem)
-					(if (objIsDeviceEnabled gSource gItem)
-						(block nil
-							(intCabbageShpConsumePower gSource		;Custom function that consumes fuel units while taking into account the current reactor efficiency
-								(divide			;The divide function comes last to minimize rounding errors
+				(if (and
+						(itmIsInstalled gItem)
+						(objGetItemProperty gSource gItem 'enabled)
+					)
+					(block Nil
+						(intCabbageShpConsumePower gSource		;Custom function that consumes fuel units while taking into account the current reactor efficiency
+							(divide			;The divide function comes last to minimize rounding errors
+								(multiply 
+									(@ (itmGetStaticData gItem 'CCAuxReactor) 'powerUse)
+									(if (itmGetProperty gItem 'damaged)
+										60		;This makes the device effectively use twice as much power when damaged
+										30		;This constant is used to convert powerUse into the equivalent amount of fuel units at 100 percent reactor efficiency
+									)
+								)
+								(@ (itmGetStaticData gItem 'CCAuxReactor) 'efficiency)	;Efficiency of auxiliary capacitor
+							)
+						)
+						(if (leq 
+								(shpGetFuelLeft gSource) 
+								(divide 
 									(multiply 
 										(@ (itmGetStaticData gItem 'CCAuxReactor) 'powerUse)
-										(if (itmGetProperty gItem 'damaged)
-											60		;This makes the device effectively use twice as much power when damaged
-											30		;This constant is used to convert powerUse into the equivalent amount of fuel units at 100 percent reactor efficiency
-										)
+										6000
 									)
-									(@ (itmGetStaticData gItem 'CCAuxReactor) 'efficiency)	;Efficiency of auxiliary capacitor
+									(multiply
+										(@ (itmGetStaticData gItem 'CCAuxReactor) 'efficiency)	;Efficiency of auxiliary capacitor
+										(intCabbageGetFuelEfficiency gSource)
+									)
 								)
 							)
-							(if (leq 
-									(shpGetFuelLeft gSource) 
-									(divide 
-										(multiply 
-											(@ (itmGetStaticData gItem 'CCAuxReactor) 'powerUse)
-											6000
-										)
-										(multiply
-											(@ (itmGetStaticData gItem 'CCAuxReactor) 'efficiency)	;Efficiency of auxiliary capacitor
-											(intCabbageGetFuelEfficiency gSource)
-										)
-									)
-								)
-								(block nil
-									(objSetItemProperty gSource gItem 'enabled Nil)
-									(objSendMessage gSource gSource (cat "WARNING: Auxiliary reactor disabled due to insufficient fuel."))
-								)
+							(block nil
+								(objSetItemProperty gSource gItem 'enabled Nil)
+								(objSendMessage gSource gSource (cat "WARNING: Auxiliary reactor disabled due to insufficient fuel."))
 							)
 						)
 					)
@@ -403,83 +451,183 @@ These devices do not currently work for the player-ships because it is technical
 			</OnEnable>
 			
 			<OnUpdate>
-				(if (itmIsInstalled gItem)
-					(if (objIsDeviceEnabled gsource gItem)
-						(switch
-							(eq (objGetData gSource 'cabbageEjectionChance) 1)
-								(block Nil
-									(shpRemoveDevice gSource gItem)
+				(if (and
+						(itmIsInstalled gItem)
+						(objGetItemProperty gSource gItem 'enabled)
+					)
+					(switch
+						(eq (objGetData gSource 'cabbageEjectionChance) 1)
+							(block Nil
+								(shpRemoveDevice gSource gItem)
+								(sysCreateWeaponFire
+										(itmGetStaticData gItem 'CCExplosionType)
+										Nil
+										(objGetPos gSource)
+										(rollDice 1 360)
+										5
+										Nil
+								)
+								(if (itmHasAttribute gItem "dual")
 									(sysCreateWeaponFire
-											(itmGetStaticData gItem 'CCExplosionType)
-											Nil
-											(objGetPos gSource)
-											(rollDice 1 360)
-											5
-											Nil
-									)
-									(if (itmHasAttribute gItem "dual")
-										(sysCreateWeaponFire
-											(itmGetStaticData gItem 'CCExplosionType)
-											Nil
-											(objGetPos gSource)
-											(rollDice 1 360)
-											5
-											Nil
-										)
-									)
-									(objRemoveItem gSource (itmCreate (itmGetType gItem) 1))
-								)
-								
-							(gr (objGetData gSource 'cabbageEjectionChance) 1)
-								(block Nil
-									(shpRemoveDevice gSource gItem)
-									(sysCreateWeaponFire
-											(itmGetStaticData gItem 'CCExplosionType)
-											gSource
-											(objGetPos gSource)
-											(rollDice 1 360)
-											5
-											Nil
-									)
-									(if (itmHasAttribute gItem "dual")
-										(sysCreateWeaponFire
-											(itmGetStaticData gItem 'CCExplosionType)
-											gSource
-											(objGetPos gSource)
-											(rollDice 1 360)
-											5
-											Nil
-										)
-									)
-									(objRemoveItem gSource (itmCreate (itmGetType gItem) 1))
-									(objSendMessage gSource gSource (cat "Reactor successfully ejected."))
-								)
-								
-							(not (eq (objGetData gSource 'cabbageOverloadTimer) 0))
-								(if (eq (objGetData gSource 'cabbageOverloadTimer) 1)
-									(objSetData gSource "cabbageEjectionChance" (rollDice 1 (itmGetLevel gItem)))
-									(block Nil
-										(objSetData gSource "cabbageOverloadTimer" (subtract (objGetData gSource 'cabbageOverloadTimer) 1))
-										(objSendMessage gSource gSource (cat "Reactor Warning: Restore containment within " (objGetData gSource 'cabbageOverloadTimer) " seconds"))
+										(itmGetStaticData gItem 'CCExplosionType)
+										Nil
+										(objGetPos gSource)
+										(rollDice 1 360)
+										5
+										Nil
 									)
 								)
-								
-							(eq (objGetData gSource 'cabbageOverloading) 1)
-								(block Nil
-									(objSetData gSource "cabbageOverloadTimer" (add (multiply (itmGetLevel gItem) 5) (random 0 10)))
-								)
+								(objRemoveItem gSource (itmCreate (itmGetType gItem) 1))
+							)
 							
-								(block Nil
-									(if (eq (rollDice 1 (multiply (power (itmGetLevel gItem) 2) 20)) 1)
-										(objSetData gSource "cabbageOverloading" 1)
+						(gr (objGetData gSource 'cabbageEjectionChance) 1)
+							(block Nil
+								(shpRemoveDevice gSource gItem)
+								(sysCreateWeaponFire
+										(itmGetStaticData gItem 'CCExplosionType)
+										gSource
+										(objGetPos gSource)
+										(rollDice 1 360)
+										5
+										Nil
+								)
+								(if (itmHasAttribute gItem "dual")
+									(sysCreateWeaponFire
+										(itmGetStaticData gItem 'CCExplosionType)
+										gSource
+										(objGetPos gSource)
+										(rollDice 1 360)
+										5
+										Nil
 									)
 								)
-						)
+								(objRemoveItem gSource (itmCreate (itmGetType gItem) 1))
+								(objSendMessage gSource gSource (cat "Reactor successfully ejected."))
+							)
+							
+						(not (eq (objGetData gSource 'cabbageOverloadTimer) 0))
+							(if (eq (objGetData gSource 'cabbageOverloadTimer) 1)
+								(objSetData gSource "cabbageEjectionChance" (rollDice 1 (itmGetLevel gItem)))
+								(block Nil
+									(objSetData gSource "cabbageOverloadTimer" (subtract (objGetData gSource 'cabbageOverloadTimer) 1))
+									(objSendMessage gSource gSource (cat "Reactor Warning: Restore containment within " (objGetData gSource 'cabbageOverloadTimer) " seconds"))
+								)
+							)
+							
+						(eq (objGetData gSource 'cabbageOverloading) 1)
+							(block Nil
+								(objSetData gSource "cabbageOverloadTimer" (add (multiply (itmGetLevel gItem) 5) (random 0 10)))
+							)
+						
+							(block Nil
+								(if (eq (rollDice 1 (multiply (power (itmGetLevel gItem) 2) 20)) 1)
+									(objSetData gSource "cabbageOverloading" 1)
+								)
+							)
 					)
 				)
 			</OnUpdate>
 		</Events>
 	</ItemType>
+
+
+<!-- ======================================================================= -->
+						<!-- Shield Emitter Base classes -->								
+<!-- ======================================================================= -->
+<!--
+	TODO: Petition George to make to OnShieldDown event get called for devices 
+		other than shields, so long as they are installed on the ship with the
+		collapsing shield.
+-->
+
+<!-- Shield Emitter Base Class -->
+
+	<ItemType UNID="&baCCShieldEmitterBase;"
+			name=				"(shield emitter base class)"
+			virtual=			"true"
+	>
+	<!--
+		<Events>
+			<OnShieldDown>
+				(if (and
+						(itmIsInstalled gItem)
+						(objGetItemProperty gSource gItem 'enabled)
+						(itmGetProperty gItem 'damaged)
+					)
+					(block (dice)
+						(setq dice (random 1 20))
+						
+						(switch
+							(leq dice 1)
+								(objDamage gSource &vtCCEmitterDeviceDamage; aAttacker aHitPos)
+							(leq dice 4)
+								(objDamage gSource &vtCCEmitterDeviceDisrupt; aAttacker aHitPos)
+							(leq dice 8)
+								(objDamage gSource &vtCCEmitterEMP; aAttacker aHitPos)
+							(leq dice 12)
+								(objDamage gSource &vtCCEmitterRadiation; aAttacker aHitPos)
+							(leq dice 16)
+								(objDamage gSource &vtCCEmitterBlinding; aAttacker aHitPos)
+							
+							(objDamage gSource &vtCCEmitterFlareUp; aAttacker aHitPos)
+						)
+					)
+				)
+			</OnShieldDown>
+		</Events>
+	-->
+	</ItemType>
+	
+<!--
+	<OverlayType UNID="&ovCCOnShieldDownCheck;">
+		<Events>
+			<OnCreate>
+				(objSetOverlayData gSource aOverlayID "previousShieldHealth" 0)
+			</OnCreate>
+			<OnDamage>
+				(block nil
+					(if (and
+							(itmIsInstalled (@ (objGetItems gSource "sI") 0))							;	A shield is installed
+							(objGetItemProperty gSource (@ (objGetItems gSource "sI") 0) 'enabled)		;	A shield is enabled
+						)
+						(objSetOverlayData gSource aOverlayID "currentShieldHealth" (objGetShieldLevel gSource))
+					)
+					
+					(if (and 
+							(itmGetProperty (@ (objGetItems gSource "*I +shieldEnhancer") 0) 'damaged)	;	A shield enhancer is damaged
+							(itmIsInstalled (@ (objGetItems gSource "sI") 0))							;	A shield is installed
+							(objGetItemProperty gSource (@ (objGetItems gSource "sI") 0) 'enabled)		;	A shield is enabled
+							(gr (objGetOverlayData gSource aOverlayID "previousShieldHealth") 0)		;	Shield was up
+							(eq (objGetOverlayData gSource aOverlayID "currentShieldHealth") 0)			;	Shield is now down
+						)
+						(block (dice)
+							(setq dice (random 1 20))
+							
+							(switch
+								(leq dice 1)
+									(objDamage gSource &vtCCEmitterDeviceDamage; aAttacker aHitPos)
+								(leq dice 4)
+									(objDamage gSource &vtCCEmitterDeviceDisrupt; aAttacker aHitPos)
+								(leq dice 8)
+									(objDamage gSource &vtCCEmitterEMP; aAttacker aHitPos)
+								(leq dice 12)
+									(objDamage gSource &vtCCEmitterRadiation; aAttacker aHitPos)
+								(leq dice 16)
+									(objDamage gSource &vtCCEmitterBlinding; aAttacker aHitPos)
+								
+								(objDamage gSource &vtCCEmitterFlareUp; aAttacker aHitPos)
+							)
+						)
+					)
+					
+					(objSetOverlayData gSource aOverlayID "previousShieldHealth" 
+								(objGetOverlayData gSource aOverlayID "currentShieldHealth")
+					)
+				)
+			</OnDamage>
+		</Events>
+	</OverlayType>
+-->
 
 <!-- ======================================================================= -->
 						<!-- Station Base Classes -->							
@@ -496,51 +644,5 @@ These devices do not currently work for the player-ships because it is technical
 			</OnDestroy>
 		</Events>
 	</StationType>
-
-<!-- ======================================================================= -->
-					<!-- Microsaur Scanner Base Classes -->						
-<!-- ======================================================================= -->
-	
-	<ItemType UNID="&baCCMicrosaurScannerPower;"
-			name=				"(Microsaur warder base class)"
-			virtual=			"true"
-			level=				"4"
-	>
-
-		<Events>
-			<OnCreateShot>
-				(block Nil
-					(objSetData gSource 'asteroidsFound 0)
-				)
-			</OnCreateShot>
-			
-			<OnDamageAbandoned>
-				(block ((podType (typGetStaticData aWeaponType 'podType)))
-					
-					(if (CCMicrosaurScanObj gSource podType)
-						(objIncData aCause 'asteroidsFound 1)
-					)
-						
-					;	We return Nil to indicate that we want the default damage
-					;	to apply.
-					
-					Nil
-				)
-			</OnDamageAbandoned>
-		
-			<OnDestroyShot>
-				(switch
-					;	If we found some Microsaurs, then nothing to do (we've marked the Microsaurs found).
-					
-					(!= (objGetData gSource 'asteroidsFound) 0)
-						Nil
-						
-					;	If we found no Microsaurs, tell the player/orderGiver
-					
-					(objSendMessage aOrderGiver Nil (typTranslate &ovCCMicrosaurDetectionCount; 'msgNoOreFound))
-				)
-			</OnDestroyShot>
-		</Events>
-	</ItemType>
 
 </TranscendenceModule>

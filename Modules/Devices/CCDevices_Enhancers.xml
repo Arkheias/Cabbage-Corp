@@ -31,26 +31,18 @@
 						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:75;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:50;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:30;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:15;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:5;"
@@ -85,38 +77,26 @@
 						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:140;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:105;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:75;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:50;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:30;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:15;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:5;"
@@ -151,50 +131,34 @@
 						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:225;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:180;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:140;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:105;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:75;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:50;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:30;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:8; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:15;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:9; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:5;"
@@ -229,62 +193,42 @@
 						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:330;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:275;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:225;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:180;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:140;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:105;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:75;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:8; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:50;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:9; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:30;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:10; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:15;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:11; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:5;"
@@ -319,74 +263,50 @@
 						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:455;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:390;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:330;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:270;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:225;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:180;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:140;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:8; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:105;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:9; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:75;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:10; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:50;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:11; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:30;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:12; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:15;"
 				/>
-			</EnhancementAbilities>
-			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:13; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:5;"
@@ -548,157 +468,721 @@
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
 	</ItemType>
-	
-<!-- ======================================================================= -->
-							<!-- Brand Enhancers -->							
-<!-- ======================================================================= -->
-	
-	<!-- Mark I Cabbage Enhancer -->
 
-	<ItemType UNID="&itCCMarkICabbageEnhancer;"
-			name=				"mark I Cabbage brand enhancer"
-			attributes=			"cabbageCorp, majorItem, specialty, weaponEnhancer"
+<!-- ======================================================================= -->
+							<!-- Shield Emitter Arrays -->						
+<!-- ======================================================================= -->
+	
+	<!-- Stoma-500 Shield Emitter Array -->
+
+	<ItemType UNID="&itCCStoma5ShieldEmitterArray;"
+			name=				"Stoma-500 shield emitter array"
+			attributes=			"cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
 			
-			level=				"2"
-			frequency=			"rare"
-			unknownType=		"&itUnknownEnhancer2;"
+			level=				"1"
+			frequency=			"veryrare"
 			
-			value=				"1000"
+			value=				"1500"
 			mass=				"2000"
 
-			description=		"This device increases the effectiveness of installed Cabbage Corp weapons and shields by 10%."
+			description=		"One of the earliest models of shield enhancers, this emitter array can boost the maximum output of a coupled shield generator by up to 30%. Not effective on shields rated L4 or higher."
+	>
+
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"5"
+
+				deviceSlots=	"0"
+				external=		"true"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:1"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:2"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:3"
+						 enhancement=	"+hpBonus:5;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Stoma S1 Shield Emitter Array -->
+
+	<ItemType UNID="&itCCStomaS1ShieldEmitterArray;"
+			name=				"Stoma S1 shield emitter array"
+			attributes=			"cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
+			
+			level=				"2"
+			frequency=			"veryrare"
+			
+			value=				"2000"
+			mass=				"2100"
+
+			description=		"The Stoma S1 was designed to provide additional protection for independent merchants and transporters. It can boost the maximum output of a coupled shield generator by up to 50%. Not effective on shields rated L5 or higher."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
 				powerUse=		"10"
+
+				deviceSlots=	"0"
+				external=		"true"
 		>
 			<EnhancementAbilities>
-				<Enhance type=			"CabbageEnhancer"
-						 criteria=		"w s +cabbageCorp;"
-						 enhancement=	"+hpBonus:10;"
-				 />
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:1"
+						 enhancement=	"+hpBonus:50;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:2"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:3"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:4"
+						 enhancement=	"+hpBonus:5;"
+				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
 	</ItemType>
 	
-	<!-- Mark II Cabbage Enhancer -->
+	<!-- Stoma S2 Shield Emitter Array -->
 
-	<ItemType UNID="&itCCMarkIICabbageEnhancer;"
-			name=				"mark II Cabbage brand enhancer"
-			attributes=			"cabbageCorp, majorItem, specialty, weaponEnhancer"
+	<ItemType UNID="&itCCStomaS2ShieldEmitterArray;"
+			name=				"Stoma S2 shield emitter array"
+			attributes=			"cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
+			
+			level=				"3"
+			frequency=			"veryrare"
+			
+			value=				"4000"
+			mass=				"2300"
+
+			description=		"Though built using the first generation of Cabbage Corp emitter coils, this model can still boost the maximum output of a coupled shield generator by up to 75%. Not effective on shields rated L6 or higher."
+	>
+
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"20"
+
+				deviceSlots=	"0"
+				external=		"true"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:1"
+						 enhancement=	"+hpBonus:75;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:2"
+						 enhancement=	"+hpBonus:50;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:3"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:4"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:5"
+						 enhancement=	"+hpBonus:5;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Stoma S4 Shield Emitter Array -->
+
+	<ItemType UNID="&itCCStomaS4ShieldEmitterArray;"
+			name=				"Stoma S4 shield emitter array"
+			attributes=			"cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"4"
-			frequency=			"rare"
-			unknownType=		"&itUnknownEnhancer5;"
+			frequency=			"veryrare"
 			
-			value=				"5000"
-			mass=				"2500"
+			value=				"7500"
+			mass=				"2600"
 
-			description=		"This device increases the effectiveness of installed Cabbage Corp weapons and shields by 20%."
+			description=		"The first shield enhancer model built using second generation emitter coils, this emitter array can boost the maximum output of a coupled shield generator by up to 105%. Not effective on shields rated L7 or higher."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
-				powerUse=		"100"
+				powerUse=		"40"
+
+				deviceSlots=	"0"
+				external=		"true"
 		>
 			<EnhancementAbilities>
-				<Enhance type=			"CabbageEnhancer"
-						 criteria=		"w s +cabbageCorp;"
-						 enhancement=	"+hpBonus:20;"
-				 />
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:1"
+						 enhancement=	"+hpBonus:105;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:2"
+						 enhancement=	"+hpBonus:75;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:3"
+						 enhancement=	"+hpBonus:50;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:4"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:5"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:6"
+						 enhancement=	"+hpBonus:5;"
+				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
 	</ItemType>
 	
-	<!-- Mark III Cabbage Enhancer -->
+	<!-- Stoma S8 Shield Emitter Array -->
 
-	<ItemType UNID="&itCCMarkIIICabbageEnhancer;"
-			name=				"mark III Cabbage brand enhancer"
-			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty, weaponEnhancer"
+	<ItemType UNID="&itCCStomaS8ShieldEmitterArray;"
+			name=				"Stoma S8 shield emitter array"
+			attributes=			"cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
 			
-			level=				"6"
-			frequency=			"rare"
-			unknownType=		"&itUnknownEnhancer5;"
+			level=				"5"
+			frequency=			"veryrare"
 			
-			value=				"20000"
+			value=				"15000"
 			mass=				"3000"
 
-			description=		"This device uses a built-in Quantum CPU to increases the effectiveness of installed Cabbage Corp weapons and shields by 30%."
+			description=		"The Stoma S8 is one of the most powerful emitter arrays available for commercial use. It can boost the maximum output of a coupled shield generator by up to 105%. Effective on shields rated L2 to L7."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
-				powerUse=		"250"
+				powerUse=		"80"
+
+				deviceSlots=	"0"
+				external=		"true"
 		>
 			<EnhancementAbilities>
-				<Enhance type=			"CabbageEnhancer"
-						 criteria=		"w s +cabbageCorp;"
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:2"
+						 enhancement=	"+hpBonus:105;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:3"
+						 enhancement=	"+hpBonus:75;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:4"
+						 enhancement=	"+hpBonus:50;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:5"
 						 enhancement=	"+hpBonus:30;"
-				 />
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:6"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:7"
+						 enhancement=	"+hpBonus:5;"
+				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
 	</ItemType>
 	
-	<!-- Mark IV Cabbage Enhancer -->
+	<!-- Stoma S20 Shield Emitter Array -->
 
-	<ItemType UNID="&itCCMarkIVCabbageEnhancer;"
-			name=				"mark IV Cabbage brand enhancer"
-			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty, weaponEnhancer"
+	<ItemType UNID="&itCCStomaS20ShieldEmitterArray;"
+			name=				"Stoma S20 shield emitter array"
+			attributes=			"cabbageCorp, emitterCoil, majorItem, military, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
 			
-			level=				"8"
-			frequency=			"rare"
-			unknownType=		"&itUnknownEnhancer8;"
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"30000"
+			mass=				"3000"
+
+			description=		"The most powerful shield enhancer model based on second generation emitter coils, this emitter array can boost the maximum output of a coupled shield generator by up to 105%. Effective on shields rated L3 to L8."
+	>
+
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"200"
+
+				deviceSlots=	"0"
+				external=		"true"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:3"
+						 enhancement=	"+hpBonus:105;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:4"
+						 enhancement=	"+hpBonus:75;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:5"
+						 enhancement=	"+hpBonus:50;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:6"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:7"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:8"
+						 enhancement=	"+hpBonus:5;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Stoma S30 Shield Emitter Array -->
+
+	<ItemType UNID="&itCCStomaS30ShieldEmitterArray;"
+			name=				"Stoma S30 shield emitter array"
+			attributes=			"cabbageCorp, emitterCoil, majorItem, military, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
+			
+			level=				"7"
+			frequency=			"veryrare"
 			
 			value=				"60000"
-			mass=				"4000"
+			mass=				"3500"
 
-			description=		"This device uses a built-in Quantum CPU to increases the effectiveness of installed Cabbage Corp weapons and shields by 40%."
+			description=		"The first shield enhancer model designed using third generation shield emitter coils, this shield emitter array can boost the maximum output of a coupled shield generator by up to 140%. Effective on shields rated L3 to L9."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
-				powerUse=		"600"
+				powerUse=		"300"
+
+				deviceSlots=	"0"
+				external=		"true"
 		>
 			<EnhancementAbilities>
-				<Enhance type=			"CabbageEnhancer"
-						 criteria=		"w s +cabbageCorp;"
-						 enhancement=	"+hpBonus:40;"
-				 />
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:3"
+						 enhancement=	"+hpBonus:140;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:4"
+						 enhancement=	"+hpBonus:105;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:5"
+						 enhancement=	"+hpBonus:75;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:6"
+						 enhancement=	"+hpBonus:50;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:7"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:8"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:9"
+						 enhancement=	"+hpBonus:5;"
+				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
 	</ItemType>
 	
-	<!-- Mark V Cabbage Enhancer -->
+	<!-- Stoma S50 Shield Emitter Array -->
 
-	<ItemType UNID="&itCCMarkVCabbageEnhancer;"
-			name=				"mark V Cabbage brand enhancer"
-			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty, weaponEnhancer"
+	<ItemType UNID="&itCCStomaS50ShieldEmitterArray;"
+			name=				"Stoma S50 shield emitter array"
+			attributes=			"cabbageCorp, emitterCoil, majorItem, military, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
 			
-			level=				"10"
-			frequency=			"rare"
-			unknownType=		"&itUnknownAlienDevice10;"
+			level=				"8"
+			frequency=			"veryrare"
 			
-			value=				"200000"
-			mass=				"5000"
+			value=				"125000"
+			mass=				"4000"
 
-			description=		"This device uses a built-in Quantum CPU to increases the effectiveness of installed Cabbage Corp weapons and shields by 50%."
+			description=		"The Stoma S50 is a military emitter array in heavy use throughout the Cabbage Corp defense fleet. This model can boost the maximum output of a coupled shield generator by up to 140%. Effective on shields rated L4 to L10."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
 
 		<MiscellaneousDevice
-				powerUse=		"900"
+				powerUse=		"500"
+
+				deviceSlots=	"0"
+				external=		"true"
 		>
 			<EnhancementAbilities>
-				<Enhance type=			"CabbageEnhancer"
-						 criteria=		"w s +cabbageCorp;"
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:4"
+						 enhancement=	"+hpBonus:140;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:5"
+						 enhancement=	"+hpBonus:105;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:6"
+						 enhancement=	"+hpBonus:75;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:7"
 						 enhancement=	"+hpBonus:50;"
-				 />
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:8"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:9"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:10"
+						 enhancement=	"+hpBonus:5;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Stoma S80 Shield Emitter Array -->
+
+	<ItemType UNID="&itCCStomaS80ShieldEmitterArray;"
+			name=				"Stoma S80 shield emitter array"
+			attributes=			"cabbageCorp, emitterCoil, majorItem, military, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
+			
+			level=				"9"
+			frequency=			"veryrare"
+			
+			value=				"250000"
+			mass=				"4500"
+
+			description=		"The most advanced third generation emitter array ever produced, this model is used primarily by consular ships and can boost the maximum output of a coupled shield generator by up to 140%. Effective on shields rated L5 to L11."
+	>
+
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"800"
+
+				deviceSlots=	"0"
+				external=		"true"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:5"
+						 enhancement=	"+hpBonus:140;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:6"
+						 enhancement=	"+hpBonus:105;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:7"
+						 enhancement=	"+hpBonus:75;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:8"
+						 enhancement=	"+hpBonus:50;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:9"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:10"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:11"
+						 enhancement=	"+hpBonus:5;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Stoma S120 Shield Emitter Array -->
+
+	<ItemType UNID="&itCCStomaS120ShieldEmitterArray;"
+			name=				"Stoma S120 shield emitter array"
+			attributes=			"cabbageCorp, emitterCoil, majorItem, military, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
+			
+			level=				"10"
+			frequency=			"veryrare"
+			
+			value=				"400000"
+			mass=				"5000"
+
+			description=		"The first shield enhancer designed using fourth generation shield emitter coils. This model can boost the maximum output of a coupled shield generator by up to 180%. Effective on shields rated L5 to L12."
+	>
+
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"1200"
+
+				deviceSlots=	"0"
+				external=		"true"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:5"
+						 enhancement=	"+hpBonus:180;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:6"
+						 enhancement=	"+hpBonus:140;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:7"
+						 enhancement=	"+hpBonus:105;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:8"
+						 enhancement=	"+hpBonus:75;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:9"
+						 enhancement=	"+hpBonus:50;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:10"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:11"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:12"
+						 enhancement=	"+hpBonus:5;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Stoma S150 Shield Emitter Array -->
+
+	<ItemType UNID="&itCCStomaS150ShieldEmitterArray;"
+			name=				"Stoma S150 shield emitter array"
+			attributes=			"alien, cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
+			unknownType=		"&itUnknownAlienDevice10;"
+			
+			level=				"11"
+			frequency=			"veryrare"
+			
+			value=				"1000000"
+			mass=				"5000"
+
+			description=		"This emitter array appears to use modified versions of Cabbage Corp's fourth generation shield emitter coils. It could theoretically boost the maximum output of a compatible shield generator by up to 180%. It should work on shields rated L6 to L13."
+	>
+
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"1500"
+
+				deviceSlots=	"0"
+				external=		"true"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:6"
+						 enhancement=	"+hpBonus:180;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:7"
+						 enhancement=	"+hpBonus:140;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:8"
+						 enhancement=	"+hpBonus:105;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:9"
+						 enhancement=	"+hpBonus:75;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:10"
+						 enhancement=	"+hpBonus:50;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:11"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:12"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:13"
+						 enhancement=	"+hpBonus:5;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Stoma S250 Shield Emitter Array -->
+
+	<ItemType UNID="&itCCStomaS250ShieldEmitterArray;"
+			name=				"Stoma S250 shield emitter array"
+			attributes=			"alien, cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
+			
+			level=				"12"
+			frequency=			"veryrare"
+			
+			value=				"2000000"
+			mass=				"5250"
+
+			description=		"This device is designed like a Cabbage Corp emitter array. Based on your own private testing, it could theoretically boost the maximum output of a compatible shield generator by up to 180% and work on shields rated L7 to L14."
+	>
+
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"2500"
+
+				deviceSlots=	"0"
+				external=		"true"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:7"
+						 enhancement=	"+hpBonus:180;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:8"
+						 enhancement=	"+hpBonus:140;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:9"
+						 enhancement=	"+hpBonus:105;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:10"
+						 enhancement=	"+hpBonus:75;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:11"
+						 enhancement=	"+hpBonus:50;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:12"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:13"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:14"
+						 enhancement=	"+hpBonus:5;"
+				/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Stoma S400 Shield Emitter Array -->
+
+	<ItemType UNID="&itCCStomaS400ShieldEmitterArray;"
+			name=				"Stoma S400 emitter array"
+			attributes=			"alien, cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
+			inherit=			"&baCCShieldEmitterBase;"
+			
+			level=				"13"
+			frequency=			"veryrare"
+			
+			value=				"6000000"
+			mass=				"5500"
+
+			description=		"This device is designed like a Cabbage Corp product. Based on your own private speculation, it could theoretically boost the maximum output of a coupled shield generator by up to 225% and might work on shields rated L7 to L15."
+	>
+
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"4000"
+
+				deviceSlots=	"0"
+				external=		"true"
+		>
+			<EnhancementAbilities>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:7"
+						 enhancement=	"+hpBonus:225;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:8"
+						 enhancement=	"+hpBonus:180;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:9"
+						 enhancement=	"+hpBonus:140;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:10"
+						 enhancement=	"+hpBonus:105;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:11"
+						 enhancement=	"+hpBonus:75;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:12"
+						 enhancement=	"+hpBonus:50;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:13"
+						 enhancement=	"+hpBonus:30;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:14"
+						 enhancement=	"+hpBonus:15;"
+				/>
+				<Enhance type=			"shieldEmitterArray"
+						 criteria=		"s L:15"
+						 enhancement=	"+hpBonus:5;"
+				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
 	</ItemType>

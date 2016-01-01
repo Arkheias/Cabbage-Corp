@@ -17,7 +17,7 @@
 			value=				"300"
 			mass=				"1000"
 
-			description=		"The Kale M1 repeater fires a cluster of light, high-velocity kinetic projectiles."
+			description=		"This repeater fires a cluster of light, high-velocity kinetic projectiles. Before reactive armor became commonplace, it was often used as a cheap flak cannon to defend against lightly armored spacecraft."
 	>
 
 		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -25,7 +25,7 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
+				repeating=			"2"
 				damage=				"kinetic:1; momentum1"
 				fireRate=			"20"
 				missileSpeed=		"60"
@@ -38,8 +38,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -66,7 +67,7 @@
 			value=				"670"
 			mass=				"1500"
 
-			description=		"The Kale M3 repeater fires a cluster of high-velocity kinetic projectiles."
+			description=		"This repeater fires a cluster of high-velocity projectiles. Though ineffective against most reactive armors, it is often favored in regions inundated with Zulu or Corsair class pirates."
 	>
 
 		<Image imageID="&rsCCGuns;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -74,7 +75,7 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
+				repeating=			"2"
 				damage=				"kinetic:1d2; momentum1"
 				fireRate=			"20"
 				missileSpeed=		"60"
@@ -87,8 +88,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -123,8 +125,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"kinetic:1d4; momentum1; WMD1"
+				repeating=			"2"
+				damage=				"kinetic:1d2+1; momentum1; WMD1"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -136,8 +138,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -172,8 +175,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"blast:1d4; momentum1; WMD2"
+				repeating=			"2"
+				damage=				"blast:1d2+1; momentum1; WMD2"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -186,8 +189,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -222,8 +226,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"blast:2d3; momentum1; WMD2"
+				repeating=			"2"
+				damage=				"blast:1d3+2; momentum1; WMD2"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -236,8 +240,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -272,8 +277,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"blast:3d2+1; momentum1; WMD3"
+				repeating=			"2"
+				damage=				"blast:1d4+3; momentum1; WMD3"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -286,8 +291,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -322,8 +328,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"thermo:3d4-1; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d6+3; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -336,8 +342,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -372,8 +379,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"thermo:4d4-1; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d7+5; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -386,8 +393,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -422,8 +430,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"thermo:5d4; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d8+8; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -436,8 +444,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -472,8 +481,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"plasma:4d6+1; momentum1; WMD5"
+				repeating=			"2"
+				damage=				"plasma:1d9+10; momentum1; WMD5"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -486,8 +495,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -522,8 +532,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"plasma:6d6; momentum1; WMD6"
+				repeating=			"2"
+				damage=				"plasma:1d11+15; momentum1; WMD6"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -536,8 +546,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -572,8 +583,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"plasma:6d8+2; momentum1; WMD6"
+				repeating=			"2"
+				damage=				"plasma:1d13+22; momentum1; WMD6"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -586,8 +597,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -622,8 +634,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"nano:7d8+3; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d14+27; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -636,8 +648,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -672,8 +685,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"nano:8d10+4; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d15+40; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -686,8 +699,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -722,8 +736,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"nano:10d12+2; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d21+56; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -736,8 +750,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 		
@@ -776,7 +791,7 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
+				repeating=			"2"
 				damage=				"kinetic:1; momentum1"
 				fireRate=			"20"
 				missileSpeed=		"60"
@@ -789,9 +804,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -816,7 +833,7 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
+				repeating=			"2"
 				damage=				"kinetic:1d2; momentum1"
 				fireRate=			"20"
 				missileSpeed=		"60"
@@ -829,9 +846,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -856,8 +875,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"kinetic:1d4; momentum1; WMD1"
+				repeating=			"2"
+				damage=				"kinetic:1d2+1; momentum1; WMD1"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -869,9 +888,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -896,8 +917,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"blast:1d4; momentum1; WMD2"
+				repeating=			"2"
+				damage=				"blast:1d2+1; momentum1; WMD2"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -910,9 +931,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -937,8 +960,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"blast:2d3; momentum1; WMD2"
+				repeating=			"2"
+				damage=				"blast:1d3+2; momentum1; WMD2"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -951,9 +974,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -978,8 +1003,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"blast:3d2+1; momentum1; WMD3"
+				repeating=			"2"
+				damage=				"blast:1d4+3; momentum1; WMD3"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -992,9 +1017,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1019,8 +1046,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"thermo:3d4-1; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d6+3; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -1033,9 +1060,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1060,8 +1089,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"thermo:4d4-1; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d7+5; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -1074,9 +1103,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1101,8 +1132,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"thermo:5d4; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d8+8; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -1115,9 +1146,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1142,8 +1175,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"plasma:4d6+1; momentum1; WMD5"
+				repeating=			"2"
+				damage=				"plasma:1d9+10; momentum1; WMD5"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -1156,9 +1189,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1183,8 +1218,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"plasma:6d6; momentum1; WMD6"
+				repeating=			"2"
+				damage=				"plasma:1d11+15; momentum1; WMD6"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -1197,9 +1232,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1224,8 +1261,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"plasma:6d8+2; momentum1; WMD6"
+				repeating=			"2"
+				damage=				"plasma:1d13+22; momentum1; WMD6"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -1238,9 +1275,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1265,8 +1304,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"nano:7d8+3; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d14+27; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -1279,9 +1318,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1306,8 +1347,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"nano:8d10+4; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d15+40; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -1320,9 +1361,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1347,8 +1390,8 @@
 		<Weapon
 				type=				"missile"
 
-				repeating=			"5"
-				damage=				"nano:10d12+2; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d21+56; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -1361,9 +1404,11 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="90" posRadius="12" angle="3d3-6"/>
-				<Shot posAngle="-90" posRadius="12" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="70" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-110" posRadius="13" angle="3d3-6"/>
+				<Shot posAngle="-70" posRadius="13" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1393,7 +1438,7 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
+				repeating=			"2"
 				damage=				"kinetic:1; momentum1"
 				fireRate=			"20"
 				missileSpeed=		"60"
@@ -1406,8 +1451,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1433,7 +1479,7 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
+				repeating=			"2"
 				damage=				"kinetic:1d2; momentum1"
 				fireRate=			"20"
 				missileSpeed=		"60"
@@ -1446,8 +1492,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1473,8 +1520,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"kinetic:1d4; momentum1; WMD1"
+				repeating=			"2"
+				damage=				"kinetic:1d2+1; momentum1; WMD1"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -1486,8 +1533,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1513,8 +1561,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"blast:1d4; momentum1; WMD2"
+				repeating=			"2"
+				damage=				"blast:1d2+1; momentum1; WMD2"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -1527,8 +1575,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1554,8 +1603,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"blast:2d3; momentum1; WMD2"
+				repeating=			"2"
+				damage=				"blast:1d3+2; momentum1; WMD2"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -1568,8 +1617,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1595,8 +1645,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"blast:3d2+1; momentum1; WMD3"
+				repeating=			"2"
+				damage=				"blast:1d4+3; momentum1; WMD3"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -1609,8 +1659,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1636,8 +1687,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"thermo:3d4-1; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d6+3; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -1650,8 +1701,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1677,8 +1729,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"thermo:4d4-1; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d7+5; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -1691,8 +1743,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1718,8 +1771,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"thermo:5d4; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d8+8; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -1732,8 +1785,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1759,8 +1813,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"plasma:4d6+1; momentum1; WMD5"
+				repeating=			"2"
+				damage=				"plasma:1d9+10; momentum1; WMD5"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -1773,8 +1827,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1800,8 +1855,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"plasma:6d6; momentum1; WMD6"
+				repeating=			"2"
+				damage=				"plasma:1d11+15; momentum1; WMD6"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -1814,8 +1869,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1841,8 +1897,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"plasma:6d8+2; momentum1; WMD6"
+				repeating=			"2"
+				damage=				"plasma:1d13+22; momentum1; WMD6"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -1855,8 +1911,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1882,8 +1939,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"nano:7d8+3; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d14+27; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -1896,8 +1953,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1923,8 +1981,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"nano:8d10+4; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d15+40; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -1937,8 +1995,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -1964,8 +2023,8 @@
 				type=				"missile"
 
 				omnidirectional=	"true"
-				repeating=			"5"
-				damage=				"nano:10d12+2; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d21+56; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -1978,8 +2037,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2010,7 +2070,7 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
+				repeating=			"2"
 				damage=				"kinetic:1; momentum1"
 				fireRate=			"20"
 				missileSpeed=		"60"
@@ -2026,8 +2086,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2054,7 +2115,7 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
+				repeating=			"2"
 				damage=				"kinetic:1d2; momentum1"
 				fireRate=			"20"
 				missileSpeed=		"60"
@@ -2070,8 +2131,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2098,8 +2160,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"kinetic:1d4; momentum1; WMD1"
+				repeating=			"2"
+				damage=				"kinetic:1d2+1; momentum1; WMD1"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -2114,8 +2176,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2142,8 +2205,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"blast:1d4; momentum1; WMD2"
+				repeating=			"2"
+				damage=				"blast:1d2+1; momentum1; WMD2"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -2159,8 +2222,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2187,8 +2251,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"blast:2d3; momentum1; WMD2"
+				repeating=			"2"
+				damage=				"blast:1d3+2; momentum1; WMD2"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -2204,8 +2268,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2232,8 +2297,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"blast:3d2+1; momentum1; WMD3"
+				repeating=			"2"
+				damage=				"blast:1d4+3; momentum1; WMD3"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -2249,8 +2314,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2277,8 +2343,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"thermo:3d4-1; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d6+3; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -2294,8 +2360,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2322,8 +2389,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"thermo:4d4-1; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d7+5; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -2339,8 +2406,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2367,8 +2435,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"thermo:5d4; momentum1; WMD4"
+				repeating=			"2"
+				damage=				"thermo:1d8+8; momentum1; WMD4"
 				fireRate=			"20"
 				missileSpeed=		"60"
 				interaction=		"80"
@@ -2384,8 +2452,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2412,8 +2481,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"plasma:4d6+1; momentum1; WMD5"
+				repeating=			"2"
+				damage=				"plasma:1d9+10; momentum1; WMD5"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -2429,8 +2498,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2457,8 +2527,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"plasma:6d6; momentum1; WMD6"
+				repeating=			"2"
+				damage=				"plasma:1d11+15; momentum1; WMD6"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -2474,8 +2544,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2502,8 +2573,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"plasma:6d8+2; momentum1; WMD6"
+				repeating=			"2"
+				damage=				"plasma:1d13+22; momentum1; WMD6"
 				fireRate=			"20"
 				missileSpeed=		"65"
 				interaction=		"80"
@@ -2519,8 +2590,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2547,8 +2619,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"nano:7d8+3; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d14+27; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -2564,8 +2636,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2592,8 +2665,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"nano:8d10+4; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d15+40; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -2609,8 +2682,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>
@@ -2637,8 +2711,8 @@
 				type=				"missile"
 				linkedFire=			"always"
 
-				repeating=			"5"
-				damage=				"nano:10d12+2; momentum1; WMD7"
+				repeating=			"2"
+				damage=				"nano:1d21+56; momentum1; WMD7"
 				fireRate=			"20"
 				missileSpeed=		"70"
 				interaction=		"80"
@@ -2654,8 +2728,9 @@
 				sound=				"&snRecoillessCannon;"
 		>
 
-			<Configuration aimTolerance="3">
-				<Shot posAngle="0" posRadius="0" angle="3d3-6"/>
+			<Configuration aimTolerance="1">
+				<Shot posAngle="0" posRadius="5" angle="3d3-6"/>
+				<Shot posAngle="180" posRadius="5" angle="3d3-6"/>
 			</Configuration>
 		</Weapon>
 	</ItemType>

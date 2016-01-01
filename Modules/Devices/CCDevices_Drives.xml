@@ -57,7 +57,7 @@
 
 		<DriveDevice
 				maxSpeed=		"18"
-				thrust=			"70"
+				thrust=			"75"
 				powerUsed=		"30"
 		/>
 		
@@ -457,7 +457,7 @@
 
 		<DriveDevice
 				maxSpeed=		"18"
-				thrust=			"70"
+				thrust=			"75"
 				powerUsed=		"35"
 
 				deviceSlots=	"0"

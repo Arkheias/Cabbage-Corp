@@ -273,11 +273,6 @@
 					{ item:&itCCDualAutonBay;					enhancement:Nil		components:( { item:&itCCAutonBay; count:1 } )															extraCost:0 }
 					{ item:&itCCDualMilitaryAutonBay;			enhancement:Nil		components:( { item:&itCCAutonBay; count:1 } )															extraCost:0 }
 					
-					{ item:&itCCMarkIICabbageEnhancer;			enhancement:Nil		components:( { item:&itCCMarkICabbageEnhancer; count:1 } )												extraCost:0 }
-					{ item:&itCCMarkIIICabbageEnhancer;			enhancement:Nil		components:( { item:&itCCMarkIICabbageEnhancer; count:1 } { item:&itMnemonicProcessor; count:1 } )		extraCost:0 }
-					{ item:&itCCMarkIVCabbageEnhancer;			enhancement:Nil		components:( { item:&itCCMarkIIICabbageEnhancer; count:1 } { item:&itCCDualCoreProcessor; count:1 } )	extraCost:0 }
-					{ item:&itCCMarkVCabbageEnhancer;			enhancement:Nil		components:( { item:&itCCMarkIVCabbageEnhancer; count:1 } { item:&itCCQuadCoreProcessor; count:1 } )	extraCost:0 }
-					
 					{ item:&itCCDualCoreProcessor;				enhancement:Nil		components:( { item:&itMnemonicProcessor; count:2 } )													extraCost:0 }
 					{ item:&itCCQuadCoreProcessor;				enhancement:Nil		components:( { item:&itCCDualCoreProcessor; count:2 } )													extraCost:0 }
 					
@@ -295,37 +290,36 @@
 					{ item:&itCCRegenNMGenerator;				enhancement:Nil		components:( { item:&itRegeneratingNanos; count:6 }  { item:&itMnemonicProcessor; count:1 } )			extraCost:0 }
 					{ item:&itCCAutoRepairVI;					enhancement:Nil		components:( { item:&itCCRegenNMGenerator; count:1 } { item:&itCCDualCoreProcessor; count:1 } )			extraCost:0 }
 					
-					{ item:&itCCDualSiva5MWReactor;				enhancement:Nil		components:( { item:&itCCSiva5MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva10MWReactor;			enhancement:Nil		components:( { item:&itCCSiva10MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva17MWReactor;			enhancement:Nil		components:( { item:&itCCSiva17MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva31MWReactor;			enhancement:Nil		components:( { item:&itCCSiva31MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva57MWReactor;			enhancement:Nil		components:( { item:&itCCSiva57MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva100MWReactor;			enhancement:Nil		components:( { item:&itCCSiva100MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva170MWReactor;			enhancement:Nil		components:( { item:&itCCSiva170MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva310MWReactor;			enhancement:Nil		components:( { item:&itCCSiva310MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva560MWReactor;			enhancement:Nil		components:( { item:&itCCSiva560MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva1000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva1000MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva1700MWReactor;			enhancement:Nil		components:( { item:&itCCSiva1700MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva3000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva3000MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva5500MWReactor;			enhancement:Nil		components:( { item:&itCCSiva5500MWReactor; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSiva10000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva10000MWReactor; count:2 } )												extraCost:0 }
-					{ item:&itCCDualSiva18000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva18000MWReactor; count:2 } )												extraCost:0 }
-					{ item:&itCCAuxSiva5MWReactor;				enhancement:Nil		components:( { item:&itCCSiva5MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva10MWReactor;				enhancement:Nil		components:( { item:&itCCSiva10MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva17MWReactor;				enhancement:Nil		components:( { item:&itCCSiva17MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva31MWReactor;				enhancement:Nil		components:( { item:&itCCSiva31MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva57MWReactor;				enhancement:Nil		components:( { item:&itCCSiva57MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva100MWReactor;			enhancement:Nil		components:( { item:&itCCSiva100MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva170MWReactor;			enhancement:Nil		components:( { item:&itCCSiva170MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva310MWReactor;			enhancement:Nil		components:( { item:&itCCSiva310MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva560MWReactor;			enhancement:Nil		components:( { item:&itCCSiva560MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva1000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva1000MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva1700MWReactor;			enhancement:Nil		components:( { item:&itCCSiva1700MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva3000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva3000MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva5500MWReactor;			enhancement:Nil		components:( { item:&itCCSiva5500MWReactor; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSiva10000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva10000MWReactor; count:1 } )												extraCost:0 }
-					{ item:&itCCAuxSiva18000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva18000MWReactor; count:1 } )												extraCost:0 }
-					
+					{ item:&itCCDualSiva8MWReactor;				enhancement:Nil		components:( { item:&itCCSiva8MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva12MWReactor;			enhancement:Nil		components:( { item:&itCCSiva12MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva20MWReactor;			enhancement:Nil		components:( { item:&itCCSiva20MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva40MWReactor;			enhancement:Nil		components:( { item:&itCCSiva40MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva80MWReactor;			enhancement:Nil		components:( { item:&itCCSiva80MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva120MWReactor;			enhancement:Nil		components:( { item:&itCCSiva120MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva200MWReactor;			enhancement:Nil		components:( { item:&itCCSiva200MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva400MWReactor;			enhancement:Nil		components:( { item:&itCCSiva400MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva800MWReactor;			enhancement:Nil		components:( { item:&itCCSiva800MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva1200MWReactor;			enhancement:Nil		components:( { item:&itCCSiva1200MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva2000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva2000MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva4000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva4000MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva8000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva8000MWReactor; count:2 } )													extraCost:0 }
+					{ item:&itCCDualSiva12000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva12000MWReactor; count:2 } )												extraCost:0 }
+					{ item:&itCCDualSiva20000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva20000MWReactor; count:2 } )												extraCost:0 }
+					{ item:&itCCAuxSiva8MWReactor;				enhancement:Nil		components:( { item:&itCCSiva8MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva12MWReactor;				enhancement:Nil		components:( { item:&itCCSiva12MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva20MWReactor;				enhancement:Nil		components:( { item:&itCCSiva20MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva40MWReactor;				enhancement:Nil		components:( { item:&itCCSiva40MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva80MWReactor;				enhancement:Nil		components:( { item:&itCCSiva80MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva120MWReactor;			enhancement:Nil		components:( { item:&itCCSiva120MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva200MWReactor;			enhancement:Nil		components:( { item:&itCCSiva200MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva400MWReactor;			enhancement:Nil		components:( { item:&itCCSiva400MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva800MWReactor;			enhancement:Nil		components:( { item:&itCCSiva800MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva1200MWReactor;			enhancement:Nil		components:( { item:&itCCSiva1200MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva2000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva2000MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva4000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva4000MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva8000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva8000MWReactor; count:1 } )													extraCost:0 }
+					{ item:&itCCAuxSiva12000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva12000MWReactor; count:1 } )												extraCost:0 }
+					{ item:&itCCAuxSiva20000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva20000MWReactor; count:1 } )												extraCost:0 }
 				)
 			</Recipes>
 			

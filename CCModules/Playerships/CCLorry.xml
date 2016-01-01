@@ -24,7 +24,7 @@
 			fuelCriteria=		"f L:1"
 			
 			maxArmor=			"20000"
-			maxDevices=			"9"
+			maxDevices=			"10"
 		>
 
 		<Armor>
@@ -41,8 +41,7 @@
 			
 			<Device deviceID="&itCCOmniB2MiningLance;"/>
 			<Device deviceID="&itCCNapaS1Deflector;"/>
-			<Device deviceID="&itCCSiva5MWReactor;"/>
-			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
+			<Device deviceID="&itCCSiva8MWReactor;"/>
 			<Device deviceID="&itCCIonDrive;"/>
 		</Devices>
 

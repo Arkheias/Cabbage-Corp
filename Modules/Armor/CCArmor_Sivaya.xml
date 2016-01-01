@@ -11,7 +11,8 @@ Armor Level		Immunity gained
 
 These values are hard-coded in the game and do not need to be listed for armor above the given level.
 
-I have decided based on a whim to have this S&#xed;vaya armor sorted such that the quadruple layered versions come after the double layered versions which come after the single layered versions.
+idlePowerUse for armor defaults to the same value as powerUse (for backwards compatibility with mods I believe).
+	I have manually set idlePowerUse to one tenth of the powerUse value to match the default setting for other devices.
 -->
 	
 <!-- ======================================================================= -->
@@ -47,6 +48,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"1"
 				powerUse=		"4"
+				idlePowerUse=	"0"
 		/>
 	</ItemType>
 	
@@ -81,6 +83,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"3"
 				powerUse=		"15"
+				idlePowerUse=	"2"
 		/>
 		
 		<StaticData>
@@ -125,6 +128,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"5"
 				powerUse=		"30"
+				idlePowerUse=	"3"
 		/>
 		
 		<StaticData>
@@ -169,6 +173,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"9"
 				powerUse=		"55"
+				idlePowerUse=	"6"
 		/>
 		
 		<StaticData>
@@ -212,6 +217,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"15"
 				powerUse=		"110"
+				idlePowerUse=	"11"
 		/>
 		
 		<StaticData>
@@ -255,6 +261,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"24"
 				powerUse=		"200"
+				idlePowerUse=	"20"
 		/>
 		
 		<StaticData>
@@ -302,6 +309,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"3"
 				powerUse=		"15"
+				idlePowerUse=	"2"
 		/>
 	</ItemType>
 	
@@ -337,6 +345,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"5"
 				powerUse=		"30"
+				idlePowerUse=	"3"
 		/>
 	</ItemType>
 	
@@ -372,6 +381,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"9"
 				powerUse=		"55"
+				idlePowerUse=	"6"
 		/>
 	</ItemType>
 	
@@ -406,6 +416,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"15"
 				powerUse=		"110"
+				idlePowerUse=	"11"
 		/>
 	</ItemType>
 	
@@ -440,6 +451,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"24"
 				powerUse=		"200"
+				idlePowerUse=	"20"
 		/>
 	</ItemType>
 	
@@ -478,6 +490,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"3"
 				powerUse=		"15"
+				idlePowerUse=	"2"
 		/>
 	</ItemType>
 	
@@ -513,6 +526,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"55"
 				powerUse=		"30"
+				idlePowerUse=	"3"
 		/>
 	</ItemType>
 	
@@ -548,6 +562,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"9"
 				powerUse=		"55"
+				idlePowerUse=	"6"
 		/>
 	</ItemType>
 	
@@ -582,6 +597,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"15"
 				powerUse=		"110"
+				idlePowerUse=	"11"
 		/>
 	</ItemType>
 	
@@ -616,6 +632,7 @@ I have decided based on a whim to have this S&#xed;vaya armor sorted such that t
 				
 				regen=			"24"
 				powerUse=		"200"
+				idlePowerUse=	"20"
 		/>
 	</ItemType>
 	

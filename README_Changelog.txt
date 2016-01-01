@@ -2,6 +2,43 @@
 Changelog
 ---------
 
+v0.7.5.0 (2016-01-01)
+---------------------------------
+-----General Changes-----
+Updated to API v28 for Transcendence v1.6.3 for real this time.
+Replaced deprecated functions.
+
+-----Stations-----
+Added Cabbage Corp School of Science to the S. Katherines Arcology University Quarter.
+Changed the stargate in Othala to actually transport the player back to the main stargate network instead of itself.
+Removed the text from the stargate in Othala that mocked the player after trapping them there.
+
+-----Ships-----
+Changed the reactors installed on ships due to rebalancing of said reactors (nearly all are higher capacity).
+Changed the fireAccuracy value on wraith autons.
+Changed the Lorry-class transports to have 10 device slots.
+Changed the Lampyridae-class transports to have 11 device slots.
+
+-----Items-----
+Added a series of shield emitter arrays.
+Added replacement emitter coils for the shield emitter arrays.
+Added Heliotrope fuel assembly.
+Changed idlePowerUse of Sivaya armor segments to 1/10 the PowerUse value.
+-This is in preparation for API 29 (Trancendence v1.7). It will not take effect until then.
+Changed the Siva series of reactors to be more balanced.
+Changed auxiliary reactors to be cheaper and lighter.
+Changed the Kale series of repeaters to fire in a tighter cluster.
+Changed the Kale series of repeaters to have more consistent damage.
+Changed the descriptions of the Kale M1 and M3 repeaters.
+Changed damaged refineries to display more generic text explaining which refinery doesn't work.
+Changed plasma drive variants to have slightly more thrust.
+Changed descriptions of Cabbage Corp fuel assemblies.
+Fixed bug where none of the mining lance capacitors actually enhanced mining lances above level 1.
+Removed the Cabbage Corp brand enhancers.
+Removed external shield deflectors.
+
+
+
 v0.7.4.3 (2015-10-07)
 ---------------------------------
 -----General Changes-----
@@ -54,6 +91,7 @@ Changed the descriptions of the repeater heat sinks.
 Changed really high level enhancers to use the alien unknown device type.
 Changed the level 1-4 reactor explosion to do more damage.
 Changed the level 11-15 reactor explosions to do plasma damage.
+Changed the Cabbage Corp system map access ROM to require more credits for higher level systems.
 Fixed values of higher level mining lance enhancers because I forgot to set them correctly when I first created them.
 Fixed a bug in the criteria for the mining lance enhancers that would enable them to affect the other unrelated Cabbage Corp energy weapon.
 

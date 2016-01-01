@@ -24,7 +24,7 @@
 
 			maxArmor=			"20000"
 			maxCargoSpace=		"1000"
-			maxDevices=			"10"
+			maxDevices=			"11"
 		>
 
 		<!-- Configuration -->
@@ -50,18 +50,18 @@
 			<DeviceSlot criteria="w +cabbageCorp" minFireArc="345" maxFireArc="15"	posAngle="0" posRadius="52" posZ="2"/>
 			<DeviceSlot criteria="w -cabbageCorp"									posAngle="0" posRadius="52" posZ="2"/>
 			
-			<Device deviceID="&itCCKaleM1Repeater;"/>
+			<Device deviceID="&itCCKaleM3Repeater;"/>
 			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
-			<Device deviceID="&itCCNapaS1Deflector;"/>
-			<Device deviceID="&itCCSiva10MWReactor;"/>
+			<Device deviceID="&itCCJadeiteS1Deflector;"/>
+			<Device deviceID="&itCCSiva12MWReactor;"/>
 			<Device deviceID="&itCCPlasmaDrive;"/>
 			
 			<!--
 			<Device deviceID="&itCCSavoyM2Howitzer;"/>
 			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
 			<Device deviceID="&itCCDualNapaS2Deflector;"/>
-			<Device deviceID="&itCCSiva5MWReactor;"/>
-			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
+			<Device deviceID="&itCCSiva8MWReactor;"/>
+			<Device deviceID="&itCCAuxSiva8MWReactor;"/>
 			<Device deviceID="&itCCDualIonDrive;"/>
 			-->
 			<!--
@@ -70,7 +70,7 @@
 			<Device deviceID="&itCCDualB200MiningLance;"/>
 			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
 			<Device deviceID="&itCCDualNapaS150Deflector;"/>
-			<Device deviceID="&itCCDualSiva1000MWReactor;"/>
+			<Device deviceID="&itCCDualSiva1200MWReactor;"/>
 			<Device deviceID="&itCCDualPteracniumMegaDrive;"/>
 			<Device deviceID="&itCCMarkVMiningLanceCapacitor;"/>
 			<Device deviceID="&itCCAutoRepairAI;"/>
@@ -237,7 +237,7 @@
 					(	
 						(&itCCKaleM11Repeater;					1)
 						(&itCCDualNapaS8Deflector;				1)
-						(&itCCDualSiva31MWReactor;				1)
+						(&itCCDualSiva40MWReactor;				1)
 						(&itCCDualTritiumPropulsionUpgrade;		1)
 						(&itCC2xStealthArmor;					8)
 					)
@@ -283,7 +283,7 @@
 						(&scCCLampyridaeTauCeti;
 							(	(&itCCKaleM11Repeater;					1)
 								(&itCCDualNapaS8Deflector;				1)
-								(&itCCDualSiva31MWReactor;				1)
+								(&itCCDualSiva40MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
 								(&itCC2xStealthArmor;					8)
 							)
@@ -297,8 +297,8 @@
 						(&scCCLampyridaeTauCeti;
 							(	(&itCCKaleM3Repeater;					1)
 								(&itCCNapaS1Deflector;					1)
-								(&itCCSiva5MWReactor;					1)
-								(&itCCAuxSiva5MWReactor;				1)
+								(&itCCSiva8MWReactor;					1)
+								(&itCCAuxSiva8MWReactor;				1)
 								(&itCCPlasmaDrive;						1)
 								(&itCCLightStealthPlating;				8)
 							)
@@ -312,7 +312,7 @@
 							(	(&itCCSavoyM8Howitzer;					1)
 								(&itCCKaleM6Repeater;					2)
 								(&itCCDualNapaS8Deflector;				1)
-								(&itCCDualSiva31MWReactor;				1)
+								(&itCCDualSiva40MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
 								(&itCC2xStealthArmor;					8)
 							)
@@ -331,7 +331,7 @@
 							(	(&itCCSavoyM30Howitzer;					1)
 								(&itCCKaleM20Repeater;					2)
 								(&itCCDualNapaS30Deflector;				1)
-								(&itCCDualSiva100MWReactor;				1)
+								(&itCCDualSiva120MWReactor;				1)
 								(&itCCDualChronimiumPropulsionUpgrade;	1)
 								(&itCC2xHardenedStealthArmor;			8)
 							)
