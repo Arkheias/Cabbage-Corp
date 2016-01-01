@@ -34,6 +34,7 @@
 <!ENTITY scCCCabbageModification		 		"0xDA27C041">
 
 <!ENTITY dsCCBuyAndModify		 				"0xDA27C042">
+<!ENTITY dsCCSchoolOfScience	 				"0xDA27C043">
 <!ENTITY dsCCCabbageCorpCurrentDeals			"0xDA27C04B">
 <!ENTITY dsCCCabbageCorpWorkshop				"0xDA27C04C">
 <!ENTITY dsCCCabbageCustomWork					"0xDA27C04D">
@@ -201,11 +202,28 @@
 <!ENTITY itCCMarkIVRepeaterHeatSink				"0xDA27C614">
 <!ENTITY itCCMarkVRepeaterHeatSink				"0xDA27C615">
 
-<!ENTITY itCCMarkICabbageEnhancer				"0xDA27C631">
-<!ENTITY itCCMarkIICabbageEnhancer				"0xDA27C632">
-<!ENTITY itCCMarkIIICabbageEnhancer				"0xDA27C633">
-<!ENTITY itCCMarkIVCabbageEnhancer				"0xDA27C634">
-<!ENTITY itCCMarkVCabbageEnhancer				"0xDA27C635">
+<!ENTITY itCCStoma5ShieldEmitterArray			"0xDA27C631">
+<!ENTITY itCCStomaS1ShieldEmitterArray			"0xDA27C632">
+<!ENTITY itCCStomaS2ShieldEmitterArray			"0xDA27C633">
+<!ENTITY itCCStomaS4ShieldEmitterArray			"0xDA27C634">
+<!ENTITY itCCStomaS8ShieldEmitterArray			"0xDA27C635">
+<!ENTITY itCCStomaS20ShieldEmitterArray			"0xDA27C636">
+<!ENTITY itCCStomaS30ShieldEmitterArray			"0xDA27C637">
+<!ENTITY itCCStomaS50ShieldEmitterArray			"0xDA27C638">
+<!ENTITY itCCStomaS80ShieldEmitterArray			"0xDA27C639">
+<!ENTITY itCCStomaS120ShieldEmitterArray		"0xDA27C63A">
+<!ENTITY itCCStomaS150ShieldEmitterArray		"0xDA27C63B">
+<!ENTITY itCCStomaS250ShieldEmitterArray		"0xDA27C63C">
+<!ENTITY itCCStomaS400ShieldEmitterArray		"0xDA27C63D">
+
+<!ENTITY baCCShieldEmitterBase					"0xDA27C640">
+<!ENTITY efCCShieldEmitterOverload				"0xDA27C641">
+<!ENTITY vtCCEmitterFlareUp						"0xDA27C642">
+<!ENTITY vtCCEmitterBlinding					"0xDA27C643">
+<!ENTITY vtCCEmitterRadiation					"0xDA27C644">
+<!ENTITY vtCCEmitterEMP							"0xDA27C645">
+<!ENTITY vtCCEmitterDeviceDisrupt				"0xDA27C646">
+<!ENTITY vtCCEmitterDeviceDamage				"0xDA27C647">
 
 
 	<!-- Miscellaneous Devices -->
@@ -319,86 +337,86 @@
 
 	<!-- Reactors -->
 <!ENTITY baCCUnsafeReactorBase					"0xDA27C800">
-<!ENTITY itCCSiva5MWReactor						"0xDA27C801">
-<!ENTITY itCCSiva10MWReactor					"0xDA27C802">
-<!ENTITY itCCSiva17MWReactor					"0xDA27C803">
-<!ENTITY itCCSiva31MWReactor					"0xDA27C804">
-<!ENTITY itCCSiva57MWReactor					"0xDA27C805">
-<!ENTITY itCCSiva100MWReactor					"0xDA27C806">
-<!ENTITY itCCSiva170MWReactor					"0xDA27C807">
-<!ENTITY itCCSiva310MWReactor					"0xDA27C808">
-<!ENTITY itCCSiva560MWReactor					"0xDA27C809">
-<!ENTITY itCCSiva1000MWReactor					"0xDA27C80A">
-<!ENTITY itCCSiva1700MWReactor					"0xDA27C80B">
-<!ENTITY itCCSiva3000MWReactor					"0xDA27C80C">
-<!ENTITY itCCSiva5500MWReactor					"0xDA27C80D">
-<!ENTITY itCCSiva10000MWReactor					"0xDA27C80E">
-<!ENTITY itCCSiva18000MWReactor					"0xDA27C80F">
+<!ENTITY itCCSiva8MWReactor						"0xDA27C801">
+<!ENTITY itCCSiva12MWReactor					"0xDA27C802">
+<!ENTITY itCCSiva20MWReactor					"0xDA27C803">
+<!ENTITY itCCSiva40MWReactor					"0xDA27C804">
+<!ENTITY itCCSiva80MWReactor					"0xDA27C805">
+<!ENTITY itCCSiva120MWReactor					"0xDA27C806">
+<!ENTITY itCCSiva200MWReactor					"0xDA27C807">
+<!ENTITY itCCSiva400MWReactor					"0xDA27C808">
+<!ENTITY itCCSiva800MWReactor					"0xDA27C809">
+<!ENTITY itCCSiva1200MWReactor					"0xDA27C80A">
+<!ENTITY itCCSiva2000MWReactor					"0xDA27C80B">
+<!ENTITY itCCSiva4000MWReactor					"0xDA27C80C">
+<!ENTITY itCCSiva8000MWReactor					"0xDA27C80D">
+<!ENTITY itCCSiva12000MWReactor					"0xDA27C80E">
+<!ENTITY itCCSiva20000MWReactor					"0xDA27C80F">
 
-<!ENTITY itCCRadSiva5MWReactor					"0xDA27C811">
-<!ENTITY itCCRadSiva10MWReactor					"0xDA27C812">
-<!ENTITY itCCRadSiva17MWReactor					"0xDA27C813">
-<!ENTITY itCCRadSiva31MWReactor					"0xDA27C814">
-<!ENTITY itCCRadSiva57MWReactor					"0xDA27C815">
-<!ENTITY itCCRadSiva100MWReactor				"0xDA27C816">
-<!ENTITY itCCRadSiva170MWReactor				"0xDA27C817">
-<!ENTITY itCCRadSiva310MWReactor				"0xDA27C818">
-<!ENTITY itCCRadSiva560MWReactor				"0xDA27C819">
-<!ENTITY itCCRadSiva1000MWReactor				"0xDA27C81A">
-<!ENTITY itCCRadSiva1700MWReactor				"0xDA27C81B">
-<!ENTITY itCCRadSiva3000MWReactor				"0xDA27C81C">
-<!ENTITY itCCRadSiva5500MWReactor				"0xDA27C81D">
-<!ENTITY itCCRadSiva10000MWReactor				"0xDA27C81E">
-<!ENTITY itCCRadSiva18000MWReactor				"0xDA27C81F">
+<!ENTITY itCCRadSiva8MWReactor					"0xDA27C811">
+<!ENTITY itCCRadSiva12MWReactor					"0xDA27C812">
+<!ENTITY itCCRadSiva20MWReactor					"0xDA27C813">
+<!ENTITY itCCRadSiva40MWReactor					"0xDA27C814">
+<!ENTITY itCCRadSiva80MWReactor					"0xDA27C815">
+<!ENTITY itCCRadSiva120MWReactor				"0xDA27C816">
+<!ENTITY itCCRadSiva200MWReactor				"0xDA27C817">
+<!ENTITY itCCRadSiva400MWReactor				"0xDA27C818">
+<!ENTITY itCCRadSiva800MWReactor				"0xDA27C819">
+<!ENTITY itCCRadSiva1200MWReactor				"0xDA27C81A">
+<!ENTITY itCCRadSiva2000MWReactor				"0xDA27C81B">
+<!ENTITY itCCRadSiva4000MWReactor				"0xDA27C81C">
+<!ENTITY itCCRadSiva8000MWReactor				"0xDA27C81D">
+<!ENTITY itCCRadSiva12000MWReactor				"0xDA27C81E">
+<!ENTITY itCCRadSiva20000MWReactor				"0xDA27C81F">
 
-<!ENTITY itCCDualSiva5MWReactor					"0xDA27C821">
-<!ENTITY itCCDualSiva10MWReactor				"0xDA27C822">
-<!ENTITY itCCDualSiva17MWReactor				"0xDA27C823">
-<!ENTITY itCCDualSiva31MWReactor				"0xDA27C824">
-<!ENTITY itCCDualSiva57MWReactor				"0xDA27C825">
-<!ENTITY itCCDualSiva100MWReactor				"0xDA27C826">
-<!ENTITY itCCDualSiva170MWReactor				"0xDA27C827">
-<!ENTITY itCCDualSiva310MWReactor				"0xDA27C828">
-<!ENTITY itCCDualSiva560MWReactor				"0xDA27C829">
-<!ENTITY itCCDualSiva1000MWReactor				"0xDA27C82A">
-<!ENTITY itCCDualSiva1700MWReactor				"0xDA27C82B">
-<!ENTITY itCCDualSiva3000MWReactor				"0xDA27C82C">
-<!ENTITY itCCDualSiva5500MWReactor				"0xDA27C82D">
-<!ENTITY itCCDualSiva10000MWReactor				"0xDA27C82E">
-<!ENTITY itCCDualSiva18000MWReactor				"0xDA27C82F">
+<!ENTITY itCCDualSiva8MWReactor					"0xDA27C821">
+<!ENTITY itCCDualSiva12MWReactor				"0xDA27C822">
+<!ENTITY itCCDualSiva20MWReactor				"0xDA27C823">
+<!ENTITY itCCDualSiva40MWReactor				"0xDA27C824">
+<!ENTITY itCCDualSiva80MWReactor				"0xDA27C825">
+<!ENTITY itCCDualSiva120MWReactor				"0xDA27C826">
+<!ENTITY itCCDualSiva200MWReactor				"0xDA27C827">
+<!ENTITY itCCDualSiva400MWReactor				"0xDA27C828">
+<!ENTITY itCCDualSiva800MWReactor				"0xDA27C829">
+<!ENTITY itCCDualSiva1200MWReactor				"0xDA27C82A">
+<!ENTITY itCCDualSiva2000MWReactor				"0xDA27C82B">
+<!ENTITY itCCDualSiva4000MWReactor				"0xDA27C82C">
+<!ENTITY itCCDualSiva8000MWReactor				"0xDA27C82D">
+<!ENTITY itCCDualSiva12000MWReactor				"0xDA27C82E">
+<!ENTITY itCCDualSiva20000MWReactor				"0xDA27C82F">
 
-<!ENTITY itCCRadDualSiva5MWReactor				"0xDA27C831">
-<!ENTITY itCCRadDualSiva10MWReactor				"0xDA27C832">
-<!ENTITY itCCRadDualSiva17MWReactor				"0xDA27C833">
-<!ENTITY itCCRadDualSiva31MWReactor				"0xDA27C834">
-<!ENTITY itCCRadDualSiva57MWReactor				"0xDA27C835">
-<!ENTITY itCCRadDualSiva100MWReactor			"0xDA27C836">
-<!ENTITY itCCRadDualSiva170MWReactor			"0xDA27C837">
-<!ENTITY itCCRadDualSiva310MWReactor			"0xDA27C838">
-<!ENTITY itCCRadDualSiva560MWReactor			"0xDA27C839">
-<!ENTITY itCCRadDualSiva1000MWReactor			"0xDA27C83A">
-<!ENTITY itCCRadDualSiva1700MWReactor			"0xDA27C83B">
-<!ENTITY itCCRadDualSiva3000MWReactor			"0xDA27C83C">
-<!ENTITY itCCRadDualSiva5500MWReactor			"0xDA27C83D">
-<!ENTITY itCCRadDualSiva10000MWReactor			"0xDA27C83E">
-<!ENTITY itCCRadDualSiva18000MWReactor			"0xDA27C83F">
+<!ENTITY itCCRadDualSiva8MWReactor				"0xDA27C831">
+<!ENTITY itCCRadDualSiva12MWReactor				"0xDA27C832">
+<!ENTITY itCCRadDualSiva20MWReactor				"0xDA27C833">
+<!ENTITY itCCRadDualSiva40MWReactor				"0xDA27C834">
+<!ENTITY itCCRadDualSiva80MWReactor				"0xDA27C835">
+<!ENTITY itCCRadDualSiva120MWReactor			"0xDA27C836">
+<!ENTITY itCCRadDualSiva200MWReactor			"0xDA27C837">
+<!ENTITY itCCRadDualSiva400MWReactor			"0xDA27C838">
+<!ENTITY itCCRadDualSiva800MWReactor			"0xDA27C839">
+<!ENTITY itCCRadDualSiva1200MWReactor			"0xDA27C83A">
+<!ENTITY itCCRadDualSiva2000MWReactor			"0xDA27C83B">
+<!ENTITY itCCRadDualSiva4000MWReactor			"0xDA27C83C">
+<!ENTITY itCCRadDualSiva8000MWReactor			"0xDA27C83D">
+<!ENTITY itCCRadDualSiva12000MWReactor			"0xDA27C83E">
+<!ENTITY itCCRadDualSiva20000MWReactor			"0xDA27C83F">
 
 <!ENTITY baCCAuxReactorBase						"0xDA27C840">
-<!ENTITY itCCAuxSiva5MWReactor					"0xDA27C841">
-<!ENTITY itCCAuxSiva10MWReactor					"0xDA27C842">
-<!ENTITY itCCAuxSiva17MWReactor					"0xDA27C843">
-<!ENTITY itCCAuxSiva31MWReactor					"0xDA27C844">
-<!ENTITY itCCAuxSiva57MWReactor					"0xDA27C845">
-<!ENTITY itCCAuxSiva100MWReactor				"0xDA27C846">
-<!ENTITY itCCAuxSiva170MWReactor				"0xDA27C847">
-<!ENTITY itCCAuxSiva310MWReactor				"0xDA27C848">
-<!ENTITY itCCAuxSiva560MWReactor				"0xDA27C849">
-<!ENTITY itCCAuxSiva1000MWReactor				"0xDA27C84A">
-<!ENTITY itCCAuxSiva1700MWReactor				"0xDA27C84B">
-<!ENTITY itCCAuxSiva3000MWReactor				"0xDA27C84C">
-<!ENTITY itCCAuxSiva5500MWReactor				"0xDA27C84D">
-<!ENTITY itCCAuxSiva10000MWReactor				"0xDA27C84E">
-<!ENTITY itCCAuxSiva18000MWReactor				"0xDA27C84F">
+<!ENTITY itCCAuxSiva8MWReactor					"0xDA27C841">
+<!ENTITY itCCAuxSiva12MWReactor					"0xDA27C842">
+<!ENTITY itCCAuxSiva20MWReactor					"0xDA27C843">
+<!ENTITY itCCAuxSiva40MWReactor					"0xDA27C844">
+<!ENTITY itCCAuxSiva80MWReactor					"0xDA27C845">
+<!ENTITY itCCAuxSiva120MWReactor				"0xDA27C846">
+<!ENTITY itCCAuxSiva200MWReactor				"0xDA27C847">
+<!ENTITY itCCAuxSiva400MWReactor				"0xDA27C848">
+<!ENTITY itCCAuxSiva800MWReactor				"0xDA27C849">
+<!ENTITY itCCAuxSiva1200MWReactor				"0xDA27C84A">
+<!ENTITY itCCAuxSiva2000MWReactor				"0xDA27C84B">
+<!ENTITY itCCAuxSiva4000MWReactor				"0xDA27C84C">
+<!ENTITY itCCAuxSiva8000MWReactor				"0xDA27C84D">
+<!ENTITY itCCAuxSiva12000MWReactor				"0xDA27C84E">
+<!ENTITY itCCAuxSiva20000MWReactor				"0xDA27C84F">
 
 <!ENTITY vtCCReactorExplosion1					"0xDA27C851">
 <!ENTITY vtCCReactorExplosion2					"0xDA27C852">
@@ -439,46 +457,32 @@
 <!ENTITY itCCNapaS150Deflector					"0xDA27CA0A">
 <!ENTITY itCCNapaS260Deflector					"0xDA27CA0B">
 <!ENTITY itCCNapaS400Deflector					"0xDA27CA0C">
+<!ENTITY itCCDualNapaS1Deflector				"0xDA27CA11">
+<!ENTITY itCCDualNapaS2Deflector				"0xDA27CA12">
+<!ENTITY itCCDualNapaS4Deflector				"0xDA27CA13">
+<!ENTITY itCCDualNapaS8Deflector				"0xDA27CA14">
+<!ENTITY itCCDualNapaS20Deflector				"0xDA27CA15">
+<!ENTITY itCCDualNapaS30Deflector				"0xDA27CA16">
+<!ENTITY itCCDualNapaS50Deflector				"0xDA27CA17">
+<!ENTITY itCCDualNapaS100Deflector				"0xDA27CA18">
+<!ENTITY itCCDualNapaS120Deflector				"0xDA27CA19">
+<!ENTITY itCCDualNapaS150Deflector				"0xDA27CA1A">
+<!ENTITY itCCDualNapaS260Deflector				"0xDA27CA1B">
+<!ENTITY itCCDualNapaS400Deflector				"0xDA27CA1C">
 
-<!ENTITY itCCAuxNapaS1Deflector					"0xDA27CA11">
-<!ENTITY itCCAuxNapaS2Deflector					"0xDA27CA12">
-<!ENTITY itCCAuxNapaS4Deflector					"0xDA27CA13">
-<!ENTITY itCCAuxNapaS8Deflector					"0xDA27CA14">
-<!ENTITY itCCAuxNapaS20Deflector				"0xDA27CA15">
-<!ENTITY itCCAuxNapaS30Deflector				"0xDA27CA16">
-<!ENTITY itCCAuxNapaS50Deflector				"0xDA27CA17">
-<!ENTITY itCCAuxNapaS100Deflector				"0xDA27CA18">
-<!ENTITY itCCAuxNapaS120Deflector				"0xDA27CA19">
-<!ENTITY itCCAuxNapaS150Deflector				"0xDA27CA1A">
-<!ENTITY itCCAuxNapaS260Deflector				"0xDA27CA1B">
-<!ENTITY itCCAuxNapaS400Deflector				"0xDA27CA1C">
-
-<!ENTITY itCCDualNapaS1Deflector				"0xDA27CA21">
-<!ENTITY itCCDualNapaS2Deflector				"0xDA27CA22">
-<!ENTITY itCCDualNapaS4Deflector				"0xDA27CA23">
-<!ENTITY itCCDualNapaS8Deflector				"0xDA27CA24">
-<!ENTITY itCCDualNapaS20Deflector				"0xDA27CA25">
-<!ENTITY itCCDualNapaS30Deflector				"0xDA27CA26">
-<!ENTITY itCCDualNapaS50Deflector				"0xDA27CA27">
-<!ENTITY itCCDualNapaS100Deflector				"0xDA27CA28">
-<!ENTITY itCCDualNapaS120Deflector				"0xDA27CA29">
-<!ENTITY itCCDualNapaS150Deflector				"0xDA27CA2A">
-<!ENTITY itCCDualNapaS260Deflector				"0xDA27CA2B">
-<!ENTITY itCCDualNapaS400Deflector				"0xDA27CA2C">
-
-<!ENTITY dsCCJadeiteShields						"0xDA27CA30">
-<!ENTITY itCCJadeiteS1Deflector					"0xDA27CA31">
-<!ENTITY itCCJadeiteS2Deflector					"0xDA27CA32">
-<!ENTITY itCCJadeiteS4Deflector					"0xDA27CA33">
-<!ENTITY itCCJadeiteS8Deflector					"0xDA27CA34">
-<!ENTITY itCCJadeiteS20Deflector				"0xDA27CA35">
-<!ENTITY itCCJadeiteS30Deflector				"0xDA27CA36">
-<!ENTITY itCCJadeiteS50Deflector				"0xDA27CA37">
-<!ENTITY itCCJadeiteS100Deflector				"0xDA27CA38">
-<!ENTITY itCCJadeiteS120Deflector				"0xDA27CA39">
-<!ENTITY itCCJadeiteS150Deflector				"0xDA27CA3A">
-<!ENTITY itCCJadeiteS260Deflector				"0xDA27CA3B">
-<!ENTITY itCCJadeiteS400Deflector				"0xDA27CA3C">
+<!ENTITY dsCCJadeiteShields						"0xDA27CA20">
+<!ENTITY itCCJadeiteS1Deflector					"0xDA27CA21">
+<!ENTITY itCCJadeiteS2Deflector					"0xDA27CA22">
+<!ENTITY itCCJadeiteS4Deflector					"0xDA27CA23">
+<!ENTITY itCCJadeiteS8Deflector					"0xDA27CA24">
+<!ENTITY itCCJadeiteS20Deflector				"0xDA27CA25">
+<!ENTITY itCCJadeiteS30Deflector				"0xDA27CA26">
+<!ENTITY itCCJadeiteS50Deflector				"0xDA27CA27">
+<!ENTITY itCCJadeiteS100Deflector				"0xDA27CA28">
+<!ENTITY itCCJadeiteS120Deflector				"0xDA27CA29">
+<!ENTITY itCCJadeiteS150Deflector				"0xDA27CA2A">
+<!ENTITY itCCJadeiteS260Deflector				"0xDA27CA2B">
+<!ENTITY itCCJadeiteS400Deflector				"0xDA27CA2C">
 
 
 	<!-- Solar Devices -->
@@ -723,9 +727,10 @@
 <!ENTITY itCCUraniumAssembly					"0xDA27CD09">
 <!ENTITY ovCCUraniumWasteCheck					"0xDA27CD0A">
 <!ENTITY itCCXenotiteAssembly					"0xDA27CD0B">
-<!ENTITY itCCPteracniumAssembly					"0xDA27CD0C">
-<!ENTITY itCCHadronVacuumModule					"0xDA27CD0D">
-<!ENTITY itCCZeroPointCrystal					"0xDA27CD0E">
+<!ENTITY itCCHeliotropeAssembly					"0xDA27CD0C">
+<!ENTITY itCCPteracniumAssembly					"0xDA27CD0D">
+<!ENTITY itCCHadronVacuumModule					"0xDA27CD0E">
+<!ENTITY itCCZeroPointCrystal					"0xDA27CD0F">
 
 <!ENTITY itCCSolarPanel							"0xDA27CD11">
 <!ENTITY itCCCabbagiumCatalyst					"0xDA27CD12">
@@ -748,6 +753,12 @@
 <!ENTITY vtCCMicrosaurScannerPower				"0xDA27CD34">
 <!ENTITY itCCAdvMicrosaurCondemnationPod		"0xDA27CD35">
 <!ENTITY vtCCAdvMicrosaurScannerPower			"0xDA27CD36">
+
+<!ENTITY dsCCUseReplacementCoil					"0xDA27CD40">
+<!ENTITY itCCGen1EmitterCoils					"0xDA27CD41">
+<!ENTITY itCCGen2EmitterCoils					"0xDA27CD42">
+<!ENTITY itCCGen3EmitterCoils					"0xDA27CD43">
+<!ENTITY itCCGen4EmitterCoils					"0xDA27CD44">
 
 
 
@@ -885,8 +896,8 @@
 <TranscendenceLibrary UNID="&unidCCCabbageCorpLibrary;" 
 		Name=			"Cabbage Corp Library" 
 		release=		"1"
-		version=		"0.7.4.3"
-		apiVersion=		"27"
+		version=		"0.7.5.0"
+		apiVersion=		"28"
 		credits=		"Arkheias"
 		coverImageID=	"&rsCCCabbageCorpCover;"
 >
@@ -1054,6 +1065,7 @@ vt			= 	(virtual) Item Code
 	<Module fileName="Modules\Stations\CCStations_Factory.xml"/>
 	<Module fileName="Modules\Stations\CCStations_Outpost.xml"/>
 	<Module fileName="Modules\Stations\CCStations_FuelDepot.xml"/>
+	<Module fileName="Modules\Stations\CCStations_School.xml"/>
 	
 	<!-- Weapons -->
 	<Module fileName="Modules\Weapons\CCWeapons.xml"/>

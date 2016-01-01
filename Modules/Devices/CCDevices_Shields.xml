@@ -5,7 +5,7 @@
 							<!-- Quick-Regen Shields -->						
 <!-- ======================================================================= -->
 
-	<!-- Napa S1 Deflector -->
+	<!-- Napa S1 Deflector -->	;	regenerates in 5 seconds after collapse
 	
 	<ItemType UNID="&itCCNapaS1Deflector;"
 			name=				"Napa S1 deflector"
@@ -38,7 +38,7 @@
 		</StaticData>
 	</ItemType>
 
-	<!-- Napa S2 Deflector -->
+	<!-- Napa S2 Deflector -->	;	regenerates in 6 seconds after collapse
 	
 	<ItemType UNID="&itCCNapaS2Deflector;"
 			name=				"Napa S2 deflector"
@@ -71,7 +71,7 @@
 		</StaticData>
 	</ItemType>
 
-	<!-- Napa S4 Deflector -->
+	<!-- Napa S4 Deflector -->	;	regenerates in 6.67 seconds after collapse
 	
 	<ItemType UNID="&itCCNapaS4Deflector;"
 			name=				"Napa S4 deflector"
@@ -104,7 +104,7 @@
 		</StaticData>
 	</ItemType>
 	
-	<!-- Napa S8 Deflector -->
+	<!-- Napa S8 Deflector -->	;	regenerates in 5.56 seconds after collapse
 	
 	<ItemType UNID="&itCCNapaS8Deflector;"
 			name=				"Napa S8 deflector"
@@ -137,7 +137,7 @@
 		</StaticData>
 	</ItemType>
 	
-	<!-- Napa S20 Deflector -->
+	<!-- Napa S20 Deflector -->	;	regenerates in 5 seconds after collapse
 	
 	<ItemType UNID="&itCCNapaS20Deflector;"
 			name=				"Napa S20 deflector"
@@ -170,7 +170,7 @@
 		</StaticData>
 	</ItemType>
 	
-	<!-- Napa S30 Deflector -->
+	<!-- Napa S30 Deflector -->	;	regenerates in 5.33 seconds after collapse
 	
 	<ItemType UNID="&itCCNapaS30Deflector;"
 			name=				"Napa S30 Deflector"
@@ -203,7 +203,7 @@
 		</StaticData>
 	</ItemType>
 	
-	<!-- Napa S50 Deflector -->
+	<!-- Napa S50 Deflector -->	;	regenerates in 4.76 seconds after collapse
 	
 	<ItemType UNID="&itCCNapaS50Deflector;"
 			name=				"Napa S50 Deflector"
@@ -236,7 +236,7 @@
 		</StaticData>
 	</ItemType>
 	
-	<!-- Napa S100 Deflector -->
+	<!-- Napa S100 Deflector -->	;	regenerates in 4 seconds after collapse
 	
 	<ItemType UNID="&itCCNapaS100Deflector;"
 			name=				"Napa S100 Deflector"
@@ -269,7 +269,7 @@
 		</StaticData>
 	</ItemType>
 	
-	<!-- Napa S120 Deflector -->
+	<!-- Napa S120 Deflector -->	;	regenerates in 3.75 seconds after collapse
 	
 	<ItemType UNID="&itCCNapaS120Deflector;"
 			name=				"Napa S120 shield deflector"
@@ -302,7 +302,7 @@
 		</StaticData>
 	</ItemType>
 
-	<!-- Napa S150 Deflector -->
+	<!-- Napa S150 Deflector -->	;	regenerates in 3.6 seconds after collapse
 	
 	<ItemType UNID="&itCCNapaS150Deflector;"
 			name=				"Napa S150 Deflector"
@@ -335,7 +335,7 @@
 		</StaticData>
 	</ItemType>
 
-	<!-- Napa S260 Deflector -->
+	<!-- Napa S260 Deflector -->	;	regenerates in 3.69 seconds after collapse
 	
 	<ItemType UNID="&itCCNapaS260Deflector;"
 			name=				"Napa S260 Deflector"
@@ -368,7 +368,7 @@
 		</StaticData>
 	</ItemType>
 	
-	<!-- Napa S400 Deflector -->
+	<!-- Napa S400 Deflector -->	;	regenerates in 3.53 seconds after collapse
 
 	<ItemType UNID="&itCCNapaS400Deflector;"
 			name=				"Napa S400 deflector"
@@ -399,442 +399,6 @@
 		<StaticData>
 			<CCItemUse>&dsCCNapaShields;</CCItemUse>
 		</StaticData>
-	</ItemType>
-
-<!-- ======================================================================= -->
-						<!-- External-Napa Shields -->							
-<!-- ======================================================================= -->
-	
-	<!-- External-Napa S1 Deflector -->
-	
-	<ItemType UNID="&itCCAuxNapaS1Deflector;"
-			name=				"External-Napa S1 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"2"
-			frequency=			"notrandom"
-			
-			value=				"1100"
-			mass=				"2000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"20"
-				regen=				"24"
-				depletionDelay=		"300"
-				powerUse=			"20"
-
-				HPBonusPerCharge=	"10"
-				powerBonusPerCharge="10"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- External-Napa S2 Deflector -->
-	
-	<ItemType UNID="&itCCAuxNapaS2Deflector;"
-			name=				"External-Napa S2 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"3"
-			frequency=			"veryrare"
-			
-			value=				"1500"
-			mass=				"2500"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"30"
-				regen=				"30"
-				depletionDelay=		"300"
-				powerUse=			"30"
-
-				HPBonusPerCharge=	"15"
-				powerBonusPerCharge="15"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-
-	<!-- External-Napa S4 Deflector -->
-	
-	<ItemType UNID="&itCCAuxNapaS4Deflector;"
-			name=				"External-Napa S4 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"4"
-			frequency=			"veryrare"
-			
-			value=				"3000"
-			mass=				"2500"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"40"
-				regen=				"36"
-				depletionDelay=		"300"
-				powerUse=			"60"
-
-				HPBonusPerCharge=	"20"
-				powerBonusPerCharge="30"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- External-Napa S8 Deflector -->
-	
-	<ItemType UNID="&itCCAuxNapaS8Deflector;"
-			name=				"External-Napa S8 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"5"
-			frequency=			"veryrare"
-			
-			value=				"6000"
-			mass=				"4000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"50"
-				regen=				"54"
-				depletionDelay=		"300"
-				powerUse=			"120"
-
-				HPBonusPerCharge=	"25"
-				powerBonusPerCharge="60"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- External-Napa S20 Deflector -->
-	
-	<ItemType UNID="&itCCAuxNapaS20Deflector;"
-			name=				"External-Napa S20 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"6"
-			frequency=			"veryrare"
-			
-			value=				"12000"
-			mass=				"4000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"60"
-				regen=				"72"
-				depletionDelay=		"300"
-				powerUse=			"300"
-
-				HPBonusPerCharge=	"30"
-				powerBonusPerCharge="150"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- External-Napa S30 Deflector -->
-	
-	<ItemType UNID="&itCCAuxNapaS30Deflector;"
-			name=				"External-Napa S30 Deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"7"
-			frequency=			"veryrare"
-			
-			value=				"24000"
-			mass=				"6500"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"80"
-				regen=				"90"
-				depletionDelay=		"300"
-				powerUse=			"450"
-
-				HPBonusPerCharge=	"40"
-				powerBonusPerCharge="225"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- External-Napa S50 Deflector -->
-	
-	<ItemType UNID="&itCCAuxNapaS50Deflector;"
-			name=				"External-Napa S50 Deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"8"
-			frequency=			"veryrare"
-			
-			value=				"48000"
-			mass=				"6500"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"100"
-				regen=				"126"
-				depletionDelay=		"300"
-				powerUse=			"750"
-
-				HPBonusPerCharge=	"50"
-				powerBonusPerCharge="375"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- External-Napa S100 Deflector -->
-	
-	<ItemType UNID="&itCCAuxNapaS100Deflector;"
-			name=				"External-Napa S100 Deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"9"
-			frequency=			"veryrare"
-			
-			value=				"100000"
-			mass=				"8000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"120"
-				regen=				"180"
-				depletionDelay=		"300"
-				powerUse=			"1500"
-
-				HPBonusPerCharge=	"60"
-				powerBonusPerCharge="750"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- External-Napa S120 Deflector -->
-	
-	<ItemType UNID="&itCCAuxNapaS120Deflector;"
-			name=				"External-Napa S120 Deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"10"
-			frequency=			"veryrare"
-			
-			value=				"180000"
-			mass=				"9000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"150"
-				regen=				"240"
-				depletionDelay=		"300"
-				powerUse=			"1800"
-
-				HPBonusPerCharge=	"75"
-				powerBonusPerCharge="900"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-
-	<!-- External-Napa S150 Deflector -->
-	
-	<ItemType UNID="&itCCAuxNapaS150Deflector;"
-			name=				"External-Napa S150 Deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"11"
-			frequency=			"veryrare"
-			
-			value=				"380000"
-			mass=				"10000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"180"
-				regen=				"300"
-				depletionDelay=		"300"
-				powerUse=			"2300"
-
-				HPBonusPerCharge=	"90"
-				powerBonusPerCharge="1150"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-
-	<!-- External-Napa S260 Deflector -->
-	
-	<ItemType UNID="&itCCAuxNapaS260Deflector;"
-			name=				"External-Napa S260 Deflector"
-			attributes=			"alien, cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"12"
-			frequency=			"veryrare"
-			
-			value=				"750000"
-			mass=				"11000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"240"
-				regen=				"390"
-				depletionDelay=		"300"
-				powerUse=			"3900"
-
-				HPBonusPerCharge=	"120"
-				powerBonusPerCharge="1950"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- External-Napa S400 Deflector -->
-
-	<ItemType UNID="&itCCAuxNapaS400Deflector;"
-			name=				"External-Napa S400 deflector"
-			attributes=			"alien, cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"13"
-			frequency=			"veryrare"
-			
-			value=				"1500000"
-			mass=				"13000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model has been modified for installation to the exterior of a ship. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"300"
-				regen=				"510"
-				depletionDelay=		"300"
-				powerUse=			"6000"
-
-				HPBonusPerCharge=	"150"
-				powerBonusPerCharge="3000"
-
-				deviceSlots=		"0"
-				external=			"true"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>	
 	</ItemType>
 	
 <!-- ======================================================================= -->

@@ -50,8 +50,9 @@
 			
 			<Device deviceID="&itCCOmniSavoyM1Howitzer;"/>
 			<Device deviceID="&itCCDualNapaS1Deflector;"/>
-			<Device deviceID="&itCCDualSiva5MWReactor;"/>
-			<Device deviceID="&itCCAuxSiva5MWReactor;"/>
+			<Device deviceID="&itCCStoma5ShieldEmitterArray;"/>
+			<Device deviceID="&itCCDualSiva8MWReactor;"/>
+			<Device deviceID="&itCCAuxSiva8MWReactor;"/>
 			<Device deviceID="&itCCDualPlasmaDrive;"/>
 		</Devices>
 
@@ -206,8 +207,8 @@
 					(	
 						(&itCCOmniSavoyM1Howitzer;				1)
 						(&itCCDualNapaS1Deflector;				1)
-						(&itCCDualSiva5MWReactor;				1)
-						(&itCCAuxSiva5MWReactor;				1)
+						(&itCCDualSiva8MWReactor;				1)
+						(&itCCAuxSiva8MWReactor;				1)
 						(&itCCDualPlasmaDrive;					1)
 						(&itCCLightStealthPlating;				12)
 					)
@@ -255,7 +256,7 @@
 						(&scCCOboroGurumaEridani;
 							(	(&itCCOmniSavoyM2Howitzer;				1)
 								(&itCCDualNapaS2Deflector;				1)
-								(&itCCDualSiva17MWReactor;				1)
+								(&itCCDualSiva20MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
 								(&itCC2xStealthArmor;					12)
 							)
@@ -269,7 +270,7 @@
 						(&scCCOboroGurumaEridani;
 							(	(&itCCSavoyM1Howitzer;					1)
 								(&itCCDualNapaS1Deflector;				1)
-								(&itCCDualSiva5MWReactor;				1)
+								(&itCCDualSiva8MWReactor;				1)
 								(&itCCDualPlasmaDrive;					1)
 								(&itCCLightStealthPlating;				12)
 							)
@@ -282,7 +283,7 @@
 						(&scCCOboroGurumaEridani;
 							(	(&itCCOmniSavoyM4Howitzer;				1)
 								(&itCCDualNapaS4Deflector;				1)
-								(&itCCDualSiva31MWReactor;				1)
+								(&itCCDualSiva40MWReactor;				1)
 								(&itCCDualTritiumDrive;					1)
 								(&itCC4xStealthArmor;					12)
 							)
@@ -296,7 +297,7 @@
 						(&scCCOboroGurumaEridani;
 							(	(&itCCOmniSavoyM8Howitzer;				1)
 								(&itCCDualNapaS8Deflector;				1)
-								(&itCCDualSiva57MWReactor;				1)
+								(&itCCDualSiva80MWReactor;				1)
 								(&itCCDualChronimiumPropulsionUpgrade;	1)
 								(&itCC2xHardenedStealthArmor;			12)
 							)

@@ -70,7 +70,7 @@ other			n-?
 				<Group chance="30">
 					<Device item="&itCCOmniSavoyM8Howitzer;"/>						;110
 					<Device item="&itCCNapaS8Deflector;" charges="4"/>				;240
-					<Device item="&itCCMarkIICabbageEnhancer;"/>					;100
+					<Device item="&itCCStomaS4ShieldEmitterArray;"/>				;40
 				</Group>
 				
 				<Group chance="25">
@@ -86,8 +86,8 @@ other			n-?
 			</Table>
 
 			<Table>
-				<Device chance="80" item="&itCCSiva57MWReactor;"></Device>
-				<Device chance="20" item="&itCCDualSiva31MWReactor;"></Device>
+				<Device chance="80" item="&itCCSiva80MWReactor;"></Device>
+				<Device chance="20" item="&itCCDualSiva40MWReactor;"></Device>
 			</Table>
 
 			<Table>
@@ -199,9 +199,9 @@ other			n-?
 		<Devices>
 			<Device deviceID="&itCCBlacklightLauncher;"/>
 			<Device deviceID="&itCCJadeiteS100Deflector;" charges="6"/>
-			<Device deviceID="&itCCRadSiva1000MWReactor;"/>
+			<Device deviceID="&itCCSiva1200MWReactor;"/>
 			<Device deviceID="&itCCB6MissileDefenseSystem;"/>
-			<Device deviceID="&itCCMarkIVCabbageEnhancer;"/>
+			<Device deviceID="&itCCStomaS20ShieldEmitterArray;"/>
 			
 			<Device deviceID="&itCCBiohybridSolarDynamo;"/>
 			<Device deviceID="&itCCAutoRepairVI;"/>
@@ -295,12 +295,10 @@ other			n-?
 			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="300" posRadius="105"/>
 			
 			<Device deviceID="&itCCDualNapaS150Deflector;" charges="4"/>
-			<Device deviceID="&itCCRadSiva10000MWReactor;"/>
+			<Device deviceID="&itCCDualSiva8000MWReactor;"/>
 			<Device deviceID="&itCCBussardCollector;"/>
-			<Device deviceID="&itCCMarkVCabbageEnhancer;"/>
+			<Device deviceID="&itCCStomaS120ShieldEmitterArray;"/>
 			
-			<Device deviceID="&vtDamageControlParty;"/>
-			<Device deviceID="&vtDamageControlParty;"/>
 			<Device deviceID="&vtDamageControlParty;"/>
 			<Device deviceID="&vtDamageControlParty;"/>
 			<Device deviceID="&vtDamageControlParty;"/>

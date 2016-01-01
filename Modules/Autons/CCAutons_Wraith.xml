@@ -64,7 +64,7 @@ KaleMIRepeater		1		300		1000	uncommon
 
 		<AISettings
 			fireRateAdj=		"15"
-			fireAccuracy=		"85"
+			fireAccuracy=		"75"
 			perception=			"4"
 			noAttackOnThreat=	"true"
 			noNavPaths=			"true"
@@ -143,7 +143,7 @@ ArmorRepairDevice	4		3500	2000	rare
 
 		<AISettings
 			fireRateAdj=		"15"
-			fireAccuracy=		"90"
+			fireAccuracy=		"80"
 			perception=			"4"
 			noAttackOnThreat=	"true"
 			noNavPaths=			"true"
@@ -229,7 +229,7 @@ ShieldEnhancement	3		650		1		uncommon
 
 		<AISettings
 			fireRateAdj=		"15"
-			fireAccuracy=		"95"
+			fireAccuracy=		"85"
 			perception=			"4"
 			noAttackOnThreat=	"true"
 			noNavPaths=			"true"
@@ -309,7 +309,7 @@ ShieldEnhancement	3		650		1		uncommon
 
 		<AISettings
 			fireRateAdj=		"15"
-			fireAccuracy=		"95"
+			fireAccuracy=		"90"
 			perception=			"4"
 			noAttackOnThreat=	"true"
 			noNavPaths=			"true"

@@ -39,7 +39,7 @@
 								"Your "
 								(itmGetName gItem 1)
 								" is currently set to mode "
-								(itmGetCharges gItem)
+								 (itmGetProperty gItem 'charges)
 								"\n\n"
 								"What mode would you like to it to be set to?"
 							)
@@ -51,31 +51,31 @@
 				<Actions>
 					<Action name="0) Set strength to 100%" key="0" default="1">
 						(block Nil
-							(objSetItemCharges gSource gItem 0)
+							(objSetItemProperty gSource gItem 'charges 0)
 							(scrExitScreen gSource)
 						)
 					</Action>
 					<Action name="1) Set strength to 150%" key="1">
 						(block Nil
-							(objSetItemCharges gSource gItem 1)
+							(objSetItemProperty gSource gItem 'charges 1)
 							(scrExitScreen gSource)
 						)
 					</Action>
 					<Action name="2) Set strength to 200%" key="2">
 						(block Nil
-							(objSetItemCharges gSource gItem 2)
+							(objSetItemProperty gSource gItem 'charges 2)
 							(scrExitScreen gSource)
 						)
 					</Action>
 					<Action name="3) Set strength to 250%" key="3">
 						(block Nil
-							(objSetItemCharges gSource gItem 3)
+							(objSetItemProperty gSource gItem 'charges 3)
 							(scrExitScreen gSource)
 						)
 					</Action>
 					<Action name="4) Set strength to 300%" key="4">
 						(block Nil
-							(objSetItemCharges gSource gItem 4)
+							(objSetItemProperty gSource gItem 'charges 4)
 							(scrExitScreen gSource)
 						)
 					</Action>
@@ -134,7 +134,7 @@
 								"Your "
 								(itmGetName gItem 1)
 								" is currently set to mode "
-								(itmGetCharges gItem)
+								 (itmGetProperty gItem 'charges)
 								"\n\n"
 								"What mode would you like to it to be set to?"
 							)
@@ -146,43 +146,43 @@
 				<Actions>
 					<Action name="0) Set strength to 100%" key="0" default="1">
 						(block Nil
-							(objSetItemCharges gSource gItem 0)
+							(objSetItemProperty gSource gItem 'charges 0)
 							(scrExitScreen gSource)
 						)
 					</Action>
 					<Action name="1) Set strength to 133%" key="1">
 						(block Nil
-							(objSetItemCharges gSource gItem 1)
+							(objSetItemProperty gSource gItem 'charges 1)
 							(scrExitScreen gSource)
 						)
 					</Action>
 					<Action name="2) Set strength to 167%" key="2">
 						(block Nil
-							(objSetItemCharges gSource gItem 2)
+							(objSetItemProperty gSource gItem 'charges 2)
 							(scrExitScreen gSource)
 						)
 					</Action>
 					<Action name="3) Set strength to 200%" key="3">
 						(block Nil
-							(objSetItemCharges gSource gItem 3)
+							(objSetItemProperty gSource gItem 'charges 3)
 							(scrExitScreen gSource)
 						)
 					</Action>
 					<Action name="4) Set strength to 233%" key="4">
 						(block Nil
-							(objSetItemCharges gSource gItem 4)
+							(objSetItemProperty gSource gItem 'charges 4)
 							(scrExitScreen gSource)
 						)
 					</Action>
 					<Action name="5) Set strength to 267%" key="5">
 						(block Nil
-							(objSetItemCharges gSource gItem 5)
+							(objSetItemProperty gSource gItem 'charges 5)
 							(scrExitScreen gSource)
 						)
 					</Action>
 					<Action name="6) Set strength to 300%" key="6">
 						(block Nil
-							(objSetItemCharges gSource gItem 6)
+							(objSetItemProperty gSource gItem 'charges 6)
 							(scrExitScreen gSource)
 						)
 					</Action>
@@ -353,8 +353,11 @@
 					(scrSetDesc gScreen 
 						(cat
 							"This "
-							(if gItem (itmGetName gItem 0) "damaged helium regolith refinery")
-							" is nonfunctional."
+							(if gItem 
+								(itmGetName gItem 0)
+								"damaged refinery"
+							)
+							" is non-functional."
 						)
 					)
 				</OnPaneInit>
@@ -365,6 +368,234 @@
 					</Action>
 				</Actions>
 			</NoUse>
+		</Panes>
+	</DockScreen>
+	
+	<!-- Use Replacement Coil -->
+	
+	<DockScreen UNID="&dsCCUseReplacementCoil;"
+			name=				"Ship's Interior"
+			type=				"itemPicker"
+			>
+
+		<ListOptions
+			dataFrom=	"player"
+			list=		"d +emitterCoil"
+			/>
+			
+		<InitialPane>
+			(switch
+				(not (itmIsKnown gItem))
+					"AmmoBox"
+					
+				"Default"
+			)
+		</InitialPane>
+			
+		<Panes>
+			<Default>
+				<OnPaneInit>
+					(block (desc skillLevel)
+						; Init skill level
+						(setq skillLevel (typGetGlobalData &dsCCUseReplacementCoil; "skillLevel"))
+						(if (not skillLevel)
+							(block Nil
+								(typSetGlobalData &dsCCUseReplacementCoil; "skillLevel" 0)
+								(setq skillLevel 0)
+							)
+						)
+							
+						; Intro, if necessary
+						
+						(setq desc (objFireItemEvent gSource gItem "GetRepairItemIntro"))
+						(if (not desc)
+							(setq desc "")
+						)
+						
+						; Report the number of replacement coils remaining
+						(setq desc
+							(cat
+								desc
+								"Replacement coils Left: "
+								(itmGetProperty gItem 'charges)
+								"\n\n"
+							)
+						)
+							
+						; Figure out if the device we've selected needs repairing
+						
+						(setq aItemToRepair (scrGetItem gScreen))
+						(setq chargesLeft (itmGetProperty gItem 'charges))
+						(setq gCanRepair Nil)
+						
+						(Switch
+						
+							; If no more charges then we cannot repair anything
+							(eq chargesLeft 0)
+								(setq desc
+									(cat
+										desc
+										"Unfortunately, "
+										(itmGetName gItem 0x40)
+										" does not contain any more replacement coils."
+									)
+								)
+							
+							; Nothing to repair
+							(not aItemToRepair)
+								(setq desc
+									(cat
+										desc
+										"There are no items here that could be repaired."
+									)
+								)
+								
+							(block Nil
+								(setq gCanRepair (itmGetProperty aItemToRepair 'damaged))
+								(setq desc (cat desc "The ship's " (itmGetName aItemToRepair 0)))
+									
+								; See if we can repair it with the given item and describe its condition
+								
+								(if gCanRepair
+									(block Nil
+										(if (not (objFireItemEvent gSource gItem "CanRepairItem"))
+											(block Nil
+												(setq desc 
+													(cat 
+														desc
+														" cannot be repaired with the "
+														(itmGetName gItem 0)
+														"."
+													)
+												)
+												(setq gCanRepair Nil)
+											)
+											(setq desc 
+												(cat 
+													desc
+													" could possibly be repaired with the "
+													(itmGetName gItem 0)
+													"."
+												)
+											)
+										)
+									)
+									(setq desc (cat desc " is not damaged."))
+								)
+								
+								; Skill level
+								(switch
+									(not gCanRepair)
+										Nil
+										
+									(ls skillLevel 2)
+										(setq desc 
+											(cat 
+												desc
+												"\n\n"
+												"You do not have much experience repairing emitter coils."
+											)
+										)
+											
+									(ls skillLevel 5)
+										(setq desc 
+											(cat 
+												desc
+												"\n\n"
+												"You have some experience repairing emitter coils."
+											)
+										)
+											
+									(ls skillLevel 10)
+										(setq desc 
+											(cat 
+												desc
+												"\n\n"
+												"You are proficient at repairing emitter coils."
+											)
+										)
+											
+									(setq desc 
+										(cat 
+											desc
+											"\n\n"
+											"You are an expert at repairing emitter coils."
+										)
+									)
+								)
+							)
+						)
+						
+						(scrSetDesc gScreen desc)
+						
+						; Disable actions if we cannot repair
+						(scrEnableAction gScreen 0 gCanRepair)
+					)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Repair this Device" key="R" default="1">
+						(block Nil
+							(setq gTitle (CCUseReplacementCoil gItem aItemToRepair))
+							(scrShowPane gScreen "Done")
+						)
+					</Action>
+
+					<Action name="Cancel" cancel="1" key="C">
+						<Exit/>
+					</Action>
+					
+				</Actions>
+			</Default>
+			
+			<AmmoBox>
+				<OnPaneInit>
+					(block (desc type)
+						(setq aItemToRepair (scrGetItem gScreen))
+						(if (itmIsKnown gItem)
+							(setq desc (cat "You can use the " (itmGetName gItem 0) " for"))
+							(setq desc (cat "The box seems to contain several superconducting coils. You could try using it to repair"))
+							)
+
+						(scrSetDesc gScreen (cat desc " your ship's " (itmGetName aItemToRepair) "."))
+					)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Use on this Device" key="U" default="1">
+						(block Nil
+							; Identify the item [we do this first because we want to refer
+							; to the barrel by its real name]
+							(itmSetKnown gItem)
+
+							; Repair
+							(setq gTitle (useRepairArmor gItem gArmorSegment))
+							(setq gTitle (cat
+								(itmGetStaticData gItem "BarrelDesc") "\n\n"
+								gTitle
+								))
+								
+							(scrShowPane gScreen "Done")
+							)
+					</Action>
+
+					<Action name="Cancel" key="C" cancel="1">
+						<Exit/>
+					</Action>
+				</Actions>
+			</AmmoBox>
+
+			<Done 
+					desc="=gTitle"
+					noListNavigation="true"
+					>
+
+				<Actions>
+					<Action name="Done" cancel="1" default="1" key="D">
+						<Exit/>
+					</Action>
+				</Actions>
+			</Done>
 		</Panes>
 	</DockScreen>
 
@@ -430,9 +661,16 @@
 								(scrSetDesc gScreen desc)
 							)
 						)
-						(scrEnableAction gScreen 0 (if (eq (itmGetStaticData gItem 'CCItemSwap) Nil) Nil True))
-						(scrEnableAction gScreen 1 (if (or (itmMatches gItem "a;") (itmIsDamaged gItem)) Nil True))
-						(scrEnableAction gScreen 2 (if (eq (itmGetStaticData gItem 'CCItemUse) Nil) Nil True))
+						(scrEnableAction gScreen 0 (not (eq (itmGetStaticData gItem 'CCItemSwap) Nil)))
+						(scrEnableAction gScreen 1 (if (or 
+															(itmMatches gItem "a;")
+															(itmGetProperty item 'damaged)
+														)
+															Nil
+															True
+													)
+						)
+						(scrEnableAction gScreen 2 (not (eq (itmGetStaticData gItem 'CCItemUse) Nil)))
 					)
 				</OnPaneInit>
 				<Actions>

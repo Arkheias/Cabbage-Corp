@@ -253,7 +253,7 @@
 
 		<Devices>
 			<Device deviceID="&itCCKaleM72Repeater;"  omnidirectional="true"/>
-			<Device deviceID="&itCCMarkIVCabbageEnhancer;"/>
+			<Device deviceID="&itCCMarkIVRepeaterHeatSink;"/>
 		</Devices>
 
 		<Language>
