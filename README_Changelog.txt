@@ -2,6 +2,14 @@
 Changelog
 ---------
 
+v0.7.5.1 (2016-01-02)
+---------------------------------
+-----Items-----
+Added a new icon for the series of shield emitter arrays.
+
+
+
+
 v0.7.5.0 (2016-01-01)
 ---------------------------------
 -----General Changes-----
