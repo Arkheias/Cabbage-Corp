@@ -19,8 +19,8 @@ RegeneratingNanos	4		350		1000	rare
 
 	<ShipClass UNID="&scCCMarkIShadeAuton;"
 			manufacturer=		"Cabbage Corp"
-			class=				"mark I Shade Auton"
-			type=				""
+			class=				"mark I Shade"
+			type=				"auton"
 
 			attributes=			"auton, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -139,8 +139,8 @@ ArmorRepairDevice	4		3500	2000	rare
 
 	<ShipClass UNID="&scCCMarkIIShadeAuton;"
 			manufacturer=		"Cabbage Corp"
-			class=				"mark II Shade Auton"
-			type=				""
+			class=				"mark II Shade"
+			type=				"auton"
 
 			attributes=			"auton, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -266,8 +266,8 @@ ShieldEnhancement	3		650		1		uncommon
 
 	<ShipClass UNID="&scCCMarkIIIShadeAuton;"
 			manufacturer=		"Cabbage Corp"
-			class=				"mark III Shade Auton"
-			type=				""
+			class=				"mark III Shade"
+			type=				"auton"
 
 			attributes=			"auton, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -397,8 +397,8 @@ ShieldEnhancement	3		650		1		uncommon
 
 	<ShipClass UNID="&scCCMarkIVShadeAuton;"
 			manufacturer=		"Cabbage Corp"
-			class=				"mark IV Shade Auton"
-			type=				""
+			class=				"mark IV Shade"
+			type=				"auton"
 
 			attributes=			"auton, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -526,8 +526,8 @@ ShieldEnhancement	7		25000	10		common
 
 	<ShipClass UNID="&scCCMarkVShadeAuton;"
 			manufacturer=		"Cabbage Corp"
-			class=				"mark V Shade Auton"
-			type=				""
+			class=				"mark V Shade"
+			type=				"auton"
 
 			attributes=			"auton, genericClass"
 			inherit=			"&baStdAutonBase;"

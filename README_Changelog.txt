@@ -2,8 +2,12 @@
 Changelog
 ---------
 
-v0.7.5.1 (2016-01-02)
+v0.7.5.1 (2016-01-04)
 ---------------------------------
+-----Ships-----
+Added "auton" to the type value for all autons.
+Removed "auton" from the class value for all autons.
+
 -----Items-----
 Added a new icon for the series of shield emitter arrays.
 
