@@ -7,6 +7,7 @@ v0.7.5.1 (2016-01-04)
 -----Ships-----
 Added "auton" to the type value for all autons.
 Removed "auton" from the class value for all autons.
+Removed howitzers from the types of weapons that lampyridae-class ships offer a swivel mount for.
 
 -----Items-----
 Added a new icon for the series of shield emitter arrays.

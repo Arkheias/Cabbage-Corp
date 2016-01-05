@@ -47,8 +47,8 @@
         </Armor>
 		
 		<Devices>
-			<DeviceSlot criteria="w +cabbageCorp" minFireArc="345" maxFireArc="15"	posAngle="0" posRadius="52" posZ="2"/>
-			<DeviceSlot criteria="w -cabbageCorp"									posAngle="0" posRadius="52" posZ="2"/>
+			<DeviceSlot criteria="w +cabbageCorp; -howitzer" minFireArc="345" maxFireArc="15"	posAngle="0" posRadius="52" posZ="2"/>
+			<DeviceSlot criteria="w -cabbageCorp"	posAngle="0" posRadius="52" posZ="2"/>
 			
 			<Device deviceID="&itCCKaleM3Repeater;"/>
 			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
@@ -107,7 +107,7 @@
 		</Effects>
 			
 		<PlayerSettings
-			desc=               "Cabbage Corp began production of the Lampyridae series in 2361. The Lampyridae-class has a primary weapon hardpoint with a swivel mount compatible with all Cabbage Corp weapons, two secondary weapon hard-points, eight armor segments, and a base crew capacity of sixteen.  (Starts in Tau Ceti)"
+			desc=               "Cabbage Corp began production of the Lampyridae series in 2361. The Lampyridae-class has a primary weapon hardpoint with a swivel mount compatible with all light Cabbage Corp weapons, two secondary weapon hard-points, eight armor segments, and a base crew capacity of sixteen.  (Starts in Tau Ceti)"
 			largeimage=         "&rsCCLargeLampyridae;"
 			initialClass=       "true"
             startingCredits=    "10d18+120"
