@@ -467,100 +467,108 @@
 					
 					(if needsRepair
 						(block (damagedCoils replacementCoils failureChance skillLevel)
-							(setq skillLevel (typGetGlobalData &dsCCUseReplacementCoil; "skillLevel"))
-							(setq damagedCoils
-								(subtract
-									(random 1 20)
-									(divide (subtract skillLevel 10) 2)
-								)
-							)
-							(setq replacementCoils (itmGetProperty theItem 'charges))
-
-							; As skill level increases, the player's failure chance decreases
-							(setq failureChance (divide (multiply damagedCoils 20) replacementCoils))
-
-							; Do the repairs
-							(if	(leq (random 1 100) failureChance)
-								(if (eq (random 1 2) 1)
+							
+							; Check if unknown item is compatible
+							(if (not (objFireItemEvent gPlayership theItem "CanRepairItem"))
+								(setq resultText "The superconducting coils were not compatible with your device, but you were able to successfully identify them.")
 								
-									; Sometimes we fail and destroy the device
-									(block Nil
-										(if (itmIsInstalled theDevice)
-											(shpRemoveDevice gPlayerShip theDevice)
-										)
-										(objRemoveItem gPlayerShip (itmSetProperty theDevice 'installed Nil) 1)
-										(setq resultText "Unfortunately, your attempt to repair the device has effectively destroyed it.")
-									)
-										
-									; Sometimes we fail and destroy the replacement coils
-									(block Nil
-										(objRemoveItem gPlayerShip theItem 1)
-										(setq resultText "Unfortunately, your attempt to repair the device was unsuccessful and the replacement coils were ruined in the process.")
-										(setq replacementCoils 0)
-									)
-								)
 								(block Nil
-									(shpRepairItem gPlayerShip theDevice)
-									(setq resultText
-										(cat 
-											"You have successfully repaired the damaged device"
+									(setq skillLevel (typGetGlobalData &dsCCUseReplacementCoil; "skillLevel"))
+									(setq damagedCoils
+										(subtract
+											(random 1 20)
+											(divide (subtract skillLevel 10) 2)
 										)
 									)
-									
-									; Use up the item
-									(if (and
-											(geq skillLevel (random 1 12))
-											(gr replacementCoils damagedCoils)
-										)
+									(setq replacementCoils (itmGetProperty theItem 'charges))
+
+									; As skill level increases, the player's failure chance decreases
+									(setq failureChance (divide (multiply damagedCoils 20) replacementCoils))
+
+									; Do the repairs
+									(if	(leq (random 1 100) failureChance)
+										(if (eq (random 1 2) 1)
 										
-										; Item is not entirely used up
+											; Sometimes we fail and destroy the device
+											(block Nil
+												(if (itmIsInstalled theDevice)
+													(shpRemoveDevice gPlayerShip theDevice)
+												)
+												(objRemoveItem gPlayerShip (itmSetProperty theDevice 'installed Nil) 1)
+												(setq resultText "Unfortunately, your attempt to repair the device has effectively destroyed it.")
+											)
+												
+											; Sometimes we fail and destroy the replacement coils
+											(block Nil
+												(objRemoveItem gPlayerShip theItem 1)
+												(setq resultText "Unfortunately, your attempt to repair the device was unsuccessful and the replacement coils were ruined in the process.")
+												(setq replacementCoils 0)
+											)
+										)
 										(block Nil
-											(if (gr damagedCoils 0)
+											(shpRepairItem gPlayerShip theDevice)
+											(setq resultText
+												(cat 
+													"You have successfully repaired the damaged device"
+												)
+											)
+											
+											; Use up the item
+											(if (and
+													(geq skillLevel (random 1 12))
+													(gr replacementCoils damagedCoils)
+												)
+												
+												; Item is not entirely used up
 												(block Nil
-													(objSetItemProperty gPlayership theItem 'charges (subtract replacementCoils damagedCoils))
-													(setq resultText
-														(cat
-															resultText
-															" using "
-															damagedCoils
-															" of the replacement coils."
-															"\n\n"
-															"Replacement coils Left: "
-															(subtract replacementCoils damagedCoils)
+													(if (gr damagedCoils 0)
+														(block Nil
+															(objSetItemProperty gPlayership theItem 'charges (subtract replacementCoils damagedCoils))
+															(setq resultText
+																(cat
+																	resultText
+																	" using "
+																	damagedCoils
+																	" of the replacement coils."
+																	"\n\n"
+																	"Replacement coils Left: "
+																	(subtract replacementCoils damagedCoils)
+																)
+															)
+														)
+														(setq resultText
+															(cat
+																resultText
+																", by power cycling it."
+																"\n\n"
+																"Replacement coils Left: "
+																(itmGetProperty theItem 'charges)
+															)
 														)
 													)
 												)
-												(setq resultText
-													(cat
-														resultText
-														", by power cycling it."
-														"\n\n"
-														"Replacement coils Left: "
-														(itmGetProperty theItem 'charges)
+												
+												; Item is entirely used up
+												(block Nil
+													(objSetItemProperty gPlayership theItem 'charges 0)
+													(setq resultText
+														(cat
+															resultText
+															" using all of the replacement coils."
+														)
 													)
 												)
 											)
-										)
-										
-										; Item is entirely used up
-										(block Nil
-											(objSetItemProperty gPlayership theItem 'charges 0)
+												
+											; Skill level increases
+											(typIncGlobalData &dsCCUseReplacementCoil; "skillLevel" 1)
 											(setq resultText
 												(cat
 													resultText
-													" using all of the replacement coils."
+													"\n\n"
+													"You feel more experienced at repairing emitter coils."
 												)
 											)
-										)
-									)
-										
-									; Skill level increases
-									(typIncGlobalData &dsCCUseReplacementCoil; "skillLevel" 1)
-									(setq resultText
-										(cat
-											resultText
-											"\n\n"
-											"You feel more experienced at repairing emitter coils."
 										)
 									)
 								)
