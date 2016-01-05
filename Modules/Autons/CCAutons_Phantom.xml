@@ -17,8 +17,8 @@ LightStealthPlating	2		130		2500	rare
 
 	<ShipClass UNID="&scCCMarkIPhantomAuton;"
 			manufacturer=		"CabbageCorp"
-			class=				"mark I Phantom auton"
-			type=				""
+			class=				"mark I Phantom"
+			type=				"auton"
 
 			attributes=			"auton, cabbageCorp, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -252,8 +252,8 @@ MIIPhantomAuton		4		1500	4000	uncommon
 
 	<ShipClass UNID="&scCCMarkIIPhantomAuton;"
 			manufacturer=		"CabbageCorp"
-			class=				"mark II Phantom auton"
-			type=				""
+			class=				"mark II Phantom"
+			type=				"auton"
 
 			attributes=			"auton, cabbageCorp, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -488,8 +488,8 @@ MIDRADISModule		5		6000	4000	veryrare
 
 	<ShipClass UNID="&scCCMarkIIIPhantomAuton;"
 			manufacturer=		"CabbageCorp"
-			class=				"mark III Phantom auton"
-			type=				""
+			class=				"mark III Phantom"
+			type=				"auton"
 
 			attributes=			"auton, cabbageCorp, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -728,8 +728,8 @@ MIIDRADISModule		7		21000	4500	veryrare
 
 	<ShipClass UNID="&scCCMarkIVPhantomAuton;"
 			manufacturer=		"CabbageCorp"
-			class=				"mark IV Phantom auton"
-			type=				""
+			class=				"mark IV Phantom"
+			type=				"auton"
 
 			attributes=			"auton, cabbageCorp, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -968,8 +968,8 @@ MIIIDRADISModule	9		80000	4500	veryrare
 
 	<ShipClass UNID="&scCCMarkVPhantomAuton;"
 			manufacturer=		"CabbageCorp"
-			class=				"mark V Phantom auton"
-			type=				""
+			class=				"mark V Phantom"
+			type=				"auton"
 
 			attributes=			"auton, cabbageCorp, genericClass"
 			inherit=			"&baStdAutonBase;"

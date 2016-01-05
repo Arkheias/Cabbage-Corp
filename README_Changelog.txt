@@ -2,6 +2,23 @@
 Changelog
 ---------
 
+v0.7.5.1 (2016-01-04)
+---------------------------------
+-----Ships-----
+Added "auton" to the type value for all autons.
+Removed "auton" from the class value for all autons.
+Removed howitzers from the types of weapons that lampyridae-class ships offer a swivel mount for.
+
+-----Items-----
+Added a new icon for the series of shield emitter arrays.
+Changed name of "Cabbage Corp system map access ROM" to "system map access ROM".
+Changed the "system map access ROM" to charge more credits for higher level systems.
+Fixed bug in which the Cabbage Corp system map access ROM charged the wrong amount of credits.
+Fixed bug in which replacement emitter coils did not work unless identified first.
+
+
+
+
 v0.7.5.0 (2016-01-01)
 ---------------------------------
 -----General Changes-----

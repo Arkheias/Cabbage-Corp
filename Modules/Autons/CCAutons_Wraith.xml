@@ -18,8 +18,8 @@ KaleMIRepeater		1		300		1000	uncommon
 
 	<ShipClass UNID="&scCCMarkIWraithAuton;"
 			manufacturer=		"CabbageCorp"
-			class=				"mark I Wraith auton"
-			type=				""
+			class=				"mark I Wraith"
+			type=				"auton"
 
 			attributes=			"auton, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -95,8 +95,8 @@ ArmorRepairDevice	4		3500	2000	rare
 
 	<ShipClass UNID="&scCCMarkIIWraithAuton;"
 			manufacturer=		"CabbageCorp"
-			class=				"mark II Wraith auton"
-			type=				""
+			class=				"mark II Wraith"
+			type=				"auton"
 
 			attributes=			"auton, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -177,8 +177,8 @@ ShieldEnhancement	3		650		1		uncommon
 
 	<ShipClass UNID="&scCCMarkIIIWraithAuton;"
 			manufacturer=		"CabbageCorp"
-			class=				"mark III Wraith auton"
-			type=				""
+			class=				"mark III Wraith"
+			type=				"auton"
 
 			attributes=			"auton, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -257,8 +257,8 @@ ShieldEnhancement	3		650		1		uncommon
 
 	<ShipClass UNID="&scCCMarkIVWraithAuton;"
 			manufacturer=		"CabbageCorp"
-			class=				"mark IV Wraith auton"
-			type=				""
+			class=				"mark IV Wraith"
+			type=				"auton"
 
 			attributes=			"auton, genericClass"
 			inherit=			"&baStdAutonBase;"
@@ -337,8 +337,8 @@ ShieldEnhancement	7		25000	10		common
 
 	<ShipClass UNID="&scCCMarkVWraithAuton;"
 			manufacturer=		"CabbageCorp"
-			class=				"mark V Wraith auton"
-			type=				""
+			class=				"mark V Wraith"
+			type=				"auton"
 
 			attributes=			"auton, genericClass"
 			inherit=			"&baStdAutonBase;"

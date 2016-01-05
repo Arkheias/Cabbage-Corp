@@ -910,7 +910,7 @@
 <TranscendenceLibrary UNID="&unidCCCabbageCorporateCommandLibrary;" 
 		Name=			"Cabbage Corporate Command Library" 
 		release=		"1"
-		version=		"0.7.5.0"
+		version=		"0.7.5.1"
 		apiVersion=		"28"
 		credits=		"Arkheias"
 		coverImageID=	"&rsCCCabbageCorpCover;"

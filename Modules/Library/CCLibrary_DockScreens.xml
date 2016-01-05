@@ -384,11 +384,9 @@
 			/>
 			
 		<InitialPane>
-			(switch
-				(not (itmIsKnown gItem))
-					"AmmoBox"
-					
+			(if (itmIsKnown gItem)
 				"Default"
+				"CoilBox"
 			)
 		</InitialPane>
 			
@@ -473,7 +471,7 @@
 											(setq desc 
 												(cat 
 													desc
-													" could possibly be repaired with the "
+													" could be repaired with the "
 													(itmGetName gItem 0)
 													"."
 												)
@@ -548,42 +546,109 @@
 				</Actions>
 			</Default>
 			
-			<AmmoBox>
+			<CoilBox>
 				<OnPaneInit>
-					(block (desc type)
+					(block (desc)
+							
+						; Figure out if the device we've selected needs repairing
 						(setq aItemToRepair (scrGetItem gScreen))
-						(if (itmIsKnown gItem)
-							(setq desc (cat "You can use the " (itmGetName gItem 0) " for"))
-							(setq desc (cat "The box seems to contain several superconducting coils. You could try using it to repair"))
+						(setq chargesLeft (itmGetProperty gItem 'charges))
+						(setq gCanRepair Nil)
+						
+						; Intro, if necessary
+						(Switch
+						
+							; If no more charges then we cannot repair anything
+							(ls chargesLeft 1)
+								(setq desc
+									(cat
+										"This box seems like it was designed to carry superconducting coils."
+										"Unfortunately, it is currently empty."
+									)
+								)
+							
+							(eq chargesLeft 1)
+								(setq desc
+									(cat
+										"This box contains what seems to be some kind of superconducting coil."
+									)
+								)
+							
+							(setq desc
+								(cat
+									"This box seems to carry several superconducting coils."
+								)
 							)
-
-						(scrSetDesc gScreen (cat desc " your ship's " (itmGetName aItemToRepair) "."))
+						)
+						(if (gr chargesLeft 0)
+							(switch
+								; Nothing to repair
+								(not aItemToRepair)
+									(setq desc
+										(cat
+											desc
+											"\n\n"
+											"Unfortunately, you have nothing to use it with."
+										)
+									)
+									
+								(block Nil
+									(setq gCanRepair (itmGetProperty aItemToRepair 'damaged))
+									(setq desc
+										(cat
+											desc
+											"\n\n"
+											"The ship's "
+											(itmGetName aItemToRepair 0)
+										)
+									)
+										
+									; See if we can repair it with the given item and describe its condition
+									
+									(if gCanRepair
+										(setq desc 
+											(cat 
+												desc
+												" could possibly be repaired with these coils."
+											)
+										)
+										(setq desc
+											(cat
+												desc
+												" is not damaged."
+											)
+										)
+									)
+								)
+							)
+						)
+						
+						(scrSetDesc gScreen desc)
+						
+						; Disable actions if we cannot repair
+						(scrEnableAction gScreen 0 gCanRepair)
 					)
 				</OnPaneInit>
 
 				<Actions>
-					<Action name="Use on this Device" key="U" default="1">
+					<Action name="Try to repair this Device" key="T" default="1">
 						(block Nil
 							; Identify the item [we do this first because we want to refer
-							; to the barrel by its real name]
+							; to the item by its real name]
 							(itmSetKnown gItem)
 
 							; Repair
-							(setq gTitle (useRepairArmor gItem gArmorSegment))
-							(setq gTitle (cat
-								(itmGetStaticData gItem "BarrelDesc") "\n\n"
-								gTitle
-								))
-								
+							(setq gTitle (CCUseReplacementCoil gItem aItemToRepair))
+							
 							(scrShowPane gScreen "Done")
-							)
+						)
 					</Action>
 
 					<Action name="Cancel" key="C" cancel="1">
 						<Exit/>
 					</Action>
 				</Actions>
-			</AmmoBox>
+			</CoilBox>
 
 			<Done 
 					desc="=gTitle"
