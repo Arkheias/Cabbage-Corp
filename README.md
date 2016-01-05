@@ -9,7 +9,7 @@ Version |  Information
 Game Version: | 1.6.3
 API Version: | 28
 Mod Version: | v0.7.5.1
-Release Date: | 2016-01-02
+Release Date: | 2016-01-04
 Authors: | Arkheias
 License: | CC BY-NC-SA (Creative Commons Attribution-NonCommercial-ShareAlike)
 
