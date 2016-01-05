@@ -366,7 +366,7 @@
 	<!-- Cabbage Corp System Map ROM -->
 
 	<ItemType UNID="&itCCSystemMapROM;"
-			name=				"Cabbage Corp system map access ROM"
+			name=				"system map access ROM"
 			attributes=			"cabbageCorp, info"
 			
 			level=				"3"
@@ -419,7 +419,7 @@
 						; Identify the item
 						(itmSetKnown gItem)
 						
-						(objCharge gSource 200)
+						(objCharge gSource mappingCost)
 						(objSendMessage gPlayerShip Nil
 							(cat
 								"You have been charged "

@@ -11,6 +11,9 @@ Removed howitzers from the types of weapons that lampyridae-class ships offer a 
 
 -----Items-----
 Added a new icon for the series of shield emitter arrays.
+Changed name of "Cabbage Corp system map access ROM" to "system map access ROM".
+Changed the "system map access ROM" to charge more credits for higher level systems.
+Fixed bug in which the Cabbage Corp system map access ROM charged the wrong amount of credits.
 
 
 
