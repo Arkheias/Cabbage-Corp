@@ -673,7 +673,7 @@
 	<DockScreen	UNID="&scCCCabbageModification;"
 			name=				"Cabbage Corp Toolset"
 			desc=				"Equipment Configuration"
-			type=				"itemPicker"
+			type=				"customItemPicker"
 			backgroundID=		"&rsItemListScreen;"
 			nestedScreen=		"true"
 	>
@@ -685,7 +685,8 @@
 				; aPane is the pane being shown
 				; Action only appears if any item with the Cabbage attribute is installed.
 				(if (and
-						(objGetItems gPlayership "*I +cabbageCorp")		;if the list exists then it counts as returning a non Nil value which here is effectively a true value
+						; If the following list exists then it counts as True
+						(filter (objGetItems gPlayership "dI +cabbageCorp") theItem (itmIsKnown theItem))
 						(eq aScreenUNID &dsShipInterior;)
 						(eq aPane "Default")
 					)
@@ -702,10 +703,10 @@
 			</OnGlobalPaneInit>
 		</Events>
 
-		<ListOptions
-			dataFrom=	"player"
-			list=		"*I +cabbageCorp"
-		/>
+		
+		<List>
+			(filter (objGetItems gPlayership "dI +cabbageCorp") theItem (itmIsKnown theItem))
+		</List>
 
 		<Panes>
 			<Default
@@ -727,13 +728,11 @@
 							)
 						)
 						(scrEnableAction gScreen 0 (not (eq (itmGetStaticData gItem 'CCItemSwap) Nil)))
-						(scrEnableAction gScreen 1 (if (or 
-															(itmMatches gItem "a;")
-															(itmGetProperty item 'damaged)
-														)
-															Nil
-															True
-													)
+						(scrEnableAction gScreen 1
+							(and
+								(itmMatches gItem "dN +cabbageCorp;")	; Undamaged Cabbage Corp device
+								(ls (itmIsEnhanced gItem) 0x8000)		; Not enhanced with a negative effect
+							)
 						)
 						(scrEnableAction gScreen 2 (not (eq (itmGetStaticData gItem 'CCItemUse) Nil)))
 					)
@@ -744,6 +743,7 @@
 						(block Nil
 							(setq gItem (scrGetItem gScreen))
 							(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+							(scrExitScreen gScreen)
 						)
 					</Action>
 					
@@ -768,22 +768,31 @@
 			</Default>
 			
 			<CCFactoryReset
-							desc=	"Are you sure you wish to reset your Cabbage Corp device's software to its factory state?  This operation cannot be undone and all enhancements currently on the device will be lost.  This does not affect enhancements provided by other devices and cannot be used to undo physical alterations or damage to either armor or devices.">
+							desc=	"Are you sure you wish to reset your Cabbage Corp device's software to its factory state?  This operation cannot be undone and all current enhancements to the device will be lost.  This will not fix physical alterations or damage to the device and it may compound existing problems.">
 
 				<Actions>
 					<Action name="Apply Factory Reset" key="A">
-						(block Nil
+						(block (currentFuel newDevice baseFuel)
 							(setq gItem (scrGetItem gScreen))
-							(setq gCurrentFuel (shpGetFuelLeft gSource))
-							(setq gBaseDevice (itmGetType gItem))
+							(setq currentFuel (shpGetFuelLeft gSource))
+							(setq newDevice (itmCreate (itmGetType gItem) 1))
 							
 							(shpRemoveDevice gSource gItem)
-							(objRemoveItem gSource (itmCreate gBaseDevice 1))
-							(objAddItem gSource (itmCreate gBaseDevice 1))
-							(shpInstallDevice gSource (itmCreate gBaseDevice 1))
+							(objRemoveItem gSource (itmSetProperty gItem 'installed Nil) 1)
 							
-							(setq gBaseFuel (shpGetFuelLeft gSource))
-							(shpConsumeFuel gSource (multiply (subtract gCurrentFuel gBaseFuel) -1))
+							(if (eq (random 1 20) 1)
+								(if (itmGetProperty gItem 'disrupted)
+									(setq newDevice (itmSetProperty newDevice 'damaged True))
+									(setq newDevice (itmSetProperty newDevice 'disrupted True))
+								)
+							)
+							
+							(objAddItem gSource newDevice)
+							(shpInstallDevice gSource newDevice)
+							
+							(setq baseFuel (shpGetFuelLeft gSource))
+							(shpConsumeFuel gSource (multiply (subtract currentFuel baseFuel) -1))
+							(scrExitScreen gScreen)
 						)
 					</Action>
 					
