@@ -2,6 +2,14 @@
 Changelog
 ---------
 
+v0.7.5.2 (2016-01-09)
+---------------------------------
+-----Globals-----
+Changed the CCDeviceExchange global function to work for all types of enhanced devices.
+
+
+
+
 v0.7.5.1 (2016-01-04)
 ---------------------------------
 -----Ships-----
