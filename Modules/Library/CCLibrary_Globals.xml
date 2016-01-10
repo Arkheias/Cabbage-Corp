@@ -26,28 +26,23 @@
 	(block Nil
 		(setq CCDeviceExchange 
 			(lambda (gReplacement)
-				(block Nil
-					(setq gCurrentFuel (shpGetFuelLeft gSource))
-					(setq gEnhancement (itmIsEnhanced gItem))
-					(setq gInitialDevice (itmGetType gItem))
+				(block (currentFuel newDevice baseFuel)
+					(setq currentFuel (shpGetFuelLeft gSource))
+					(setq newDevice (itmCreate gReplacement 1))
+					
+					(if (itmIsEnhanced gItem)
+						(setq newDevice (itmSetEnhanced newDevice (itmIsEnhanced gItem)))
+					)
 					
 					(shpRemoveDevice gSource gItem)
-					(objAddItem gSource (itmCreate gReplacement 1))
-					(shpInstallDevice gSource (itmCreate gReplacement 1))
-					(objRemoveItem gSource (itmCreate gInitialDevice 1))
+					(objRemoveItem gSource (itmSetProperty gItem 'installed Nil) 1)
 					
-					(if (not (eq gEnhancement Nil))
-						(block Nil
-							(switch
-								(itmMatches gInitialDevice "r")
-									(objEnumItems gSource "rI" theItem (shpEnhanceItem gSource theItem))
-								(itmMatches gInitialDevice "v")
-									(objEnumItems gSource "vI" theItem (shpEnhanceItem gSource theItem))
-							)
-						)
-					)
-					(setq gBaseFuel (shpGetFuelLeft gSource))
-					(shpConsumeFuel gSource (multiply (subtract gCurrentFuel gBaseFuel) -1))
+					
+					(objAddItem gSource newDevice)
+					(shpInstallDevice gSource newDevice)
+					
+					(setq baseFuel (shpGetFuelLeft gSource))
+					(shpConsumeFuel gSource (multiply (subtract currentFuel baseFuel) -1))
 				)
 			)
 		)

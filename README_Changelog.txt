@@ -2,6 +2,23 @@
 Changelog
 ---------
 
+v0.7.5.2 (2016-01-09)
+---------------------------------
+-----Globals-----
+Changed the CCDeviceExchange global function to work for all types of enhanced devices.
+
+-----Dockscreens-----
+Changed the Cabbage Corp Toolset "Factory Reset" action to be more robust.
+Changed the Cabbage Corp Toolset "Factory Reset" action to have a small chance of damaging/disrupting devices.
+Changed the Cabbage Corp Toolset "Modify" action to exit the screen after completing.
+Changed the Cabbage Corp Toolset "Factory Reset" action to exit the screen after completing.
+Fixed bug where the Cabbage Corp Toolset "Factory Reset" action relied on separate item filters.
+Fixed bug where the Cabbage Corp Toolset appeared for unidentified items.
+Removed armor items from the Cabbage Corp Toolset list.
+
+
+
+
 v0.7.5.1 (2016-01-04)
 ---------------------------------
 -----Ships-----
