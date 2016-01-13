@@ -1,6 +1,12 @@
 ---------
 Changelog
 ---------
+v0.7.5.3 (2016-01-13)
+---------------------------------
+-----Resources-----
+Changed the resource CCPraclarushHangar.jpg to a derivative of two public domain images to simplify copyright labelling.
+
+
 
 v0.7.5.2 (2016-01-09)
 ---------------------------------
