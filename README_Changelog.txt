@@ -6,6 +6,8 @@ v0.7.5.3 (2016-01-16)
 -----Resources-----
 Changed the resource CCPraclarushHangar.jpg to a derivative of two public domain images to simplify copyright labelling.
 Changed commenting in global functions.
+Changed all repairer devices to have a lower upper limit for the levels of the armors that they can repair.
+Changed all repairer device descriptions.
 Changed descriptions of all advanced ore refineries.
 Changed description of Cabbages to adjust for global warming.
 
