@@ -30,6 +30,7 @@
 					(setq currentFuel (shpGetFuelLeft gSource))
 					(setq newDevice (itmCreate gReplacement 1))
 					
+					; copy enhancements from old itemstruct to new itemstruct
 					(if (itmIsEnhanced gItem)
 						(setq newDevice (itmSetEnhanced newDevice (itmIsEnhanced gItem)))
 					)
@@ -37,10 +38,11 @@
 					(shpRemoveDevice gSource gItem)
 					(objRemoveItem gSource (itmSetProperty gItem 'installed Nil) 1)
 					
-					
 					(objAddItem gSource newDevice)
 					(shpInstallDevice gSource newDevice)
 					
+					; reactors refuel upon installation, this removes the extra fuel
+					; the replacement reactor should have the same fuel capacity as the original
 					(setq baseFuel (shpGetFuelLeft gSource))
 					(shpConsumeFuel gSource (multiply (subtract currentFuel baseFuel) -1))
 				)
@@ -54,14 +56,15 @@
 					(objRemoveItem gSource gBaseItem 
 						(multiply itemCount 
 							(block Nil
+								; for every item in the CCBuyAndModifyArray
 								(for counter 0	(subtract (count (itmGetStaticData gBaseItem 'CCBuyAndModify)) 1)
-								;	for every item in the CCBuyAndModifyArray
 								
+									; if the current item from the array matches the item being purchased then
 									(if (eq (itmGetType (scrGetItem gScreen)) (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'Product))
-									;	if the current item from the array matches the item being purchased then
 									
+									
+										; set the itemMult equal to the base items required to build the new item
 										(setq itemMult (@ (@ (itmGetStaticData gBaseItem 'CCBuyAndModify) counter) 'count))
-										;	set the itemMult equal to the base items required to build the new item
 									)
 								)
 								itemMult
@@ -77,8 +80,10 @@
 			(lambda (spaceObj)
 				(block (reactor)
 					(setq reactor (@ (objGetItems spaceObj "rI") 0))
+					
+					; if no reactor is installed, default fuel efficienc defaults to 15
 					(If (not reactor)
-						15		;The game defaults to 15 if no reactor is installed, so I didn't bother with a calculation for that case
+						15
 						(typGetDataField (itmGetType reactor) "fuelEfficiency")
 					)
 				)
@@ -90,6 +95,8 @@
 				(block (reactor)
 					(setq reactor (@ (objGetItems spaceObj "rI") 0))
 					(shpConsumeFuel gSource (divide (multiply fuelAmount 100)
+					
+						; if no reactor is installed, default fuel efficienc defaults to 15
 						(If (not reactor)
 							15
 							(typGetDataField (itmGetType reactor) "fuelEfficiency")
@@ -427,20 +434,17 @@
 					)
 					
 					(switch
-						;	If there are no detectable Microsaurs here, nothing to do
-						
+						; If there are no detectable Microsaurs here, nothing to do
 						(not (setq oreFound (objGetItems asteroidObj oreCriteria)))
 							Nil
 							
-						;	If we already have this overlay, then nothing to do
-						
+						; If we already have this overlay, then nothing to do
 						(filter (objGetOverlays asteroidObj) theOverlay
 								(= (objGetOverlayType asteroidObj theOverlay) &ovCCMicrosaurDetectionCount;)
 								)
 							Nil
 							
-						;	Otherwise, create an overlay
-						
+						; Otherwise, create an overlay
 						(block (
 							overlayID
 							)
@@ -448,8 +452,7 @@
 							(setq overlayID (objAddOverlay asteroidObj &ovCCMicrosaurDetectionCount;))
 							(objSetOverlayProperty asteroidObj overlayID 'counterLabel (typTranslate &ovCCMicrosaurDetectionCount; 'msgScanning))
 							
-							;	Return TRUE to indicate that we found ore
-							
+							; Return TRUE to indicate that we found ore
 							True
 							)
 						)

@@ -5,6 +5,7 @@ v0.7.5.3 (2016-01-16)
 ---------------------------------
 -----Resources-----
 Changed the resource CCPraclarushHangar.jpg to a derivative of two public domain images to simplify copyright labelling.
+Changed commenting in global functions.
 Changed descriptions of all advanced ore refineries.
 Changed description of Cabbages to adjust for global warming.
 
