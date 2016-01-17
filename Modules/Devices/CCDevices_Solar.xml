@@ -21,7 +21,7 @@
 			value=				"290"
 			mass=				"1100"
 
-			description=		"A solar panel array converts sunlight into energy usable by a ship's reactor. Most people consider it a crime to let a solar panel array get this dirty. Provides up to 3MW of power."
+			description=		"This solar panel array converts sunlight into 3MW of energy usable by a ship's reactor. Most people consider it a crime to let a solar panel array get this dirty."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -44,7 +44,7 @@
 			value=				"600"
 			mass=				"1000"
 			  
-			description=		"A solar panel array converts sunlight into energy usable by a ship's reactor. Provides up to 6MW of power."
+			description=		"This solar panel array converts sunlight into 6MW of energy usable by a ship's reactor."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -67,13 +67,13 @@
 			value=				"1200"
 			mass=				"1750"
 
-			description=		"A solar concentrator converts non-ionizing solar radiation into energy usable by a ship's reactor. Most people consider it a crime to let a solar panel get this dirty. Provides up to 11MW of power."
+			description=		"This solar concentrator converts non-ionizing solar radiation into 10MW of energy usable by a ship's reactor. Most people consider it a crime to let solar panels get this dirty."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<SolarDevice
-			refuel=				"110"
+			refuel=				"100"
 		/>
 
 	</ItemType>
@@ -90,13 +90,13 @@
 			value=				"2500"
 			mass=				"1500"
 
-			description=		"A solar concentrator converts non-ionizing solar radiation into energy usable by a ship's reactor. Provides up to 21MW of power."
+			description=		"This solar concentrator converts non-ionizing solar radiation into 20MW of energy usable by a ship's reactor."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<SolarDevice
-			refuel=				"210"
+			refuel=				"200"
 		/>
 
 	</ItemType>
@@ -113,13 +113,13 @@
 			value=				"5200"
 			mass=				"4500"
 
-			description=		"This device converts sunlight into fuel to power a dynamo which can produce up to 38MW of power to recharge the ship's reactor. Most people consider it a crime to let a solar panel get this dirty"
+			description=		"This device converts sunlight into fuel for a dynamo which can produce up to 40MW of power for a ship's reactor. Most people consider it a crime to let solar panels get this dirty."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<SolarDevice
-			refuel=				"380"
+			refuel=				"400"
 		/>
 
 	</ItemType>
@@ -136,13 +136,13 @@
 			value=				"11000"
 			mass=				"4000"
 
-			description=		"This device converts sunlight into fuel to power a dynamo which can produce up to 71MW of power to recharge the ship's reactor."
+			description=		"This device converts sunlight into fuel for a dynamo which can produce up to 70MW of power to recharge a ship's reactor."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<SolarDevice
-			refuel=				"710"
+			refuel=				"700"
 		/>
 
 	</ItemType>
@@ -159,7 +159,7 @@
 			value=				"45000"
 			mass=				"6000"
 
-			description=		"This device collects hydrogen expelled from nearby stars to fuel a backup reactor which can produce up to 200MW of power to recharge the ship's primary reactor."
+			description=		"This device collects hydrogen expelled from nearby stars to fuel a backup reactor which can produce up to 200MW of power to recharge a ship's primary reactor."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -182,7 +182,7 @@
 			value=				"400000"
 			mass=				"12000"
 
-			description=		"This device utilizes a re-purposed shield to collect interstellar deuterium to fuel a backup reactor which can produce up to 1200 MW of power to recharge the ship's primary reactor.  Enhances installed shields by 25%."
+			description=		"This device utilizes a re-purposed shield to collect interstellar deuterium to fuel a backup reactor which can produce up to 1.2GW of power to recharge the ship's primary reactor.  Enhances installed shields by 25%."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>

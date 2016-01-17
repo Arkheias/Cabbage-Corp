@@ -8,8 +8,8 @@ Version |  Information
 ------------: | :------------ 
 Game Version: | 1.6.3
 API Version: | 28
-Mod Version: | v0.7.5.2
-Release Date: | 2016-01-09
+Mod Version: | v0.7.5.3
+Release Date: | 2016-01-16
 Authors: | Arkheias
 License: | CC BY-NC-SA (Creative Commons Attribution-NonCommercial-ShareAlike)
 
@@ -22,11 +22,14 @@ For over 350 years, Cabbage Corp has been providing consumers with  the second-h
 
 ####Our Products
 
-* Over 200 weapons
-  * 15 Howitzers with dual, omni, and side-mounted configurations
-  * 12 Mining lances with dual, omni, side-mounted and scanning configurations
-  * 15 Repeaters with dual, omni and side-mounted configurations
-  * Various non-standard weapons
+* Over 200 new weapons
+  * Mining Lances - Continuous-beam energy weapons, attenuated for mining.
+    * Can be optionally equipped with asteroid scanners that detect ores within their range.
+  * Kale Repeaters - Matter weapons that fire their shots in bursts, in a spread pattern.
+  * Savoy Howitzers - Howitzers modified for rapid-fire at the cost of an increased risk of overheating.
+  * Various other non-standard weapons
+  * **All standard Cabbage Corp weapons can be optionally modified into dual, omnidirectional, or external versions if a dealership has adequate supply.**
+    * **Additional modifications may be available for specific weapon types.**
 
 * Over 30 shields generators that can be modified with the included Cabbage Corp Toolset to increase their strength.
   * Napa shields have a fast rate of regeneration and can recover quickly after a total shield collapse
