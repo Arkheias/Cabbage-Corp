@@ -8,7 +8,7 @@ Version |  Information
 ------------: | :------------ 
 Game Version: | 1.6.3
 API Version: | 28
-Mod Version: | v0.7.5.3
+Mod Version: | v0.7.5.4
 Release Date: | 2016-01-16
 Authors: | Arkheias
 License: | CC BY-NC-SA (Creative Commons Attribution-NonCommercial-ShareAlike)
