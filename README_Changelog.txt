@@ -1,17 +1,29 @@
 ---------
 Changelog
 ---------
+
+v0.7.5.4 (2016-01-16)
+---------------------------------
+-----General Changes-----
+Fixed changelog.
+
+
+
 v0.7.5.3 (2016-01-16)
 ---------------------------------
------Resources-----
-Changed the resource CCPraclarushHangar.jpg to a derivative of two public domain images to simplify copyright labelling.
+-----Globals-----
 Changed commenting in global functions.
+
+-----Items-----
 Changed all repairer devices to have a lower upper limit for the levels of the armors that they can repair.
 Changed all repairer device descriptions.
 Changed the outputs of most solar devices.
 Changed all solar device descriptions.
 Changed descriptions of all advanced ore refineries.
 Changed description of Cabbages to adjust for global warming.
+
+-----Resources-----
+Changed the resource CCPraclarushHangar.jpg to a derivative of two public domain images to simplify copyright labelling.
 
 
 
