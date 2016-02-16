@@ -336,18 +336,18 @@
 			name=				"diplomatic identification chip"
 			level=				"5"
 			value=				"50000"
-			mass=				"0"
+			mass=				"1"
 			frequency=			"veryrare"
 			attributes=			"cabbageCorp, cabbagePolitical, cabbageDiplomaticID, ID, majorItem, smugglersHold, specialty"
 
-			description=		"This identification chip, once installed, will mark you as a diplomatic envoy of Cabbage Corp, thereby exempting your ship from being searched for contraband.  You can still be executed for crimes against humanity though."
+			description=		"This identification chip, once installed, will mark you as a diplomatic envoy of Cabbage Corp, thereby exempting your ship from being searched for contraband and from various other laws. You may still be executed for crimes against humanity though."
 
 			sortName=			"identification chip, diplomatic"
 	>
 
 		<Image imageID="&rsCCItems;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
 
-		<Invoke>
+		<Invoke uninstalledOnly="True">
 			(intAutoInstall gSource gItem)
 		</Invoke>
 		
