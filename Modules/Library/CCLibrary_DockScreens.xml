@@ -49,7 +49,7 @@
 				</OnPaneInit>
 				
 				<Actions>
-					<Action name="0) Set strength to 100%" key="0" default="1">
+					<Action name="0) Set strength to 100%" default="1" key="0">
 						(block Nil
 							(objSetItemProperty gSource gItem 'charges 0)
 							(scrExitScreen gSource)
@@ -80,7 +80,7 @@
 						)
 					</Action>
 
-					<Action name="Cancel" key="C" cancel="1">
+					<Action name="Cancel" cancel="1" key="C">
 						(scrExitScreen gSource)
 					</Action>
 				</Actions>
@@ -99,7 +99,7 @@
 				</OnPaneInit>
 
 				<Actions>
-					<Action name="Done" key="D" default="1" cancel="1">
+					<Action name="Done" cancel="1" default="1" key="D">
 						(scrExitScreen gSource)
 					</Action>
 				</Actions>
@@ -144,7 +144,7 @@
 				</OnPaneInit>
 				
 				<Actions>
-					<Action name="0) Set strength to 100%" key="0" default="1">
+					<Action name="0) Set strength to 100%" default="1" key="0" >
 						(block Nil
 							(objSetItemProperty gSource gItem 'charges 0)
 							(scrExitScreen gSource)
@@ -187,7 +187,7 @@
 						)
 					</Action>
 
-					<Action name="Cancel" key="C" cancel="1">
+					<Action name="Cancel" cancel="1" key="C" >
 						(scrExitScreen gSource)
 					</Action>
 				</Actions>
@@ -206,7 +206,7 @@
 				</OnPaneInit>
 
 				<Actions>
-					<Action name="Done" key="D" default="1" cancel="1">
+					<Action name="Done" cancel="1" default="1" key="D">
 						(scrExitScreen gSource)
 					</Action>
 				</Actions>
@@ -296,7 +296,7 @@
 
 				<Actions>
 					; Press [Esc] to exit
-					<Action name="Refine ore" key="R" default="1">
+					<Action name="Refine ore" default="1" key="R">
 						(block (theItem theCount)
 							(setq theCount (scrGetCounter gScreen))
                             (setq theLimit
@@ -340,7 +340,7 @@
 						)
 					</Action>
 
-					<Action name="Cancel" key="C" cancel="1">
+					<Action name="Cancel" cancel="1" key="C">
 						(scrExitScreen gScreen 'forceUndock)
 					</Action>
 
@@ -363,7 +363,7 @@
 				</OnPaneInit>
 
 				<Actions>
-					<Action name="Done" key="D" default="1" cancel="1">
+					<Action name="Done" cancel="1" default="1" key="D">
 						(scrExitScreen gScreen 'forceUndock)
 					</Action>
 				</Actions>
@@ -532,7 +532,7 @@
 				</OnPaneInit>
 
 				<Actions>
-					<Action name="Repair this Device" key="R" default="1">
+					<Action name="Repair this Device" default="1" key="R" >
 						(block Nil
 							(setq gTitle (CCUseReplacementCoil gItem aItemToRepair))
 							(scrShowPane gScreen "Done")
@@ -631,7 +631,7 @@
 				</OnPaneInit>
 
 				<Actions>
-					<Action name="Try to repair this Device" key="T" default="1">
+					<Action name="Try to repair this Device" default="1" key="T">
 						(block Nil
 							; Identify the item [we do this first because we want to refer
 							; to the item by its real name]
@@ -644,7 +644,7 @@
 						)
 					</Action>
 
-					<Action name="Cancel" key="C" cancel="1">
+					<Action name="Cancel" cancel="1" key="C">
 						<Exit/>
 					</Action>
 				</Actions>
@@ -727,17 +727,20 @@
 								(scrSetDesc gScreen desc)
 							)
 						)
-						(scrEnableAction gScreen 0 (not (eq (itmGetStaticData gItem 'CCItemSwap) Nil)))
-						(scrEnableAction gScreen 1
+						(scrEnableAction gScreen 0
 							(and
 								(itmMatches gItem "dN +cabbageCorp;")	; Undamaged Cabbage Corp device
 								(ls (itmIsEnhanced gItem) 0x8000)		; Not enhanced with a negative effect
 							)
 						)
+						(scrEnableAction gScreen 1 (not (eq (itmGetStaticData gItem 'CCItemSwap) Nil)))
 						(scrEnableAction gScreen 2 (not (eq (itmGetStaticData gItem 'CCItemUse) Nil)))
 					)
 				</OnPaneInit>
 				<Actions>
+					<Action name="Factory Reset" default="1" key="F">
+						<ShowPane pane="CCFactoryReset"/>
+					</Action>
 					
 					<Action name="Modify" key="M">
 						(block Nil
@@ -745,10 +748,6 @@
 							(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
 							(scrExitScreen gScreen)
 						)
-					</Action>
-					
-					<Action name="Factory Reset" key="F">
-						<ShowPane pane="CCFactoryReset"/>
 					</Action>
 					
 					<Action name="Use Equipment" key="U">
@@ -760,7 +759,7 @@
 					</Action>
 					
 					<Action name="Done" cancel="1" key="D">
-						<Navigate screen="&dsShipInterior;"/>
+						(scrExitScreen gScreen)
 					</Action>
 
 				</Actions>
@@ -771,7 +770,7 @@
 							desc=	"Are you sure you wish to reset your Cabbage Corp device's software to its factory state?  This operation cannot be undone and all current enhancements to the device will be lost.  This will not fix physical alterations or damage to the device and it may compound existing problems.">
 
 				<Actions>
-					<Action name="Apply Factory Reset" key="A">
+					<Action name="Apply Factory Reset" default="1" key="A">
 						(block (currentFuel newDevice baseFuel)
 							(setq gItem (scrGetItem gScreen))
 							(setq currentFuel (shpGetFuelLeft gSource))
@@ -797,7 +796,7 @@
 					</Action>
 					
 					<Action name="Cancel" cancel="1" key="C">
-						<ShowPane pane="Default"/>
+						(scrExitScreen gScreen)
 					</Action>
 
 				</Actions>
@@ -1158,7 +1157,7 @@
 				</OnPaneInit>
 
 				<Actions>
-					<Action id="actionContinue" default="1" cancel="1">
+					<Action id="actionContinue" cancel="1" default="1">
 						(scrShowPane gScreen "Default")
 					</Action>
 				</Actions>
@@ -1259,7 +1258,7 @@
 				</OnPaneInit>
 					
 				<Actions>
-					<Action name="View Special Deal" key="V">
+					<Action name="View Special Deal" default="1" key="V">
 						(block (gType gMasterList gListLevel gSubList gPreItem)
 							(setq gType (modulo (@ (objGetPos gSource) 0) 3))		;Determines the deal based on station location
 							(setq gMasterList (typGetData &svCCCabbageCorp; 'SpecialDeal))
@@ -1690,7 +1689,7 @@
 				</OnPaneInit>
 			
 				<Actions>
-					<Action name="Done" default="1" cancel="1" key="D">
+					<Action name="Done" cancel="1" default="1" key="D">
 						(scrExitScreen gScreen)
 					</Action>
 				</Actions>
@@ -1710,7 +1709,7 @@
 				</OnPaneInit>
 
 				<Actions>
-					<Action name="Pan out" default="1" cancel="1" key="P">
+					<Action name="Pan out" cancel="1" default="1" key="P">
 						(block Nil
 							(plyDestroyed gPlayer (cat "was executed for " (objGetData gPlayerShip "CCCrime")))
 							(scrExitScreen gScreen 'forceUndock)
