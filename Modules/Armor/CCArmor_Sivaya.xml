@@ -164,7 +164,7 @@ idlePowerUse for armor defaults to the same value as powerUse (for backwards com
 		<Armor
 				hitPoints=		"225"
 				
-				repairTech=		"3"
+				repairTech=		"9"
 				repairCostAdj=	"200"
 				installCostAdj=	"400"
 				
@@ -524,7 +524,7 @@ idlePowerUse for armor defaults to the same value as powerUse (for backwards com
 				photoRecharge=	"true"
 				radiationImmune="true"
 				
-				regen=			"55"
+				regen=			"5"
 				powerUse=		"30"
 				idlePowerUse=	"3"
 		/>
