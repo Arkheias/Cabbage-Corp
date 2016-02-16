@@ -2,6 +2,25 @@
 Changelog
 ---------
 
+v0.7.5.5 (2016-02-15)
+---------------------------------
+-----General Changes-----
+Updated for Transcendence v1.6.4.
+Added catfighter and PhaseMacaw to the credits list.
+Removed deprecated information from README files.
+
+-----Dockscreens-----
+Changed various dockscreens to match vanilla Transcendence standards.
+Fixed bug with closing dockscreens after opening "Cabbage Corp Toolset" dockscreen.
+
+-----Items-----
+Changed description of diplomatic identification chip.
+Changed diplomatic identification chip to be usable only when uninstalled.
+Fixed repairTech of advanced Sivaya armor (changed from 3 to 9).
+Fixed regen of 4x-layered hardened Sivaya armor (changed from 55 to 5).
+
+
+
 v0.7.5.4 (2016-01-16)
 ---------------------------------
 -----General Changes-----
@@ -43,7 +62,6 @@ Removed armor items from the Cabbage Corp Toolset list.
 
 
 
-
 v0.7.5.1 (2016-01-04)
 ---------------------------------
 -----Ships-----
@@ -57,7 +75,6 @@ Changed name of "Cabbage Corp system map access ROM" to "system map access ROM".
 Changed the "system map access ROM" to charge more credits for higher level systems.
 Fixed bug in which the Cabbage Corp system map access ROM charged the wrong amount of credits.
 Fixed bug in which replacement emitter coils did not work unless identified first.
-
 
 
 
