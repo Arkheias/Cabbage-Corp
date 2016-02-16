@@ -17,7 +17,7 @@
 			value=				"240"
 			mass=				"1200"
 
-			description=		"This drive was designed with efficiency prioritized over speed.  It utilizes an electric field to accelerate ionized particles to near light speeds to get the most thrust out of its fuel.  Increases max speed to 0.16c."
+			description=		"This drive was designed with efficiency prioritized over speed.  It utilizes an electric field to accelerate ionized particles to near light speeds to get the most thrust out of its fuel."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -50,7 +50,7 @@
 			value=				"450"
 			mass=				"1600"
 
-			description=		"This efficient drive was designed to reduce travel costs for freighters.  It utilizes a magnetic field to induce density waves in a plasma that accelerates the reaction mass to high velocities.  Increases max speed to 0.18c."
+			description=		"This efficient drive was designed to reduce travel costs for freighters.  It utilizes a magnetic field to induce density waves in a plasma that accelerates the reaction mass to high velocities."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -83,7 +83,7 @@
 			value=				"800"
 			mass=				"2000"
 			  
-			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful tritium plasma to increase the thrust of the engines.  Increases max speed to 0.20c."
+			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful tritium plasma to increase the thrust of the engines."
 	>
 
 		<Image imageID="&rsItems1;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
@@ -116,7 +116,7 @@
 			value=				"1500"
 			mass=				"2700"
 
-			description=		"This drive was specifically designed from the ground up to utilize a powerful tritium-plasma mix for propulsion.  Increases max speed to 0.22c."
+			description=		"This drive was specifically designed from the ground up to utilize a powerful tritium-plasma mix for propulsion."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -149,7 +149,7 @@
 			value=				"2800"
 			mass=				"3500"
 			  
-			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful chronimium plasma to greatly increase the thrust of the engines.  Increases max speed to 0.23c."
+			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful chronimium plasma to greatly increase the thrust of the engines."
 			>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -182,7 +182,7 @@
 			value=				"5100"
 			mass=				"4600"
 
-			description=		"This drive was specifically designed from the ground up to utilize a powerful chronimium-plasma mix for propulsion.  Increases max speed to 0.25c."
+			description=		"This drive was specifically designed from the ground up to utilize a powerful chronimium-plasma mix for propulsion."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -215,7 +215,7 @@
 			value=				"9400"
 			mass=				"6000"
 
-			description=		"The cobalt-thorium megadrive is an old military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.27c."
+			description=		"The cobalt-thorium megadrive is an old military starship engine. Like most other military technology, megadrives cannot be used by civilian ships."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -248,7 +248,7 @@
 			value=				"17000"
 			mass=				"8000"
 
-			description=		"The xenotite megadrive is a reliable military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.28c."
+			description=		"The xenotite megadrive is a reliable military starship engine. Like most other military technology, megadrives cannot be used by civilian ships."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -281,7 +281,7 @@
 			value=				"32000"
 			mass=				"10000"
 
-			description=		"The pteracnium megadrive is a recently developed military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.30c."
+			description=		"The pteracnium megadrive is a recently developed military starship engine. Like most other military technology, megadrives cannot be used by civilian ships."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -314,7 +314,7 @@
 			value=				"60000"
 			mass=				"14000"
 			  
-			description=		"This alien device upgrade utilizes powerful zero-point crystals to greatly increase the thrust of engines in both regular drives and megadrives.  Increases max speed to 0.32c."
+			description=		"This alien device upgrade utilizes powerful zero-point crystals to greatly increase the thrust of engines in both regular drives and megadrives."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -347,7 +347,7 @@
 			value=				"100000"
 			mass=				"18000"
 
-			description=		"This alien megadrive appears to have been designed from the ground up to utilize powerful zero-point crystals to amplify its propulsion.  Increases max speed to 0.33c."
+			description=		"This alien megadrive appears to have been designed from the ground up to utilize powerful zero-point crystals to amplify its propulsion."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -382,7 +382,7 @@
 			value=				"400000"
 			mass=				"23000"
 
-			description=		"This alien stardrive appears to utilize an array of built in Bussard collectors to produce enough reaction mass to achieve speeds further approaching that of light.  Increases max speed to 0.35c."
+			description=		"This alien stardrive appears to utilize an array of built in Bussard collectors to produce enough reaction mass to achieve speeds further approaching that of light."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -419,7 +419,7 @@
 			value=				"360"
 			mass=				"3800"
 
-			description=		"This drive provides a maximum velocity of 0.16c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This ion drive has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -450,7 +450,7 @@
 			value=				"670"
 			mass=				"4400"
 
-			description=		"This drive provides a maximum velocity of 0.18c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This plasma drive has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -481,7 +481,7 @@
 			value=				"1200"
 			mass=				"5100"
 			  
-			description=		"This propulsion upgrade provides a maximum velocity of 0.20c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This tritium propulsion upgrade has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 	>
 
 		<Image imageID="&rsItems1;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
@@ -512,7 +512,7 @@
 			value=				"2300"
 			mass=				"6100"
 
-			description=		"This drive provides a maximum velocity of 0.22c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This tritium drive has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -543,7 +543,7 @@
 			value=				"4200"
 			mass=				"7300"
 			  
-			description=		"This propulsion upgrade provides a maximum velocity of 0.23c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This chronimium propulsion upgrade has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 			>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -574,7 +574,7 @@
 			value=				"7700"
 			mass=				"9000"
 
-			description=		"This drive provides a maximum velocity of 0.25c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This chronimium drive has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -605,7 +605,7 @@
 			value=				"14000"
 			mass=				"11000"
 
-			description=		"This megadrive provides a maximum velocity of 0.27c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This cobalt-thorium megadrive has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -636,7 +636,7 @@
 			value=				"26000"
 			mass=				"14000"
 
-			description=		"This megadrive provides a maximum velocity of 0.28c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This xenotite megadrive has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -667,7 +667,7 @@
 			value=				"48000"
 			mass=				"18000"
 
-			description=		"This megadrive provides a maximum velocity of 0.30c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This pteracnium megadrive has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -698,7 +698,7 @@
 			value=				"88000"
 			mass=				"22000"
 			  
-			description=		"This propulsion upgrade provides a maximum velocity of 0.32c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This alien propulsion upgrade has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -729,7 +729,7 @@
 			value=				"160000"
 			mass=				"29000"
 
-			description=		"This megadrive provides a maximum velocity of 0.33c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This alien megadrive has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -760,7 +760,7 @@
 			value=				"600000"
 			mass=				"37000"
 
-			description=		"This alien stardrive provides a maximum velocity of 0.35c and has been modified such that it can be installed to the exterior of a ship.  Can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
+			description=		"This alien stardrive has been modified for external mounting. It can be further modified with the included Cabbage Corp Toolset to increase thrust by forgoing containment."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -796,7 +796,7 @@
 			value=				"360"
 			mass=				"3800"
 
-			description=		"This auxiliary drive provides a maximum velocity of 0.17c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This auxiliary ion drive has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -828,7 +828,7 @@
 			value=				"670"
 			mass=				"4400"
 
-			description=		"This auxiliary drive provides a maximum velocity of 0.19c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This auxiliary plasma drive has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -860,7 +860,7 @@
 			value=				"1200"
 			mass=				"5100"
 			  
-			description=		"This auxiliary ropulsion upgrade provides a maximum velocity of 0.21c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This auxiliary tritium propulsion upgrade has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 	>
 
 		<Image imageID="&rsItems1;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
@@ -892,7 +892,7 @@
 			value=				"2300"
 			mass=				"6100"
 
-			description=		"This auxiliary drive provides a maximum velocity of 0.23c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This auxiliary tritium drive has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -924,7 +924,7 @@
 			value=				"4200"
 			mass=				"7300"
 			  
-			description=		"This auxiliary propulsion upgrade provides a maximum velocity of 0.24c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This auxiliary chronimium propulsion upgrade has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 			>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -956,7 +956,7 @@
 			value=				"7700"
 			mass=				"9000"
 
-			description=		"This auxiliary drive provides a maximum velocity of 0.26c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This auxiliary chronimium drive has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -988,7 +988,7 @@
 			value=				"14000"
 			mass=				"11000"
 
-			description=		"This auxiliary megadrive provides a maximum velocity of 0.28c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This auxiliary cobalt-thorium megadrive has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1020,7 +1020,7 @@
 			value=				"26000"
 			mass=				"14000"
 
-			description=		"This auxiliary megadrive provides a maximum velocity of 0.29c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This auxiliary xenotite megadrive has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1052,7 +1052,7 @@
 			value=				"48000"
 			mass=				"18000"
 
-			description=		"This auxiliary megadrive provides a maximum velocity of 0.31c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This auxiliary pteracnium megadrive has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1084,7 +1084,7 @@
 			value=				"88000"
 			mass=				"22000"
 			  
-			description=		"This auxiliary propulsion upgrade provides a maximum velocity of 0.33c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This alien propulsion upgrade has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1116,7 +1116,7 @@
 			value=				"160000"
 			mass=				"29000"
 
-			description=		"This auxiliary megadrive provides a maximum velocity of 0.34c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This alien megadrive has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1148,7 +1148,7 @@
 			value=				"600000"
 			mass=				"37000"
 
-			description=		"This auxiliary alien stardrive provides a maximum velocity of 0.36c and has been modified to increase thrust by running without containment.  Can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
+			description=		"This alien stardrive has been modified to increase thrust by running without containment. It can be freely modified with the included Cabbage Corp Toolset to restore containment and increase fuel efficiency."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1183,7 +1183,7 @@
 			value=				"520"
 			mass=				"3400"
 
-			description=		"This drive was designed with efficiency prioritized over speed.  It utilizes an electric field to accelerate ionized particles to near light speeds to get the most thrust out of its fuel.  Increases max speed to 0.20c."
+			description=		"This drive was designed with efficiency prioritized over speed.  It utilizes an electric field to accelerate ionized particles to near light speeds to get the most thrust out of its fuel."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1210,7 +1210,7 @@
 			value=				"1000"
 			mass=				"4200"
 
-			description=		"This efficient drive was designed to reduce travel costs for freighters.  It utilizes a magnetic field to induce density waves in a plasma that accelerates the reaction mass to high velocities.  Increases max speed to 0.22c."
+			description=		"This efficient drive was designed to reduce travel costs for freighters.  It utilizes a magnetic field to induce density waves in a plasma that accelerates the reaction mass to high velocities."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1237,7 +1237,7 @@
 			value=				"1800"
 			mass=				"5200"
 			  
-			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful tritium plasma to increase the thrust of the engines.  Increases max speed to 0.23c."
+			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful tritium plasma to increase the thrust of the engines."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1264,7 +1264,7 @@
 			value=				"3200"
 			mass=				"6500"
 
-			description=		"This drive was specifically designed from the ground up to utilize a powerful tritium-plasma mix for propulsion.  Increases max speed to 0.25c."
+			description=		"This drive was specifically designed from the ground up to utilize a powerful tritium-plasma mix for propulsion."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1291,7 +1291,7 @@
 			value=				"6000"
 			mass=				"8000"
 			  
-			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful chronimium plasma to greatly increase the thrust of the engines.  Increases max speed to 0.27c."
+			description=		"Most small and medium sized ships use a fusion drive for propulsion. This device upgrade mixes-in a powerful chronimium plasma to greatly increase the thrust of the engines."
 			>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1318,7 +1318,7 @@
 			value=				"11000"
 			mass=				"10000"
 
-			description=		"This drive was specifically designed from the ground up to utilize a powerful chronimium-plasma mix for propulsion.  Increases max speed to 0.28c."
+			description=		"This drive was specifically designed from the ground up to utilize a powerful chronimium-plasma mix for propulsion."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1345,7 +1345,7 @@
 			value=				"20000"
 			mass=				"13000"
 
-			description=		"The cobalt-thorium megadrive is an old military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.30c."
+			description=		"The cobalt-thorium megadrive is an old military starship engine. Like most other military technology, megadrives cannot be used by civilian ships."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1372,7 +1372,7 @@
 			value=				"37000"
 			mass=				"17000"
 
-			description=		"The xenotite megadrive is a reliable military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.32c."
+			description=		"The xenotite megadrive is a reliable military starship engine. Like most other military technology, megadrives cannot be used by civilian ships."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1399,7 +1399,7 @@
 			value=				"68000"
 			mass=				"22000"
 
-			description=		"The pteracnium megadrive is a recently developed military starship engine. Like most other military technology, megadrives cannot be used by civilian ships.  Increases max speed to 0.33c."
+			description=		"The pteracnium megadrive is a recently developed military starship engine. Like most other military technology, megadrives cannot be used by civilian ships."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1426,7 +1426,7 @@
 			value=				"130000"
 			mass=				"28000"
 			  
-			description=		"This alien device upgrade utilizes powerful zero-point crystals to greatly increase the thrust of engines in both regular drives and megadrives.  Increases max speed to 0.35c."
+			description=		"This alien device upgrade utilizes powerful zero-point crystals to greatly increase the thrust of engines in both regular drives and megadrives."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1453,7 +1453,7 @@
 			value=				"230000"
 			mass=				"36000"
 
-			description=		"This alien megadrive appears to have been designed from the ground up to utilize powerful zero-point crystals to amplify its propulsion.  Increases max speed to 0.37c."
+			description=		"This alien megadrive appears to have been designed from the ground up to utilize powerful zero-point crystals to amplify its propulsion."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1480,7 +1480,7 @@
 			value=				"900000"
 			mass=				"47000"
 
-			description=		"This alien stardrive appears to utilize an array of built in Bussard collectors to produce enough reaction mass to achieve speeds further approaching that of light.  Increases max speed to 0.38c."
+			description=		"This alien stardrive appears to utilize an array of built in Bussard collectors to produce enough reaction mass to achieve speeds further approaching that of light."
 	>
 
 		<Image imageID="&rsCCDrives;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>

@@ -2,6 +2,13 @@
 Changelog
 ---------
 
+v0.8.0 (2016-02-16)
+---------------------------------
+-----Items-----
+Removed redundant item stats from drive descriptions.
+
+
+
 v0.7.5.5 (2016-02-15)
 ---------------------------------
 -----General Changes-----
