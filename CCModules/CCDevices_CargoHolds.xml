@@ -19,7 +19,7 @@
 			value=				"30000"
 			mass=				"3000"
 
-			description=		"This auton bay contains equipment for retrieving, repairing and upgrading autons and also for collecting ore. It utilizes an on-board VI to optimize cargo placement to increases cargo capacity by up to 20 tons. Note: Unofficial autons are not supported."
+			description=		"This auton bay includes a cargo-loading ROM to help optimize a ship's cargo capacity and equipment for managing autons and collecting ore."
 			  
 			useScreen=			"&dsAutonBay;"
 			useInstalledOnly=	"true"
@@ -59,7 +59,7 @@
 			value=				"65000"
 			mass=				"5500"
 
-			description=		"This auton bay contains equipment for managing autons and collecting ore. It utilizes an on-board VI that optimizes cargo placement to increases cargo capacity by up to 20 tons and it works in tandem with life support systems to increase crew capacity by two members. Note: Unofficial autons are not supported."
+			description=		"This auton bay includes a cargo-loading ROM to help optimize a ship's cargo capacity and equipment for managing autons and collecting ore. It can integrate with life support systems to increase crew capacity by two members."
 			  
 			useScreen=			"&dsAutonBay;"
 			useInstalledOnly=	"true"
@@ -91,7 +91,7 @@
 			value=				"90000"
 			mass=				"7000"
 
-			description=		"This oversized scan-shielded auton bay increases cargo capacity by up to 100 tons by utilizing an on-board VI to optimize cargo placement. Stations will not check it for illegal items while it is installed and this model includes equipment for managing autons, collecting ore and this model can work in tandem with life support systems to increase crew capacity by two members. Note: Unofficial autons are not supported."
+			description=		"This oversized scan-shielded auton bay includes a cargo-loading ROM to help optimize a ship's cargo capacity and equipment for managing autons and collecting ore. Stations will not search it for illegal goods and it can integrate with life support systems to increase crew capacity by two members."
 			  
 			useScreen=			"&dsAutonBay;"
 			useInstalledOnly=	"true"

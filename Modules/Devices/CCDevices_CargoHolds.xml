@@ -19,7 +19,7 @@
 			value=				"450"
 			mass=				"2000"
 			  
-			description=		"This pressurized cargo hold increases cargo capacity by up to 40 tons and includes crew quarters for one person."
+			description=		"This is a small pressurized hold that can be attached to a ship to increase the amount of cargo it can carry. It can fit crew quarters for one person."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -54,7 +54,7 @@
 			value=				"1500"
 			mass=				"1500"
 			  
-			description=		"This pressurized hold increases cargo capacity by up to 120 tons by utilizing an on-board VI to optimize cargo placement.  This model works in tandem with life support systems to increase crew capacity by two members."
+			description=		"This pressurized hold includes a cargo-loading ROM to help optimize a ship's cargo capacity. It can integrate with life support systems to increase crew capacity by two members."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -86,7 +86,7 @@
 			value=				"3500"
 			mass=				"2000"
 			  
-			description=		"This pressurized hold increases cargo capacity by up to 100 tons by utilizing an on-board VI to optimize cargo placement.  This model has grapples to bring both ore and autons on board and it works in tandem with life support systems to increase crew capacity by one member."
+			description=		"This pressurized hold includes a cargo-loading ROM to help optimize a ship's cargo capacity and grapples to bring both ore and autons on board. It can integrate with life support systems to increase crew capacity by one person."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -118,7 +118,7 @@
 			value=				"5500"
 			mass=				"1500"
 			  
-			description=		"This scan-shielded hold increases cargo capacity by up to 70 tons by utilizing an on-board VI to optimize cargo placement. Stations will not officially check it for illegal items while it is installed and this model can work in tandem with life support systems to increase crew capacity by one member."
+			description=		"This scan-shielded hold includes a cargo-loading ROM to help optimize a ship's cargo capacity. Stations will not search it for illegal goods and it can integrate with life support systems to increase crew capacity by one person."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -150,7 +150,7 @@
 			value=				"12000"
 			mass=				"2500"
 			  
-			description=		"This scan-shielded hold increases cargo capacity by up to 50 tons by utilizing an on-board VI to optimize cargo placement. Stations will not check it for illegal items while it is installed and this model includes grapples to bring both ore and autons on board and can work in tandem with life support systems to increase crew capacity by one member."
+			description=		"This scan-shielded hold includes a cargo-loading ROM to help optimize a ship's cargo capacity and grapples to bring both ore and autons on board. Stations will not search it for illegal goods and it can integrate with life support systems to increase crew capacity by one person."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -187,7 +187,7 @@
 			value=				"3200"
 			mass=				"4000"
 
-			description=		"This oversized hold increases cargo capacity by up to 250 tons by utilizing an on-board VI to optimize cargo placement.  This model works in tandem with life support systems to increase crew capacity by four members."
+			description=		"This oversized hold includes a cargo-loading ROM to help optimize a ship's cargo capacity. It can integrate with life support systems to increase crew capacity by four members."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -216,7 +216,7 @@
 			value=				"7500"
 			mass=				"4500"
 
-			description=		"This oversized hold increases cargo capacity by up to 230 tons when by utilizing an on-board VI to optimize cargo placement.  This model has grapples to bring both ore and autons on board and it works in tandem with life support systems to increase crew capacity by three members."
+			description=		"This oversized hold includes a cargo-loading ROM to help optimize a ship's cargo capacity and grapples to bring both ore and autons on board. It can integrate with life support systems to increase crew capacity by three members."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -244,7 +244,7 @@
 			value=				"12000"
 			mass=				"4000"
 			  
-			description=		"This oversized scan-shielded hold increases cargo capacity by up to 200 tons by utilizing an on-board VI to optimize cargo placement. Stations will not officially check it for illegal items while it is installed and this model can work in tandem with life support systems to increase crew capacity by three members."
+			description=		"This oversized scan-shielded hold includes a cargo-loading ROM to help optimize a ship's cargo capacity. Stations will not search it for illegal goods and it can integrate with life support systems to increase crew capacity by three members."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -272,7 +272,7 @@
 			value=				"26000"
 			mass=				"6000"
 			  
-			description=		"This oversized scan-shielded hold increases cargo capacity by up to 180 tons by utilizing an on-board VI to optimize cargo placement. Stations will not check it for illegal items while it is installed and this model includes grapples to bring both ore and autons on board and can work in tandem with life support systems to increase crew capacity by three members."
+			description=		"This oversized scan-shielded hold includes a cargo-loading ROM to help optimize a ship's cargo capacity and grapples to bring both ore and autons on board. Stations will not search it for illegal goods and it can integrate with life support systems to increase crew capacity by three members."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>

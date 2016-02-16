@@ -5,6 +5,7 @@ Changelog
 v0.8.0 (2016-02-16)
 ---------------------------------
 -----Items-----
+Removed redundant item stats from cargo hold descriptions.
 Removed redundant item stats from drive descriptions.
 
 
