@@ -46,7 +46,7 @@
 			value=              "2000"
 			mass=               "16000"
 
-			description=        "This device can refine helium regolith into helium&#xb3; fuel rods.  Conversion produces six fuel rods for each ton of ore consumed."
+			description=        "This device can refine helium regolith into helium&#xb3; fuel rods. Conversion produces six fuel rods for each ton of ore consumed."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -82,7 +82,7 @@
 			value=              "12000"
 			mass=               "32000"
 
-			description=        "This device can refine helium regolith into helium&#xb3; reactor assemblies.  Conversion produces two reactor assemblies for each ton of ore consumed."
+			description=        "This device can refine helium regolith into helium&#xb3; reactor assemblies. Conversion produces two reactor assemblies for each ton of ore consumed."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -111,7 +111,7 @@
 			value=              "10000"
 			mass=               "20000"
 
-			description=        "This device can refine uranium ore into uranium fuel rods.  Conversion produces three fuel rods for each ton of ore consumed."
+			description=        "This device can refine uranium ore into uranium fuel rods. Conversion produces three fuel rods for each ton of ore consumed."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -139,7 +139,7 @@
 			value=              "60000"
 			mass=               "40000"
 
-			description=        "This device can refine uranium ore into uranium reactor assemblies.  Conversion produces one reactor assembly for each ton of ore consumed."
+			description=        "This device can refine uranium ore into uranium reactor assemblies. Conversion produces one reactor assembly for each ton of ore consumed."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -168,7 +168,7 @@
 			value=              "14000"
 			mass=               "25000"
 
-			description=        "This device can refine xenotite ore into xenotite fuel rods.  Conversion produces three fuel rods for each ton of ore consumed."
+			description=        "This device can refine xenotite ore into xenotite fuel rods. Conversion produces three fuel rods for each ton of ore consumed."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -200,7 +200,7 @@
 			value=              "84000"
 			mass=               "50000"
 
-			description=        "This device can refine xenotite ore into xenotite reactor assemblies.  Conversion produces one reactor assembly for each ton of ore consumed."
+			description=        "This device can refine xenotite ore into xenotite reactor assemblies. Conversion produces one reactor assembly for each ton of ore consumed."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -229,7 +229,7 @@
 			value=              "40000"
 			mass=               "40000"
 
-			description=        "This device can refine pteracnium ore into pteracnium fuel rods.  Conversion produces three fuel rods for each ton of ore consumed."
+			description=        "This device can refine pteracnium ore into pteracnium fuel rods. Conversion produces three fuel rods for each ton of ore consumed."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -257,7 +257,7 @@
 			value=              "240000"
 			mass=               "80000"
 
-			description=        "This device can refine pteracnium ore into pteracnium reactor assemblies.  Conversion produces one reactor assembly for each ton of ore consumed."
+			description=        "This device can refine pteracnium ore into pteracnium reactor assemblies. Conversion produces one reactor assembly for each ton of ore consumed."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -286,7 +286,7 @@
 			value=              "200000"
 			mass=               "55000"
 
-			description=        "This device can refine hadron archeolith into hadron-vacuum fuel cells.  Conversion produces three fuel cells for each ton of ore consumed"
+			description=        "This device can refine hadron archeolith into hadron-vacuum fuel cells. Conversion produces three fuel cells for each ton of ore consumed"
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
@@ -314,7 +314,7 @@
 			value=              "1200000"
 			mass=               "110000"
 
-			description=        "This device can refine hadron archeolith into hadron-vacuum reactor modules.  Conversion produces one reactor module for each ton of ore consumed."
+			description=        "This device can refine hadron archeolith into hadron-vacuum reactor modules. Conversion produces one reactor module for each ton of ore consumed."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>

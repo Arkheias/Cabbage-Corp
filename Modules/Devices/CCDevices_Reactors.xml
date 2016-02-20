@@ -2,24 +2,13 @@
 <TranscendenceModule>
 
 <!--
-;Code for switching devices by invoking them (without going through the fancy dockscreen)
-
-		<Invoke installedOnly="true">
-			(block Nil
-				(CCReactorExchange &itCCSinova32MWReactor;)
-				(plyMessage gPlayer "Your device has been modified to run without containment.")
-			)
-		</Invoke>
--->
-
-<!--
 The fuel indicator will only show up to around 21,474,847 fuel, give or take, meaning that if your reactor has three times that amount of fuel then the fuel bar will only be visible when it is one-third full, but the fuel indicator will appear at the right level.
 
 Note: &#xed; is the hex code for an 'i with an acute symbol' thingy.
 
-The game does not provide a way to keep reactors from being sold at stations without using the notForSale tag, and the value of an item when being sold is dependent on that tag, so the Sinova reactors can not have the same value as the Siva reactors.
+The game does not provide a way to keep reactors from being sold at stations without using the notForSale tag, and the value of an item when being sold is dependent on that tag, so the modified reactors can not have the same value as the standard versions.
 
-*add function to eject reactors and detonate them to create massive explosions, which will also send a signal to cabbage corp to send a ship to install a replacement reactor (doomdsday type weapon) (L1-4 blast, L5-8 Thermo, L9-12 antimatter?).
+*need to add function to eject reactors and detonate them to create massive explosions, which will also send a signal to cabbage corp to send a ship to install a replacement reactor (doomsday type weapon) (L1-4 blast, L5-8 thermo, L9-12 antimatter?).
 -->
 
 <!-- ======================================================================= -->
@@ -38,7 +27,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"700"
 			mass=				"1500"
 
-			description=		"This reactor has a peak power output of 8MW in efficiency mode and 12MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 12MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -74,7 +63,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"900"
 			mass=				"2000"
 
-			description=		"This reactor has a peak power output of 12MW in efficiency mode and 18MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 18MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -110,7 +99,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"2700"
 			mass=				"3000"
 
-			description=		"This reactor has a peak power output of 20MW in efficiency mode and 30MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 30MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -146,7 +135,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"5000"
 			mass=				"3500"
 
-			description=		"This reactor has a peak power output of 40MW in efficiency mode and 60MW in overdrive. It accepts fuel rated between L2 and L4, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 60MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -182,7 +171,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"9000"
 			mass=				"4000"
 
-			description=		"This reactor has a peak power output of 80MW in efficiency mode and 120MW in overdrive. It accepts fuel rated between L3 and L5, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 120MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -218,7 +207,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"18000"
 			mass=				"5000"
 
-			description=		"This reactor has a peak power output of 120MW in efficiency mode and 180MW in overdrive. It accepts fuel rated between L4 and L6, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 180MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -254,7 +243,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"54000"
 			mass=				"5500"
 
-			description=		"This reactor has a peak power output of 200MW in efficiency mode and 300MW in overdrive. It accepts fuel rated between L5 and L7, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 300MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -290,7 +279,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"90000"
 			mass=				"6000"
 
-			description=		"This reactor has a peak power output of 400MW in efficiency mode and 600MW in overdrive. It accepts fuel rated between L6 and L8, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 600MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -326,7 +315,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"180000"
 			mass=				"6500"
 
-			description=		"This reactor has a peak power output of 800MW in efficiency mode and 1200MW in overdrive. It accepts fuel rated between L7 and L9, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 1200MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -362,7 +351,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"360000"
 			mass=				"7000"
 
-			description=		"This reactor has a peak power output of 1200MW in efficiency mode and 1800MW in overdrive. It accepts fuel rated between L8 and L10, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 1800MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -398,7 +387,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"1100000"
 			mass=				"8000"
 
-			description=		"This reactor has a peak power output of 2GW in efficiency mode and 3GW in overdrive. It accepts fuel rated between L9 and L11, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 3GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -434,7 +423,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"1800000"
 			mass=				"8500"
 
-			description=		"This reactor has a peak power output of 4GW in efficiency mode and 6GW in overdrive. It accepts fuel rated between L10 and L12, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 6GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -470,7 +459,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"3600000"
 			mass=				"9000"
 
-			description=		"This reactor has a peak power output of 8GW in efficiency mode and 12GW in overdrive. It accepts fuel rated between L11 and L13, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 12GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -506,7 +495,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"7200000"
 			mass=				"9500"
 
-			description=		"This reactor has a peak power output of 12GW in efficiency mode and 18GW in overdrive. It accepts fuel rated between L12 and L14, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 18GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -542,7 +531,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"22000000"
 			mass=				"10000"
 
-			description=		"This reactor has a peak power output of 20GW in efficiency mode and 30GW in overdrive. It accepts fuel rated between L13 and L15, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has a high performance mode with a peak power output of 30GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -583,7 +572,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"700"
 			mass=				"1500"
 
-			description=		"This reactor has a peak power output of 8MW in efficiency mode and 12MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 8MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -621,7 +610,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"900"
 			mass=				"2000"
 
-			description=		"This reactor has a peak power output of 12MW in efficiency mode and 18MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 12MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -659,7 +648,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"2700"
 			mass=				"3000"
 
-			description=		"This reactor has a peak power output of 20MW in efficiency mode and 30MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 20MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -697,7 +686,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"5000"
 			mass=				"3500"
 
-			description=		"This reactor has a peak power output of 40MW in efficiency mode and 60MW in overdrive. It accepts fuel rated between L2 and L4, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 40MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -735,7 +724,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"9000"
 			mass=				"4000"
 
-			description=		"This reactor has a peak power output of 80MW in efficiency mode and 120MW in overdrive. It accepts fuel rated between L3 and L5, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 80MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -773,7 +762,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"18000"
 			mass=				"5000"
 
-			description=		"This reactor has a peak power output of 120MW in efficiency mode and 180MW in overdrive. It accepts fuel rated between L4 and L6, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 120MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -811,7 +800,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"54000"
 			mass=				"5500"
 
-			description=		"This reactor has a peak power output of 200MW in efficiency mode and 300MW in overdrive. It accepts fuel rated between L5 and L7, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 200MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -849,7 +838,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"90000"
 			mass=				"6000"
 
-			description=		"This reactor has a peak power output of 400MW in efficiency mode and 600MW in overdrive. It accepts fuel rated between L6 and L8, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 400MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -887,7 +876,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"180000"
 			mass=				"6500"
 
-			description=		"This reactor has a peak power output of 800MW in efficiency mode and 1200MW in overdrive. It accepts fuel rated between L7 and L9, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 800MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -925,7 +914,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"360000"
 			mass=				"7000"
 
-			description=		"This reactor has a peak power output of 1200MW in efficiency mode and 1800MW in overdrive. It accepts fuel rated between L8 and L10, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 1200MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -963,7 +952,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"1100000"
 			mass=				"8000"
 
-			description=		"This reactor has a peak power output of 2GW in efficiency mode and 3GW in overdrive. It accepts fuel rated between L9 and L11, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 2GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1001,7 +990,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"1800000"
 			mass=				"8500"
 
-			description=		"This reactor has a peak power output of 4GW in efficiency mode and 6GW in overdrive. It accepts fuel rated between L10 and L12, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 4GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1039,7 +1028,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"3600000"
 			mass=				"9000"
 
-			description=		"This reactor has a peak power output of 8GW in efficiency mode and 12GW in overdrive. It accepts fuel rated between L11 and L13, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 8GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1077,7 +1066,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"7200000"
 			mass=				"9500"
 
-			description=		"This reactor has a peak power output of 12GW in efficiency mode and 18GW in overdrive. It accepts fuel rated between L12 and L14, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 12GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1116,7 +1105,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"22000000"
 			mass=				"10000"
 
-			description=		"This reactor has a peak power output of 20GW in efficiency mode and 30GW in overdrive. It accepts fuel rated between L13 and L15, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This reactor has an efficiency mode with a peak power output of 20GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -1157,7 +1146,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"1500"
 			mass=				"3000"
 
-			description=		"This oversized reactor has a peak power output of 16MW in efficiency mode and 24MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 24MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1188,7 +1177,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"2000"
 			mass=				"4000"
 
-			description=		"This oversized reactor has a peak power output of 24MW in efficiency mode and 36MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 36MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1219,7 +1208,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"6000"
 			mass=				"6000"
 
-			description=		"This oversized reactor has a peak power output of 40MW in efficiency mode and 60MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 60MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1250,7 +1239,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"11000"
 			mass=				"7000"
 
-			description=		"This oversized reactor has a peak power output of 80MW in efficiency mode and 120MW in overdrive. It accepts fuel rated between L2 and L4, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 120MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1281,7 +1270,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"20000"
 			mass=				"8000"
 
-			description=		"This oversized reactor has a peak power output of 160MW in efficiency mode and 240MW in overdrive. It accepts fuel rated between L3 and L5, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 240MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1312,7 +1301,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"40000"
 			mass=				"10000"
 
-			description=		"This oversized reactor has a peak power output of 240MW in efficiency mode and 360MW in overdrive. It accepts fuel rated between L4 and L6, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 360MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1343,7 +1332,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"120000"
 			mass=				"11000"
 
-			description=		"This oversized reactor has a peak power output of 400MW in efficiency mode and 600MW in overdrive. It accepts fuel rated between L5 and L7, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 600MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1374,7 +1363,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"200000"
 			mass=				"12000"
 
-			description=		"This oversized reactor has a peak power output of 800MW in efficiency mode and 1200MW in overdrive. It accepts fuel rated between L6 and L8, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 1200MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1405,7 +1394,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"400000"
 			mass=				"13000"
 
-			description=		"This oversized reactor has a peak power output of 1600MW in efficiency mode and 2400MW in overdrive. It accepts fuel rated between L7 and L9, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 2400MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1436,7 +1425,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"800000"
 			mass=				"14000"
 
-			description=		"This oversized reactor has a peak power output of 2400MW in efficiency mode and 3600MW in overdrive. It accepts fuel rated between L8 and L10, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 3600MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1467,7 +1456,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"2400000"
 			mass=				"16000"
 
-			description=		"This oversized reactor has a peak power output of 4GW in efficiency mode and 6GW in overdrive. It accepts fuel rated between L9 and L11, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 6GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1498,7 +1487,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"4000000"
 			mass=				"1700"
 
-			description=		"This oversized reactor has a peak power output of 8GW in efficiency mode and 12GW in overdrive. It accepts fuel rated between L10 and L12, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 12GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1529,7 +1518,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"8000000"
 			mass=				"18000"
 
-			description=		"This oversized reactor has a peak power output of 16GW in efficiency mode and 24GW in overdrive. It accepts fuel rated between L11 and L13, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 24GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1560,7 +1549,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"16000000"
 			mass=				"19000"
 
-			description=		"This oversized reactor has a peak power output of 24GW in efficiency mode and 36GW in overdrive. It accepts fuel rated between L12 and L14, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 36GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1591,7 +1580,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"48000000"
 			mass=				"20000"
 
-			description=		"This oversized reactor has a peak power output of 40GW in efficiency mode and 60GW in overdrive. It accepts fuel rated between L13 and L15, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has a high performance mode with a peak power output of 60GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1627,7 +1616,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"1500"
 			mass=				"3000"
 
-			description=		"This oversized reactor has a peak power output of 16MW in efficiency mode and 24MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 16MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1665,7 +1654,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"2000"
 			mass=				"4000"
 
-			description=		"This oversized reactor has a peak power output of 24MW in efficiency mode and 36MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 24MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1703,7 +1692,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"6000"
 			mass=				"6000"
 
-			description=		"This oversized reactor has a peak power output of 40MW in efficiency mode and 60MW in overdrive. It accepts fuel rated between L1 and L3, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 40MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1741,7 +1730,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"11000"
 			mass=				"7000"
 
-			description=		"This oversized reactor has a peak power output of 80MW in efficiency mode and 120MW in overdrive. It accepts fuel rated between L2 and L4, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 80MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1779,7 +1768,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"20000"
 			mass=				"8000"
 
-			description=		"This oversized reactor has a peak power output of 160MW in efficiency mode and 240MW in overdrive. It accepts fuel rated between L3 and L5, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 160MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1817,7 +1806,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"40000"
 			mass=				"10000"
 
-			description=		"This oversized reactor has a peak power output of 240MW in efficiency mode and 360MW in overdrive. It accepts fuel rated between L4 and L6, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 240MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1855,7 +1844,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"120000"
 			mass=				"11000"
 
-			description=		"This oversized reactor has a peak power output of 300MW in efficiency mode and 600MW in overdrive. It accepts fuel rated between L5 and L7, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 400MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1893,7 +1882,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"200000"
 			mass=				"12000"
 
-			description=		"This oversized reactor has a peak power output of 800MW in efficiency mode and 1200MW in overdrive. It accepts fuel rated between L6 and L8, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 800MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1931,7 +1920,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"400000"
 			mass=				"13000"
 
-			description=		"This oversized reactor has a peak power output of 1600MW in efficiency mode and 2400MW in overdrive. It accepts fuel rated between L7 and L9, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 1600MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -1969,7 +1958,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"800000"
 			mass=				"14000"
 
-			description=		"This oversized reactor has a peak power output of 2400MW in efficiency mode and 3600MW in overdrive. It accepts fuel rated between L8 and L10, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 2400MW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -2007,7 +1996,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"2400000"
 			mass=				"16000"
 
-			description=		"This oversized reactor has a peak power output of 4GW in efficiency mode and 6GW in overdrive. It accepts fuel rated between L9 and L11, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 4GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -2045,7 +2034,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"4000000"
 			mass=				"17000"
 
-			description=		"This oversized reactor has a peak power output of 8GW in efficiency mode and 12GW in overdrive. It accepts fuel rated between L10 and L12, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 8GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -2083,7 +2072,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"8000000"
 			mass=				"18000"
 
-			description=		"This oversized reactor has a peak power output of 16GW in efficiency mode and 24GW in overdrive. It accepts fuel rated between L11 and L13, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 16GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -2121,7 +2110,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"16000000"
 			mass=				"19000"
 
-			description=		"This oversized reactor has a peak power output of 24GW in efficiency mode and 36GW in overdrive. It accepts fuel rated between L12 and L14, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 24GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
@@ -2160,7 +2149,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 			value=				"48000000"
 			mass=				"20000"
 
-			description=		"This oversized reactor has a peak power output of 40GW in efficiency mode and 60GW in overdrive. It accepts fuel rated between L13 and L15, and can easily switch modes with the built-in Cabbage Corp Toolset."
+			description=		"This oversized reactor has an efficiency mode with a peak power output of 40GW that can be easily accessed with the included Cabbage Corp Toolset."
 	>
 
 		<Image imageID="&rsCCReactors;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
