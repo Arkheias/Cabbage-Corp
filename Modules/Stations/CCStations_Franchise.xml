@@ -18,15 +18,15 @@ Cabbage Corp franchises are independently owned an opperated and are thus limite
 
 			multiHull=			"true"
 			armorID=			"&itCC4xSivayaArmor;"
-			hitPoints=			"300"
-			repairRate=			"5"
-			fireRateAdj=		"20"
+			hitPoints=			"220"
+			repairRate=			"4"
 			explosionType=		"&vtThermoExplosion1;"
 			ejectaType=			"&vtWreckEjecta;"
 
 			attributes=			"cabbageCorp, corporateArms, corporateDecon, envAir, envEarth, envFire, envWater, friendly, independent, generic, human, populated"
 			levelFrequency=		"rurv- ----- ----- ----- -----"
 			locationCriteria=	"+planetary"
+			enemyExclusionRadius="25"
 
 			noArticle=			"true"
 	>

@@ -15,8 +15,8 @@
 
 			multiHull=			"true"
 			armorID=			"&itCC4xAdvancedSivayaArmor;"
-			hitPoints=			"800"
-			repairRate=			"5"
+			hitPoints=			"2000"
+			regen=				"6"
 			fireRateAdj=		"15"
 			explosionType=		"&vtThermoExplosion3;"
 			ejectaType=			"&vtWreckEjecta;"

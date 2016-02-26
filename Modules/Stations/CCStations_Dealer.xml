@@ -15,8 +15,8 @@
 
 			multiHull=			"true"
 			armorID=			"&itCC4xHardenedSivayaArmor;"
-			hitPoints=			"350"
-			repairRate=			"5"
+			hitPoints=			"400"
+			repairRate=			"8"
 			fireRateAdj=		"15"
 			explosionType=		"&vtThermoExplosion2;"
 			ejectaType=			"&vtWreckEjecta;"
@@ -25,7 +25,6 @@
 			levelFrequency=		"--rur v---- ----- ----- -----"
 			unique=				"inSystem"
 			locationCriteria=	"+planetary"
-			
 			enemyExclusionRadius="50"
 
 			noArticle=			"true"

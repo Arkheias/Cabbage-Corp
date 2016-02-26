@@ -16,9 +16,8 @@
 
 			multiHull=			"true"
 			armorID=			"&itCC4xExperimentalStealthArmor;"
-			hitPoints=			"1000"
-			repairRate=			"10"
-			fireRateAdj=		"10"
+			hitPoints=			"3500"
+			regen=				"7"
 			explosionType=		"&vtThermoExplosion4;"
 			ejectaType=			"&vtWreckEjecta;"
 
@@ -201,8 +200,8 @@
 			canAttack=          "true"
 
 			armorID=            "&itCC4xExperimentalStealthArmor;"
-			hitPoints=          "100"
-			repairRate=         "5"
+			hitPoints=          "180"
+			repairRate=         "4"
 			structuralHitPoints="20"
 			fireRateAdj=        "10"
 			ejectaType=         "&vtWreckEjecta;"

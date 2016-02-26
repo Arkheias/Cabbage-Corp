@@ -15,17 +15,18 @@
 
 			multiHull=			"true"
 			armorID=			"&itCC4xAdvancedSivayaArmor;"
-			hitPoints=			"200"
-			repairRate=			"2"
-			explosionType=		"&vtThermoExplosion2;"
+			hitPoints=			"280"
+			regen=              "1.5"
+			explosionType=		"&vtThermoExplosion4;"
 			ejectaType=			"&vtWreckEjecta;"
 
-			unique=				"inSystem"
 
 			attributes=			"cabbageCorp, corporateDecon, envAir, envEarth, envFire, envWater, friendly, independent, generic, human, populated"
 			levelFrequency=		"---ru ccurv ----- ----- -----"
+			unique=				"inSystem"
 			locationCriteria=	"-outerSystem, +planetary"
-			>
+			enemyExclusionRadius="25"
+	>
 
 		<Names noArticle="true">Cabbage Corp Fuel subsidiary #145; Cabbage Corp Fuel subsidiary #812; Cabbage Corp Fuel subsidiary #986; Cabbage Corp Fuel subsidiary #1053; Cabbage Corp Fuel subsidiary #1831; Cabbage Corp Fuel subsidiary #2071; Cabbage Corp Fuel subsidiary #2694; Cabbage Corp Fuel subsidiary #2914; Cabbage Corp Fuel subsidiary #4044; Cabbage Corp Fuel subsidiary #4141; Cabbage Corp Fuel subsidiary #4333; Cabbage Corp Fuel subsidiary #4601; Cabbage Corp Fuel subsidiary #4864; Cabbage Corp Fuel subsidiary #5162; Cabbage Corp Fuel subsidiary #5686; Cabbage Corp Fuel subsidiary #6525; Cabbage Corp Fuel subsidiary #6894; Cabbage Corp Fuel subsidiary #7250; Cabbage Corp Fuel subsidiary #7466; Cabbage Corp Fuel subsidiary #7640; Cabbage Corp Fuel subsidiary #7826; Cabbage Corp Fuel subsidiary #8089; Cabbage Corp Fuel subsidiary #8103;Cabbage Corp Fuel subsidiary #9301</Names>
 

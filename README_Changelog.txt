@@ -2,8 +2,11 @@
 Changelog
 ---------
 
-v0.8.0 (2016-02-20)
+v0.8.0 (2016-02-26)
 ---------------------------------
+-----Stations-----
+Changed stations to be more balanced according to 1.7 changes.
+
 -----Items-----
 Changed various item descriptions.
 Removed redundant item stats from their descriptions.
