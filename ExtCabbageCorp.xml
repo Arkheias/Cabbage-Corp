@@ -15,8 +15,8 @@
 <TranscendenceExtension UNID="&xtCCCabbageCorpExtension;" 
 		Name=			"Cabbage Corp" 
 		release=		"1"
-		version=		"0.7.5.5"
-		apiVersion=		"28"
+		version=		"0.8.0"
+		apiVersion=		"29"
 		credits=		"Arkheias"
 		coverImageID=	"&rsCCCabbageCorpCover;"
 >

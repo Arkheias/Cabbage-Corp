@@ -5,13 +5,13 @@
 							<!-- DRADIS Devices -->
 <!-- ======================================================================= -->
 <!--
-	Note: addPerception is the additional perception value added to the ship's
-			default perception value while the device is installed.
-			
-	Note: minPerception is the minimum perception value that the ship can then
-			have after addPerception has been taken into account.
-			
-	Note: These devices currently only affect NPC ships.
+	addPerception is the additional perception value added to the ship's
+		default perception value while the device is installed.
+				
+	minPerception is the minimum perception value that the ship can then
+		have after addPerception has been taken into account.
+				
+	These devices currently only affect NPC ships.
 -->
 
 	<!-- mark I DRADIS module -->

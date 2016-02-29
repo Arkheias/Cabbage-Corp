@@ -2,8 +2,12 @@
 Changelog
 ---------
 
-v0.8.0 (2016-02-26)
+v0.8.0 (2016-02-28)
 ---------------------------------
+-----General-----
+Changed to API v29 from v28.
+Changed commenting.
+
 -----Stations-----
 Changed stations to be more balanced according to 1.7 changes.
 
