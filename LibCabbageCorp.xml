@@ -3,14 +3,20 @@
 <!DOCTYPE TranscendenceLibrary
 
 [
+<!ENTITY unidCorporateHierarchyVol01			"0x00810000">
+<!ENTITY itNanoRepairer							"0x00810080">
+<!ENTITY itNAMIAutonBay							"0x00810250">
+
 <!ENTITY unidCCCabbageCorpLibrary				"0xDA27C000">
 <!ENTITY unidCCTopology							"0xDA27C002">
 <!ENTITY unidCCIdaSegment						"0xDA27C003">
 <!ENTITY smCCCabbageSpace						"0xDA27C004">
 <!ENTITY ssCCOthala				 				"0xDA27C005">
 
+
 	<!-- Effects -->
 <!ENTITY efCCShieldsHUD		 					"0xDA27C010">
+
 
 	<!-- Stations -->
 <!ENTITY baCCCabbageCorpStation			 		"0xDA27C020">
@@ -39,7 +45,6 @@
 <!ENTITY dsCCCabbageCorpWorkshop				"0xDA27C04C">
 <!ENTITY dsCCCabbageCustomWork					"0xDA27C04D">
 <!ENTITY dsCCCabbageExecution					"0xDA27C04E">
-
 
 
 	<!-- Armor -->
@@ -132,6 +137,10 @@
 <!ENTITY itCCDualMinersCargoBay					"0xDA27C307">
 <!ENTITY itCCDualDiplomatsCargoHold				"0xDA27C308">
 <!ENTITY itCCDualMilitaryCargoBay				"0xDA27C309">
+
+<!ENTITY itCCAutonBay							"0xDA27C30A">
+<!ENTITY itCCDualAutonBay						"0xDA27C30B">
+<!ENTITY itCCDualMilitaryAutonBay				"0xDA27C30C">
 
 
 	<!-- Drives -->
@@ -576,6 +585,7 @@
 
 <!ENTITY vtCCSavoyHowitzer						"0xDA27CC50">
 
+
 <!ENTITY itCCKaleM1Repeater						"0xDA27CC51">
 <!ENTITY itCCKaleM3Repeater						"0xDA27CC52">
 <!ENTITY itCCKaleM6Repeater						"0xDA27CC53">
@@ -636,6 +646,7 @@
 <!ENTITY itCCAuxKaleM3300Repeater				"0xDA27CC8D">
 <!ENTITY itCCAuxKaleM6300Repeater				"0xDA27CC8E">
 <!ENTITY itCCAuxKaleM12000Repeater				"0xDA27CC8F">
+
 
 <!ENTITY itCCB1MiningLance						"0xDA27CCA0">
 <!ENTITY itCCB2MiningLance						"0xDA27CCA1">
@@ -759,6 +770,8 @@
 <!ENTITY itCCGen2EmitterCoils					"0xDA27CD42">
 <!ENTITY itCCGen3EmitterCoils					"0xDA27CD43">
 <!ENTITY itCCGen4EmitterCoils					"0xDA27CD44">
+
+
 
 
 
@@ -903,11 +916,11 @@
 >
 
 	<Library unid="&unidHumanSpaceLibrary;"/>
-
+    <Library unid="&unidCorporateHierarchyVol01;"/>
+	
 <!--
 
 Stringname Prefixes
-unid		= 	Library
 xt			= 	Extension
 rs			=	Graphic
 sc			= 	PlayerShip Code
@@ -917,7 +930,6 @@ it			= 	Item Code
 vt			= 	(virtual) Item Code
 
 -->	
-
 	
 	<!-- Autons -->
 	<Image UNID="&rsCCF120Wraith;"					bitmap="Resources\Wraith\CCF120Wraith.jpg"				bitmask="Resources\Wraith\CCF120WraithMask.jpg"/>
@@ -964,20 +976,20 @@ vt			= 	(virtual) Item Code
     <Image UNID="&rsCCShieldsHUD;"					bitmap="Resources\CCShieldsHUD.jpg"						bitmask="Resources\CCShieldsHUDMask.jpg"/>
 
 	<!-- Items -->
-    <Image UNID="&rsCCItems;"						bitmap="Resources\Items\CCItems.jpg"					bitmask="Resources\Items\CCItemsMask.bmp"/>
-    <Image UNID="&rsCCDevices;"						bitmap="Resources\Items\CCDevices.jpg"					bitmask="Resources\Items\CCDevicesMask.bmp"/>
-    <Image UNID="&rsCCShipIcons;"					bitmap="Resources\Items\CCShipIcons.jpg"				bitmask="Resources\Items\CCShipIconsMask.bmp"/>
-    <Image UNID="&rsCCArmorCabbagium;"				bitmap="Resources\Items\CCArmorCabbagium.jpg"			bitmask="Resources\Items\CCArmorCabbagiumMask.jpg"/>
-    <Image UNID="&rsCCArmorGold;"					bitmap="Resources\Items\CCArmorGold.jpg"				bitmask="Resources\Items\CCArmorMask.jpg"/>
-    <Image UNID="&rsCCArmorSivaya;"					bitmap="Resources\Items\CCArmorSivaya.jpg"				bitmask="Resources\Items\CCArmorSivayaMask.jpg"/>
+	<Image UNID="&rsCCItems;"						bitmap="Resources\Items\CCItems.jpg"					bitmask="Resources\Items\CCItemsMask.bmp"/>
+	<Image UNID="&rsCCDevices;"						bitmap="Resources\Items\CCDevices.jpg"					bitmask="Resources\Items\CCDevicesMask.bmp"/>
+	<Image UNID="&rsCCShipIcons;"					bitmap="Resources\Items\CCShipIcons.jpg"				bitmask="Resources\Items\CCShipIconsMask.bmp"/>
+	<Image UNID="&rsCCArmorCabbagium;"				bitmap="Resources\Items\CCArmorCabbagium.jpg"			bitmask="Resources\Items\CCArmorCabbagiumMask.jpg"/>
+	<Image UNID="&rsCCArmorGold;"					bitmap="Resources\Items\CCArmorGold.jpg"				bitmask="Resources\Items\CCArmorMask.jpg"/>
+	<Image UNID="&rsCCArmorSivaya;"					bitmap="Resources\Items\CCArmorSivaya.jpg"				bitmask="Resources\Items\CCArmorSivayaMask.jpg"/>
 	<Image UNID="&rsCCArmorStealth;"				bitmap="Resources\Items\CCArmorStealth.jpg"				bitmask="Resources\Items\CCArmorStealthMask.jpg"/>
-    <Image UNID="&rsCCDrives;"						bitmap="Resources\Items\CCDrives.jpg"					bitmask="Resources\Items\CCDrivesMask.jpg"/>
-    <Image UNID="&rsCCGuns;"						bitmap="Resources\Items\CCGuns.jpg"						bitmask="Resources\Items\CCGunsMask.jpg"/>
-    <Image UNID="&rsCCReactors;"					bitmap="Resources\Items\CCReactors.jpg"					bitmask="Resources\Items\CCReactorsMask.jpg"/>
-    <Image UNID="&rsCCCrewMembers;"					bitmap="Resources\Items\CCCrewMembers.jpg"				bitmask="Resources\Items\CCCrewMembersMask.bmp"/>
-
+	<Image UNID="&rsCCDrives;"						bitmap="Resources\Items\CCDrives.jpg"					bitmask="Resources\Items\CCDrivesMask.jpg"/>
+	<Image UNID="&rsCCGuns;"						bitmap="Resources\Items\CCGuns.jpg"						bitmask="Resources\Items\CCGunsMask.jpg"/>
+	<Image UNID="&rsCCReactors;"					bitmap="Resources\Items\CCReactors.jpg"					bitmask="Resources\Items\CCReactorsMask.jpg"/>
+	<Image UNID="&rsCCCrewMembers;"					bitmap="Resources\Items\CCCrewMembers.jpg"				bitmask="Resources\Items\CCCrewMembersMask.bmp"/>
+	
 	<!-- Screens -->
-    <Image UNID="&rsCCCabbageCorpScreen;"			bitmap="Resources\CabbageCorpScreen.jpg"	loadOnUse="true" />
+	<Image UNID="&rsCCCabbageCorpScreen;"			bitmap="Resources\CabbageCorpScreen.jpg"	loadOnUse="true" />
 	<Image UNID="&rsCCCabbageCorpCover;"			bitmap="Resources\CCCabbageCorpCover.jpg"	loadOnUse="true" />
 	<Image UNID="&rsCCPraclarushHangar;"			bitmap="Resources\CCPraclarushHangar.jpg"	loadOnUse="true" />
 	
@@ -1021,7 +1033,7 @@ vt			= 	(virtual) Item Code
 	<Module fileName="Modules\Armor\CCArmor_Cabbagium.xml"/>
 	<Module fileName="Modules\Armor\CCArmor_Sivaya.xml"/>
 	<Module fileName="Modules\Armor\CCArmor_Stealth.xml"/>
-	
+
 	<!-- Autons -->
 	<Module fileName="Modules\Autons\CCAutons_Phantom.xml"/>
 	<Module fileName="Modules\Autons\CCAutons_Wraith.xml"/>
@@ -1031,12 +1043,14 @@ vt			= 	(virtual) Item Code
 	<Module fileName="Modules\Devices\CCDevices_AutoDefense.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_AuxReactors.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_CargoHolds.xml"/>
+	<Module fileName="CCModules\CCDevices_CargoHolds.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_Drives.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_Enhancers.xml"/>
 	
 	<Module fileName="Modules\Devices\CCDevices_Crew.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_DRADIS.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_Miscellaneous.xml"/>
+	<Module fileName="CCModules\CCDevices_Nanofacs.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_Refineries.xml"/>
 	
 	<Module fileName="Modules\Devices\CCDevices_Reactors.xml"/>
@@ -1049,7 +1063,7 @@ vt			= 	(virtual) Item Code
 	<Module fileName="Modules\Library\CCLibrary_DockScreens.xml"/>
 	<Module fileName="Modules\Library\CCLibrary_Effects.xml"/>
 	<Module fileName="Modules\Library\CCLibrary_Globals.xml"/>
-	<Module fileName="Modules\Library\CCLibrary_Sovereign.xml"/>
+	<Module fileName="CCModules\CCLibrary_Sovereign.xml"/>
 	<Module fileName="Modules\Library\CCLibrary_Tables.xml"/>
 	
 	<!-- Other -->
@@ -1073,9 +1087,9 @@ vt			= 	(virtual) Item Code
 	<Module fileName="Modules\Weapons\CCWeapons_Lances.xml"/>
 	<Module fileName="Modules\Weapons\CCWeapons_Repeaters.xml"/>
 	<Module fileName="Modules\Weapons\CCWeapons_Weigelt.xml"/>
+	
+	
 
-	
-	
 	<SystemMap UNID="&unidCCTopology;"
 			displayOn="&smCCCabbageSpace;"
 	>
@@ -1099,7 +1113,7 @@ vt			= 	(virtual) Item Code
 				<Stargate name="Outbound" to="Othala:Inbound"/>
 			</Stargates>
 		</Node>
-		
+				
 	</SystemMap>
 
 	<SystemMap UNID="&unidCCIdaSegment;"
@@ -1113,7 +1127,7 @@ vt			= 	(virtual) Item Code
 		
 		<!-- Othala -->
 		
-		<Node ID="Othala" x="180" y="0">
+		<Node ID="Othala" x="90" y="0">
 			<System 
 					name=			"Othala"
 					level=			"15"
