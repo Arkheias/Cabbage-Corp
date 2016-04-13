@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
-	 
+
 <!-- ======================================================================= -->
 						<!-- Cabbage Corp Sovereign -->							
 <!-- ======================================================================= -->
-	 
+
 	 <Sovereign UNID="&svCCCabbageCorp;"
 			name="Cabbage Corp"
 			alignment="constructive chaos"
@@ -72,7 +72,7 @@
 					{ item:&itCCAuxSavoyM2900Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM2900Howitzer; count:1 } )												extraCost:0 }
 					{ item:&itCCAuxSavoyM5600Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM5600Howitzer; count:1 } )												extraCost:0 }
 					{ item:&itCCAuxSavoyM11000Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM11000Howitzer; count:1 } )												extraCost:0 }
-					
+
 					{ item:&itCCDualB1MiningLance;				enhancement:Nil		components:( { item:&itCCB1MiningLance; count:2 } )														extraCost:0 }
 					{ item:&itCCDualB2MiningLance;				enhancement:Nil		components:( { item:&itCCB2MiningLance; count:2 } )														extraCost:0 }
 					{ item:&itCCDualB5MiningLance;				enhancement:Nil		components:( { item:&itCCB5MiningLance; count:2 } )														extraCost:0 }
@@ -121,7 +121,7 @@
 					{ item:&itCCAuxB450MiningLance;				enhancement:Nil		components:( { item:&itCCB450MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxB800MiningLance;				enhancement:Nil		components:( { item:&itCCB800MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxB1500MiningLance;			enhancement:Nil		components:( { item:&itCCB1500MiningLance; count:1 } )													extraCost:0 }
-										
+
 					{ item:&itCCDualKaleM1Repeater;				enhancement:Nil		components:( { item:&itCCKaleM1Repeater; count:2 } )													extraCost:0 }
 					{ item:&itCCDualKaleM3Repeater;				enhancement:Nil		components:( { item:&itCCKaleM3Repeater; count:2 } )													extraCost:0 }
 					{ item:&itCCDualKaleM6Repeater;				enhancement:Nil		components:( { item:&itCCKaleM6Repeater; count:2 } )													extraCost:0 }
@@ -169,7 +169,7 @@
 					{ item:&itCCAuxKaleM12000Repeater;			enhancement:Nil		components:( { item:&itCCKaleM12000Repeater; count:1 } )												extraCost:0 }
 				)
 			</WeaponRecipes>
-			
+
 			<ArmorRecipes>
 				(
 					{ item:&itCC2xCabbagiumArmor;				enhancement:Nil		components:( { item:&itCC1xCabbagiumArmor; count:2 } )													extraCost:0 }
@@ -192,7 +192,7 @@
 					{ item:&itCC4xTheoreticalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC2xTheoreticalCabbagiumArmor; count:2 } )										extraCost:0 }
 					{ item:&itCC6xTheoreticalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC2xTheoreticalCabbagiumArmor; count:3 } )										extraCost:0 }
 					{ item:&itCC8xTheoreticalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC4xTheoreticalCabbagiumArmor; count:2 } )										extraCost:0 }
-					
+
 					{ item:&itCC2xSivayaArmor;					enhancement:Nil		components:( { item:&itCC1xSivayaArmor; count:2 } )														extraCost:0 }
 					{ item:&itCC4xSivayaArmor;					enhancement:Nil		components:( { item:&itCC2xSivayaArmor; count:2 } )														extraCost:0 }
 					{ item:&itCC2xHardenedSivayaArmor;			enhancement:Nil		components:( { item:&itCC1xHardenedSivayaArmor; count:2 } )												extraCost:0 }
@@ -203,7 +203,7 @@
 					{ item:&itCC4xExperimentalSivayaArmor;		enhancement:Nil		components:( { item:&itCC2xExperimentalSivayaArmor; count:2 } )											extraCost:0 }
 					{ item:&itCC2xTheoreticalSivayaArmor;		enhancement:Nil		components:( { item:&itCC1xTheoreticalSivayaArmor; count:2 } )											extraCost:0 }
 					{ item:&itCC4xTheoreticalSivayaArmor;		enhancement:Nil		components:( { item:&itCC2xTheoreticalSivayaArmor; count:2 } )											extraCost:0 }
-					
+
 					{ item:&itCC2xStealthArmor;					enhancement:Nil		components:( { item:&itCC1xStealthArmor; count:2 } )													extraCost:0 }
 					{ item:&itCC4xStealthArmor;					enhancement:Nil		components:( { item:&itCC2xStealthArmor; count:2 } )													extraCost:0 }
 					{ item:&itCC2xHardenedStealthArmor;			enhancement:Nil		components:( { item:&itCC1xHardenedStealthArmor; count:2 } )											extraCost:0 }
@@ -216,11 +216,11 @@
 					{ item:&itCC4xTheoreticalStealthArmor;		enhancement:Nil		components:( { item:&itCC2xTheoreticalStealthArmor; count:2 } )											extraCost:0 }
 				)
 			</ArmorRecipes>
-			
+
 			<DriveRecipes>
 				(
 					{ item:&itCCImpulseDrive;					enhancement:Nil		components:( { item:&itCCPteracniumMegaDrive; count:1 } { item:&itCCBussardCollector; count:2 } )		extraCost:0 }
-					
+
 					{ item:&itCCAuxIonDrive;					enhancement:Nil		components:( { item:&itCCIonDrive; count:1 } )															extraCost:0 }
 					{ item:&itCCAuxPlasmaDrive;					enhancement:Nil		components:( { item:&itCCPlasmaDrive; count:1 } )														extraCost:0 }
 					{ item:&itCCAuxTritiumPropulsionUpgrade;	enhancement:Nil		components:( { item:&itCCTritiumPropulsionUpgrade; count:1 } )											extraCost:0 }
@@ -233,7 +233,7 @@
 					{ item:&itCCAuxZeroPointPropulsionUpgrade;	enhancement:Nil		components:( { item:&itCCZeroPointPropulsionUpgrade; count:1 } )										extraCost:0 }
 					{ item:&itCCAuxZeroPointMegaDrive;			enhancement:Nil		components:( { item:&itCCZeroPointMegaDrive; count:1 } )												extraCost:0 }
 					{ item:&itCCAuxImpulseDrive;				enhancement:Nil		components:( { item:&itCCImpulseDrive; count:1 } )														extraCost:0 }
-					
+
 					{ item:&itCCDualIonDrive;					enhancement:Nil		components:( { item:&itCCIonDrive; count:2 } )															extraCost:0 }
 					{ item:&itCCDualPlasmaDrive;				enhancement:Nil		components:( { item:&itCCPlasmaDrive; count:2 } )														extraCost:0 }
 					{ item:&itCCDualTritiumPropulsionUpgrade;	enhancement:Nil		components:( { item:&itCCTritiumPropulsionUpgrade; count:2 } )											extraCost:0 }
@@ -245,49 +245,51 @@
 					{ item:&itCCDualPteracniumMegaDrive;		enhancement:Nil		components:( { item:&itCCPteracniumMegaDrive; count:2 } )												extraCost:0 }
 					{ item:&itCCDualZeroPointPropulsionUpgrade;	enhancement:Nil		components:( { item:&itCCZeroPointPropulsionUpgrade; count:2 } )										extraCost:0 }
 					{ item:&itCCDualZeroPointMegaDrive;			enhancement:Nil		components:( { item:&itCCZeroPointMegaDrive; count:2 } )												extraCost:0 }
-					{ item:&itCCDualImpulseDrive;				enhancement:Nil		components:( { item:&itCCImpulseDrive; count:2 } )														extraCost:0 }		
+					{ item:&itCCDualImpulseDrive;				enhancement:Nil		components:( { item:&itCCImpulseDrive; count:2 } )														extraCost:0 }
 				)
 			</DriveRecipes>
-			
+
 			<IllegalRecipes>
-				(					
+				(
 					{ item:&itCCDirtySolarPanelArray;			enhancement:Nil		components:( { item:&itCCSolarPanel; count:6 } )														extraCost:0 }
-					
+
 					{ item:&itCCAutoRepairAI;					enhancement:Nil		components:( { item:&itCCAutoRepairVI; count:1 } { item:&itCCQuadCoreProcessor; count:1 } )				extraCost:0 }
 					{ item:&itCCReplicatorCollective;			enhancement:Nil		components:( { item:&itCCAutoRepairAI; count:1 } { item:&itNeutroniumOre; count:12 } )					extraCost:0 }
-					
+
 					{ item:&itCCAdvancedSlamCannon;				enhancement:Nil		components:( { item:&itSlamCannon; count:1 } )															extraCost:0 }
 					{ item:&itCCAdvancedHeavySlamCannon;		enhancement:Nil		components:( { item:&itHeavySlamCannon; count:1 } )														extraCost:0 }
-					
+
 					{ item:&itCCMicrosaurCondemnationPod;		enhancement:Nil		components:( { item:&itSeismicScannerPod; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvMicrosaurCondemnationPod;	enhancement:Nil		components:( { item:&itAdvancedScannerPod; count:1 } )													extraCost:0 }
 				)
 			</IllegalRecipes>
-			
+
 			<Recipes>
 				(
 					{ item:&itCCDualCargoHoldExpansion;			enhancement:Nil		components:( { item:&itCCCargoHoldExpansion; count:1 } )												extraCost:0 }
 					{ item:&itCCDualMinersCargoBay;				enhancement:Nil		components:( { item:&itCCMinersCargoBay; count:1 } )													extraCost:0 }
 					{ item:&itCCDualDiplomatsCargoHold;			enhancement:Nil		components:( { item:&itCCDiplomatsCargoHold; count:1 } )												extraCost:0 }
 					{ item:&itCCDualMilitaryCargoBay;			enhancement:Nil		components:( { item:&itCCMilitaryCargoBay; count:1 } )													extraCost:0 }
-					
+					{ item:&itCCDualAutonBay;					enhancement:Nil		components:( { item:&itCCAutonBay; count:1 } )															extraCost:0 }
+					{ item:&itCCDualMilitaryAutonBay;			enhancement:Nil		components:( { item:&itCCAutonBay; count:1 } )															extraCost:0 }
+
 					{ item:&itCCDualCoreProcessor;				enhancement:Nil		components:( { item:&itMnemonicProcessor; count:2 } )													extraCost:0 }
 					{ item:&itCCQuadCoreProcessor;				enhancement:Nil		components:( { item:&itCCDualCoreProcessor; count:2 } )													extraCost:0 }
-					
+
 					{ item:&itCCAdvHeliumRegolithRefinery;		enhancement:Nil		components:( { item:&itCCHeliumRegolithRefinery; count:1 } )											extraCost:0 }
 					{ item:&itCCAdvUraniumOreRefinery;			enhancement:Nil		components:( { item:&itCCUraniumOreRefinery; count:1 } )												extraCost:0 }
 					{ item:&itCCAdvXenotiteOreRefinery;			enhancement:Nil		components:( { item:&itCCXenotiteOreRefinery; count:1 } )												extraCost:0 }
 					{ item:&itCCAdvPteracniumOreRefinery;		enhancement:Nil		components:( { item:&itCCPteracniumOreRefinery; count:1 } )												extraCost:0 }
 					{ item:&itCCAdvHadronArcheolithRefinery;	enhancement:Nil		components:( { item:&itCCHadronArcheolithRefinery; count:1 } )											extraCost:0 }
-					
-					{ item:&itSolarPanelArray;					enhancement:Nil		components:( { item:&itCCDirtySolarPanelArray; count:1 } )												extraCost:0 }
+
+					{ item:&itCCSolarPanelArray;				enhancement:Nil		components:( { item:&itCCDirtySolarPanelArray; count:1 } )												extraCost:0 }
 					{ item:&itCCSolarConcentrator;				enhancement:Nil		components:( { item:&itCCDirtySolarConcentrator; count:1 } )											extraCost:0 }
 					{ item:&itCCBiohybridSolarDynamo;			enhancement:Nil		components:( { item:&itCCDirtyBiohybridSolarDynamo; count:1 } )											extraCost:0 }
 					{ item:&itCCBussardCollector;				enhancement:Nil		components:( { item:&itCCHydrogenRamscoop; count:1 } { item:&itCCNapaS30Deflector; count:1 } )			extraCost:0 }
-					
+
 					{ item:&itCCRegenNMGenerator;				enhancement:Nil		components:( { item:&itRegeneratingNanos; count:6 }  { item:&itMnemonicProcessor; count:1 } )			extraCost:0 }
 					{ item:&itCCAutoRepairVI;					enhancement:Nil		components:( { item:&itCCRegenNMGenerator; count:1 } { item:&itCCDualCoreProcessor; count:1 } )			extraCost:0 }
-					
+
 					{ item:&itCCDualSiva8MWReactor;				enhancement:Nil		components:( { item:&itCCSiva8MWReactor; count:2 } )													extraCost:0 }
 					{ item:&itCCDualSiva12MWReactor;			enhancement:Nil		components:( { item:&itCCSiva12MWReactor; count:2 } )													extraCost:0 }
 					{ item:&itCCDualSiva20MWReactor;			enhancement:Nil		components:( { item:&itCCSiva20MWReactor; count:2 } )													extraCost:0 }
@@ -320,7 +322,7 @@
 					{ item:&itCCAuxSiva20000MWReactor;			enhancement:Nil		components:( { item:&itCCSiva20000MWReactor; count:1 } )												extraCost:0 }
 				)
 			</Recipes>
-			
+
 			<SpecialDeal>
 				(
 					(&itCCJadeiteS1Deflector; &itCCL1DamageControlCrew; &itCCL1WeaponsEngineeringCrew; &itCCL1ShieldsEngineeringCrew;)
@@ -338,7 +340,7 @@
 				)
 			</SpecialDeal>
 		</InitialData>
-			
+
 		<Events>
 			<GetGlobalDockScreen>
 				(switch
@@ -356,7 +358,7 @@
 							(list &dsRefuseContamination; 10)
 						)
 						
-					;	If the player has committed crimes, then they's in trouble
+					;	If the player has committed crimes, then they're in trouble
 					
 					(geq (int (objGetData gPlayerShip "CCCrimeSeverity")) 2)
 						(list &dsCCCabbageExecution; 8)
@@ -367,6 +369,8 @@
 			
 			<OnGlobalPlayerEnteredSystem>
 			;	This script runs every time because the stations reset their inventories every time you enter the system.
+			;	This script seems to be unreliable, it may not run if you spawn in the system and may not properly detect
+			;	  the system name.
 			
 				(block Nil
 					(enum (sysFindObject Nil "T +unid:0x00102003;") theMiningStation
@@ -393,6 +397,23 @@
 								;	Adds 1d3 random mining weapons and 1d3 random mining devices
 								;	  between levels 1 and 5 if the system is not "Eridani"
 							)
+						)
+					)
+					(enum (sysFindObject Nil "T +unid:0x008102D2;") theMiningStation
+					;	Applies to every IMU Local station in the system
+					
+						(block Nil
+							(objEnumItems theMiningStation "* +cabbageCorp;" theMiningItem
+								(objRemoveItem theMiningStation theMiningItem)
+							)
+							;	Remove all Cabbage Corp items to start from scratch
+							
+							(block Nil
+								(objAddRandomItems theMiningStation &trCCMiningWeapon3; (random 1 4))
+								(objAddRandomItems theMiningStation &trCCMiningDevice3; (random 1 4))
+							)
+							;	Adds 1d4 random mining weapons and 1d4 random mining devices
+							;	between levels 4 and 8
 						)
 					)
 					(sysSetData "CabbageMiningBalance" 1)

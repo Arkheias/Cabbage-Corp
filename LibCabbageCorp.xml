@@ -1062,7 +1062,7 @@ vt			= 	(virtual) Item Code
 	<Module fileName="Modules\Library\CCLibrary_DockScreens.xml"/>
 	<Module fileName="Modules\Library\CCLibrary_Effects.xml"/>
 	<Module fileName="Modules\Library\CCLibrary_Globals.xml"/>
-	<Module fileName="CCModules\CCLibrary_Sovereign.xml"/>
+	<Module fileName="Modules\Library\CCLibrary_Sovereign.xml"/>
 	<Module fileName="Modules\Library\CCLibrary_Tables.xml"/>
 	
 	<!-- Other -->
