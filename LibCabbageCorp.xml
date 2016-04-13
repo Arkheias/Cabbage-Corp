@@ -1049,7 +1049,7 @@ vt			= 	(virtual) Item Code
 	<Module fileName="Modules\Devices\CCDevices_Crew.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_DRADIS.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_Miscellaneous.xml"/>
-	<Module fileName="CCModules\CCDevices_Nanofacs.xml"/>
+	<Module fileName="Modules\Devices\CCDevices_Nanofacs.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_Refineries.xml"/>
 	
 	<Module fileName="Modules\Devices\CCDevices_Reactors.xml"/>
