@@ -1043,7 +1043,6 @@ vt			= 	(virtual) Item Code
 	<Module fileName="Modules\Devices\CCDevices_AutoDefense.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_AuxReactors.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_CargoHolds.xml"/>
-	<Module fileName="CCModules\CCDevices_CargoHolds.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_Drives.xml"/>
 	<Module fileName="Modules\Devices\CCDevices_Enhancers.xml"/>
 	
