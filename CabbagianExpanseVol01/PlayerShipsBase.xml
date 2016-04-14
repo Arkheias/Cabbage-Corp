@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+	<!-- Player Ship: Lampyridae-class Stealth Transport Base Class -->
+
+	<ShipClass UNID="&scPlayerLampyridaeBase;"
+			class=				"(player Lampyridae base class)"
+			virtual=			"true" 
+			
+			attributes=			"baseClass" 
+			>
+
+		<PlayerSettings
+			desc=				"Cabbage Corp began production of the Lampyridae series in 2361. The Lampyridae-class has a primary weapon hardpoint with a swivel mount compatible with all light Cabbage Corp weapons, two secondary weapon hard-points, eight armor segments, and a base crew capacity of sixteen."
+			largeImage=			"&rsCCLampyridaeLarge;"
+			initialClass=		"true"
+            startingCredits=    "10d18+120"
+			>
+
+			<ArmorDisplay>
+				<ShipImage imageID="&rsCCLampyridaeArmorHUD;" imageWidth="136" imageHeight="136"/>
+				
+				;The armor images are just a black pixel (that the mask makes transparent) from the top-left corner of the armor HUD image
+				<ArmorSection name="forward"
+						imageID="&rsCCLampyridaeArmorHUD;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="55" destY="21" hpX="55" hpY="21"
+						nameY="8" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="fore-starboard"
+						imageID="&rsCCLampyridaeArmorHUD;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="83" destY="34" hpX="83" hpY="34"
+						nameY="20" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="fore-port"
+						imageID="&rsCCLampyridaeArmorHUD;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="27" destY="34" hpX="27" hpY="34"
+						nameY="32" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
+						
+				<ArmorSection name="starboard"
+						imageID="&rsCCLampyridaeArmorHUD;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="95" destY="61" hpX="95" hpY="61"
+						nameY="44" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="port"
+						imageID="&rsCCLampyridaeArmorHUD;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="15" destY="61" hpX="15" hpY="61"
+						nameY="56" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
+						
+				<ArmorSection name="aft-starboard"
+						imageID="&rsCCLampyridaeArmorHUD;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="83" destY="88" hpX="83" hpY="88"
+						nameY="68" nameBreakWidth="360" nameDestX="0" nameDestY="8" />	
+						
+				<ArmorSection name="aft-port"
+						imageID="&rsCCLampyridaeArmorHUD;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="27" destY="88" hpX="27" hpY="88"
+						nameY="80" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="aft"
+						imageID="&rsCCLampyridaeArmorHUD;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="55" destY="101" hpX="55" hpY="101"
+						nameY="92" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+			</ArmorDisplay>
+<!--
+				;I gave up on getting these armor segments aligned correctly
+                <ArmorSection name="forward"
+                        imageID="&rsArmor844;"  imageX="0" imageY="0" imageWidth="28" imageHeight="11"
+                        destX="55" destY="21" hpX="55" hpY="21"
+                        nameY="8" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="fore-starboard"
+                        imageID="&rsArmor844;"  imageX="28" imageY="0" imageWidth="23" imageHeight="23"
+                        destX="83" destY="34" hpX="83" hpY="34"
+                        nameY="20" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="fore-port"
+                        imageID="&rsArmor844;"  imageX="51" imageY="0" imageWidth="23" imageHeight="23"
+                        destX="27" destY="34" hpX="27" hpY="34"
+                        nameY="32" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
+
+                <ArmorSection name="starboard"
+                        imageID="&rsArmor844;"  imageX="74" imageY="0" imageWidth="11" imageHeight="26"
+                        destX="95" destY="61" hpX="95" hpY="61"
+                        nameY="44" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
+					
+                <ArmorSection name="port"
+                        imageID="&rsArmor844;"  imageX="85" imageY="0" imageWidth="11" imageHeight="26"
+                        destX="15" destY="61" hpX="15" hpY="61"
+                        nameY="56" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
+
+                <ArmorSection name="aft-starboard"
+                        imageID="&rsArmor844;"  imageX="96" imageY="0" imageWidth="23" imageHeight="23"
+                        destX="83" destY="88" hpX="83" hpY="88"
+                        nameY="68" nameBreakWidth="360" nameDestX="0" nameDestY="8" />	
+
+                <ArmorSection name="aft-port"
+                        imageID="&rsArmor844;"  imageX="119" imageY="0" imageWidth="23" imageHeight="23"
+                        destX="27" destY="88" hpX="27" hpY="88"
+                        nameY="80" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+                <ArmorSection name="aft"
+                        imageID="&rsArmor844;"  imageX="0" imageY="55" imageWidth="28" imageHeight="11"
+                        destX="55" destY="101" hpX="55" hpY="101"
+                        nameY="92" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
+			</ArmorDisplay>
+-->
+
+			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;"/>
+
+            <ReactorDisplay>
+                <Image imageID="&rsZubrinReactor;" 
+                        imageX="0" imageY="0" imageWidth="256" imageHeight="60"/>
+
+                <PowerLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="60" imageWidth="202" imageHeight="14"
+                        destX="54" destY="9"/>
+
+                <FuelLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="74" imageWidth="194" imageHeight="14"
+                        destX="54" destY="37"/>
+
+                <FuelLowLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="88" imageWidth="194" imageHeight="14"/>
+
+                <ReactorText x="62" y="22" width="154" height="14"/>
+                <PowerLevelText x="62" y="0" width="154" height="9"/>
+                <FuelLevelText x="62" y="51" width="154" height="9"/>
+            </ReactorDisplay>
+			
+			<WeaponDisplay>
+				<Image imageID="&rsZubrinTargeting;" imageX="0" imageY="0" imageWidth="360" imageHeight="120"/>
+			</WeaponDisplay>
+		</PlayerSettings>
+	</ShipClass>
+
+	<!-- Player Ship: Lorry-class Stealth Transport Base Class -->
+
+	<ShipClass UNID="&scPlayerLorryBase;"
+			class=				"(player Lorry base class)"
+			virtual=			"true" 
+			
+			attributes=			"baseClass" 
+			>
+
+		<PlayerSettings
+			desc=				"Cabbage Corp began production of the Lorry series in 2398. The Lorry-class was designed with minimal backup systems in order to maximize the available space for upgrades. It has six armor segments and a base crew capacity of four."
+			largeImage=			"&rsCCLorryLarge;"
+			initialClass=		"true"
+            startingCredits=    "10d12+80"
+			>
+
+			<ArmorDisplay>
+                <ShipImage imageID="&rsCCLorryArmorHUD;" imageWidth="136" imageHeight="136"/>
+
+				<ArmorSection name="forward"
+					imageID="&rsCCEIArmor6;" 
+					imageX="0" imageY="0" imageWidth="80" imageHeight="9"
+					destX="29" destY="24" hpX="55" hpY="18"
+					nameY="8" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
+
+				<ArmorSection name="fore-starboard"
+					imageID="&rsCCEIArmor6;" 
+					imageX="80" imageY="0" imageWidth="9" imageHeight="38"
+					destX="99" destY="31" hpX="90" hpY="44"
+					nameY="24" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+
+				<ArmorSection name="fore-port"
+					imageID="&rsCCEIArmor6;" 
+					imageX="89" imageY="0" imageWidth="9" imageHeight="38"
+					destX="29" destY="31" hpX="20" hpY="44"
+					nameY="40" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+				<ArmorSection name="aft-starboard"
+					imageID="&rsCCEIArmor6;" 
+					imageX="80" imageY="2" imageWidth="9" imageHeight="38"
+					destX="99" destY="69" hpX="90" hpY="80"
+					nameY="56" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+
+				<ArmorSection name="aft-port"
+					imageID="&rsCCEIArmor6;" 
+					imageX="89" imageY="2" imageWidth="9" imageHeight="38"
+					destX="29" destY="69" hpX="20" hpY="80"
+					nameY="72" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+
+				<ArmorSection name="aft"
+					imageID="&rsCCEIArmor6;" 
+					imageX="0" imageY="45" imageWidth="80" imageHeight="9"
+					destX="29" destY="105" hpX="55" hpY="105"
+					nameY="88" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+			</ArmorDisplay>
+
+			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;"/>
+
+            <ReactorDisplay>
+                <Image imageID="&rsZubrinReactor;" 
+                        imageX="0" imageY="0" imageWidth="256" imageHeight="60"/>
+
+                <PowerLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="60" imageWidth="202" imageHeight="14"
+                        destX="54" destY="9"/>
+
+                <FuelLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="74" imageWidth="194" imageHeight="14"
+                        destX="54" destY="37"/>
+
+                <FuelLowLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="88" imageWidth="194" imageHeight="14"/>
+
+                <ReactorText x="62" y="22" width="154" height="14"/>
+                <PowerLevelText x="62" y="0" width="154" height="9"/>
+                <FuelLevelText x="62" y="51" width="154" height="9"/>
+            </ReactorDisplay>
+			
+			<WeaponDisplay>
+				<Image imageID="&rsZubrinTargeting;" imageX="0" imageY="0" imageWidth="360" imageHeight="120"/>
+			</WeaponDisplay>
+		</PlayerSettings>
+	</ShipClass>
+
+	<!-- Player Ship: Oboroguruma-class Stealth Freighter Base Class -->
+
+	<ShipClass UNID="&scPlayerOborogurumaBase;"
+			class=				"(player Oboroguruma base class)"
+			virtual=			"true" 
+			
+			attributes=			"baseClass" 
+			>
+
+		<PlayerSettings
+			desc=				"The Oboroguruma-class stealth freighter is the oldest ship still in use in the Cabbage Corp fleet. It has two secondary weapon hard-points each on the port and starboard sides that can swivel to attack any ship within a 190 degree range, twelve armor segments, and a base crew capacity of eight-hundred."
+			largeImage=			"&rsCCOborogurumaLarge;"
+			initialClass=		"true"
+            startingCredits=    "10d24+160"
+			>
+
+			<ArmorDisplay>
+                <ShipImage imageID="&rsCCOborogurumaArmorHUD;" imageWidth="136" imageHeight="136"/>
+
+				;The armor images are just a black pixel (that the mask makes transparent) from the top-left corner of the armor HUD image
+				<ArmorSection name="0&#xb0; (forward)"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="55" hpY="15"
+						nameY="5" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="330&#xb0;"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="85" hpY="30"
+						nameY="14" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="30&#xb0;"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="25" hpY="30"
+						nameY="23" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="300&#xb0;"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="85" hpY="45"
+						nameY="32" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="60&#xb0;"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="25" hpY="45"
+						nameY="41" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="270&#xb0; (starboard)"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="86" hpY="60"
+						nameY="50" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="90&#xb0; (port)"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="24" hpY="60"
+						nameY="59" nameBreakWidth="200" nameDestX="12" nameDestY="0" />
+						
+				<ArmorSection name="240&#xb0;"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="86" hpY="75"
+						nameY="68" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="120&#xb0;"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="24" hpY="75"
+						nameY="77" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="210&#xb0;"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="87" hpY="90"
+						nameY="86" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="150&#xb0;"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="23" hpY="90"
+						nameY="95" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+						
+				<ArmorSection name="180&#xb0; (aft)"
+						imageID="&rsCCOborogurumaArmorHUD;"  imageX="0" imageY="0" imageWidth="0" imageHeight="0"
+						destX="0" destY="0" hpX="55" hpY="108"
+						nameY="104" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
+			</ArmorDisplay>
+			
+			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;"/>
+
+            <ReactorDisplay>
+                <Image imageID="&rsZubrinReactor;" 
+                        imageX="0" imageY="0" imageWidth="256" imageHeight="60"/>
+
+                <PowerLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="60" imageWidth="202" imageHeight="14"
+                        destX="54" destY="9"/>
+
+                <FuelLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="74" imageWidth="194" imageHeight="14"
+                        destX="54" destY="37"/>
+
+                <FuelLowLevelImage imageID="&rsZubrinReactor;"
+                        imageX="0" imageY="88" imageWidth="194" imageHeight="14"/>
+
+                <ReactorText x="62" y="22" width="154" height="14"/>
+                <PowerLevelText x="62" y="0" width="154" height="9"/>
+                <FuelLevelText x="62" y="51" width="154" height="9"/>
+            </ReactorDisplay>
+			
+			<WeaponDisplay>
+				<Image imageID="&rsZubrinTargeting;" imageX="0" imageY="0" imageWidth="360" imageHeight="120"/>
+			</WeaponDisplay>
+		</PlayerSettings>
+	</ShipClass>
+
+<!-- RESOURCES -->
+
+	<Image UNID="&rsCCLampyridaeLarge;"			bitmap="LampyridaeLarge.jpg"			bitmask="LampyridaeLargeMask.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCLampyridaeArmorHUD;"		bitmap="LampyridaeArmorHUD.jpg"/>
+	<Image UNID="&rsCCLampyridaeHD;"			bitmap="LampyridaeHD.jpg"				bitmask="LampyridaeHDMask.jpg"/>
+
+	<Image UNID="&rsCCLorryLarge;"			bitmap="LorryLarge.jpg"				bitmask="LorryLargeMask.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCLorryArmorHUD;"		bitmap="LorryArmorHUD.jpg"/>
+	<Image UNID="&rsCCLorryHD;"				bitmap="LorryHD.jpg"				bitmask="LorryHDMask.jpg"/>
+	
+	<Image UNID="&rsCCOborogurumaLarge;"		bitmap="OborogurumaLarge.jpg"			bitmask="OborogurumaLargeMask.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCOborogurumaArmorHUD;"		bitmap="OborogurumaArmorHUD.jpg"/>
+	<Image UNID="&rsCCOborogurumaHD;"			bitmap="OborogurumaHD.jpg"				bitmask="OborogurumaHDMask.jpg"/>
+
+    <Image UNID="&rsCCEIArmor6;"					bitmap="ArmorHUD_EI200.jpg"/>
+    <Image UNID="&rsCCShieldsHUD;"					bitmap="ShieldsHUD.jpg"						bitmask="ShieldsHUDMask.jpg"/>
+
+</TranscendenceModule>

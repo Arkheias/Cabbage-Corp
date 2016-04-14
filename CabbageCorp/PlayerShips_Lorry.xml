@@ -9,7 +9,7 @@
 			type=				"stealth transport"
 
 			attributes=			"00200000_PlayerShip,"
-			inherit=			"&scPlayerSapphireBase;"
+			inherit=			"&scPlayerLorryBase;"
 			characterClass=		"&unidPilgrimClass;"
 
             size=               "58"
@@ -60,7 +60,7 @@
 			perception=         "4"
 		/>
 
-		<Image imageID="&rsCCF120Lorry;" imageWidth="90" imageHeight="90" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCLorryHD;" imageWidth="90" imageHeight="90" rotationCount="120" rotationColumns="12"/>
 
 		<Effects>
 			<Effect type="thrustMain"   posAngle="168"  posRadius="37"  posZ="0"  rotation="180" />
@@ -69,60 +69,13 @@
 
 		<PlayerSettings
 			desc=               "Cabbage Corp began production of the Lorry series in 2398. The Lorry-class was designed with minimal backup systems in order to maximize the available space for upgrades. It has six armor segments and a base crew capacity of four. (Starts in Eridani)"
-			largeimage=         "&rsCCLargeLorry;"
+			largeimage=         "&rsCCLorryLarge;"
 			initialClass=       "true"
             startingCredits=    "10d12+80"
 			
             startingSystem=     "SE"
             startingPos=        "Start"
-		>
-
-
-			<ArmorDisplay>
-                <ShipImage imageID="&rsCCArmorHUDLorry;" imageWidth="136" imageHeight="136"/>
-
-				<ArmorSection name="forward"
-					imageID="&rsCCEIArmor6;" 
-					imageX="0" imageY="0" imageWidth="80" imageHeight="9"
-					destX="29" destY="24" hpX="55" hpY="18"
-					nameY="8" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
-
-				<ArmorSection name="fore-starboard"
-					imageID="&rsCCEIArmor6;" 
-					imageX="80" imageY="0" imageWidth="9" imageHeight="38"
-					destX="99" destY="31" hpX="90" hpY="44"
-					nameY="24" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
-
-				<ArmorSection name="fore-port"
-					imageID="&rsCCEIArmor6;" 
-					imageX="89" imageY="0" imageWidth="9" imageHeight="38"
-					destX="29" destY="31" hpX="20" hpY="44"
-					nameY="40" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-				<ArmorSection name="aft-starboard"
-					imageID="&rsCCEIArmor6;" 
-					imageX="80" imageY="2" imageWidth="9" imageHeight="38"
-					destX="99" destY="69" hpX="90" hpY="80"
-					nameY="56" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
-
-				<ArmorSection name="aft-port"
-					imageID="&rsCCEIArmor6;" 
-					imageX="89" imageY="2" imageWidth="9" imageHeight="38"
-					destX="29" destY="69" hpX="20" hpY="80"
-					nameY="72" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-				<ArmorSection name="aft"
-					imageID="&rsCCEIArmor6;" 
-					imageX="0" imageY="45" imageWidth="80" imageHeight="9"
-					destX="29" destY="105" hpX="55" hpY="105"
-					nameY="88" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-			</ArmorDisplay>
-
-			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;">
-			</ShieldDisplay>
-
-		</PlayerSettings>
+		/>
 		
 		<StaticData>
 			<crewCapacity>4</crewCapacity>
@@ -137,7 +90,7 @@
 			type=				"stealth transport"
 
 			attributes=			"00200000_PlayerShip,"
-			inherit=			"&scPlayerSapphireBase;"
+			inherit=			"&scPlayerLorryBase;"
 			characterClass=		"&unidPilgrimClass;"
 
             size=               "58"
@@ -188,7 +141,7 @@
 			perception=         "4"
 		/>
 
-		<Image imageID="&rsCCF120Lorry;" imageWidth="90" imageHeight="90" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCLorryHD;" imageWidth="90" imageHeight="90" rotationCount="120" rotationColumns="12"/>
 
 		<Effects>
 			<Effect type="thrustMain"   posAngle="168"  posRadius="37"  posZ="0"  rotation="180" />
@@ -197,60 +150,13 @@
 
 		<PlayerSettings
 			desc=               "Cabbage Corp began production of the Lorry series in 2398. The Lorry-class was designed with minimal backup systems in order to maximize the available space for upgrades. It has six armor segments and a base crew capacity of four. (Starts in Tau Ceti)"
-			largeimage=         "&rsCCLargeLorry;"
+			largeimage=         "&rsCCLorryLarge;"
 			initialClass=       "true"
             startingCredits=    "10d12+80"
 
             startingSystem=     "TauCeti"
             startingPos=        "Start"
-		>
-
-
-			<ArmorDisplay>
-                <ShipImage imageID="&rsCCArmorHUDLorry;" imageWidth="136" imageHeight="136"/>
-
-				<ArmorSection name="forward"
-					imageID="&rsCCEIArmor6;" 
-					imageX="0" imageY="0" imageWidth="80" imageHeight="9"
-					destX="29" destY="24" hpX="55" hpY="18"
-					nameY="8" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
-
-				<ArmorSection name="fore-starboard"
-					imageID="&rsCCEIArmor6;" 
-					imageX="80" imageY="0" imageWidth="9" imageHeight="38"
-					destX="99" destY="31" hpX="90" hpY="44"
-					nameY="24" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
-
-				<ArmorSection name="fore-port"
-					imageID="&rsCCEIArmor6;" 
-					imageX="89" imageY="0" imageWidth="9" imageHeight="38"
-					destX="29" destY="31" hpX="20" hpY="44"
-					nameY="40" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-				<ArmorSection name="aft-starboard"
-					imageID="&rsCCEIArmor6;" 
-					imageX="80" imageY="2" imageWidth="9" imageHeight="38"
-					destX="99" destY="69" hpX="90" hpY="80"
-					nameY="56" nameBreakWidth="275" nameDestX="0" nameDestY="8" />
-
-				<ArmorSection name="aft-port"
-					imageID="&rsCCEIArmor6;" 
-					imageX="89" imageY="2" imageWidth="9" imageHeight="38"
-					destX="29" destY="69" hpX="20" hpY="80"
-					nameY="72" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-				<ArmorSection name="aft"
-					imageID="&rsCCEIArmor6;" 
-					imageX="0" imageY="45" imageWidth="80" imageHeight="9"
-					destX="29" destY="105" hpX="55" hpY="105"
-					nameY="88" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-			</ArmorDisplay>
-
-			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;">
-			</ShieldDisplay>
-
-		</PlayerSettings>
+		/>
 		
 		<StaticData>
 			<crewCapacity>4</crewCapacity>

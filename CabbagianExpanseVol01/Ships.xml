@@ -121,7 +121,7 @@ other			n-?
 		</Items>
 		
 
-		<Image imageID="&rsCCF120Lorry;" imageWidth="90" imageHeight="90" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCLorryHD;" imageWidth="90" imageHeight="90" rotationCount="120" rotationColumns="12"/>
 
 		<Effects>
 			<Effect type="thrustMain"   posAngle="158"  posRadius="26"  posZ="8"  rotation="180" />
@@ -167,80 +167,6 @@ other			n-?
 							<!-- Large NPC Ships -->							
 <!-- ======================================================================= -->
 
-	<!-- Blacklight-class stealth cruiser -->
-		
-	<ShipClass UNID="&scCCBlacklightNPC;"
-			manufacturer=		"Cabbage Corp"
-			class=				"Blacklight"
-			type=				"stealth cruiser"
-
-			attributes=			"cabbageCorp, genericClass, majorShip"
-			
-			size=				"83"
-			mass=				"1500"
-			thrustRatio=		"1.0"
-			maxSpeed=			"12"
-			cargoSpace=			"50"
-			maxCargoSpace=		"300"
-			
-			explosionType=		"&vtThermoExplosion3;"
-			leavesWreck=		"0"
-	>
-		
-		<Armor>
-			<ArmorSection start="330" span="60" armorID="&itCC4xAdvancedStealthArmor;" />
-            <ArmorSection start="270" span="60" armorID="&itCC4xAdvancedStealthArmor;" />
-            <ArmorSection start="30"  span="60" armorID="&itCC4xAdvancedStealthArmor;" />
-            <ArmorSection start="210" span="60" armorID="&itCC4xAdvancedStealthArmor;" />
-            <ArmorSection start="90"  span="60" armorID="&itCC4xAdvancedStealthArmor;" />
-            <ArmorSection start="150" span="60" armorID="&itCC4xAdvancedStealthArmor;" />
-		</Armor>
-		
-		<Devices>
-			<Device deviceID="&itCCBlacklightLauncher;"/>
-			<Device deviceID="&itCCJadeiteS100Deflector;" charges="6"/>
-			<Device deviceID="&itCCSiva1200MWReactor;"/>
-			<Device deviceID="&itCCB6MissileDefenseSystem;"/>
-			<Device deviceID="&itCCStomaS20ShieldEmitterArray;"/>
-			
-			<Device deviceID="&itCCBiohybridSolarDynamo;"/>
-			<Device deviceID="&itCCAutoRepairVI;"/>
-			<Device deviceID="&itCCDualCobaltThoriumMegaDrive;"/>
-			<Device deviceID="&itCCMilitaryCargoBay;"/>
-		</Devices>
-
-		<Maneuver
-			maxRotationRate=    "9.0"
-			rotationAccel=      "1.0"
-			rotationStopAccel=	"3.0"
-		/>
-
-		<Items>
-			<Item count="4d20" item="&itCCXenotiteAssembly;"/>
-			<Item count="40d24+100" item="&itXM900Missile;"/>
-		</Items>
-		
-		<Image imageID="&rsCCF120Blacklight;" imageWidth="120" imageHeight="120" rotationCount="120" rotationColumns="12"/>
-
-		<Effects>
-			<Effect type="thrustMain"   posAngle="130"  posRadius="52"  posZ="0"  rotation="180"/>
-			
-			<Effect type="thrustMain"   posAngle="180" posRadius="38"  posZ="16"  rotation="180"/>
-			
-			<Effect type="thrustMain"   posAngle="-130" posRadius="52"  posZ="0"  rotation="180"/>
-		</Effects>
-
-		<AISettings
-			aggressor=			"true"
-			fireRateAdj=		"10"
-			fireAccuracy=		"85"
-			perception=			"6"
-			
-			ignoreShieldsDown=	"true"
-			
-			combatStyle=		"standOff"
-		/>
-	</ShipClass>
 
 <!-- ======================================================================= -->
 							<!-- Capital NPC Ships -->							
@@ -248,7 +174,7 @@ other			n-?
 
 <!-- Cheops-class warship -->
 
-	<ShipClass UNID="&scCCCheops;"
+	<ShipClass UNID="&scCCCheopsNPC;"
 			manufacturer=		"Cabbage Corp"
 			class=				"Cheops"
 			type=				"warship"
@@ -334,7 +260,13 @@ other			n-?
 			ignoreShieldsDown=	"true"
 		/>
 
-		<Image imageID="&rsCCF120Cheops;" imageWidth="300" imageHeight="300" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCCheopsHD;" imageWidth="300" imageHeight="300" rotationCount="120" rotationColumns="12"/>
 	</ShipClass>
 
+<!-- RESOURCES -->
+
+	<Image UNID="&rsCCCheopsLarge;"			bitmap="CheopsLarge.jpg"			bitmask="CheopsLargeMask.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCCheopsArmorHud;"		bitmap="CheopsArmorHud.jpg"/>
+	<Image UNID="&rsCCCheopsHD;"			bitmap="CheopsHD.jpg"				bitmask="CheopsHDMask.jpg"/>
+	
 </TranscendenceModule>

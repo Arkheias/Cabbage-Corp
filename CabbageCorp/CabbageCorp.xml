@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE TranscendenceExtension
+	[
+	<!ENTITY unidCCCabbageCorpExtension				"0xDA27E000">
+	<!ENTITY unidCCTopology							"0xDA27E001">
+	<!ENTITY rsCCCabbageCorpCover					"0xDA27E002">
+	
+	<!-- PLAYER SHIPS -->
+	
+	<!ENTITY scCCLorryEridani						"0xDA27E010">
+	<!ENTITY scCCLorryTauCeti						"0xDA27E011">
+	<!ENTITY scCCLampyridaeEridani					"0xDA27E020">
+	<!ENTITY scCCLampyridaeTauCeti					"0xDA27E021">
+	<!ENTITY scCCOborogurumaEridani					"0xDA27E030">
+	<!ENTITY scCCOborogurumaTauCeti					"0xDA27E031">
+
+	<!-- LIBRARIES -->
+
+	<!ENTITY unidCorporateHierarchyVol01			"0x00810000">
+	<!ENTITY unidCCCabbagianExpanseVol01			"0xDA27C000">
+	]>
+
+<TranscendenceExtension UNID="&unidCCCabbageCorpExtension;" 
+		Name=			"Cabbage Corp" 
+		release=		"1"
+		version=		"0.8.0"
+		apiVersion=		"29"
+		credits=		"Arkheias"
+		coverImageID=	"&rsCCCabbageCorpCover;"
+		>
+
+	<Library unid="&unidRPGLibrary;"/>
+	<Library unid="&unidHumanSpaceLibrary;"/>
+    <Library unid="&unidCorporateHierarchyVol01;"/>
+    <Library unid="&unidCCCabbagianExpanseVol01;"/>
+
+	<Module fileName="PlayerShips_Lorry.xml"/>
+	<Module fileName="PlayerShips_Lampyridae.xml"/>
+	<Module fileName="PlayerShips_Oboroguruma.xml"/>
+
+	<Image UNID="&rsCCCabbageCorpCover;"		bitmap="CabbageCorpCover.jpg"	loadOnUse="true" />
+
+	<!-- TOPOLOGY -->
+
+	<SystemMap UNID="&unidCCTopology;"
+			displayOn="&smHumanSpace;"
+			>
+
+		<Uses unid="&unidPartISystemMap;"/>
+		<Uses unid="&unidCCIdaSegment;"/>
+
+		<TopologyCreator>
+			<Node ID="cabbageIdaSegment"/>
+		</TopologyCreator>
+
+		
+	</SystemMap>
+
+</TranscendenceExtension>

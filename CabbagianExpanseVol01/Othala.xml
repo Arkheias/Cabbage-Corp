@@ -2,16 +2,6 @@
 
 <TranscendenceModule>
 
-	<SystemMap UNID="&smCCCabbageSpace;"
-			name=				"Human Space" 
-			backgroundImage=	"&rsLightNebula;"
-			initialScale=		"100"
-			minScale=			"50" 
-			maxScale=			"100" 
-	>
-		
-	</SystemMap>
-
 	<!-- Massive Relay -->
 
 	<StationType UNID="&stCCMassiveRelay;"

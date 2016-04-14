@@ -3525,95 +3525,22 @@ Need to create generic plasma and nano effects.
 		</Weapon>
 	</ItemType>
 
-<!-- ======================================================================= -->
-						<!-- Savoy Howitzer Launchers -->						
-<!-- ======================================================================= -->
-
-	<!-- virtual Savoy Howitzer -->
-<!--
-	<ItemType UNID="&vtCCSavoyHowitzer;"
-			name=				"(virtual Savoy howitzer)"
-			attributes=			"cabbageCorp, howitzer, majorItem"
-			virtual=			"true"
-			 
-			level=				"0"
-			frequency=			"notRandom"
-
-			value=				"0"
-			mass=				"0"
-			 
-			description=		"The virtual Savoy howitzer exists due to an attempt to make the tracking ammo not display any specific damage value. The basic concept for the Savoy howitzers was that each howitzer would use the same ammo and the ammo would only differ based on how high its tracking value was. I have not yet found a way to have the ammo inherit its damage value and effects from the weapon that fired it. The ammo has to be defined for each weapon, and even then the ammo displays the damage value assigned to it by the first weapon in the .xml file, and the weapons do not display any damage values. The weapons seem to work correctly, but at first glance in the inventory you can't see any details about them."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				launcher=			"true"
-
-				damage=				"kinetic:1d6"
-				fireRate=			"10"
-				recoil=				"1"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-				
-				powerUse=			"0"
-				deviceSlots=		"0"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				sound=				"&snCCHowitzerFireKineticLight;"
-		>
-
-			<Missiles>
-				<Missile ammoID="&itCCT1GuidanceCartridge;"
-						type=			"missile"
-						
-						damage=			"kinetic:0"
-						missileSpeed=	"50"
-						lifetime=		"120"
-						maneuverRate=	"1"
-
-						effect=			"&efKineticBoltDefault;"
-						fireEffect=		"&efBlastFireDefault;"
-						sound=			"&snCCHowitzerFireKineticLight;"
-				>
-				</Missile>
-				
-				<Missile ammoID="&itCCT2GuidanceCartridge;"
-						type=			"missile"
-						
-						damage=			"kinetic:0"
-						missileSpeed=	"55"
-						lifetime=		"110"
-						maneuverRate=	"3"
-
-						effect=			"&efKineticBoltDefault;"
-						fireEffect=		"&efBlastFireDefault;"
-						sound=			"&snCCHowitzerFireKineticLight;"
-				>
-				</Missile>
-				
-				<Missile ammoID="&itCCT3GuidanceCartridge;"
-						type=			"missile"
-						
-						damage=			"kinetic:0"
-						missileSpeed=	"60"
-						lifetime=		"100"
-						maneuverRate=	"10"
-
-						effect=			"&efKineticBoltDefault;"
-						fireEffect=		"&efBlastFireDefault;"
-						sound=			"&snCCHowitzerFireKineticLight;"
-				>
-				</Missile>
-			</Missiles>
-		</Weapon>
-	</ItemType>
--->
-
+<!-- RESOURCES -->
+	
+	<Sound UNID="&snCCHowitzerFireKineticLight;"	filename="HowitzerFireKinetic1.wav"/>
+	<Sound UNID="&snCCHowitzerFireKineticMedium;"	filename="HowitzerFireKinetic2.wav"/>
+	<Sound UNID="&snCCHowitzerFireKineticHeavy;"	filename="HowitzerFireKinetic3.wav"/>
+	<Sound UNID="&snCCHowitzerFireBlastLight;"		filename="HowitzerFireBlast1.wav"/>
+	<Sound UNID="&snCCHowitzerFireBlastMedium;"		filename="HowitzerFireBlast2.wav"/>
+	<Sound UNID="&snCCHowitzerFireBlastHeavy;"		filename="HowitzerFireBlast3.wav"/>
+	<Sound UNID="&snCCHowitzerFireThermoLight;"		filename="HowitzerFireThermo1.wav"/>
+	<Sound UNID="&snCCHowitzerFireThermoMedium;"	filename="HowitzerFireThermo2.wav"/>
+	<Sound UNID="&snCCHowitzerFireThermoHeavy;"		filename="HowitzerFireThermo3.wav"/>
+	<Sound UNID="&snCCHowitzerFirePlasmaLight;"		filename="HowitzerFirePlasma1.wav"/>
+	<Sound UNID="&snCCHowitzerFirePlasmaMedium;"	filename="HowitzerFirePlasma2.wav"/>
+	<Sound UNID="&snCCHowitzerFirePlasmaHeavy;"		filename="HowitzerFirePlasma3.wav"/>
+	<Sound UNID="&snCCHowitzerFireNanoLight;"		filename="HowitzerFireNano1.wav"/>
+	<Sound UNID="&snCCHowitzerFireNanoMedium;"		filename="HowitzerFireNano2.wav"/>
+	<Sound UNID="&snCCHowitzerFireNanoHeavy;"		filename="HowitzerFireNano3.wav"/>
 	
 </TranscendenceModule>

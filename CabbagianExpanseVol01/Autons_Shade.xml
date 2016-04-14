@@ -56,7 +56,7 @@ RegeneratingNanos	4		350		1000	rare
 
 		<!-- Image and Effects -->
 
-		<Image imageID="&rsCCF120Shade;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCShadeHD;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
 		
 		<!-- AI and Behavior -->
 
@@ -181,7 +181,7 @@ ArmorRepairDevice	4		3500	2000	rare
 
 		<!-- Image and Effects -->
 
-		<Image imageID="&rsCCF120Shade;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCShadeHD;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
 		
 		<!-- AI and Behavior -->
 
@@ -312,7 +312,7 @@ ShieldEnhancement	3		650		1		uncommon
 
 		<!-- Image and Effects -->
 
-		<Image imageID="&rsCCF120Shade;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCShadeHD;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
 		
 		<!-- AI and Behavior -->
 
@@ -442,7 +442,7 @@ ShieldEnhancement	3		650		1		uncommon
 
 		<!-- Image and Effects -->
 
-		<Image imageID="&rsCCF120Shade;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCShadeHD;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
 		
 		<!-- AI and Behavior -->
 
@@ -571,7 +571,7 @@ ShieldEnhancement	7		25000	10		common
 
 		<!-- Image and Effects -->
 
-		<Image imageID="&rsCCF120Shade;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCShadeHD;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
 		
 		<!-- AI and Behavior -->
 
@@ -784,5 +784,11 @@ ShieldEnhancement	7		25000	10		common
 			<AutonShipClass>&scCCMarkVShadeAuton;</AutonShipClass>
 		</StaticData>
 	</ItemType>
-	
+
+<!-- RESOURCES -->
+
+	<Image UNID="&rsCCShadeLarge;"			bitmap="ShadeLarge.jpg"			bitmask="ShadeLargeMask.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCShadeArmorHUD;"			bitmap="ShadeArmorHud.jpg"/>
+	<Image UNID="&rsCCShadeHD;"				bitmap="ShadeHD.jpg"				bitmask="ShadeHDMask.jpg"/>
+
 </TranscendenceModule>

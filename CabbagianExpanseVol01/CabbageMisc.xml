@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+	
+	<Type UNID="&unidCCCabbageExpAttribs;">
+		<AttributeDesc>
+			<!-- Applies company name or generic label to items -->
+			<ItemAttribute label="Cabbage Corp"			criteria="* +cabbageCorp;"/>
+			
+			<!-- This is used for devices that can be modified, to differentiate between modified and unmodified versions -->
+			<ItemAttribute label="no containment"		labelType="disadvantage"	criteria="* +cabbageNoContainment;"/>
+			
+			<!-- This allows military crew members to have the appropriate tag, but not be confiscated/arrested at stations -->
+			<ItemAttribute label="military"				labelType="advantage"	criteria="* +militaryCrewMember;"/>
+			
+			<!-- Things man was not meant to know -->
+			<ItemAttribute label="political"			labelType="disadvantage"	criteria="* +cabbagePolitical;"/>
+		</AttributeDesc>
+	</Type>
+
+<!-- RESOURCES -->
+
+	<!-- Stations-->
+    <Image UNID="&rsCCStations;"					bitmap="Stations.jpg"						bitmask="StationsMask.jpg"/>
+    <Image UNID="&rsCCFranchise;"					bitmap="Franchise.jpg"						bitmask="FranchiseMask.jpg"/>
+    <Image UNID="&rsCCDealer;"						bitmap="Dealer.jpg"							bitmask="DealerMask.jpg"/>
+    <Image UNID="&rsCCFactory;"						bitmap="Factory.jpg"						bitmask="FactoryMask.jpg"/>
+    <Image UNID="&rsCCFuelDepot;"					bitmap="FuelDepot.jpg"						bitmask="FuelDepotMask.jpg"/>
+    <Image UNID="&rsCCManufacturingPlant;"			bitmap="StationManufacturingPlant.jpg"		bitmask="StationManufacturingPlantMask.jpg"/>
+
+	<!-- Items -->
+	<Image UNID="&rsCCItems;"						bitmap="Items.jpg"							bitmask="ItemsMask.bmp"/>
+	<Image UNID="&rsCCDevices;"						bitmap="Devices.jpg"						bitmask="DevicesMask.bmp"/>
+	<Image UNID="&rsCCShipIcons;"					bitmap="ShipIcons.jpg"						bitmask="ShipIconsMask.bmp"/>
+	<Image UNID="&rsCCArmorCabbagium;"				bitmap="ArmorCabbagium.jpg"					bitmask="ArmorCabbagiumMask.jpg"/>
+	<Image UNID="&rsCCArmorGold;"					bitmap="ArmorGold.jpg"						bitmask="ArmorMask.jpg"/>
+	<Image UNID="&rsCCArmorSivaya;"					bitmap="ArmorSivaya.jpg"					bitmask="ArmorSivayaMask.jpg"/>
+	<Image UNID="&rsCCArmorStealth;"				bitmap="ArmorStealth.jpg"					bitmask="ArmorStealthMask.jpg"/>
+	<Image UNID="&rsCCDrives;"						bitmap="Drives.jpg"							bitmask="DrivesMask.jpg"/>
+	<Image UNID="&rsCCGuns;"						bitmap="Guns.jpg"							bitmask="GunsMask.jpg"/>
+	<Image UNID="&rsCCReactors;"					bitmap="Reactors.jpg"						bitmask="ReactorsMask.jpg"/>
+	<Image UNID="&rsCCCrewMembers;"					bitmap="CrewMembers.jpg"					bitmask="CrewMembersMask.bmp"/>
+	
+	<!-- Screens -->
+	<Image UNID="&rsCCCabbageCorpScreen;"			bitmap="CabbageCorpScreen.jpg"	loadOnUse="true" />
+	<Image UNID="&rsCCPraclarushHangar;"			bitmap="PraclarushHangar.jpg"	loadOnUse="true" />
+
+</TranscendenceModule>

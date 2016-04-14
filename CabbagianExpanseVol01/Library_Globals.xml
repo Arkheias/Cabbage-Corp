@@ -125,7 +125,7 @@
 
 					; Create a Cabbage Corp Kraken to avenge the station
 					(setq CCKraken
-						(sysCreateShip &scCCCheops; (objGetNearestStargate gSource) &svCCCabbageCorp;)
+						(sysCreateShip &scCCCheopsNPC; (objGetNearestStargate gSource) &svCCCabbageCorp;)
 					)
 
 					; If someone destroyed the station, avenge

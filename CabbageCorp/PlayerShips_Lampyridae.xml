@@ -9,7 +9,7 @@
 			type=				"stealth transport"
 			
             attributes=         "00200000_PlayerShip, PlayerShipDrone"
-            inherit=            "&scPlayerSapphireBase;"
+            inherit=            "&scPlayerLampyridaeBase;"
 			characterClass=		"&unidPilgrimClass;"
 			
             size=               "74"
@@ -72,7 +72,7 @@
 
 		<!-- Image and Effects -->
 		
-		<Image imageID="&rsCCF120Lampyridae;" imageWidth="110" imageHeight="110" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCLampyridaeHD;" imageWidth="110" imageHeight="110" rotationCount="120" rotationColumns="12"/>
 
 		<Effects>
 			<Effect type="thrustMain"		posAngle="100"	posRadius="30"	posZ="0"	rotation="180"/>
@@ -86,124 +86,13 @@
 			
 		<PlayerSettings
 			desc=               "Cabbage Corp began production of the Lampyridae series in 2361. The Lampyridae-class has a primary weapon hardpoint with a swivel mount compatible with all light Cabbage Corp weapons, two secondary weapon hard-points, eight armor segments, and a base crew capacity of sixteen. (Starts in Eridani)"
-			largeimage=         "&rsCCLargeLampyridae;"
+			largeimage=         "&rsCCLampyridaeLarge;"
 			initialClass=       "true"
             startingCredits=    "10d18+120"
 
             startingSystem=     "SE"
             startingPos=        "Start"
-		>
-		
-			<ArmorDisplay>
-				<ShipImage imageID="&rsCCArmorHUDLampyridae;" imageWidth="136" imageHeight="136"/>
-				
-				;The armor images are just a black pixel (that the mask makes transparent) from the top-left corner of the armor HUD image
-				<ArmorSection name="forward"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="55" destY="21" hpX="55" hpY="21"
-						nameY="8" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-						
-				<ArmorSection name="fore-starboard"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="83" destY="34" hpX="83" hpY="34"
-						nameY="20" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
-						
-				<ArmorSection name="fore-port"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="27" destY="34" hpX="27" hpY="34"
-						nameY="32" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
-						
-				<ArmorSection name="starboard"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="95" destY="61" hpX="95" hpY="61"
-						nameY="44" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
-						
-				<ArmorSection name="port"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="15" destY="61" hpX="15" hpY="61"
-						nameY="56" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
-						
-				<ArmorSection name="aft-starboard"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="83" destY="88" hpX="83" hpY="88"
-						nameY="68" nameBreakWidth="360" nameDestX="0" nameDestY="8" />	
-						
-				<ArmorSection name="aft-port"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="27" destY="88" hpX="27" hpY="88"
-						nameY="80" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-						
-				<ArmorSection name="aft"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="55" destY="101" hpX="55" hpY="101"
-						nameY="92" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
-			</ArmorDisplay>
-<!--
-				;I gave up on getting these armor segments aligned correctly
-                <ArmorSection name="forward"
-                        imageID="&rsArmor844;"  imageX="0" imageY="0" imageWidth="28" imageHeight="11"
-                        destX="55" destY="21" hpX="55" hpY="21"
-                        nameY="8" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="fore-starboard"
-                        imageID="&rsArmor844;"  imageX="28" imageY="0" imageWidth="23" imageHeight="23"
-                        destX="83" destY="34" hpX="83" hpY="34"
-                        nameY="20" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="fore-port"
-                        imageID="&rsArmor844;"  imageX="51" imageY="0" imageWidth="23" imageHeight="23"
-                        destX="27" destY="34" hpX="27" hpY="34"
-                        nameY="32" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
-
-                <ArmorSection name="starboard"
-                        imageID="&rsArmor844;"  imageX="74" imageY="0" imageWidth="11" imageHeight="26"
-                        destX="95" destY="61" hpX="95" hpY="61"
-                        nameY="44" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
-					
-                <ArmorSection name="port"
-                        imageID="&rsArmor844;"  imageX="85" imageY="0" imageWidth="11" imageHeight="26"
-                        destX="15" destY="61" hpX="15" hpY="61"
-                        nameY="56" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
-
-                <ArmorSection name="aft-starboard"
-                        imageID="&rsArmor844;"  imageX="96" imageY="0" imageWidth="23" imageHeight="23"
-                        destX="83" destY="88" hpX="83" hpY="88"
-                        nameY="68" nameBreakWidth="360" nameDestX="0" nameDestY="8" />	
-
-                <ArmorSection name="aft-port"
-                        imageID="&rsArmor844;"  imageX="119" imageY="0" imageWidth="23" imageHeight="23"
-                        destX="27" destY="88" hpX="27" hpY="88"
-                        nameY="80" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="aft"
-                        imageID="&rsArmor844;"  imageX="0" imageY="55" imageWidth="28" imageHeight="11"
-                        destX="55" destY="101" hpX="55" hpY="101"
-                        nameY="92" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
-			</ArmorDisplay>
--->
-
-			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;"/>
-
-            <ReactorDisplay>
-                <Image imageID="&rsZubrinReactor;" 
-                        imageX="0" imageY="0" imageWidth="256" imageHeight="60"/>
-
-                <PowerLevelImage imageID="&rsZubrinReactor;"
-                        imageX="0" imageY="60" imageWidth="202" imageHeight="14"
-                        destX="54" destY="9"/>
-
-                <FuelLevelImage imageID="&rsZubrinReactor;"
-                        imageX="0" imageY="74" imageWidth="194" imageHeight="14"
-                        destX="54" destY="37"/>
-
-                <FuelLowLevelImage imageID="&rsZubrinReactor;"
-                        imageX="0" imageY="88" imageWidth="194" imageHeight="14"/>
-
-                <ReactorText x="62" y="22" width="154" height="14"/>
-                <PowerLevelText x="62" y="0" width="154" height="9"/>
-                <FuelLevelText x="62" y="51" width="154" height="9"/>
-            </ReactorDisplay>
-		</PlayerSettings>
+		/>
 		
 		<StaticData>
 			<drone912Data>
@@ -334,7 +223,7 @@
 			type=				"stealth transport"
 			
             attributes=         "00200000_PlayerShip, PlayerShipDrone"
-            inherit=            "&scPlayerSapphireBase;"
+            inherit=            "&scPlayerLampyridaeBase;"
 			characterClass=		"&unidPilgrimClass;"
 			
             size=               "74"
@@ -397,7 +286,7 @@
 
 		<!-- Image and Effects -->
 		
-		<Image imageID="&rsCCF120Lampyridae;" imageWidth="110" imageHeight="110" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCLampyridaeHD;" imageWidth="110" imageHeight="110" rotationCount="120" rotationColumns="12"/>
 
 		<Effects>
 			<Effect type="thrustMain"		posAngle="100"	posRadius="30"	posZ="0"	rotation="180"/>
@@ -411,124 +300,13 @@
 			
 		<PlayerSettings
 			desc=               "Cabbage Corp began production of the Lampyridae series in 2361. The Lampyridae-class has a primary weapon hardpoint with a swivel mount compatible with all light Cabbage Corp weapons, two secondary weapon hard-points, eight armor segments, and a base crew capacity of sixteen. (Starts in Tau Ceti)"
-			largeimage=         "&rsCCLargeLampyridae;"
+			largeimage=         "&rsCCLampyridaeLarge;"
 			initialClass=       "true"
             startingCredits=    "10d18+120"
 
             startingSystem=     "TauCeti"
             startingPos=        "Start"
-		>
-		
-			<ArmorDisplay>
-				<ShipImage imageID="&rsCCArmorHUDLampyridae;" imageWidth="136" imageHeight="136"/>
-				
-				;The armor images are just a black pixel (that the mask makes transparent) from the top-left corner of the armor HUD image
-				<ArmorSection name="forward"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="55" destY="21" hpX="55" hpY="21"
-						nameY="8" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-						
-				<ArmorSection name="fore-starboard"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="83" destY="34" hpX="83" hpY="34"
-						nameY="20" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
-						
-				<ArmorSection name="fore-port"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="27" destY="34" hpX="27" hpY="34"
-						nameY="32" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
-						
-				<ArmorSection name="starboard"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="95" destY="61" hpX="95" hpY="61"
-						nameY="44" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
-						
-				<ArmorSection name="port"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="15" destY="61" hpX="15" hpY="61"
-						nameY="56" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
-						
-				<ArmorSection name="aft-starboard"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="83" destY="88" hpX="83" hpY="88"
-						nameY="68" nameBreakWidth="360" nameDestX="0" nameDestY="8" />	
-						
-				<ArmorSection name="aft-port"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="27" destY="88" hpX="27" hpY="88"
-						nameY="80" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-						
-				<ArmorSection name="aft"
-						imageID="&rsCCArmorHUDLampyridae;" imageX="0" imageY="0" imageWidth="0" imageHeight="0"
-						destX="55" destY="101" hpX="55" hpY="101"
-						nameY="92" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
-			</ArmorDisplay>
-<!--
-				;I gave up on getting these armor segments aligned correctly
-                <ArmorSection name="forward"
-                        imageID="&rsArmor844;"  imageX="0" imageY="0" imageWidth="28" imageHeight="11"
-                        destX="55" destY="21" hpX="55" hpY="21"
-                        nameY="8" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="fore-starboard"
-                        imageID="&rsArmor844;"  imageX="28" imageY="0" imageWidth="23" imageHeight="23"
-                        destX="83" destY="34" hpX="83" hpY="34"
-                        nameY="20" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="fore-port"
-                        imageID="&rsArmor844;"  imageX="51" imageY="0" imageWidth="23" imageHeight="23"
-                        destX="27" destY="34" hpX="27" hpY="34"
-                        nameY="32" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
-
-                <ArmorSection name="starboard"
-                        imageID="&rsArmor844;"  imageX="74" imageY="0" imageWidth="11" imageHeight="26"
-                        destX="95" destY="61" hpX="95" hpY="61"
-                        nameY="44" nameBreakWidth="360" nameDestX="0" nameDestY="8" />
-					
-                <ArmorSection name="port"
-                        imageID="&rsArmor844;"  imageX="85" imageY="0" imageWidth="11" imageHeight="26"
-                        destX="15" destY="61" hpX="15" hpY="61"
-                        nameY="56" nameBreakWidth="200" nameDestX="0" nameDestY="8" />	
-
-                <ArmorSection name="aft-starboard"
-                        imageID="&rsArmor844;"  imageX="96" imageY="0" imageWidth="23" imageHeight="23"
-                        destX="83" destY="88" hpX="83" hpY="88"
-                        nameY="68" nameBreakWidth="360" nameDestX="0" nameDestY="8" />	
-
-                <ArmorSection name="aft-port"
-                        imageID="&rsArmor844;"  imageX="119" imageY="0" imageWidth="23" imageHeight="23"
-                        destX="27" destY="88" hpX="27" hpY="88"
-                        nameY="80" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
-
-                <ArmorSection name="aft"
-                        imageID="&rsArmor844;"  imageX="0" imageY="55" imageWidth="28" imageHeight="11"
-                        destX="55" destY="101" hpX="55" hpY="101"
-                        nameY="92" nameBreakWidth="320" nameDestX="0" nameDestY="8" />
-			</ArmorDisplay>
--->
-
-			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;"/>
-
-            <ReactorDisplay>
-                <Image imageID="&rsZubrinReactor;" 
-                        imageX="0" imageY="0" imageWidth="256" imageHeight="60"/>
-
-                <PowerLevelImage imageID="&rsZubrinReactor;"
-                        imageX="0" imageY="60" imageWidth="202" imageHeight="14"
-                        destX="54" destY="9"/>
-
-                <FuelLevelImage imageID="&rsZubrinReactor;"
-                        imageX="0" imageY="74" imageWidth="194" imageHeight="14"
-                        destX="54" destY="37"/>
-
-                <FuelLowLevelImage imageID="&rsZubrinReactor;"
-                        imageX="0" imageY="88" imageWidth="194" imageHeight="14"/>
-
-                <ReactorText x="62" y="22" width="154" height="14"/>
-                <PowerLevelText x="62" y="0" width="154" height="9"/>
-                <FuelLevelText x="62" y="51" width="154" height="9"/>
-            </ReactorDisplay>
-		</PlayerSettings>
+		/>
 		
 		<StaticData>
 			<drone912Data>
@@ -650,5 +428,5 @@
 			<crewCapacity>16</crewCapacity>
 		</StaticData>
 	</ShipClass>
-
+	
 </TranscendenceModule>

@@ -58,7 +58,7 @@ KaleMIRepeater		1		300		1000	uncommon
 
 		<!-- Image and Effects -->
 		
-		<Image imageID="&rsCCF120Wraith;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCWraithHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
 
 		<!-- AI and Behavior -->
 
@@ -137,7 +137,7 @@ ArmorRepairDevice	4		3500	2000	rare
 
 		<!-- Image and Effects -->
 		
-		<Image imageID="&rsCCF120Wraith;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCWraithHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
 
 		<!-- AI and Behavior -->
 
@@ -223,7 +223,7 @@ ShieldEnhancement	3		650		1		uncommon
 
 		<!-- Image and Effects -->
 		
-		<Image imageID="&rsCCF120Wraith;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCWraithHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
 
 		<!-- AI and Behavior -->
 
@@ -303,7 +303,7 @@ ShieldEnhancement	3		650		1		uncommon
 
 		<!-- Image and Effects -->
 		
-		<Image imageID="&rsCCF120Wraith;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCWraithHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
 
 		<!-- AI and Behavior -->
 
@@ -383,7 +383,7 @@ ShieldEnhancement	7		25000	10		common
 
 		<!-- Image and Effects -->
 		
-		<Image imageID="&rsCCF120Wraith;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCWraithHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
 
 		<!-- AI and Behavior -->
 
@@ -544,5 +544,11 @@ ShieldEnhancement	7		25000	10		common
 			<AutonShipClass>&scCCMarkVWraithAuton;</AutonShipClass>
 		</StaticData>
 	</ItemType>
+
+<!-- RESOURCES -->
+
+	<Image UNID="&rsCCWraithLarge;"			bitmap="WraithLarge.jpg"			bitmask="WraithLargeMask.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCWraithArmorHud;"		bitmap="WraithArmorHud.jpg"/>
+	<Image UNID="&rsCCWraithHD;"			bitmap="WraithHD.jpg"				bitmask="WraithHDMask.jpg"/>
 
 </TranscendenceModule>

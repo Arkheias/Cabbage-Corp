@@ -51,7 +51,7 @@ LightStealthPlating	2		130		2500	rare
 		
 		<!-- Image and Effects -->
 
-		<Image imageID="&rsCCF120Phantom;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
 
 		<!-- AI and Behavior -->
 
@@ -286,7 +286,7 @@ MIIPhantomAuton		4		1500	4000	uncommon
 		
 		<!-- Image and Effects -->
 
-		<Image imageID="&rsCCF120Phantom;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
 
 		<!-- AI and Behavior -->
 
@@ -526,7 +526,7 @@ MIDRADISModule		5		6000	4000	veryrare
 		
 		<!-- Image and Effects -->
 
-		<Image imageID="&rsCCF120Phantom;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
 
 		<!-- AI and Behavior -->
 
@@ -766,7 +766,7 @@ MIIDRADISModule		7		21000	4500	veryrare
 		
 		<!-- Image and Effects -->
 
-		<Image imageID="&rsCCF120Phantom;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
 
 		<!-- AI and Behavior -->
 
@@ -1006,7 +1006,7 @@ MIIIDRADISModule	9		80000	4500	veryrare
 		
 		<!-- Image and Effects -->
 
-		<Image imageID="&rsCCF120Phantom;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
 
 		<!-- AI and Behavior -->
 
@@ -1335,5 +1335,11 @@ MIIIDRADISModule	9		80000	4500	veryrare
 			<AutonShipClass>&scCCMarkVPhantomAuton;</AutonShipClass>
 		</StaticData>
 	</ItemType>
+
+<!-- RESOURCES -->
+
+	<Image UNID="&rsCCPhantomLarge;"				bitmap="PhantomLarge.jpg"			bitmask="PhantomLargeMask.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCPhantomArmorHud;"				bitmap="PhantomArmorHud.jpg"/>
+	<Image UNID="&rsCCPhantomHD;"					bitmap="PhantomHD.jpg"			bitmask="PhantomHDMask.jpg"/>
 	
 </TranscendenceModule>

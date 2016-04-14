@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+	<!-- IDA SEGMENT ============================================== -->
+
+	<SystemMap UNID="&unidCCIdaSegment;"
+			displayOn="&smHumanSpace;"
+			>
+
+		<NodeGroup ID="cabbageIdaSegment">
+			<Stargate from="Othala:Coreward"		to="IS1:Edgeward"/>
+			<Stargate from="IS1:Coreward"			to="IS2:Edgeward"/>
+			<Stargate from="IS2:EdgewardTauCeti"	to="TauCeti:EdgewardIS"/>
+		</NodeGroup>
+		
+		<!-- Othala -->
+		
+		<Node ID="Othala" x="56" y="-157">
+			<System 
+					name=			"Othala"
+					level=			"15"
+					attributes=		"alienSpace, oldBeyond, cabbageIdaSegment"
+					>
+				<System UNID="&ssCCOthala;"/>
+			</System>
+		</Node>
+
+		<!-- MINOR IDA SEGMENT SYSTEMS -->
+		
+		<Node ID="IS1" x="56" y="-107">
+			<System
+					level=			"10"
+					attributes=		"alienSpace, oldBeyond, cabbageIdaSegment"
+					>
+				<Table>
+					<System chance="30" name="Vena" UNID="&ssEarthSpaceStandard;"/>
+					<System chance="40" name="Wolf 1061"	UNID="&ssEarthSpaceRedDwarf;"/>
+					<System chance="30" name="Untern"		UNID="&ssEarthSpaceAsteroids;"/>
+				</Table>
+			</System>
+		</Node>
+
+		<Node ID="IS2" x="56" y="-132">
+			<System
+					level=			"5"
+					attributes=		"alienSpace, oldBeyond, cabbageIdaSegment"
+					>
+				<Table>
+					<System chance="25" name="Tilton"		UNID="&ssEarthSpaceStandard;"/>
+					<System chance="25" name="Gliese 1"	UNID="&ssEarthSpaceRedDwarf;"/>
+					<System chance="25" name="Said Matar"		UNID="&ssEarthSpaceAsteroids;"/>
+					<System chance="25" name="Thasselon" UNID="&ssEarthSpaceDesert;"/>
+				</Table>
+			</System>
+		</Node>
+	</SystemMap>
+
+</TranscendenceModule>

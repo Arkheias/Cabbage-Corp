@@ -2860,5 +2860,23 @@
 			</Effect>
 		</Weapon>
 	</ItemType>
+
+<!-- RESOURCES -->
+
+	<Sound UNID="&snCCLanceFireLaserLight;"			filename="LanceFireLaser1.wav"/>
+	<Sound UNID="&snCCLanceFireLaserMedium;"		filename="LanceFireLaser2.wav"/>
+	<Sound UNID="&snCCLanceFireLaserHeavy;"			filename="LanceFireLaser3.wav"/>
+	<Sound UNID="&snCCLanceFireParticleLight;"		filename="LanceFireParticle1.wav"/>
+	<Sound UNID="&snCCLanceFireParticleMedium;"		filename="LanceFireParticle2.wav"/>
+	<Sound UNID="&snCCLanceFireParticleHeavy;"		filename="LanceFireParticle3.wav"/>
+	<Sound UNID="&snCCLanceFireIonLight;"			filename="LanceFireIon1.wav"/>
+	<Sound UNID="&snCCLanceFireIonMedium;"			filename="LanceFireIon2.wav"/>
+	<Sound UNID="&snCCLanceFireIonHeavy;"			filename="LanceFireIon3.wav"/>
+	<Sound UNID="&snCCLanceFirePositronLight;"		filename="LanceFirePositron1.wav"/>
+	<Sound UNID="&snCCLanceFirePositronMedium;"		filename="LanceFirePositron2.wav"/>
+	<Sound UNID="&snCCLanceFirePositronHeavy;"		filename="LanceFirePositron3.wav"/>
+	<Sound UNID="&snCCLanceFireGravitonLight;"		filename="LanceFireGraviton1.wav"/>
+	<Sound UNID="&snCCLanceFireGravitonMedium;"		filename="LanceFireGraviton2.wav"/>
+	<Sound UNID="&snCCLanceFireGravitonHeavy;"		filename="LanceFireGraviton3.wav"/>
 	
 </TranscendenceModule>
