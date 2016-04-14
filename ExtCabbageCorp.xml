@@ -40,10 +40,6 @@
 	<Module fileName="Modules\Playerships\CCLampyridae.xml"/>
 	<Module fileName="Modules\Playerships\CCOboroguruma.xml"/>
 	
-	<Module fileName="CCModules\Playerships\CCLorry.xml"/>
-	<Module fileName="CCModules\Playerships\CCLampyridae.xml"/>
-	<Module fileName="CCModules\Playerships\CCOboroguruma.xml"/>
-	
 	<Image UNID="&rsCCCabbageCorpCover;"	bitmap="Resources\CCCabbageCorpCover.jpg"				loadOnUse="true" />
 	
 </TranscendenceExtension>

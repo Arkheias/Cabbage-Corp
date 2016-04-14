@@ -311,7 +311,7 @@
 
 		<Weapon
 				fireRate=			"30"
-				powerUse=			"20"
+				powerUse=			"2"
 				launcher=			"true"
 				>
 
