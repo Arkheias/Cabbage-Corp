@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <TranscendenceModule>
-	
+
 	<Type UNID="&unidCCCabbageExpAttribs;">
 		<AttributeDesc>
 			<!-- Applies company name or generic label to items -->
@@ -22,10 +22,6 @@
 
 	<!-- Stations-->
     <Image UNID="&rsCCStations;"					bitmap="Stations.jpg"						bitmask="StationsMask.jpg"/>
-    <Image UNID="&rsCCFranchise;"					bitmap="Franchise.jpg"						bitmask="FranchiseMask.jpg"/>
-    <Image UNID="&rsCCDealer;"						bitmap="Dealer.jpg"							bitmask="DealerMask.jpg"/>
-    <Image UNID="&rsCCFactory;"						bitmap="Factory.jpg"						bitmask="FactoryMask.jpg"/>
-    <Image UNID="&rsCCFuelDepot;"					bitmap="FuelDepot.jpg"						bitmask="FuelDepotMask.jpg"/>
     <Image UNID="&rsCCManufacturingPlant;"			bitmap="StationManufacturingPlant.jpg"		bitmask="StationManufacturingPlantMask.jpg"/>
 
 	<!-- Items -->

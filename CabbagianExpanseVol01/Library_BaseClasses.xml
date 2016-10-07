@@ -570,20 +570,4 @@ These devices do not currently work for the player-ships because it is technical
 	</OverlayType>
 -->
 
-<!-- ======================================================================= -->
-						<!-- Station Base Classes -->							
-<!-- ======================================================================= -->
-	
-	<StationType unid="&baCCCabbageCorpStation;"
-			name=			"(Cabbage Corp station base class)"
-			virtual=		"true"
-	>
-		
-		<Events>
-			<OnDestroy>
-				(intCabbageCorpOnDestroy)
-			</OnDestroy>
-		</Events>
-	</StationType>
-
 </TranscendenceModule>

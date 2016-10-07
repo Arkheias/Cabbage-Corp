@@ -973,6 +973,7 @@
 	<Module fileName="Autons_Wraith.xml"/>
 	<Module fileName="Autons_Shade.xml"/>
 	<Module fileName="CabbageCorporation.xml"/>
+	<Module fileName="CabbageCorpStations.xml"/>
 	<Module fileName="CabbageMisc.xml"/>
 	<Module fileName="Devices_AutoDefense.xml"/>
 	<Module fileName="Devices_AuxReactors.xml"/>
@@ -986,12 +987,6 @@
 	<Module fileName="PlayerShipsBase.xml"/>
 	<Module fileName="Praclarush.xml"/>
 	<Module fileName="Ships.xml"/>
-	<Module fileName="Stations_Franchise.xml"/>
-	<Module fileName="Stations_Dealer.xml"/>
-	<Module fileName="Stations_Factory.xml"/>
-	<Module fileName="Stations_Outpost.xml"/>
-	<Module fileName="Stations_FuelDepot.xml"/>
-	<Module fileName="Stations_School.xml"/>
 	<Module fileName="StdCargoHolds.xml"/>
 	<Module fileName="StdCrew.xml"/>
 	<Module fileName="StdDevices.xml"/>
