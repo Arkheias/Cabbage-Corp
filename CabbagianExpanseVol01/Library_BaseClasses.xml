@@ -320,65 +320,6 @@ These devices do not currently work for the player-ships because it is technical
 			</OnDestroyShot>
 		</Events>
 	</ItemType>
-	
-<!-- ======================================================================= -->
-							<!-- Nanofac Base Class -->							
-<!-- ======================================================================= -->
-
-	<ItemType UNID="&baCCNanofacBase;"
-			name=				"(Nanofac base class)"
-			virtual=			"true"
-	>
-
-		<Events>
-			<OnInstall>
-				(block Nil
-					(objSetItemData gSource gItem "CCNanofacCounter" 1)
-				)
-			</OnInstall>
-			
-			<OnUpdate>
-				(if (and
-						(itmGetProperty gItem 'installed)
-						(objGetItemProperty gSource gItem 'enabled)
-						(not (itmGetProperty gItem 'damaged))
-					)
-					(if (geq (itmGetData gItem 'CCNanofacCounter) (@ (itmGetStaticData gItem 'CCNanofac) 'interval))		;This function makes the nanofac only produce items every nth onUpdate event	
-						(block (theCount toCreate)
-							(setq theCount (objHasItem gSource (itmCreate (@ (itmGetStaticData gItem 'CCNanofac) 'product) 1)))		;This specifies how much ammo is currently on the ship
-							(setq toCreate 
-								(min 
-									(@ (itmGetStaticData gItem 'CCNanofac) 'count)		;This specifies the maximum ammo units that can be produced in each production cycle
-									(subtract (@ (itmGetStaticData gItem 'CCNanofac) 'maxCount) theCount)		;This is how much more ammo you can have stockpiled before exceeding the DRM limits of the nanofac
-									(divide (objGetCargoSpaceLeft gSource) (itmGetMass (@ (itmGetStaticData gItem 'CCNanofac) 'product)))		;This is how much more ammo your cargo hold can carry
-								)
-							)
-							(if (gr toCreate 0)
-								(block Nil
-									(objAddItem gSource (itmCreate (@ (itmGetStaticData gItem 'CCNanofac) 'product) toCreate))
-									(itmSetKnown (@ (itmGetStaticData gItem 'CCNanofac) 'product))		;This identifies the device if for some reason it was unknown before
-									(intCabbageShpConsumePower gSource 		;This is a custom function that consumes fuel whilst taking reactor efficiency into account
-										(divide 									;see the global functions module for more information
-											(multiply 
-												(multiply 
-													(@ (itmGetStaticData gItem 'CCNanofac) 'powerUse) 
-													(@ (itmGetStaticData gItem 'CCNanofac) 'interval)
-												)
-												30		;This specific number effectively converts the powerUse value into the equivalent in fuel units at 100 percent device efficiency
-											)
-											100			;The efficiency of this device itself is assumed to be 100 percent because I didn't want to add another variable to it
-										)
-									)
-								)
-							)
-							(objSetItemData gSource gItem "CCNanofacCounter" 1)		;This function resets the counter for the onUpdate event
-						)
-						(objSetItemData gSource gItem "CCNanofacCounter" (add (itmGetData gItem 'CCNanofacCounter) 1))		This function increments the counter for the onUpdate event
-					)
-				)
-			</OnUpdate>
-		</Events>
-	</ItemType>
 
 <!-- ======================================================================= -->
 						<!-- Reactor Base Classes -->							

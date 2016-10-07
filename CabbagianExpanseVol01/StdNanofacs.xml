@@ -1,14 +1,37 @@
-<?xml version="1.0" ?>
-<TranscendenceModule>
-	
-<!-- ======================================================================= -->
-							<!-- Missile Nanofacs -->							
-<!-- ======================================================================= -->
+<?xml version="1.0" encoding="utf-8"?>
 
-<!--
-	The production rate and mass of the devices are balanced based on the mass of the missiles.
-	The value and powerUse are balanced based on the value of the missiles and the production rate.
--->
+<TranscendenceModule>
+
+<!-- Nanofac Devices ===========================================================
+	
+	NOTES
+	
+		The production rate and mass of the devices are balanced based on the
+	mass of the missiles.
+		
+		The value and powerUse are balanced based on the value of the missiles
+	and the production rate.
+	
+	EXTRA DATA
+	
+	nanofacData:
+	
+		product: UNID of the output material to be created.
+		
+		interval: Number of ticks between cycles.
+		
+		count: Number of the output material to be produced per cycle.
+		
+		maxCount: DRM cut-off point for the stockpiling of output material.
+		
+		powerUse: Amount of fuel units to be consumed per cycle.
+			Is generally actual device powerUse * interval * 30 / 100
+			Half of powerUse comes from actually generating ammo.
+			The other half of powerUse comes from keeping nanofac active.
+	
+	======================================================================== -->
+
+<!-- LEVEL III -->
 
 	<!-- KM100 Nanofac -->
 
@@ -16,26 +39,28 @@
 			name=				"KM100 missile nanofac"
 			attributes=			"cabbageCorp, majorItem, nanofac"
 			inherit=			"&baCCNanofacBase;"
-			  
+			
 			level=				"3"
 			frequency=			"uncommon"
-
+			
 			value=				"12000"
 			mass=				"6100"
-			  
+			
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures two KM100 Longbow missiles every three seconds.  DRM prevents stockpiling more than 130 missiles."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=			"25"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCNanofac>{product:&itKM100Missile;	interval:3	count:2		maxCount:130	powerUse:25}</CCNanofac>
+			<nanofacData>{product:&itKM100Missile;	interval:3	count:2		maxCount:130	powerUse:23}</nanofacData>
 		</StaticData>
 	</ItemType>
+
+<!-- LEVEL IV -->
 
 	<!-- KM120 Nanofac -->
 
@@ -43,27 +68,29 @@
 			name=				"KM120 missile nanofac"
 			attributes=			"cabbageCorp, majorItem, nanofac"
 			inherit=			"&baCCNanofacBase;"
-			  
+			
 			level=				"4"
 			frequency=			"rare"
 			unknownType=		"&itUnknownEnhancer5;"
-
+			
 			value=				"15000"
 			mass=				"10000"
-			  
+			
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures one KM120 Brute missile every two seconds.  DRM prevents stockpiling more than 40 missiles."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=			"30"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCNanofac>{product:&itKM120Missile;	interval:2	count:1		maxCount:40		powerUse:30}</CCNanofac>
+			<nanofacData>{product:&itKM120Missile;	interval:2	count:1		maxCount:40		powerUse:18}</nanofacData>
 		</StaticData>
 	</ItemType>
+
+<!-- LEVEL V -->
 
 	<!-- XM300 Nanofac -->
 
@@ -71,26 +98,28 @@
 			name=				"XM300 missile nanofac"
 			attributes=			"cabbageCorp, majorItem, military, nanofac"
 			inherit=			"&baCCNanofacBase;"
-			  
+			
 			level=				"5"
 			frequency=			"veryrare"
-
+			
 			value=				"71000"
 			mass=				"6000"
-			  
+			
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures two XM300 Reaper missiles every three seconds.  DRM prevents stockpiling more than 50 missiles."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=			"140"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCNanofac>{product:&itXM300Missile;	interval:3	count:2		maxCount:50		powerUse:140}</CCNanofac>
+			<nanofacData>{product:&itXM300Missile;	interval:3	count:2		maxCount:50		powerUse:126}</nanofacData>
 		</StaticData>
 	</ItemType>
+
+<!-- LEVEL VI -->
 
 	<!-- White Strelka Nanofac -->
 
@@ -98,26 +127,28 @@
 			name=				"White Strelka missile nanofac"
 			attributes=			"cabbageCorp, majorItem, nanofac"
 			inherit=			"&baCCNanofacBase;"
-			  
+			
 			level=				"6"
 			frequency=			"uncommon"
-
+			
 			value=				"27000"
 			mass=				"5000"
-			  
+			
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures three White Strelka missiles every second.  DRM prevents stockpiling more than 150 missiles."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=			"55"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCNanofac>{product:&itStrelkaWhite;	interval:1	count:3		maxCount:150	powerUse:55}</CCNanofac>
+			<nanofacData>{product:&itStrelkaWhite;	interval:1	count:3		maxCount:150	powerUse:17}</nanofacData>
 		</StaticData>
 	</ItemType>
+
+<!-- LEVEL VII -->
 
 	<!-- Green Strelka Nanofac -->
 
@@ -125,27 +156,29 @@
 			name=				"Green Strelka missile nanofac"
 			attributes=			"cabbageCorp, majorItem, nanofac"
 			inherit=			"&baCCNanofacBase;"
-			  
+			
 			level=				"7"
 			frequency=			"uncommon"
 			unknownType=		"&itUnknownEnhancer8;"
-
+			
 			value=				"45000"
 			mass=				"5000"
-			  
+			
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures three Green Strelka missiles every second.  DRM prevents stockpiling more than 120 missiles."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=			"90"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCNanofac>{product:&itStrelkaGreen;	interval:1	count:3		maxCount:120	powerUse:90}</CCNanofac>
+			<nanofacData>{product:&itStrelkaGreen;	interval:1	count:3		maxCount:120	powerUse:27}</nanofacData>
 		</StaticData>
 	</ItemType>
+
+<!-- LEVEL VIII -->
 
 	<!-- Red Strelka Nanofac -->
 
@@ -153,27 +186,29 @@
 			name=				"Red Strelka missile nanofac"
 			attributes=			"cabbageCorp, majorItem, military, nanofac"
 			inherit=			"&baCCNanofacBase;"
-			  
+			
 			level=				"8"
 			frequency=			"rare"
 			unknownType=		"&itUnknownEnhancer8;"
-
+			
 			value=				"60000"
 			mass=				"5200"
-			  
+			
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures five Red Strelka missiles every two seconds.  DRM prevents stockpiling more than 100 missiles."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=			"120"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCNanofac>{product:&itStrelkaRed;		interval:2	count:5		maxCount:100	powerUse:120}</CCNanofac>
+			<nanofacData>{product:&itStrelkaRed;		interval:2	count:5		maxCount:100	powerUse:72}</nanofacData>
 		</StaticData>
 	</ItemType>
+
+<!-- LEVEL IX -->
 
 	<!-- Gotha-10 Nanofac -->
 
@@ -181,27 +216,29 @@
 			name=				"Gotha-10 missile nanofac"
 			attributes=			"cabbageCorp, majorItem, military, nanofac"
 			inherit=			"&baCCNanofacBase;"
-			  
+			
 			level=				"9"
 			frequency=			"uncommon"
 			unknownType=		"&itUnknownEnhancer8;"
-
+			
 			value=				"34000"
 			mass=				"6000"
-			  
+			
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures two Gotha-10 missiles every three seconds.  DRM prevents stockpiling more than 70 missiles."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=			"70"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCNanofac>{product:&itGotha10Missile;		interval:3	count:2		maxCount:70	powerUse:70}</CCNanofac>
+			<nanofacData>{product:&itGotha10Missile;		interval:3	count:2		maxCount:70	powerUse:63}</nanofacData>
 		</StaticData>
 	</ItemType>
+
+<!-- LEVEL X -->
 
 	<!-- M2 Nanofac -->
 
@@ -209,27 +246,29 @@
 			name=				"M2 Vulcan missile nanofac"
 			attributes=			"cabbageCorp, majorItem, military, nanofac"
 			inherit=			"&baCCNanofacBase;"
-			  
+			
 			level=				"10"
 			frequency=			"veryrare"
-
+			
 			value=				"27000"
 			mass=				"15000"
-			  
+			
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures one M2 Vulcan missile every four seconds.  DRM prevents stockpiling more than 12 missiles."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=			"55"
 				deviceSlots=		"2"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCNanofac>{product:&itM2Missile;		interval:4	count:1		maxCount:12	powerUse:55}</CCNanofac>
+			<nanofacData>{product:&itM2Missile;		interval:4	count:1		maxCount:12	powerUse:66}</nanofacData>
 		</StaticData>
 	</ItemType>
+
+<!-- LEVEL XI -->
 
 	<!-- M5 Nanofac -->
 
@@ -237,26 +276,90 @@
 			name=				"M5 Nemesis missile nanofac"
 			attributes=			"cabbageCorp, majorItem, military, nanofac"
 			inherit=			"&baCCNanofacBase;"
-			  
+			
 			level=				"11"
 			frequency=			"veryrare"
-
+			
 			value=				"80000"
 			mass=				"18000"
-			  
+			
 			description=		"Based on a design stolen from Omnithor's head of research, Cabbage Corp has recently reverse-engineered the nanofac and created this device which manufactures one M5 Nemesis missile every five seconds.  DRM prevents stockpiling more than 6 missiles."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=			"160"
 				deviceSlots=		"2"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCNanofac>{product:&itM5Missile;		interval:5	count:1		maxCount:6	powerUse:160}</CCNanofac>
+			<nanofacData>{product:&itM5Missile;		interval:5	count:1		maxCount:6	powerUse:240}</nanofacData>
 		</StaticData>
+	</ItemType>
+
+<!-- BASE CLASSES -->
+
+	<!-- Nanofac Base Class -->
+
+	<ItemType UNID="&baCCNanofacBase;"
+			name=				"(Nanofac base class)"
+			virtual=			"true"
+			>
+			
+		<Events>
+			<OnInstall>
+				(block Nil
+					(objSetItemData gSource gItem "CCNanofacCounter" 1)
+					)
+			</OnInstall>
+			
+			<OnUpdate>
+				(if (and
+						(itmGetProperty gItem 'installed)
+						(objGetItemProperty gSource gItem 'enabled)
+						(not (itmGetProperty gItem 'damaged))
+						)
+					
+					; The nanofac can only produce items every nth onUpdate event
+					(if (geq (itmGetData gItem 'CCNanofacCounter) (@ (itmGetStaticData gItem 'nanofacData) 'interval))
+						(block (theCount toCreate)
+						
+							; Ammount of ammo currently on the ship
+							(setq theCount (objHasItem gSource (itmCreate (@ (itmGetStaticData gItem 'nanofacData) 'product) 1)))
+							
+							(setq toCreate 
+								(min
+									; Production rate limits for creating ammo
+									(@ (itmGetStaticData gItem 'nanofacData) 'count)
+									
+									; Nanofac DRM limits for stockpiling ammo
+									(subtract (@ (itmGetStaticData gItem 'nanofacData) 'maxCount) theCount)
+									
+									; Cargo hold limits for carrying ammo
+									(divide (objGetCargoSpaceLeft gSource) (itmGetMass (@ (itmGetStaticData gItem 'nanofacData) 'product)))
+									)
+								)
+							(if (gr toCreate 0)
+								(block Nil
+									(objAddItem gSource (itmCreate (@ (itmGetStaticData gItem 'nanofacData) 'product) toCreate))
+									
+									; Identify the device for if it was unknown
+									(itmSetKnown (@ (itmGetStaticData gItem 'nanofacData) 'product))
+									
+									; Consume fuel while taking reactor efficiency into account
+									(intCabbageShpConsumePower gSource 		
+										(@ (itmGetStaticData gItem 'nanofacData) 'powerUse)
+										)
+									)
+								)
+							(objSetItemData gSource gItem "CCNanofacCounter" 1)		;This function resets the counter for the onUpdate event
+							)
+						(objSetItemData gSource gItem "CCNanofacCounter" (add (itmGetData gItem 'CCNanofacCounter) 1))		This function increments the counter for the onUpdate event
+						)
+					)
+			</OnUpdate>
+		</Events>
 	</ItemType>
 
 </TranscendenceModule>
