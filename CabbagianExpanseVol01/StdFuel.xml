@@ -1,9 +1,16 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!-- ======================================================================= -->
-								<!-- Fuel -->									
-<!-- ======================================================================= -->
+<!-- FUEL ======================================================================
+	
+	NOTES
+	
+	EXTRA DATA
+	
+	======================================================================== -->
+
+<!-- LEVEL I -->
 
 	<!-- Fuel Unit-->
 
@@ -12,7 +19,7 @@
 			attributes=			"cabbageCorp, consumable, fuel, res"
 			virtual=			"True"
 			
-			level=				"0"
+			level=				"1"
 			frequency=			"notrandom"
 			numberAppearing=	"0"
 			
@@ -20,14 +27,14 @@
 			mass=				"0"
 			
 			data=				"1"
-
+			
 			description=		"This is a single unit of fuel for using code to refuel ships, because telling the ship to consume negative fuel doesn't appear to refuel it."
-
 			>
-
+			
 		<Image imageID="&rsItems1;" imageX="0" imageY="672" imageWidth="96" imageHeight="96"/>
-		
 	</ItemType>
+
+<!-- LEVEL VI -->
 
 	<!-- Uranium Assembly -->
 
@@ -43,12 +50,12 @@
 			mass=				"750"
 			
 			data=				"30000"
-
+			
 			description=		"This is an enriched bundle of uranium fuel rods. Though more efficient than individual fuel rods, only reactors rated L6 or higher can accommodate them."
-
+			
 			reverseArticle=		"true"
 			>
-
+			
 		<Image imageID="&rsItems1;" imageX="0" imageY="672" imageWidth="96" imageHeight="96"/>
 		
 		<Events>
@@ -64,7 +71,7 @@
 							
 						(if theID
 							(objIncOverlayData gSource theID "wasteCount" (itmGetCount gItem))
-
+							
 							(block Nil
 								(setq theID (objAddOverlay gSource &ovCCUraniumWasteCheck;))
 								(objSetOverlayData gSource theID "wasteCount" (multiply (itmGetCount gItem) 2))
@@ -98,6 +105,8 @@
 		</Events>
 	</OverlayType>
 
+<!-- LEVEL VIII -->
+
 	<!-- Xenotite Assembly -->
 
 	<ItemType UNID="&itCCXenotiteAssembly;"
@@ -110,33 +119,35 @@
 			
 			value=				"1200"
 			mass=				"180"
-
+			
 			data=				"120000"
 			
 			description=		"This is an enriched bundle of xenotite fuel rods. Though more efficient than individual fuel rods, only reactors rated L8 or higher can accommodate them."
-	>
-
+			>
+			
 		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
 	</ItemType>
-	
+
 	<!-- Heliotrope Assembly -->
 
 	<ItemType UNID="&itCCHeliotropeAssembly;"
 			name=				"Heliotrope reactor assembly| Heliotrope reactor assemblies"
+			attributes=			"cabbageCorp, consumable, fuel, heliotropes, notForSale"
+			
 			level=				"8"
-			value=				"2400"
-			mass=				"300"
 			frequency=			"veryrare"
 			numberAppearing=	"3d6"
-			attributes=			"cabbageCorp, consumable, fuel, heliotropes, notForSale"
-
+			
+			value=				"2400"
+			mass=				"300"
+			
 			data=				"300000"
-
+			
 			description=		"This is an enriched bundle of Heliotrope fuel cylinders, one of the cleanest and most powerful fuels available. Only reactors rated L8 or higher can accommodate them."
-	>
-
+			>
+			
 		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
+		
 		<Events>
 			<OnRefuel>
 				; Chance that this will enhance the ship's drive
@@ -147,62 +158,22 @@
 								(block Nil
 									(objSendMessage gSource Nil (cat "Your " (itmGetName theItem 0) " has been repaired."))
 									(shpRepairItem gSource theItem)
-								)
-
+									)
+									
 							(not (itmIsEnhanced theItem))
 								(block Nil
 									(objSendMessage gSource Nil (cat "Your " (itmGetName theItem 0) " has been enhanced."))
 									(shpEnhanceItem gSource theItem)
-								)
+									)
+							)
 						)
 					)
-				)
 			</OnRefuel>
 		</Events>
 	</ItemType>
-	
-	<!-- Pteracnium Assembly-->
 
-	<ItemType UNID="&itCCPteracniumAssembly;"
-			name=				"pteracnium reactor assembly| pteracnium reactor assemblies"
-			attributes=			"basicFuel, cabbageCorp, consumable, fuel"
-			
-			level=				"10"
-			frequency=			"common"
-			numberAppearing=	"3d6"
-			
-			value=				"3000"
-			mass=				"180"
+<!-- LEVEL IX -->
 
-			data=				"300000"
-			
-			description=		"This is an enriched bundle of pteracnium fuel rods. Though more efficient than individual fuel rods, only reactors rated L10 or higher can accommodate them."
-	>
-
-		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-	</ItemType>
-	
-	<!-- Hadron-vacuum Assembly -->
-
-	<ItemType UNID="&itCCHadronVacuumModule;"
-			name=				"hadron-vacuum reactor module"
-			attributes=			"basicFuel, cabbageCorp, consumable, fuel, zeroPoint"
-			
-			level=				"12"
-			frequency=			"common"
-			numberAppearing=	"3d6"
-
-			value=				"15000"
-			mass=				"300"
-
-			data=				"1500000"
-			
-			description=		"This is an enriched mass of hadron-vacuum fuel. Though more efficient than individual fuel cells, only reactors rated L12 or higher can accommodate them."
-	>
-
-		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-	</ItemType>
-	
 	<!-- Zero-Point Crystal -->
 
 	<ItemType UNID="&itCCZeroPointCrystal;"
@@ -215,25 +186,71 @@
 			
 			value=				"6000"
 			mass=				"2"
-
+			
 			data=				"2500000"
 			
 			description=		"Zero-point crystals are a highly efficient form of fuel storage in development by Cabbage Corp. ZPCs utilize a crystal matrix that exists partially in subspace to store massive amounts of zero-point energy in a relatively small physical space, though they have a tendency to disappear ships that use them. Only reactors rated L9 or higher can utilize them."
-	>
-		
+			>
+			
 		<Events>
 			<OnRefuel>
 				(if (leq (objGetDistance gSource (sysFindObject gSource "GN")) 3)
 					(if (find (sysGetNodes) "Othala")
 						(objGateTo gSource "Othala" "Start" &efStargateOut;)
 						(objSendMessage gSource Nil "Subspace unstable in this area!")
-					)
+						)
 					(objGateTo gSource "Othala" "Start" &efStargateOut;)
-				)
+					)
 			</OnRefuel>
 		</Events>
 		
 		<Image imageID="&rsCCItems;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+
+<!-- LEVEL X -->
+
+	<!-- Pteracnium Assembly-->
+
+	<ItemType UNID="&itCCPteracniumAssembly;"
+			name=				"pteracnium reactor assembly| pteracnium reactor assemblies"
+			attributes=			"basicFuel, cabbageCorp, consumable, fuel"
+			
+			level=				"10"
+			frequency=			"common"
+			numberAppearing=	"3d6"
+			
+			value=				"3000"
+			mass=				"180"
+			
+			data=				"300000"
+			
+			description=		"This is an enriched bundle of pteracnium fuel rods. Though more efficient than individual fuel rods, only reactors rated L10 or higher can accommodate them."
+			>
+			
+		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+
+<!-- LEVEL XII -->
+
+	<!-- Hadron-vacuum Assembly -->
+
+	<ItemType UNID="&itCCHadronVacuumModule;"
+			name=				"hadron-vacuum reactor module"
+			attributes=			"basicFuel, cabbageCorp, consumable, fuel, zeroPoint"
+			
+			level=				"12"
+			frequency=			"common"
+			numberAppearing=	"3d6"
+			
+			value=				"15000"
+			mass=				"300"
+			
+			data=				"1500000"
+			
+			description=		"This is an enriched mass of hadron-vacuum fuel. Though more efficient than individual fuel cells, only reactors rated L12 or higher can accommodate them."
+			>
+			
+		<Image imageID="&rsItems1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 
 </TranscendenceModule>
