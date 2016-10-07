@@ -993,6 +993,7 @@
 	<Module fileName="Autons_Phantom.xml"/>
 	<Module fileName="Autons_Wraith.xml"/>
 	<Module fileName="Autons_Shade.xml"/>
+	<Module fileName="CabbageCorporation.xml"/>
 	<Module fileName="CabbageMisc.xml"/>
 	<Module fileName="Devices_AutoDefense.xml"/>
 	<Module fileName="Devices_AuxReactors.xml"/>
@@ -1001,7 +1002,6 @@
 	<Module fileName="Library_BaseClasses.xml"/>
 	<Module fileName="Library_DockScreens.xml"/>
 	<Module fileName="Library_Globals.xml"/>
-	<Module fileName="Library_Sovereign.xml"/>
 	<Module fileName="MiscItems.xml"/>
 	<Module fileName="Othala.xml"/>
 	<Module fileName="PlayerShipsBase.xml"/>

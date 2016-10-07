@@ -366,59 +366,6 @@
 					Nil
 				)
 			</GetGlobalDockScreen>
-			
-			<OnGlobalPlayerEnteredSystem>
-			;	This script runs every time because the stations reset their inventories every time you enter the system.
-			;	This script seems to be unreliable, it may not run if you spawn in the system and may not properly detect
-			;	  the system name.
-			
-				(block Nil
-					(enum (sysFindObject Nil "T +unid:0x00102003;") theMiningStation
-					;	Applies to every Commonwealth mining colony in the system
-					
-						(block Nil
-							(objEnumItems theMiningStation "* +cabbageCorp;" theMiningItem
-								(objRemoveItem theMiningStation theMiningItem)
-							)
-							;	Remove all Cabbage Corp items to start from scratch
-							
-							(if (eq (sysGetName) "Eridani")
-								(block Nil
-									(objAddRandomItems theMiningStation &trCCMiningWeapon1; (random 1 3))
-									(objAddRandomItems theMiningStation &trCCMiningDevice1; (random 1 2))
-								)
-								;	Adds 1d3 random mining weapons and 1d2 random mining devices
-								;	  between levels 1 and 3 if the system is "Eridani"
-								
-								(block Nil
-									(objAddRandomItems theMiningStation &trCCMiningWeapon2; (random 1 3))
-									(objAddRandomItems theMiningStation &trCCMiningDevice2; (random 1 3))
-								)
-								;	Adds 1d3 random mining weapons and 1d3 random mining devices
-								;	  between levels 1 and 5 if the system is not "Eridani"
-							)
-						)
-					)
-					(enum (sysFindObject Nil "T +unid:0x008102D2;") theMiningStation
-					;	Applies to every IMU Local station in the system
-					
-						(block Nil
-							(objEnumItems theMiningStation "* +cabbageCorp;" theMiningItem
-								(objRemoveItem theMiningStation theMiningItem)
-							)
-							;	Remove all Cabbage Corp items to start from scratch
-							
-							(block Nil
-								(objAddRandomItems theMiningStation &trCCMiningWeapon3; (random 1 4))
-								(objAddRandomItems theMiningStation &trCCMiningDevice3; (random 1 4))
-							)
-							;	Adds 1d4 random mining weapons and 1d4 random mining devices
-							;	between levels 4 and 8
-						)
-					)
-					(sysSetData "CabbageMiningBalance" 1)
-				)
-			</OnGlobalPlayerEnteredSystem>
 		</Events>
 	</Sovereign>
 	
