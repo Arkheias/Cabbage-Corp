@@ -1,5 +1,37 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
+
+<!-- ITEM TABLES ==============================================================
+
+	Item Table Attributes
+
+	<RandomItem>
+
+	categories:
+			*	all categories
+			a	armor
+			d	device (weapon, shield, drive, etc.)
+			f	fuel
+			l	launcher weapon only
+			m	missile
+			r	reactor
+			s	shields
+			t	miscellaneous
+			u	useful (armor coating, ROM, etc.)
+			v	drive
+			w	weapon (including launchers)
+			I	is installed
+			D	is damaged
+			N	is not damaged
+			S	is useable
+			U	is not installed
+
+	modifiers:
+			+	must have this modifier
+			-	must not have this modifier
+
+-->
 
 	<!-- Commonwealth mining colonies in Eridani -->
 
@@ -7,46 +39,241 @@
 		<RandomItem	
 				criteria=			"w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale; -NotStandard"
 				levelFrequency=		"ucu-- -----"
-		/>
+				/>
 	</ItemTable>	
-	
+
 	<ItemTable UNID="&trCCMiningDevice1;">
 		<RandomItem	
 				criteria=			"d~w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale; -NotStandard"
 				levelFrequency=		"ucu-- -----"
-		/>
+				/>
 	</ItemTable>	
-	
+
 	<!-- Commonwealth mining colonies elsewhere -->
 
 	<ItemTable UNID="&trCCMiningWeapon2;">
 		<RandomItem	
 				criteria=			"w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale; -NotStandard"
 				levelFrequency=		"rucur -----"
-		/>
+				/>
 	</ItemTable>	
-	
+
 	<ItemTable UNID="&trCCMiningDevice2;">
 		<RandomItem	
 				criteria=			"d~w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale; -NotStandard"
 				levelFrequency=		"rucur -----"
-		/>
+				/>
 	</ItemTable>
-	
+
 	<!-- IMU Local stations -->
 
 	<ItemTable UNID="&trCCMiningWeapon3;">
 		<RandomItem	
 				criteria=			"w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale"
 				levelFrequency=		"---ru cur--"
-		/>
+				/>
 	</ItemTable>	
-	
+
 	<ItemTable UNID="&trCCMiningDevice3;">
 		<RandomItem	
 				criteria=			"d~w +miningEquipment; +cabbageCorp; -Illegal; -NotForSale"
 				levelFrequency=		"---ru cur--"
-		/>
+				/>
 	</ItemTable>
-	
+
+<!-- ITEM TYPES ===============================================================
+
+	MODIFIERS
+
+	Alien						Item is not found in Human Space
+	AntiMatter					Item is involved in AntiMatter industry
+	Auton						Item is an auton
+	BlackMarketID				This is a black market ID
+	Bushido						Item is sold by Bushido corp
+	Food						Item is human food or drink
+	Fuel						Item is starship fuel
+	HaloGem						Item is a halo gem
+	ID							Item is an ID
+	Illegal						Item is illegal in Human Space
+	Info						Item consists of digital information
+	Lux							Item is human luxury good
+	Makayev						Item is sold by Makayev corp
+	Meds						Item is human medicine
+	Military					Item is restricted to military in Human Space
+	MilitaryID					Item is a military ID
+	Missile						Item is ammo or missile
+	Nuclear						Item is involved in nuclear industry
+	Rasiermesser				Item is sold by Rasiermesser corp
+	Res							Item is a resource needed for industry
+	RingerValuable				Item is used by Ringers
+	Soul						Item contains (possibly dormant) intelligence of HIG III or above
+	Specialty					Item is not a commodity; for sale only in specific stations
+	ZeroPoint					Item is used in Zero-point energy industry
+
+	Consumable					Item is consumable (missiles/ammo/treasure)
+	MajorItem					Device/Shield/Weapon
+	MinorItem					Armor/Enhancements
+
+	DAMAGE TYPES
+
+	laser
+	kinetic
+	particle
+	blast
+	ion
+	thermo
+	positron
+	plasma
+	antimatter
+	nano
+	graviton
+	singularity
+	dark acid
+	dark steel
+	dark lightning
+	dark fire
+
+	USE KEYS
+
+	5							Luminous 5scare
+	A							autons
+	C							gem of contrition
+	F							gem of sacrifice
+	J							transpace jumpdrive
+	L							superconducting coils
+	S							Scramble1.4
+
+	COMMON USE PHRASES
+
+	Ship already has a(n) xyz
+	xyz installed
+	xyz uninstalled
+	Ship cannot support xyz
+	xyz required
+	xyz: blah blah
+	Not enough fuel to xyz
+
+-->
+
+	<!-- Cabbage Corp Premium Membership ID -->
+
+	<ItemType UNID="&itCCPremiumID;"
+			name=				"Cabbage Corp premium membership ID"
+			attributes=			"cabbageCorp, ID, info, majorItem, specialty"
+			
+			level=				"3"
+			frequency=			"notRandom"
+			
+			value=				"10000"
+			mass=				"1"
+			
+			description=		"This ID marks you as a valued customer of Cabbage Corp, allowing you to bypass those pesky security checks when installing equipment at Cabbage Corp stations. Does not work until implanted."
+			
+			sortName=			"identification chip, premium"
+			>
+			
+		<Image imageID="&rsCCItems;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke>
+			(block Nil
+				; Install
+				(if (objGetData gPlayerShip "CCPremiumIDImplant")
+					(objSendMessage gSource Nil "You already have a Cabbage Corp premium membership ID implanted.")
+					(block Nil
+						(objSetData gPlayerShip "CCPremiumIDImplant" True)
+						(objSendMessage gSource Nil "You stab yourself with the disposable chip implanter... ow!")
+						(objRemoveItem gSource gItem 1)
+						)
+					)
+				)
+		</Invoke>
+		
+		<Events>
+			<GetGlobalAchievements>
+				(block nil
+					(list
+						(if (objGetData gPlayerShip "CCPremiumIDImplant")
+							(list "Cabbage Corp premium membership ID" "Implanted")
+							)
+						)
+					)
+			</GetGlobalAchievements>
+		</Events>
+	</ItemType>
+
+	<!-- Cabbage Corp Diplomatic ID -->
+
+	<ItemType UNID="&itCCDiplomaticID;"
+			name=				"diplomatic identification chip"
+			attributes=			"cabbageCorp, cabbagePolitical, cabbageDiplomaticID, ID, majorItem, smugglersHold, specialty"
+			
+			level=				"5"
+			frequency=			"notRandom"
+			
+			value=				"50000"
+			mass=				"1"
+			
+			description=		"This identification chip, once installed, will mark your ship as a diplomatic vessel of Cabbage Corp, thereby exempting it from being searched for contraband in most Commonwealth stations."
+			
+			sortName=			"identification chip, diplomatic"
+			>
+			
+		<Image imageID="&rsCCItems;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke uninstalledOnly="True">
+			(intAutoInstall gSource gItem)
+		</Invoke>
+		
+		<MiscellaneousDevice
+				deviceslots=	"0"
+				powerUse=		"0"
+				/>
+	</ItemType>
+
+	<!-- Cabbage Corp Tinkerer ID -->
+
+	<ItemType UNID="&itCCTinkererID;"
+			name=				"Cabbage Corp tinkerer ID"
+			attributes=			"cabbageCorp, ID, info, majorItem, specialty"
+			
+			level=				"7"
+			frequency=			"notRandom"
+			
+			value=				"200000"
+			mass=				"1"
+			
+			description=		"This ID marks you as a licensed Tinkerer of Cabbage Corp, allowing you to bypass those pesky safety limits when modifying Cabbage Corp devices. Does not work until implanted."
+			
+			sortName=			"identification chip, tinkerer"
+			>
+			
+		<Image imageID="&rsCCItems;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke>
+			(block Nil
+				; Install
+				(if (objGetData gPlayerShip "CCTinkererIDImplant")
+					(objSendMessage gSource Nil "You already have a Cabbage Corp Tinkerer ID implanted.")
+					(block Nil
+						(objSetData gPlayerShip "CCTinkererIDImplant" True)
+						(objSendMessage gSource Nil "You stab yourself with the disposable chip implanter... ow!")
+						(objRemoveItem gSource gItem 1)
+						)
+					)
+				)
+		</Invoke>
+		
+		<Events>
+			<GetGlobalAchievements>
+				(block nil
+					(list
+						(if (objGetData gPlayerShip "CCTinkererIDImplant")
+							(list "Cabbage Corp Tinkerer ID" "Implanted")
+							)
+						)
+					)
+			</GetGlobalAchievements>
+		</Events>
+	</ItemType>
+
 </TranscendenceModule>

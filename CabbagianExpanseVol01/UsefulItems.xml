@@ -1,4 +1,5 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
 <!-- ======================================================================= -->
@@ -310,58 +311,6 @@
 								<!-- Roms -->									
 <!-- ======================================================================= -->
 
-	<!-- Cabbage Corp Premium Membership ID -->
-
-	<ItemType UNID="&itCCPremiumID;"
-			name=				"Cabbage Corp premium membership ID"
-			attributes=			"cabbageCorp, ID, info, majorItem, specialty"
-			
-			level=				"3"
-			frequency=			"notRandom"
-			
-			value=				"10000"
-			mass=				"1"
-
-			description=		"This ID marks you as a valued customer of Cabbage Corp, allowing you to bypass those pesky security checks when installing equipment at Cabbage Corp stations. Does not work until implanted."
-
-			sortName=			"identification chip, premium"
-	>
-
-		<Image imageID="&rsCCItems;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Invoke>
-			(block Nil
-				; Install
-				(if (objGetData gPlayerShip "CCPremiumIDImplant")
-					(objSendMessage gSource Nil "You already have a Cabbage Corp premium membership ID implanted.")
-					(block Nil
-						(objSetData gPlayerShip "CCPremiumIDImplant" True)
-						(objSendMessage gSource Nil "You stab yourself with the disposable chip implanter... ow!")
-						(objRemoveItem gSource gItem 1)
-					)
-				)
-			)
-		</Invoke>
-		
-		<Events>
-			<GetGlobalAchievements>
-				(block nil
-					(list
-						(if (objGetData gPlayerShip "CCPremiumIDImplant")
-							(list "Cabbage Corp premium membership ID" "Implanted")
-						)
-					)
-				)
-			</GetGlobalAchievements>
-		</Events>
-	</ItemType>
-	
-<!--
-	Using the above item should (eventually) install it to your ship (and appear as an achievement)
-	While you have that achievement, the features of the rom will appear in the Cabbage Corp Toolbox
-		and the toolbox will always appear in the ship view regardless of whether you have any Cabbage Corp items installed
--->
-
 	<!-- Cabbage Corp System Map ROM -->
 
 	<ItemType UNID="&itCCSystemMapROM;"
@@ -373,48 +322,48 @@
 			
 			value=				"2000"
 			mass=				"1"
-
+			
 			description=		"This program utilizes the Cabbage Corp cartography libraries to generate a map of your current system, for a small fee. Can be reused indefinitely."
-	>
-
+			>
+			
 		<Image imageID="&rsCCItems;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
+		
 		<Invoke>
 			(block (mappingCost)
 				(setq mappingCost (multiply 50 (sysGetLevel) (sysGetLevel)))
 				(if (geq (objGetBalance gSource) mappingCost)
 					(block (obj mappedAll mapEnemy)
 						(setq mappedAll True)
-
+						
 						; Compute the probability of mapping an enemy station
 						(switch
 							(geq (sysGetLevel) 7)
 								(setq mapEnemy 0)
-
+								
 							(geq (sysGetLevel) 3)
 								(setq mapEnemy (subtract 360 (multiply 72 (subtract (sysGetLevel) 2))))
-
+								
 							(setq mapEnemy 360)
 							)
-
+							
 						; Iterate over all stations in the system
 						(enum (sysFindObject gSource "Ts") obj
 							(switch
 								(and (objIsEnemy gSource obj) (gr (add (objGetDestiny obj) 1) mapEnemy))
 									(setq mappedAll Nil)
-
+									
 								(objHasAttribute obj "uncharted")
 									(setq mappedAll Nil)
-
+									
 								(objSetKnown obj)
 								)
 							)
-
+							
 						(if mappedAll
 							(objSendMessage gSource Nil "Mapped all stations in system")
 							(objSendMessage gSource Nil "Mapped charted stations in system")
 							)
-
+							
 						; Identify the item
 						(itmSetKnown gItem)
 						
@@ -424,9 +373,9 @@
 								"You have been charged "
 								mappingCost
 								" credits for purchasing this system map."
+								)
 							)
 						)
-					)
 					(block Nil
 						(itmSetKnown gItem)
 						(objSendMessage gPlayerShip Nil
@@ -434,58 +383,12 @@
 								"ERROR: "
 								(subtract mappingCost (objGetBalance gSource))
 								" more credits required to purchase system map."
+								)
 							)
 						)
 					)
 				)
-			)
 		</Invoke>
-	</ItemType>
-
-	<!-- Cabbage Corp Tinkerer ID -->
-
-	<ItemType UNID="&itCCTinkererID;"
-			name=				"Cabbage Corp tinkerer ID"
-			attributes=			"cabbageCorp, ID, info, majorItem, specialty"
-			
-			level=				"7"
-			frequency=			"notRandom"
-			
-			value=				"200000"
-			mass=				"1"
-
-			description=		"This ID marks you as a licensed Tinkerer of Cabbage Corp, allowing you to bypass those pesky safety limits when modifying Cabbage Corp devices. Does not work until implanted."
-
-			sortName=			"identification chip, tinkerer"
-	>
-
-		<Image imageID="&rsCCItems;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Invoke>
-			(block Nil
-				; Install
-				(if (objGetData gPlayerShip "CCTinkererIDImplant")
-					(objSendMessage gSource Nil "You already have a Cabbage Corp Tinkerer ID implanted.")
-					(block Nil
-						(objSetData gPlayerShip "CCTinkererIDImplant" True)
-						(objSendMessage gSource Nil "You stab yourself with the disposable chip implanter... ow!")
-						(objRemoveItem gSource gItem 1)
-					)
-				)
-			)
-		</Invoke>
-		
-		<Events>
-			<GetGlobalAchievements>
-				(block nil
-					(list
-						(if (objGetData gPlayerShip "CCTinkererIDImplant")
-							(list "Cabbage Corp Tinkerer ID" "Implanted")
-						)
-					)
-				)
-			</GetGlobalAchievements>
-		</Events>
 	</ItemType>
 
 <!-- GLOBALS -->

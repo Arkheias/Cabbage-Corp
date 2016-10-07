@@ -241,57 +241,5 @@
 		/>
 
 	</ItemType>
-	
-	<!-- Diplomatic Identification Chip -->
-
-	<ItemType UNID="&itCCDiplomaticID;"
-			name=				"diplomatic identification chip"
-			level=				"5"
-			value=				"50000"
-			mass=				"1"
-			frequency=			"veryrare"
-			attributes=			"cabbageCorp, cabbagePolitical, cabbageDiplomaticID, ID, majorItem, smugglersHold, specialty"
-
-			description=		"This identification chip, once installed, will mark you as a diplomatic envoy of Cabbage Corp, thereby exempting your ship from being searched for contraband and from various other laws. You may still be executed for crimes against humanity though."
-
-			sortName=			"identification chip, diplomatic"
-	>
-
-		<Image imageID="&rsCCItems;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Invoke uninstalledOnly="True">
-			(intAutoInstall gSource gItem)
-		</Invoke>
-		
-		<MiscellaneousDevice
-				deviceslots=	"0"
-				powerUse=		"0"
-		/>
-			
-		<Events>
-			<OnGlobalPaneInit>
-				; aScreenUNID is the UNID of the screen being shown
-				; aScreen is the screen name (if this is a local screen)
-				; aPane is the pane being shown
-				; Action only appears if a diplomatic identification chip is installed.
-				(if (eq (objGetItems gPlayership "*I +cabbageDiplomaticID") Nil)
-					Nil
-					(if (and (eq aScreenUNID &dsCorporateImprison;) (eq aPane "Default"))
-						(scrAddAction
-							gScreen
-							'Cabbage
-							0
-							"Use Diplomatic ID"
-							"U"
-							'default
-							(block Nil
-								(scrExitScreen gScreen 'forceUndock)
-							)
-						)
-					)
-				)
-			</OnGlobalPaneInit>
-		</Events>
-	</ItemType>
 
 </TranscendenceModule>
