@@ -8,7 +8,7 @@
 	<!-- C010-C01F GENERAL PLAYER SHIP -->
 	
 	<!ENTITY scCCCabbageModification		 		"0xDA27C010">
-	<!ENTITY efCCShieldsHUD		 					"0xDA27C011">
+	<!ENTITY efCCShieldHUDCabbage 					"0xDA27C011">
 	
 	<!-- C020-C02F LAMPYRIDAE CLASS -->
 
@@ -888,7 +888,7 @@
 
 		<!-- HUD Images-->
 	<!ENTITY rsCCEIArmor6							"0xDA27CE41">
-	<!ENTITY rsCCShieldsHUD							"0xDA27CE42">
+	<!ENTITY rsCCShieldHUDCabbage					"0xDA27CE42">
 
 		<!-- Sounds-->
 	<!ENTITY snCCHowitzerFireKineticLight			"0xDA27CE51">

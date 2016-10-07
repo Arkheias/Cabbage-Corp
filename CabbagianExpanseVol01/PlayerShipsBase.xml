@@ -106,7 +106,7 @@
 			</ArmorDisplay>
 -->
 
-			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;"/>
+			<ShieldDisplay shieldLevelEffect="&efCCShieldHUDCabbage;"/>
 
             <ReactorDisplay>
                 <Image imageID="&rsZubrinReactor;" 
@@ -190,7 +190,7 @@
 					nameY="88" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
 			</ArmorDisplay>
 
-			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;"/>
+			<ShieldDisplay shieldLevelEffect="&efCCShieldHUDCabbage;"/>
 
             <ReactorDisplay>
                 <Image imageID="&rsZubrinReactor;" 
@@ -299,7 +299,7 @@
 						nameY="104" nameBreakWidth="200" nameDestX="0" nameDestY="8" />
 			</ArmorDisplay>
 			
-			<ShieldDisplay shieldLevelEffect="&efCCShieldsHUD;"/>
+			<ShieldDisplay shieldLevelEffect="&efCCShieldHUDCabbage;"/>
 
             <ReactorDisplay>
                 <Image imageID="&rsZubrinReactor;" 
@@ -342,6 +342,5 @@
 	<Image UNID="&rsCCOborogurumaHD;"			bitmap="OborogurumaHD.jpg"				bitmask="OborogurumaHDMask.jpg"/>
 
     <Image UNID="&rsCCEIArmor6;"					bitmap="ArmorHUD_EI200.jpg"/>
-    <Image UNID="&rsCCShieldsHUD;"					bitmap="ShieldsHUD.jpg"						bitmask="ShieldsHUDMask.jpg"/>
 
 </TranscendenceModule>
