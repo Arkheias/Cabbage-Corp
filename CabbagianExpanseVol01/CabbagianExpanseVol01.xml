@@ -976,13 +976,13 @@
 	<Module fileName="CabbageCorporation.xml"/>
 	<Module fileName="CabbageCorpStations.xml"/>
 	<Module fileName="CabbageMisc.xml"/>
+	<Module fileName="Code.xml"/>
 	<Module fileName="Devices_AutoDefense.xml"/>
 	<Module fileName="Devices_AuxReactors.xml"/>
 	<Module fileName="Devices_DRADIS.xml"/>
 	<Module fileName="Devices_Solar.xml"/>
 	<Module fileName="Library_BaseClasses.xml"/>
 	<Module fileName="Library_DockScreens.xml"/>
-	<Module fileName="Library_Globals.xml"/>
 	<Module fileName="MiscItems.xml"/>
 	<Module fileName="Othala.xml"/>
 	<Module fileName="PlayerShipsBase.xml"/>
