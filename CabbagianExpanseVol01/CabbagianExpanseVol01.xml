@@ -530,7 +530,7 @@
 			<!-- CA00-CAFF		SHIELDS -->		
 <!-- ======================================================== -->
 
-	<!-- CA00-CA1F NAPA SHIELDS -->
+	<!-- CA00-CA0F NAPA SHIELDS -->
 	
 	<!ENTITY dsCCNapaShields						"0xDA27CA00">
 	<!ENTITY itCCNapaS1Deflector					"0xDA27CA01">
@@ -543,36 +543,19 @@
 	<!ENTITY itCCNapaS100Deflector					"0xDA27CA08">
 	<!ENTITY itCCNapaS120Deflector					"0xDA27CA09">
 	<!ENTITY itCCNapaS150Deflector					"0xDA27CA0A">
-	<!ENTITY itCCNapaS260Deflector					"0xDA27CA0B">
-	<!ENTITY itCCNapaS400Deflector					"0xDA27CA0C">
-	<!ENTITY itCCDualNapaS1Deflector				"0xDA27CA11">
-	<!ENTITY itCCDualNapaS2Deflector				"0xDA27CA12">
-	<!ENTITY itCCDualNapaS4Deflector				"0xDA27CA13">
-	<!ENTITY itCCDualNapaS8Deflector				"0xDA27CA14">
-	<!ENTITY itCCDualNapaS20Deflector				"0xDA27CA15">
-	<!ENTITY itCCDualNapaS30Deflector				"0xDA27CA16">
-	<!ENTITY itCCDualNapaS50Deflector				"0xDA27CA17">
-	<!ENTITY itCCDualNapaS100Deflector				"0xDA27CA18">
-	<!ENTITY itCCDualNapaS120Deflector				"0xDA27CA19">
-	<!ENTITY itCCDualNapaS150Deflector				"0xDA27CA1A">
-	<!ENTITY itCCDualNapaS260Deflector				"0xDA27CA1B">
-	<!ENTITY itCCDualNapaS400Deflector				"0xDA27CA1C">
-
-	<!-- CA20-CA2F JADEITE SHIELDS -->
 	
-	<!ENTITY dsCCJadeiteShields						"0xDA27CA20">
-	<!ENTITY itCCJadeiteS1Deflector					"0xDA27CA21">
-	<!ENTITY itCCJadeiteS2Deflector					"0xDA27CA22">
-	<!ENTITY itCCJadeiteS4Deflector					"0xDA27CA23">
-	<!ENTITY itCCJadeiteS8Deflector					"0xDA27CA24">
-	<!ENTITY itCCJadeiteS20Deflector				"0xDA27CA25">
-	<!ENTITY itCCJadeiteS30Deflector				"0xDA27CA26">
-	<!ENTITY itCCJadeiteS50Deflector				"0xDA27CA27">
-	<!ENTITY itCCJadeiteS100Deflector				"0xDA27CA28">
-	<!ENTITY itCCJadeiteS120Deflector				"0xDA27CA29">
-	<!ENTITY itCCJadeiteS150Deflector				"0xDA27CA2A">
-	<!ENTITY itCCJadeiteS260Deflector				"0xDA27CA2B">
-	<!ENTITY itCCJadeiteS400Deflector				"0xDA27CA2C">
+	<!-- CA10-CA1F NAPA SHIELDS (UNSTABLE) -->
+	
+	<!ENTITY itCCRadNapaS1Deflector					"0xDA27CA11">
+	<!ENTITY itCCRadNapaS2Deflector					"0xDA27CA12">
+	<!ENTITY itCCRadNapaS4Deflector					"0xDA27CA13">
+	<!ENTITY itCCRadNapaS8Deflector					"0xDA27CA14">
+	<!ENTITY itCCRadNapaS20Deflector				"0xDA27CA15">
+	<!ENTITY itCCRadNapaS30Deflector				"0xDA27CA16">
+	<!ENTITY itCCRadNapaS50Deflector				"0xDA27CA17">
+	<!ENTITY itCCRadNapaS100Deflector				"0xDA27CA18">
+	<!ENTITY itCCRadNapaS120Deflector				"0xDA27CA19">
+	<!ENTITY itCCRadNapaS150Deflector				"0xDA27CA1A">
 
 <!-- ======================================================== -->
 			<!-- CB00-CBFF		SOLAR DEVICES -->		

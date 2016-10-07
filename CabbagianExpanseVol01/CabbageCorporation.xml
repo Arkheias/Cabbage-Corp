@@ -322,18 +322,18 @@
 
 			<SpecialDeal>
 				(
-					(&itCCJadeiteS1Deflector; &itCCL1DamageControlCrew; &itCCL1WeaponsEngineeringCrew; &itCCL1ShieldsEngineeringCrew;)
-					(&itCCJadeiteS2Deflector; &itCCL2DamageControlCrew; &itCCL2WeaponsEngineeringCrew; &itCCL2ShieldsEngineeringCrew;)
-					(&itCCJadeiteS4Deflector; &itCCL3DamageControlCrew; &itCCL3WeaponsEngineeringCrew; &itCCL3ShieldsEngineeringCrew;)
-					(&itCCJadeiteS8Deflector; &itCCL4DamageControlCrew; &itCCL4WeaponsEngineeringCrew; &itCCL4ShieldsEngineeringCrew;)
-					(&itCCJadeiteS20Deflector; &itCCL5DamageControlCrew; &itCCL5WeaponsEngineeringCrew; &itCCL5ShieldsEngineeringCrew;)
-					(&itCCJadeiteS30Deflector; &itCCL6DamageControlCrew; &itCCL6WeaponsEngineeringCrew; &itCCL6ShieldsEngineeringCrew;)
-					(&itCCJadeiteS50Deflector; &itCCL7DamageControlCrew; &itCCL7WeaponsEngineeringCrew; &itCCL7ShieldsEngineeringCrew;)
-					(&itCCJadeiteS100Deflector; &itCCL8DamageControlCrew; &itCCL8WeaponsEngineeringCrew; &itCCL8ShieldsEngineeringCrew;)
-					(&itCCJadeiteS120Deflector; &itCCL9DamageControlCrew; &itCCL9WeaponsEngineeringCrew; &itCCL9ShieldsEngineeringCrew;)
-					(&itCCJadeiteS150Deflector; &itCCL10DamageControlCrew; &itCCL10WeaponsEngineeringCrew; &itCCL10ShieldsEngineeringCrew;)
-					(&itCCJadeiteS260Deflector; &itCCL11DamageControlCrew; &itCCL11WeaponsEngineeringCrew; &itCCL11ShieldsEngineeringCrew;)
-					(&itCCJadeiteS400Deflector; &itCCL12DamageControlCrew; &itCCL12WeaponsEngineeringCrew; &itCCL12ShieldsEngineeringCrew;)
+					(&itCCL1DamageControlCrew; &itCCL1WeaponsEngineeringCrew; &itCCL1ShieldsEngineeringCrew;)
+					(&itCCL2DamageControlCrew; &itCCL2WeaponsEngineeringCrew; &itCCL2ShieldsEngineeringCrew;)
+					(&itCCL3DamageControlCrew; &itCCL3WeaponsEngineeringCrew; &itCCL3ShieldsEngineeringCrew;)
+					(&itCCL4DamageControlCrew; &itCCL4WeaponsEngineeringCrew; &itCCL4ShieldsEngineeringCrew;)
+					(&itCCL5DamageControlCrew; &itCCL5WeaponsEngineeringCrew; &itCCL5ShieldsEngineeringCrew;)
+					(&itCCL6DamageControlCrew; &itCCL6WeaponsEngineeringCrew; &itCCL6ShieldsEngineeringCrew;)
+					(&itCCL7DamageControlCrew; &itCCL7WeaponsEngineeringCrew; &itCCL7ShieldsEngineeringCrew;)
+					(&itCCL8DamageControlCrew; &itCCL8WeaponsEngineeringCrew; &itCCL8ShieldsEngineeringCrew;)
+					(&itCCL9DamageControlCrew; &itCCL9WeaponsEngineeringCrew; &itCCL9ShieldsEngineeringCrew;)
+					(&itCCL10DamageControlCrew; &itCCL10WeaponsEngineeringCrew; &itCCL10ShieldsEngineeringCrew;)
+					(&itCCL11DamageControlCrew; &itCCL11WeaponsEngineeringCrew; &itCCL11ShieldsEngineeringCrew;)
+					(&itCCL12DamageControlCrew; &itCCL12WeaponsEngineeringCrew; &itCCL12ShieldsEngineeringCrew;)
 				)
 			</SpecialDeal>
 		</InitialData>

@@ -429,7 +429,7 @@ ShieldEnhancement	3		650		1		uncommon
 		
 		<Devices>
 			<Device 
-				deviceID=		"&itCCDualNapaS30Deflector;"
+				deviceID=		"&itCCNapaS30Deflector;"
 				charges=		"3"
 				enhancement=	"0x0103"
 			/>
@@ -558,7 +558,7 @@ ShieldEnhancement	7		25000	10		common
 		
 		<Devices>
 			<Device 
-				deviceID=		"&itCCDualNapaS100Deflector;"
+				deviceID=		"&itCCNapaS100Deflector;"
 				charges=		"3"
 				enhancement=	"0x0103"
 			/>

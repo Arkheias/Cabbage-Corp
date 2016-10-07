@@ -121,7 +121,7 @@
 					; Level 2 ship
 					(	
 						(&itCCOmniSavoyM1Howitzer;				1)
-						(&itCCDualNapaS1Deflector;				1)
+						(&itCCNapaS1Deflector;					1)
 						(&itCCDualSiva8MWReactor;				1)
 						(&itCCAuxSiva8MWReactor;				1)
 						(&itCCDualPlasmaDrive;					1)
@@ -170,7 +170,7 @@
 					((&stCommonwealthDryDock; 2)
 						(&scCCOboroGurumaEridani;
 							(	(&itCCOmniSavoyM2Howitzer;				1)
-								(&itCCDualNapaS2Deflector;				1)
+								(&itCCNapaS2Deflector;				1)
 								(&itCCDualSiva20MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
 								(&itCC2xStealthArmor;					12)
@@ -184,7 +184,7 @@
 					((&stCommonwealthDryDock; (1 1))
 						(&scCCOboroGurumaEridani;
 							(	(&itCCSavoyM1Howitzer;					1)
-								(&itCCDualNapaS1Deflector;				1)
+								(&itCCNapaS1Deflector;				1)
 								(&itCCDualSiva8MWReactor;				1)
 								(&itCCDualPlasmaDrive;					1)
 								(&itCCLightStealthPlating;				12)
@@ -197,7 +197,7 @@
 					((&stStKatsArcology;)
 						(&scCCOboroGurumaEridani;
 							(	(&itCCOmniSavoyM4Howitzer;				1)
-								(&itCCDualNapaS4Deflector;				1)
+								(&itCCNapaS4Deflector;				1)
 								(&itCCDualSiva40MWReactor;				1)
 								(&itCCDualTritiumDrive;					1)
 								(&itCC4xStealthArmor;					12)
@@ -211,7 +211,7 @@
 						; Index 1:  Alternate ship data.
 						(&scCCOboroGurumaEridani;
 							(	(&itCCOmniSavoyM8Howitzer;				1)
-								(&itCCDualNapaS8Deflector;				1)
+								(&itCCNapaS8Deflector;				1)
 								(&itCCDualSiva80MWReactor;				1)
 								(&itCCDualChronimiumPropulsionUpgrade;	1)
 								(&itCC2xHardenedStealthArmor;			12)
@@ -345,7 +345,7 @@
 					; Level 2 ship
 					(	
 						(&itCCOmniSavoyM1Howitzer;				1)
-						(&itCCDualNapaS1Deflector;				1)
+						(&itCCNapaS1Deflector;					1)
 						(&itCCDualSiva8MWReactor;				1)
 						(&itCCAuxSiva8MWReactor;				1)
 						(&itCCDualPlasmaDrive;					1)
@@ -394,7 +394,7 @@
 					((&stCommonwealthDryDock; 2)
 						(&scCCOboroGurumaTauCeti;
 							(	(&itCCOmniSavoyM2Howitzer;				1)
-								(&itCCDualNapaS2Deflector;				1)
+								(&itCCNapaS2Deflector;				1)
 								(&itCCDualSiva20MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
 								(&itCC2xStealthArmor;					12)
@@ -408,7 +408,7 @@
 					((&stCommonwealthDryDock; (1 1))
 						(&scCCOboroGurumaTauCeti;
 							(	(&itCCSavoyM1Howitzer;					1)
-								(&itCCDualNapaS1Deflector;				1)
+								(&itCCNapaS1Deflector;				1)
 								(&itCCDualSiva8MWReactor;				1)
 								(&itCCDualPlasmaDrive;					1)
 								(&itCCLightStealthPlating;				12)
@@ -421,7 +421,7 @@
 					((&stStKatsArcology;)
 						(&scCCOboroGurumaTauCeti;
 							(	(&itCCOmniSavoyM4Howitzer;				1)
-								(&itCCDualNapaS4Deflector;				1)
+								(&itCCNapaS4Deflector;				1)
 								(&itCCDualSiva40MWReactor;				1)
 								(&itCCDualTritiumDrive;					1)
 								(&itCC4xStealthArmor;					12)
@@ -435,7 +435,7 @@
 						; Index 1:  Alternate ship data.
 						(&scCCOboroGurumaTauCeti;
 							(	(&itCCOmniSavoyM8Howitzer;				1)
-								(&itCCDualNapaS8Deflector;				1)
+								(&itCCNapaS8Deflector;				1)
 								(&itCCDualSiva80MWReactor;				1)
 								(&itCCDualChronimiumPropulsionUpgrade;	1)
 								(&itCC2xHardenedStealthArmor;			12)

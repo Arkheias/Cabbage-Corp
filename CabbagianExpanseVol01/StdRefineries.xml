@@ -1,41 +1,31 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!-- ======================================================================= -->
-						<!-- Standard Refinery Devices -->						
-<!-- ======================================================================= -->
-
-<!--
-	The following instructions may no longer work due to additional updates that may have broken them:
+<!-- Refinery Devices ==========================================================
 	
-	To convert these items so that they are used by invoking them, add this back in:
+	EXTRA DATA
+	
+	refineryData:
+	
+		inputID: UNID of the input material to be consumed.
+		
+		inputCount: Number of the input material to be consumed per cycle.
+		
+		outputID: UNID of the output material to be produced.
+		
+		outputCount: Number of the output material to be produced per cycle.
+		
+		fuelCost: Number of fuel units to be consumed per cycle.
+	
+	useScreen: Dockscreen to be opened up via the Cabbage Corp Toolset.
+	
+	======================================================================== -->
 
-			useScreen=          "Main"
-			useInstalledOnly=   "true"
-			useKey=             "R"
-		
-		<DockScreens>
-			<Main>
-				<OnScreenInit>
-					(block Nil
-						(setq gFuel &itHelium3FuelRod;)												;The item to be produced
-						(setq gOre &itHeliumRegolith;)												;The item to be consumed
-						(setq gFuelAmount 6)														;The amount of gFuel to be produced per gOreAmount consumed
-						(setq gOreAmount 1)															;The amount of gOre consumed to produce GfuelAmount of gFuel
-						(setq gCount (@ (objGetItems gSource "* +unid:&itHeliumRegolith;") 0))		;I couldn't substitute gOre in here so I moved this entire line of code up front and substituted it instead
-						(setq gFuelMult 200)														;The amount of fuel used to process each unit of gOre
-						(scrShowScreen gScreen "&dsCCOreRefinery;")	
-					)
-						
-				</OnScreenInit>
-			</Main>
-		</DockScreens>
-		
-		Then just remove the redundant lines from the top of the actual dockscreen.
--->
+<!-- LEVEL II -->
 
 	<!-- Helium Regolith Refinery -->
-	
+
 	<ItemType UNID="&itCCHeliumRegolithRefinery;"
 			name=               "helium regolith refinery | helium regolith refineries"
 			attributes=         "cabbageCorp, majorItem, miningEquipment, refinery"
@@ -45,62 +35,35 @@
 			
 			value=              "2000"
 			mass=               "16000"
-
+			
 			description=        "This device can refine helium regolith into helium&#xb3; fuel rods. Conversion produces six fuel rods for each ton of ore consumed."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=		"20"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCPassThrough>(&itHelium3FuelRod; &itHeliumRegolith; 6 1 200)</CCPassThrough>
-			<CCItemUse>&dsCCOreRefinery;</CCItemUse>
-		</StaticData>
-		
-		<!-- In order from left to right on CCPassThrough:
-			The item to be produced
-			The item to be consumed
-			The amount of fuel to be produced per specified amount of ore consumed
-			The amount of ore consumed to produce specified units of fuel
-			The power required to process each unit of gOre
-		-->
-		
-	</ItemType>
-	
-	<!-- Advanced Helium Regolith Refinery -->
-	
-	<ItemType UNID="&itCCAdvHeliumRegolithRefinery;"
-			name=               "advanced helium regolith refinery | advanced helium regolith refineries"
-			attributes=         "cabbageCorp, majorItem, miningEquipment, refinery"
+			<refineryData>
+				{
+					inputID:&itHeliumRegolith;
+					inputCount:1
+					outputID:&itHelium3FuelRod;
+					outputCount:6
+					fuelCost:200
+					}
+			</refineryData>
 			
-			level=              "4"
-			frequency=          "veryrare"
-			
-			value=              "12000"
-			mass=               "32000"
-
-			description=        "This device can refine helium regolith into helium&#xb3; reactor assemblies. Conversion produces two reactor assemblies for each ton of ore consumed."
-	>
-
-		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
-		<MiscellaneousDevice
-				deviceSlots=	"2"
-				powerUse=		"40"
-		/>
-		
-		<StaticData>
-			<CCPassThrough>(&itHeliumAssembly; &itHeliumRegolith; 2 1 600)</CCPassThrough>
-			<CCItemUse>&dsCCOreRefinery;</CCItemUse>
+			<useScreen>&dsCCOreRefinery;</useScreen>
 		</StaticData>
-		
 	</ItemType>
-	
+
+<!-- LEVEL III -->
+
 	<!-- Uranium Ore Refinery -->
-	
+
 	<ItemType UNID="&itCCUraniumOreRefinery;"
 			name=               "uranium ore refinery | uranium ore refineries"
 			attributes=         "cabbageCorp, majorItem, miningEquipment, refinery"
@@ -110,54 +73,74 @@
 			
 			value=              "10000"
 			mass=               "20000"
-
+			
 			description=        "This device can refine uranium ore into uranium fuel rods. Conversion produces three fuel rods for each ton of ore consumed."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=		"50"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCPassThrough>(&itUraniumRods; &itUraniumOre; 3 2 300)</CCPassThrough>
-			<CCItemUse>&dsCCOreRefinery;</CCItemUse>
+			<refineryData>
+				{
+					inputID:&itUraniumOre;
+					inputCount:2
+					outputID:&itUraniumRods;
+					outputCount:3
+					fuelCost:300
+					}
+			</refineryData>
+			
+			<useScreen>&dsCCOreRefinery;</useScreen>
 		</StaticData>
-		
 	</ItemType>
-	
-	<!-- Advanced Uranium Ore Refinery -->
-	
-	<ItemType UNID="&itCCAdvUraniumOreRefinery;"
-			name=               "advanced uranium ore refinery | advanced uranium ore refineries"
+
+<!-- LEVEL IV -->
+
+	<!-- Advanced Helium Regolith Refinery -->
+
+	<ItemType UNID="&itCCAdvHeliumRegolithRefinery;"
+			name=               "advanced helium regolith refinery | advanced helium regolith refineries"
 			attributes=         "cabbageCorp, majorItem, miningEquipment, refinery"
 			
-			level=              "6"
+			level=              "4"
 			frequency=          "veryrare"
 			
-			value=              "60000"
-			mass=               "40000"
-
-			description=        "This device can refine uranium ore into uranium reactor assemblies. Conversion produces one reactor assembly for each ton of ore consumed."
-	>
-
+			value=              "12000"
+			mass=               "32000"
+			
+			description=        "This device can refine helium regolith into helium&#xb3; reactor assemblies. Conversion produces two reactor assemblies for each ton of ore consumed."
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				deviceSlots=	"2"
-				powerUse=		"100"
-		/>
-		
+				powerUse=		"40"
+				/>
+				
 		<StaticData>
-			<CCPassThrough>(&itCCUraniumAssembly; &itUraniumOre; 1 2 900)</CCPassThrough>
-			<CCItemUse>&dsCCOreRefinery;</CCItemUse>
+			<refineryData>
+				{
+					inputID:&itHeliumRegolith;
+					inputCount:1
+					outputID:&itHeliumAssembly;
+					outputCount:2
+					fuelCost:600
+					}
+			</refineryData>
+			
+			<useScreen>&dsCCOreRefinery;</useScreen>
 		</StaticData>
-		
 	</ItemType>
-	
+
+<!-- LEVEL V -->
+
 	<!-- Xenotite Ore Refinery -->
-	
+
 	<ItemType UNID="&itCCXenotiteOreRefinery;"
 			name=               "xenotite ore refinery | xenotite ore refineries"
 			attributes=         "cabbageCorp, majorItem, miningEquipment, refinery"
@@ -167,58 +150,74 @@
 			
 			value=              "14000"
 			mass=               "25000"
-
+			
 			description=        "This device can refine xenotite ore into xenotite fuel rods. Conversion produces three fuel rods for each ton of ore consumed."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=		"120"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCPassThrough>(&itXenotiteFuelRod; &itXenotiteOre; 3 1 500)</CCPassThrough>
-			<CCItemUse>&dsCCOreRefinery;</CCItemUse>
+			<refineryData>
+				{
+					inputID:&itXenotiteOre;
+					inputCount:1
+					outputID:&itXenotiteFuelRod;
+					outputCount:3
+					fuelCost:500
+					}
+			</refineryData>
+			
+			<useScreen>&dsCCOreRefinery;</useScreen>
 		</StaticData>
-		
 	</ItemType>
-	
-<!-- ======================================================================= -->
-						<!-- Advanced Refinery Devices -->						
-<!-- ======================================================================= -->
-	
-	<!-- Advanced Xenotite Ore Refinery -->
-	
-	<ItemType UNID="&itCCAdvXenotiteOreRefinery;"
-			name=               "advanced xenotite ore refinery | advanced xenotite ore refineries"
+
+<!-- LEVEL VI -->
+
+	<!-- Advanced Uranium Ore Refinery -->
+
+	<ItemType UNID="&itCCAdvUraniumOreRefinery;"
+			name=               "advanced uranium ore refinery | advanced uranium ore refineries"
 			attributes=         "cabbageCorp, majorItem, miningEquipment, refinery"
 			
-			level=              "8"
+			level=              "6"
 			frequency=          "veryrare"
 			
-			value=              "84000"
-			mass=               "50000"
-
-			description=        "This device can refine xenotite ore into xenotite reactor assemblies. Conversion produces one reactor assembly for each ton of ore consumed."
-	>
-
+			value=              "60000"
+			mass=               "40000"
+			
+			description=        "This device can refine uranium ore into uranium reactor assemblies. Conversion produces one reactor assembly for each ton of ore consumed."
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				deviceSlots=	"2"
-				powerUse=		"240"
-		/>
-		
+				powerUse=		"100"
+				/>
+				
 		<StaticData>
-			<CCPassThrough>(&itCCXenotiteAssembly; &itXenotiteOre; 1 1 1500)</CCPassThrough>
-			<CCItemUse>&dsCCOreRefinery;</CCItemUse>
+			<refineryData>
+				{
+					inputID:&itUraniumOre;
+					inputCount:1
+					outputID:&itCCUraniumAssembly;
+					outputCount:2
+					fuelCost:900
+					}
+			</refineryData>
+			
+			<useScreen>&dsCCOreRefinery;</useScreen>
 		</StaticData>
-		
 	</ItemType>
-	
+
+<!-- LEVEL VII -->
+
 	<!-- Pteracnium Ore Refinery -->
-	
+
 	<ItemType UNID="&itCCPteracniumOreRefinery;"
 			name=               "pteracnium ore refinery | pteracnium ore refineries"
 			attributes=         "cabbageCorp, majorItem, miningEquipment, refinery"
@@ -228,54 +227,74 @@
 			
 			value=              "40000"
 			mass=               "40000"
-
+			
 			description=        "This device can refine pteracnium ore into pteracnium fuel rods. Conversion produces three fuel rods for each ton of ore consumed."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=		"400"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCPassThrough>(&itPteracniumFuelRod; &itPteracniumOre; 3 1 700)</CCPassThrough>
-			<CCItemUse>&dsCCOreRefinery;</CCItemUse>
+			<refineryData>
+				{
+					inputID:&itPteracniumOre;
+					inputCount:1
+					outputID:&itPteracniumFuelRod;
+					outputCount:3
+					fuelCost:700
+					}
+			</refineryData>
+			
+			<useScreen>&dsCCOreRefinery;</useScreen>
 		</StaticData>
-		
 	</ItemType>
-	
-	<!-- Advanced Pteracnium Ore Refinery -->
-	
-	<ItemType UNID="&itCCAdvPteracniumOreRefinery;"
-			name=               "advanced pteracnium ore refinery | advanced pteracnium ore refineries"
+
+<!-- LEVEL VIII -->
+
+	<!-- Advanced Xenotite Ore Refinery -->
+
+	<ItemType UNID="&itCCAdvXenotiteOreRefinery;"
+			name=               "advanced xenotite ore refinery | advanced xenotite ore refineries"
 			attributes=         "cabbageCorp, majorItem, miningEquipment, refinery"
 			
-			level=              "10"
+			level=              "8"
 			frequency=          "veryrare"
 			
-			value=              "240000"
-			mass=               "80000"
-
-			description=        "This device can refine pteracnium ore into pteracnium reactor assemblies. Conversion produces one reactor assembly for each ton of ore consumed."
-	>
-
+			value=              "84000"
+			mass=               "50000"
+			
+			description=        "This device can refine xenotite ore into xenotite reactor assemblies. Conversion produces one reactor assembly for each ton of ore consumed."
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
-				deviceslots=	"2"
-				powerUse=		"800"
-		/>
-		
+				deviceSlots=	"2"
+				powerUse=		"240"
+				/>
+				
 		<StaticData>
-			<CCPassThrough>(&itCCPteracniumAssembly; &itPteracniumOre; 1 1 2100)</CCPassThrough>
-			<CCItemUse>&dsCCOreRefinery;</CCItemUse>
+			<refineryData>
+				{
+					inputID:&itXenotiteOre;
+					inputCount:1
+					outputID:&itCCXenotiteAssembly;
+					outputCount:1
+					fuelCost:1500
+					}
+			</refineryData>
+			
+			<useScreen>&dsCCOreRefinery;</useScreen>
 		</StaticData>
-		
 	</ItemType>
-	
-		<!-- Hadron Archeolith Refinery -->
-	
+
+<!-- LEVEL IX -->
+
+	<!-- Hadron Archeolith Refinery -->
+
 	<ItemType UNID="&itCCHadronArcheolithRefinery;"
 			name=               "hadron archeolith refinery | hadron archeolith refineries"
 			attributes=         "cabbageCorp, majorItem, miningEquipment, refinery"
@@ -285,25 +304,74 @@
 			
 			value=              "200000"
 			mass=               "55000"
-
+			
 			description=        "This device can refine hadron archeolith into hadron-vacuum fuel cells. Conversion produces three fuel cells for each ton of ore consumed"
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				powerUse=		"600"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCPassThrough>(&itHadronVacuumFuelCell; &itHadronArcheolith; 3 1 900)</CCPassThrough>
-			<CCItemUse>&dsCCOreRefinery;</CCItemUse>
+			<refineryData>
+				{
+					inputID:&itHadronArcheolith;
+					inputCount:1
+					outputID:&itHadronVacuumFuelCell;
+					outputCount:3
+					fuelCost:900
+					}
+			</refineryData>
+			
+			<useScreen>&dsCCOreRefinery;</useScreen>
 		</StaticData>
-		
 	</ItemType>
-	
+
+<!-- LEVEL X -->
+
+	<!-- Advanced Pteracnium Ore Refinery -->
+
+	<ItemType UNID="&itCCAdvPteracniumOreRefinery;"
+			name=               "advanced pteracnium ore refinery | advanced pteracnium ore refineries"
+			attributes=         "cabbageCorp, majorItem, miningEquipment, refinery"
+			
+			level=              "10"
+			frequency=          "veryrare"
+			
+			value=              "240000"
+			mass=               "80000"
+			
+			description=        "This device can refine pteracnium ore into pteracnium reactor assemblies. Conversion produces one reactor assembly for each ton of ore consumed."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				deviceslots=	"2"
+				powerUse=		"800"
+				/>
+				
+		<StaticData>
+			<refineryData>
+				{
+					inputID:&itPteracniumOre;
+					inputCount:1
+					outputID:&itCCPteracniumAssembly;
+					outputCount:1
+					fuelCost:2100
+					}
+			</refineryData>
+			
+			<useScreen>&dsCCOreRefinery;</useScreen>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL XII -->
+
 	<!-- Advanced Hadron Archeolith Refinery -->
-	
+
 	<ItemType UNID="&itCCAdvHadronArcheolithRefinery;"
 			name=               "advanced hadron archeolith refinery | advanced hadron archeolith refineries"
 			attributes=         "cabbageCorp, majorItem, miningEquipment, refinery"
@@ -313,22 +381,180 @@
 			
 			value=              "1200000"
 			mass=               "110000"
-
+			
 			description=        "This device can refine hadron archeolith into hadron-vacuum reactor modules. Conversion produces one reactor module for each ton of ore consumed."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
+		
 		<MiscellaneousDevice
 				deviceslots=	"2"
 				powerUse=		"1200"
-		/>
-		
+				/>
+				
 		<StaticData>
-			<CCPassThrough>(&itCCHadronVacuumModule; &itHadronArcheolith; 1 1 2700)</CCPassThrough>
-			<CCItemUse>&dsCCOreRefinery;</CCItemUse>
+			<refineryData>
+				{
+					inputID:&itHadronArcheolith;
+					inputCount:1
+					outputID:&itCCHadronVacuumModule;
+					outputCount:1
+					fuelCost:2700
+					}
+			</refineryData>
+			
+			<useScreen>&dsCCOreRefinery;</useScreen>
 		</StaticData>
-		
 	</ItemType>
+
+<!-- Dock Screens -->
+
+	<!-- Ore Refinery DockScreen-->
+
+	<DockScreen	UNID="&dsCCOreRefinery;"
+			name= 				"Ship's Interior"
+			backgroundID=		"&rsShipInterior;"
+			nestedScreen=		"true"
+			>
+			
+		<InitialPane>	
+			(switch
+				(itmGetProperty gItem 'damaged)
+					"NoUse"
+				
+				"Default"
+			)
+		</InitialPane>
+		
+		<Panes>
+			<Default  showCounter="true">
+				<OnPaneInit>
+					(block (desc refineryData inputID inputCount outputID outputCount fuelCost inputOwned)
+						(setq refineryData (itmGetStaticData gItem 'refineryData))
+						
+						(setq inputID (@ refineryData 'inputID))
+						(setq inputCount (@ refineryData 'inputCount))
+						(setq outputID (@ refineryData 'outputID))
+						(setq outputCount (@ refineryData 'outputCount))
+						(setq fuelCost (@ refineryData 'fuelCost))
+						
+						(setq inputOwned (itmGetCount (@ (objGetItems gSource (cat "* +unid:" inputID)) 0)))
+						
+						(setq desc 
+							(cat (itmGetName (itmCreate inputID 1) 3)
+								 ": "
+								 inputOwned
+								 "\n\n"
+								 
+								 (if (geq inputOwned inputCount)
+									; YES:  Plenty of ore.
+									(cat "Each batch requires "
+										 inputCount
+										 " unit(s) of ore to produce "
+										 outputCount
+										 " "
+										 (itmGetName (itmCreate outputID 1) 2)
+										 ".\n\n"
+										 "How many "
+										 (itmGetName (itmCreate inputID 1) 2)
+										 " do you wish to process?"
+									)
+									
+									; NO:  Not enough ore!
+									(cat "You need a minimum of "
+										 inputCount
+										 " unit(s) of ore to refine any into fuel."
+									)
+								 )
+							)
+						)
+						(scrEnableAction gScreen 0 (geq (divide inputOwned inputCount) 1))
+						(scrSetDesc gScreen desc)
+					)
+				</OnPaneInit>
+				
+				<Actions>
+					<Action name="Refine ore" default="1" key="R">
+						(block (refineryData inputID inputCount outputID outputCount fuelCost inputOwned theCounter)
+							(setq refineryData (itmGetStaticData gItem 'refineryData))
+						
+							(setq inputID (@ refineryData 'inputID))
+							(setq inputCount (@ refineryData 'inputCount))
+							(setq outputID (@ refineryData 'outputID))
+							(setq outputCount (@ refineryData 'outputCount))
+							(setq fuelCost (@ refineryData 'fuelCost))
+							
+							(setq inputOwned (itmGetCount (@ (objGetItems gSource (cat "* +unid:" inputID)) 0)))
+							(setq theCounter (scrGetCounter gScreen))
+							
+							(switch
+								; Limit the counter to the maximum amount of ore that can be processed.
+                                (gr theCounter inputOwned)
+                                    (scrSetCounter gScreen (multiply (divide inputOwned inputCount) inputCount))
+								
+								; Round the counter down to the maximum batches of ore that can be processed.
+                                (not (eq theCounter (multiply (divide theCounter inputCount) inputCount)))
+                                    (scrSetCounter gScreen (multiply (divide theCounter inputCount) inputCount))
+								
+								; Process the specified amount of ore.
+								(gr theCounter 0)
+									(block (itemIn itemOut)
+										(setq itemIn  (itmCreate inputID theCounter))
+										(setq itemOut (itmCreate outputID (divide (multiply theCounter outputCount) inputCount)))
+										(setq fuelUse (multiply theCounter fuelCost))
+										
+										(if (geq (shpGetFuelLeft gSource) fuelUse)
+											; YES:  Plenty of fuel.
+											(block Nil
+												(objRemoveItem gSource itemIn)
+												(objAddItem gsource itemOut)
+												(shpConsumeFuel gSource fuelUse)
+												(objSendMessage gSource Nil 
+													(cat (itmGetName itemIn 8)
+														" refined into "
+														(itmGetName itemOut 8)
+													)
+												)
+											)
+											
+											; NO:  Not enough fuel!
+											(block nil
+												(objSendMessage gPlayerShip Nil "WARNING: Not enough fuel to complete refining operation!")
+												(scrExitScreen gScreen)
+											)
+										)
+										(scrExitScreen gScreen 'forceUndock)
+									)
+							)
+						)
+					</Action>
+					
+					<Action name="Cancel" cancel="1" key="C">
+						(scrExitScreen gScreen)
+					</Action>
+				</Actions>
+			</Default>
+			
+			<NoUse>
+				<OnPaneInit>
+					(scrSetDesc gScreen 
+						(cat "This "
+							 (if gItem 
+								(itmGetName gItem 0)
+								"damaged refinery"
+							 )
+							 " is non-functional."
+						)
+					)
+				</OnPaneInit>
+				
+				<Actions>
+					<Action name="Done" cancel="1" default="1" key="D">
+						(scrExitScreen gScreen 'forceUndock)
+					</Action>
+				</Actions>
+			</NoUse>
+		</Panes>
+	</DockScreen>
 
 </TranscendenceModule>

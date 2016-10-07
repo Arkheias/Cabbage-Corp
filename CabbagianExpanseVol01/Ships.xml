@@ -220,7 +220,7 @@ other			n-?
 			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="290" posRadius="95"/>
 			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="300" posRadius="105"/>
 			
-			<Device deviceID="&itCCDualNapaS150Deflector;" charges="4"/>
+			<Device deviceID="&itCCNapaS150Deflector;" charges="4"/>
 			<Device deviceID="&itCCDualSiva8000MWReactor;"/>
 			<Device deviceID="&itCCBussardCollector;"/>
 			<Device deviceID="&itCCStomaS120ShieldEmitterArray;"/>

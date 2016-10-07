@@ -52,7 +52,7 @@
 			
 			<Device deviceID="&itCCKaleM6Repeater;"/>
 			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
-			<Device deviceID="&itCCJadeiteS2Deflector;"/>
+			<Device deviceID="&itCCRadNapaS2Deflector;"/>
 			<Device deviceID="&itCCDualSiva12MWReactor;"/>
 		</Devices>
 
@@ -103,7 +103,7 @@
 					; Level 2 components
 					(	
 						(&itCCKaleM11Repeater;					1)
-						(&itCCDualNapaS8Deflector;				1)
+						(&itCCNapaS8Deflector;					1)
 						(&itCCDualSiva40MWReactor;				1)
 						(&itCCDualTritiumPropulsionUpgrade;		1)
 						(&itCC2xStealthArmor;					8)
@@ -149,7 +149,7 @@
 					((&stCommonwealthDryDock; 2)
 						(&scCCLampyridaeEridani;
 							(	(&itCCKaleM11Repeater;					1)
-								(&itCCDualNapaS8Deflector;				1)
+								(&itCCNapaS8Deflector;				1)
 								(&itCCDualSiva40MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
 								(&itCC2xStealthArmor;					8)
@@ -178,7 +178,7 @@
 						(&scCCLampyridaeEridani;
 							(	(&itCCSavoyM8Howitzer;					1)
 								(&itCCKaleM6Repeater;					2)
-								(&itCCDualNapaS8Deflector;				1)
+								(&itCCNapaS8Deflector;					1)
 								(&itCCDualSiva40MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
 								(&itCC2xStealthArmor;					8)
@@ -197,7 +197,7 @@
 						(&scCCLampyridaeEridani;
 							(	(&itCCSavoyM30Howitzer;					1)
 								(&itCCKaleM20Repeater;					2)
-								(&itCCDualNapaS30Deflector;				1)
+								(&itCCNapaS30Deflector;				1)
 								(&itCCDualSiva120MWReactor;				1)
 								(&itCCDualChronimiumPropulsionUpgrade;	1)
 								(&itCC2xHardenedStealthArmor;			8)
@@ -266,7 +266,7 @@
 			
 			<Device deviceID="&itCCKaleM6Repeater;"/>
 			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
-			<Device deviceID="&itCCJadeiteS2Deflector;"/>
+			<Device deviceID="&itCCRadNapaS2Deflector;"/>
 			<Device deviceID="&itCCDualSiva12MWReactor;"/>
 		</Devices>
 
@@ -317,7 +317,7 @@
 					; Level 2 components
 					(	
 						(&itCCKaleM11Repeater;					1)
-						(&itCCDualNapaS8Deflector;				1)
+						(&itCCNapaS8Deflector;				1)
 						(&itCCDualSiva40MWReactor;				1)
 						(&itCCDualTritiumPropulsionUpgrade;		1)
 						(&itCC2xStealthArmor;					8)
@@ -363,7 +363,7 @@
 					((&stCommonwealthDryDock; 2)
 						(&scCCLampyridaeTauCeti;
 							(	(&itCCKaleM11Repeater;					1)
-								(&itCCDualNapaS8Deflector;				1)
+								(&itCCNapaS8Deflector;				1)
 								(&itCCDualSiva40MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
 								(&itCC2xStealthArmor;					8)
@@ -392,7 +392,7 @@
 						(&scCCLampyridaeTauCeti;
 							(	(&itCCSavoyM8Howitzer;					1)
 								(&itCCKaleM6Repeater;					2)
-								(&itCCDualNapaS8Deflector;				1)
+								(&itCCNapaS8Deflector;				1)
 								(&itCCDualSiva40MWReactor;				1)
 								(&itCCDualTritiumPropulsionUpgrade;		1)
 								(&itCC2xStealthArmor;					8)
@@ -411,7 +411,7 @@
 						(&scCCLampyridaeTauCeti;
 							(	(&itCCSavoyM30Howitzer;					1)
 								(&itCCKaleM20Repeater;					2)
-								(&itCCDualNapaS30Deflector;				1)
+								(&itCCNapaS30Deflector;				1)
 								(&itCCDualSiva120MWReactor;				1)
 								(&itCCDualChronimiumPropulsionUpgrade;	1)
 								(&itCC2xHardenedStealthArmor;			8)

@@ -1,15 +1,24 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!-- ======================================================================= -->
-							<!-- Quick-Regen Shields -->						
-<!-- ======================================================================= -->
-
-	<!-- Napa S1 Deflector -->	;	regenerates in 5 seconds after collapse
+<!-- Shield Devices ==========================================================
 	
+	EXTRA DATA
+	
+	CCItemSwap: UNID of target device that this one can be freely modified into.
+	
+	useScreen: Dockscreen to be opened up via the Cabbage Corp Toolset.
+	
+	======================================================================== -->
+
+<!-- LEVEL I -->
+
+	<!-- Napa S1 Deflector -->
+
 	<ItemType UNID="&itCCNapaS1Deflector;"
 			name=				"Napa S1 deflector"
-			attributes=			"cabbageCorp, majorItem"
+			attributes=			"cabbageCorp, majorItem, shield"
 			showReference=		"true"
 			
 			level=				"1"
@@ -17,823 +26,34 @@
 			
 			value=				"750"
 			mass=				"1000"
-
+			
 			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+		
 		<Shields
 				hitPoints=			"20"
 				regen=				"24"
 				depletionDelay=		"300"
 				powerUse=			"10"
-
+				
 				HPBonusPerCharge=	"10"
 				powerBonusPerCharge="5"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-
-	<!-- Napa S2 Deflector -->	;	regenerates in 6 seconds after collapse
-	
-	<ItemType UNID="&itCCNapaS2Deflector;"
-			name=				"Napa S2 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"2"
-			frequency=			"uncommon"
-			
-			value=				"1000"
-			mass=				"1500"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"30"
-				regen=				"30"
-				depletionDelay=		"300"
-				powerUse=			"20"
-
-				HPBonusPerCharge=	"15"
-				powerBonusPerCharge="10"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-
-	<!-- Napa S4 Deflector -->	;	regenerates in 6.67 seconds after collapse
-	
-	<ItemType UNID="&itCCNapaS4Deflector;"
-			name=				"Napa S4 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"3"
-			frequency=			"uncommon"
-			
-			value=				"2000"
-			mass=				"1500"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"40"
-				regen=				"36"
-				depletionDelay=		"300"
-				powerUse=			"40"
-
-				HPBonusPerCharge=	"20"
-				powerBonusPerCharge="20"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Napa S8 Deflector -->	;	regenerates in 5.56 seconds after collapse
-	
-	<ItemType UNID="&itCCNapaS8Deflector;"
-			name=				"Napa S8 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"4"
-			frequency=			"uncommon"
-			
-			value=				"4000"
-			mass=				"3000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"50"
-				regen=				"54"
-				depletionDelay=		"300"
-				powerUse=			"80"
-
-				HPBonusPerCharge=	"25"
-				powerBonusPerCharge="40"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Napa S20 Deflector -->	;	regenerates in 5 seconds after collapse
-	
-	<ItemType UNID="&itCCNapaS20Deflector;"
-			name=				"Napa S20 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"5"
-			frequency=			"uncommon"
-			
-			value=				"8000"
-			mass=				"3000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"60"
-				regen=				"72"
-				depletionDelay=		"300"
-				powerUse=			"200"
-
-				HPBonusPerCharge=	"30"
-				powerBonusPerCharge="100"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Napa S30 Deflector -->	;	regenerates in 5.33 seconds after collapse
-	
-	<ItemType UNID="&itCCNapaS30Deflector;"
-			name=				"Napa S30 Deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"6"
-			frequency=			"uncommon"
-			
-			value=				"16000"
-			mass=				"5000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"80"
-				regen=				"90"
-				depletionDelay=		"300"
-				powerUse=			"300"
-
-				HPBonusPerCharge=	"40"
-				powerBonusPerCharge="150"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Napa S50 Deflector -->	;	regenerates in 4.76 seconds after collapse
-	
-	<ItemType UNID="&itCCNapaS50Deflector;"
-			name=				"Napa S50 Deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"7"
-			frequency=			"uncommon"
-			
-			value=				"32000"
-			mass=				"5000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"100"
-				regen=				"126"
-				depletionDelay=		"300"
-				powerUse=			"500"
-
-				HPBonusPerCharge=	"50"
-				powerBonusPerCharge="250"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Napa S100 Deflector -->	;	regenerates in 4 seconds after collapse
-	
-	<ItemType UNID="&itCCNapaS100Deflector;"
-			name=				"Napa S100 Deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"8"
-			frequency=			"uncommon"
-			
-			value=				"65000"
-			mass=				"6000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"120"
-				regen=				"180"
-				depletionDelay=		"300"
-				powerUse=			"1000"
-
-				HPBonusPerCharge=	"60"
-				powerBonusPerCharge="500"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Napa S120 Deflector -->	;	regenerates in 3.75 seconds after collapse
-	
-	<ItemType UNID="&itCCNapaS120Deflector;"
-			name=				"Napa S120 shield deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"9"
-			frequency=			"uncommon"
-			
-			value=				"120000"
-			mass=				"7000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"150"
-				regen=				"240"
-				depletionDelay=		"300"
-				powerUse=			"1200"
-
-				HPBonusPerCharge=	"75"
-				powerBonusPerCharge="600"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-
-	<!-- Napa S150 Deflector -->	;	regenerates in 3.6 seconds after collapse
-	
-	<ItemType UNID="&itCCNapaS150Deflector;"
-			name=				"Napa S150 Deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"10"
-			frequency=			"uncommon"
-			
-			value=				"250000"
-			mass=				"8000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"180"
-				regen=				"300"
-				depletionDelay=		"300"
-				powerUse=			"1500"
-
-				HPBonusPerCharge=	"90"
-				powerBonusPerCharge="750"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-
-	<!-- Napa S260 Deflector -->	;	regenerates in 3.69 seconds after collapse
-	
-	<ItemType UNID="&itCCNapaS260Deflector;"
-			name=				"Napa S260 Deflector"
-			attributes=			"alien, cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"11"
-			frequency=			"uncommon"
-			
-			value=				"500000"
-			mass=				"9000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"240"
-				regen=				"390"
-				depletionDelay=		"300"
-				powerUse=			"2600"
-
-				HPBonusPerCharge=	"120"
-				powerBonusPerCharge="1300"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Napa S400 Deflector -->	;	regenerates in 3.53 seconds after collapse
-
-	<ItemType UNID="&itCCNapaS400Deflector;"
-			name=				"Napa S400 deflector"
-			attributes=			"alien, cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"12"
-			frequency=			"uncommon"
-			
-			value=				"1000000"
-			mass=				"10000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"300"
-				regen=				"510"
-				depletionDelay=		"300"
-				powerUse=			"4000"
-
-				HPBonusPerCharge=	"150"
-				powerBonusPerCharge="2000"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-<!-- ======================================================================= -->
-						<!-- Dual Quick-Regen Shields -->						
-<!-- ======================================================================= -->
-
-	<!-- Dual Napa S1 Deflector -->
-	
-	<ItemType UNID="&itCCDualNapaS1Deflector;"
-			name=				"dual Napa S1 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"1"
-			frequency=			"rare"
-			
-			value=				"1500"
-			mass=				"2000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"20"
-				regen=				"36"
-				depletionDelay=		"300"
-				powerUse=			"30"
-
-				HPBonusPerCharge=	"10"
-				powerBonusPerCharge="15"
+				/>
 				
-				deviceslots=		"2"
-		/>
-		
 		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
+			<CCItemSwap>&itCCRadNapaS1Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
 		</StaticData>
 	</ItemType>
 
-	<!-- Dual Napa S2 Deflector -->
-	
-	<ItemType UNID="&itCCDualNapaS2Deflector;"
-			name=				"dual Napa S2 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"2"
-			frequency=			"veryrare"
-			
-			value=				"2000"
-			mass=				"3000"
+	<!-- Napa S1 Deflector (no containment) -->
 
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"30"
-				regen=				"60"
-				depletionDelay=		"180"
-				powerUse=			"50"
-
-				HPBonusPerCharge=	"15"
-				powerBonusPerCharge="25"
-				
-				deviceslots=		"2"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-
-	<!-- Dual Napa S4 Deflector -->
-	
-	<ItemType UNID="&itCCDualNapaS4Deflector;"
-			name=				"dual Napa S4 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"3"
-			frequency=			"veryrare"
-			
-			value=				"4000"
-			mass=				"3000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"40"
-				regen=				"72"
-				depletionDelay=		"180"
-				powerUse=			"100"
-
-				HPBonusPerCharge=	"20"
-				powerBonusPerCharge="50"
-				
-				deviceslots=		"2"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Dual Napa S8 Deflector -->
-	
-	<ItemType UNID="&itCCDualNapaS8Deflector;"
-			name=				"dual Napa S8 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"4"
-			frequency=			"veryrare"
-			
-			value=				"8000"
-			mass=				"6000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"50"
-				regen=				"108"
-				depletionDelay=		"180"
-				powerUse=			"200"
-
-				HPBonusPerCharge=	"25"
-				powerBonusPerCharge="100"
-				
-				deviceslots=		"2"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Dual Napa S20 Deflector -->
-	
-	<ItemType UNID="&itCCDualNapaS20Deflector;"
-			name=				"dual Napa S20 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"5"
-			frequency=			"veryrare"
-			
-			value=				"16000"
-			mass=				"6000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"60"
-				regen=				"144"
-				depletionDelay=		"180"
-				powerUse=			"500"
-
-				HPBonusPerCharge=	"30"
-				powerBonusPerCharge="250"
-				
-				deviceslots=		"2"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Dual Napa S30 Deflector -->
-		
-	<ItemType UNID="&itCCDualNapaS30Deflector;"
-			name=				"dual Napa S30 Deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"6"
-			frequency=			"veryrare"
-			
-			value=				"32000"
-			mass=				"10000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"80"
-				regen=				"180"
-				depletionDelay=		"180"
-				powerUse=			"720"
-
-				HPBonusPerCharge=	"40"
-				powerBonusPerCharge="360"
-				
-				deviceslots=		"2"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Dual Napa S50 Deflector -->
-	
-	<ItemType UNID="&itCCDualNapaS50Deflector;"
-			name=				"dual Napa S50 Deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"7"
-			frequency=			"veryrare"
-			
-			value=				"64000"
-			mass=				"10000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"100"
-				regen=				"252"
-				depletionDelay=		"180"
-				powerUse=			"1200"
-
-				HPBonusPerCharge=	"50"
-				powerBonusPerCharge="600"
-				
-				deviceslots=		"2"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Dual Napa S100 Deflector -->
-	
-	<ItemType UNID="&itCCDualNapaS100Deflector;"
-			name=				"dual Napa S100 Deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"8"
-			frequency=			"veryrare"
-			
-			value=				"130000"
-			mass=				"12000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"120"
-				regen=				"360"
-				depletionDelay=		"180"
-				powerUse=			"2400"
-
-				HPBonusPerCharge=	"60"
-				powerBonusPerCharge="1200"
-				
-				deviceslots=		"2"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Dual Napa S120 Deflector -->
-	
-	<ItemType UNID="&itCCDualNapaS120Deflector;"
-			name=				"dual Napa S120 shield deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"9"
-			frequency=			"veryrare"
-			
-			value=				"240000"
-			mass=				"14000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"150"
-				regen=				"480"
-				depletionDelay=		"180"
-				powerUse=			"3000"
-
-				HPBonusPerCharge=	"75"
-				powerBonusPerCharge="1500"
-				
-				deviceslots=		"2"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Dual Napa S150 Deflector -->
-	
-	<ItemType UNID="&itCCDualNapaS150Deflector;"
-			name=				"dual Napa S150 Deflector"
-			attributes=			"cabbageCorp, majorItem, military"
-			showReference=		"true"
-			
-			level=				"10"
-			frequency=			"veryrare"
-			
-			value=				"500000"
-			mass=				"16000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"180"
-				regen=				"600"
-				depletionDelay=		"180"
-				powerUse=			"3600"
-
-				HPBonusPerCharge=	"90"
-				powerBonusPerCharge="1800"
-				
-				deviceslots=		"2"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-
-	<!-- Dual Napa S260 Deflector -->
-	
-	<ItemType UNID="&itCCDualNapaS260Deflector;"
-			name=				"dual Napa S260 Deflector"
-			attributes=			"alien, cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"11"
-			frequency=			"veryrare"
-			
-			value=				"1000000"
-			mass=				"18000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"240"
-				regen=				"780"
-				depletionDelay=		"180"
-				powerUse=			"6200"
-
-				HPBonusPerCharge=	"120"
-				powerBonusPerCharge="3100"
-				
-				deviceslots=		"2"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Dual Napa S400 Deflector -->
-
-	<ItemType UNID="&itCCDualNapaS400Deflector;"
-			name=				"dual Napa S400 deflector"
-			attributes=			"alien, cabbageCorp, majorItem"
-			showReference=		"true"
-			
-			level=				"12"
-			frequency=			"veryrare"
-			
-			value=				"2000000"
-			mass=				"20000"
-
-			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. This model consists of two deflectors synchronized to boost regeneration. Can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"300"
-				regen=				"1020"
-				depletionDelay=		"180"
-				powerUse=			"9600"
-
-				HPBonusPerCharge=	"150"
-				powerBonusPerCharge="4800"
-				
-				deviceslots=		"2"
-		/>
-		
-		<StaticData>
-			<CCItemUse>&dsCCNapaShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-	
-<!-- ======================================================================= -->
-							<!-- Invincible Shields -->							
-<!-- ======================================================================= -->
-
-	<!-- Jadeite S1 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS1Deflector;"
-			name=				"Jadeite S1 deflector"
-			attributes=			"cabbageCorp, majorItem"
+	<ItemType UNID="&itCCRadNapaS1Deflector;"
+			name=				"Napa S1 deflector"
+			attributes=			"cabbageCorp, majorItem, shield, voidedWarranty"
 			showReference=		"true"
 			
 			level=				"1"
@@ -841,22 +61,23 @@
 			
 			value=				"1000"
 			mass=				"2000"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+		
 		<Shields
 				hitPoints=			"60"
+				absorbAdj=			"95, 95, 90, 90, 80, 80, 70, 70, 60, 60, 45, 45, 30, 30, 15, 15"
 				regen=				"30"
 				depletionDelay=		"480"
 				powerUse=			"10"
-
+				
 				HPBonusPerCharge=	"20"
 				powerBonusPerCharge="5"
-		/>
-
+				/>
+				
 		<Events>
 			<OnShieldDown>
 				(block Nil
@@ -867,38 +88,78 @@
 		</Events>
 		
 		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
+			<CCItemSwap>&itCCNapaS1Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
 		</StaticData>
 	</ItemType>
 
-	<!-- Jadeite S2 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS2Deflector;"
-			name=				"Jadeite S2 deflector"
-			attributes=			"cabbageCorp, majorItem"
+<!-- LEVEL II -->
+
+	<!-- Napa S2 Deflector -->
+
+	<ItemType UNID="&itCCNapaS2Deflector;"
+			name=				"Napa S2 deflector"
+			attributes=			"cabbageCorp, majorItem, shield"
 			showReference=		"true"
 			
 			level=				"2"
-			frequency=			"rare"
+			frequency=			"uncommon"
+			
+			value=				"1000"
+			mass=				"1500"
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+		
+		<Shields
+				hitPoints=			"30"
+				regen=				"30"
+				depletionDelay=		"300"
+				powerUse=			"20"
+				
+				HPBonusPerCharge=	"15"
+				powerBonusPerCharge="10"
+				/>
+				
+		<StaticData>
+			<CCItemSwap>&itCCRadNapaS2Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Napa S2 Deflector (no containment) -->
+
+	<ItemType UNID="&itCCRadNapaS2Deflector;"
+			name=				"Napa S2 deflector"
+			attributes=			"cabbageCorp, majorItem, shield, voidedWarranty"
+			showReference=		"true"
+			
+			level=				"2"
+			frequency=			"veryrare"
 			
 			value=				"1250"
 			mass=				"2500"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+		
 		<Shields
 				hitPoints=			"90"
+				absorbAdj=			"95, 95, 90, 90, 80, 80, 70, 70, 60, 60, 45, 45, 30, 30, 15, 15"
 				regen=				"42"
 				depletionDelay=		"480"
 				powerUse=			"20"
-
+				
 				HPBonusPerCharge=	"30"
 				powerBonusPerCharge="10"
-		/>
-
+				/>
+				
 		<Events>
 			<OnShieldDown>
 				(block Nil
@@ -909,38 +170,78 @@
 		</Events>
 		
 		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
+			<CCItemSwap>&itCCNapaS2Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
 		</StaticData>
 	</ItemType>
 
-	<!-- Jadeite S4 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS4Deflector;"
-			name=				"Jadeite S4 deflector"
-			attributes=			"cabbageCorp, majorItem"
+<!-- LEVEL III -->
+
+	<!-- Napa S4 Deflector -->
+
+	<ItemType UNID="&itCCNapaS4Deflector;"
+			name=				"Napa S4 deflector"
+			attributes=			"cabbageCorp, majorItem, shield"
 			showReference=		"true"
 			
 			level=				"3"
-			frequency=			"rare"
+			frequency=			"uncommon"
+			
+			value=				"2000"
+			mass=				"1500"
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+		
+		<Shields
+				hitPoints=			"40"
+				regen=				"36"
+				depletionDelay=		"300"
+				powerUse=			"40"
+				
+				HPBonusPerCharge=	"20"
+				powerBonusPerCharge="20"
+				/>
+				
+		<StaticData>
+			<CCItemSwap>&itCCRadNapaS4Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Napa S4 Deflector (no containment) -->
+
+	<ItemType UNID="&itCCRadNapaS4Deflector;"
+			name=				"Napa S4 deflector"
+			attributes=			"cabbageCorp, majorItem, shield, voidedWarranty"
+			showReference=		"true"
+			
+			level=				"3"
+			frequency=			"veryrare"
 			
 			value=				"2500"
 			mass=				"2500"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+		
 		<Shields
 				hitPoints=			"120"
+				absorbAdj=			"95, 95, 90, 90, 80, 80, 70, 70, 60, 60, 45, 45, 30, 30, 15, 15"
 				regen=				"48"
 				depletionDelay=		"480"
 				powerUse=			"40"
-
+				
 				HPBonusPerCharge=	"40"
 				powerBonusPerCharge="20"
-		/>
-
+				/>
+				
 		<Events>
 			<OnShieldDown>
 				(block Nil
@@ -951,38 +252,78 @@
 		</Events>
 		
 		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
+			<CCItemSwap>&itCCNapaS4Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
 		</StaticData>
 	</ItemType>
 
-	<!-- Jadeite S8 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS8Deflector;"
-			name=				"Jadeite S8 deflector"
-			attributes=			"cabbageCorp, majorItem"
+<!-- LEVEL IV -->
+
+	<!-- Napa S8 Deflector -->
+
+	<ItemType UNID="&itCCNapaS8Deflector;"
+			name=				"Napa S8 deflector"
+			attributes=			"cabbageCorp, majorItem, shield"
 			showReference=		"true"
 			
 			level=				"4"
-			frequency=			"rare"
+			frequency=			"uncommon"
+			
+			value=				"4000"
+			mass=				"3000"
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+		
+		<Shields
+				hitPoints=			"50"
+				regen=				"54"
+				depletionDelay=		"300"
+				powerUse=			"80"
+				
+				HPBonusPerCharge=	"25"
+				powerBonusPerCharge="40"
+				/>
+				
+		<StaticData>
+			<CCItemSwap>&itCCRadNapaS8Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Napa S8 Deflector (no containment) -->
+
+	<ItemType UNID="&itCCRadNapaS8Deflector;"
+			name=				"Napa S8 deflector"
+			attributes=			"cabbageCorp, majorItem, shield, voidedWarranty"
+			showReference=		"true"
+			
+			level=				"4"
+			frequency=			"veryrare"
 			
 			value=				"5000"
 			mass=				"4000"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+		
 		<Shields
 				hitPoints=			"150"
+				absorbAdj=			"100, 100, 95, 95, 90, 90, 80, 80, 70, 70, 60, 60, 45, 45, 30, 30"
 				regen=				"72"
 				depletionDelay=		"480"
 				powerUse=			"80"
-
+				
 				HPBonusPerCharge=	"50"
 				powerBonusPerCharge="40"
-		/>
-
+				/>
+				
 		<Events>
 			<OnShieldDown>
 				(block Nil
@@ -993,38 +334,78 @@
 		</Events>
 		
 		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
+			<CCItemSwap>&itCCNapaS8Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
 		</StaticData>
 	</ItemType>
 
-	<!-- Jadeite S20 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS20Deflector;"
-			name=				"Jadeite S20 deflector"
-			attributes=			"cabbageCorp, majorItem"
+<!-- LEVEL V -->
+
+	<!-- Napa S20 Deflector -->
+
+	<ItemType UNID="&itCCNapaS20Deflector;"
+			name=				"Napa S20 deflector"
+			attributes=			"cabbageCorp, majorItem, shield"
 			showReference=		"true"
 			
 			level=				"5"
-			frequency=			"rare"
+			frequency=			"uncommon"
+			
+			value=				"8000"
+			mass=				"3000"
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+		
+		<Shields
+				hitPoints=			"60"
+				regen=				"72"
+				depletionDelay=		"300"
+				powerUse=			"200"
+				
+				HPBonusPerCharge=	"30"
+				powerBonusPerCharge="100"
+				/>
+				
+		<StaticData>
+			<CCItemSwap>&itCCRadNapaS20Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Napa S20 Deflector (no containment) -->
+
+	<ItemType UNID="&itCCRadNapaS20Deflector;"
+			name=				"Napa S20 deflector"
+			attributes=			"cabbageCorp, majorItem, shield, voidedWarranty"
+			showReference=		"true"
+			
+			level=				"5"
+			frequency=			"veryrare"
 			
 			value=				"10000"
 			mass=				"4000"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+		
 		<Shields
 				hitPoints=			"180"
+				absorbAdj=			"100, 100, 95, 95, 90, 90, 80, 80, 70, 70, 60, 60, 45, 45, 30, 30"
 				regen=				"96"
 				depletionDelay=		"480"
 				powerUse=			"200"
-
+				
 				HPBonusPerCharge=	"60"
 				powerBonusPerCharge="100"
-		/>
-
+				/>
+				
 		<Events>
 			<OnShieldDown>
 				(block Nil
@@ -1035,38 +416,78 @@
 		</Events>
 		
 		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
+			<CCItemSwap>&itCCNapaS20Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
 		</StaticData>
 	</ItemType>
 
-	<!-- Jadeite S30 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS30Deflector;"
-			name=				"Jadeite S30 deflector"
-			attributes=			"cabbageCorp, majorItem"
+<!-- LEVEL VI -->
+
+	<!-- Napa S30 Deflector -->
+
+	<ItemType UNID="&itCCNapaS30Deflector;"
+			name=				"Napa S30 Deflector"
+			attributes=			"cabbageCorp, majorItem, shield"
 			showReference=		"true"
 			
 			level=				"6"
-			frequency=			"rare"
+			frequency=			"uncommon"
+			
+			value=				"16000"
+			mass=				"5000"
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+		
+		<Shields
+				hitPoints=			"80"
+				regen=				"90"
+				depletionDelay=		"300"
+				powerUse=			"300"
+				
+				HPBonusPerCharge=	"40"
+				powerBonusPerCharge="150"
+				/>
+				
+		<StaticData>
+			<CCItemSwap>&itCCRadNapaS30Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Napa S30 Deflector (no containment) -->
+
+	<ItemType UNID="&itCCRadNapaS30Deflector;"
+			name=				"Napa S30 deflector"
+			attributes=			"cabbageCorp, majorItem, shield, voidedWarranty"
+			showReference=		"true"
+			
+			level=				"6"
+			frequency=			"veryrare"
 			
 			value=				"20000"
 			mass=				"6000"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+		
 		<Shields
 				hitPoints=			"240"
+				absorbAdj=			"100, 100, 95, 95, 90, 90, 80, 80, 70, 70, 60, 60, 45, 45, 30, 30"
 				regen=				"120"
 				depletionDelay=		"480"
 				powerUse=			"300"
-
+				
 				HPBonusPerCharge=	"80"
 				powerBonusPerCharge="150"
-		/>
-
+				/>
+				
 		<Events>
 			<OnShieldDown>
 				(block Nil
@@ -1077,38 +498,78 @@
 		</Events>
 		
 		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
+			<CCItemSwap>&itCCNapaS30Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
 		</StaticData>
 	</ItemType>
 
-	<!-- Jadeite S50 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS50Deflector;"
-			name=				"Jadeite S50 deflector"
-			attributes=			"cabbageCorp, majorItem"
+<!-- LEVEL VII -->
+
+	<!-- Napa S50 Deflector -->
+
+	<ItemType UNID="&itCCNapaS50Deflector;"
+			name=				"Napa S50 Deflector"
+			attributes=			"cabbageCorp, majorItem, shield, military"
 			showReference=		"true"
 			
 			level=				"7"
-			frequency=			"rare"
+			frequency=			"uncommon"
+			
+			value=				"32000"
+			mass=				"5000"
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+		
+		<Shields
+				hitPoints=			"100"
+				regen=				"126"
+				depletionDelay=		"300"
+				powerUse=			"500"
+				
+				HPBonusPerCharge=	"50"
+				powerBonusPerCharge="250"
+				/>
+				
+		<StaticData>
+			<CCItemSwap>&itCCRadNapaS50Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Napa S50 Deflector (no containment) -->
+
+	<ItemType UNID="&itCCRadNapaS50Deflector;"
+			name=				"Napa S50 deflector"
+			attributes=			"cabbageCorp, majorItem, military, shield, voidedWarranty"
+			showReference=		"true"
+			
+			level=				"7"
+			frequency=			"veryrare"
 			
 			value=				"40000"
 			mass=				"6000"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+		
 		<Shields
 				hitPoints=			"300"
+				absorbAdj=			"100, 100, 100, 100, 95, 95, 90, 90, 80, 80, 70, 70, 60, 60, 45, 45"
 				regen=				"168"
 				depletionDelay=		"480"
 				powerUse=			"500"
-
+				
 				HPBonusPerCharge=	"100"
 				powerBonusPerCharge="250"
-		/>
-
+				/>
+				
 		<Events>
 			<OnShieldDown>
 				(block Nil
@@ -1119,38 +580,78 @@
 		</Events>
 		
 		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
+			<CCItemSwap>&itCCNapaS50Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
 		</StaticData>
 	</ItemType>
 
-	<!-- Jadeite S100 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS100Deflector;"
-			name=				"Jadeite S100 deflector"
-			attributes=			"cabbageCorp, majorItem"
+<!-- LEVEL VIII -->
+
+	<!-- Napa S100 Deflector -->
+
+	<ItemType UNID="&itCCNapaS100Deflector;"
+			name=				"Napa S100 Deflector"
+			attributes=			"cabbageCorp, majorItem, military, shield"
 			showReference=		"true"
 			
 			level=				"8"
-			frequency=			"rare"
+			frequency=			"uncommon"
+			
+			value=				"65000"
+			mass=				"6000"
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+		
+		<Shields
+				hitPoints=			"120"
+				regen=				"180"
+				depletionDelay=		"300"
+				powerUse=			"1000"
+				
+				HPBonusPerCharge=	"60"
+				powerBonusPerCharge="500"
+				/>
+				
+		<StaticData>
+			<CCItemSwap>&itCCRadNapaS100Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Napa S100 Deflector (no containment) -->
+
+	<ItemType UNID="&itCCRadNapaS100Deflector;"
+			name=				"Napa S100 deflector"
+			attributes=			"cabbageCorp, majorItem, military, shield, voidedWarranty"
+			showReference=		"true"
+			
+			level=				"8"
+			frequency=			"veryrare"
 			
 			value=				"81000"
 			mass=				"7000"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+		
 		<Shields
 				hitPoints=			"360"
+				absorbAdj=			"100, 100, 100, 100, 95, 95, 90, 90, 80, 80, 70, 70, 60, 60, 45, 45"
 				regen=				"240"
 				depletionDelay=		"480"
 				powerUse=			"1000"
-
+				
 				HPBonusPerCharge=	"120"
 				powerBonusPerCharge="500"
-		/>
-
+				/>
+				
 		<Events>
 			<OnShieldDown>
 				(block Nil
@@ -1161,38 +662,78 @@
 		</Events>
 		
 		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
+			<CCItemSwap>&itCCNapaS100Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
 		</StaticData>
 	</ItemType>
 
-	<!-- Jadeite S100 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS120Deflector;"
-			name=				"Jadeite S120 deflector"
-			attributes=			"cabbageCorp, majorItem"
+<!-- LEVEL IX -->
+
+	<!-- Napa S120 Deflector -->
+
+	<ItemType UNID="&itCCNapaS120Deflector;"
+			name=				"Napa S120 shield deflector"
+			attributes=			"cabbageCorp, majorItem, military, shield"
 			showReference=		"true"
 			
 			level=				"9"
-			frequency=			"rare"
+			frequency=			"uncommon"
+			
+			value=				"120000"
+			mass=				"7000"
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+		
+		<Shields
+				hitPoints=			"150"
+				regen=				"240"
+				depletionDelay=		"300"
+				powerUse=			"1200"
+				
+				HPBonusPerCharge=	"75"
+				powerBonusPerCharge="600"
+				/>
+				
+		<StaticData>
+			<CCItemSwap>&itCCRadNapaS120Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Napa S120 Deflector (no containment) -->
+
+	<ItemType UNID="&itCCRadNapaS120Deflector;"
+			name=				"Napa S120 deflector"
+			attributes=			"cabbageCorp, majorItem, military, shield, voidedWarranty"
+			showReference=		"true"
+			
+			level=				"9"
+			frequency=			"veryrare"
 			
 			value=				"150000"
 			mass=				"8000"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+		
 		<Shields
 				hitPoints=			"450"
+				absorbAdj=			"100, 100, 100, 100, 95, 95, 90, 90, 80, 80, 70, 70, 60, 60, 45, 45"
 				regen=				"330"
 				depletionDelay=		"480"
 				powerUse=			"1200"
-
+				
 				HPBonusPerCharge=	"150"
 				powerBonusPerCharge="600"
-		/>
-
+				/>
+				
 		<Events>
 			<OnShieldDown>
 				(block Nil
@@ -1203,38 +744,78 @@
 		</Events>
 		
 		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
+			<CCItemSwap>&itCCNapaS120Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
 		</StaticData>
 	</ItemType>
 
-	<!-- Jadeite S150 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS150Deflector;"
-			name=				"Jadeite S150 deflector"
-			attributes=			"cabbageCorp, majorItem"
+<!-- LEVEL X -->
+
+	<!-- Napa S150 Deflector -->
+
+	<ItemType UNID="&itCCNapaS150Deflector;"
+			name=				"Napa S150 Deflector"
+			attributes=			"cabbageCorp, majorItem, military, shield"
 			showReference=		"true"
 			
 			level=				"10"
-			frequency=			"rare"
+			frequency=			"uncommon"
+			
+			value=				"250000"
+			mass=				"8000"
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration and short recovery times. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
+		
+		<Shields
+				hitPoints=			"180"
+				regen=				"300"
+				depletionDelay=		"300"
+				powerUse=			"1500"
+				
+				HPBonusPerCharge=	"90"
+				powerBonusPerCharge="750"
+				/>
+				
+		<StaticData>
+			<CCItemSwap>&itCCRadNapaS150Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Napa S150 Deflector (no containment) -->
+
+	<ItemType UNID="&itCCRadNapaS150Deflector;"
+			name=				"Napa S150 deflector"
+			attributes=			"cabbageCorp, majorItem, military, shield, voidedWarranty"
+			showReference=		"true"
+			
+			level=				"10"
+			frequency=			"veryrare"
 			
 			value=				"310000"
 			mass=				"9000"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
+			
+			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="384" imageWidth="96" imageHeight="96"/>
+		
 		<Shields
 				hitPoints=			"540"
+				absorbAdj=			"100, 100, 100, 100, 100, 100, 100, 95, 95, 90, 90, 80, 80, 70, 70, 60, 60"
 				regen=				"420"
 				depletionDelay=		"480"
 				powerUse=			"1500"
-
+				
 				HPBonusPerCharge=	"180"
 				powerBonusPerCharge="750"
-		/>
-
+				/>
+				
 		<Events>
 			<OnShieldDown>
 				(block Nil
@@ -1245,92 +826,102 @@
 		</Events>
 		
 		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
+			<CCItemSwap>&itCCNapaS150Deflector;</CCItemSwap>
+			
+			<useScreen>&dsCCNapaShields;</useScreen>
 		</StaticData>
 	</ItemType>
 
-	<!-- Jadeite S260 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS260Deflector;"
-			name=				"Jadeite S260 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
+<!-- Dock Screens -->
+
+	<!-- Napa Shield Modifications -->
+
+	<DockScreen	UNID="&dsCCNapaShields;"
+			name=				"Ship's Interior"
+			backgroundID=		"&rsShipInterior;"
+			nestedScreen=		"true"
+			>
 			
-			level=				"11"
-			frequency=			"rare"
-			
-			value=				"630000"
-			mass=				"10000"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"720"
-				regen=				"540"
-				depletionDelay=		"480"
-				powerUse=			"2600"
-
-				HPBonusPerCharge=	"240"
-				powerBonusPerCharge="1300"
-		/>
-
-		<Events>
-			<OnShieldDown>
-				(block Nil
-					(objMakeParalyzed gSource (random 20 100))
-					(objSendMessage gSource Nil "Shield power surge!")
+		<InitialPane>	
+			(switch
+				(itmGetProperty gItem 'damaged)
+					"NoUse"
+					
+				"Default"
 				)
-			</OnShieldDown>
-		</Events>
+		</InitialPane>
 		
-		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
-
-	<!-- Jadeite S400 Deflector -->
-	
-	<ItemType UNID="&itCCJadeiteS400Deflector;"
-			name=				"Jadeite S400 deflector"
-			attributes=			"cabbageCorp, majorItem"
-			showReference=		"true"
+		<Panes>
+			<Default>
+				<OnPaneInit>
+					(block Nil
+						(setq desc 
+							(cat "The Napa series of deflectors provide protection directly proportional to the amount of power supplied to them."
+								"\n\n"
+								"Your "
+								(itmGetName gItem 1)
+								" is currently set to mode "
+								 (itmGetProperty gItem 'charges)
+								"\n\n"
+								"Which mode would you like to set it to?"
+								)
+							)
+						(scrSetDesc gScreen desc)
+						)
+				</OnPaneInit>
+				
+				<Actions>
+					<Action name="0) Set strength to 100%" default="1" key="0">
+						(block Nil
+							(objSetItemProperty gSource gItem 'charges 0)
+							(scrExitScreen gScreen)
+							)
+					</Action>
+					<Action name="1) Set strength to 150%" key="1">
+						(block Nil
+							(objSetItemProperty gSource gItem 'charges 1)
+							(scrExitScreen gScreen)
+							)
+					</Action>
+					<Action name="2) Set strength to 200%" key="2">
+						(block Nil
+							(objSetItemProperty gSource gItem 'charges 2)
+							(scrExitScreen gScreen)
+							)
+					</Action>
+					<Action name="3) Set strength to 250%" key="3">
+						(block Nil
+							(objSetItemProperty gSource gItem 'charges 3)
+							(scrExitScreen gScreen)
+							)
+					</Action>
+					<Action name="4) Set strength to 300%" key="4">
+						(block Nil
+							(objSetItemProperty gSource gItem 'charges 4)
+							(scrExitScreen gScreen)
+							)
+					</Action>
+					
+					<Action name="Cancel" cancel="1" key="C">
+						(scrExitScreen gScreen)
+					</Action>
+				</Actions>
+			</Default>
 			
-			level=				"12"
-			frequency=			"rare"
-			
-			value=				"1300000"
-			mass=				"11000"
-
-			description=		"The Jadeite series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
-	>
-
-		<Image imageID="&rsItems1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Shields
-				hitPoints=			"900"
-				regen=				"720"
-				depletionDelay=		"480"
-				powerUse=			"4000"
-
-				HPBonusPerCharge=	"300"
-				powerBonusPerCharge="2000"
-		/>
-
-		<Events>
-			<OnShieldDown>
-				(block Nil
-					(objMakeParalyzed gSource (random 18 90))
-					(objSendMessage gSource Nil "Shield power surge!")
-				)
-			</OnShieldDown>
-		</Events>
-		
-		<StaticData>
-			<CCItemUse>&dsCCJadeiteShields;</CCItemUse>
-		</StaticData>
-	</ItemType>
+			<NoUse>
+				<OnPaneInit>
+					(scrSetDesc gScreen 
+						"This device is too damaged to further modify."
+						)
+				</OnPaneInit>
+				
+				<Actions>
+					<Action name="Done" cancel="1" default="1" key="D">
+						(scrExitScreen gScreen)
+					</Action>
+				</Actions>
+			</NoUse>
+		</Panes>
+	</DockScreen>
 
 </TranscendenceModule>
