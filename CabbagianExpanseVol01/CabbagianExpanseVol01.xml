@@ -972,6 +972,7 @@
 	<Module fileName="Autons_Phantom.xml"/>
 	<Module fileName="Autons_Wraith.xml"/>
 	<Module fileName="Autons_Shade.xml"/>
+	<Module fileName="CabbageCorpFleet.xml"/>
 	<Module fileName="CabbageCorporation.xml"/>
 	<Module fileName="CabbageCorpStations.xml"/>
 	<Module fileName="CabbageMisc.xml"/>
@@ -986,7 +987,6 @@
 	<Module fileName="Othala.xml"/>
 	<Module fileName="PlayerShipsBase.xml"/>
 	<Module fileName="Praclarush.xml"/>
-	<Module fileName="Ships.xml"/>
 	<Module fileName="StdCargoHolds.xml"/>
 	<Module fileName="StdCrew.xml"/>
 	<Module fileName="StdDevices.xml"/>
