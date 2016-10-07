@@ -1,320 +1,40 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!--
-;showreference appears to do nothing for most weapons, including it anyway because vanilla game does that
-;45		1.3	shots/second	fast
-;20		3	shots/second	fast
-;15		3.8	shots/second	fast	
-;12		5	shots/second	fast	6	shots/second
-;10		6	shots/second	fast	
-;9		6	shots/second	fast	
-;8		7.5	shots/second	fast	
-;7		7.5	shots/second	fast	10	shots/second
-;6		10	shots/second	fast	15	shots/second
-;5		10	shots/second	fast	15	shots/second
-;4		15	shots/second	fast	15	shots/second
-;3		15	shots/second	fast	15	shots/second
-;2		30	shots/second	fast	30	shots/second
-;1		30	shots/second	fast	30	shots/second
-;0			shots/second	fast		shots/second
-;-1			shots/second	fast		shots/second
--->
+<!-- Weapon Devices ============================================================
 	
-<!-- ======================================================================= -->
-							<!-- General Weapons -->							
-<!-- ======================================================================= -->
-
-	<!-- Savoy Equalizer -->
-
-	<ItemType UNID="&itCCSavoyEqualizer;"
-			name=				"Savoy Equalizer"
-			attributes=			"alien, cabbageCorp, majorItem"
-			  
-			level=				"15"
-			frequency=			"rare"
-
-			value=				"120000000"
-			mass=				"20000"
-			  
-			description=		"Cabbage Corp's Savoy Equalizer launches a warhead that split into six independent warheads that split into six more independent warheads that split into six more independent warheads that split into six more independent warheads."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=			"missile"
-
-				damage=			"thermo:4d8; momentum1; WMD3"
-				fireRate=		"120"
-				missileSpeed=	"40"
-				lifetime=		"50"
-				hitPoints=		"30"
-
-				failsafe=		"4"
-				powerUse=		"50"
-				deviceSlots=	"2"
-
-				effect=			"&efThermoShellDefault;"
-				fireEffect=		"&efThermoFireDefault;"
-				hitEffect=		"&efThermoHitDefault;"
-				sound=			"&snMissileLauncher;"
-		>
-
-			<Fragment 
-					count=				"6"
-					type=				"missile"
-
-					damage=				"thermo:6d12; momentum2; WMD4"
-					missileSpeed=		"90"
-					lifetime=			"1d4"
-					maneuverRate=		"1"
-
-					multiTarget=		"true"
-					autoAcquireTarget=	"true"
-					failsafe=			"1"
-					
-					effect=				"&efThermoShellDefault;"
-					hitEffect=			"&efThermoHitDefault;"
-			>
-
-				<Fragment 
-						count=				"6"
-						type=				"missile"
-
-						damage=				"thermo:8d16; momentum3; WMD5"
-						missileSpeed=		"50"
-						lifetime=			"2d4"
-						maneuverRate=		"3"
-
-						multiTarget=		"true"
-						autoAcquireTarget=	"true"
-						failsafe=			"1"
-						
-						effect=				"&efThermoShellDefault;"
-						hitEffect=			"&efThermoHitDefault;"
-				>
-
-					<Fragment 
-							count=				"6"
-							type=				"missile"
-
-							damage=				"thermo:10d20; momentum4; WMD6"
-							missileSpeed=		"55"
-							lifetime=			"3d4"
-							maneuverRate=		"10"
-
-							multiTarget=		"true"
-							autoAcquireTarget=	"true"
-							failsafe=			"1"
-							
-							effect=				"&efThermoShellDefault;"
-							hitEffect=			"&efThermoHitDefault;"
-					>
-
-						<Fragment 
-								count=				"6"
-								type=				"missile"
-
-								damage=				"thermo:12d24; momentum5; WMD7"
-								missileSpeed=		"60"
-								lifetime=			"120"
-								maneuverRate=		"30"
-
-								multiTarget=		"true"
-								autoAcquireTarget=	"true"
-								
-								effect=				"&efThermoShellDefault;"
-								hitEffect=			"&efThermoHitDefault;"
-						>
-						</Fragment>
-					</Fragment>
-				</Fragment>
-			</Fragment>
-		</Weapon>
-	</ItemType>
-
-	<!-- Advanced Slam Cannon -->
-
-	<ItemType UNID="&itCCAdvancedSlamCannon;"
-			name=				"advanced slam cannon"
-			level=				"6"
-			value=				"16000"
-			mass=				"3000"
-			frequency=			"uncommon"
-			numberAppearing=	"1"
-			attributes=			"cabbageCorp; Illegal; MajorItem"
-			showReference=		"true"
-
-			description=		"This illegally modified version of the slam cannon fires four times faster.  Unfortunately, the cannon overheats quickly if fired continuously."
-			sortName=			"slam cannon, advanced"
-	>
-
-		<Image imageID="&rsItems1;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"blast:2d6+1; momentum2; WMD1"
-				fireRate=			"5"
-				missileSpeed=		"50"
-				hitPoints=			"3"
-				lifetime=			"80"
-				powerUse=			"400"
-				
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efSlamCannonShell;"
-				fireEffect=			"&efBlastFireDefault;"
-				sound=				"&snRecoillessCannon;"
-		>
-		</Weapon>
-
-	</ItemType>
+	NOTES
 	
-	<!-- Advanced Heavy Slam Cannon -->
-
-	<ItemType UNID="&itCCAdvancedHeavySlamCannon;"
-			name=				"advanced heavy slam cannon"
-			level=				"7"
-			value=				"40000"
-			mass=				"4500"
-			frequency=			"rare"
-			numberAppearing=	"1"
-			attributes=			"cabbageCorp; Illegal; MajorItem"
-			showReference=		"true"
-
-			description=		"This illegally modified version of the heavy slam cannon fires four times faster.  Unfortunately, the cannon overheats quickly if fired continuously."
-			sortName=			"slam cannon, advanced heavy"
-	>
-
-		<Image imageID="&rsItems1;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"blast:3d6+3; momentum2; WMD2"
-				fireRate=			"5"
-				missileSpeed=		"60"
-				lifetime=			"67"
-				hitPoints=			"5"
-				powerUse=			"800"
-
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-				
-				effect=				"&efSlamCannonShell;"
-				fireEffect=			"&efBlastFireDefault;"
-				sound=				"&snRecoillessCannon;"
-		>
-
-			<HitEffect
-					sound="&snArmorHit1;"
-			>
-				<Image imageID="&rsExplosionsAG48;"
-						imageX="0"
-						imageY="0"
-						imageWidth="48"
-						imageHeight="48"
-						imageFrameCount="16"
-						imageTicksPerFrame="2"/>
-			</HitEffect>
-		</Weapon>
-	</ItemType>
-
-<!-- ======================================================================= -->
-							<!-- Ammo & Missiles -->							
-<!-- ======================================================================= -->
-<!--
-
-	<ItemType UNID="&itCCT1GuidanceCartridge;"
-			name=				"T1 guidance cartridge"
-			attributes=			"cabbageCorp, consumable, missile"
-			showReference=		"false"
-			  
-			level=				"3"
-			frequency=			"uncommon"
-			numberAppearing=	"10d40"
-
-			value=				"5"
-			mass=				"10"
-			  
-			description=		"This is a missile guidance cartridge for the Sivaya and Kale series of launchers. Each cartridge contains an array of VI controlled thrusters that attach to their projectiles upon firing and can adjust their paths slowly to strike designated targets."
-	>
-
-		<Image imageID="&rsItemsEI2;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
-	</ItemType>
-
-	<ItemType UNID="&itCCT2GuidanceCartridge;"
-			name=				"T2 guidance cartridge"
-			attributes=			"cabbageCorp, consumable, missile"
-			showReference=		"false"
-			  
-			level=				"6"
-			frequency=			"uncommon"
-			numberAppearing=	"10d20"
-
-			value=				"20"
-			mass=				"20"
-			  
-			description=		"This is a missile guidance cartridge for the Sivaya and Kale series of launchers. Each cartridge contains an array of VI controlled thrusters that attach to their projectiles upon firing and can adjust their paths to strike designated targets."
-	>
-
-		<Image imageID="&rsItemsEI2;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
-	</ItemType>
-
-	<ItemType UNID="&itCCT3GuidanceCartridge;"
-			name=				"T3 guidance cartridge"
-			attributes=			"cabbageCorp, consumable, military, missile"
-			showReference=		"false"
-			  
-			level=				"9"
-			frequency=			"uncommon"
-			numberAppearing=	"10d10"
-
-			value=				"50"
-			mass=				"40"
-			  
-			description=		"This is a missile guidance cartridge for the Sivaya and Kale series of launchers. Each cartridge contains an array of VI controlled thrusters that attach to their projectiles upon firing and can adjust their paths quickly to strike designated targets."
-	>
-
-		<Image imageID="&rsItemsEI2;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
-	</ItemType>
-
--->
+	EXTRA DATA
 	
-<!-- ======================================================================= -->
-							<!-- Special Weapons -->							
-<!-- ======================================================================= -->
+	======================================================================== -->
+
+<!-- LEVEL II -->
 
 	<!-- Repurposed Nav Buoy Launcher -->
 
 	<ItemType UNID="&itCCRepurposedNavBuoyLauncher;"
 			name=				"repurposed nav buoy launcher"
 			attributes=			"cabbageCorp, majorItem, illegal, notForSale"
-			  
+			
 			level=				"2"
 			frequency=			"veryrare"
-
+			
 			value=				"600"
 			mass=				"1000"
-			  
+			
 			description=		"These devices were originally designed to launch navigation buoys so that surveyors could easily mark mineral-rich asteroids for future inspection or just send a distress signal a little bit farther; however, this model has been illegally modified to launch MAG munitions 30kg or lighter."
 			>
-
+			
 		<Image imageID="&rsItemsRasiermesser2;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				fireRate=			"30"
 				powerUse=			"2"
 				launcher=			"true"
 				>
-
+				
 			<Missiles>
 				<Missile ammoID="&it400HexageneMAG;"/>
 				<Missile ammoID="&it600HexageneMAG;"/>
@@ -323,30 +43,32 @@
 		</Weapon>
 	</ItemType>
 
+<!-- LEVEL VI -->
+
 	<!-- Blacklight launcher array-->
 
 	<ItemType UNID="&itCCBlacklightLauncher;"
 			name=				"(Blacklight launcher array)"
 			attributes=			"cabbageBuiltIn, cabbageCorp, majorItem, notForSale"
 			virtual=			"true"
-			  
+			
 			level=				"6"
 			frequency=			"notRandom"
-
+			
 			value=				"10000"
 			mass=				"2000"
-			  
+			
 			description=		"This missile launcher array consists of six fast-fire launch tubes designed to be compatible with all standard NAMI, Makayev and Rasiermesser missiles."
-	>
-
+			>
+			
 		<Image imageID="&rsItemsMakayev2;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
 
 		<Weapon
 				fireRate=			"5"
 				powerUse=			"60"
 				launcher=			"true"
-		>
-
+				>
+				
 			<Configuration aimTolerance="0" alternating="true">
 				<Shot posAngle="-52" posRadius="39" angle="-1"/>
 				<Shot posAngle="52" posRadius="39" angle="1"/>
@@ -357,7 +79,7 @@
 				<Shot posAngle="44" posRadius="37" angle="1"/>
 				<Shot posAngle="-44" posRadius="37" angle="-1"/>
 			</Configuration>
-
+			
 			<Missiles>
 				<Missile ammoID="&itFragmentationMissile;"/>
 				<Missile ammoID="&itKM100Missile;"/>
@@ -381,5 +103,91 @@
 			</Missiles>
 		</Weapon>
 	</ItemType>
+
+<!-- LEVEL IX -->
+
+	<!-- Weigelt Cannon -->
+
+	<ItemType UNID="&itCCWeigeltCannon;"
+			name=				"Weigelt cannon"
+			attributes=			"alien, cabbageCorp, energyHowitzer, illegal, majorItem"
+			
+			level=				"9"
+			frequency=			"notrandom"
+			
+			value=				"850000"
+			mass=				"15000"
+			
+			description=		"Weigelt cannons are mysterious devices left throughout the galaxy by an unknown ancient race.  No one knows how to make or repair them and they can only ever be fired once before they destroy themselves.  Due to their only apparent use being to destroy stationary targets like stations, most governments have declared them illegal."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"beam"
+				
+				repeating=			"89"
+				damage=				"graviton:12d24+15; mining7; momentum:3; WMD7"
+				fireRate=			"1"
+				missileSpeed=		"100"
+				lifetime=			"120"
+				powerUse=			"9000"
+				
+				counter=			"temperature"
+				counterActivate=	"1"
+				counterUpdate=		"0"
+				counterUpdateRate=	"10"
+				
+				deviceSlots=		"2"
+				>
+				
+			<Effect>
+				<Beam
+					beamtype=		"particle"
+					intensity=		"12"
+					primaryColor=	"0xa0, 0x20, 0xf0"
+					secondaryColor=	"0x8f, 0x5e, 0x99"
+					/>
+				<Beam
+					beamtype=		"lightning"
+					intensity=		"18"
+					secondaryColor=	"0x8f, 0x5e, 0x99"
+					primaryColor=	"0xa0, 0x20, 0xf0"
+					/>
+				<Beam
+					beamtype=		"laser"
+					intensity=		"15"
+					primaryColor=	"0x2e, 0x08, 0x54"
+					secondaryColor=	"0x94, 0x00, 0xd3"
+					/>
+			</Effect>
+		</Weapon>
+		
+		<Events>
+			<OnFireWeapon>
+				(block Nil
+					(objAddOverlay gSource &ovCCWeigeltParalysis; 0 0 2)
+					(if (not (objGetData gSource "timesFiredWeigelt"))
+						(objSetData gSource "timesFiredWeigelt" 1)
+					)
+					(objSetData gSource "timesFiredWeigelt" (add (objGetData gSource "timesFiredWeigelt") 1))
+					(if (eq (objGetData gSource "timesFiredWeigelt") 91)
+						(block Nil
+							(shpRemoveDevice gSource gItem)
+							(sysCreateWeaponFire (itmGetType &itHighFluxMAG;) Nil aFirePos aFireAngle 2 aTargetObj True)
+							(objRemoveItem gSource (itmCreate (itmGetType gItem) 1))
+							(objSetData gSource "timesFiredWeigelt" 1)
+						)
+					)
+				)
+			</OnFireWeapon>
+		</Events>
+	</ItemType>
 	
+	<OverlayType UNID="&ovCCWeigeltParalysis;"
+			paralyze=		"true"
+			disableShipScreen="true"
+			>
+	</OverlayType>
+
 </TranscendenceModule>

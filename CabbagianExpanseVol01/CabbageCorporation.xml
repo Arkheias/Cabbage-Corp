@@ -256,9 +256,6 @@
 					{ item:&itCCAutoRepairAI;					enhancement:Nil		components:( { item:&itCCAutoRepairVI; count:1 } { item:&itCCQuadCoreProcessor; count:1 } )				extraCost:0 }
 					{ item:&itCCReplicatorCollective;			enhancement:Nil		components:( { item:&itCCAutoRepairAI; count:1 } { item:&itNeutroniumOre; count:12 } )					extraCost:0 }
 
-					{ item:&itCCAdvancedSlamCannon;				enhancement:Nil		components:( { item:&itSlamCannon; count:1 } )															extraCost:0 }
-					{ item:&itCCAdvancedHeavySlamCannon;		enhancement:Nil		components:( { item:&itHeavySlamCannon; count:1 } )														extraCost:0 }
-
 					{ item:&itCCMicrosaurCondemnationPod;		enhancement:Nil		components:( { item:&itSeismicScannerPod; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvMicrosaurCondemnationPod;	enhancement:Nil		components:( { item:&itAdvancedScannerPod; count:1 } )													extraCost:0 }
 				)

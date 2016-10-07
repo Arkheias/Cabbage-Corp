@@ -800,14 +800,10 @@
 	
 	<!ENTITY efCCOreMarker							"0xDA27CCF0">
 	<!ENTITY efCCMicrosaurMarker					"0xDA27CCF1">
-	<!ENTITY itCCAdvancedSlamCannon					"0xDA27CCF5">
-	<!ENTITY itCCAdvancedHeavySlamCannon			"0xDA27CCF6">
-
-	<!ENTITY itCCWeigeltCannon						"0xDA27CCFA">
-	<!ENTITY ovCCWeigeltParalysis					"0xDA27CCFB">
-	<!ENTITY itCCSavoyEqualizer						"0xDA27CCFC">
-	<!ENTITY itCCRepurposedNavBuoyLauncher			"0xDA27CCFD">
-	<!ENTITY itCCBlacklightLauncher					"0xDA27CCFE">
+	<!ENTITY itCCRepurposedNavBuoyLauncher			"0xDA27CCF2">
+	<!ENTITY itCCBlacklightLauncher					"0xDA27CCF3">
+	<!ENTITY itCCWeigeltCannon						"0xDA27CCF4">
+	<!ENTITY ovCCWeigeltParalysis					"0xDA27CCF5">
 
 <!-- ======================================================== -->
 			<!-- CD00-CDFF		MISCELLANEOUS ITEMS -->		
@@ -1032,7 +1028,6 @@
 	<Module fileName="Weapons_Howitzers.xml"/>
 	<Module fileName="Weapons_Lances.xml"/>
 	<Module fileName="Weapons_Repeaters.xml"/>
-	<Module fileName="Weapons_Weigelt.xml"/>
 	
 	<Image UNID="&rsCCCabbagianExpanseCover;"		bitmap="CabbagianExpanseVol01Cover.jpg"	loadOnUse="true" />
 
