@@ -1,22 +1,16 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <!DOCTYPE TranscendenceExtension
 	[
 	<!ENTITY unidCCCabbageCorpExtension				"0xDA27E000">
-	<!ENTITY unidCCTopology							"0xDA27E001">
-	<!ENTITY rsCCCabbageCorpCover					"0xDA27E002">
+	<!ENTITY unidCCCabbagianExpanseTopology			"0xDA27E001">
+	<!ENTITY scCCLampyridaePlayer					"0xDA27E002">
+	<!ENTITY scCCLorryPlayer						"0xDA27E003">
+	<!ENTITY scCCOborogurumaPlayer					"0xDA27E004">
+	<!ENTITY rsCCCabbageCorpCover					"0xDA27E005">
 	
-	<!-- PLAYER SHIPS -->
-	
-	<!ENTITY scCCLorryEridani						"0xDA27E010">
-	<!ENTITY scCCLorryTauCeti						"0xDA27E011">
-	<!ENTITY scCCLampyridaeEridani					"0xDA27E020">
-	<!ENTITY scCCLampyridaeTauCeti					"0xDA27E021">
-	<!ENTITY scCCOborogurumaEridani					"0xDA27E030">
-	<!ENTITY scCCOborogurumaTauCeti					"0xDA27E031">
-
 	<!-- LIBRARIES -->
-
+	
 	<!ENTITY unidCorporateHierarchyVol01			"0x00810000">
 	<!ENTITY unidCCCabbagianExpanseVol01			"0xDA27C000">
 	]>
@@ -25,7 +19,8 @@
 		Name=			"Cabbage Corp" 
 		release=		"1"
 		version=		"0.8.0"
-		apiVersion=		"29"
+		apiVersion=		"30"
+		extends=		"0x00200000"
 		credits=		"Arkheias"
 		coverImageID=	"&rsCCCabbageCorpCover;"
 		>
@@ -35,25 +30,24 @@
     <Library unid="&unidCorporateHierarchyVol01;"/>
     <Library unid="&unidCCCabbagianExpanseVol01;"/>
 
-	<Module fileName="PlayerShips_Lorry.xml"/>
-	<Module fileName="PlayerShips_Lampyridae.xml"/>
-	<Module fileName="PlayerShips_Oboroguruma.xml"/>
+	<Module fileName="License.xml"/>
+	<Module fileName="PlayerShips.xml"/>
 
 	<Image UNID="&rsCCCabbageCorpCover;"		bitmap="CabbageCorpCover.jpg"	loadOnUse="true" />
 
 	<!-- TOPOLOGY -->
 
-	<SystemMap UNID="&unidCCTopology;"
+	<SystemMap UNID="&unidCCCabbagianExpanseTopology;"
 			displayOn="&smHumanSpace;"
 			>
-
+			
 		<Uses unid="&unidPartISystemMap;"/>
 		<Uses unid="&unidCCIdaSegment;"/>
-
+		
 		<TopologyCreator>
 			<Node ID="cabbageIdaSegment"/>
 		</TopologyCreator>
-
+		
 		
 	</SystemMap>
 

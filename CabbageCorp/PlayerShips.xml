@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+	<!-- Player Ship: Lampyridae-class Stealth Transport -->
+
+	<ShipClass UNID="&scCCLampyridaePlayer;"
+			manufacturer=		"Cabbage Corp"
+			class=				"Lampyridae"
+			type=				"stealth transport"
+			
+            attributes=         "00200000_PlayerShip, PlayerShipDrone"
+            inherit=            "&scPlayerLampyridaeBase;"
+			characterClass=		"&unidPilgrimClass;"
+			
+            size=               "74"
+			mass=				"600"
+			thrustRatio=		"2.4"
+			maxSpeed=			"18"
+			cargoSpace=			"500"
+			
+			reactorPower=		"0"
+			fuelCapacity=		"10000"
+			fuelCriteria=		"f L:1"
+			
+			maxArmor=			"20000"
+			maxCargoSpace=		"750"
+			maxDevices=			"10"
+			>
+			
+		<!-- Configuration -->
+		
+        <Armor>
+			<ArmorSection start="338" 	span="45" armorID="&itCC1xStealthArmor;"/>
+			<ArmorSection start="293" 	span="45" armorID="&itCC1xStealthArmor;"/>
+			<ArmorSection start="23" 	span="45" armorID="&itCC1xStealthArmor;"/>
+			<ArmorSection start="248" 	span="45" armorID="&itCC1xStealthArmor;"/>
+			<ArmorSection start="68" 	span="45" armorID="&itCC1xStealthArmor;"/>
+			<ArmorSection start="203" 	span="45" armorID="&itCC1xStealthArmor;"/>
+			<ArmorSection start="113" 	span="45" armorID="&itCC1xStealthArmor;"/>
+			<ArmorSection start="158" 	span="45" armorID="&itCC1xStealthArmor;"/>
+        </Armor>
+		
+		<Devices>
+			<DeviceSlot criteria="w +cabbageCorp; -howitzer" minFireArc="345" maxFireArc="15"	posAngle="0" posRadius="52" posZ="2"/>
+			<DeviceSlot criteria="w -cabbageCorp"	posAngle="0" posRadius="52" posZ="2"/>
+			
+			<Device deviceID="&itCCKaleM6Repeater;"/>
+			<Device deviceID="&itCCRepurposedNavBuoyLauncher;"/>
+			<Device deviceID="&itCCRadNapaS2Deflector;"/>
+			<Device deviceID="&itCCSiva20MWReactor;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"6.0"
+			rotationAccel=		"1.5"
+			rotationStopAccel=	"6.0"
+			/>
+			
+		<Items>
+			<Item count="6d12"	item="&itHelium3FuelRod;"/>
+			<Item count="4d6"	item="&it400HexageneMAG;"/>
+			<Item count="1"		item="&itCCPersonalBelongings;"/>
+		</Items>
+		
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCLampyridaeHD;" imageWidth="110" imageHeight="110" rotationCount="120" rotationColumns="12"/>
+		
+		<Effects>
+			<Effect type="thrustMain"		posAngle="100"	posRadius="30"	posZ="0"	rotation="180"/>
+			<Effect type="thrustMain"		posAngle="-100"	posRadius="30"	posZ="0"	rotation="180"/>
+			
+			<Effect type="thrustMain"		posAngle="170"	posRadius="38"	posZ="6"	rotation="180"/>
+			<Effect type="thrustMain"		posAngle="170"	posRadius="38"	posZ="-6"	rotation="180"/>
+			<Effect type="thrustMain"		posAngle="-170"	posRadius="38"	posZ="6"	rotation="180"/>
+			<Effect type="thrustMain"		posAngle="-170"	posRadius="38"	posZ="-6"	rotation="180"/>
+		</Effects>
+		
+		<!-- AI and Behavior -->
+		
+		<AISettings
+			fireRateAdj=		"10"
+			fireAccuracy=		"95"
+			perception=			"4"
+			/>
+			
+		<!-- Player Settings -->
+		
+		<PlayerSettings
+			desc=               "Cabbage Corp began production of the Lampyridae series in 2361. The Lampyridae-class has a primary weapon hardpoint with a swivel mount compatible with all light Cabbage Corp weapons, two secondary weapon hard-points, eight armor segments, and a base crew capacity of sixteen."
+			largeimage=         "&rsCCLampyridaeLarge;"
+			initialClass=       "true"
+            startingCredits=    "10d18+120"
+			
+            startingSystem=     "TauCeti"
+            startingPos=        "Start"
+			/>
+			
+		<!-- Static Data -->
+		
+		<StaticData>
+			<drone912Data>
+				(   ; Index 0, ship UNID
+					&scCCLampyridaePlayer;
+					
+					; Index 1, items
+					; Level 2 components
+					(
+						(&itCCKaleM11Repeater;					1)
+						(&itCCNapaS8Deflector;					1)
+						(&itCCSiva80MWReactor;					1)
+						(&itCCDualTritiumPropulsionUpgrade;		1)
+						(&itCC2xStealthArmor;					8)
+					)
+					
+					; Index 2, auto-link weapons from index 1
+					Nil
+					
+					; Index 3, description override.
+					"Cabbage Corp began production of the Lampyridae series in 2361. The Lampyridae-class has a primary weapon hardpoint with a swivel mount compatible with all light Cabbage Corp weapons, two secondary weapon hard-points, eight armor segments and a base crew capacity of sixteen."
+					
+					; Index 4, ship icon for shipyards.
+					(&rsCCShipIcons; 0 2)
+				)
+			</drone912Data>
+			
+			<shipFirstPoint>
+				(   ; Order is: DevicePos (angle radius [Z]), DeviceFireArc (min max)
+					((0 44 -2) (345 15))
+				)
+			</shipFirstPoint>
+			
+			<shipPoints>
+				(   ; Order is: DevicePos (angle radius [Z]), DeviceFireArc (min max)
+					((60 26 4) (0 0) 'always)
+					((300 26 4) (0 0) 'always)
+				)
+			</shipPoints>
+			
+			<shipCanvas>
+				((0 -40) (-23 -14) (23 -14))
+			</shipCanvas>
+			
+			<drone912Shipyard>
+				; Index 0 = shipyard data.
+				;			subindex 0 = shipyard UNID
+				;			subindex 1 = (minimum level/rank required, maximum allowed)
+				;			subindex 2 = rank data string if defined, system level if Nil
+				; Index 1 = Alternate ship data override, see drone912Data for details.
+				(
+					; Commonwealth Dry Dock at level 2+ systems.
+					; Level 4 components
+					((&stCommonwealthDryDock; 2)
+						(&scCCLampyridaePlayer;
+							(	(&itCCKaleM11Repeater;					1)
+								(&itCCNapaS8Deflector;					1)
+								(&itCCSiva80MWReactor;					1)
+								(&itCCDualTritiumPropulsionUpgrade;		1)
+								(&itCC2xStealthArmor;					8)
+							)
+						)
+					
+					)
+					
+					; Commonwealth Dry Dock at Eridani.
+					; Level 1-2 components
+					((&stCommonwealthDryDock; (1 1))
+						(&scCCLampyridaePlayer;
+							(	(&itCCKaleM3Repeater;					1)
+								(&itCCNapaS1Deflector;					1)
+								(&itCCSiva8MWReactor;					1)
+								(&itCCAuxSiva8MWReactor;				1)
+								(&itCCPlasmaDrive;						1)
+								(&itCCLightStealthPlating;				8)
+							)
+						)
+					)
+					
+					; St. K's Arcology
+					; Level 4 components
+					((&stStKatsArcology;)
+						(&scCCLampyridaePlayer;
+							(	(&itCCSavoyM8Howitzer;					1)
+								(&itCCKaleM6Repeater;					2)
+								(&itCCNapaS8Deflector;					1)
+								(&itCCSiva80MWReactor;					1)
+								(&itCCDualTritiumPropulsionUpgrade;		1)
+								(&itCC2xStealthArmor;					8)
+							)
+							(
+								(&itCCKaleM11Repeater;					1)
+								(&itCCKaleM11Repeater;					2)
+							)
+						)
+					)
+					
+					; Ringer Shipyard
+					; Level 6 components
+					(&stRingerShipyard;
+						; Index 1:  Alternate ship data.
+						(&scCCLampyridaePlayer;
+							(	(&itCCSavoyM30Howitzer;					1)
+								(&itCCKaleM20Repeater;					2)
+								(&itCCNapaS30Deflector;					1)
+								(&itCCSiva200MWReactor;					1)
+								(&itCCDualChronimiumPropulsionUpgrade;	1)
+								(&itCC2xHardenedStealthArmor;			8)
+							)
+							(
+								(&itCCKaleM38Repeater;					1)
+								(&itCCKaleM38Repeater;					2)
+							)
+						)
+					)
+				)
+			</drone912Shipyard>
+			
+			<crewCapacity>16</crewCapacity>
+		</StaticData>
+	</ShipClass>
+
+	<!-- Player Ship: Lorry-class stealth transport -->
+
+	<ShipClass UNID="&scCCLorryPlayer;"
+			manufacturer=		"Cabbage Corp"
+			class=				"Lorry"
+			type=				"stealth transport"
+			
+			attributes=			"00200000_PlayerShip,"
+			inherit=			"&scPlayerLorryBase;"
+			characterClass=		"&unidPilgrimClass;"
+			
+            size=               "58"
+			mass=				"350"
+			thrustRatio=		"2.1"
+			maxSpeed=			"16"
+			cargoSpace=			"150"
+			maxCargoSpace=		"400"
+			
+			reactorPower=		"0"
+			fuelCapacity=		"10000"
+			fuelCriteria=		"f L:1"
+			
+			maxArmor=			"20000"
+			maxDevices=			"10"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor>
+            <ArmorSection start="330" span="60" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="270" span="60" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="30"  span="60" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="210" span="60" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="90"  span="60" armorID="&itCCLightStealthPlating;" />
+            <ArmorSection start="150" span="60" armorID="&itCCLightStealthPlating;" />
+		</Armor>
+		
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="38"  posZ="6"  />
+			
+			<Device deviceID="&itCCKaleM1Repeater;"/>
+			<Device deviceID="&itCCRadNapaS1Deflector;"/>
+			<Device deviceID="&itCCSiva12MWReactor;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=    "4.5"
+			rotationAccel=      "0.5"
+			/>
+			
+		<Items>
+			<Item count="4d8"	item="&itHelium3FuelRod;"/>
+			<Item count="1"		item="&itCCPersonalBelongings;"/>
+		</Items>
+		
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCLorryHD;" imageWidth="90" imageHeight="90" rotationCount="120" rotationColumns="12"/>
+		
+		<Effects>
+			<Effect type="thrustMain"   posAngle="168"  posRadius="37"  posZ="0"  rotation="180" />
+			<Effect type="thrustMain"   posAngle="-168" posRadius="37"  posZ="0"  rotation="180" />
+		</Effects>
+		
+		<!-- AI and Behavior -->
+		
+		<AISettings
+			fireRateAdj=        "10"
+			fireAccuracy=       "90"
+			perception=         "4"
+			/>
+			
+		<!-- Player Settings -->
+		
+		<PlayerSettings
+			desc=               "Cabbage Corp began production of the Lorry series in 2398. The Lorry-class was designed with minimal backup systems in order to maximize the available space for upgrades. It has six armor segments and a base crew capacity of four."
+			largeimage=         "&rsCCLorryLarge;"
+			initialClass=       "true"
+            startingCredits=    "10d12+80"
+			
+            startingSystem=     "TauCeti"
+            startingPos=        "Start"
+			/>
+			
+		<!-- Static Data -->
+		
+		<StaticData>
+			<crewCapacity>4</crewCapacity>
+		</StaticData>
+	</ShipClass>
+
+	<!-- Playership: Oboroguruma-class stealth freighter -->
+
+	<ShipClass UNID="&scCCOborogurumaPlayer;"
+			manufacturer=		"Cabbage Corp"
+			class=				"Oboroguruma"
+			type=				"stealth freighter"
+			
+			attributes=			"00200000_PlayerShip, capitalShip, PlayerShipDrone"
+			inherit=			"&scPlayerOborogurumaBase;"
+			characterClass=		"&unidPilgrimClass;"
+			
+			size=				"155"
+			mass=				"6000"
+			thrustRatio=		"0.8"
+			maxSpeed=			"12"
+			cargoSpace=			"40000"
+			maxCargoSpace=		"50000"
+			
+			reactorPower=		"0"
+			fuelCapacity=		"10000"
+			fuelCriteria=		"f L:1"
+			
+			maxArmor=			"40000"
+			maxDevices=			"15"
+			
+			explosionType=		"&vtBlastExplosion4;"
+			>
+			
+		<!-- Configuration -->
+		
+        <Armor>
+            <ArmorSection start="345" span="30" armorID="&itCC1xHardenedStealthArmor;" />
+            <ArmorSection start="315" span="30" armorID="&itCC1xHardenedStealthArmor;" />
+            <ArmorSection start="15"  span="30" armorID="&itCC1xHardenedStealthArmor;" />
+            <ArmorSection start="285" span="30" armorID="&itCC1xHardenedStealthArmor;" />
+            <ArmorSection start="45"  span="30" armorID="&itCC1xHardenedStealthArmor;" />
+            <ArmorSection start="255" span="30" armorID="&itCC1xHardenedStealthArmor;" />
+            <ArmorSection start="75"  span="30" armorID="&itCC1xHardenedStealthArmor;" />
+            <ArmorSection start="225" span="30" armorID="&itCC1xHardenedStealthArmor;" />
+            <ArmorSection start="105" span="30" armorID="&itCC1xHardenedStealthArmor;" />
+            <ArmorSection start="195" span="30" armorID="&itCC1xHardenedStealthArmor;" />
+            <ArmorSection start="135" span="30" armorID="&itCC1xHardenedStealthArmor;" />
+            <ArmorSection start="165" span="30" armorID="&itCC1xHardenedStealthArmor;" />
+        </Armor>
+		
+		<Devices>
+			<DeviceSlot criteria="p" posAngle="0" posRadius="84" posZ="6"/>
+			
+			<Device deviceID="&itCCOmniSavoyM8Howitzer;"/>
+			<Device deviceID="&itCCRadNapaS8Deflector;"/>
+			<Device deviceID="&itCCStomaS4ShieldEmitterArray;"/>
+			<Device deviceID="&itCCSiva80MWReactor;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"3.0"
+			rotationAccel=		"0.3"
+			/>
+			
+		<Interior>
+			<Compartment name="interior"
+					hitPoints=	"40"
+					/>
+					
+			<Compartment name="main drive"
+					type=		"mainDrive"
+					hitPoints=	"60"
+					
+					posX=		"-45"
+					posY=		"0"
+					sizeX=		"30"
+					sizeY=		"15"
+					/>
+		</Interior>
+		
+		<Items>
+			<Item count="6d8"	item="&itUraniumRods;"/>
+			<Item count="1"		item="&itCCPersonalBelongings;"/>
+		</Items>
+		
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCOborogurumaHD;" imageWidth="180" imageHeight="180" rotationCount="120" rotationColumns="12"/>
+		
+		<Effects>
+			<Effect type="thrustMain"		posAngle="169"	posRadius="63"	posZ="-2"	rotation="180"	effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"		posAngle="-169"	posRadius="63"	posZ="-2"	rotation="180"	effect="&efMainThrusterLarge;"/>
+			
+			<Effect type="thrustMain"		posAngle="163"	posRadius="64"	posZ="1"	rotation="180"	effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"		posAngle="-163"	posRadius="64"	posZ="1"	rotation="180"	effect="&efMainThrusterLarge;"/>
+			
+			<Effect type="thrustMain"		posAngle="167"	posRadius="63"	posZ="4"	rotation="180"	effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"		posAngle="-167"	posRadius="63"	posZ="4"	rotation="180"	effect="&efMainThrusterLarge;"/>
+		</Effects>
+		
+		<!-- AI and Behavior -->
+		
+		<AISettings
+			fireRateAdj=		"10"
+			fireAccuracy=		"90"
+			perception=			"4"
+			
+			combatStyle=		"standOff"
+			/>
+			
+		<!-- Player Settings -->
+		
+		<PlayerSettings
+			desc=               "The Oboroguruma-class stealth freighter is the oldest ship still in use in the Cabbage Corp fleet. It has two secondary weapon hard-points on each of the port and starboard sides that can swivel to attack any ship within a 190 degree range, twelve armor segments, and a base crew capacity of eight-hundred."
+			largeimage=         "&rsCCOborogurumaLarge;"
+			initialClass=       "true"
+            startingCredits=    "10d24+160"
+			
+            startingSystem=     "TauCeti"
+            startingPos=        "Start"
+			/>
+			
+		<!-- Static Data -->
+		
+		<StaticData>
+			<drone912Data>
+				(   ; Index 0, ship UNID
+					&scCCOborogurumaPlayer;
+					
+					; Index 1, items
+					; Level 2 ship
+					(	(&itCCOmniSavoyM8Howitzer;				1)
+						(&itCCNapaS8Deflector;					1)
+						(&itCCSiva120MWReactor;					1)
+						(&itCCDualChronimiumPropulsionUpgrade;	1)
+						(&itCC2xHardenedStealthArmor;			12)
+					)
+					
+					; Index 2, auto-link weapons from index 1
+					Nil
+					
+					; Index 3, description override.
+					"The Oboroguruma-class stealth freighter is the oldest ship still in use in the Cabbage Corp fleet. It has two secondary weapon hard-points each on the port and starboard sides that can swivel to attack any ship within a 190 degree range, twelve armor segments, and a base crew capacity of eight-hundred."
+					
+					; Index 4, ship icon for shipyards.
+					(&rsCCShipIcons; 2 2)
+				)
+			</drone912Data>
+			
+			<shipFirstPoint>
+				(   ; Order is: DevicePos (angle radius [Z]), DeviceFireArc (min max)
+					((0 84 6) (0 0))
+				)
+			</shipFirstPoint>
+			
+			<shipPoints>
+				(   ; Order is: DevicePos (angle radius [Z]), DeviceFireArc (min max)
+					((85 26 8) (350 180))
+					((85 26 -8) (350 180))
+					((-85 26 8) (180 10))
+					((-85 26 -8) (180 10))
+				)
+			</shipPoints>
+			
+			<shipCanvas>
+				((0 -80) (-23 -12) (-35 -12) (23 -12) (35 -12))
+			</shipCanvas>
+			
+			<drone912Shipyard>
+				; Index 0 = shipyard data.
+				;			subindex 0 = shipyard UNID
+				;			subindex 1 = (minimum level/rank required, maximum allowed)
+				;			subindex 2 = rank data string if defined, system level if Nil
+				; Index 1 = Alternate ship data override, see drone912Data for details.
+				(
+					; Commonwealth Dry Dock at level 2+ systems.
+					; Level 4 ship
+					((&stCommonwealthDryDock; 2)
+						(&scCCOborogurumaPlayer;
+							(	(&itCCOmniSavoyM8Howitzer;				1)
+								(&itCCNapaS8Deflector;					1)
+								(&itCCSiva120MWReactor;					1)
+								(&itCCDualChronimiumPropulsionUpgrade;	1)
+								(&itCC2xHardenedStealthArmor;			12)
+							)
+						)
+					
+					)
+					
+					; Commonwealth Dry Dock at Eridani.
+					; Level 2 ship
+					((&stCommonwealthDryDock; (1 1))
+						(&scCCOborogurumaPlayer;
+							(	(&itCCOmniSavoyM8Howitzer;				1)
+								(&itCCNapaS8Deflector;					1)
+								(&itCCSiva120MWReactor;					1)
+								(&itCCDualChronimiumPropulsionUpgrade;	1)
+								(&itCC2xHardenedStealthArmor;			12)
+							)
+						)
+					)
+					
+					; St. K's Arcology
+					; Level 5 ship
+					((&stStKatsArcology;)
+						(&scCCOborogurumaPlayer;
+							(	(&itCCOmniSavoyM8Howitzer;				1)
+								(&itCCNapaS8Deflector;					1)
+								(&itCCSiva120MWReactor;					1)
+								(&itCCDualChronimiumPropulsionUpgrade;	1)
+								(&itCC2xHardenedStealthArmor;			12)
+							)
+						)
+					)
+					
+					; Ringer Shipyard
+					; Level 6 ship
+					(&stRingerShipyard;
+						; Index 1:  Alternate ship data.
+						(&scCCOborogurumaPlayer;
+							(	(&itCCOmniSavoyM8Howitzer;				1)
+								(&itCCNapaS8Deflector;					1)
+								(&itCCSiva120MWReactor;					1)
+								(&itCCDualChronimiumPropulsionUpgrade;	1)
+								(&itCC2xHardenedStealthArmor;			12)
+							)
+						)
+					)
+				)
+			</drone912Shipyard>
+			
+			<crewCapacity>800</crewCapacity>
+		</StaticData>
+	</ShipClass>
+
+</TranscendenceModule>
