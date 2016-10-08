@@ -1,12 +1,17 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!-- ======================================================================= -->
-								<!-- Cabbages -->								
-<!-- ======================================================================= -->
+<!-- Cabbages ==================================================================
+	
+	NOTES
+	
+	EXTRA DATA
+	
+	======================================================================== -->
 
 	<!-- Bok Choy -->
-	
+
 	<ItemType UNID="&itCCBokChoy;"
 			name=				"[crate(s) of ]bok choy"
 			attributes=			"cabbageCorp, consumable, food"
@@ -17,17 +22,17 @@
 			
 			value=				"120"
 			mass=				"100"
-
+			
 			description=		"Bok choy is sold alongside most low grade foodstuffs so that its antioxidant properties can help negate the carcinogens present in most vat-grown foods."
-
+			
 			sortName=			"bok choy, crate of"
-	>
-
+			>
+			
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
-	
+
 	<!-- Napa Cabbages -->
-	
+
 	<ItemType UNID="&itCCNapaCabbages;"
 			name=				"[crate(s) of ]napa cabbages"
 			attributes=			"cabbageCorp, consumable, food, lux"
@@ -40,15 +45,15 @@
 			mass=				"250"
 			
 			description=		"This type of cabbage is usually fermented to make a variety of dishes and is said to go well with Centauri rice."
-
+			
 			sortName=			"napa cabbages, crate of"
-	>
-
+			>
+			
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
-	
+
 	<!-- Green Cabbages -->
-	
+
 	<ItemType UNID="&itCCGreenCabbages;"
 			name=				"[crate(s) of ]green cabbages"
 			attributes=			"cabbageCorp, consumable, food, lux"
@@ -59,17 +64,17 @@
 			
 			value=				"420"
 			mass=				"100"
-
+			
 			description=		"A guilty pleasure of high-level Corporate officers, green cabbage has unique subtle flavors and is grown on nearly every Cabbage Corp station."
-
+			
 			sortName=			"green cabbages, crate of"
-	>
-
+			>
+			
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
-	
+
 	<!-- Kohlrabi -->
-	
+
 	<ItemType UNID="&itCCKohlrabi;"
 			name=				"[barrel(s) of ]kohlrabi"
 			attributes=			"cabbageCorp, consumable, food"
@@ -80,17 +85,17 @@
 			
 			value=				"1250"
 			mass=				"250"
-
+			
 			description=		"Kohlrabi is mostly used as a deluxe animal feed due to the taste that connoisseurs believe it imparts on the meat."
-
+			
 			sortName=			"barrel, barrel of"
-	>
-
+			>
+			
 		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
 	</ItemType>
-	
+
 	<!-- Savoy Cabbages -->
-	
+
 	<ItemType UNID="&itCCSavoyCabbages;"
 			name=				"[crate(s) of ]savoy cabbages"
 			attributes=			"cabbageCorp, consumable, food, lux"
@@ -101,17 +106,17 @@
 			
 			value=				"1300"
 			mass=				"250"
-
+			
 			description=		"Savoy cabbage is the most tender and sweet variety of cabbage and is currently considered trendy in the elite crowd."
-
+			
 			sortName=			"savoy cabbages, crate of"
-	>
-
+			>
+			
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
-	
+
 	<!-- Red Cabbages -->
-	
+
 	<ItemType UNID="&itCCRedCabbages;"
 			name=				"[barrel(s) of ]pickled red cabbages"
 			attributes=			"cabbageCorp, consumable, food, lux"
@@ -122,17 +127,17 @@
 			
 			value=				"1500"
 			mass=				"250"
-
+			
 			description=		"Red cabbage is only produced on Earth and is usually pickled for transport throughout human space. It is often used in gourmet dishes such as sauerkraut."
-
+			
 			sortName=			"pickled red cabbages, barrel of"
-	>
-
+			>
+			
 		<Image imageID="&rsCCItems;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
 	</ItemType>
-	
+
 	<!-- Kale -->
-	
+
 	<ItemType UNID="&itCCKale;"
 			name=				"[crate(s) of ] kale"
 			attributes=			"cabbageCorp, consumable, food, lux"
@@ -143,17 +148,17 @@
 			
 			value=				"1350"
 			mass=				"250"
-
+			
 			description=		"Kale provides important nutrients to supplement those missing from standard rations. It is also one of the leading homoeopathic remedies to all known ills."
-
+			
 			sortName=			"kale, crate of"
-	>
-
+			>
+			
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
-	
+
 	<!-- Brussel Sprouts -->
-	
+
 	<ItemType UNID="&itCCBrusselSprouts;"
 			name=				"[chest(s) of ]brussel sprouts"
 			attributes=			"cabbageCorp, consumable, food, lux"
@@ -164,21 +169,25 @@
 			
 			value=				"3200"
 			mass=				"50"
-
+			
 			description=		"This delicacy, produced only in the temperate climate of the Seward Peninsula on Earth, is carefully cryopreserved to enhance its taste as much as possible and to enable transport beyond the Sol system."
-
+			
 			sortName=			"brussel Sprouts, chest of"
-	>
-
+			>
+			
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 
-<!-- ======================================================================= -->
-						<!-- Low Level Device Items -->							
-<!-- ======================================================================= -->
+<!-- Components ================================================================
 	
+	NOTES
+	
+	EXTRA DATA
+	
+	======================================================================== -->
+
 	<!-- Solar Panel -->
-	
+
 	<ItemType UNID="&itCCSolarPanel;"
 			name=				"solar panel"
 			attributes=			"cabbageCorp, consumable, res"
@@ -189,40 +198,85 @@
 			
 			value=				"30"
 			mass=				"250"
-
+			
 			description=		"Solar panel converts sunlight into energy usable by a ship's reactor. At least six are required to form a working array."
-	>
-
+			>
+			
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 
-	<!-- proto-Cabbagium catalyst -->
+	<!-- proto-cabbagium catalyst -->
 
 	<ItemType UNID="&itCCCabbagiumCatalyst;"
-			name=				"[container(s) of ]proto-Cabbagium catalyst"
-			attributes=			"cabbageCorp, consumable, res, zeroPoint"
+			name=				"[container(s) of ]proto-cabbagium catalyst"
+			attributes=			"cabbageCorp, consumable, fuel, protoCabbagium, res, zeroPoint"
 			
 			level=				"9"
 			frequency=			"veryrare"
-			numberAppearing=	"1d2"
+			numberAppearing=	"1"
 			
-			value=				"16000"
-			mass=				"10"
-
-			description=		"This exotic substance catalyses the radioactive growth of certain classified transuranic elements via the absorption of high energy solar particles."
-
+			charges=			"4-8"
+			value=				"9000"
+			valueBonusPerCharge="3000"
+			mass=				"2"
+			massBonusPerCharge=	"1"
+			
+			data=				"0"
+			
+			description=		"This exotic substance is used in trace amounts to catalyse the radioactive growth of various elements via the absorption of high energy solar particles. Transuranic elements grown in this manner can be incredibly strong, according to the included instruction manual."
+			
 			sortName=			"proto-Cabbagium catalyst container of"
 			>
-
+			
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Events>
+			<OnRefuel>
+				(block (dice)
+					; Select dice to roll
+					(switch
+						(itmIsDamaged (@ (objGetItems gSource "rI") 0))
+							(setq dice (rollDice 1 1))
+						(shpIsRadioactive gSource)
+							(setq dice (rollDice 1 2))
+						
+						(setq dice (rollDice 1 3))
+						)
+						
+					(switch
+						(eq dice 1)
+							(block Nil
+								(shpMakeRadioactive gSource)
+								(objSetItemProperty gSource (@ (objGetItems gSource "rI") 0) 'damaged True)
+								(objDestroy gSource gSource)
+								)
+						(eq dice 2)
+							(block Nil 	
+								(shpMakeRadioactive gSource)
+								(objSetItemProperty gSource (@ (objGetItems gSource "rI") 0) 'damaged True)
+								(objSendMessage gSource Nil
+									"Reactor Warning: Reactor has been damaged"
+									)
+								)
+								
+						(shpMakeRadioactive gSource)
+						)
+					)
+			</OnRefuel>
+		</Events>
 	</ItemType>
+
+<!-- Luxury Goods ==============================================================
 	
-<!-- ======================================================================= -->
-								<!-- Valuables -->								
-<!-- ======================================================================= -->
+	NOTES
 	
-	;	Here, the consumable tag is in fact meant to imply that you also took all the food before leaving.
+		The consumable tag for the personal belongings is meant to imply that
+			you also took all the food before leaving.
 	
+	EXTRA DATA
+	
+	======================================================================== -->
+
 	<!-- Personal Belongings -->
 
 	<ItemType UNID="&itCCPersonalBelongings;"
@@ -234,17 +288,15 @@
 			
 			value=				"250"
 			mass=				"1000"
-
+			
 			description=		"You've been sent on a mission from Domina, might as well sell all of your family's stuff for cash. They'll learn to live without."
 			
 			noArticle=			"true"
-	>
-
+			>
+			
 		<Image imageID="&rsItems1;" imageX="0" imageY="384" imageWidth="96" imageHeight="96"/>
 	</ItemType>
-	
-	;	I know damn well what all this item description is implying.
-	
+
 	<!-- Pygmy Ostrich Horse -->
 
 	<ItemType UNID="&itCCPygmyOstrichHorse;"
@@ -256,10 +308,10 @@
 			
 			value=				"1200"
 			mass=				"100"
-
+			
 			description=		"These pets are the result of early 23rd century research into creating a hulk by inseminating ostrich foetuses with horse semen while exposing them to gamma radiation. Cabbage Corp created the pygmy version shortly after obtaining the patents when the original researchers declared bankruptcy."
-	>
-
+			>
+			
 		<Image imageID="&rsItems1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
 	</ItemType>
 
