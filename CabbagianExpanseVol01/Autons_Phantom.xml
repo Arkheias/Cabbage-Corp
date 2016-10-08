@@ -1,4 +1,5 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
 <!-- SHIP CLASSES -->
@@ -1341,5 +1342,5 @@ MIIIDRADISModule	9		80000	4500	veryrare
 	<Image UNID="&rsCCPhantomLarge;"				bitmap="PhantomLarge.jpg"			bitmask="PhantomLargeMask.jpg"	loadOnUse="true"/>
 	<Image UNID="&rsCCPhantomArmorHud;"				bitmap="PhantomArmorHud.jpg"/>
 	<Image UNID="&rsCCPhantomHD;"					bitmap="PhantomHD.jpg"			bitmask="PhantomHDMask.jpg"/>
-	
+
 </TranscendenceModule>
