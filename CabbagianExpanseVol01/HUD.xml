@@ -45,6 +45,8 @@
 		</Variants>
 	</Effect>
 
+<!-- RESOURCES -->
+
     <Image UNID="&rsCCShieldHUDCabbage;"					bitmap="ShieldHUDCabbage.jpg"						bitmask="ShieldHUDCabbageMask.jpg"/>
 	
 </TranscendenceModule>
