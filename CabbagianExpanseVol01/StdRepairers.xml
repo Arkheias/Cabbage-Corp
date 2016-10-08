@@ -1,125 +1,147 @@
-<?xml version="1.0" ?>
-<TranscendenceModule>
-	
-<!-- ======================================================================= -->
-							<!-- Repairer Devices -->							
-<!-- ======================================================================= -->
+<?xml version="1.0" encoding="utf-8"?>
 
-<!--
-	Repairer devices appear to stack.
-	showReference does nothing here.
-	powerUse is multiplied by the number of armor segments being repaired
-	The displayed power (in-game) assumes that two armor segments are being repaired simultaneously
--->
+<TranscendenceModule>
+
+<!-- Repairer Devices ==========================================================
+	
+	NOTES
+	
+		Repairer devices stack.
+		
+		showReference does nothing for repairer devices.
+		
+		powerUse is multiplied by the number of armor segments being repaired.
+		
+		The displayed power (in-game) assumes that two armor segments are being
+	repaired simultaneously
+	
+	EXTRA DATA
+	
+	======================================================================== -->
+
+<!-- LEVEL II -->
 
 	<!-- Basic Servicing System -->
 
 	<ItemType UNID="&itCCBasicServicingSystem;"
 			name=				"basic servicing system"
+			attributes=			"cabbageCorp, majorItem"
+			
 			level=				"2"
+			frequency=			"rare"
+			
 			value=				"1000"
 			mass=				"2500"
-			frequency=			"rare"
-			attributes=			"cabbageCorp, MajorItem"
-
+			
 			description=		"The basic servicing system, standardized several hundred years ago, is a set of manually controlled arms that attach to a ship's hull and repair damaged armor rated up to L5."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
-
+		
 		<RepairerDevice
 				regen=			" 3, 2, 2, 1, 1"
 				powerUse=		"5"
-		/>
-
+				/>
 	</ItemType>
-	
+
+<!-- LEVEL VI -->
+
 	<!-- Regenerating-nanomachine Generator -->
 
 	<ItemType UNID="&itCCRegenNMGenerator;"
 			name=				"regenerating-nanomachine generator"
+			attributes=			"cabbageCorp, majorItem"
+			
 			level=				"6"
+			frequency=			"rare"
+			
 			value=				"21000"
 			mass=				"3000"
-			frequency=			"rare"
-			attributes=			"cabbageCorp; MajorItem"
-
+			
 			description=		"This device generates nanomachines and uses your ship's computer to direct them to automatically repair any damaged armor rated up to L10."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
+		
 		<RepairerDevice
 				regen=			" 9, 5, 4, 3, 3, 3, 2, 2, 2, 2"
 				powerUse=		"20"
-		/>
-
+				/>
 	</ItemType>
-	
+
+<!-- LEVEL VIII -->
+
 	<!-- Auto-Repair VI -->
 
 	<ItemType UNID="&itCCAutoRepairVI;"
 			name=				"auto-repair VI"
+			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty"
+			
 			level=				"8"
+			frequency=			"rare"
+			
 			value=				"63000"
 			mass=				"3500"
-			frequency=			"rare"
-			attributes=			"cabbageCorp; MajorItem; QuantumCPU; Specialty"
-
+			
 			description=		"This VI generates nanomachines and utilizes a built-in quantum CPU to direct them to automatically repair any damaged armor rated up to L12."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
+		
 		<RepairerDevice
 				regen=			" 14, 9, 7, 6, 5, 4, 4, 4, 3, 3, 3, 3"
 				powerUse=		"40"
-		/>
-
+				/>
 	</ItemType>
-	
+
+<!-- LEVEL X -->
+
 	<!-- Auto-Repair AI -->
 
 	<ItemType UNID="&itCCAutoRepairAI;"
 			name=				"auto-repair AI"
+			attributes=			"cabbageCorp, illegal, majorItem, quantumCPU, specialty"
+			
 			level=				"10"
+			frequency=			"veryrare"
+			
 			value=				"240000"
 			mass=				"4000"
-			frequency=			"veryrare"
-			attributes=			"cabbageCorp; Illegal; MajorItem; QuantumCPU; Specialty"
-
+			
 			description=		"This AI generates nanomachines and utilizes a built-in quantum CPUs that automatically repair any damaged armor rated up to L14."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
+		
 		<RepairerDevice
 				regen=			" 24, 15, 11, 9, 8, 7, 6, 6, 5, 5, 5, 4, 4, 4"
 				powerUse=		"70"
-		/>
-
+				/>
 	</ItemType>
-	
+
+<!-- LEVEL XII -->
+
 	<!-- Replicator Collective -->
 
 	<ItemType UNID="&itCCReplicatorCollective;"
 			name=				"Replicator Collective"
+			attributes=			"alien, cabbageCorp, illegal, majorItem, quantumCPU, specialty"
+			
 			level=				"12"
+			frequency=			"notrandom"
+			
 			value=				"800000"
 			mass=				"40000"
-			frequency=			"notrandom"
-			attributes=			"Alien; cabbageCorp; Illegal; MajorItem; QuantumCPU; Specialty"
-
+			
 			description=		"These sentient alien nanomachines automatically repair any damaged armor rated up to L15.  They do this because they like to, not because you tell them to."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
+		
 		<RepairerDevice
 				regen=			" 39, 24, 19, 15, 13, 12, 11, 10, 9, 8, 8, 7, 7, 7, 6"
 				powerUse=		"350"
-		/>
-
+				/>
 	</ItemType>
 
 </TranscendenceModule>
