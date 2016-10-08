@@ -9,25 +9,24 @@
 			sovereign=			"&svIndependent;"
 			dockScreen=			"Main"
 			dockingPorts=		"2"
-
+			
 			multiHull=			"true"
 			immutable=			"true"
 			attributes=			"cabbageCorp, stargate"
-
+			
 			gateEffect=			"&efStargateOut;"
-
+			
 			definiteArticle=	"true"
 			>
+			
 		<Image imageID="&rsCCStations;" imageX="100" imageY="0" imageWidth="28" imageHeight="192"/>
-
+		
 		<DockScreens>
-
 			<Main>
-
 				<Panes>
 					<Default
 							desc=	"You are docked at a giant alien tuning fork These giant structures are used by the Ancient Races to move their starships across the Galaxy. Tuning forks are the best mode of faster-than-light travel and they are the only method known to cabbages.">
-
+							
 						<Actions>
 							<Action name="Check out the Sights" default="1" key="C">
 								<ShowPane pane="Sights"/>
@@ -46,7 +45,7 @@
 							<Action name="Go back to the start" default="1" key="G">
 								(block Nil
 									(objGateTo gPlayership "SE" "Start" &efStargateOut;)
-								)
+									)
 							</Action>
 							
 							<Action name="Undock" cancel="1" key="U">
@@ -56,9 +55,7 @@
 					</Sights>
 				</Panes>
 			</Main>
-
 		</DockScreens>
-
 	</StationType>
 
 	<!-- Praclarush -->
@@ -68,33 +65,37 @@
 			scale=				"world"
 			size=				"22000"
 			sovereign=			"&svIndependent;"
-
+			
 			attributes=			"cabbageCorp; inner, lifeZone, outer, primordial, terrestrial"
-	>
+			>
+			
 		<ImageVariants>
 			<Image imageID="&rsCCStations;" imageX="320" imageY="0" imageWidth="270" imageHeight="270"/>
 		</ImageVariants>
 	</StationType>
-	
+
 	<!-- Othala -->
 
-	<SystemType UNID="&ssCCOthala;" noRandomEncounters="true">
-
+	<SystemType UNID=					"&ssCCOthala;"
+				noRandomEncounters=		"true"
+				backgroundID=			"&rsCCCabbagianExpanseSpace;"
+				>
+				
 		<SystemGroup>
-
+		
 			<!-- Star -->
-
+			
 			<Station type="&stWhiteDwarfStar;" name="Othala"/>
 			
 			<!-- Inner Planet -->
-
+			
 			<Orbitals distance="4" scale="light-minute" angle="random">
 				<Group>
 					<Station type="&stCCPraclarush;" 
 							name="Praclarush"
 							showOrbit="true"
-					/>
-
+							/>
+							
 					<Orbitals distance="2" angle="180">
 						<Station type="&stCCPraclarushStation;"/>
 					</Orbitals>
@@ -102,44 +103,46 @@
 			</Orbitals>
 			
 			<!-- Asteroid Belt -->
-
+			
 			<Orbitals distance="7" scale="light-minute" angle="random">
 				<Group>
 					<Siblings count="600" distribution="4d40-82">
 						<Station type="&stRockyAsteroidSizeA;"/>
 					</Siblings>
-
+					
 					<Siblings count="80" distribution="4d20-42">
 						<Station type="&stRockyAsteroidSizeB;"/>
 					</Siblings>
-
+					
 					<!--
 					<Siblings count="1d6+6" distribution="4d40-82">
 						<Label attributes="asteroids,asteroidbelt"/>
 					</Siblings>
 					-->
-
 				</Group>
 			</Orbitals>
-
+			
 			<!-- Hala -->
-
+			
 			<Orbitals distance="12" scale="light-minute" angle="random">
 				<Group>
 					<Station type="&stIcePlanet;" 
 							name="Hala"
 							showOrbit="true"
-					/>
-
+							/>
+							
 					<Orbitals distance="20" angle="equidistant">
 						<Stargate objName="Outbound" to="Othala:Outbound" type="&stCCMassiveRelay;"/>
-
+						
 						<Marker objName="Start"/>
 					</Orbitals>
 				</Group>
 			</Orbitals>
-
 		</SystemGroup>
 	</SystemType>
-	
+
+<!-- RESOURCES -->
+
+	<Image UNID="&rsCCCabbagianExpanseSpace;"			bitmap="CabbagianExpanseSpace.jpg"	loadOnUse="true"/>
+
 </TranscendenceModule>

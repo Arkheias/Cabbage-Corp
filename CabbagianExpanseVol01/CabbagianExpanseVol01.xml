@@ -70,6 +70,10 @@
 	<!ENTITY unidCCIdaSegment						"0xDA27C090">
 	<!ENTITY ssCCOthala				 				"0xDA27C091">
 
+	<!-- C0B0-C0BF SYSTEM BACKGROUNDS -->
+	
+	<!ENTITY rsCCCabbagianExpanseSpace 				"0xDA27C0B0">
+
 <!-- ======================================================== -->
 			<!-- C100-C1FF		ARMOR -->						
 <!-- ======================================================== -->
