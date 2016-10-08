@@ -1,40 +1,50 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!-- ======================================================================= -->
-							<!-- Other Armor -->								
-<!-- ======================================================================= -->
+	<!-- Armor =================================================================
+	
+	NOTES
+	
+	EXTRA DATA
+	
+	======================================================================== -->
+
+<!-- LEVEL IV -->
 
 	<!-- Gold Armor -->
 
 	<ItemType UNID="&itCCGoldArmor;"
 			name=				"[segment(s) of ]gold armor"
+			attributes=			"cabbageCorp, minorItem, specialty"
+			
 			level=				"4"
-			value=				"20000"
-			mass=				"30000"
 			frequency=			"notrandom"
 			numberAppearing=	"1d6"
-			attributes=			"cabbageCorp; MinorItem; Specialty"
-
+			
+			value=				"20000"
+			mass=				"30000"
+			
 			description=		"Though not useful for defensive purposes, gold is very good for showing off your wealth."
-
+			
 			sortName=			"gold armor"
 			>
-
+			
 		<Image imageID="&rsCCArmorGold;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Armor
 				hitPoints=	"800"
 				radiationImmune=	"true"
 				
 				damageAdjLevel="1"
-
+				
 				repairTech=	"3"
 				repairCostAdj=	"1200"
-		/>
-
+				/>
 	</ItemType>
-	
-	
-	
+
+<!-- RESOURCES -->
+
+	<Image UNID="&rsCCArmorGold;"					bitmap="ArmorGold.jpg"						bitmask="ArmorMask.jpg"/>
+
 </TranscendenceModule>
