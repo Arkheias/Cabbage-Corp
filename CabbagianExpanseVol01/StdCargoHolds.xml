@@ -1,9 +1,14 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!-- ======================================================================= -->
-						<!-- Standard Cargo Holds -->							
-<!-- ======================================================================= -->
+<!-- Cargo Hold Devices ========================================================
+	
+	EXTRA DATA
+	
+	======================================================================== -->
+
+<!-- LEVEL I -->
 
 	<!-- Small Cargo Hold -->
 
@@ -11,22 +16,21 @@
 			name=				"small cargo hold"
 			attributes=			"cabbageCorp, crewQuarters, majorItem"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
-			  
+			
 			level=				"1"
 			frequency=			"uncommon"
-			numberAppearing=	"1"
-
+			
 			value=				"450"
 			mass=				"2000"
-			  
+			
 			description=		"This is a small pressurized hold that can be attached to a ship to increase the amount of cargo it can carry. It can fit crew quarters for one person."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<CargoHoldDevice
 				cargoSpace=		"40"
-		/>
+				/>
 		
 		<StaticData>
 			<addCrewSpace>1</addCrewSpace>
@@ -34,11 +38,12 @@
 				(
 					{product:&itCCDualCargoHoldExpansion;	count:1		extraCost:0}
 					{product:&itCCCargoHoldExpansion;		count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
 		</StaticData>
 	</ItemType>
 
+<!-- LEVEL III -->
 
 	<!-- Cargo Hold Expansion -->
 
@@ -46,30 +51,59 @@
 			name=				"cargo hold expansion"
 			attributes=			"cabbageCorp, crewQuarters, majorItem"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
-			  
+			
 			level=				"3"
 			frequency=			"uncommon"
-			numberAppearing=	"1"
-
+			
 			value=				"1500"
 			mass=				"1500"
-			  
+			
 			description=		"This pressurized hold includes a cargo-loading ROM to help optimize a ship's cargo capacity. It can integrate with life support systems to increase crew capacity by two members."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<CargoHoldDevice
 				cargoSpace=		"120"
-		/>
-		
+				/>
+				
 		<StaticData>
 			<addCrewSpace>2</addCrewSpace>
 			<CCBuyAndModify>
 				(
 					{product:&itCCDualCargoHoldExpansion;	count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL IV -->
+
+	<!-- Dual Cargo Hold Expansion -->
+
+	<ItemType UNID="&itCCDualCargoHoldExpansion;"
+			name=				"dual cargo hold expansion"
+			attributes=			"cabbageCorp, cabbageNotStandard, crewQuarters, majorItem"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			
+			level=				"4"
+			frequency=			"rare"
+			
+			value=				"3200"
+			mass=				"4000"
+			
+			description=		"This oversized hold includes a cargo-loading ROM to help optimize a ship's cargo capacity. It can integrate with life support systems to increase crew capacity by four members."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<CargoHoldDevice
+		        deviceSlots=    "2"
+				cargoSpace=		"250"
+				/>
+				
+		<StaticData>
+			<addCrewSpace>4</addCrewSpace>
 		</StaticData>
 	</ItemType>
 
@@ -79,31 +113,33 @@
 			name=				"miners's cargo bay"
 			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, minersHold, miningEquipment"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
-			  
+			
 			level=				"4"
 			frequency=			"rare"
-
+			
 			value=				"3500"
 			mass=				"2000"
-			  
+			
 			description=		"This pressurized hold includes a cargo-loading ROM to help optimize a ship's cargo capacity and grapples to bring both ore and autons on board. It can integrate with life support systems to increase crew capacity by one person."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<CargoHoldDevice
 				cargoSpace=		"100"
-		/>
-		
+				/>
+				
 		<StaticData>
 			<addCrewSpace>1</addCrewSpace>
 			<CCBuyAndModify>
 				(
 					{product:&itCCDualMinersCargoBay;		count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
 		</StaticData>
 	</ItemType>
+
+<!-- LEVEL V -->
 
 	<!-- Diplomat's Cargo Hold -->
 
@@ -111,134 +147,33 @@
 			name=				"diplomat's cargo hold"
 			attributes=			"cabbageCorp, cabbagePolitical, crewQuarters, majorItem, smugglersHold"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
-			  
+			
 			level=				"5"
 			frequency=			"rare"
-
+			
 			value=				"5500"
 			mass=				"1500"
-			  
+			
 			description=		"This scan-shielded hold includes a cargo-loading ROM to help optimize a ship's cargo capacity. Stations will not search it for illegal goods and it can integrate with life support systems to increase crew capacity by one person."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<CargoHoldDevice
 				cargoSpace=		"70"
-		/>
-		
+				/>
+				
 		<StaticData>
 			<addCrewSpace>1</addCrewSpace>
 			<CCBuyAndModify>
 				(
 					{product:&itCCDualDiplomatsCargoHold;	count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-	
-	<!-- Cabbage Corp Auton Bay -->
-
-	<ItemType UNID="&itCCAutonBay;"
-			name=				"Cabbage Corp auton bay"
-			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, minersHold"
-			inherit=			"&vtCCCrewQuartersBaseClass;"
-
-			level=				"6"
-			frequency=			"veryrare"
-			numberAppearing=	"1"
-
-			value=				"30000"
-			mass=				"3000"
-
-			description=		"This auton bay includes a cargo-loading ROM to help optimize a ship's cargo capacity and equipment for managing autons and collecting ore."
-			  
-			useScreen=			"&dsAutonBay;"
-			useInstalledOnly=	"true"
-	>
-
-		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<CargoHoldDevice
-				cargoSpace=		"20"
-		/>
-		
-		<StaticData>
-			<addCrewSpace>0</addCrewSpace>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualAutonBay;				count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
 		</StaticData>
 	</ItemType>
 
-	<!-- Military Cargo Bay -->
-
-	<ItemType UNID="&itCCMilitaryCargoBay;"
-			name=				"military cargo bay"
-			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, military, minersHold, miningEquipment, smugglersHold"
-			inherit=			"&vtCCCrewQuartersBaseClass;"
-			  
-			level=				"6"
-			frequency=			"veryrare"
-
-			value=				"12000"
-			mass=				"2500"
-			  
-			description=		"This scan-shielded hold includes a cargo-loading ROM to help optimize a ship's cargo capacity and grapples to bring both ore and autons on board. Stations will not search it for illegal goods and it can integrate with life support systems to increase crew capacity by one person."
-	>
-
-		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<CargoHoldDevice
-				cargoSpace=		"50"
-		/>
-		
-		<StaticData>
-			<addCrewSpace>1</addCrewSpace>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualMilitaryCargoBay;	count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-	
-<!-- ======================================================================= -->
-						<!-- Expanded Cargo Holds -->							
-<!-- ======================================================================= -->
-
-<!-- Dual Cargo Hold Expansion -->
-
-	<ItemType UNID="&itCCDualCargoHoldExpansion;"
-			name=				"dual cargo hold expansion"
-			attributes=			"cabbageCorp, cabbageNotStandard, crewQuarters, majorItem"
-			inherit=			"&vtCCCrewQuartersBaseClass;"
-			
-			level=				"4"
-			frequency=			"rare"
-			numberAppearing=	"1"
-			
-			value=				"3200"
-			mass=				"4000"
-
-			description=		"This oversized hold includes a cargo-loading ROM to help optimize a ship's cargo capacity. It can integrate with life support systems to increase crew capacity by four members."
-	>
-
-		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<CargoHoldDevice
-		        deviceSlots=    "2"
-				cargoSpace=		"250"
-		/>
-		
-		<StaticData>
-			<addCrewSpace>4</addCrewSpace>
-		</StaticData>
-	</ItemType>
-
-<!-- Expanded Miner's Cargo Bay -->
+	<!-- Expanded Miner's Cargo Bay -->
 
 	<ItemType UNID="&itCCDualMinersCargoBay;"
 			name=				"expanded miner's cargo bay"
@@ -247,23 +182,60 @@
 			
 			level=				"5"
 			frequency=			"veryrare"
-			numberAppearing=	"1"
 			
 			value=				"7500"
 			mass=				"4500"
-
+			
 			description=		"This oversized hold includes a cargo-loading ROM to help optimize a ship's cargo capacity and grapples to bring both ore and autons on board. It can integrate with life support systems to increase crew capacity by three members."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<CargoHoldDevice
 		        deviceSlots=    "2"
 				cargoSpace=		"230"
-		/>
-		
+				/>
+				
 		<StaticData>
 			<addCrewSpace>3</addCrewSpace>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL VI -->
+
+	<!-- Cabbage Corp Auton Bay -->
+
+	<ItemType UNID="&itCCAutonBay;"
+			name=				"Cabbage Corp auton bay"
+			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, minersHold"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			numberAppearing=	"1"
+			
+			value=				"30000"
+			mass=				"3000"
+			
+			description=		"This auton bay includes a cargo-loading ROM to help optimize a ship's cargo capacity and equipment for managing autons and collecting ore."
+			
+			useScreen=			"&dsAutonBay;"
+			useInstalledOnly=	"true"
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<CargoHoldDevice
+				cargoSpace=		"20"
+				/>
+				
+		<StaticData>
+			<addCrewSpace>0</addCrewSpace>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualAutonBay;				count:1		extraCost:0}
+					)
+			</CCBuyAndModify>
 		</StaticData>
 	</ItemType>
 
@@ -273,27 +245,61 @@
 			name=				"expanded diplomat's cargo hold"
 			attributes=			"cabbageCorp, cabbageNotStandard, cabbagePolitical, crewQuarters, majorItem, smugglersHold"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
-			  
+			
 			level=				"6"
 			frequency=			"veryrare"
-
+			
 			value=				"12000"
 			mass=				"4000"
-			  
+			
 			description=		"This oversized scan-shielded hold includes a cargo-loading ROM to help optimize a ship's cargo capacity. Stations will not search it for illegal goods and it can integrate with life support systems to increase crew capacity by three members."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<CargoHoldDevice
 		        deviceSlots=    "2"
 				cargoSpace=		"200"
-		/>
-		
+				/>
+				
 		<StaticData>
 			<addCrewSpace>3</addCrewSpace>
 		</StaticData>
 	</ItemType>
+
+	<!-- Military Cargo Bay -->
+
+	<ItemType UNID="&itCCMilitaryCargoBay;"
+			name=				"military cargo bay"
+			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, military, minersHold, miningEquipment, smugglersHold"
+			inherit=			"&vtCCCrewQuartersBaseClass;"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"12000"
+			mass=				"2500"
+			
+			description=		"This scan-shielded hold includes a cargo-loading ROM to help optimize a ship's cargo capacity and grapples to bring both ore and autons on board. Stations will not search it for illegal goods and it can integrate with life support systems to increase crew capacity by one person."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<CargoHoldDevice
+				cargoSpace=		"50"
+				/>
+				
+		<StaticData>
+			<addCrewSpace>1</addCrewSpace>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualMilitaryCargoBay;	count:1		extraCost:0}
+					)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL VII -->
 
 	<!-- Expanded Cabbage Corp Auton Bay -->
 
@@ -301,27 +307,26 @@
 			name=				"expanded Cabbage Corp auton bay"
 			attributes=			"autonBay, cabbageCorp, cabbageNotStandard, crewQuarters, majorItem, minersHold"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
-
+			
 			level=				"7"
 			frequency=			"notRandom"
-			numberAppearing=	"1"
-
+			
 			value=				"65000"
 			mass=				"5500"
-
+			
 			description=		"This auton bay includes a cargo-loading ROM to help optimize a ship's cargo capacity and equipment for managing autons and collecting ore. It can integrate with life support systems to increase crew capacity by two members."
 			  
 			useScreen=			"&dsAutonBay;"
 			useInstalledOnly=	"true"
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<CargoHoldDevice
 		        deviceSlots=    "2"
 				cargoSpace=		"150"
-		/>
-		
+				/>
+				
 		<StaticData>
 			<addCrewSpace>3</addCrewSpace>
 		</StaticData>
@@ -333,27 +338,29 @@
 			name=				"expanded military cargo bay"
 			attributes=			"autonBay, cabbageCorp, cabbageNotStandard, crewQuarters, majorItem, military, minersHold, miningEquipment, smugglersHold"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
-			  
+			
 			level=				"7"
 			frequency=			"notRandom"
-
+			
 			value=				"26000"
 			mass=				"6000"
-			  
+			
 			description=		"This oversized scan-shielded hold includes a cargo-loading ROM to help optimize a ship's cargo capacity and grapples to bring both ore and autons on board. Stations will not search it for illegal goods and it can integrate with life support systems to increase crew capacity by three members."
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<CargoHoldDevice
 		        deviceSlots=    "2"
 				cargoSpace=		"180"
-		/>
-		
+				/>
+				
 		<StaticData>
 			<addCrewSpace>3</addCrewSpace>
 		</StaticData>
 	</ItemType>
+
+<!-- LEVEL VIII -->
 
 	<!-- Expanded Military Auton Bay -->
 
@@ -361,30 +368,111 @@
 			name=				"expanded military auton bay"
 			attributes=			"autonBay, cabbageCorp, crewQuarters, majorItem, military, minersHold, smugglersHold"
 			inherit=			"&vtCCCrewQuartersBaseClass;"
-
+			
 			level=				"8"
 			frequency=			"notRandom"
-			numberAppearing=	"1"
-
+			
 			value=				"90000"
 			mass=				"7000"
-
+			
 			description=		"This oversized scan-shielded auton bay includes a cargo-loading ROM to help optimize a ship's cargo capacity and equipment for managing autons and collecting ore. Stations will not search it for illegal goods and it can integrate with life support systems to increase crew capacity by two members."
-			  
+			
 			useScreen=			"&dsAutonBay;"
 			useInstalledOnly=	"true"
-	>
-
+			>
+			
 		<Image imageID="&rsCCDevices;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<CargoHoldDevice
 		        deviceSlots=    "2"
 				cargoSpace=		"100"
-		/>
-		
+				/>
+				
 		<StaticData>
 			<addCrewSpace>2</addCrewSpace>
 		</StaticData>
+	</ItemType>
+
+<!-- BASE CLASSES -->
+
+<!--
++20 cargo capacity from using included VI to optimize cargo placement seems about right 
+(+30) for optimizing, (-10) for VI computers, so +20 for optimized single cargo hold, and +50 for optimized dual cargo hold (same VI computer used for both holds)
+-20 cargo capacity for mining equipment (+auton retrieval equipment)
+-50 cargo capacity for scan-shielding equipment
+-80 cargo capacity for auton modification equipment
+dual cargo holds don't need a second set of grapples or scan-shielding equipment, so they get an additional +130 plain cargo hold (diplomat holds don't get this bonus)
+
++1 crew member for every 60 cargo space (rounded down)
++1 crew member for every 50 cargo space (for military  or Cabbage Corp holds)
+
+addCrewSpace stands for 'additional crew space'
+-->
+
+	<!-- Crew Quarters Base Class -->
+
+	<ItemType UNID="&vtCCCrewQuartersBaseClass;"
+			name=				"(crew quarters base class)"
+			virtual=			"true"
+			>
+			
+		<Events>
+			<CanBeUninstalled>
+				(block (auxCrewCount addAuxCrew maxAuxCrew)
+				
+					(setq auxCrewCount (count (objGetItems gSource "dI +auxCrew")))
+					(setq addAuxCrew 0)
+					
+					(enum (objGetItems gSource "dI +crewQuarters") gQuarters
+						(setq addAuxCrew (add addAuxCrew (itmGetStaticData gQuarters "addCrewSpace")))
+						)
+					
+					(switch
+						;	If the object is one of the vanilla playerships, use the specified data
+						
+						(eq (objGetType gSource) &scSapphirePlayer;)
+							(setq maxAuxCrew (add 1 addAuxCrew))
+						(eq (objGetType gSource) &scEI100XPlayer;)
+							(setq maxAuxCrew (add 4 addAuxCrew))
+						(eq (objGetType gSource) &scWolfenPlayer;)
+							(setq maxAuxCrew (add 0 addAuxCrew))
+							
+						(eq (shpGetClassName (objGetType gSource) 1) "Osaka-class transport")
+							(setq maxAuxCrew (add 2 addAuxCrew))
+						
+						(eq (shpGetClassName (objGetType gSource) 1) "Constellation-class freighter")
+							(setq maxAuxCrew (add 2 addAuxCrew))
+						(eq (shpGetClassName (objGetType gSource) 1) "Freyr-class gunship")
+							(setq maxAuxCrew (add 1 addAuxCrew))
+						(eq (shpGetClassName (objGetType gSource) 1) "Manticore-class heavy gunship")
+							(setq maxAuxCrew (add 1 addAuxCrew))
+							
+						;	The Corporate Command player ships are not in a library so I had to use a workaround.
+						;	The first three ships still use my original method for reference purposes.
+							
+						;	If the object has a defined crewCapacity in its .xml, then use that value.
+						
+						(isInt (objGetStaticData gSource "crewCapacity"))
+							(setq maxAuxCrew (add (objGetStaticData gSource "crewCapacity") addAuxCrew))
+							
+						;	Otherwise, define the maxAuxCrew to be as follows:
+						
+						(setq maxAuxCrew (add (divide (shpGetDataField gSource "cargoSpace") 50) addAuxCrew))
+						
+						;	The default settings for ships is: cargo space divided by 50 and rounded down.
+						;	When manually specifying, it is suggested to add 1 if the ship is supposed to be a transport.
+						)
+						
+					(switch
+						(gr auxCrewCount (subtract maxAuxCrew (itmGetStaticData gItem "addCrewSpace")))
+							(block Nil
+								"Your ship is currently operating at maximum occupancy.  You cannot remove this device."
+								)
+						True
+						)
+					)
+			</CanBeUninstalled>
+		</Events>
 	</ItemType>
 
 </TranscendenceModule>
