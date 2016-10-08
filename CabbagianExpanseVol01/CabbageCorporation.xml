@@ -219,8 +219,6 @@
 
 			<DriveRecipes>
 				(
-					{ item:&itCCImpulseDrive;					enhancement:Nil		components:( { item:&itCCPteracniumMegaDrive; count:1 } { item:&itCCBussardCollector; count:2 } )		extraCost:0 }
-
 					{ item:&itCCAuxIonDrive;					enhancement:Nil		components:( { item:&itCCIonDrive; count:1 } )															extraCost:0 }
 					{ item:&itCCAuxPlasmaDrive;					enhancement:Nil		components:( { item:&itCCPlasmaDrive; count:1 } )														extraCost:0 }
 					{ item:&itCCAuxTritiumPropulsionUpgrade;	enhancement:Nil		components:( { item:&itCCTritiumPropulsionUpgrade; count:1 } )											extraCost:0 }
@@ -230,9 +228,6 @@
 					{ item:&itCCAuxCobaltThoriumMegaDrive;		enhancement:Nil		components:( { item:&itCCCobaltThoriumMegaDrive; count:1 } )											extraCost:0 }
 					{ item:&itCCAuxXenotiteMegaDrive;			enhancement:Nil		components:( { item:&itCCXenotiteMegaDrive; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxPteracniumMegaDrive;			enhancement:Nil		components:( { item:&itCCPteracniumMegaDrive; count:1 } )												extraCost:0 }
-					{ item:&itCCAuxZeroPointPropulsionUpgrade;	enhancement:Nil		components:( { item:&itCCZeroPointPropulsionUpgrade; count:1 } )										extraCost:0 }
-					{ item:&itCCAuxZeroPointMegaDrive;			enhancement:Nil		components:( { item:&itCCZeroPointMegaDrive; count:1 } )												extraCost:0 }
-					{ item:&itCCAuxImpulseDrive;				enhancement:Nil		components:( { item:&itCCImpulseDrive; count:1 } )														extraCost:0 }
 
 					{ item:&itCCDualIonDrive;					enhancement:Nil		components:( { item:&itCCIonDrive; count:2 } )															extraCost:0 }
 					{ item:&itCCDualPlasmaDrive;				enhancement:Nil		components:( { item:&itCCPlasmaDrive; count:2 } )														extraCost:0 }
@@ -243,9 +238,6 @@
 					{ item:&itCCDualCobaltThoriumMegaDrive;		enhancement:Nil		components:( { item:&itCCCobaltThoriumMegaDrive; count:2 } )											extraCost:0 }
 					{ item:&itCCDualXenotiteMegaDrive;			enhancement:Nil		components:( { item:&itCCXenotiteMegaDrive; count:2 } )													extraCost:0 }
 					{ item:&itCCDualPteracniumMegaDrive;		enhancement:Nil		components:( { item:&itCCPteracniumMegaDrive; count:2 } )												extraCost:0 }
-					{ item:&itCCDualZeroPointPropulsionUpgrade;	enhancement:Nil		components:( { item:&itCCZeroPointPropulsionUpgrade; count:2 } )										extraCost:0 }
-					{ item:&itCCDualZeroPointMegaDrive;			enhancement:Nil		components:( { item:&itCCZeroPointMegaDrive; count:2 } )												extraCost:0 }
-					{ item:&itCCDualImpulseDrive;				enhancement:Nil		components:( { item:&itCCImpulseDrive; count:2 } )														extraCost:0 }
 				)
 			</DriveRecipes>
 

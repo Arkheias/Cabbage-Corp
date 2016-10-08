@@ -193,9 +193,6 @@
 	<!ENTITY itCCCobaltThoriumMegaDrive				"0xDA27C506">
 	<!ENTITY itCCXenotiteMegaDrive					"0xDA27C507">
 	<!ENTITY itCCPteracniumMegaDrive				"0xDA27C508">
-	<!ENTITY itCCZeroPointPropulsionUpgrade			"0xDA27C509">
-	<!ENTITY itCCZeroPointMegaDrive					"0xDA27C50A">
-	<!ENTITY itCCImpulseDrive						"0xDA27C50B">
 	
 	<!-- C510-C51F AUXILIARY DRIVES -->
 
@@ -208,9 +205,6 @@
 	<!ENTITY itCCAuxCobaltThoriumMegaDrive			"0xDA27C516">
 	<!ENTITY itCCAuxXenotiteMegaDrive				"0xDA27C517">
 	<!ENTITY itCCAuxPteracniumMegaDrive				"0xDA27C518">
-	<!ENTITY itCCAuxZeroPointPropulsionUpgrade		"0xDA27C519">
-	<!ENTITY itCCAuxZeroPointMegaDrive				"0xDA27C51A">
-	<!ENTITY itCCAuxImpulseDrive					"0xDA27C51B">
 
 	<!-- C520-C52F AUXILIARY DRIVES (RADIOACTIVE) -->
 	
@@ -223,9 +217,6 @@
 	<!ENTITY itCCRadCobaltThoriumMegaDrive			"0xDA27C526">
 	<!ENTITY itCCRadXenotiteMegaDrive				"0xDA27C527">
 	<!ENTITY itCCRadPteracniumMegaDrive				"0xDA27C528">
-	<!ENTITY itCCRadZeroPointPropulsionUpgrade		"0xDA27C529">
-	<!ENTITY itCCRadZeroPointMegaDrive				"0xDA27C52A">
-	<!ENTITY itCCRadImpulseDrive					"0xDA27C52B">
 
 	<!-- C530-C53F DUAL DRIVES -->
 	
@@ -238,9 +229,6 @@
 	<!ENTITY itCCDualCobaltThoriumMegaDrive			"0xDA27C536">
 	<!ENTITY itCCDualXenotiteMegaDrive				"0xDA27C537">
 	<!ENTITY itCCDualPteracniumMegaDrive			"0xDA27C538">
-	<!ENTITY itCCDualZeroPointPropulsionUpgrade		"0xDA27C539">
-	<!ENTITY itCCDualZeroPointMegaDrive				"0xDA27C53A">
-	<!ENTITY itCCDualImpulseDrive					"0xDA27C53B">
 
 <!-- ======================================================== -->
 			<!-- C600-C6FF		ENHANCERS -->					

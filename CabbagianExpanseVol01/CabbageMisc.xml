@@ -15,6 +15,9 @@
 			
 			<!-- Things man was not meant to know -->
 			<ItemAttribute label="political"			labelType="disadvantage"	criteria="* +cabbagePolitical;"/>
+			
+			<!-- Things man was not meant to touch -->
+			<ItemAttribute label="WARNING: DO NOT ALLOW CONTACT WITH REACTOR FUELS!"			labelType="disadvantage"	criteria="* +protoCabbagium;"/>
 		</AttributeDesc>
 	</Type>
 
@@ -32,7 +35,6 @@
 	<Image UNID="&rsCCArmorGold;"					bitmap="ArmorGold.jpg"						bitmask="ArmorMask.jpg"/>
 	<Image UNID="&rsCCArmorSivaya;"					bitmap="ArmorSivaya.jpg"					bitmask="ArmorSivayaMask.jpg"/>
 	<Image UNID="&rsCCArmorStealth;"				bitmap="ArmorStealth.jpg"					bitmask="ArmorStealthMask.jpg"/>
-	<Image UNID="&rsCCDrives;"						bitmap="Drives.jpg"							bitmask="DrivesMask.jpg"/>
 	<Image UNID="&rsCCGuns;"						bitmap="Guns.jpg"							bitmask="GunsMask.jpg"/>
 	<Image UNID="&rsCCReactors;"					bitmap="Reactors.jpg"						bitmask="ReactorsMask.jpg"/>
 	<Image UNID="&rsCCCrewMembers;"					bitmap="CrewMembers.jpg"					bitmask="CrewMembersMask.bmp"/>
