@@ -31,7 +31,6 @@
 	<Image UNID="&rsCCItems;"						bitmap="Items.jpg"							bitmask="ItemsMask.bmp"/>
 	<Image UNID="&rsCCDevices;"						bitmap="Devices.jpg"						bitmask="DevicesMask.bmp"/>
 	<Image UNID="&rsCCShipIcons;"					bitmap="ShipIcons.jpg"						bitmask="ShipIconsMask.bmp"/>
-	<Image UNID="&rsCCArmorCabbagium;"				bitmap="ArmorCabbagium.jpg"					bitmask="ArmorCabbagiumMask.jpg"/>
 	<Image UNID="&rsCCArmorSivaya;"					bitmap="ArmorSivaya.jpg"					bitmask="ArmorSivayaMask.jpg"/>
 	<Image UNID="&rsCCArmorStealth;"				bitmap="ArmorStealth.jpg"					bitmask="ArmorStealthMask.jpg"/>
 	<Image UNID="&rsCCGuns;"						bitmap="Guns.jpg"							bitmask="GunsMask.jpg"/>
