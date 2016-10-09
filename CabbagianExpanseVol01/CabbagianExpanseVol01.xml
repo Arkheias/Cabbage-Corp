@@ -956,11 +956,12 @@
 	<Module fileName="Devices_AuxReactors.xml"/>
 	<Module fileName="HUD.xml"/>
 	<Module fileName="Library_BaseClasses.xml"/>
-	<Module fileName="Library_DockScreens.xml"/>
 	<Module fileName="License.xml"/>
 	<Module fileName="MiscItems.xml"/>
 	<Module fileName="Othala.xml"/>
 	<Module fileName="PlayerShipsBase.xml"/>
+	<Module fileName="RPGDockScreens.xml"/>
+	<Module fileName="RPGShipScreens.xml"/>
 	<Module fileName="StdCargoHolds.xml"/>
 	<Module fileName="StdCrew.xml"/>
 	<Module fileName="StdDevices.xml"/>
