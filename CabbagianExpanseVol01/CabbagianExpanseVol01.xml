@@ -975,6 +975,7 @@
 	<Module fileName="Devices_Solar.xml"/>
 	<Module fileName="Library_BaseClasses.xml"/>
 	<Module fileName="Library_DockScreens.xml"/>
+	<Module fileName="License.xml"/>
 	<Module fileName="MiscItems.xml"/>
 	<Module fileName="Othala.xml"/>
 	<Module fileName="PlayerShipsBase.xml"/>
