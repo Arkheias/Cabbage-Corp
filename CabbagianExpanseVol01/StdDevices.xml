@@ -1,17 +1,542 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!-- ======================================================================= -->
-						<!-- Miscellaneous Base Devices -->						
-<!-- ======================================================================= -->
+<!-- LEVEL II -->
 
-<!-- Unshielded Side-Mounted Device Base Class -->
+	<!-- Dirty Solar Panel Array -->
+
+	<ItemType UNID="&itCCDirtySolarPanelArray;"
+			name=				"dirty solar panel array"
+			attributes=			"cabbageCorp, majorItem, illegal"
+			
+			level=				"2"
+			frequency=			"veryrare"
+			
+			value=				"290"
+			mass=				"1100"
+			
+			description=		"This solar panel array converts sunlight into 3MW of energy usable by a ship's reactor. Most people consider it a crime to let a solar panel array get this dirty."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<SolarDevice
+				refuel=				"30"
+				/>
+	</ItemType>
+
+<!-- LEVEL III -->
+
+	<!-- B1 Missile Defense System -->
+
+	<ItemType UNID="&itCCB1MissileDefenseSystem;"
+			name=					"B1 missile defense system"
+			attributes=				"cabbageCorp, majorItem"
+			
+			level=					"3"
+			frequency=				"uncommon"
+			
+			value=					"2000"
+			mass=					"1500"
+			
+			description=		"This device combines a DRADIS system with a targeting computer. Hostile missiles within a short range are blasted into dust by an overcharged laser cannon."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<AutoDefenseDevice
+				target=				"missiles"
+				weapon=				"&vtCCB1MissileDefenseWeapon;"
+				fireRate=			"10"
+				/>
+	</ItemType>
+
+	<!-- B1 Missile Defense Weapon -->
+
+	<ItemType UNID="&vtCCB1MissileDefenseWeapon;"
+			name=					"(B1 missile defense weapon)"
+			level=					"3"
+			virtual=				"true" 
+			>
+			
+		<Weapon
+				type=				"beam"
+				
+				omnidirectional=	"true"
+				damage=				"laser:1d6"
+				fireRate=			"10"
+				lifetime=			"30"
+				powerUse=			"10"
+				
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+
+	<!-- Solar Panel Array -->
+
+	<ItemType UNID="&itCCSolarPanelArray;"
+			name=				"solar panel array"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"3"
+			frequency=			"rare"
+			
+			value=				"600"
+			mass=				"1000"
+			
+			description=		"This solar panel array converts sunlight into 6MW of energy usable by a ship's reactor."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<SolarDevice
+				refuel=			"60"
+				/>
+	</ItemType>
+
+<!-- LEVEL IV -->
+
+	<!-- B2 Missile Defense System -->
+
+	<ItemType UNID="&itCCB2MissileDefenseSystem;"
+			name=					"B2 missile defense system"
+			attributes=				"cabbageCorp, majorItem"
+			
+			level=					"4"
+			frequency=				"uncommon"
+			
+			value=					"5000"
+			mass=					"1500"
+			
+			description=		"This device combines a DRADIS system with a targeting computer. Hostile missiles within a short range are blasted into dust by a charged turbolaser cannon."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<AutoDefenseDevice
+				target=				"missiles"
+				weapon=				"&vtCCB2MissileDefenseWeapon;"
+				fireRate=			"20"
+				/>
+	</ItemType>
+
+	<!-- B2 Missile Defense Weapon -->
+
+	<ItemType UNID="&vtCCB2MissileDefenseWeapon;"
+			name=					"(B2 missile defense weapon)"
+			level=					"4"
+			virtual=				"true" 
+			>
+			
+		<Weapon
+				type=				"beam"
+				
+				omnidirectional=	"true"
+				damage=				"laser:3d6+1"
+				fireRate=			"20"
+				lifetime=			"30"
+				powerUse=			"20"
+				
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+
+	<!-- Dirty Solar Concentrator -->
+
+	<ItemType UNID="&itCCDirtySolarConcentrator;"
+			name=				"dirty solar concentrator"
+			attributes=			"cabbageCorp, majorItem, illegal"
+			
+			level=				"4"
+			frequency=			"veryrare"
+			
+			value=				"1200"
+			mass=				"1750"
+			
+			description=		"This solar concentrator converts non-ionizing solar radiation into 10MW of energy usable by a ship's reactor. Most people consider it a crime to let solar panels get this dirty."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<SolarDevice
+				refuel=				"100"
+				/>
+	</ItemType>
+
+<!-- LEVEL V -->
+
+	<!-- B6 Missile Defense System -->
+
+	<ItemType UNID="&itCCB6MissileDefenseSystem;"
+			name=					"B6 missile defense system"
+			attributes=				"cabbageCorp, majorItem"
+			
+			level=					"5"
+			frequency=				"uncommon"
+			
+			value=					"11000"
+			mass=					"2000"
+			
+			description=		"This device combines a DRADIS system with a targeting computer. Hostile missiles within a short range are blasted into dust by an overcharged turbolaser cannon."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<AutoDefenseDevice
+				target=				"missiles"
+				weapon=				"&vtCCB6MissileDefenseWeapon;"
+				fireRate=			"10"
+				/>
+	</ItemType>
+
+	<!-- B6 Missile Defense Weapon -->
+
+	<ItemType UNID="&vtCCB6MissileDefenseWeapon;"
+			name=					"(B6 missile defense weapon)"
+			level=					"5"
+			virtual=				"true" 
+			>
+			
+		<Weapon
+				type=				"beam"
+				
+				omnidirectional=	"true"
+				damage=				"laser:3d6+1"
+				fireRate=			"10"
+				lifetime=			"30"
+				powerUse=			"60"
+				
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+
+	<!-- mark I DRADIS module -->
+
+	<ItemType UNID="&itCCMIDRADISModule;"
+			name=				"mark I DRADIS module"
+			attributes=			"cabbageCorp, cabbageDRADIS, majorItem, specialty"
+			inherit=			"&baCCDRADISBase;"
+			
+			level=				"5"
+			frequency=			"notRandom"
+			
+			value=				"6000"
+			mass=				"4000"
+			
+			description=		"This device increases the effective resolution of a ship's targeting sensors, increasing the range at which it can detect hidden objects in space."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"20"
+				/>
+				
+		<StaticData>
+			<CCDRADIS>
+				{minPerception:3 addPerception:1}
+			</CCDRADIS>
+		</StaticData>
+	</ItemType>
+
+	<!-- Solar Concentrator -->
+
+	<ItemType UNID="&itCCSolarConcentrator;"
+			name=				"solar concentrator"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"5"
+			frequency=			"rare"
+			
+			value=				"2500"
+			mass=				"1500"
+			
+			description=		"This solar concentrator converts non-ionizing solar radiation into 20MW of energy usable by a ship's reactor."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<SolarDevice
+				refuel=				"200"
+				/>
+	</ItemType>
+
+<!-- LEVEL VI -->
+
+	<!-- Dirty Biohybrid Solar Dynamo -->
+
+	<ItemType UNID="&itCCDirtyBiohybridSolarDynamo;"
+			name=				"dirty biohybrid solar dynamo"
+			attributes=			"cabbageCorp, majorItem, illegal"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"5200"
+			mass=				"4500"
+			
+			description=		"This device converts sunlight into fuel for a dynamo which can produce up to 40MW of power for a ship's reactor. Most people consider it a crime to let solar panels get this dirty."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<SolarDevice
+				refuel=				"400"
+				/>
+	</ItemType>
+
+	<!-- Dual Core Mnemonic Processor -->
+
+	<ItemType UNID="&itCCDualCoreProcessor;"
+			name=				"dual-core quantum CPU"
+			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty"
+			
+			level=				"6"
+			frequency=			"rare"
+			
+			value=				"16000"
+			mass=				"1500"
+			
+			description=		"Cabbage Corp was the first commercial producer of dual-core quantum CPUs. Quantum CPUs are necessary for processing the instructions in a mnemonic memory cube."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=			"30"
+				/>
+	</ItemType>
+
+<!-- LEVEL VII -->
+
+	<!-- Biohybrid Solar Dynamo -->
+
+	<ItemType UNID="&itCCBiohybridSolarDynamo;"
+			name=				"biohybrid solar dynamo"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"7"
+			frequency=			"rare"
+			
+			value=				"11000"
+			mass=				"4000"
+			
+			description=		"This device converts sunlight into fuel for a dynamo which can produce up to 70MW of power to recharge a ship's reactor."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<SolarDevice
+				refuel=				"700"
+				/>
+	</ItemType>
+
+	<!-- mark II DRADIS module -->
+
+	<ItemType UNID="&itCCMIIDRADISModule;"
+			name=				"mark II DRADIS module"
+			attributes=			"cabbageCorp, cabbageDRADIS, majorItem, quantumCPU, specialty"
+			inherit=			"&baCCDRADISBase;"
+			
+			level=				"7"
+			frequency=			"notRandom"
+			
+			value=				"21000"
+			mass=				"4500"
+			
+			description=		"This device utilizes a quantum CPU to increase the effective resolution of a ship's targeting sensors, increasing the range at which it can detect hidden objects in space."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"100"
+				/>
+				
+		<StaticData>
+			<CCDRADIS>
+				{minPerception:4 addPerception:2}
+			</CCDRADIS>
+		</StaticData>
+	</ItemType>
+
+	<!-- Quad Core Mnemonic Processor -->
+
+	<ItemType UNID="&itCCQuadCoreProcessor;"
+			name=				"quad-core quantum CPU"
+			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty"
+			
+			level=				"7"
+			frequency=			"veryrare"
+			
+			value=				"34000"
+			mass=				"2500"
+			
+			description=		"Cabbage Corp was the first commercial producer of quad-core quantum CPUs. Quantum CPUs are necessary for processing the instructions in a mnemonic memory cube. "
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=			"45"
+				/>
+	</ItemType>
+
+<!-- LEVEL IX -->
+
+	<!-- Hydrogen Ramscoop -->
+
+	<ItemType UNID="&itCCHydrogenRamscoop;"
+			name=				"hydrogen ramscoop"
+			attributes=			"cabbageCorp, majorItem"
+			
+			level=				"9"
+			frequency=			"rare"
+			
+			value=				"45000"
+			mass=				"6000"
+			
+			description=		"This device collects hydrogen expelled from nearby stars to fuel a backup reactor which can produce up to 200MW of power to recharge a ship's primary reactor."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<SolarDevice
+				refuel=				"2000"
+				/>
+	</ItemType>
+
+	<!-- mark III DRADIS module -->
+
+	<ItemType UNID="&itCCMIIIDRADISModule;"
+			name=				"mark III DRADIS module"
+			attributes=			"cabbageCorp, cabbageDRADIS, majorItem, quantumCPU, specialty"
+			inherit=			"&baCCDRADISBase;"
+			
+			level=				"9"
+			frequency=			"notRandom"
+			
+			value=				"80000"
+			mass=				"5000"
+			
+			description=		"This device utilizes a multiple quantum CPUs to increase the effective resolution of a ship's targeting sensors, increasing the range at which it can detect hidden objects in space."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=		"400"
+				/>
+				
+		<StaticData>
+			<CCDRADIS>
+				{minPerception:5 addPerception:3}
+			</CCDRADIS>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL XII -->
+
+	<!-- Positronic Processor -->
+
+	<ItemType UNID="&itCCPositronicProcessor;"
+			name=				"Cabbage positronic CPU"
+			attributes=			"alien, cabbageCorp, majorItem, positronicCPU, quantumCPU, specialty"
+			
+			level=				"12"
+			frequency=			"notrandom"
+			
+			value=				"1500000"
+			mass=				"4000"
+			
+			description=		"Cabbage Corp was the first producer of positronic CPUs. Positronic CPUs are necessary for processing the instructions in a mnemonic memory cube."
+			>
+			
+		<Image imageID="&rsCCDevices;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+		
+		<MiscellaneousDevice
+				powerUse=			"300"
+				/>
+	</ItemType>
+
+<!-- BASE CLASSES -->
+
+	<!-- DRADIS Devices ========================================================
 	
+	NOTES
+	
+		These devices do not currently work for playerships because their
+	perception is technically not controlled by their AI settings even though
+	their perception is set based on the perception value in their AI settings.
+
+		These devices still affect NPC ships though.
+	
+	EXTRA DATA
+	
+	CCDRADIS:
+	
+		addPerception: Value for additional perception that is added to a
+			ship's perception value while this device is installed.
+		
+		minPerception: Value for minimum perception that a ship can have while
+			this device is installed.
+	
+	======================================================================== -->
+
+	<!-- DRADIS Base Class -->
+
+	<ItemType UNID="&baCCDRADISBase;"
+			name=				"(DRADIS base class)"
+			virtual=			"true"
+			>
+			
+		<Events>
+			<CanBeInstalled>
+				(switch
+					(not (not (objGetItems gSource "dI +cabbageDRADIS")))
+						(block Nil
+							(objSendMessage gSource Nil "You cannot install another DRADIS module as it will interfere with the one currently installed.")
+							"You cannot install another DRADIS module as it will interfere with the one currently installed."
+							)
+					True
+					)
+			</CanBeInstalled>
+			
+			<OnEnable>
+				(block Nil
+					(objSetData gSource "CCShipBasePerception" (shpGetAISetting gSource 'perception))
+					(shpSetAISetting gSource "perception" 
+						(max 
+							(add 
+								(objGetData gSource 'CCShipBasePerception)
+								(@ (itmGetStaticData gItem "CCDRADIS")'addPerception)
+								)
+							(@ (itmGetStaticData gItem "CCDRADIS") 'minPerception)
+							)
+						)
+					)
+			</OnEnable>
+			
+			<OnDisable>
+				(shpSetAISetting gSource "perception" (objGetData gSource 'CCShipBasePerception))
+			</OnDisable>
+		</Events>
+	</ItemType>
+
+	<!-- Unshielded Side-Mounted Device Base Class -->
+
 	<ItemType UNID="&baCCUnshieldedAuxMountDeviceBase;"
 			name=				"(unshielded side-mounted device base class)"
 			virtual=			"true"
 			>
-
+			
 		<Events>
 			<OnUpdate>
 				(if (itmIsInstalled gItem)
@@ -21,11 +546,11 @@
 							(for count 0 (subtract armCount 1)
 								(if (not (armIsRadiationImmune (objGetArmorType gPlayerShip count)))
 									(shpMakeRadioactive gSource)
+									)
 								)
 							)
 						)
 					)
-				)
 			</OnUpdate>
 			
 			<CanBeInstalled>
@@ -38,13 +563,13 @@
 						; We do not allow more than two auxiliary devices
 						(geq auxDeviceCount 2)
 							"Your ship already has two side-mounted devices; you cannot install another one."
-	
+							
 						; Otherwise, we can install it
 						True
 						)
 					)
 			</CanBeInstalled>
-
+			
 			<GetOverlayType>
 				(block (auxMountPos)
 					(setq auxMountPos (itmGetData gItem "auxMountPos"))
@@ -59,7 +584,7 @@
 						)
 					)
 			</GetOverlayType>
-
+			
 			<OnInstall>
 				(block (leftFree rightFree)
 				
@@ -97,7 +622,7 @@
 						)
 					)
 			</OnInstall>
-
+			
 			<OnUninstall>
 				(block Nil
 					; Clear out the mount position
@@ -105,141 +630,6 @@
 					)
 			</OnUninstall>
 		</Events>
-	</ItemType>
-	
-<!-- ======================================================================= -->
-						<!-- Miscellaneous Devices -->							
-<!-- ======================================================================= -->
-
-<!--
-	This was originally a joke... Now I intend for quantum CPUs to eventually become a form of upgrade currency.
-	The cyber defense is a result of the free antivirus software that comes with all Cabbage Corp CPU purchases.
-	(I'm not sure if adding cyberdefense actually does anything yet.)
-	The increased weight comes from the additional required cooling fan space radiator thingies (thermal paste not included).
--->
-
-<!-- Dual Core Mnemonic Processor -->
-
-	<ItemType UNID="&itCCDualCoreProcessor;"
-			name=				"dual-core quantum CPU"
-			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty"
-			
-			level=				"6"
-			frequency=			"rare"
-			
-			value=				"16000"
-			mass=				"1500"
-
-			description=		"Cabbage Corp was the first commercial producer of dual-core quantum CPUs. Quantum CPUs are necessary for processing the instructions in a mnemonic memory cube.  This model has a cyber defense level of 6."
-	>
-
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
-		<MiscellaneousDevice
-				cyberdefenselevel=	"6"
-				powerUse=			"30"
-		/>
-
-	</ItemType>
-	
-	<!-- Quad Core Mnemonic Processor -->
-
-	<ItemType UNID="&itCCQuadCoreProcessor;"
-			name=				"quad-core quantum CPU"
-			attributes=			"cabbageCorp, majorItem, quantumCPU, specialty"
-			
-			level=				"7"
-			frequency=			"veryrare"
-			
-			value=				"34000"
-			mass=				"2500"
-
-			description=		"Cabbage Corp was the first commercial producer of quad-core quantum CPUs. Quantum CPUs are necessary for processing the instructions in a mnemonic memory cube.  This model has a cyber defense level of 7."
-	>
-
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
-		<MiscellaneousDevice
-				cyberdefenselevel=	"7"
-				powerUse=			"45"
-		/>
-
-	</ItemType>
-	
-	<!-- Positronic Processor -->
-
-	<ItemType UNID="&itCCPositronicProcessor;"
-			name=				"Cabbage positronic CPU"
-			attributes=			"alien, cabbageCorp, majorItem, positronicCPU, quantumCPU, specialty"
-			
-			level=				"12"
-			frequency=			"notrandom"
-			
-			value=				"1500000"
-			mass=				"4000"
-
-			description=		"Cabbage Corp was the first producer of positronic CPUs. Positronic CPUs are necessary for processing the instructions in a mnemonic memory cube.  This model has a cyber defense level of 12."
-	>
-
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
-		<MiscellaneousDevice
-				cyberdefenselevel=	"12"
-				powerUse=			"300"
-		/>
-
-	</ItemType>
-	
-	<!-- micro Zero Point Module -->
-
-	<ItemType UNID="&itCCMicroZeroPointModule;"
-			name=				"micro Zero Point Module"
-			level=				"48"
-			value=				"335000000000000"
-			mass=				"2"
-			frequency=			"notrandom"
-			attributes=			"Alien; MajorItem; cabbageCorp; Specialty"
-
-			description=		"This alien device appears to work by extracting a near infinite amount of energy from an artificial universe.  Your ship can probably handle 5GW of power at most, at which rate the ZPM could last up to ten years."
-	>
-
-		<Image imageID="&rsCCReactors;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Invoke>
-				(intAutoInstall gSource gItem)
-		</Invoke>		
-		
-		<MiscellaneousDevice
-				deviceslots=	"0"
-				powerUse=		"-50000"
-		/>
-
-	</ItemType>
-	
-	<!-- Zero Point Module -->
-
-	<ItemType UNID="&itCCZeroPointModule;"
-			name=				"Zero Point Module"
-			level=				"72"
-			value=				"11000000000000000000000"
-			mass=				"6"
-			frequency=			"notrandom"
-			attributes=			"Alien; MajorItem; cabbageCorp; Specialty"
-
-			description=		"This alien device appears to work by extracting a near infinite amount of energy from an artificial universe.  Your ship can probably handle 5GW of power at most, at which rate the ZPM could last up to ten million years."
-	>
-
-		<Image imageID="&rsCCReactors;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Invoke>
-				(intAutoInstall gSource gItem)
-		</Invoke>		
-		
-		<MiscellaneousDevice
-				deviceslots=	"0"
-				powerUse=		"-50000"
-		/>
-
 	</ItemType>
 
 </TranscendenceModule>

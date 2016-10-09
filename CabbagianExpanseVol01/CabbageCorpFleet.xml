@@ -216,7 +216,6 @@ other			n-?
 			
 			<Device deviceID="&itCCNapaS150Deflector;" charges="4"/>
 			<Device deviceID="&itCCDualSiva8000MWReactor;"/>
-			<Device deviceID="&itCCBussardCollector;"/>
 			<Device deviceID="&itCCStomaS120ShieldEmitterArray;"/>
 			
 			<Device deviceID="&vtDamageControlParty;"/>

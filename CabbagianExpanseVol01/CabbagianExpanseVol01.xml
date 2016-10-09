@@ -282,9 +282,7 @@
 	<!ENTITY itCCDualCoreProcessor					"0xDA27C704">
 	<!ENTITY itCCQuadCoreProcessor					"0xDA27C705">
 	<!ENTITY itCCPositronicProcessor				"0xDA27C706">
-	<!ENTITY itCCMicroZeroPointModule				"0xDA27C707">
-	<!ENTITY itCCZeroPointModule					"0xDA27C708">
-	<!ENTITY itCCDiplomaticID						"0xDA27C709">
+	<!ENTITY itCCDiplomaticID						"0xDA27C707">
 
 	<!ENTITY dsCCOreRefinery						"0xDA27C710">
 	<!ENTITY itCCHeliumRegolithRefinery				"0xDA27C711">
@@ -548,7 +546,6 @@
 	<!ENTITY itCCDirtyBiohybridSolarDynamo			"0xDA27CB05">
 	<!ENTITY itCCBiohybridSolarDynamo				"0xDA27CB06">
 	<!ENTITY itCCHydrogenRamscoop					"0xDA27CB07">
-	<!ENTITY itCCBussardCollector					"0xDA27CB08">
 
 <!-- ======================================================== -->
 			<!-- CC00-CCFF		WEAPONS -->		
@@ -957,10 +954,7 @@
 	<Module fileName="CabbageCorpStations.xml"/>
 	<Module fileName="CabbageMisc.xml"/>
 	<Module fileName="Code.xml"/>
-	<Module fileName="Devices_AutoDefense.xml"/>
 	<Module fileName="Devices_AuxReactors.xml"/>
-	<Module fileName="Devices_DRADIS.xml"/>
-	<Module fileName="Devices_Solar.xml"/>
 	<Module fileName="HUD.xml"/>
 	<Module fileName="Library_BaseClasses.xml"/>
 	<Module fileName="Library_DockScreens.xml"/>

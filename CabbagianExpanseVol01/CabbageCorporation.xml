@@ -274,7 +274,6 @@
 					{ item:&itCCSolarPanelArray;				enhancement:Nil		components:( { item:&itCCDirtySolarPanelArray; count:1 } )												extraCost:0 }
 					{ item:&itCCSolarConcentrator;				enhancement:Nil		components:( { item:&itCCDirtySolarConcentrator; count:1 } )											extraCost:0 }
 					{ item:&itCCBiohybridSolarDynamo;			enhancement:Nil		components:( { item:&itCCDirtyBiohybridSolarDynamo; count:1 } )											extraCost:0 }
-					{ item:&itCCBussardCollector;				enhancement:Nil		components:( { item:&itCCHydrogenRamscoop; count:1 } { item:&itCCNapaS30Deflector; count:1 } )			extraCost:0 }
 
 					{ item:&itCCRegenNMGenerator;				enhancement:Nil		components:( { item:&itRegeneratingNanos; count:6 }  { item:&itMnemonicProcessor; count:1 } )			extraCost:0 }
 					{ item:&itCCAutoRepairVI;					enhancement:Nil		components:( { item:&itCCRegenNMGenerator; count:1 } { item:&itCCDualCoreProcessor; count:1 } )			extraCost:0 }

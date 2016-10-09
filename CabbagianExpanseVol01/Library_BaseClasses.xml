@@ -27,53 +27,6 @@
 	</ItemType>
 
 <!-- ======================================================================= -->
-							<!-- DRADIS Base Class -->							
-<!-- ======================================================================= -->
-<!--
-These devices do not currently work for the player-ships because it is technically not controlled by AI settings even though their perception is controlled by the perception value in their AI settings.  These will work for everyone else Cabbage Corp sells them to though.
--->
-
-<!-- DRADIS Base Class -->
-
-	<ItemType UNID="&baCCDRADISBase;"
-			name=				"(DRADIS base class)"
-			virtual=			"true"
-	>
-		
-		<Events>
-			<CanBeInstalled>
-				(switch
-					(not (not (objGetItems gSource "dI +cabbageDRADIS")))
-						(block Nil
-							(objSendMessage gSource Nil "You cannot install another DRADIS module as it will interfere with the one currently installed.")
-							"You cannot install another DRADIS module as it will interfere with the one currently installed."
-						)
-					True
-				)
-			</CanBeInstalled>
-			
-			<OnEnable>
-				(block Nil
-					(objSetData gSource "CCShipBasePerception" (shpGetAISetting gSource 'perception))
-					(shpSetAISetting gSource "perception" 
-						(max 
-							(add 
-								(objGetData gSource 'CCShipBasePerception)
-								(@ (itmGetStaticData gItem "CCDRADIS")'addPerception)
-							)
-							(@ (itmGetStaticData gItem "CCDRADIS") 'minPerception)
-						)
-					)
-				)
-			</OnEnable>
-			
-			<OnDisable>
-				(shpSetAISetting gSource "perception" (objGetData gSource 'CCShipBasePerception))
-			</OnDisable>
-		</Events>
-	</ItemType>
-
-<!-- ======================================================================= -->
 					<!-- Microsaur Scanner Base Classes -->						
 <!-- ======================================================================= -->
 	
