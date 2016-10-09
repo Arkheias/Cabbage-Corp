@@ -313,6 +313,7 @@
 
 <!-- RESOURCES -->
 
-	<Image UNID="&rsCCCabbagianExpanseSpace;"			bitmap="CabbagianExpanseSpace.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCCabbagianExpanseSpace;"		bitmap="CabbagianExpanseSpace.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCPraclarushHangar;"			bitmap="PraclarushHangar.jpg"		loadOnUse="true" />
 
 </TranscendenceModule>
