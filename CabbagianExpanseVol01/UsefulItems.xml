@@ -391,6 +391,301 @@
 		</Invoke>
 	</ItemType>
 
+<!-- Dock Screens -->
+
+	<!-- Use Replacement Coil -->
+	
+	<DockScreen UNID="&dsCCUseReplacementCoil;"
+			name=				"Ship's Interior"
+			type=				"itemPicker"
+			>
+
+		<ListOptions
+			dataFrom=	"player"
+			list=		"d +emitterCoil"
+			/>
+			
+		<InitialPane>
+			(if (itmIsKnown gItem)
+				"Default"
+				"CoilBox"
+			)
+		</InitialPane>
+			
+		<Panes>
+			<Default>
+				<OnPaneInit>
+					(block (desc skillLevel)
+						; Init skill level
+						(setq skillLevel (typGetGlobalData &dsCCUseReplacementCoil; "skillLevel"))
+						(if (not skillLevel)
+							(block Nil
+								(typSetGlobalData &dsCCUseReplacementCoil; "skillLevel" 0)
+								(setq skillLevel 0)
+							)
+						)
+							
+						; Intro, if necessary
+						
+						(setq desc (objFireItemEvent gSource gItem "GetRepairItemIntro"))
+						(if (not desc)
+							(setq desc "")
+						)
+						
+						; Report the number of replacement coils remaining
+						(setq desc
+							(cat
+								desc
+								"Replacement coils Left: "
+								(itmGetProperty gItem 'charges)
+								"\n\n"
+							)
+						)
+							
+						; Figure out if the device we've selected needs repairing
+						
+						(setq aItemToRepair (scrGetItem gScreen))
+						(setq chargesLeft (itmGetProperty gItem 'charges))
+						(setq gCanRepair Nil)
+						
+						(Switch
+						
+							; If no more charges then we cannot repair anything
+							(eq chargesLeft 0)
+								(setq desc
+									(cat
+										desc
+										"Unfortunately, "
+										(itmGetName gItem 0x40)
+										" does not contain any more replacement coils."
+									)
+								)
+							
+							; Nothing to repair
+							(not aItemToRepair)
+								(setq desc
+									(cat
+										desc
+										"There are no items here that could be repaired."
+									)
+								)
+								
+							(block Nil
+								(setq gCanRepair (itmGetProperty aItemToRepair 'damaged))
+								(setq desc (cat desc "The ship's " (itmGetName aItemToRepair 0)))
+									
+								; See if we can repair it with the given item and describe its condition
+								
+								(if gCanRepair
+									(block Nil
+										(if (not (objFireItemEvent gSource gItem "CanRepairItem"))
+											(block Nil
+												(setq desc 
+													(cat 
+														desc
+														" cannot be repaired with the "
+														(itmGetName gItem 0)
+														"."
+													)
+												)
+												(setq gCanRepair Nil)
+											)
+											(setq desc 
+												(cat 
+													desc
+													" could be repaired with the "
+													(itmGetName gItem 0)
+													"."
+												)
+											)
+										)
+									)
+									(setq desc (cat desc " is not damaged."))
+								)
+								
+								; Skill level
+								(switch
+									(not gCanRepair)
+										Nil
+										
+									(ls skillLevel 2)
+										(setq desc 
+											(cat 
+												desc
+												"\n\n"
+												"You do not have much experience repairing emitter coils."
+											)
+										)
+											
+									(ls skillLevel 5)
+										(setq desc 
+											(cat 
+												desc
+												"\n\n"
+												"You have some experience repairing emitter coils."
+											)
+										)
+											
+									(ls skillLevel 10)
+										(setq desc 
+											(cat 
+												desc
+												"\n\n"
+												"You are proficient at repairing emitter coils."
+											)
+										)
+											
+									(setq desc 
+										(cat 
+											desc
+											"\n\n"
+											"You are an expert at repairing emitter coils."
+										)
+									)
+								)
+							)
+						)
+						
+						(scrSetDesc gScreen desc)
+						
+						; Disable actions if we cannot repair
+						(scrEnableAction gScreen 0 gCanRepair)
+					)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Repair this Device" default="1" key="R" >
+						(block Nil
+							(setq gTitle (CCUseReplacementCoil gItem aItemToRepair))
+							(scrShowPane gScreen "Done")
+						)
+					</Action>
+
+					<Action name="Cancel" cancel="1" key="C">
+						<Exit/>
+					</Action>
+					
+				</Actions>
+			</Default>
+			
+			<CoilBox>
+				<OnPaneInit>
+					(block (desc)
+							
+						; Figure out if the device we've selected needs repairing
+						(setq aItemToRepair (scrGetItem gScreen))
+						(setq chargesLeft (itmGetProperty gItem 'charges))
+						(setq gCanRepair Nil)
+						
+						; Intro, if necessary
+						(Switch
+						
+							; If no more charges then we cannot repair anything
+							(ls chargesLeft 1)
+								(setq desc
+									(cat
+										"This box seems like it was designed to carry superconducting coils."
+										"Unfortunately, it is currently empty."
+									)
+								)
+							
+							(eq chargesLeft 1)
+								(setq desc
+									(cat
+										"This box contains what seems to be some kind of superconducting coil."
+									)
+								)
+							
+							(setq desc
+								(cat
+									"This box seems to carry several superconducting coils."
+								)
+							)
+						)
+						(if (gr chargesLeft 0)
+							(switch
+								; Nothing to repair
+								(not aItemToRepair)
+									(setq desc
+										(cat
+											desc
+											"\n\n"
+											"Unfortunately, you have nothing to use it with."
+										)
+									)
+									
+								(block Nil
+									(setq gCanRepair (itmGetProperty aItemToRepair 'damaged))
+									(setq desc
+										(cat
+											desc
+											"\n\n"
+											"The ship's "
+											(itmGetName aItemToRepair 0)
+										)
+									)
+										
+									; See if we can repair it with the given item and describe its condition
+									
+									(if gCanRepair
+										(setq desc 
+											(cat 
+												desc
+												" could possibly be repaired with these coils."
+											)
+										)
+										(setq desc
+											(cat
+												desc
+												" is not damaged."
+											)
+										)
+									)
+								)
+							)
+						)
+						
+						(scrSetDesc gScreen desc)
+						
+						; Disable actions if we cannot repair
+						(scrEnableAction gScreen 0 gCanRepair)
+					)
+				</OnPaneInit>
+
+				<Actions>
+					<Action name="Try to repair this Device" default="1" key="T">
+						(block Nil
+							; Identify the item [we do this first because we want to refer
+							; to the item by its real name]
+							(itmSetKnown gItem)
+
+							; Repair
+							(setq gTitle (CCUseReplacementCoil gItem aItemToRepair))
+							
+							(scrShowPane gScreen "Done")
+						)
+					</Action>
+
+					<Action name="Cancel" cancel="1" key="C">
+						<Exit/>
+					</Action>
+				</Actions>
+			</CoilBox>
+
+			<Done 
+					desc="=gTitle"
+					noListNavigation="true"
+					>
+
+				<Actions>
+					<Action name="Done" cancel="1" default="1" key="D">
+						<Exit/>
+					</Action>
+				</Actions>
+			</Done>
+		</Panes>
+	</DockScreen>
+
 <!-- GLOBALS -->
 
 	<Globals>
