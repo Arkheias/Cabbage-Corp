@@ -1,10 +1,28 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!-- ======================================================================= -->
-							<!-- Station DockScreens-->							
-<!-- ======================================================================= -->
-	
+<!-- DOCK SCREENS ==============================================================
+
+	GLOBALS
+
+	gPlayer: Object representing the player.
+	gPlayerShip: The player's ship.
+	gScreen: The current screen being displayed.
+	gSource: The station/ship that the player is docked at.
+
+	TEMPORARY GLOBALS
+
+	gBuyCriteria
+	gCost
+	gItem
+	gMargin
+	gPrevScreen
+	gPrevPane
+	gBonus
+
+	======================================================================== -->
+
 	<DockScreen unid="&dsCCBuyAndModify;"
 			type=				"customItemPicker"
 			inherit=			"&dsDockScreenBase;"
@@ -457,7 +475,7 @@
 				<Actions>
 					<Action name="View Special Deal" default="1" key="V">
 						(block (gType gMasterList gListLevel gSubList gPreItem)
-							(setq gType (modulo (@ (objGetPos gSource) 0) 3))		;Determines the deal based on station location
+							(setq gType (modulo (@ (objGetPos gSource) 0) 2))		;Determines the deal based on station location and the number of potential deals
 							(setq gMasterList (typGetData &svCCCabbageCorp; 'SpecialDeal))
 							(setq gListLevel (subtract (sysGetLevel) 1))
 							(setq gSubList (@ gMasterList gListLevel))
@@ -565,7 +583,6 @@
 	>
 
 		<Panes>
-					
 			<Default
 					desc=	"You are at a Cabbage Corp Workshop terminal.">
 					
@@ -620,7 +637,7 @@
 		</Panes>
 	</DockScreen>
 	
-		<!-- Cabbage Custom Work -->
+	<!-- Cabbage Custom Work -->
 	
 	<DockScreen UNID="&dsCCCabbageCustomWork;"
 			type=           "customItemPicker"
