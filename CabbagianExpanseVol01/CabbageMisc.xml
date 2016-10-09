@@ -35,9 +35,5 @@
 	<Image UNID="&rsCCArmorStealth;"				bitmap="ArmorStealth.jpg"					bitmask="ArmorStealthMask.jpg"/>
 	<Image UNID="&rsCCGuns;"						bitmap="Guns.jpg"							bitmask="GunsMask.jpg"/>
 	<Image UNID="&rsCCReactors;"					bitmap="Reactors.jpg"						bitmask="ReactorsMask.jpg"/>
-	
-	<!-- Screens -->
-	<Image UNID="&rsCCCabbageCorpScreen;"			bitmap="CabbageCorpScreen.jpg"	loadOnUse="true" />
-	<Image UNID="&rsCCPraclarushHangar;"			bitmap="PraclarushHangar.jpg"	loadOnUse="true" />
 
 </TranscendenceModule>

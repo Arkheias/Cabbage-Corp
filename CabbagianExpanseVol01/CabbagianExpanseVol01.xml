@@ -834,13 +834,12 @@
 
 		<!-- Station Images -->
 	<!ENTITY rsCCStations							"0xDA27CE10">
-	<!ENTITY rsCCCabbageCorpScreen					"0xDA27CE11">
-	<!ENTITY rsCCFranchise							"0xDA27CE12">
-	<!ENTITY rsCCDealer								"0xDA27CE13">
-	<!ENTITY rsCCFactory							"0xDA27CE14">
-	<!ENTITY rsCCFuelDepot							"0xDA27CE15">
-	<!ENTITY rsCCManufacturingPlant					"0xDA27CE16">
-	<!ENTITY rsCCPraclarushHangar					"0xDA27CE17">
+	<!ENTITY rsCCFranchise							"0xDA27CE11">
+	<!ENTITY rsCCDealer								"0xDA27CE12">
+	<!ENTITY rsCCFactory							"0xDA27CE13">
+	<!ENTITY rsCCFuelDepot							"0xDA27CE14">
+	<!ENTITY rsCCManufacturingPlant					"0xDA27CE15">
+	<!ENTITY rsCCPraclarushHangar					"0xDA27CE16">
 
 		<!-- HUD Images-->
 	<!ENTITY rsCCEIArmor6							"0xDA27CE41">
