@@ -81,7 +81,7 @@
 					
 					<Action name="Modify" key="M">
 						(block Nil
-							(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+							(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 							(scrExitScreen gScreen)
 						)
 					</Action>

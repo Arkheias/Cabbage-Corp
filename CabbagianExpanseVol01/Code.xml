@@ -31,7 +31,7 @@
 
 <Globals>
 	(block Nil
-		(setq CCDeviceExchange 
+		(setq intModifyHardware 
 			(lambda (newDeviceType)
 				(block (baseFuel currentFuel newDevice )
 					(setq currentFuel (shpGetFuelLeft gSource))

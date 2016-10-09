@@ -586,7 +586,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -624,7 +624,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -662,7 +662,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -700,7 +700,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -738,7 +738,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -776,7 +776,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -814,7 +814,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -852,7 +852,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -890,7 +890,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -928,7 +928,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -966,7 +966,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1004,7 +1004,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1042,7 +1042,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1080,7 +1080,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1119,7 +1119,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1630,7 +1630,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1668,7 +1668,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1706,7 +1706,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1744,7 +1744,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1782,7 +1782,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1820,7 +1820,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1858,7 +1858,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1896,7 +1896,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1934,7 +1934,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -1972,7 +1972,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -2010,7 +2010,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -2048,7 +2048,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -2086,7 +2086,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -2124,7 +2124,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
@@ -2163,7 +2163,7 @@ The game does not provide a way to keep reactors from being sold at stations wit
 		
 		<Invoke installedOnly="true" key="R">
 			(block Nil
-				(CCDeviceExchange (itmGetStaticData gItem 'CCItemSwap))
+				(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 				(plyMessage gPlayer "Your reactor has been modified to run with containment.")
 			)
 		</Invoke>
