@@ -1,176 +1,15 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
 <!-- ======================================================================= -->
-						<!-- Mining Lance Capacitors -->						
+						<!-- Mining Lance Capacitor -->						
 <!-- ======================================================================= -->
 
-	<!-- Mark I Mining Lance Capacitor -->
+	<!-- Mining Lance Capacitor -->
 
-	<ItemType UNID="&itCCMarkIMiningLanceCapacitor;"
-			name=				"mark I mining lance capacitor"
-			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
-			  
-			level=				"2"
-			frequency=			"rare"
-			unknownType=		"&itUnknownEnhancer2;"
-
-			value=				"1500"
-			mass=				"1000"
-			  
-			description=		"This enhancer slightly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their damage output by up to 75% depending on their original power requirements. Does not affect mining lances over tech level five."
-	>
-
-		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
-
-		<MiscellaneousDevice
-				powerUse=		"10"
-		>
-			<EnhancementAbilities>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:75;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:50;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:30;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:15;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:5;"
-				/>
-			</EnhancementAbilities>
-		</MiscellaneousDevice>
-	</ItemType>
-
-	<!-- Mark II Mining Lance Capacitor -->
-
-	<ItemType UNID="&itCCMarkIIMiningLanceCapacitor;"
-			name=				"mark II mining lance capacitor"
-			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
-			  
-			level=				"4"
-			frequency=			"rare"
-			unknownType=		"&itUnknownEnhancer5;"
-
-			value=				"6000"
-			mass=				"1500"
-			  
-			description=		"This enhancer increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by up to 140% depending on their original power requirements. Does not affect mining lances over tech level seven."
-	>
-
-		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
-
-		<MiscellaneousDevice
-				powerUse=		"100"
-		>
-			<EnhancementAbilities>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:140;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:105;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:75;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:50;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:30;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:15;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:5;"
-				/>
-			</EnhancementAbilities>
-		</MiscellaneousDevice>
-	</ItemType>
-
-	<!-- Mark III Mining Lance Capacitor -->
-
-	<ItemType UNID="&itCCMarkIIIMiningLanceCapacitor;"
-			name=				"mark III mining lance capacitor"
-			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
-			  
-			level=				"6"
-			frequency=			"rare"
-			unknownType=		"&itUnknownEnhancer5;"
-
-			value=				"24000"
-			mass=				"2500"
-			  
-			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by up to 225% depending on their original power requirements. Does not affect mining lances over tech level nine."
-	>
-
-		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
-
-		<MiscellaneousDevice
-				powerUse=		"250"
-		>
-			<EnhancementAbilities>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:225;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:180;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:140;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:105;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:75;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:50;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:30;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:8; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:15;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:9; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:5;"
-				/>
-			</EnhancementAbilities>
-		</MiscellaneousDevice>
-	</ItemType>
-
-	<!-- Mark IV Mining Lance Capacitor -->
-
-	<ItemType UNID="&itCCMarkIVMiningLanceCapacitor;"
-			name=				"mark IV mining lance capacitor"
+	<ItemType UNID="&itCCMiningLanceCapacitor;"
+			name=				"mining lance capacitor"
 			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
 			  
 			level=				"8"
@@ -180,7 +19,7 @@
 			value=				"60000"
 			mass=				"4000"
 			  
-			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by up to 330% depending on their original power requirements. Does not affect mining lances over tech level eleven."
+			description=		"This device greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their damage output by up to 75% depending on their original power requirements."
 	>
 
 		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
@@ -190,30 +29,6 @@
 		>
 			<EnhancementAbilities>
 				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:330;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:275;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:225;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:180;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:140;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:105;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
 						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:75;"
 				/>
@@ -229,92 +44,10 @@
 						 criteria=		"w~l L:10; +cabbageCorp; +energyWeapon; +miningEquipment"
 						 enhancement=	"+hpBonus:15;"
 				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:11; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:5;"
-				/>
 			</EnhancementAbilities>
 		</MiscellaneousDevice>
 	</ItemType>
 
-	<!-- Mark V Mining Lance Capacitor -->
-
-	<ItemType UNID="&itCCMarkVMiningLanceCapacitor;"
-			name=				"mark V mining lance capacitor"
-			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
-			  
-			level=				"10"
-			frequency=			"rare"
-			unknownType=		"&itUnknownAlienDevice10;"
-
-			value=				"400000"
-			mass=				"6000"
-			  
-			description=		"This enhancer greatly increases the maximum amount of power that can be fed into Cabbage Corp mining lances, increasing their potential damage output by up to 455% depending on their original power requirements. Does not affect mining lances over tech level thirteen."
-	>
-
-		<Image imageID="&rsCCDevices;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
-
-		<MiscellaneousDevice
-				powerUse=		"800"
-		>
-			<EnhancementAbilities>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:1; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:455;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:2; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:390;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:3; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:330;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:4; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:270;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:5; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:225;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:6; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:180;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:7; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:140;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:8; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:105;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:9; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:75;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:10; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:50;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:11; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:30;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:12; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:15;"
-				/>
-				<Enhance type=			"cabbageLanceEnhancer"
-						 criteria=		"w~l L:13; +cabbageCorp; +energyWeapon; +miningEquipment"
-						 enhancement=	"+hpBonus:5;"
-				/>
-			</EnhancementAbilities>
-		</MiscellaneousDevice>
-	</ItemType>
-	
 <!-- ======================================================================= -->
 						<!-- Repeater Heat Sinks -->							
 <!-- ======================================================================= -->
@@ -409,66 +142,6 @@
 		</MiscellaneousDevice>
 	</ItemType>
 
-	<!-- Mark IV Repeater Heat Sink -->
-
-	<ItemType UNID="&itCCMarkIVRepeaterHeatSink;"
-			name=				"mark IV repeater heat sink"
-			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
-			  
-			level=				"8"
-			frequency=			"rare"
-			unknownType=		"&itUnknownEnhancer8;"
-
-			value=				"60000"
-			mass=				"4000"
-			  
-			description=		"This heat sink exceedingly increases the fire rate of any installed Cabbage Corp repeater."
-	>
-
-		<Image imageID="&rsCCDevices;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
-
-		<MiscellaneousDevice
-				powerUse=		"450"
-		>
-			<EnhancementAbilities>
-				<Enhance type=			"repeaterHeatSink"
-						 criteria=		"w +repeater;"
-						 enhancement=	"+speed:60;"
-				/>
-			</EnhancementAbilities>
-		</MiscellaneousDevice>
-	</ItemType>
-
-	<!-- Mark V Repeater Heat Sink -->
-
-	<ItemType UNID="&itCCMarkVRepeaterHeatSink;"
-			name=				"mark V repeater heat sink"
-			attributes=			"cabbageCorp, majorItem, weaponEnhancer"
-			  
-			level=				"10"
-			frequency=			"rare"
-			unknownType=		"&itUnknownAlienDevice10;"
-
-			value=				"240000"
-			mass=				"5000"
-			  
-			description=		"This heat sink increases the fire rate of any installed Cabbage Corp repeater immensely."
-	>
-
-		<Image imageID="&rsCCDevices;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
-
-		<MiscellaneousDevice
-				powerUse=		"800"
-		>
-			<EnhancementAbilities>
-				<Enhance type=			"repeaterHeatSink"
-						 criteria=		"w~l +repeater;"
-						 enhancement=	"+speed:50;"
-				/>
-			</EnhancementAbilities>
-		</MiscellaneousDevice>
-	</ItemType>
-
 <!-- ======================================================================= -->
 							<!-- Shield Emitter Arrays -->						
 <!-- ======================================================================= -->
@@ -478,7 +151,6 @@
 	<ItemType UNID="&itCCStoma5ShieldEmitterArray;"
 			name=				"Stoma-500 shield emitter array"
 			attributes=			"cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"1"
 			frequency=			"veryrare"
@@ -497,6 +169,7 @@
 				deviceSlots=	"0"
 				external=		"true"
 		>
+		
 			<EnhancementAbilities>
 				<Enhance type=			"shieldEmitterArray"
 						 criteria=		"s L:1"
@@ -519,7 +192,6 @@
 	<ItemType UNID="&itCCStomaS1ShieldEmitterArray;"
 			name=				"Stoma S1 shield emitter array"
 			attributes=			"cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"2"
 			frequency=			"veryrare"
@@ -564,7 +236,6 @@
 	<ItemType UNID="&itCCStomaS2ShieldEmitterArray;"
 			name=				"Stoma S2 shield emitter array"
 			attributes=			"cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"3"
 			frequency=			"veryrare"
@@ -613,7 +284,6 @@
 	<ItemType UNID="&itCCStomaS4ShieldEmitterArray;"
 			name=				"Stoma S4 shield emitter array"
 			attributes=			"cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"4"
 			frequency=			"veryrare"
@@ -666,7 +336,6 @@
 	<ItemType UNID="&itCCStomaS8ShieldEmitterArray;"
 			name=				"Stoma S8 shield emitter array"
 			attributes=			"cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"5"
 			frequency=			"veryrare"
@@ -719,7 +388,6 @@
 	<ItemType UNID="&itCCStomaS20ShieldEmitterArray;"
 			name=				"Stoma S20 shield emitter array"
 			attributes=			"cabbageCorp, emitterCoil, majorItem, military, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"6"
 			frequency=			"veryrare"
@@ -772,7 +440,6 @@
 	<ItemType UNID="&itCCStomaS30ShieldEmitterArray;"
 			name=				"Stoma S30 shield emitter array"
 			attributes=			"cabbageCorp, emitterCoil, majorItem, military, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"7"
 			frequency=			"veryrare"
@@ -829,7 +496,6 @@
 	<ItemType UNID="&itCCStomaS50ShieldEmitterArray;"
 			name=				"Stoma S50 shield emitter array"
 			attributes=			"cabbageCorp, emitterCoil, majorItem, military, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"8"
 			frequency=			"veryrare"
@@ -886,7 +552,6 @@
 	<ItemType UNID="&itCCStomaS80ShieldEmitterArray;"
 			name=				"Stoma S80 shield emitter array"
 			attributes=			"cabbageCorp, emitterCoil, majorItem, military, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"9"
 			frequency=			"veryrare"
@@ -943,7 +608,6 @@
 	<ItemType UNID="&itCCStomaS120ShieldEmitterArray;"
 			name=				"Stoma S120 shield emitter array"
 			attributes=			"cabbageCorp, emitterCoil, majorItem, military, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"10"
 			frequency=			"veryrare"
@@ -1004,7 +668,6 @@
 	<ItemType UNID="&itCCStomaS150ShieldEmitterArray;"
 			name=				"Stoma S150 shield emitter array"
 			attributes=			"alien, cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			unknownType=		"&itUnknownAlienDevice10;"
 			
 			level=				"11"
@@ -1066,7 +729,6 @@
 	<ItemType UNID="&itCCStomaS250ShieldEmitterArray;"
 			name=				"Stoma S250 shield emitter array"
 			attributes=			"alien, cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"12"
 			frequency=			"veryrare"
@@ -1127,7 +789,6 @@
 	<ItemType UNID="&itCCStomaS400ShieldEmitterArray;"
 			name=				"Stoma S400 emitter array"
 			attributes=			"alien, cabbageCorp, emitterCoil, majorItem, shieldEnhancer, specialty"
-			inherit=			"&baCCShieldEmitterBase;"
 			
 			level=				"13"
 			frequency=			"veryrare"

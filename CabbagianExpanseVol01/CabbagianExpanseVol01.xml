@@ -238,50 +238,38 @@
 			<!-- C600-C6FF		ENHANCERS -->					
 <!-- ======================================================== -->
 
-	<!-- C600-C60F MINING LANCE ENHANCERS -->
+	<!-- C600-C60F WEAPON ENHANCERS -->
 	
-	<!ENTITY itCCMarkIMiningLanceCapacitor			"0xDA27C600">
-	<!ENTITY itCCMarkIIMiningLanceCapacitor			"0xDA27C601">
-	<!ENTITY itCCMarkIIIMiningLanceCapacitor		"0xDA27C602">
-	<!ENTITY itCCMarkIVMiningLanceCapacitor			"0xDA27C603">
-	<!ENTITY itCCMarkVMiningLanceCapacitor			"0xDA27C604">
+	<!ENTITY vtCCSavoyHowitzerRestrictionBolt		"0xDA27C600">
+	<!ENTITY itCCMarkIRepeaterHeatSink				"0xDA27C601">
+	<!ENTITY itCCMarkIIRepeaterHeatSink				"0xDA27C602">
+	<!ENTITY itCCMarkIIIRepeaterHeatSink			"0xDA27C603">
+	<!ENTITY itCCMiningLanceCapacitor				"0xDA27C604">
+	
+	<!-- C610-C62F SHIELD ENHANCERS -->
+	
+	<!ENTITY baCCShieldEmitterBase					"0xDA27C610">
+	<!ENTITY itCCStoma5ShieldEmitterArray			"0xDA27C611">
+	<!ENTITY itCCStomaS1ShieldEmitterArray			"0xDA27C612">
+	<!ENTITY itCCStomaS2ShieldEmitterArray			"0xDA27C613">
+	<!ENTITY itCCStomaS4ShieldEmitterArray			"0xDA27C614">
+	<!ENTITY itCCStomaS8ShieldEmitterArray			"0xDA27C615">
+	<!ENTITY itCCStomaS20ShieldEmitterArray			"0xDA27C616">
+	<!ENTITY itCCStomaS30ShieldEmitterArray			"0xDA27C617">
+	<!ENTITY itCCStomaS50ShieldEmitterArray			"0xDA27C618">
+	<!ENTITY itCCStomaS80ShieldEmitterArray			"0xDA27C619">
+	<!ENTITY itCCStomaS120ShieldEmitterArray		"0xDA27C61A">
+	<!ENTITY itCCStomaS150ShieldEmitterArray		"0xDA27C61B">
+	<!ENTITY itCCStomaS250ShieldEmitterArray		"0xDA27C61C">
+	<!ENTITY itCCStomaS400ShieldEmitterArray		"0xDA27C61D">
 
-	<!-- C610-C61F REPEATER ENHANCERS -->
-	
-	<!ENTITY itCCMarkIRepeaterHeatSink				"0xDA27C610">
-	<!ENTITY itCCMarkIIRepeaterHeatSink				"0xDA27C611">
-	<!ENTITY itCCMarkIIIRepeaterHeatSink			"0xDA27C612">
-	<!ENTITY itCCMarkIVRepeaterHeatSink				"0xDA27C613">
-	<!ENTITY itCCMarkVRepeaterHeatSink				"0xDA27C614">
-
-	<!-- C620-C62F SAVOY HOWITZER ENHANCERS -->
-	
-	<!ENTITY vtCCSavoyHowitzerRestrictionBolt		"0xDA27C620">
-	
-	<!-- C630-C64F SHIELD ENHANCERS -->
-	
-	<!ENTITY baCCShieldEmitterBase					"0xDA27C630">
-	<!ENTITY itCCStoma5ShieldEmitterArray			"0xDA27C631">
-	<!ENTITY itCCStomaS1ShieldEmitterArray			"0xDA27C632">
-	<!ENTITY itCCStomaS2ShieldEmitterArray			"0xDA27C633">
-	<!ENTITY itCCStomaS4ShieldEmitterArray			"0xDA27C634">
-	<!ENTITY itCCStomaS8ShieldEmitterArray			"0xDA27C635">
-	<!ENTITY itCCStomaS20ShieldEmitterArray			"0xDA27C636">
-	<!ENTITY itCCStomaS30ShieldEmitterArray			"0xDA27C637">
-	<!ENTITY itCCStomaS50ShieldEmitterArray			"0xDA27C638">
-	<!ENTITY itCCStomaS80ShieldEmitterArray			"0xDA27C639">
-	<!ENTITY itCCStomaS120ShieldEmitterArray		"0xDA27C63A">
-	<!ENTITY itCCStomaS150ShieldEmitterArray		"0xDA27C63B">
-	<!ENTITY itCCStomaS250ShieldEmitterArray		"0xDA27C63C">
-	<!ENTITY itCCStomaS400ShieldEmitterArray		"0xDA27C63D">
-
-	<!ENTITY efCCShieldEmitterOverload				"0xDA27C640">
-	<!ENTITY vtCCEmitterFlareUp						"0xDA27C641">
-	<!ENTITY vtCCEmitterBlinding					"0xDA27C642">
-	<!ENTITY vtCCEmitterRadiation					"0xDA27C643">
-	<!ENTITY vtCCEmitterEMP							"0xDA27C644">
-	<!ENTITY vtCCEmitterDeviceDisrupt				"0xDA27C645">
-	<!ENTITY vtCCEmitterDeviceDamage				"0xDA27C646">
+	<!ENTITY efCCShieldEmitterOverload				"0xDA27C620">
+	<!ENTITY vtCCEmitterFlareUp						"0xDA27C621">
+	<!ENTITY vtCCEmitterBlinding					"0xDA27C622">
+	<!ENTITY vtCCEmitterRadiation					"0xDA27C623">
+	<!ENTITY vtCCEmitterEMP							"0xDA27C624">
+	<!ENTITY vtCCEmitterDeviceDisrupt				"0xDA27C625">
+	<!ENTITY vtCCEmitterDeviceDamage				"0xDA27C626">
 
 <!-- ======================================================== -->
 			<!-- C700-C7FF		MISCELLANEOUS DEVICES -->		

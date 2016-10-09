@@ -72,12 +72,6 @@ other			n-?
 					<Device item="&itCCNapaS8Deflector;" charges="4"/>				;240
 					<Device item="&itCCStomaS4ShieldEmitterArray;"/>				;40
 				</Group>
-				
-				<Group chance="25">
-					<Device item="&itCCOmniB9MiningLance;"/>						;120
-					<Device item="&itCCNapaS8Deflector;" charges="4"/>				;240
-					<Device item="&itCCMarkIIMiningLanceCapacitor;"/>				;100
-				</Group>
 			</Table>
 
 			<Table>
