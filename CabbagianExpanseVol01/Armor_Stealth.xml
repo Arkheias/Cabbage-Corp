@@ -1,4 +1,5 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
 <!--
@@ -538,5 +539,5 @@ I have decided based on a whim to have this stealth armor sorted such that the q
 				stealth=	"9"
 		/>
 	</ItemType>
-	
+
 </TranscendenceModule>

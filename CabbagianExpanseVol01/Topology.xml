@@ -7,7 +7,7 @@
 	<SystemMap UNID="&unidCCIdaSegment;"
 			displayOn="&smHumanSpace;"
 			>
-
+			
 		<NodeGroup ID="cabbageIdaSegment">
 			<Stargate from="Othala:Coreward"		to="IS1:Edgeward"/>
 			<Stargate from="IS1:Coreward"			to="IS2:Edgeward"/>
@@ -25,7 +25,7 @@
 				<System UNID="&ssCCOthala;"/>
 			</System>
 		</Node>
-
+		
 		<!-- MINOR IDA SEGMENT SYSTEMS -->
 		
 		<Node ID="IS1" x="56" y="-107">
@@ -40,7 +40,7 @@
 				</Table>
 			</System>
 		</Node>
-
+		
 		<Node ID="IS2" x="56" y="-132">
 			<System
 					level=			"5"
