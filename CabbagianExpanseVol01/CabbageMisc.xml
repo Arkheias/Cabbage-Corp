@@ -35,7 +35,6 @@
 	<Image UNID="&rsCCArmorStealth;"				bitmap="ArmorStealth.jpg"					bitmask="ArmorStealthMask.jpg"/>
 	<Image UNID="&rsCCGuns;"						bitmap="Guns.jpg"							bitmask="GunsMask.jpg"/>
 	<Image UNID="&rsCCReactors;"					bitmap="Reactors.jpg"						bitmask="ReactorsMask.jpg"/>
-	<Image UNID="&rsCCCrewMembers;"					bitmap="CrewMembers.jpg"					bitmask="CrewMembersMask.bmp"/>
 	
 	<!-- Screens -->
 	<Image UNID="&rsCCCabbageCorpScreen;"			bitmap="CabbageCorpScreen.jpg"	loadOnUse="true" />

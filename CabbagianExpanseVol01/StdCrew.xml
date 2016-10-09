@@ -1,4 +1,5 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 	
 <!-- ======================================================================= -->
@@ -2086,5 +2087,125 @@
 			(intAutoInstall gSource gItem)
 		</Invoke>
 	</ItemType>
+
+<!-- BASE CLASSES -->
+
+<!--
+type					value	powerUse	L10 Effect
+virtual training rom?	1x		-			-	
+repairer				2x		1-6x (2x)	armor regen= 11@L1 - 4@L10 (stacks)
+gunner					2x		2x			omnidirectional + 1.6x slower primary weapon
+weapons engineer		3x		3x			energy weapons 1.30x stronger, matter weapons 1.33x faster
+shields engineer		3x		3x			shields 1.35x stronger
+
+The powerUse for the repairer is per armor segment, the game assumes two segments when it displays powerUse.
+
+One idea I've had for crew members is that they could be able to level up in the background, while only requiring some kind of mission/item to upgrade to military status (L 5->6, available at Cabbage Corp factories), and some kind of genetic engineering mission/item to reach the alien levels (L 10->11, available at Cabbage Corp outposts).
+
+The virtual training rom could be reusable, connect to Cabbage Corp private network (basically it only works in systems with a Cabbage Corp station) and allows you to access virtual training for all types of crew members, up to L5. To get to L6-10 you need a military training rom, and L11+ training is offered at Cabbage Corp Outposts but only one random class can be trained at any given station, and each crew member can only be trained in alien skills once per outpost.
+
+Possibly create cyborg attribute to use instead of alien?
+-->
+
+	<!-- Auxiliary Crew Member Base Class -->
+
+	<ItemType UNID="&baCCAuxCrewBase;"
+			name=				"(auxiliary crew base class)"
+			virtual=			"true"
+	>
+
+		<Events>
+			<CanBeInstalled>
+				(block (auxCrewCount addCrewCount maxAuxCrew)
+					
+					(setq auxCrewCount (count (objGetItems gSource "dI +auxCrew")))
+					(setq addAuxCrew 0)
+					
+					
+					(enum (objGetItems gSource "dI +crewQuarters") gQuarters
+						(setq addAuxCrew (add addAuxCrew (itmGetStaticData gQuarters "addCrewSpace")))
+					)
+					
+					(switch
+						;	If the object is one of the vanilla playerships, use the specified data
+						
+						(eq (objGetType gSource) &scSapphirePlayer;)
+							(setq maxAuxCrew (add 1 addAuxCrew))
+						(eq (objGetType gSource) &scEI100XPlayer;)
+							(setq maxAuxCrew (add 4 addAuxCrew))
+						(eq (objGetType gSource) &scWolfenPlayer;)
+							(setq maxAuxCrew (add 0 addAuxCrew))
+							
+						(eq (shpGetClassName (objGetType gSource) 1) "Osaka-class transport")
+							(setq maxAuxCrew (add 2 addAuxCrew))
+						
+						(eq (shpGetClassName (objGetType gSource) 1) "Constellation-class freighter")
+							(setq maxAuxCrew (add 2 addAuxCrew))
+						(eq (shpGetClassName (objGetType gSource) 1) "Freyr-class gunship")
+							(setq maxAuxCrew (add 1 addAuxCrew))
+						(eq (shpGetClassName (objGetType gSource) 1) "Manticore-class heavy gunship")
+							(setq maxAuxCrew (add 1 addAuxCrew))
+
+						;	The Corporate Command player ships are not in a library so I had to use a workaround.
+						;	The first three ships still use my original method for reference purposes.
+							
+						;	If the object has a defined crewCapacity in its .xml, then use that value.
+						
+						(isInt (objGetStaticData gSource "crewCapacity"))
+							(setq maxAuxCrew (add (objGetStaticData gSource "crewCapacity") addAuxCrew))
+							
+						;	Otherwise, define the maxAuxCrew to be as follows:
+						
+						(setq maxAuxCrew (add (divide (shpGetDataField gSource "cargoSpace") 50) addAuxCrew))
+						
+						;	The default settings for ships is: cargo space divided by 50 and rounded down.
+						;	When manually specifying, it is suggested to add 1 if the ship is supposed to be a transport.
+					)
+					
+					(switch
+						(geq auxCrewCount maxAuxCrew)
+							(block Nil
+								(objSendMessage gSource Nil "Your ship is already operating at maximum occupancy. You cannot use any more personnel.")
+								"Your ship is already operating at maximum occupancy. You cannot use any more personnel."
+							)
+						True
+					)
+				)
+			</CanBeInstalled>
+		</Events>
+	</ItemType>
+
+	<!-- Auxiliary Gunner Crew Member Base Class -->
+
+	<ItemType UNID="&baCCAuxGunnerCrewBase;"
+			name=				"(auxiliary crew base class)"
+			inherit=			"&baCCAuxCrewBase;"
+			virtual=			"true"
+	>
+
+		<Events>
+			<OnInstall>
+				(block Nil
+					(enum (objGetItems gSource "pI") gPrimary
+						(block Nil
+							(objSetData gSource "CCPrimaryWeaponFireArc" (objGetItemProperty gSource gPrimary 'FireArc))
+							(objSetItemProperty gSource gPrimary 'fireArc 'omnidirectional)
+						)
+					)
+				)
+			</OnInstall>
+			<OnUninstall>
+				(block Nil
+					(enum (objGetItems gSource "pI") gPrimary
+						(objSetItemProperty gSource gPrimary 'fireArc (objGetData gSource "CCPrimaryWeaponFireArc"))
+					)
+				)
+			</OnUninstall>
+		</Events>
+	</ItemType>
+
+<!-- RESOURCES -->
+
+	<Image UNID="&rsCCCrewMembers;"		bitmap="CrewMembers.jpg"		bitmask="CrewMembersMask.bmp"/>
 
 </TranscendenceModule>
