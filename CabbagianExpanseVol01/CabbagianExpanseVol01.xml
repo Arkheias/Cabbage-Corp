@@ -978,7 +978,6 @@
 	<Module fileName="MiscItems.xml"/>
 	<Module fileName="Othala.xml"/>
 	<Module fileName="PlayerShipsBase.xml"/>
-	<Module fileName="Praclarush.xml"/>
 	<Module fileName="StdCargoHolds.xml"/>
 	<Module fileName="StdCrew.xml"/>
 	<Module fileName="StdDevices.xml"/>

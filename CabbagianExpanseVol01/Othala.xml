@@ -141,6 +141,176 @@
 		</SystemGroup>
 	</SystemType>
 
+<!-- DOCK SCREENS -->
+
+	<!-- Praclarush Station-->
+
+	<StationType UNID="&stCCPraclarushStation;"
+			name=				"Praclarush Station"
+			sovereign=			"&svIndependent;"
+			dockScreen=			"Main"
+            defaultBackgroundID="&rsCCPraclarushHangar;"
+			dockingPorts=		"1"
+			
+			cargoSpace=			"5000"
+			maxCargoSpace=		"5000"
+			
+			multiHull=			"true"
+			immutable=			"true"
+			attributes=			"cabbageCorp"
+			
+			unique=				"inSystem"
+			
+			definiteArticle=	"true"
+			>
+			
+		<ImageVariants>
+			<Image imageID="&rsCCStations;" imageX="320" imageY="0" imageWidth="4" imageHeight="4"/>
+		</ImageVariants>
+		
+		<DockScreens>
+			<Main>
+				<Panes>
+					<Default>
+						<OnPaneInit>
+							(block (desc)
+								(switch
+									(not (objGetData gSource "foundHangarControls"))
+										(scrSetDesc gScreen 
+											(cat 
+												"As your ship lands in the docking bay of the ancient outpost the outer doors suddenly activate and shut, sealing you and your ship inside while the air processors activate and start removing the ash from the air."
+												"\n\n"
+												"It is too dangerous to open the doors manually due to the hostile environment outside.  You need to find a way to control the doors remotely."
+												)
+											)
+									(scrSetDesc gScreen "As your ship lands in the docking bay of the ancient station the outer doors suddenly activate and shut, sealing you and your ship inside.")
+									)
+								(if (eq (objGetData gSource 'foundWarehouse) True)
+									(scrAddAction
+										gScreen
+										'Warehouse
+										1
+										"Warehouse"
+										"W"
+										Nil
+										(scrShowPane gScreen "Storage")
+										)
+									)
+								(if (eq (objGetData gSource 'foundControlRoom) True)
+									(scrAddAction
+										gScreen
+										'ControlRoom
+										1
+										"Control Room"
+										"C"
+										Nil
+										(scrShowPane gScreen "Hub")
+										)
+									)
+								(if (not (objGetData gSource 'foundHangarControls))
+									(scrAddAction
+										gScreen
+										'Idiot
+										1
+										"Stand around like an idiot"
+										"S"
+										'cancel
+										(scrShowPane gScreen "Default")
+										)
+									)
+								(if (eq (objGetData gSource 'foundHangarControls) True)
+									(scrAddAction
+										gScreen
+										'Undock
+										-1
+										"Undock"
+										"U"
+										'cancel
+										(scrExitScreen gScreen 'forceUndock)
+										)
+									)
+								)
+						</OnPaneInit>
+						
+						<Actions>
+							<Action name="Explore the station" default="1" key="E">
+								<ShowPane pane="Explore"/>
+							</Action>
+						</Actions>
+					</Default>
+					
+					<Explore>
+						<OnPaneInit>
+							(block Nil
+								(switch
+									(eq (objGetData gSource 'successfullyExploredStation) 1)
+										(block Nil
+											(scrSetDesc gScreen 
+												(cat 
+													"After further exploration of the hangar, you find a working console that gives you complete control of the hangar, including doors, device installation and refuelling operations."
+													"\n\n"
+													"You promptly reroute these controls to your ship so you do not have to cross the hangar while the doors are open to the hostile environment whenever you want to leave the station."
+													)
+												)
+											(objSetData gSource "successfullyExploredStation" 2)
+											(objSetData gSource "foundHangarControls" True)
+											)
+										
+									(not (objGetData gSource 'successfullyExploredStation))
+										(block Nil
+											(scrSetDesc gScreen "After checking out the hanger, you find out that the huge inner doors head to a warehouse with all of the equipment necessary to quickly transfer cargo to and from your ship.")
+											(objSetData gSource "successfullyExploredStation" 1)
+											(objSetData gSource "foundWarehouse" True)
+											)
+										
+									(scrSetDesc gScreen "You did not manage to find anything new.")
+									)
+								)
+						</OnPaneInit>
+						
+						<Actions>
+							<Action name="Done" cancel="1" key="D">
+								<ShowPane pane="Default"/>
+							</Action>
+						</Actions>
+					</Explore>
+					
+					<Storage>
+						<OnPaneInit>
+							(scrSetDesc gScreen
+								(cat "You are in a warehouse adjacent to the docking bay.  The station's loading equipment appears to still be functional and could be used to move cargo to and from your ship."
+									"\n\n"
+									"The warehouse currently has "
+									(objGetCargoSpaceLeft gSource)
+									" tons of cargo space available."
+									"\n"
+									"(Apparently you can not define cargo limits for a station.)"
+									)
+								)
+						</OnPaneInit>
+						
+						<Actions>
+							<Action name="Store items" key="S" default="1" >
+								(scrShowScreen gScreen &dsRPGJettison;)
+							</Action>
+						
+							<Action name="Retrieve items" key="R">
+								(scrShowScreen gScreen &dsRPGLoot;)
+							</Action>
+
+							<Action name="Back" cancel="1" key="B">
+								<ShowPane pane="Default"/>
+							</Action>
+						</Actions>
+					</Storage>
+					
+					<ControlRoom>
+					</ControlRoom>
+				</Panes>
+			</Main>
+		</DockScreens>
+	</StationType>
+
 <!-- RESOURCES -->
 
 	<Image UNID="&rsCCCabbagianExpanseSpace;"			bitmap="CabbagianExpanseSpace.jpg"	loadOnUse="true"/>
