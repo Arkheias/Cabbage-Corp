@@ -73,17 +73,12 @@ other			n-?
 					<Device item="&itCCStomaS4ShieldEmitterArray;"/>				;40
 				</Group>
 			</Table>
-
+			
 			<Table>
 				<Device chance="70" item="&itCCTritiumPropulsionUpgrade;"></Device>	;50
 				<Device chance="30" item="&itCCDualPlasmaDrive;"></Device>			;50
 			</Table>
-
-			<Table>
-				<Device chance="80" item="&itCCSiva80MWReactor;"></Device>
-				<Device chance="20" item="&itCCDualSiva40MWReactor;"></Device>
-			</Table>
-
+			
 			<Table>
 				<Device chance="90" item="&itCCSolarPanelArray;"></Device>
 				<Device chance="10" item="&itCCDirtySolarPanelArray;"></Device>
@@ -101,6 +96,7 @@ other			n-?
 				<Device chance="5" item="&itCCL6DamageControlCrew;"></Device>
 			</Table>
 			
+			<Device deviceID="&itCCSiva80MWReactor;"></Device>
 			<Device deviceID="&itCCMIDRADISModule;"/>								;100
 			<Device deviceID="&vtCCSavoyHowitzerRestrictionBolt;"/>
 		</Devices>
@@ -215,7 +211,7 @@ other			n-?
 			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="300" posRadius="105"/>
 			
 			<Device deviceID="&itCCNapaS150Deflector;" charges="4"/>
-			<Device deviceID="&itCCDualSiva8000MWReactor;"/>
+			<Device deviceID="&itCCSiva800MWReactor;"/>
 			<Device deviceID="&itCCStomaS120ShieldEmitterArray;"/>
 			
 			<Device deviceID="&vtDamageControlParty;"/>
@@ -243,6 +239,7 @@ other			n-?
 		
 		<Items>
 			<Item count="4d20" item="&itGoldOre;"/>
+			<Item count="2d6" item="&itCCSiva800MWReactor;"/>
 		</Items>
 
 		<AISettings

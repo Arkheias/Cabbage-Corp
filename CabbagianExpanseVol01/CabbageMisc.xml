@@ -34,6 +34,5 @@
 	<Image UNID="&rsCCArmorSivaya;"					bitmap="ArmorSivaya.jpg"					bitmask="ArmorSivayaMask.jpg"/>
 	<Image UNID="&rsCCArmorStealth;"				bitmap="ArmorStealth.jpg"					bitmask="ArmorStealthMask.jpg"/>
 	<Image UNID="&rsCCGuns;"						bitmap="Guns.jpg"							bitmask="GunsMask.jpg"/>
-	<Image UNID="&rsCCReactors;"					bitmap="Reactors.jpg"						bitmask="ReactorsMask.jpg"/>
 
 </TranscendenceModule>

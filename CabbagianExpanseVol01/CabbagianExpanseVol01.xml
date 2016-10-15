@@ -384,7 +384,7 @@
 			<!-- C800-C8FF		REACTORS -->		
 <!-- ======================================================== -->
 
-	<!-- C800-C50F STANDARD REACTORS-->
+	<!-- C800-C80F SIVA REACTORS -->
 
 	<!ENTITY baCCUnsafeReactorBase					"0xDA27C800">
 	<!ENTITY itCCSiva8MWReactor						"0xDA27C801">
@@ -397,13 +397,8 @@
 	<!ENTITY itCCSiva400MWReactor					"0xDA27C808">
 	<!ENTITY itCCSiva800MWReactor					"0xDA27C809">
 	<!ENTITY itCCSiva1200MWReactor					"0xDA27C80A">
-	<!ENTITY itCCSiva2000MWReactor					"0xDA27C80B">
-	<!ENTITY itCCSiva4000MWReactor					"0xDA27C80C">
-	<!ENTITY itCCSiva8000MWReactor					"0xDA27C80D">
-	<!ENTITY itCCSiva12000MWReactor					"0xDA27C80E">
-	<!ENTITY itCCSiva20000MWReactor					"0xDA27C80F">
 
-	<!-- C810-C51F STANDARD REACTORS (RADIOACTIVE) -->
+	<!-- C810-C81F SIVA REACTORS (UNSTABLE) -->
 	
 	<!ENTITY itCCRadSiva8MWReactor					"0xDA27C811">
 	<!ENTITY itCCRadSiva12MWReactor					"0xDA27C812">
@@ -415,84 +410,33 @@
 	<!ENTITY itCCRadSiva400MWReactor				"0xDA27C818">
 	<!ENTITY itCCRadSiva800MWReactor				"0xDA27C819">
 	<!ENTITY itCCRadSiva1200MWReactor				"0xDA27C81A">
-	<!ENTITY itCCRadSiva2000MWReactor				"0xDA27C81B">
-	<!ENTITY itCCRadSiva4000MWReactor				"0xDA27C81C">
-	<!ENTITY itCCRadSiva8000MWReactor				"0xDA27C81D">
-	<!ENTITY itCCRadSiva12000MWReactor				"0xDA27C81E">
-	<!ENTITY itCCRadSiva20000MWReactor				"0xDA27C81F">
 
-	<!-- C820-C52F DUAL REACTORS -->
+	<!-- C820-C82F AUXILIARY SIVA REACTORS -->
 	
-	<!ENTITY itCCDualSiva8MWReactor					"0xDA27C821">
-	<!ENTITY itCCDualSiva12MWReactor				"0xDA27C822">
-	<!ENTITY itCCDualSiva20MWReactor				"0xDA27C823">
-	<!ENTITY itCCDualSiva40MWReactor				"0xDA27C824">
-	<!ENTITY itCCDualSiva80MWReactor				"0xDA27C825">
-	<!ENTITY itCCDualSiva120MWReactor				"0xDA27C826">
-	<!ENTITY itCCDualSiva200MWReactor				"0xDA27C827">
-	<!ENTITY itCCDualSiva400MWReactor				"0xDA27C828">
-	<!ENTITY itCCDualSiva800MWReactor				"0xDA27C829">
-	<!ENTITY itCCDualSiva1200MWReactor				"0xDA27C82A">
-	<!ENTITY itCCDualSiva2000MWReactor				"0xDA27C82B">
-	<!ENTITY itCCDualSiva4000MWReactor				"0xDA27C82C">
-	<!ENTITY itCCDualSiva8000MWReactor				"0xDA27C82D">
-	<!ENTITY itCCDualSiva12000MWReactor				"0xDA27C82E">
-	<!ENTITY itCCDualSiva20000MWReactor				"0xDA27C82F">
+	<!ENTITY baCCAuxReactorBase						"0xDA27C820">
+	<!ENTITY itCCAuxSiva8MWReactor					"0xDA27C821">
+	<!ENTITY itCCAuxSiva12MWReactor					"0xDA27C822">
+	<!ENTITY itCCAuxSiva20MWReactor					"0xDA27C823">
+	<!ENTITY itCCAuxSiva40MWReactor					"0xDA27C824">
+	<!ENTITY itCCAuxSiva80MWReactor					"0xDA27C825">
+	<!ENTITY itCCAuxSiva120MWReactor				"0xDA27C826">
+	<!ENTITY itCCAuxSiva200MWReactor				"0xDA27C827">
+	<!ENTITY itCCAuxSiva400MWReactor				"0xDA27C828">
+	<!ENTITY itCCAuxSiva800MWReactor				"0xDA27C829">
+	<!ENTITY itCCAuxSiva1200MWReactor				"0xDA27C82A">
 
-	<!-- C830-C53F DUAL REACTORS (RADIOACTIVE) -->
+	<!-- C830-C83F REACTOR EXPLOSION EFFECTS -->
 	
-	<!ENTITY itCCRadDualSiva8MWReactor				"0xDA27C831">
-	<!ENTITY itCCRadDualSiva12MWReactor				"0xDA27C832">
-	<!ENTITY itCCRadDualSiva20MWReactor				"0xDA27C833">
-	<!ENTITY itCCRadDualSiva40MWReactor				"0xDA27C834">
-	<!ENTITY itCCRadDualSiva80MWReactor				"0xDA27C835">
-	<!ENTITY itCCRadDualSiva120MWReactor			"0xDA27C836">
-	<!ENTITY itCCRadDualSiva200MWReactor			"0xDA27C837">
-	<!ENTITY itCCRadDualSiva400MWReactor			"0xDA27C838">
-	<!ENTITY itCCRadDualSiva800MWReactor			"0xDA27C839">
-	<!ENTITY itCCRadDualSiva1200MWReactor			"0xDA27C83A">
-	<!ENTITY itCCRadDualSiva2000MWReactor			"0xDA27C83B">
-	<!ENTITY itCCRadDualSiva4000MWReactor			"0xDA27C83C">
-	<!ENTITY itCCRadDualSiva8000MWReactor			"0xDA27C83D">
-	<!ENTITY itCCRadDualSiva12000MWReactor			"0xDA27C83E">
-	<!ENTITY itCCRadDualSiva20000MWReactor			"0xDA27C83F">
-
-	<!-- C840-C54F AUXILIARY REACTORS -->
-	
-	<!ENTITY baCCAuxReactorBase						"0xDA27C840">
-	<!ENTITY itCCAuxSiva8MWReactor					"0xDA27C841">
-	<!ENTITY itCCAuxSiva12MWReactor					"0xDA27C842">
-	<!ENTITY itCCAuxSiva20MWReactor					"0xDA27C843">
-	<!ENTITY itCCAuxSiva40MWReactor					"0xDA27C844">
-	<!ENTITY itCCAuxSiva80MWReactor					"0xDA27C845">
-	<!ENTITY itCCAuxSiva120MWReactor				"0xDA27C846">
-	<!ENTITY itCCAuxSiva200MWReactor				"0xDA27C847">
-	<!ENTITY itCCAuxSiva400MWReactor				"0xDA27C848">
-	<!ENTITY itCCAuxSiva800MWReactor				"0xDA27C849">
-	<!ENTITY itCCAuxSiva1200MWReactor				"0xDA27C84A">
-	<!ENTITY itCCAuxSiva2000MWReactor				"0xDA27C84B">
-	<!ENTITY itCCAuxSiva4000MWReactor				"0xDA27C84C">
-	<!ENTITY itCCAuxSiva8000MWReactor				"0xDA27C84D">
-	<!ENTITY itCCAuxSiva12000MWReactor				"0xDA27C84E">
-	<!ENTITY itCCAuxSiva20000MWReactor				"0xDA27C84F">
-
-	<!-- C850-C55F REACTOR EXPLOSION EFFECTS -->
-	
-	<!ENTITY vtCCReactorExplosion1					"0xDA27C851">
-	<!ENTITY vtCCReactorExplosion2					"0xDA27C852">
-	<!ENTITY vtCCReactorExplosion3					"0xDA27C853">
-	<!ENTITY vtCCReactorExplosion4					"0xDA27C854">
-	<!ENTITY vtCCReactorExplosion5					"0xDA27C855">
-	<!ENTITY vtCCReactorExplosion6					"0xDA27C856">
-	<!ENTITY vtCCReactorExplosion7					"0xDA27C857">
-	<!ENTITY vtCCReactorExplosion8					"0xDA27C858">
-	<!ENTITY vtCCReactorExplosion9					"0xDA27C859">
-	<!ENTITY vtCCReactorExplosion10					"0xDA27C85A">
-	<!ENTITY vtCCReactorExplosion11					"0xDA27C85B">
-	<!ENTITY vtCCReactorExplosion12					"0xDA27C85C">
-	<!ENTITY vtCCReactorExplosion13					"0xDA27C85D">
-	<!ENTITY vtCCReactorExplosion14					"0xDA27C85E">
-	<!ENTITY vtCCReactorExplosion15					"0xDA27C85F">
+	<!ENTITY vtCCReactorExplosion1					"0xDA27C831">
+	<!ENTITY vtCCReactorExplosion2					"0xDA27C832">
+	<!ENTITY vtCCReactorExplosion3					"0xDA27C833">
+	<!ENTITY vtCCReactorExplosion4					"0xDA27C834">
+	<!ENTITY vtCCReactorExplosion5					"0xDA27C835">
+	<!ENTITY vtCCReactorExplosion6					"0xDA27C836">
+	<!ENTITY vtCCReactorExplosion7					"0xDA27C837">
+	<!ENTITY vtCCReactorExplosion8					"0xDA27C838">
+	<!ENTITY vtCCReactorExplosion9					"0xDA27C839">
+	<!ENTITY vtCCReactorExplosion10					"0xDA27C83A">
 
 <!-- ======================================================== -->
 			<!-- C900-C9FF		REPAIRERS -->		
@@ -896,7 +840,6 @@
 	<Module fileName="CabbageCorpStations.xml"/>
 	<Module fileName="CabbageMisc.xml"/>
 	<Module fileName="Code.xml"/>
-	<Module fileName="Devices_AuxReactors.xml"/>
 	<Module fileName="HUD.xml"/>
 	<Module fileName="Library_BaseClasses.xml"/>
 	<Module fileName="License.xml"/>
