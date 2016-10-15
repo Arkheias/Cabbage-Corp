@@ -96,8 +96,8 @@ other			n-?
 				<Device chance="5" item="&itCCL6DamageControlCrew;"></Device>
 			</Table>
 			
-			<Device deviceID="&itCCSiva80MWReactor;"></Device>
-			<Device deviceID="&itCCMIDRADISModule;"/>								;100
+			<Device deviceID="&itCCSiva80MWReactor;"/>
+			<Device deviceID="&itCCMIDRADISModule;"/>
 			<Device deviceID="&vtCCSavoyHowitzerRestrictionBolt;"/>
 		</Devices>
 
