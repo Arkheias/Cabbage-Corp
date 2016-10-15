@@ -1,371 +1,60 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!--
-;showreference appears to do nothing for most weapons, including it anyway because vanilla game does that
-;45		1.3	shots/second	fast
-;20		3	shots/second	fast
-;15		3.8	shots/second	fast	
-;12		5	shots/second	fast	6	shots/second
-;10		6	shots/second	fast	
-;9		6	shots/second	fast	
-;8		7.5	shots/second	fast	
-;7		7.5	shots/second	fast	10	shots/second
-;6		10	shots/second	fast	15	shots/second
-;5		10	shots/second	fast	15	shots/second
-;4		15	shots/second	fast	15	shots/second
-;3		15	shots/second	fast	15	shots/second
-;2		30	shots/second	fast	30	shots/second
-;1		30	shots/second	fast	30	shots/second
-;0			shots/second	fast		shots/second
-;-1			shots/second	fast		shots/second
--->
+<!-- Mining Lance Devices ======================================================
+	
+	NOTES
+	
+	EXTRA DATA
+	
+	CCItemSwap: UNID of target device that this one can be freely modified into.
+	
+	======================================================================== -->
 
-<!-- ======================================================================= -->
-							<!-- Standard Weapons -->							
-<!-- ======================================================================= -->
-
-	<!-- B1 Mining Lance -->
-
-	<ItemType UNID="&itCCB1MiningLance;"
-			name=				"B1 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"1"
-			frequency=			"uncommon"
-
-			value=				"250"
-			mass=				"2000"
-			 
-			description=		"This mining lance uses an array of capacitors to achieve a high fire-rate. It is designed for use in small-scale asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"laser:1; mining1"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"10"
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"1"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{modification:Dual	product:&itCCDualB1MiningLance;		component:&itCCB1MiningLance;	count:2		extraCost:0}
-					{modification:Omni	product:&itCCOmniB1MiningLance;		component:&itCCB1MiningLance;	count:1		extraCost:0}
-					{modification:Adv	product:&itCCAdvB1MiningLance;		component:&itCCB1MiningLance;	count:1		extraCost:0}
-					{modification:Aux	product:&itCCAuxB1MiningLance;		component:&itCCB1MiningLance;	count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- B2 Mining Lance -->
-
-	<ItemType UNID="&itCCB2MiningLance;"
-			name=				"B2 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"2"
-			frequency=			"uncommon"
-
-			value=				"600"
-			mass=				"2500"
-			 
-			description=		"This mining lance uses an array of capacitors to achieve a high fire-rate. It is designed for use in standard asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"laser:1d2; mining2"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"20"
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"2"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualB2MiningLance;		count:2		extraCost:0}
-					{product:&itCCOmniB2MiningLance;		count:1		extraCost:0}
-					{product:&itCCAdvB2MiningLance;			count:1		extraCost:0}
-					{product:&itCCAuxB2MiningLance;			count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- B5 Mining Lance -->
-
-	<ItemType UNID="&itCCB5MiningLance;"
-			name=				"B5 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"3"
-			frequency=			"uncommon"
-
-			value=				"1400"
-			mass=				"3000"
-			 
-			description=		"This mining lance uses an array of enhanced capacitors to maintain a continuous laser. It is designed for use in large-scale asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"laser:1d4; mining3"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"50"
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"1"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualB5MiningLance;		count:2		extraCost:0}
-					{product:&itCCOmniB5MiningLance;		count:1		extraCost:0}
-					{product:&itCCAuxB5MiningLance;			count:1		extraCost:0}
-					{product:&itCCAdvB5MiningLance;			count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- B9 Mining Lance -->
-
-	<ItemType UNID="&itCCB9MiningLance;"
-			name=				"B9 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"4"
-			frequency=			"uncommon"
-
-			value=				"3000"
-			mass=				"3500"
-			 
-			description=		"This mining lance uses an array of advanced capacitors to maintain a continuous high-energy particle beam. It is designed for use in small-scale corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"particle:1d4; mining3"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"90"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"2"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualB9MiningLance;		count:2		extraCost:0}
-					{product:&itCCOmniB9MiningLance;		count:1		extraCost:0}
-					{product:&itCCAuxB9MiningLance;			count:1		extraCost:0}
-					{product:&itCCAdvB9MiningLance;			count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- B20 Mining Lance -->
-
-	<ItemType UNID="&itCCB20MiningLance;"
-			name=				"B20 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"5"
-			frequency=			"uncommon"
-
-			value=				"7000"
-			mass=				"4000"
-			 
-			description=		"This mining lance uses an array of advanced capacitors to maintain a continuous high-energy particle beam. It is designed for use in standard corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"particle:2d3; mining4"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"200"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"3"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualB20MiningLance;		count:2		extraCost:0}
-					{product:&itCCOmniB20MiningLance;		count:1		extraCost:0}
-					{product:&itCCAuxB20MiningLance;		count:1		extraCost:0}
-					{product:&itCCAdvB20MiningLance;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- B32 Mining Lance -->
-
-	<ItemType UNID="&itCCB32MiningLance;"
-			name=				"B32 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"6"
-			frequency=			"uncommon"
-
-			value=				"15000"
-			mass=				"4500"
-			 
-			description=		"This mining lance uses an array of advanced capacitors to maintain a continuous high-energy particle beam. It is designed for use in large-scale corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"particle:2d4; mining5; WMD1"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"320"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualB32MiningLance;		count:2		extraCost:0}
-					{product:&itCCOmniB32MiningLance;		count:1		extraCost:0}
-					{product:&itCCAuxB32MiningLance;		count:1		extraCost:0}
-					{product:&itCCAdvB32MiningLance;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
+<!-- LEVEL VII -->
 
 	<!-- B60 Mining Lance -->
 
 	<ItemType UNID="&itCCB60MiningLance;"
 			name=				"B60 mining lance"
 			attributes=			"cabbageCorp, energyWeapon, majorItem, military, miningEquipment"
-			 
+			
 			level=				"7"
 			frequency=			"uncommon"
-
+			
 			value=				"45000"
 			mass=				"4000"
-			 
+			
 			description=		"This mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in small-scale military asteroid mining operations."
-	>
-
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"beam"
-
-				damage=				"ion:1d6+2; mining5; WMD1"
+				
+				damage=				"ion:1d6+2; mining:5; WMD:2"
 				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"600"
-
+				
 				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonLight;"
-		>
+				>
 			<Effect>
 				<Beam
 					beamtype=		"particle"
 					intensity=		"3"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 				<Beam
 					beamtype=		"lightning"
 					intensity=		"1"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 			</Effect>
 		</Weapon>
 		
@@ -376,52 +65,54 @@
 					{product:&itCCOmniB60MiningLance;		count:1		extraCost:0}
 					{product:&itCCAuxB60MiningLance;		count:1		extraCost:0}
 					{product:&itCCAdvB60MiningLance;		count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
 		</StaticData>
 	</ItemType>
+
+<!-- LEVEL VIII -->
 
 	<!-- B110 Mining Lance -->
 
 	<ItemType UNID="&itCCB110MiningLance;"
 			name=				"B110 mining lance"
 			attributes=			"cabbageCorp, energyWeapon, majorItem, military, miningEquipment"
-			 
+			
 			level=				"8"
 			frequency=			"uncommon"
-
+			
 			value=				"100000"
 			mass=				"4500"
-			 
+			
 			description=		"This mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in standard military asteroid mining operations."
-	>
-
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"beam"
-
-				damage=				"ion:2d4+3; mining6; WMD2"
+				
+				damage=				"ion:2d4+3; mining:6; WMD:2"
 				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"1100"
-
+				
 				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonMedium;"
-		>
+				>
 			<Effect>
 				<Beam
 					beamtype=		"particle"
 					intensity=		"4"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 				<Beam
 					beamtype=		"lightning"
 					intensity=		"2"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 			</Effect>
 		</Weapon>
 		
@@ -432,477 +123,9 @@
 					{product:&itCCOmniB110MiningLance;		count:1		extraCost:0}
 					{product:&itCCAuxB110MiningLance;		count:1		extraCost:0}
 					{product:&itCCAdvB110MiningLance;		count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
 		</StaticData>
-	</ItemType>
-
-	<!-- B200 Mining Lance -->
-
-	<ItemType UNID="&itCCB200MiningLance;"
-			name=				"B200 mining lance"
-			attributes=			"cabbageCorp, energyWeapon, majorItem, military, miningEquipment"
-			 
-			level=				"9"
-			frequency=			"uncommon"
-
-			value=				"200000"
-			mass=				"5000"
-			 
-			description=		"This mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in large-scale military asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"ion:4d4+1; mining7; WMD2"
-				fireRate=			"1"
-				lifetime=			"30"
-				powerUse=			"2000"
-
-				hitEffect=			"&efIonHitDefault;"
-				sound=				"&snCCLanceFireIonHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"5"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-				<Beam
-					beamtype=		"lightning"
-					intensity=		"3"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualB200MiningLance;		count:2		extraCost:0}
-					{product:&itCCOmniB200MiningLance;		count:1		extraCost:0}
-					{product:&itCCAuxB200MiningLance;		count:1		extraCost:0}
-					{product:&itCCAdvB200MiningLance;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- B450 Mining Lance -->
-
-	<ItemType UNID="&itCCB450MiningLance;"
-			name=				"B450 mining lance"
-			attributes=			"alien, cabbageCorp, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"10"
-			frequency=			"uncommon"
-
-			value=				"400000"
-			mass=				"5000"
-			 
-			description=		"This alien mining lance appears to use an array of high-powered capacitors to maintain a continuous positron beam. It seems designed for use in large-scale asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"positron:5d4+1; mining7; WMD3"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"4500"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"2"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualB450MiningLance;		count:2		extraCost:0}
-					{product:&itCCOmniB450MiningLance;		count:1		extraCost:0}
-					{product:&itCCAuxB450MiningLance;		count:1		extraCost:0}
-					{product:&itCCAdvB450MiningLance;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- B800 Mining Lance -->
-
-	<ItemType UNID="&itCCB800MiningLance;"
-			name=				"B800 mining lance"
-			attributes=			"alien, cabbageCorp, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"11"
-			frequency=			"uncommon"
-
-			value=				"750000"
-			mass=				"5500"
-			 
-			description=		"This alien mining lance appears to use an array of high-powered capacitors to maintain a continuous positron beam. It seems designed for use in small-scale orbital planet mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"positron:5d6+2; mining7; WMD4"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"8000"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"5"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"3"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualB800MiningLance;		count:2		extraCost:0}
-					{product:&itCCOmniB800MiningLance;		count:1		extraCost:0}
-					{product:&itCCAuxB800MiningLance;		count:1		extraCost:0}
-					{product:&itCCAdvB800MiningLance;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- B1500 Mining Lance -->
-
-	<ItemType UNID="&itCCB1500MiningLance;"
-			name=				"B1500 mining lance"
-			attributes=			"alien, cabbageCorp, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"12"
-			frequency=			"uncommon"
-
-			value=				"1400000"
-			mass=				"6000"
-			 
-			description=		"This alien mining lance appears to use an array of high-powered capacitors to maintain a continuous positron beam. It seems designed for use in large-scale orbital planet mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"positron:8d6+1; mining7; WMD5"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"15000"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"6"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"4"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualB1500MiningLance;		count:2		extraCost:0}
-					{product:&itCCOmniB1500MiningLance;		count:1		extraCost:0}
-					{product:&itCCAuxB1500MiningLance;		count:1		extraCost:0}
-					{product:&itCCAdvB1500MiningLance;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-<!-- ======================================================================= -->
-							<!-- Dual Mining Lances -->							
-<!-- ======================================================================= -->
-
-	<!-- Dual B1 Mining Lance -->
-
-	<ItemType UNID="&itCCDualB1MiningLance;"
-			name=				"dual B1 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"2"
-			frequency=			"rare"
-
-			value=				"550"
-			mass=				"5000"
-			 
-			description=		"This dual mining lance uses an array of capacitors to achieve high fire-rates. It is designed for use in small-scale asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				configuration=		"dual"
-				damage=				"laser:1; mining7"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"20"
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"1"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual B2 Mining Lance -->
-
-	<ItemType UNID="&itCCDualB2MiningLance;"
-			name=				"dual B2 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"3"
-			frequency=			"rare"
-
-			value=				"1300"
-			mass=				"6000"
-			 
-			description=		"This dual mining lance uses an array of capacitors to achieve high fire-rates. It is designed for use in standard asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				configuration=		"dual"
-				damage=				"laser:1d2; mining2"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"40"
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"2"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual B5 Mining Lance -->
-
-	<ItemType UNID="&itCCDualB5MiningLance;"
-			name=				"dual B5 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"4"
-			frequency=			"rare"
-
-			value=				"3000"
-			mass=				"7000"
-			 
-			description=		"This dual mining lance uses an array of enhanced capacitors to maintain continuous lasers. It is designed for use in large-scale asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				configuration=		"dual"
-				damage=				"laser:1d4; mining3"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"100"
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"1"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual B9 Mining Lance -->
-
-	<ItemType UNID="&itCCDualB9MiningLance;"
-			name=				"dual B9 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"5"
-			frequency=			"rare"
-
-			value=				"6400"
-			mass=				"8000"
-			 
-			description=		"This dual mining lance uses an array of advanced capacitors to maintain continuous high-energy particle beams. It is designed for use in small-scale corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				configuration=		"dual"
-				damage=				"particle:1d4; mining3"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"180"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"2"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual B20 Mining Lance -->
-
-	<ItemType UNID="&itCCDualB20MiningLance;"
-			name=				"dual B20 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"6"
-			frequency=			"rare"
-
-			value=				"15000"
-			mass=				"9000"
-			 
-			description=		"This dual mining lance uses an array of advanced capacitors to maintain continuous high-energy particle beams. It is designed for use in standard corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				configuration=		"dual"
-				damage=				"particle:2d3; mining4"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"400"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"3"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual B32 Mining Lance -->
-
-	<ItemType UNID="&itCCDualB32MiningLance;"
-			name=				"dual B32 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"7"
-			frequency=			"rare"
-
-			value=				"32000"
-			mass=				"10000"
-			 
-			description=		"This dual mining lance uses an array of advanced capacitors to maintain continuous high-energy particle beams. It is designed for use in large-scale corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				configuration=		"dual"
-				damage=				"particle:2d4; mining5; WMD1"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"640"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
 	</ItemType>
 
 	<!-- Dual B60 Mining Lance -->
@@ -910,517 +133,43 @@
 	<ItemType UNID="&itCCDualB60MiningLance;"
 			name=				"dual B60 mining lance"
 			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
-			 
+			
 			level=				"8"
 			frequency=			"rare"
-
+			
 			value=				"96000"
 			mass=				"9000"
-			 
+			
 			description=		"This dual mining lance uses an array of experimental capacitors to maintain continuous ion beams. It is designed for use in small-scale military asteroid mining operations."
-	>
-
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"beam"
-
+				
 				configuration=		"dual"
-				damage=				"ion:1d6+2; mining5; WMD1"
+				damage=				"ion:1d6+2; mining:5; WMD:2"
 				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"1200"
-
+				
 				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonLight;"
-		>
+				>
 			<Effect>
 				<Beam
 					beamtype=		"particle"
 					intensity=		"3"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 				<Beam
 					beamtype=		"lightning"
 					intensity=		"1"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual B110 Mining Lance -->
-
-	<ItemType UNID="&itCCDualB110MiningLance;"
-			name=				"dual B110 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
-			 
-			level=				"9"
-			frequency=			"rare"
-
-			value=				"210000"
-			mass=				"10000"
-			 
-			description=		"This dual mining lance uses an array of experimental capacitors to maintain continuous ion beams. It is designed for use in standard military asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				configuration=		"dual"
-				damage=				"ion:2d4+3; mining6; WMD2"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"2200"
-
-				hitEffect=			"&efIonHitDefault;"
-				sound=				"&snCCLanceFireIonMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-				<Beam
-					beamtype=		"lightning"
-					intensity=		"2"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual B200 Mining Lance -->
-
-	<ItemType UNID="&itCCDualB200MiningLance;"
-			name=				"dual B200 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
-			 
-			level=				"10"
-			frequency=			"rare"
-
-			value=				"430000"
-			mass=				"11000"
-			 
-			description=		"This dual mining lance uses an array of experimental capacitors to maintain continuous ion beams. It is designed for use in large-scale military asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				configuration=		"dual"
-				damage=				"ion:4d4+1; mining7; WMD2"
-				fireRate=			"1"
-				lifetime=			"30"
-				powerUse=			"4000"
-
-				hitEffect=			"&efIonHitDefault;"
-				sound=				"&snCCLanceFireIonHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"5"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-				<Beam
-					beamtype=		"lightning"
-					intensity=		"3"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual B450 Mining Lance -->
-
-	<ItemType UNID="&itCCDualB450MiningLance;"
-			name=				"dual B450 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"11"
-			frequency=			"rare"
-
-			value=				"860000"
-			mass=				"11000"
-			 
-			description=		"This alien dual mining lance appears to use an array of high-powered capacitors to maintain continuous positron beams. It seems designed for use in large-scale asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				configuration=		"dual"
-				damage=				"positron:5d4+1; mining7; WMD3"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"9000"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"2"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual B800 Mining Lance -->
-
-	<ItemType UNID="&itCCDualB800MiningLance;"
-			name=				"dual B800 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"12"
-			frequency=			"rare"
-
-			value=				"160000"
-			mass=				"12000"
-			 
-			description=		"This alien dual mining lance appears to use an array of high-powered capacitors to maintain continuous positron beams. It seems designed for use in small-scale orbital planet mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				configuration=		"dual"
-				damage=				"positron:5d6+2; mining7; WMD4"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"16000"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"5"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"3"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual B1500 Mining Lance -->
-
-	<ItemType UNID="&itCCDualB1500MiningLance;"
-			name=				"dual B1500 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"13"
-			frequency=			"rare"
-
-			value=				"300000"
-			mass=				"13000"
-			 
-			description=		"This alien dual mining lance appears to use an array of high-powered capacitors to maintain continuous positron beams. It seems designed for use in large-scale orbital planet mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				configuration=		"dual"
-				damage=				"positron:8d6+1; mining7; WMD5"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"30000"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"6"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"4"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-<!-- ======================================================================= -->
-							<!-- Omni Mining Lances -->							
-<!-- ======================================================================= -->
-
-	<!-- Omni B1 Mining Lance -->
-
-	<ItemType UNID="&itCCOmniB1MiningLance;"
-			name=				"omnidirectional B1 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"2"
-			frequency=			"veryrare"
-
-			value=				"1100"
-			mass=				"3000"
-			 
-			description=		"This omnidirectional mining lance uses an array of capacitors to achieve a high fire-rate. It is designed for use in small-scale asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				omnidirectional=	"true"
-				damage=				"laser:1; mining7"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"15"
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"1"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni B2 Mining Lance -->
-
-	<ItemType UNID="&itCCOmniB2MiningLance;"
-			name=				"omnidirectional B2 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"3"
-			frequency=			"veryrare"
-
-			value=				"2600"
-			mass=				"3500"
-			 
-			description=		"This omnidirectional mining lance uses an array of capacitors to achieve a high fire-rate. It is designed for use in standard asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				omnidirectional=	"true"
-				damage=				"laser:1d2; mining2"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"30"
-				
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"2"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni B5 Mining Lance -->
-
-	<ItemType UNID="&itCCOmniB5MiningLance;"
-			name=				"omnidirectional B5 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"4"
-			frequency=			"veryrare"
-
-			value=				"6000"
-			mass=				"4000"
-			 
-			description=		"This omnidirectional mining lance uses an array of enhanced capacitors to maintain a continuous laser. It is designed for use in large-scale asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				omnidirectional=	"true"
-				damage=				"laser:1d4; mining3"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"70"
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"1"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni B9 Mining Lance -->
-
-	<ItemType UNID="&itCCOmniB9MiningLance;"
-			name=				"omnidirectional B9 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"5"
-			frequency=			"veryrare"
-
-			value=				"13000"
-			mass=				"4500"
-			 
-			description=		"This omnidirectional mining lance uses an array of advanced capacitors to maintain a continuous high-energy particle beam. It is designed for use in small-scale corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				omnidirectional=	"true"
-				damage=				"particle:1d4; mining3"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"120"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"2"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni B20 Mining Lance -->
-
-	<ItemType UNID="&itCCOmniB20MiningLance;"
-			name=				"omnidirectional B20 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"6"
-			frequency=			"veryrare"
-
-			value=				"30000"
-			mass=				"5000"
-			 
-			description=		"This omnidirectional mining lance uses an array of advanced capacitors to maintain a continuous high-energy particle beam. It is designed for use in standard corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				omnidirectional=	"true"
-				damage=				"particle:2d3; mining4"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"270"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"3"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni B32 Mining Lance -->
-
-	<ItemType UNID="&itCCOmniB32MiningLance;"
-			name=				"omnidirectional B32 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"7"
-			frequency=			"veryrare"
-
-			value=				"64000"
-			mass=				"5500"
-			 
-			description=		"This omnidirectional mining lance uses an array of advanced capacitors to maintain a continuous high-energy particle beam. It is designed for use in large-scale corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				omnidirectional=	"true"
-				damage=				"particle:2d4; mining5; WMD1"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"430"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
+					/>
 			</Effect>
 		</Weapon>
 	</ItemType>
@@ -1430,555 +179,45 @@
 	<ItemType UNID="&itCCOmniB60MiningLance;"
 			name=				"omnidirectional B60 mining lance"
 			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
-			 
+			
 			level=				"8"
 			frequency=			"veryrare"
-
+			
 			value=				"190000"
 			mass=				"5000"
-			 
+			
 			description=		"This omnidirectional mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in small-scale military asteroid mining operations."
-	>
-
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"beam"
-
+				
 				omnidirectional=	"true"
-				damage=				"ion:1d6+2; mining5; WMD1"
+				damage=				"ion:1d6+2; mining:5; WMD:2"
 				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"800"
-
+				
 				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonLight;"
-		>
+				>
 			<Effect>
 				<Beam
 					beamtype=		"particle"
 					intensity=		"3"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 				<Beam
 					beamtype=		"lightning"
 					intensity=		"1"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 			</Effect>
 		</Weapon>
-	</ItemType>
-
-	<!-- Omni B110 Mining Lance -->
-
-	<ItemType UNID="&itCCOmniB110MiningLance;"
-			name=				"omnidirectional B110 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
-			 
-			level=				"9"
-			frequency=			"veryrare"
-
-			value=				"430000"
-			mass=				"5500"
-			 
-			description=		"This omnidirectional mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in standard military asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				omnidirectional=	"true"
-				damage=				"ion:2d4+3; mining6; WMD2"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"1500"
-
-				hitEffect=			"&efIonHitDefault;"
-				sound=				"&snCCLanceFireIonMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-				<Beam
-					beamtype=		"lightning"
-					intensity=		"2"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni B200 Mining Lance -->
-
-	<ItemType UNID="&itCCOmniB200MiningLance;"
-			name=				"omnidirectional B200 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
-			 
-			level=				"10"
-			frequency=			"veryrare"
-
-			value=				"860000"
-			mass=				"6000"
-			 
-			description=		"This omnidirectional mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in large-scale military asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				omnidirectional=	"true"
-				damage=				"ion:4d4+1; mining7; WMD2"
-				fireRate=			"1"
-				lifetime=			"30"
-				powerUse=			"2700"
-
-				hitEffect=			"&efIonHitDefault;"
-				sound=				"&snCCLanceFireIonHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"5"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-				<Beam
-					beamtype=		"lightning"
-					intensity=		"3"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni B450 Mining Lance -->
-
-	<ItemType UNID="&itCCOmniB450MiningLance;"
-			name=				"omnidirectional B450 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"11"
-			frequency=			"veryrare"
-
-			value=				"1700000"
-			mass=				"6000"
-			 
-			description=		"This alien omnidirectional mining lance appears to use an array of high-powered capacitors to maintain a continuous positron beam. It seems designed for use in large-scale asteroid mining operations and is mounted on an automated turret."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				omnidirectional=	"true"
-				damage=				"positron:5d4+1; mining7; WMD3"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"6000"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"2"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni B800 Mining Lance -->
-
-	<ItemType UNID="&itCCOmniB800MiningLance;"
-			name=				"omnidirectional B800 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"12"
-			frequency=			"veryrare"
-
-			value=				"3200000"
-			mass=				"6500"
-			 
-			description=		"This alien omnidirectional mining lance appears to use an array of high-powered capacitors to maintain a continuous positron beam. It seems designed for use in small-scale orbital planet mining operations and is mounted on an automated turret."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				omnidirectional=	"true"
-				damage=				"positron:5d6+2; mining7; WMD4"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"11000"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"5"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"3"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni B1500 Mining Lance -->
-
-	<ItemType UNID="&itCCOmniB1500MiningLance;"
-			name=				"omnidirectional B1500 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			 
-			level=				"13"
-			frequency=			"veryrare"
-
-			value=				"6000000"
-			mass=				"7000"
-			 
-			description=		"This alien mining lance appears to use an array of high-powered capacitors to maintain a continuous positron beam. It seems designed for use in large-scale orbital planet mining operations and is mounted on an automated turret."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				omnidirectional=	"true"
-				damage=				"positron:8d6+1; mining7; WMD5"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"20000"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"6"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"4"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-<!-- ======================================================================= -->
-						<!-- Scanning Mining Lances -->							
-<!-- ======================================================================= -->
-
-	<!-- Scanning B1 Mining Lance -->
-
-	<ItemType UNID="&itCCAdvB1MiningLance;"
-			name=				"scanning B1 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
-			 
-			level=				"2"
-			frequency=			"veryrare"
-
-			value=				"350"
-			mass=				"4000"
-			 
-			description=		"This mining lance uses an array of capacitors to achieve a high fire-rate. It is designed for use in small-scale asteroid mining operations. This model includes an asteroid scanner that can detect ore within 3 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"laser:1; mining7"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"20"
-				idlePowerUse=		"10"
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"1"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 3)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning B2 Mining Lance -->
-
-	<ItemType UNID="&itCCAdvB2MiningLance;"
-			name=				"scanning B2 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
-			 
-			level=				"3"
-			frequency=			"veryrare"
-
-			value=				"850"
-			mass=				"4500"
-			 
-			description=		"This mining lance uses an array of capacitors to achieve a high fire-rate. It is designed for use in standard asteroid mining operations. This model includes an asteroid scanner that can detect ore within 4 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"laser:1d2; mining2"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"40"
-				idlePowerUse=		"15"
-				
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"2"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 4)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning B5 Mining Lance -->
-
-	<ItemType UNID="&itCCAdvB5MiningLance;"
-			name=				"scanning B5 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
-			 
-			level=				"4"
-			frequency=			"veryrare"
-
-			value=				"2000"
-			mass=				"5000"
-			 
-			description=		"This mining lance uses an array of enhanced capacitors to maintain a continuous laser. It is designed for use in large-scale asteroid mining operations. This model includes an asteroid scanner that can detect ore within 5 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"laser:1d4; mining3"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"90"
-				idlePowerUse=		"30"
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"1"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 5)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning B9 Mining Lance -->
-
-	<ItemType UNID="&itCCAdvB9MiningLance;"
-			name=				"scanning B9 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
-			 
-			level=				"5"
-			frequency=			"veryrare"
-
-			value=				"4300"
-			mass=				"5500"
-			 
-			description=		"This mining lance uses an array of advanced capacitors to maintain a continuous high-energy particle beam. It is designed for use in small-scale corporate asteroid mining operations. This model includes an asteroid scanner that can detect ore within 6 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"particle:1d4; mining3"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"150"
-				idlePowerUse=		"50"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"2"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 6)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning B20 Mining Lance -->
-
-	<ItemType UNID="&itCCAdvB20MiningLance;"
-			name=				"scanning B20 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
-			 
-			level=				"6"
-			frequency=			"veryrare"
-
-			value=				"10000"
-			mass=				"6000"
-			 
-			description=		"This mining lance uses an array of advanced capacitors to maintain a continuous high-energy particle beam. It is designed for use in standard corporate asteroid mining operations. This model includes an asteroid scanner that can detect ore within 8 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"particle:2d3; mining4"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"300"
-				idlePowerUse=		"100"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"3"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 8)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning B32 Mining Lance -->
-
-	<ItemType UNID="&itCCAdvB32MiningLance;"
-			name=				"scanning B32 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
-			 
-			level=				"7"
-			frequency=			"veryrare"
-
-			value=				"21000"
-			mass=				"6500"
-			 
-			description=		"This mining lance uses an array of advanced capacitors to maintain a continuous high-energy particle beam. It is designed for use in large-scale corporate asteroid mining operations. This model includes an asteroid scanner that can detect ore within 10 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"particle:2d4; mining5; WMD1"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"480"
-				idlePowerUse=		"160"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 10)
-			</OnUpdate>
-		</Events>
 	</ItemType>
 
 	<!-- Scanning B60 Mining Lance -->
@@ -1986,43 +225,43 @@
 	<ItemType UNID="&itCCAdvB60MiningLance;"
 			name=				"scanning B60 mining lance"
 			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment, specialty"
-			 
+			
 			level=				"8"
 			frequency=			"veryrare"
-
+			
 			value=				"64000"
 			mass=				"6000"
-			 
+			
 			description=		"This mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in small-scale military asteroid mining operations. This model includes an asteroid scanner that can detect ore within 13 light-seconds."
-	>
-
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"beam"
-
-				damage=				"ion:1d6+2; mining5; WMD1"
+				
+				damage=				"ion:1d6+2; mining:5; WMD:2"
 				fireRate=			"4"
 				lifetime=			"30"
 				powerUse=			"900"
 				idlePowerUse=		"300"
-
+				
 				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonLight;"
-		>
+				>
 			<Effect>
 				<Beam
 					beamtype=		"particle"
 					intensity=		"3"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 				<Beam
 					beamtype=		"lightning"
 					intensity=		"1"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 			</Effect>
 		</Weapon>
 		
@@ -2033,48 +272,248 @@
 		</Events>
 	</ItemType>
 
-	<!-- Scanning B110 Mining Lance -->
+	<!-- Side-Mounted B60 Mining Lance -->
 
-	<ItemType UNID="&itCCAdvB110MiningLance;"
-			name=				"scanning B110 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment, specialty"
-			 
-			level=				"9"
+	<ItemType UNID="&itCCAuxB60MiningLance;"
+			name=				"side-mounted B60 mining lance"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"8"
 			frequency=			"veryrare"
-
-			value=				"140000"
-			mass=				"6500"
-			 
-			description=		"This mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in standard military asteroid mining operations. This model includes an asteroid scanner that can detect ore within 16 light-seconds."
-	>
-
+			
+			value=				"84000"
+			mass=				"5000"
+			
+			description=		"This mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It is designed for use in small-scale military asteroid mining operations."
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"beam"
-
-				damage=				"ion:2d4+3; mining6; WMD2"
+				linkedFire=			"always"
+				
+				damage=				"ion:1d6+2; mining:5; WMD:2"
 				fireRate=			"4"
 				lifetime=			"30"
-				powerUse=			"1650"
-				idlePowerUse=		"550"
+				powerUse=			"600"
+				
+				deviceSlots=		"0"
+				external=			"true"
+				
+				hitEffect=			"&efIonHitDefault;"
+				sound=				"&snCCLanceFireIonLight;"
+				>
+			<Effect>
+				<Beam
+					beamtype=		"particle"
+					intensity=		"3"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+				<Beam
+					beamtype=		"lightning"
+					intensity=		"1"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+			</Effect>
+		</Weapon>
+	</ItemType>
 
+<!-- LEVEL IX -->
+
+	<!-- B200 Mining Lance -->
+
+	<ItemType UNID="&itCCB200MiningLance;"
+			name=				"B200 mining lance"
+			attributes=			"cabbageCorp, energyWeapon, majorItem, military, miningEquipment"
+			
+			level=				"9"
+			frequency=			"uncommon"
+			
+			value=				"200000"
+			mass=				"5000"
+			
+			description=		"This mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in large-scale military asteroid mining operations."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"beam"
+				
+				damage=				"ion:4d4+1; mining:7; WMD:2"
+				fireRate=			"1"
+				lifetime=			"30"
+				powerUse=			"2000"
+				
+				hitEffect=			"&efIonHitDefault;"
+				sound=				"&snCCLanceFireIonHeavy;"
+				>
+			<Effect>
+				<Beam
+					beamtype=		"particle"
+					intensity=		"5"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+				<Beam
+					beamtype=		"lightning"
+					intensity=		"3"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+			</Effect>
+		</Weapon>
+		
+		<StaticData>
+			<CCBuyAndModify>
+				(
+					{product:&itCCDualB200MiningLance;		count:2		extraCost:0}
+					{product:&itCCOmniB200MiningLance;		count:1		extraCost:0}
+					{product:&itCCAuxB200MiningLance;		count:1		extraCost:0}
+					{product:&itCCAdvB200MiningLance;		count:1		extraCost:0}
+					)
+			</CCBuyAndModify>
+		</StaticData>
+	</ItemType>
+
+	<!-- Dual B110 Mining Lance -->
+
+	<ItemType UNID="&itCCDualB110MiningLance;"
+			name=				"dual B110 mining lance"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
+			
+			level=				"9"
+			frequency=			"rare"
+			
+			value=				"210000"
+			mass=				"10000"
+			
+			description=		"This dual mining lance uses an array of experimental capacitors to maintain continuous ion beams. It is designed for use in standard military asteroid mining operations."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"beam"
+				
+				configuration=		"dual"
+				damage=				"ion:2d4+3; mining:6; WMD:2"
+				fireRate=			"4"
+				lifetime=			"30"
+				powerUse=			"2200"
+				
 				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonMedium;"
-		>
+				>
 			<Effect>
 				<Beam
 					beamtype=		"particle"
 					intensity=		"4"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 				<Beam
 					beamtype=		"lightning"
 					intensity=		"2"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
+			</Effect>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni B110 Mining Lance -->
+
+	<ItemType UNID="&itCCOmniB110MiningLance;"
+			name=				"omnidirectional B110 mining lance"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
+			
+			level=				"9"
+			frequency=			"veryrare"
+			
+			value=				"430000"
+			mass=				"5500"
+			
+			description=		"This omnidirectional mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in standard military asteroid mining operations."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"beam"
+				
+				omnidirectional=	"true"
+				damage=				"ion:2d4+3; mining:6; WMD:2"
+				fireRate=			"4"
+				lifetime=			"30"
+				powerUse=			"1500"
+				
+				hitEffect=			"&efIonHitDefault;"
+				sound=				"&snCCLanceFireIonMedium;"
+				>
+			<Effect>
+				<Beam
+					beamtype=		"particle"
+					intensity=		"4"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+				<Beam
+					beamtype=		"lightning"
+					intensity=		"2"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+			</Effect>
+		</Weapon>
+	</ItemType>
+
+	<!-- Scanning B110 Mining Lance -->
+
+	<ItemType UNID="&itCCAdvB110MiningLance;"
+			name=				"scanning B110 mining lance"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment, specialty"
+			
+			level=				"9"
+			frequency=			"veryrare"
+			
+			value=				"140000"
+			mass=				"6500"
+			
+			description=		"This mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in standard military asteroid mining operations. This model includes an asteroid scanner that can detect ore within 16 light-seconds."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"beam"
+				
+				damage=				"ion:2d4+3; mining:6; WMD:2"
+				fireRate=			"4"
+				lifetime=			"30"
+				powerUse=			"1650"
+				idlePowerUse=		"550"
+				
+				hitEffect=			"&efIonHitDefault;"
+				sound=				"&snCCLanceFireIonMedium;"
+				>
+			<Effect>
+				<Beam
+					beamtype=		"particle"
+					intensity=		"4"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+				<Beam
+					beamtype=		"lightning"
+					intensity=		"2"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
 			</Effect>
 		</Weapon>
 		
@@ -2085,48 +524,192 @@
 		</Events>
 	</ItemType>
 
-	<!-- Scanning B200 Mining Lance -->
+	<!-- Side-Mounted B110 Mining Lance -->
 
-	<ItemType UNID="&itCCAdvB200MiningLance;"
-			name=				"scanning B200 mining lance"
-			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment, specialty"
-			 
-			level=				"10"
+	<ItemType UNID="&itCCAuxB110MiningLance;"
+			name=				"side-mounted B110 mining lance"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"9"
 			frequency=			"veryrare"
-
-			value=				"300000"
-			mass=				"7000"
-			 
-			description=		"This mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in large-scale military asteroid mining operations. This model includes an asteroid scanner that can detect ore within 20 light-seconds."
-	>
-
+			
+			value=				"190000"
+			mass=				"5500"
+			
+			description=		"This mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It is designed for use in standard military asteroid mining operations."
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"beam"
+				linkedFire=			"always"
+				
+				damage=				"ion:2d4+3; mining:6; WMD:2"
+				fireRate=			"4"
+				lifetime=			"30"
+				powerUse=			"1100"
+				
+				deviceSlots=		"0"
+				external=			"true"
+				
+				hitEffect=			"&efIonHitDefault;"
+				sound=				"&snCCLanceFireIonMedium;"
+				>
+			<Effect>
+				<Beam
+					beamtype=		"particle"
+					intensity=		"4"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+				<Beam
+					beamtype=		"lightning"
+					intensity=		"2"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+			</Effect>
+		</Weapon>
+	</ItemType>
 
-				damage=				"ion:4d4+1; mining7; WMD2"
+<!-- LEVEL X -->
+
+	<!-- Dual B200 Mining Lance -->
+
+	<ItemType UNID="&itCCDualB200MiningLance;"
+			name=				"dual B200 mining lance"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
+			
+			level=				"10"
+			frequency=			"rare"
+			
+			value=				"430000"
+			mass=				"11000"
+			
+			description=		"This dual mining lance uses an array of experimental capacitors to maintain continuous ion beams. It is designed for use in large-scale military asteroid mining operations."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"beam"
+				
+				configuration=		"dual"
+				damage=				"ion:4d4+1; mining:7; WMD:2"
 				fireRate=			"1"
 				lifetime=			"30"
-				powerUse=			"3000"
-				idlePowerUse=		"1000"
-
+				powerUse=			"4000"
+				
 				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonHeavy;"
-		>
+				>
 			<Effect>
 				<Beam
 					beamtype=		"particle"
 					intensity=		"5"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 				<Beam
 					beamtype=		"lightning"
 					intensity=		"3"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
+			</Effect>
+		</Weapon>
+	</ItemType>
+
+	<!-- Omni B200 Mining Lance -->
+
+	<ItemType UNID="&itCCOmniB200MiningLance;"
+			name=				"omnidirectional B200 mining lance"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
+			
+			level=				"10"
+			frequency=			"veryrare"
+			
+			value=				"860000"
+			mass=				"6000"
+			
+			description=		"This omnidirectional mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in large-scale military asteroid mining operations."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"beam"
+				
+				omnidirectional=	"true"
+				damage=				"ion:4d4+1; mining:7; WMD:2"
+				fireRate=			"1"
+				lifetime=			"30"
+				powerUse=			"2700"
+				
+				hitEffect=			"&efIonHitDefault;"
+				sound=				"&snCCLanceFireIonHeavy;"
+				>
+			<Effect>
+				<Beam
+					beamtype=		"particle"
+					intensity=		"5"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+				<Beam
+					beamtype=		"lightning"
+					intensity=		"3"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+			</Effect>
+		</Weapon>
+	</ItemType>
+
+	<!-- Scanning B200 Mining Lance -->
+
+	<ItemType UNID="&itCCAdvB200MiningLance;"
+			name=				"scanning B200 mining lance"
+			attributes=			"cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment, specialty"
+			
+			level=				"10"
+			frequency=			"veryrare"
+			
+			value=				"300000"
+			mass=				"7000"
+			
+			description=		"This mining lance uses an array of experimental capacitors to maintain a continuous ion beam. It is designed for use in large-scale military asteroid mining operations. This model includes an asteroid scanner that can detect ore within 20 light-seconds."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"beam"
+				
+				damage=				"ion:4d4+1; mining:7; WMD:2"
+				fireRate=			"1"
+				lifetime=			"30"
+				powerUse=			"3000"
+				idlePowerUse=		"1000"
+				
+				hitEffect=			"&efIonHitDefault;"
+				sound=				"&snCCLanceFireIonHeavy;"
+				>
+			<Effect>
+				<Beam
+					beamtype=		"particle"
+					intensity=		"5"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
+				<Beam
+					beamtype=		"lightning"
+					intensity=		"3"
+					primaryColor=	"#00d5ff"
+					secondaryColor=	"#006b80"
+					/>
 			</Effect>
 		</Weapon>
 		
@@ -2137,746 +720,60 @@
 		</Events>
 	</ItemType>
 
-	<!-- Scanning B450 Mining Lance -->
-
-	<ItemType UNID="&itCCAdvB450MiningLance;"
-			name=				"scanning B450 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
-			 
-			level=				"11"
-			frequency=			"veryrare"
-
-			value=				"600000"
-			mass=				"7000"
-			 
-			description=		"This alien mining lance appears to use an array of high-powered capacitors to maintain a continuous positron beam. It seems designed for use in large-scale asteroid mining operations. This model includes an asteroid scanner that can detect ore within 24 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"positron:5d4+1; mining7; WMD3"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"6750"
-				idlePowerUse=		"2000"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"2"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 24)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning B800 Mining Lance -->
-
-	<ItemType UNID="&itCCAdvB800MiningLance;"
-			name=				"scanning B800 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
-			 
-			level=				"12"
-			frequency=			"veryrare"
-
-			value=				"1100000"
-			mass=				"7500"
-			 
-			description=		"This alien mining lance appears to use an array of high-powered capacitors to maintain a continuous positron beam. It seems designed for use in small-scale orbital planet mining operations. This model includes an asteroid scanner that can detect ore within 30 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"positron:5d6+2; mining7; WMD4"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"12000"
-				idlePowerUse=		"3600"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"5"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"3"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 30)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning B1500 Mining Lance -->
-
-	<ItemType UNID="&itCCAdvB1500MiningLance;"
-			name=				"scanning B1500 mining lance"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment, specialty"
-			 
-			level=				"13"
-			frequency=			"veryrare"
-
-			value=				"2000000"
-			mass=				"8000"
-			 
-			description=		"This alien mining lance appears to use an array of high-powered capacitors to maintain a continuous positron beam. It seems designed for use in large-scale orbital planet mining operations. This model includes an asteroid scanner that can detect ore within 36 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-
-				damage=				"positron:8d6+1; mining7; WMD5"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"22500"
-				idlePowerUse=		"6750"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"6"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"4"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 36)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-<!-- ======================================================================= -->
-						<!-- Side-Mounted Mining Lances -->						
-<!-- ======================================================================= -->
-
-	<!-- Side-Mounted B1 Mining Lance -->
-
-	<ItemType UNID="&itCCAuxB1MiningLance;"
-			name=				"side-mounted B1 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"2"
-			frequency=			"veryrare"
-
-			value=				"460"
-			mass=				"3000"
-			 
-			description=		"This mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It is designed for use in small-scale asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-				linkedFire=			"always"
-
-				damage=				"laser:1; mining7"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"10"
-
-				deviceSlots=		"0"
-				external=			"true"				
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"1"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted B2 Mining Lance -->
-
-	<ItemType UNID="&itCCAuxB2MiningLance;"
-			name=				"side-mounted B2 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"3"
-			frequency=			"veryrare"
-
-			value=				"1100"
-			mass=				"3500"
-			 
-			description=		"This mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It is designed for use in standard asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-				linkedFire=			"always"
-
-				damage=				"laser:1d2; mining2"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"20"
-
-				deviceSlots=		"0"
-				external=			"true"				
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"2"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted B5 Mining Lance -->
-
-	<ItemType UNID="&itCCAuxB5MiningLance;"
-			name=				"side-mounted B5 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"4"
-			frequency=			"veryrare"
-
-			value=				"2600"
-			mass=				"4000"
-			 
-			description=		"This mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It is designed for use in large-scale asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-				linkedFire=			"always"
-
-				damage=				"laser:1d4; mining3"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"50"
-
-				deviceSlots=		"0"
-				external=			"true"
-
-				hitEffect=			"&efLaserHitDefault;"
-				sound=				"&snCCLanceFireLaserHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"1"
-					primaryColor=	"0xff, 0x00, 0x00"
-					secondaryColor=	"0x80, 0x00, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted B9 Mining Lance -->
-
-	<ItemType UNID="&itCCAuxB9MiningLance;"
-			name=				"side-mounted B9 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"5"
-			frequency=			"veryrare"
-
-			value=				"5600"
-			mass=				"4500"
-			 
-			description=		"This mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It is designed for use in small-scale corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-				linkedFire=			"always"
-
-				damage=				"particle:1d4; mining3"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"90"
-
-				deviceSlots=		"0"
-				external=			"true"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"2"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted B20 Mining Lance -->
-
-	<ItemType UNID="&itCCAuxB20MiningLance;"
-			name=				"side-mounted B20 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"6"
-			frequency=			"veryrare"
-
-			value=				"13000"
-			mass=				"5000"
-			 
-			description=		"This mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It is designed for use in standard corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-				linkedFire=			"always"
-
-				damage=				"particle:2d3; mining4"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"200"
-
-				deviceSlots=		"0"
-				external=			"true"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"3"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted B32 Mining Lance -->
-
-	<ItemType UNID="&itCCAuxB32MiningLance;"
-			name=				"side-mounted B32 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"7"
-			frequency=			"veryrare"
-
-			value=				"28000"
-			mass=				"5500"
-			 
-			description=		"This mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It is designed for use in large-scale corporate asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-				linkedFire=			"always"
-
-				damage=				"particle:2d4; mining5; WMD1"
-				fireRate=			"4"
-				lifetime=			"40"
-				powerUse=			"320"
-
-				deviceSlots=		"0"
-				external=			"true"
-
-				hitEffect=			"&efParticleHitDefault;"
-				sound=				"&snCCLanceFireParticleHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"#65ff2c"
-					secondaryColor=	"#808417"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted B60 Mining Lance -->
-
-	<ItemType UNID="&itCCAuxB60MiningLance;"
-			name=				"side-mounted B60 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"8"
-			frequency=			"veryrare"
-
-			value=				"84000"
-			mass=				"5000"
-			 
-			description=		"This mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It is designed for use in small-scale military asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-				linkedFire=			"always"
-
-				damage=				"ion:1d6+2; mining5; WMD1"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"600"
-
-				deviceSlots=		"0"
-				external=			"true"
-
-				hitEffect=			"&efIonHitDefault;"
-				sound=				"&snCCLanceFireIonLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"3"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-				<Beam
-					beamtype=		"lightning"
-					intensity=		"1"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted B110 Mining Lance -->
-
-	<ItemType UNID="&itCCAuxB110MiningLance;"
-			name=				"side-mounted B110 mining lance"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"9"
-			frequency=			"veryrare"
-
-			value=				"190000"
-			mass=				"5500"
-			 
-			description=		"This mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It is designed for use in standard military asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-				linkedFire=			"always"
-
-				damage=				"ion:2d4+3; mining6; WMD2"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"1100"
-
-				deviceSlots=		"0"
-				external=			"true"
-
-				hitEffect=			"&efIonHitDefault;"
-				sound=				"&snCCLanceFireIonMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-				<Beam
-					beamtype=		"lightning"
-					intensity=		"2"
-					primaryColor=	"#00d5ff"
-					secondaryColor=	"#006b80"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
 	<!-- Side-Mounted B200 Mining Lance -->
 
 	<ItemType UNID="&itCCAuxB200MiningLance;"
 			name=				"side-mounted B200 mining lance"
 			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, military, miningEquipment"
 			inherit=			"&baStdAuxMountDeviceBase;"
-			 
+			
 			level=				"10"
 			frequency=			"veryrare"
-
+			
 			value=				"370000"
 			mass=				"6000"
-			 
+			
 			description=		"This mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It is designed for use in large-scale military asteroid mining operations."
-	>
-
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"beam"
 				linkedFire=			"always"
-
-				damage=				"ion:4d4+1; mining7; WMD2"
+				
+				damage=				"ion:4d4+1; mining:7; WMD:2"
 				fireRate=			"1"
 				lifetime=			"30"
 				powerUse=			"2000"
-
+				
 				deviceSlots=		"0"
 				external=			"true"
-
+				
 				hitEffect=			"&efIonHitDefault;"
 				sound=				"&snCCLanceFireIonHeavy;"
-		>
+				>
 			<Effect>
 				<Beam
 					beamtype=		"particle"
 					intensity=		"5"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
+					/>
 				<Beam
 					beamtype=		"lightning"
 					intensity=		"3"
 					primaryColor=	"#00d5ff"
 					secondaryColor=	"#006b80"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted B450 Mining Lance -->
-
-	<ItemType UNID="&itCCAuxB450MiningLance;"
-			name=				"side-mounted B450 mining lance"
-			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"11"
-			frequency=			"veryrare"
-
-			value=				"740000"
-			mass=				"6000"
-			 
-			description=		"This alien mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It seems designed for use in large-scale asteroid mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-				linkedFire=			"always"
-
-				damage=				"positron:5d4+1; mining7; WMD3"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"4500"
-
-				deviceSlots=		"0"
-				external=			"true"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronLight;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"4"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"2"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted B800 Mining Lance -->
-
-	<ItemType UNID="&itCCAuxB800MiningLance;"
-			name=				"side-mounted B800 mining lance"
-			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"12"
-			frequency=			"veryrare"
-
-			value=				"1400000"
-			mass=				"6500"
-			 
-			description=		"This alien mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It seems designed for use in small-scale orbital planet mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-				linkedFire=			"always"
-
-				damage=				"positron:5d6+2; mining7; WMD4"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"8000"
-
-				deviceSlots=		"0"
-				external=			"true"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronMedium;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"5"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"3"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-			</Effect>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted B1500 Mining Lance -->
-
-	<ItemType UNID="&itCCAuxB1500MiningLance;"
-			name=				"side-mounted B1500 mining lance"
-			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, energyWeapon, majorItem, miningEquipment"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"13"
-			frequency=			"veryrare"
-
-			value=				"2600000"
-			mass=				"7000"
-			 
-			description=		"This alien mining lance has been modified for external mounting. Its fire controls are linked to a ship's primary weapon. It seems designed for use in large-scale orbital planet mining operations."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"beam"
-				linkedFire=			"always"
-
-				damage=				"positron:8d6+1; mining7; WMD5"
-				fireRate=			"4"
-				lifetime=			"30"
-				powerUse=			"15000"
-
-				deviceSlots=		"0"
-				external=			"true"
-
-				hitEffect=			"&efPositronHitDefault;"
-				sound=				"&snCCLanceFirePositronHeavy;"
-		>
-			<Effect>
-				<Beam
-					beamtype=		"particle"
-					intensity=		"6"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
-				<Beam
-					beamtype=		"laser"
-					intensity=		"4"
-					primaryColor=	"0xff, 0xf0, 0xa0"
-					secondaryColor=	"0xff, 0xa9, 0x00"
-				/>
+					/>
 			</Effect>
 		</Weapon>
 	</ItemType>
 
 <!-- RESOURCES -->
 
-	<Sound UNID="&snCCLanceFireLaserLight;"			filename="LanceFireLaser1.wav"/>
-	<Sound UNID="&snCCLanceFireLaserMedium;"		filename="LanceFireLaser2.wav"/>
-	<Sound UNID="&snCCLanceFireLaserHeavy;"			filename="LanceFireLaser3.wav"/>
-	<Sound UNID="&snCCLanceFireParticleLight;"		filename="LanceFireParticle1.wav"/>
-	<Sound UNID="&snCCLanceFireParticleMedium;"		filename="LanceFireParticle2.wav"/>
-	<Sound UNID="&snCCLanceFireParticleHeavy;"		filename="LanceFireParticle3.wav"/>
 	<Sound UNID="&snCCLanceFireIonLight;"			filename="LanceFireIon1.wav"/>
 	<Sound UNID="&snCCLanceFireIonMedium;"			filename="LanceFireIon2.wav"/>
 	<Sound UNID="&snCCLanceFireIonHeavy;"			filename="LanceFireIon3.wav"/>
-	<Sound UNID="&snCCLanceFirePositronLight;"		filename="LanceFirePositron1.wav"/>
-	<Sound UNID="&snCCLanceFirePositronMedium;"		filename="LanceFirePositron2.wav"/>
-	<Sound UNID="&snCCLanceFirePositronHeavy;"		filename="LanceFirePositron3.wav"/>
-	<Sound UNID="&snCCLanceFireGravitonLight;"		filename="LanceFireGraviton1.wav"/>
-	<Sound UNID="&snCCLanceFireGravitonMedium;"		filename="LanceFireGraviton2.wav"/>
-	<Sound UNID="&snCCLanceFireGravitonHeavy;"		filename="LanceFireGraviton3.wav"/>
-	
+
 </TranscendenceModule>

@@ -693,77 +693,32 @@
 	<!ENTITY itCCAuxKaleM6300Repeater				"0xDA27CC8E">
 	<!ENTITY itCCAuxKaleM12000Repeater				"0xDA27CC8F">
 
-	<!-- CCA0-CCEF MINING LANCES -->
+	<!-- CCA0-CCAF MINING LANCES -->
 
-	<!ENTITY itCCB1MiningLance						"0xDA27CCA0">
-	<!ENTITY itCCB2MiningLance						"0xDA27CCA1">
-	<!ENTITY itCCB5MiningLance						"0xDA27CCA2">
-	<!ENTITY itCCB9MiningLance						"0xDA27CCA3">
-	<!ENTITY itCCB20MiningLance						"0xDA27CCA4">
-	<!ENTITY itCCB32MiningLance						"0xDA27CCA5">
-	<!ENTITY itCCB60MiningLance						"0xDA27CCA6">
-	<!ENTITY itCCB110MiningLance					"0xDA27CCA7">
-	<!ENTITY itCCB200MiningLance					"0xDA27CCA8">
-	<!ENTITY itCCB450MiningLance					"0xDA27CCA9">
-	<!ENTITY itCCB800MiningLance					"0xDA27CCAA">
-	<!ENTITY itCCB1500MiningLance					"0xDA27CCAB">
-	<!ENTITY itCCDualB1MiningLance					"0xDA27CCB0">
-	<!ENTITY itCCDualB2MiningLance					"0xDA27CCB1">
-	<!ENTITY itCCDualB5MiningLance					"0xDA27CCB2">
-	<!ENTITY itCCDualB9MiningLance					"0xDA27CCB3">
-	<!ENTITY itCCDualB20MiningLance					"0xDA27CCB4">
-	<!ENTITY itCCDualB32MiningLance					"0xDA27CCB5">
-	<!ENTITY itCCDualB60MiningLance					"0xDA27CCB6">
-	<!ENTITY itCCDualB110MiningLance				"0xDA27CCB7">
-	<!ENTITY itCCDualB200MiningLance				"0xDA27CCB8">
-	<!ENTITY itCCDualB450MiningLance				"0xDA27CCB9">
-	<!ENTITY itCCDualB800MiningLance				"0xDA27CCBA">
-	<!ENTITY itCCDualB1500MiningLance				"0xDA27CCBB">
-	<!ENTITY itCCOmniB1MiningLance					"0xDA27CCC0">
-	<!ENTITY itCCOmniB2MiningLance					"0xDA27CCC1">
-	<!ENTITY itCCOmniB5MiningLance					"0xDA27CCC2">
-	<!ENTITY itCCOmniB9MiningLance					"0xDA27CCC3">
-	<!ENTITY itCCOmniB20MiningLance					"0xDA27CCC4">
-	<!ENTITY itCCOmniB32MiningLance					"0xDA27CCC5">
-	<!ENTITY itCCOmniB60MiningLance					"0xDA27CCC6">
-	<!ENTITY itCCOmniB110MiningLance				"0xDA27CCC7">
-	<!ENTITY itCCOmniB200MiningLance				"0xDA27CCC8">
-	<!ENTITY itCCOmniB450MiningLance				"0xDA27CCC9">
-	<!ENTITY itCCOmniB800MiningLance				"0xDA27CCCA">
-	<!ENTITY itCCOmniB1500MiningLance				"0xDA27CCCB">
-	<!ENTITY itCCAdvB1MiningLance					"0xDA27CCD0">
-	<!ENTITY itCCAdvB2MiningLance					"0xDA27CCD1">
-	<!ENTITY itCCAdvB5MiningLance					"0xDA27CCD2">
-	<!ENTITY itCCAdvB9MiningLance					"0xDA27CCD3">
-	<!ENTITY itCCAdvB20MiningLance					"0xDA27CCD4">
-	<!ENTITY itCCAdvB32MiningLance					"0xDA27CCD5">
-	<!ENTITY itCCAdvB60MiningLance					"0xDA27CCD6">
-	<!ENTITY itCCAdvB110MiningLance					"0xDA27CCD7">
-	<!ENTITY itCCAdvB200MiningLance					"0xDA27CCD8">
-	<!ENTITY itCCAdvB450MiningLance					"0xDA27CCD9">
-	<!ENTITY itCCAdvB800MiningLance					"0xDA27CCDA">
-	<!ENTITY itCCAdvB1500MiningLance				"0xDA27CCDB">
-	<!ENTITY itCCAuxB1MiningLance					"0xDA27CCE0">
-	<!ENTITY itCCAuxB2MiningLance					"0xDA27CCE1">
-	<!ENTITY itCCAuxB5MiningLance					"0xDA27CCE2">
-	<!ENTITY itCCAuxB9MiningLance					"0xDA27CCE3">
-	<!ENTITY itCCAuxB20MiningLance					"0xDA27CCE4">
-	<!ENTITY itCCAuxB32MiningLance					"0xDA27CCE5">
-	<!ENTITY itCCAuxB60MiningLance					"0xDA27CCE6">
-	<!ENTITY itCCAuxB110MiningLance					"0xDA27CCE7">
-	<!ENTITY itCCAuxB200MiningLance					"0xDA27CCE8">
-	<!ENTITY itCCAuxB450MiningLance					"0xDA27CCE9">
-	<!ENTITY itCCAuxB800MiningLance					"0xDA27CCEA">
-	<!ENTITY itCCAuxB1500MiningLance				"0xDA27CCEB">
+	<!ENTITY itCCB60MiningLance						"0xDA27CCA1">
+	<!ENTITY itCCB110MiningLance					"0xDA27CCA2">
+	<!ENTITY itCCB200MiningLance					"0xDA27CCA3">
+	<!ENTITY itCCDualB60MiningLance					"0xDA27CCA4">
+	<!ENTITY itCCDualB110MiningLance				"0xDA27CCA5">
+	<!ENTITY itCCDualB200MiningLance				"0xDA27CCA6">
+	<!ENTITY itCCOmniB60MiningLance					"0xDA27CCA7">
+	<!ENTITY itCCOmniB110MiningLance				"0xDA27CCA8">
+	<!ENTITY itCCOmniB200MiningLance				"0xDA27CCA9">
+	<!ENTITY itCCAdvB60MiningLance					"0xDA27CCAA">
+	<!ENTITY itCCAdvB110MiningLance					"0xDA27CCAB">
+	<!ENTITY itCCAdvB200MiningLance					"0xDA27CCAC">
+	<!ENTITY itCCAuxB60MiningLance					"0xDA27CCAD">
+	<!ENTITY itCCAuxB110MiningLance					"0xDA27CCAE">
+	<!ENTITY itCCAuxB200MiningLance					"0xDA27CCAF">
 
-	<!-- CCF0-CCFF MISCELLANEOUS WEAPONS + EFFECTS -->
+	<!-- CCB0-CCBF MISCELLANEOUS WEAPONS + EFFECTS -->
 	
-	<!ENTITY efCCOreMarker							"0xDA27CCF0">
-	<!ENTITY efCCMicrosaurMarker					"0xDA27CCF1">
-	<!ENTITY itCCRepurposedNavBuoyLauncher			"0xDA27CCF2">
-	<!ENTITY itCCBlacklightLauncher					"0xDA27CCF3">
-	<!ENTITY itCCWeigeltCannon						"0xDA27CCF4">
-	<!ENTITY ovCCWeigeltParalysis					"0xDA27CCF5">
+	<!ENTITY efCCOreMarker							"0xDA27CCB0">
+	<!ENTITY efCCMicrosaurMarker					"0xDA27CCB1">
+	<!ENTITY itCCRepurposedNavBuoyLauncher			"0xDA27CCB2">
+	<!ENTITY itCCBlacklightLauncher					"0xDA27CCB3">
+	<!ENTITY itCCWeigeltCannon						"0xDA27CCB4">
+	<!ENTITY ovCCWeigeltParalysis					"0xDA27CCB5">
 
 <!-- ======================================================== -->
 			<!-- CD00-CDFF		MISCELLANEOUS ITEMS -->		
@@ -862,21 +817,9 @@
 	<!ENTITY snCCHowitzerFireNanoMedium				"0xDA27CE5E">
 	<!ENTITY snCCHowitzerFireNanoHeavy				"0xDA27CE5F">
 	
-	<!ENTITY snCCLanceFireLaserLight				"0xDA27CE61">
-	<!ENTITY snCCLanceFireLaserMedium				"0xDA27CE62">
-	<!ENTITY snCCLanceFireLaserHeavy				"0xDA27CE63">
-	<!ENTITY snCCLanceFireParticleLight				"0xDA27CE64">
-	<!ENTITY snCCLanceFireParticleMedium			"0xDA27CE65">
-	<!ENTITY snCCLanceFireParticleHeavy				"0xDA27CE66">
-	<!ENTITY snCCLanceFireIonLight					"0xDA27CE67">
-	<!ENTITY snCCLanceFireIonMedium					"0xDA27CE68">
-	<!ENTITY snCCLanceFireIonHeavy					"0xDA27CE69">
-	<!ENTITY snCCLanceFirePositronLight				"0xDA27CE6A">
-	<!ENTITY snCCLanceFirePositronMedium			"0xDA27CE6B">
-	<!ENTITY snCCLanceFirePositronHeavy				"0xDA27CE6C">
-	<!ENTITY snCCLanceFireGravitonLight				"0xDA27CE6D">
-	<!ENTITY snCCLanceFireGravitonMedium			"0xDA27CE6E">
-	<!ENTITY snCCLanceFireGravitonHeavy				"0xDA27CE6F">
+	<!ENTITY snCCLanceFireIonLight					"0xDA27CE61">
+	<!ENTITY snCCLanceFireIonMedium					"0xDA27CE62">
+	<!ENTITY snCCLanceFireIonHeavy					"0xDA27CE63">
 
 		<!-- Autons-->
 	<!ENTITY itCCMarkIWraithAuton					"0xDA27CEA0">

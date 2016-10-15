@@ -72,55 +72,19 @@
 					{ item:&itCCAuxSavoyM2900Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM2900Howitzer; count:1 } )												extraCost:0 }
 					{ item:&itCCAuxSavoyM5600Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM5600Howitzer; count:1 } )												extraCost:0 }
 					{ item:&itCCAuxSavoyM11000Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM11000Howitzer; count:1 } )												extraCost:0 }
-
-					{ item:&itCCDualB1MiningLance;				enhancement:Nil		components:( { item:&itCCB1MiningLance; count:2 } )														extraCost:0 }
-					{ item:&itCCDualB2MiningLance;				enhancement:Nil		components:( { item:&itCCB2MiningLance; count:2 } )														extraCost:0 }
-					{ item:&itCCDualB5MiningLance;				enhancement:Nil		components:( { item:&itCCB5MiningLance; count:2 } )														extraCost:0 }
-					{ item:&itCCDualB9MiningLance;				enhancement:Nil		components:( { item:&itCCB9MiningLance; count:2 } )														extraCost:0 }
-					{ item:&itCCDualB20MiningLance;				enhancement:Nil		components:( { item:&itCCB20MiningLance; count:2 } )													extraCost:0 }
-					{ item:&itCCDualB32MiningLance;				enhancement:Nil		components:( { item:&itCCB32MiningLance; count:2 } )													extraCost:0 }
+					
 					{ item:&itCCDualB60MiningLance;				enhancement:Nil		components:( { item:&itCCB60MiningLance; count:2 } )													extraCost:0 }
 					{ item:&itCCDualB110MiningLance;			enhancement:Nil		components:( { item:&itCCB110MiningLance; count:2 } )													extraCost:0 }
 					{ item:&itCCDualB200MiningLance;			enhancement:Nil		components:( { item:&itCCB200MiningLance; count:2 } )													extraCost:0 }
-					{ item:&itCCDualB450MiningLance;			enhancement:Nil		components:( { item:&itCCB450MiningLance; count:2 } )													extraCost:0 }
-					{ item:&itCCDualB800MiningLance;			enhancement:Nil		components:( { item:&itCCB800MiningLance; count:2 } )													extraCost:0 }
-					{ item:&itCCDualB1500MiningLance;			enhancement:Nil		components:( { item:&itCCB1500MiningLance; count:2 } )													extraCost:0 }
-					{ item:&itCCOmniB1MiningLance;				enhancement:Nil		components:( { item:&itCCB1MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCOmniB2MiningLance;				enhancement:Nil		components:( { item:&itCCB2MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCOmniB5MiningLance;				enhancement:Nil		components:( { item:&itCCB5MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCOmniB9MiningLance;				enhancement:Nil		components:( { item:&itCCB9MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCOmniB20MiningLance;				enhancement:Nil		components:( { item:&itCCB20MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniB32MiningLance;				enhancement:Nil		components:( { item:&itCCB32MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniB60MiningLance;				enhancement:Nil		components:( { item:&itCCB60MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniB110MiningLance;			enhancement:Nil		components:( { item:&itCCB110MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniB200MiningLance;			enhancement:Nil		components:( { item:&itCCB200MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniB450MiningLance;			enhancement:Nil		components:( { item:&itCCB450MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniB800MiningLance;			enhancement:Nil		components:( { item:&itCCB800MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniB1500MiningLance;			enhancement:Nil		components:( { item:&itCCB1500MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCAdvB1MiningLance;				enhancement:Nil		components:( { item:&itCCB1MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCAdvB2MiningLance;				enhancement:Nil		components:( { item:&itCCB2MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCAdvB5MiningLance;				enhancement:Nil		components:( { item:&itCCB5MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCAdvB9MiningLance;				enhancement:Nil		components:( { item:&itCCB9MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCAdvB20MiningLance;				enhancement:Nil		components:( { item:&itCCB20MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCAdvB32MiningLance;				enhancement:Nil		components:( { item:&itCCB32MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvB60MiningLance;				enhancement:Nil		components:( { item:&itCCB60MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvB110MiningLance;				enhancement:Nil		components:( { item:&itCCB110MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvB200MiningLance;				enhancement:Nil		components:( { item:&itCCB200MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCAdvB450MiningLance;				enhancement:Nil		components:( { item:&itCCB450MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCAdvB800MiningLance;				enhancement:Nil		components:( { item:&itCCB800MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCAdvB1500MiningLance;			enhancement:Nil		components:( { item:&itCCB1500MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxB1MiningLance;				enhancement:Nil		components:( { item:&itCCB1MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCAuxB2MiningLance;				enhancement:Nil		components:( { item:&itCCB2MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCAuxB5MiningLance;				enhancement:Nil		components:( { item:&itCCB5MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCAuxB9MiningLance;				enhancement:Nil		components:( { item:&itCCB9MiningLance; count:1 } )														extraCost:0 }
-					{ item:&itCCAuxB20MiningLance;				enhancement:Nil		components:( { item:&itCCB20MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxB32MiningLance;				enhancement:Nil		components:( { item:&itCCB32MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxB60MiningLance;				enhancement:Nil		components:( { item:&itCCB60MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxB110MiningLance;				enhancement:Nil		components:( { item:&itCCB110MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxB200MiningLance;				enhancement:Nil		components:( { item:&itCCB200MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxB450MiningLance;				enhancement:Nil		components:( { item:&itCCB450MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxB800MiningLance;				enhancement:Nil		components:( { item:&itCCB800MiningLance; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxB1500MiningLance;			enhancement:Nil		components:( { item:&itCCB1500MiningLance; count:1 } )													extraCost:0 }
 
 					{ item:&itCCDualKaleM1Repeater;				enhancement:Nil		components:( { item:&itCCKaleM1Repeater; count:2 } )													extraCost:0 }
 					{ item:&itCCDualKaleM3Repeater;				enhancement:Nil		components:( { item:&itCCKaleM3Repeater; count:2 } )													extraCost:0 }
