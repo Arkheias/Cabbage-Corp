@@ -7,7 +7,7 @@
 
 	<!-- C010-C01F GENERAL PLAYER SHIP -->
 	
-	<!ENTITY scCCCabbageModification		 		"0xDA27C010">
+	<!ENTITY scCCCabbageCorpToolset			 		"0xDA27C010">
 	<!ENTITY efCCShieldHUDCabbage 					"0xDA27C011">
 	
 	<!-- C020-C02F LAMPYRIDAE CLASS -->
@@ -754,11 +754,11 @@
 	<Module fileName="CabbageMisc.xml"/>
 	<Module fileName="Code.xml"/>
 	<Module fileName="HUD.xml"/>
-	<Module fileName="Library_BaseClasses.xml"/>
 	<Module fileName="License.xml"/>
 	<Module fileName="MiscItems.xml"/>
 	<Module fileName="Othala.xml"/>
 	<Module fileName="PlayerShipsBase.xml"/>
+	<Module fileName="RPGCode.xml"/>
 	<Module fileName="RPGDockScreens.xml"/>
 	<Module fileName="RPGShipScreens.xml"/>
 	<Module fileName="RPGUnshieldedDevices.xml"/>

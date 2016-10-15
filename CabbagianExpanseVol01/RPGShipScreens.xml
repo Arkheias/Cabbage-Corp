@@ -1,19 +1,16 @@
-<?xml version="1.0" ?>
-<TranscendenceModule>
+<?xml version="1.0" encoding="utf-8"?>
 
-<!-- ======================================================================= -->
-							<!-- Ship DockScreens -->							
-<!-- ======================================================================= -->
+<TranscendenceModule>
 
 	<!-- Cabbage Corp Toolset -->
 
-	<DockScreen	UNID="&scCCCabbageModification;"
+	<DockScreen	UNID="&scCCCabbageCorpToolset;"
 			name=				"Cabbage Corp Toolset"
 			desc=				"Equipment Configuration"
 			type=				"customItemPicker"
 			backgroundID=		"&rsItemListScreen;"
 			nestedScreen=		"true"
-	>
+			>
 			
 		<Events>
 			<OnGlobalPaneInit>
@@ -26,7 +23,7 @@
 						(filter (objGetItems gPlayership "dI +cabbageCorp") theItem (itmIsKnown theItem))
 						(eq aScreenUNID &dsShipInterior;)
 						(eq aPane "Default")
-					)
+						)
 					(scrAddAction
 						gScreen
 						'cabbageCorp
@@ -34,77 +31,96 @@
 						"Cabbage Corp Toolset"
 						"C"
 						Nil
-						(scrShowScreen gScreen "&scCCCabbageModification;")
+						(scrShowScreen gScreen "&scCCCabbageCorpToolset;")
+						)
 					)
-				)
 			</OnGlobalPaneInit>
 		</Events>
-
 		
 		<List>
 			(filter (objGetItems gPlayership "dI +cabbageCorp") theItem (itmIsKnown theItem))
 		</List>
-
+		
 		<Panes>
-			<Default
-					desc=	"You are viewing the ship's configuration.">
-
+			<Default>
 				<OnPaneInit>
-					(block (gItem desc)
+					(block (actionStatus desc)
 						(setq gItem (scrGetItem gScreen))
-
+						
 						(if gItem
 							(block (theCategory)
 								(setq desc (cat "Unit mass: " (strMassString (itmGetMass gItem)) "\n\n"))
-
-								; Describe the item installation
+								
+								; Describe the item installed
 								(setq desc (cat desc (objGetInstalledItemDesc gPlayerShip gItem) "."))
 								
 								; Display
 								(scrSetDesc gScreen desc)
+								)
 							)
+							
+						;	Use Device Action
+						
+						(setq actionStatus (rpgCalcToolsetUseDeviceAction))
+						(scrShowAction gScreen 'actionUseDevice (@ actionStatus 'visible))
+						(scrEnableAction gScreen 'actionUseDevice (@ actionStatus 'enabled))
+						(scrSetActionDesc gScreen 'actionUseDevice (@ actionStatus 'desc))
+						
+						;	Modify Hardware Action
+						
+						(setq actionStatus (rpgCalcToolsetModifyHardwareAction))
+						(scrShowAction gScreen 'actionModifyHardware (@ actionStatus 'visible))
+						(scrEnableAction gScreen 'actionModifyHardware (@ actionStatus 'enabled))
+						(scrSetActionDesc gScreen 'actionModifyHardware (@ actionStatus 'desc))
+						
+						;	Modify Firmware Action
+						
+						(setq actionStatus (rpgCalcToolsetModifyFirmwareAction))
+						(scrShowAction gScreen 'actionModifyFirmware (@ actionStatus 'visible))
+						(scrEnableAction gScreen 'actionModifyFirmware (@ actionStatus 'enabled))
+						(scrSetActionDesc gScreen 'actionModifyFirmware (@ actionStatus 'desc))
 						)
-						(scrEnableAction gScreen 0
-							(and
-								(itmMatches gItem "dN +cabbageCorp;")	; Undamaged Cabbage Corp device
-								(ls (itmIsEnhanced gItem) 0x8000)		; Not enhanced with a negative effect
-							)
-						)
-						(scrEnableAction gScreen 1 (not (eq (itmGetStaticData gItem 'CCItemSwap) Nil)))
-						(scrEnableAction gScreen 2 (not (eq (itmGetStaticData gItem 'useScreen) Nil)))
-					)
 				</OnPaneInit>
 				<Actions>
-					<Action name="Factory Reset" default="1" key="F">
-						<ShowPane pane="CCFactoryReset"/>
+					<Action id="actionUseDevice" default="1">
+						(block Nil
+							(scrShowScreen gScreen (itmGetStaticData gItem 'useScreen))
+							)
 					</Action>
 					
-					<Action name="Modify" key="M">
+					<Action id="actionModifyHardware">
 						(block Nil
 							(intModifyHardware (itmGetStaticData gItem 'CCItemSwap))
 							(scrExitScreen gScreen)
-						)
+							)
 					</Action>
 					
-					<Action name="Use Equipment" key="U">
-						(block Nil
-							(scrShowScreen gScreen (itmGetStaticData gItem 'useScreen))
-						)
+					<Action id="actionModifyFirmware">
+						<ShowPane pane="ModifyFirmware"/>
 					</Action>
 					
-					<Action name="Done" cancel="1" key="D">
+					<Action id="actionDone" cancel="1">
 						(scrExitScreen gScreen)
 					</Action>
-
 				</Actions>
-
 			</Default>
 			
-			<CCFactoryReset
-							desc=	"Are you sure you wish to reset your Cabbage Corp device's software to its factory state?  This operation cannot be undone and all current enhancements to the device will be lost.  This will not fix physical alterations or damage to the device and it may compound existing problems.">
-
+			<ModifyFirmware>
+				<OnPaneInit>
+					(block (desc)
+						(setq desc
+							(cat "Are you sure you wish to reset your Cabbage Corp device's software to its factory state?"
+								"\n\n"
+								"This will not fix physical alterations or damage to the device, and it may compound existing issues."
+								"\n\n"
+								"This operation cannot be undone, and any current enhancements to the device will be lost."
+								)
+							)
+						(scrSetDesc gScreen desc)
+						)
+				</OnPaneInit>
 				<Actions>
-					<Action name="Apply Factory Reset" default="1" key="A">
+					<Action id="actionApplyFactoryReset" default="1">
 						(block (currentFuel newDevice baseFuel)
 							(setq gItem (scrGetItem gScreen))
 							(setq currentFuel (shpGetFuelLeft gSource))
@@ -129,13 +145,42 @@
 						)
 					</Action>
 					
-					<Action name="Cancel" cancel="1" key="C">
+					<Action id="actionCancel" cancel="1">
 						(scrExitScreen gScreen)
 					</Action>
-
 				</Actions>
-			</CCFactoryReset>
+			</ModifyFirmware>
 		</Panes>
+		
+		<Language>
+			<Text id="actionUseDevice">"[U]se Device"</Text>
+			<Text id="actionUseDevice:howitzer">"Adjust the fire-rate of your weapon."</Text>
+			<Text id="actionUseDevice:refinery">"Process raw ore into fuel rods."</Text>
+			<Text id="actionUseDevice:shield">"Adjust the strength of your shields."</Text>
+			<Text id="actionUseDevice:usable">"Access the controls for your device."</Text>
+			<Text id="actionUseDevice:damaged">"This device's controls are too damaged to use.."</Text>
+			<Text id="actionUseDevice:nothing">"This device does not include built-in controls."</Text>
+			
+			<Text id="actionModifyHardware">"[M]odify Hardware"</Text>
+			<Text id="actionModifyHardware:drive">"Bypass the safety restrictions for your drives."</Text>
+			<Text id="actionModifyHardware:reactor">"Bypass the safety restrictions for your reactor."</Text>
+			<Text id="actionModifyHardware:shield">"Bypass the safety restrictions for your shields."</Text>
+			<Text id="actionModifyHardware:undo">"Restore the safety restrictions for this device."</Text>
+			<Text id="actionModifyHardware:usable">"Remove the safety restrictions for this device."</Text>
+			<Text id="actionModifyHardware:damaged">"This device is too damaged to be modified."</Text>
+			<Text id="actionModifyHardware:nothing">"This device cannot be physically modified."</Text>
+			
+			<Text id="actionModifyFirmware">"Modify [F]irmware"</Text>
+			<Text id="actionModifyFirmware:usable">"Reset the firmware for this device."</Text>
+			<Text id="actionModifyFirmware:damaged">"This device is too damaged to be modified."</Text>
+			<Text id="actionModifyFirmware:voided">"This device's firmware controls cannot be accessed."</Text>
+			
+			<Text id="actionDone">"[D]one"</Text>
+			
+			<Text id="actionApplyFactoryReset">"[A]pply Factory Reset"</Text>
+			
+			<Text id="actionCancel">"[C]ancel"</Text>
+		</Language>
 	</DockScreen>
 
 </TranscendenceModule>

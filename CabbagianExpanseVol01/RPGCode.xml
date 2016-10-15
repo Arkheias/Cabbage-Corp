@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+	<Globals>
+		(block nil
+		(setq rpgCalcToolsetModifyFirmwareAction
+				(lambda nil
+					(if (itmIsDamaged gItem)
+						{
+							visible: True
+							enabled: Nil
+							desc: (scrTranslate gScreen "actionModifyFirmWare:damaged")
+							}
+							
+						(if (ls (itmIsEnhanced gItem) 0x8000)
+							{
+								visible: True
+								enabled: True
+								desc: (scrTranslate gScreen "actionModifyFirmWare:usable")
+								}
+								
+							{
+								visible: True
+								enabled: Nil
+								desc: (scrTranslate gScreen "actionModifyFirmWare:voided")
+								}
+							)
+						)
+					)
+				)
+				
+			(setq rpgCalcToolsetModifyHardwareAction
+				(lambda nil
+					(if (not (eq (itmGetStaticData gItem 'CCItemSwap) nil))
+						(switch
+							; If the device has already been modified
+							(itmHasAttribute gItem "voidedWarranty")
+								{
+									visible: True
+									enabled: True
+									desc: (scrTranslate gScreen "actionModifyHardware:undo")
+									}
+									
+							; If the device is a drive
+							(itmHasAttribute gItem "drive")
+								{
+									visible: True
+									enabled: True
+									desc: (scrTranslate gScreen "actionModifyHardware:drive")
+									}
+									
+							; If the device is a reactor
+							(itmHasAttribute gItem "reactor")
+								{
+									visible: True
+									enabled: True
+									desc: (scrTranslate gScreen "actionModifyHardware:reactor")
+									}
+									
+							; If the device is a shield
+							(itmHasAttribute gItem "shield")
+								{
+									visible: True
+									enabled: True
+									desc: (scrTranslate gScreen "actionModifyHardware:shield")
+									}
+									
+							; If the device is something else usable
+							{
+								visible: True
+								enabled: True
+								desc: (scrTranslate gScreen "actionModifyHardware:usable")
+								}
+							)
+							
+						(if (itmIsDamaged gItem)
+							{
+								visible: True
+								enabled: Nil
+								desc: (scrTranslate gScreen "actionModifyHardware:damaged")
+								}
+								
+							; Otherwise, nothing
+							{
+								visible: True
+								enabled: Nil
+								desc: (scrTranslate gScreen "actionModifyHardware:nothing")
+								}
+							)
+						)
+					)
+				)
+				
+			(setq rpgCalcToolsetUseDeviceAction
+				(lambda nil
+					(if (not (eq (itmGetStaticData gItem 'useScreen) nil))
+						(switch
+							; If the device is a howitzer
+							(itmHasAttribute gItem "howitzer")
+								{
+									visible: True
+									enabled: True
+									desc: (scrTranslate gScreen "actionUseDevice:howitzer")
+									}
+									
+							; If the device is a refinery
+							(itmHasAttribute gItem "refinery")
+								{
+									visible: True
+									enabled: True
+									desc: (scrTranslate gScreen "actionUseDevice:refinery")
+									}
+									
+							; If the device is a shield
+							(itmHasAttribute gItem "shield")
+								{
+									visible: True
+									enabled: True
+									desc: (scrTranslate gScreen "actionUseDevice:shield")
+									}
+									
+							; If the device is something else usable
+							{
+								visible: True
+								enabled: True
+								desc: (scrTranslate gScreen "actionUseDevice:usable")
+								}
+							)
+							
+						(if (itmIsDamaged gItem)
+							{
+								visible: True
+								enabled: Nil
+								desc: (scrTranslate gScreen "actionUseDevice:damaged")
+								}
+								
+							; Otherwise, nothing
+							{
+								visible: True
+								enabled: Nil
+								desc: (scrTranslate gScreen "actionUseDevice:nothing")
+								}
+							)
+						)
+					)
+				)
+			)
+	</Globals>
+
+</TranscendenceModule>
