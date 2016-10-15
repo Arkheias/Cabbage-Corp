@@ -592,13 +592,13 @@
 							(eq chargesLeft 1)
 								(setq desc
 									(cat
-										"This box contains what seems to be some kind of superconducting coil."
+										"This box seems to contain some kind of superconducting coil."
 									)
 								)
 							
 							(setq desc
 								(cat
-									"This box seems to carry several superconducting coils."
+									"This box seems to carry some kind of superconducting coils."
 								)
 							)
 						)
