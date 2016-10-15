@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+	<!-- Unshielded Device Base Class ==========================================
+	
+	USAGE
+	
+		1.	Inherit from this class.
+		2.	Include the auxMountDevice attribute.
+	
+	======================================================================== -->
+
+	<ItemType UNID="&baCCUnshieldedDeviceBase;"
+			name=				"(unshielded device base class)"
+			virtual=			"true"
+			>
+			
+		<Events>
+			<OnUpdate>
+				(if (itmIsInstalled gItem)
+					(if (objIsDeviceEnabled gsource gItem)
+						(if (not (shpIsRadiationImmune gSource))
+							(shpMakeRadioactive gSource)
+							)
+						)
+					)
+			</OnUpdate>
+		</Events>
+	</ItemType>
+
+</TranscendenceModule>

@@ -1,31 +1,6 @@
 <?xml version="1.0" ?>
 <TranscendenceModule>
 
-
-<!-- ======================================================================= -->
-						<!-- Generic Base classes -->							
-<!-- ======================================================================= -->
-
-<!-- Unshielded Device Base Class -->
-
-	<ItemType UNID="&baCCUnshieldedDeviceBase;"
-			name=				"(unshielded device base class)"
-			virtual=			"true"
-	>
-		
-		<Events>
-			<OnUpdate>
-				(if (itmIsInstalled gItem)
-					(if (objIsDeviceEnabled gsource gItem)
-						(if (not (shpIsRadiationImmune gSource))
-							(shpMakeRadioactive gSource)
-						)
-					)
-				)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
 <!-- ======================================================================= -->
 					<!-- Microsaur Scanner Base Classes -->						
 <!-- ======================================================================= -->
