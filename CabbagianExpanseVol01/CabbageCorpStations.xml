@@ -1082,7 +1082,7 @@
 
 		<Devices>
 			<Device deviceID="&itCCSavoyM110Howitzer;"  omnidirectional="true"/>
-			<Device deviceID="&vtCCSavoyHowitzerRestrictionBolt;"/>
+			<Device deviceID="&vtCCHowitzerRestrictionBoltL5;"/>
 		</Devices>
 
 		<Language>

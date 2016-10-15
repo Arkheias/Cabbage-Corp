@@ -7,9 +7,6 @@
 			<!-- Applies company name or generic label to items -->
 			<ItemAttribute label="Cabbage Corp"			criteria="* +cabbageCorp;"/>
 			
-			<!-- This is used for devices that can be modified, to differentiate between modified and unmodified versions -->
-			<ItemAttribute label="no containment"		labelType="disadvantage"	criteria="* +cabbageNoContainment;"/>
-			
 			<!-- This allows military crew members to have the appropriate tag, but not be confiscated/arrested at stations -->
 			<ItemAttribute label="military"				labelType="advantage"	criteria="* +militaryCrewMember;"/>
 			

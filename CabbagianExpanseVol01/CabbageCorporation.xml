@@ -1,77 +1,58 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!-- ======================================================================= -->
-						<!-- Cabbage Corp Sovereign -->							
-<!-- ======================================================================= -->
+<!-- BASIC CABBAGE CORP RULES
+
+	PLAYER DATA
+	
+	cabbageCrime:	Description of the player's crime (e.g., "slave-trading")
+	
+	cabbageCrimeSeverity: The severity of the crime
+						0 = No crime (yet)
+						1 = Infraction (contempt of corp)
+						2 = Misdemeanor (friendly-fire)
+						3 = Vandalism (destruction of property)
+						3 = Felony (piracy)
+						4 = Crimes against Cabbage Corp (mass destruction)
+						5 = Treason (betrayal of corp)
+						
+	cabbageCrimeRecord: Number of times player has been caught and released for a felony
+	
+-->
 
 	 <Sovereign UNID="&svCCCabbageCorp;"
 			name="Cabbage Corp"
 			alignment="constructive chaos"
-	>
+			>
+			
 		<InitialData>
 			<WeaponRecipes>
 				(
-					{ item:&itCCDualSavoyM1Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM1Howitzer; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSavoyM2Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM2Howitzer; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSavoyM4Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM4Howitzer; count:2 } )													extraCost:0 }
 					{ item:&itCCDualSavoyM8Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM8Howitzer; count:2 } )													extraCost:0 }
 					{ item:&itCCDualSavoyM15Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM15Howitzer; count:2 } )													extraCost:0 }
 					{ item:&itCCDualSavoyM30Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM30Howitzer; count:2 } )													extraCost:0 }
 					{ item:&itCCDualSavoyM56Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM56Howitzer; count:2 } )													extraCost:0 }
 					{ item:&itCCDualSavoyM110Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM110Howitzer; count:2 } )													extraCost:0 }
 					{ item:&itCCDualSavoyM210Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM210Howitzer; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSavoyM400Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM400Howitzer; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSavoyM770Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM770Howitzer; count:2 } )													extraCost:0 }
-					{ item:&itCCDualSavoyM1500Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM1500Howitzer; count:2 } )												extraCost:0 }
-					{ item:&itCCDualSavoyM2900Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM2900Howitzer; count:2 } )												extraCost:0 }
-					{ item:&itCCDualSavoyM5600Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM5600Howitzer; count:2 } )												extraCost:0 }
-					{ item:&itCCDualSavoyM11000Howitzer;		enhancement:Nil		components:( { item:&itCCSavoyM11000Howitzer; count:2 } )												extraCost:0 }
-					{ item:&itCCOmniSavoyM1Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM1Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniSavoyM2Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM2Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniSavoyM4Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM4Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniSavoyM8Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM8Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniSavoyM15Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM15Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniSavoyM30Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM30Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniSavoyM56Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM56Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniSavoyM110Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM110Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniSavoyM210Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM210Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniSavoyM400Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM400Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniSavoyM770Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM770Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniSavoyM1500Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM1500Howitzer; count:1 } )												extraCost:0 }
-					{ item:&itCCOmniSavoyM2900Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM2900Howitzer; count:1 } )												extraCost:0 }
-					{ item:&itCCOmniSavoyM5600Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM5600Howitzer; count:1 } )												extraCost:0 }
-					{ item:&itCCOmniSavoyM11000Howitzer;		enhancement:Nil		components:( { item:&itCCSavoyM11000Howitzer; count:1 } )												extraCost:0 }
-					{ item:&itCCAdvSavoyM1Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM1Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCAdvSavoyM2Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM2Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCAdvSavoyM4Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM4Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvSavoyM8Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM8Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvSavoyM15Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM15Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvSavoyM30Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM30Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvSavoyM56Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM56Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvSavoyM110Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM110Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvSavoyM210Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM210Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCAdvSavoyM400Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM400Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCAdvSavoyM770Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM770Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCAdvSavoyM1500Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM1500Howitzer; count:1 } )												extraCost:0 }
-					{ item:&itCCAdvSavoyM2900Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM2900Howitzer; count:1 } )												extraCost:0 }
-					{ item:&itCCAdvSavoyM5600Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM5600Howitzer; count:1 } )												extraCost:0 }
-					{ item:&itCCAdvSavoyM11000Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM11000Howitzer; count:1 } )												extraCost:0 }
-					{ item:&itCCAuxSavoyM1Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM1Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSavoyM2Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM2Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSavoyM4Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM4Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSavoyM8Howitzer;				enhancement:Nil		components:( { item:&itCCSavoyM8Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSavoyM15Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM15Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSavoyM30Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM30Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSavoyM56Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM56Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSavoyM110Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM110Howitzer; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSavoyM210Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM210Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSavoyM400Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM400Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSavoyM770Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM770Howitzer; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxSavoyM1500Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM1500Howitzer; count:1 } )												extraCost:0 }
-					{ item:&itCCAuxSavoyM2900Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM2900Howitzer; count:1 } )												extraCost:0 }
-					{ item:&itCCAuxSavoyM5600Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM5600Howitzer; count:1 } )												extraCost:0 }
-					{ item:&itCCAuxSavoyM11000Howitzer;			enhancement:Nil		components:( { item:&itCCSavoyM11000Howitzer; count:1 } )												extraCost:0 }
 					
 					{ item:&itCCDualB60MiningLance;				enhancement:Nil		components:( { item:&itCCB60MiningLance; count:2 } )													extraCost:0 }
 					{ item:&itCCDualB110MiningLance;			enhancement:Nil		components:( { item:&itCCB110MiningLance; count:2 } )													extraCost:0 }
@@ -85,7 +66,7 @@
 					{ item:&itCCAuxB60MiningLance;				enhancement:Nil		components:( { item:&itCCB60MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxB110MiningLance;				enhancement:Nil		components:( { item:&itCCB110MiningLance; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxB200MiningLance;				enhancement:Nil		components:( { item:&itCCB200MiningLance; count:1 } )													extraCost:0 }
-
+					
 					{ item:&itCCDualKaleM1Repeater;				enhancement:Nil		components:( { item:&itCCKaleM1Repeater; count:2 } )													extraCost:0 }
 					{ item:&itCCDualKaleM3Repeater;				enhancement:Nil		components:( { item:&itCCKaleM3Repeater; count:2 } )													extraCost:0 }
 					{ item:&itCCDualKaleM6Repeater;				enhancement:Nil		components:( { item:&itCCKaleM6Repeater; count:2 } )													extraCost:0 }
@@ -104,9 +85,9 @@
 					{ item:&itCCAuxKaleM11Repeater;				enhancement:Nil		components:( { item:&itCCKaleM11Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxKaleM20Repeater;				enhancement:Nil		components:( { item:&itCCKaleM20Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxKaleM38Repeater;				enhancement:Nil		components:( { item:&itCCKaleM38Repeater; count:1 } )													extraCost:0 }
-				)
+					)
 			</WeaponRecipes>
-
+			
 			<ArmorRecipes>
 				(
 					{ item:&itCC2xCabbagiumArmor;				enhancement:Nil		components:( { item:&itCC1xCabbagiumArmor; count:2 } )													extraCost:0 }
@@ -129,7 +110,7 @@
 					{ item:&itCC4xTheoreticalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC2xTheoreticalCabbagiumArmor; count:2 } )										extraCost:0 }
 					{ item:&itCC6xTheoreticalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC2xTheoreticalCabbagiumArmor; count:3 } )										extraCost:0 }
 					{ item:&itCC8xTheoreticalCabbagiumArmor;	enhancement:Nil		components:( { item:&itCC4xTheoreticalCabbagiumArmor; count:2 } )										extraCost:0 }
-
+					
 					{ item:&itCC2xSivayaArmor;					enhancement:Nil		components:( { item:&itCC1xSivayaArmor; count:2 } )														extraCost:0 }
 					{ item:&itCC4xSivayaArmor;					enhancement:Nil		components:( { item:&itCC2xSivayaArmor; count:2 } )														extraCost:0 }
 					{ item:&itCC2xHardenedSivayaArmor;			enhancement:Nil		components:( { item:&itCC1xHardenedSivayaArmor; count:2 } )												extraCost:0 }
@@ -140,7 +121,7 @@
 					{ item:&itCC4xExperimentalSivayaArmor;		enhancement:Nil		components:( { item:&itCC2xExperimentalSivayaArmor; count:2 } )											extraCost:0 }
 					{ item:&itCC2xTheoreticalSivayaArmor;		enhancement:Nil		components:( { item:&itCC1xTheoreticalSivayaArmor; count:2 } )											extraCost:0 }
 					{ item:&itCC4xTheoreticalSivayaArmor;		enhancement:Nil		components:( { item:&itCC2xTheoreticalSivayaArmor; count:2 } )											extraCost:0 }
-
+					
 					{ item:&itCC2xStealthArmor;					enhancement:Nil		components:( { item:&itCC1xStealthArmor; count:2 } )													extraCost:0 }
 					{ item:&itCC4xStealthArmor;					enhancement:Nil		components:( { item:&itCC2xStealthArmor; count:2 } )													extraCost:0 }
 					{ item:&itCC2xHardenedStealthArmor;			enhancement:Nil		components:( { item:&itCC1xHardenedStealthArmor; count:2 } )											extraCost:0 }
@@ -151,9 +132,9 @@
 					{ item:&itCC4xExperimentalStealthArmor;		enhancement:Nil		components:( { item:&itCC2xExperimentalStealthArmor; count:2 } )										extraCost:0 }
 					{ item:&itCC2xTheoreticalStealthArmor;		enhancement:Nil		components:( { item:&itCC1xTheoreticalStealthArmor; count:2 } )											extraCost:0 }
 					{ item:&itCC4xTheoreticalStealthArmor;		enhancement:Nil		components:( { item:&itCC2xTheoreticalStealthArmor; count:2 } )											extraCost:0 }
-				)
+					)
 			</ArmorRecipes>
-
+			
 			<DriveRecipes>
 				(
 					{ item:&itCCAuxIonDrive;					enhancement:Nil		components:( { item:&itCCIonDrive; count:1 } )															extraCost:0 }
@@ -165,7 +146,7 @@
 					{ item:&itCCAuxCobaltThoriumMegaDrive;		enhancement:Nil		components:( { item:&itCCCobaltThoriumMegaDrive; count:1 } )											extraCost:0 }
 					{ item:&itCCAuxXenotiteMegaDrive;			enhancement:Nil		components:( { item:&itCCXenotiteMegaDrive; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxPteracniumMegaDrive;			enhancement:Nil		components:( { item:&itCCPteracniumMegaDrive; count:1 } )												extraCost:0 }
-
+					
 					{ item:&itCCDualIonDrive;					enhancement:Nil		components:( { item:&itCCIonDrive; count:2 } )															extraCost:0 }
 					{ item:&itCCDualPlasmaDrive;				enhancement:Nil		components:( { item:&itCCPlasmaDrive; count:2 } )														extraCost:0 }
 					{ item:&itCCDualTritiumPropulsionUpgrade;	enhancement:Nil		components:( { item:&itCCTritiumPropulsionUpgrade; count:2 } )											extraCost:0 }
@@ -175,21 +156,21 @@
 					{ item:&itCCDualCobaltThoriumMegaDrive;		enhancement:Nil		components:( { item:&itCCCobaltThoriumMegaDrive; count:2 } )											extraCost:0 }
 					{ item:&itCCDualXenotiteMegaDrive;			enhancement:Nil		components:( { item:&itCCXenotiteMegaDrive; count:2 } )													extraCost:0 }
 					{ item:&itCCDualPteracniumMegaDrive;		enhancement:Nil		components:( { item:&itCCPteracniumMegaDrive; count:2 } )												extraCost:0 }
-				)
+					)
 			</DriveRecipes>
-
+			
 			<IllegalRecipes>
 				(
 					{ item:&itCCDirtySolarPanelArray;			enhancement:Nil		components:( { item:&itCCSolarPanel; count:6 } )														extraCost:0 }
-
+					
 					{ item:&itCCAutoRepairAI;					enhancement:Nil		components:( { item:&itCCAutoRepairVI; count:1 } { item:&itCCQuadCoreProcessor; count:1 } )				extraCost:0 }
 					{ item:&itCCReplicatorCollective;			enhancement:Nil		components:( { item:&itCCAutoRepairAI; count:1 } { item:&itNeutroniumOre; count:12 } )					extraCost:0 }
-
+					
 					{ item:&itCCMicrosaurCondemnationPod;		enhancement:Nil		components:( { item:&itSeismicScannerPod; count:1 } )													extraCost:0 }
 					{ item:&itCCAdvMicrosaurCondemnationPod;	enhancement:Nil		components:( { item:&itAdvancedScannerPod; count:1 } )													extraCost:0 }
-				)
+					)
 			</IllegalRecipes>
-
+			
 			<Recipes>
 				(
 					{ item:&itCCDualCargoHoldExpansion;			enhancement:Nil		components:( { item:&itCCCargoHoldExpansion; count:1 } )												extraCost:0 }
@@ -198,23 +179,23 @@
 					{ item:&itCCDualMilitaryCargoBay;			enhancement:Nil		components:( { item:&itCCMilitaryCargoBay; count:1 } )													extraCost:0 }
 					{ item:&itCCDualAutonBay;					enhancement:Nil		components:( { item:&itCCAutonBay; count:1 } )															extraCost:0 }
 					{ item:&itCCDualMilitaryAutonBay;			enhancement:Nil		components:( { item:&itCCAutonBay; count:1 } )															extraCost:0 }
-
+					
 					{ item:&itCCDualCoreProcessor;				enhancement:Nil		components:( { item:&itMnemonicProcessor; count:2 } )													extraCost:0 }
 					{ item:&itCCQuadCoreProcessor;				enhancement:Nil		components:( { item:&itCCDualCoreProcessor; count:2 } )													extraCost:0 }
-
+					
 					{ item:&itCCAdvHeliumRegolithRefinery;		enhancement:Nil		components:( { item:&itCCHeliumRegolithRefinery; count:1 } )											extraCost:0 }
 					{ item:&itCCAdvUraniumOreRefinery;			enhancement:Nil		components:( { item:&itCCUraniumOreRefinery; count:1 } )												extraCost:0 }
 					{ item:&itCCAdvXenotiteOreRefinery;			enhancement:Nil		components:( { item:&itCCXenotiteOreRefinery; count:1 } )												extraCost:0 }
 					{ item:&itCCAdvPteracniumOreRefinery;		enhancement:Nil		components:( { item:&itCCPteracniumOreRefinery; count:1 } )												extraCost:0 }
 					{ item:&itCCAdvHadronArcheolithRefinery;	enhancement:Nil		components:( { item:&itCCHadronArcheolithRefinery; count:1 } )											extraCost:0 }
-
+					
 					{ item:&itCCSolarPanelArray;				enhancement:Nil		components:( { item:&itCCDirtySolarPanelArray; count:1 } )												extraCost:0 }
 					{ item:&itCCSolarConcentrator;				enhancement:Nil		components:( { item:&itCCDirtySolarConcentrator; count:1 } )											extraCost:0 }
 					{ item:&itCCBiohybridSolarDynamo;			enhancement:Nil		components:( { item:&itCCDirtyBiohybridSolarDynamo; count:1 } )											extraCost:0 }
-
+					
 					{ item:&itCCRegenNMGenerator;				enhancement:Nil		components:( { item:&itRegeneratingNanos; count:6 }  { item:&itMnemonicProcessor; count:1 } )			extraCost:0 }
 					{ item:&itCCAutoRepairVI;					enhancement:Nil		components:( { item:&itCCRegenNMGenerator; count:1 } { item:&itCCDualCoreProcessor; count:1 } )			extraCost:0 }
-
+					
 					{ item:&itCCAuxSiva8MWReactor;				enhancement:Nil		components:( { item:&itCCSiva8MWReactor; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSiva12MWReactor;				enhancement:Nil		components:( { item:&itCCSiva12MWReactor; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSiva20MWReactor;				enhancement:Nil		components:( { item:&itCCSiva20MWReactor; count:1 } )													extraCost:0 }
@@ -225,9 +206,9 @@
 					{ item:&itCCAuxSiva400MWReactor;			enhancement:Nil		components:( { item:&itCCSiva400MWReactor; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSiva800MWReactor;			enhancement:Nil		components:( { item:&itCCSiva800MWReactor; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxSiva1200MWReactor;			enhancement:Nil		components:( { item:&itCCSiva1200MWReactor; count:1 } )													extraCost:0 }
-				)
+					)
 			</Recipes>
-
+			
 			<SpecialDeal>
 				(
 					(&itCCL1DamageControlCrew; &itCCL1WeaponsEngineeringCrew; &itCCL1ShieldsEngineeringCrew;)
@@ -242,10 +223,10 @@
 					(&itCCL10DamageControlCrew; &itCCL10WeaponsEngineeringCrew; &itCCL10ShieldsEngineeringCrew;)
 					(&itCCL11DamageControlCrew; &itCCL11WeaponsEngineeringCrew; &itCCL11ShieldsEngineeringCrew;)
 					(&itCCL12DamageControlCrew; &itCCL12WeaponsEngineeringCrew; &itCCL12ShieldsEngineeringCrew;)
-				)
+					)
 			</SpecialDeal>
 		</InitialData>
-
+		
 		<Events>
 			<GetGlobalDockScreen>
 				(switch
@@ -261,17 +242,17 @@
 						(if (objHasAttribute gSource "corporateDecon")
 							(list &dsCommonwealthDecon; 10)
 							(list &dsRefuseContamination; 10)
-						)
-						
+							)
+							
 					;	If the player has committed crimes, then they're in trouble
 					
 					(geq (int (objGetData gPlayerShip "CCCrimeSeverity")) 2)
 						(list &dsCCCabbageExecution; 8)
 						
 					Nil
-				)
+					)
 			</GetGlobalDockScreen>
 		</Events>
 	</Sovereign>
-	
+
 </TranscendenceModule>

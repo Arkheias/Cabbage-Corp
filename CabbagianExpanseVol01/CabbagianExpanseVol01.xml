@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <!DOCTYPE TranscendenceLibrary
 	[
@@ -69,7 +69,7 @@
 	
 	<!ENTITY unidCCIdaSegment						"0xDA27C090">
 	<!ENTITY ssCCOthala				 				"0xDA27C091">
-
+	
 	<!-- C0B0-C0BF SYSTEM BACKGROUNDS -->
 	
 	<!ENTITY rsCCCabbagianExpanseSpace 				"0xDA27C0B0">
@@ -240,11 +240,16 @@
 
 	<!-- C600-C60F WEAPON ENHANCERS -->
 	
-	<!ENTITY vtCCSavoyHowitzerRestrictionBolt		"0xDA27C600">
-	<!ENTITY itCCMarkIRepeaterHeatSink				"0xDA27C601">
-	<!ENTITY itCCMarkIIRepeaterHeatSink				"0xDA27C602">
-	<!ENTITY itCCMarkIIIRepeaterHeatSink			"0xDA27C603">
-	<!ENTITY itCCMiningLanceCapacitor				"0xDA27C604">
+	
+	<!ENTITY vtCCHowitzerRestrictionBoltL1			"0xDA27C601">
+	<!ENTITY vtCCHowitzerRestrictionBoltL2			"0xDA27C602">
+	<!ENTITY vtCCHowitzerRestrictionBoltL3			"0xDA27C603">
+	<!ENTITY vtCCHowitzerRestrictionBoltL4			"0xDA27C604">
+	<!ENTITY vtCCHowitzerRestrictionBoltL5			"0xDA27C605">
+	<!ENTITY itCCMarkIRepeaterHeatSink				"0xDA27C606">
+	<!ENTITY itCCMarkIIRepeaterHeatSink				"0xDA27C607">
+	<!ENTITY itCCMarkIIIRepeaterHeatSink			"0xDA27C608">
+	<!ENTITY itCCMiningLanceCapacitor				"0xDA27C609">
 	
 	<!-- C610-C62F SHIELD ENHANCERS -->
 	
@@ -377,8 +382,6 @@
 	<!ENTITY itCCMIDRADISModule						"0xDA27C771">
 	<!ENTITY itCCMIIDRADISModule					"0xDA27C772">
 	<!ENTITY itCCMIIIDRADISModule					"0xDA27C773">
-	<!ENTITY itCCMIVDRADISModule					"0xDA27C774">
-	<!ENTITY itCCMVDRADISModule						"0xDA27C775">
 
 <!-- ======================================================== -->
 			<!-- C800-C8FF		REACTORS -->		
@@ -497,82 +500,37 @@
 
 	<!-- CC00-CC4F SAVOY HOWITZERS -->
 	
-	<!ENTITY vtCCSavoyHowitzer						"0xDA27CC00">
-	<!ENTITY itCCSavoyM1Howitzer					"0xDA27CC01">
-	<!ENTITY itCCSavoyM2Howitzer					"0xDA27CC02">
-	<!ENTITY itCCSavoyM4Howitzer					"0xDA27CC03">
+	<!ENTITY dsCCSavoyHowitzers						"0xDA27CC00">
 	<!ENTITY itCCSavoyM8Howitzer					"0xDA27CC04">
 	<!ENTITY itCCSavoyM15Howitzer					"0xDA27CC05">
 	<!ENTITY itCCSavoyM30Howitzer					"0xDA27CC06">
 	<!ENTITY itCCSavoyM56Howitzer					"0xDA27CC07">
 	<!ENTITY itCCSavoyM110Howitzer					"0xDA27CC08">
 	<!ENTITY itCCSavoyM210Howitzer					"0xDA27CC09">
-	<!ENTITY itCCSavoyM400Howitzer					"0xDA27CC0A">
-	<!ENTITY itCCSavoyM770Howitzer					"0xDA27CC0B">
-	<!ENTITY itCCSavoyM1500Howitzer					"0xDA27CC0C">
-	<!ENTITY itCCSavoyM2900Howitzer					"0xDA27CC0D">
-	<!ENTITY itCCSavoyM5600Howitzer					"0xDA27CC0E">
-	<!ENTITY itCCSavoyM11000Howitzer				"0xDA27CC0F">
-	<!ENTITY itCCDualSavoyM1Howitzer				"0xDA27CC11">
-	<!ENTITY itCCDualSavoyM2Howitzer				"0xDA27CC12">
-	<!ENTITY itCCDualSavoyM4Howitzer				"0xDA27CC13">
 	<!ENTITY itCCDualSavoyM8Howitzer				"0xDA27CC14">
 	<!ENTITY itCCDualSavoyM15Howitzer				"0xDA27CC15">
 	<!ENTITY itCCDualSavoyM30Howitzer				"0xDA27CC16">
 	<!ENTITY itCCDualSavoyM56Howitzer				"0xDA27CC17">
 	<!ENTITY itCCDualSavoyM110Howitzer				"0xDA27CC18">
 	<!ENTITY itCCDualSavoyM210Howitzer				"0xDA27CC19">
-	<!ENTITY itCCDualSavoyM400Howitzer				"0xDA27CC1A">
-	<!ENTITY itCCDualSavoyM770Howitzer				"0xDA27CC1B">
-	<!ENTITY itCCDualSavoyM1500Howitzer				"0xDA27CC1C">
-	<!ENTITY itCCDualSavoyM2900Howitzer				"0xDA27CC1D">
-	<!ENTITY itCCDualSavoyM5600Howitzer				"0xDA27CC1E">
-	<!ENTITY itCCDualSavoyM11000Howitzer			"0xDA27CC1F">
-	<!ENTITY itCCOmniSavoyM1Howitzer				"0xDA27CC21">
-	<!ENTITY itCCOmniSavoyM2Howitzer				"0xDA27CC22">
-	<!ENTITY itCCOmniSavoyM4Howitzer				"0xDA27CC23">
 	<!ENTITY itCCOmniSavoyM8Howitzer				"0xDA27CC24">
 	<!ENTITY itCCOmniSavoyM15Howitzer				"0xDA27CC25">
 	<!ENTITY itCCOmniSavoyM30Howitzer				"0xDA27CC26">
 	<!ENTITY itCCOmniSavoyM56Howitzer				"0xDA27CC27">
 	<!ENTITY itCCOmniSavoyM110Howitzer				"0xDA27CC28">
 	<!ENTITY itCCOmniSavoyM210Howitzer				"0xDA27CC29">
-	<!ENTITY itCCOmniSavoyM400Howitzer				"0xDA27CC2A">
-	<!ENTITY itCCOmniSavoyM770Howitzer				"0xDA27CC2B">
-	<!ENTITY itCCOmniSavoyM1500Howitzer				"0xDA27CC2C">
-	<!ENTITY itCCOmniSavoyM2900Howitzer				"0xDA27CC2D">
-	<!ENTITY itCCOmniSavoyM5600Howitzer				"0xDA27CC2E">
-	<!ENTITY itCCOmniSavoyM11000Howitzer			"0xDA27CC2F">
-	<!ENTITY itCCAdvSavoyM1Howitzer					"0xDA27CC31">
-	<!ENTITY itCCAdvSavoyM2Howitzer					"0xDA27CC32">
-	<!ENTITY itCCAdvSavoyM4Howitzer					"0xDA27CC33">
 	<!ENTITY itCCAdvSavoyM8Howitzer					"0xDA27CC34">
 	<!ENTITY itCCAdvSavoyM15Howitzer				"0xDA27CC35">
 	<!ENTITY itCCAdvSavoyM30Howitzer				"0xDA27CC36">
 	<!ENTITY itCCAdvSavoyM56Howitzer				"0xDA27CC37">
 	<!ENTITY itCCAdvSavoyM110Howitzer				"0xDA27CC38">
 	<!ENTITY itCCAdvSavoyM210Howitzer				"0xDA27CC39">
-	<!ENTITY itCCAdvSavoyM400Howitzer				"0xDA27CC3A">
-	<!ENTITY itCCAdvSavoyM770Howitzer				"0xDA27CC3B">
-	<!ENTITY itCCAdvSavoyM1500Howitzer				"0xDA27CC3C">
-	<!ENTITY itCCAdvSavoyM2900Howitzer				"0xDA27CC3D">
-	<!ENTITY itCCAdvSavoyM5600Howitzer				"0xDA27CC3E">
-	<!ENTITY itCCAdvSavoyM11000Howitzer				"0xDA27CC3F">
-	<!ENTITY itCCAuxSavoyM1Howitzer					"0xDA27CC41">
-	<!ENTITY itCCAuxSavoyM2Howitzer					"0xDA27CC42">
-	<!ENTITY itCCAuxSavoyM4Howitzer					"0xDA27CC43">
 	<!ENTITY itCCAuxSavoyM8Howitzer					"0xDA27CC44">
 	<!ENTITY itCCAuxSavoyM15Howitzer				"0xDA27CC45">
 	<!ENTITY itCCAuxSavoyM30Howitzer				"0xDA27CC46">
 	<!ENTITY itCCAuxSavoyM56Howitzer				"0xDA27CC47">
 	<!ENTITY itCCAuxSavoyM110Howitzer				"0xDA27CC48">
 	<!ENTITY itCCAuxSavoyM210Howitzer				"0xDA27CC49">
-	<!ENTITY itCCAuxSavoyM400Howitzer				"0xDA27CC4A">
-	<!ENTITY itCCAuxSavoyM770Howitzer				"0xDA27CC4B">
-	<!ENTITY itCCAuxSavoyM1500Howitzer				"0xDA27CC4C">
-	<!ENTITY itCCAuxSavoyM2900Howitzer				"0xDA27CC4D">
-	<!ENTITY itCCAuxSavoyM5600Howitzer				"0xDA27CC4E">
-	<!ENTITY itCCAuxSavoyM11000Howitzer				"0xDA27CC4F">
 
 	<!-- CC50-CC8F KALE REPEATERS -->
 
@@ -709,25 +667,16 @@
 	<!ENTITY rsCCShieldHUDCabbage					"0xDA27CE42">
 
 		<!-- Sounds-->
-	<!ENTITY snCCHowitzerFireKineticLight			"0xDA27CE51">
-	<!ENTITY snCCHowitzerFireKineticMedium			"0xDA27CE52">
-	<!ENTITY snCCHowitzerFireKineticHeavy			"0xDA27CE53">
-	<!ENTITY snCCHowitzerFireBlastLight				"0xDA27CE54">
-	<!ENTITY snCCHowitzerFireBlastMedium			"0xDA27CE55">
-	<!ENTITY snCCHowitzerFireBlastHeavy				"0xDA27CE56">
-	<!ENTITY snCCHowitzerFireThermoLight			"0xDA27CE57">
-	<!ENTITY snCCHowitzerFireThermoMedium			"0xDA27CE58">
-	<!ENTITY snCCHowitzerFireThermoHeavy			"0xDA27CE59">
-	<!ENTITY snCCHowitzerFirePlasmaLight			"0xDA27CE5A">
-	<!ENTITY snCCHowitzerFirePlasmaMedium			"0xDA27CE5B">
-	<!ENTITY snCCHowitzerFirePlasmaHeavy			"0xDA27CE5C">
-	<!ENTITY snCCHowitzerFireNanoLight				"0xDA27CE5D">
-	<!ENTITY snCCHowitzerFireNanoMedium				"0xDA27CE5E">
-	<!ENTITY snCCHowitzerFireNanoHeavy				"0xDA27CE5F">
+	<!ENTITY snCCHowitzerFireBlastLight				"0xDA27CE51">
+	<!ENTITY snCCHowitzerFireBlastMedium			"0xDA27CE52">
+	<!ENTITY snCCHowitzerFireBlastHeavy				"0xDA27CE53">
+	<!ENTITY snCCHowitzerFireThermoLight			"0xDA27CE54">
+	<!ENTITY snCCHowitzerFireThermoMedium			"0xDA27CE55">
+	<!ENTITY snCCHowitzerFireThermoHeavy			"0xDA27CE56">
 	
-	<!ENTITY snCCLanceFireIonLight					"0xDA27CE61">
-	<!ENTITY snCCLanceFireIonMedium					"0xDA27CE62">
-	<!ENTITY snCCLanceFireIonHeavy					"0xDA27CE63">
+	<!ENTITY snCCLanceFireIonLight					"0xDA27CE57">
+	<!ENTITY snCCLanceFireIonMedium					"0xDA27CE58">
+	<!ENTITY snCCLanceFireIonHeavy					"0xDA27CE59">
 
 		<!-- Autons-->
 	<!ENTITY itCCMarkIWraithAuton					"0xDA27CEA0">
@@ -783,10 +732,10 @@
 		Name=			"Cabbagian Expanse Vol 01" 
 		release=		"1"
 		version=		"0.8.0"
-		apiVersion=		"29"
+		apiVersion=		"30"
 		credits=		"Arkheias"
 		coverImageID=	"&rsCCCabbagianExpanseCover;"
->
+		>
 
 	<Library unid="&unidRPGLibrary;"/>
 	<Library unid="&unidHumanSpaceLibrary;"/>
@@ -797,8 +746,8 @@
 	<Module fileName="Armor_Sivaya.xml"/>
 	<Module fileName="Armor_Stealth.xml"/>
 	<Module fileName="Autons_Phantom.xml"/>
-	<Module fileName="Autons_Wraith.xml"/>
 	<Module fileName="Autons_Shade.xml"/>
+	<Module fileName="Autons_Wraith.xml"/>
 	<Module fileName="CabbageCorpFleet.xml"/>
 	<Module fileName="CabbageCorporation.xml"/>
 	<Module fileName="CabbageCorpStations.xml"/>

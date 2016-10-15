@@ -296,7 +296,7 @@ ShieldEnhancement	3		650		1		uncommon
 			/>
 			<Device deviceID="&itCCMIDRADISModule;"/>
 			
-			<Device deviceID="&vtCCSavoyHowitzerRestrictionBolt;"/>
+			<Device deviceID="&vtCCHowitzerRestrictionBoltL5;"/>
 		</Devices>
 
 		<Maneuver
@@ -378,7 +378,7 @@ ShieldEnhancement	7		25000	10		common
 			/>
 			<Device deviceID="&itCCMIIDRADISModule;"/>
 			
-			<Device deviceID="&vtCCSavoyHowitzerRestrictionBolt;"/>
+			<Device deviceID="&vtCCHowitzerRestrictionBoltL5;"/>
 		</Devices>
 
 		<Maneuver

@@ -1,4 +1,5 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
 <!--
@@ -73,12 +74,12 @@ other			n-?
 					<Device item="&itCCStomaS4ShieldEmitterArray;"/>				;40
 				</Group>
 			</Table>
-			
+
 			<Table>
 				<Device chance="70" item="&itCCTritiumPropulsionUpgrade;"></Device>	;50
 				<Device chance="30" item="&itCCDualPlasmaDrive;"></Device>			;50
 			</Table>
-			
+
 			<Table>
 				<Device chance="90" item="&itCCSolarPanelArray;"></Device>
 				<Device chance="10" item="&itCCDirtySolarPanelArray;"></Device>
@@ -97,8 +98,8 @@ other			n-?
 			</Table>
 			
 			<Device deviceID="&itCCSiva80MWReactor;"/>
-			<Device deviceID="&itCCMIDRADISModule;"/>
-			<Device deviceID="&vtCCSavoyHowitzerRestrictionBolt;"/>
+			<Device deviceID="&itCCMIDRADISModule;"/>								;100
+			<Device deviceID="&vtCCHowitzerRestrictionBoltL4;"/>
 		</Devices>
 
 		<Maneuver
@@ -210,7 +211,7 @@ other			n-?
 			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="290" posRadius="95"/>
 			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="300" posRadius="105"/>
 			
-			<Device deviceID="&itCCNapaS150Deflector;" charges="4"/>
+			<Device deviceID="&itCCNapaS150Deflector;" charges="4" enhancement="0x0105"/>
 			<Device deviceID="&itCCSiva800MWReactor;"/>
 			<Device deviceID="&itCCStomaS120ShieldEmitterArray;"/>
 			
@@ -225,7 +226,7 @@ other			n-?
 			<Device deviceID="&vtDamageControlParty;"/>
 			<Device deviceID="&vtDamageControlParty;"/>
 			
-			<Device deviceID="&vtCCSavoyHowitzerRestrictionBolt;"/>
+			<Device deviceID="&vtCCHowitzerRestrictionBoltL5;"/>
 		</Devices>
 
 		<Maneuver
@@ -260,5 +261,5 @@ other			n-?
 	<Image UNID="&rsCCCheopsLarge;"			bitmap="CheopsLarge.jpg"			bitmask="CheopsLargeMask.jpg"	loadOnUse="true"/>
 	<Image UNID="&rsCCCheopsArmorHud;"		bitmap="CheopsArmorHud.jpg"/>
 	<Image UNID="&rsCCCheopsHD;"			bitmap="CheopsHD.jpg"				bitmask="CheopsHDMask.jpg"/>
-	
+
 </TranscendenceModule>

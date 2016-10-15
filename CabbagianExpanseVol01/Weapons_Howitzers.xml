@@ -1,258 +1,60 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <TranscendenceModule>
 
-<!--
-;showreference appears to do nothing for most weapons, including it anyway because vanilla game does that
-;45		1.3	shots/second	fast->
-;20		3	shots/second	fast->
-;15		3.8	shots/second	fast->	
-;12		5	shots/second	fast->	6	shots/second
-;10		6	shots/second	fast->	
-;9		6	shots/second	fast->	
-;8		7.5	shots/second	fast->	
-;7		7.5	shots/second	fast->	10	shots/second
-;6		10	shots/second	fast->	15	shots/second
-;5		10	shots/second	fast->	15	shots/second
-;4		15	shots/second	fast->	15	shots/second
-;3		15	shots/second	fast->	15	shots/second
-;2		30	shots/second	fast->	30	shots/second
-;1		30	shots/second	fast->	30	shots/second
-;0			shots/second	fast->		shots/second
-;-1			shots/second	fast->		shots/second
--->
+<!-- Savoy Howitzer Devices ====================================================
 	
-<!-- ======================================================================= -->
-							<!-- Virtual Devices -->							
-<!-- ======================================================================= -->
-<!--
-Note: Need to make this device disable itself if the ship it's installed on goes below a certain health threshold.
--->
+	NOTES
 	
-	<!-- Savoy Howitzer Restriction Bolt -->
-
-	<ItemType UNID="&vtCCSavoyHowitzerRestrictionBolt;"
-			name=				"(Savoy howitzer restriction bolt)"
-			level=				"1"
-			virtual=			"true"
-
-			description=		"This device reduce the maximum fire-rate of installed Savoy howitzers so that Cabbage Corp employees are less likely to blow themselves up."
-	>
-
-		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
-
-		<MiscellaneousDevice
-		        deviceSlots=    "0"
-				powerUse=		"0"
-		>
-			<EnhancementAbilities>
-				<Enhance type=			"howitzerRestrictor"
-						 criteria=		"w~l +Howitzer; +cabbageCorp"
-						 enhancement=	"+speed:200;"	
-				/>		;It actually requires speed set to 240 to fully prevent damage
-			</EnhancementAbilities>
-		</MiscellaneousDevice>
-	</ItemType>
+	EXTRA DATA
 	
-<!-- ======================================================================= -->
-							<!-- Standard Weapons -->							
-<!-- ======================================================================= -->
-<!--
-Need to create generic plasma and nano effects.
--->
-	<!-- Savoy M1 Howitzer -->
+	CCItemSwap: UNID of target device that this one can be freely modified into.
+	
+	useScreen: Dockscreen to be opened up via the Cabbage Corp Toolset.
+	
+	======================================================================== -->
 
-	<ItemType UNID="&itCCSavoyM1Howitzer;"
-			name=				"Savoy M1 howitzer"
-			attributes=			"cabbageCorp, howitzer, majorItem"
-			 
-			level=				"1"
-			frequency=			"uncommon"
-
-			value=				"300"
-			mass=				"3000"
-			 
-			description=		"The Savoy M1 howitzer was designed to fire light rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"kinetic:1d6; momentum1; WMD1"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"4"
-				powerUse=			"10"
-				recoil=				"1"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticLight;"
-		>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualSavoyM1Howitzer;		count:2		extraCost:0}
-					{product:&itCCOmniSavoyM1Howitzer;		count:1		extraCost:0}
-					{product:&itCCAdvSavoyM1Howitzer;		count:1		extraCost:0}
-					{product:&itCCAuxSavoyM1Howitzer;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- Savoy M2 Howitzer -->
-
-	<ItemType UNID="&itCCSavoyM2Howitzer;"
-			name=				"Savoy M2 howitzer"
-			attributes=			"cabbageCorp, howitzer, majorItem"
-			 
-			level=				"2"
-			frequency=			"uncommon"
-
-			value=				"700"
-			mass=				"3500"
-			 
-			description=		"The Savoy M2 howitzer was designed to fire dense rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"kinetic:2d4; momentum1; WMD2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"6"
-				powerUse=			"20"
-				recoil=				"1"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticMedium;"
-		>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualSavoyM2Howitzer;		count:2		extraCost:0}
-					{product:&itCCOmniSavoyM2Howitzer;		count:1		extraCost:0}
-					{product:&itCCAdvSavoyM2Howitzer;		count:1		extraCost:0}
-					{product:&itCCAuxSavoyM2Howitzer;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- Savoy M4 Howitzer -->
-
-	<ItemType UNID="&itCCSavoyM4Howitzer;"
-			name=				"Savoy M4 howitzer"
-			attributes=			"cabbageCorp, howitzer, majorItem"
-			 
-			level=				"3"
-			frequency=			"uncommon"
-
-			value=				"1500"
-			mass=				"4000"
-			 
-			description=		"The Savoy M4 howitzer was designed to fire heavy rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"kinetic:2d6; momentum1; WMD3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"8"
-				powerUse=			"40"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticHeavy;"
-		>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualSavoyM4Howitzer;		count:2		extraCost:0}
-					{product:&itCCOmniSavoyM4Howitzer;		count:1		extraCost:0}
-					{product:&itCCAdvSavoyM4Howitzer;		count:1		extraCost:0}
-					{product:&itCCAuxSavoyM4Howitzer;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
+<!-- LEVEL IV -->
 
 	<!-- Savoy M8 Howitzer -->
 
 	<ItemType UNID="&itCCSavoyM8Howitzer;"
 			name=				"Savoy M8 howitzer"
 			attributes=			"cabbageCorp, howitzer, majorItem"
-			 
+			
 			level=				"4"
 			frequency=			"uncommon"
-
+			
 			value=				"3400"
 			mass=				"4000"
-			 
-			description=		"The Savoy M8 howitzer was designed to fire explosive shells over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
+			
+			description=		"The Savoy M8 howitzer was designed to launch explosive shells over long distances. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"missile"
-
-				damage=				"blast:2d6; momentum2; WMD3"
+				failureChance=		"1"
+				
+				damage=				"blast:2d6; momentum:2; WMD:3"
 				fireRate=			"10"
 				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"6"
+				lifetime=			"80"
+				hitPoints=			"4"
 				powerUse=			"80"
-				recoil=				"2"
-					
+				recoil=				"1"
+				
 				counter=			"temperature"
-				counterActivate=	"2"
+				counterActivate=	"1"
 				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
+				counterUpdateRate=	"5"
+				
 				effect=				"&efBlastShellDefault;"
 				fireEffect=			"&efBlastFireDefault;"
 				hitEffect=			"&efBlastHitDefault;"
 				sound=				"&snCCHowitzerFireBlastLight;"
-		>
+				>
 		</Weapon>
 		
 		<StaticData>
@@ -262,8 +64,106 @@ Need to create generic plasma and nano effects.
 					{product:&itCCOmniSavoyM8Howitzer;		count:1		extraCost:0}
 					{product:&itCCAdvSavoyM8Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM8Howitzer;		count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
+			
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL V -->
+
+	<!-- Dual Savoy M8 Howitzer -->
+
+	<ItemType UNID="&itCCDualSavoyM8Howitzer;"
+			name=				"dual Savoy M8 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
+			
+			level=				"5"
+			frequency=			"rare"
+			
+			value=				"7300"
+			mass=				"9000"
+			
+			description=		"The dual Savoy M8 howitzer was designed to fire explosive shells over long ranges. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				configuration=		"dual"
+				damage=				"blast:2d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"4"
+				powerUse=			"160"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastLight;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Omni Savoy M8 Howitzer -->
+
+	<ItemType UNID="&itCCOmniSavoyM8Howitzer;"
+			name=				"omnidirectional Savoy M8 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
+			
+			level=				"5"
+			frequency=			"veryrare"
+			
+			value=				"15000"
+			mass=				"5000"
+			
+			description=		"The omnidirectional Savoy M8 howitzer was designed to fire explosive shells over long ranges. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				omnidirectional=	"true"
+				damage=				"blast:2d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"4"
+				powerUse=			"110"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"12"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"1"
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastLight;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
 		</StaticData>
 	</ItemType>
 
@@ -272,39 +172,40 @@ Need to create generic plasma and nano effects.
 	<ItemType UNID="&itCCSavoyM15Howitzer;"
 			name=				"Savoy M15 howitzer"
 			attributes=			"cabbageCorp, howitzer, majorItem"
-			 
+			
 			level=				"5"
 			frequency=			"uncommon"
-
+			
 			value=				"7600"
 			mass=				"4500"
-			 
-			description=		"The Savoy M15 howitzer fires high-explosive shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
+			
+			description=		"The Savoy M15 howitzer fires high-explosive shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"missile"
-
-				damage=				"blast:4d6; momentum2; WMD4"
+				failureChance=		"1"
+				
+				damage=				"blast:4d6; momentum:2; WMD:3"
 				fireRate=			"10"
 				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"9"
+				lifetime=			"80"
+				hitPoints=			"6"
 				powerUse=			"150"
-				recoil=				"2"
-					
+				recoil=				"1"
+				
 				counter=			"temperature"
 				counterActivate=	"2"
 				counterUpdate=		"-1"
 				counterUpdateRate=	"6"
-
+				
 				effect=				"&efBlastShellDefault;"
 				fireEffect=			"&efBlastFireDefault;"
 				hitEffect=			"&efBlastHitDefault;"
 				sound=				"&snCCHowitzerFireBlastMedium;"
-		>
+				>
 		</Weapon>
 		
 		<StaticData>
@@ -314,8 +215,210 @@ Need to create generic plasma and nano effects.
 					{product:&itCCOmniSavoyM15Howitzer;		count:1		extraCost:0}
 					{product:&itCCAdvSavoyM15Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM15Howitzer;		count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
+			
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Scanning Savoy M8 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM8Howitzer;"
+			name=				"scanning Savoy M8 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			
+			level=				"5"
+			frequency=			"notRandom"
+			
+			value=				"4900"
+			mass=				"5000"
+			
+			description=		"The Savoy M8 howitzer was designed to fire explosive shells over long ranges. It has a variable fire-rate, though it can overheat if fired too quickly. This model includes a built-in Microsaur scanner that detects Microsaurs within 6 light-seconds."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				damage=				"blast:2d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"4"
+				powerUse=			"120"
+				idlePowerUse=		"50"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastLight;"
+				>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCMicrosaurScanner 6)
+			</OnUpdate>
+		</Events>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Side-Mounted Savoy M8 Howitzer -->
+
+	<ItemType UNID="&itCCAuxSavoyM8Howitzer;"
+			name=				"side-mounted Savoy M8 howitzer"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"5"
+			frequency=			"veryrare"
+			
+			value=				"6300"
+			mass=				"5000"
+			
+			description=		"This Savoy M8 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It was designed to fire explosive shells over long ranges. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				linkedFire=			"always"
+				failureChance=		"1"
+				
+				damage=				"blast:2d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"4"
+				powerUse=			"80"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				deviceSlots=		"0"
+				external=			"true"	
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastLight;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL VI -->
+
+	<!-- Dual Savoy M15 Howitzer -->
+
+	<ItemType UNID="&itCCDualSavoyM15Howitzer;"
+			name=				"dual Savoy M15 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
+			
+			level=				"6"
+			frequency=			"rare"
+			
+			value=				"16000"
+			mass=				"10000"
+			
+			description=		"The dual Savoy M15 howitzer fires high-explosive shells. UIt has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				configuration=		"dual"
+				damage=				"blast:4d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"6"
+				powerUse=			"300"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastMedium;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Omni Savoy M15 Howitzer -->
+
+	<ItemType UNID="&itCCOmniSavoyM15Howitzer;"
+			name=				"omnidirectional Savoy M15 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"33000"
+			mass=				"5500"
+			
+			description=		"The omnidirectional Savoy M15 howitzer fires high-explosive shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				omnidirectional=	"true"
+				damage=				"blast:4d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"6"
+				powerUse=			"200"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastMedium;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
 		</StaticData>
 	</ItemType>
 
@@ -324,39 +427,40 @@ Need to create generic plasma and nano effects.
 	<ItemType UNID="&itCCSavoyM30Howitzer;"
 			name=				"Savoy M30 howitzer"
 			attributes=			"cabbageCorp, howitzer, majorItem, military"
-			 
+			
 			level=				"6"
 			frequency=			"uncommon"
-
+			
 			value=				"17000"
 			mass=				"5000"
-			 
-			description=		"The Savoy M30 howitzer fires heavy, high-explosive shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
+			
+			description=		"The Savoy M30 howitzer fires heavy, high-explosive shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"missile"
-
-				damage=				"blast:4d8; momentum2; WMD5"
+				failureChance=		"1"
+				
+				damage=				"blast:4d8; momentum:2; WMD:3"
 				fireRate=			"10"
 				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
+				lifetime=			"80"
+				hitPoints=			"9"
 				powerUse=			"300"
-				recoil=				"3"
-					
+				recoil=				"1"
+				
 				counter=			"temperature"
 				counterActivate=	"2"
 				counterUpdate=		"-1"
 				counterUpdateRate=	"6"
-
+				
 				effect=				"&efBlastShellDefault;"
 				fireEffect=			"&efBlastFireDefault;"
 				hitEffect=			"&efBlastHitDefault;"
 				sound=				"&snCCHowitzerFireBlastHeavy;"
-		>
+				>
 		</Weapon>
 		
 		<StaticData>
@@ -366,8 +470,210 @@ Need to create generic plasma and nano effects.
 					{product:&itCCOmniSavoyM30Howitzer;		count:1		extraCost:0}
 					{product:&itCCAdvSavoyM30Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM30Howitzer;		count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
+			
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Scanning Savoy M15 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM15Howitzer;"
+			name=				"scanning Savoy M15 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
+			
+			level=				"6"
+			frequency=			"notRandom"
+			
+			value=				"11000"
+			mass=				"5500"
+			
+			description=		"The Savoy M15 howitzer fires high-explosive shells. It has a variable fire-rate, though it can overheat if fired too quickly. This model includes a built-in Microsaur scanner that detects Microsaurs within 8 light-seconds."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				damage=				"blast:4d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"6"
+				powerUse=			"225"
+				idlePowerUse=		"50"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastMedium;"
+				>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCMicrosaurScanner 8)
+			</OnUpdate>
+		</Events>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Side-Mounted Savoy M15 Howitzer -->
+
+	<ItemType UNID="&itCCAuxSavoyM15Howitzer;"
+			name=				"side-mounted Savoy M15 howitzer"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"14000"
+			mass=				"5500"
+			
+			description=		"This Savoy M15 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires high-explosive shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				linkedFire=			"always"
+				failureChance=		"1"
+				
+				damage=				"blast:4d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"6"
+				powerUse=			"150"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				deviceSlots=		"0"
+				external=			"true"	
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastMedium;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL VII -->
+
+	<!-- Dual Savoy M30 Howitzer -->
+
+	<ItemType UNID="&itCCDualSavoyM30Howitzer;"
+			name=				"dual Savoy M30 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
+			
+			level=				"7"
+			frequency=			"rare"
+			
+			value=				"36000"
+			mass=				"11000"
+			
+			description=		"The dual Savoy M30 howitzer fires heavy, high-explosive shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				configuration=		"dual"
+				damage=				"blast:4d8; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"9"
+				powerUse=			"600"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastHeavy;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Omni Savoy M30 Howitzer -->
+
+	<ItemType UNID="&itCCOmniSavoyM30Howitzer;"
+			name=				"omnidirectional Savoy M30 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
+			
+			level=				"7"
+			frequency=			"veryrare"
+			
+			value=				"73000"
+			mass=				"6000"
+			
+			description=		"The omnidirectional Savoy M30 howitzer fires heavy, high-explosive shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				omnidirectional=	"true"
+				damage=				"blast:4d8; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"9"
+				powerUse=			"400"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastHeavy;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
 		</StaticData>
 	</ItemType>
 
@@ -376,39 +682,40 @@ Need to create generic plasma and nano effects.
 	<ItemType UNID="&itCCSavoyM56Howitzer;"
 			name=				"Savoy M56 howitzer"
 			attributes=			"cabbageCorp, howitzer, majorItem, military"
-			 
+			
 			level=				"7"
 			frequency=			"uncommon"
-
+			
 			value=				"38000"
 			mass=				"5000"
-			 
-			description=		"The Savoy M56 howitzer fires light, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
+			
+			description=		"The Savoy M56 howitzer fires light, thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"missile"
-
-				damage=				"thermo:6d6; momentum3; WMD5"
+				failureChance=		"1"
+				
+				damage=				"thermo:6d6; momentum:2; WMD:3"
 				fireRate=			"10"
 				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"8"
+				lifetime=			"80"
+				hitPoints=			"10"
 				powerUse=			"560"
-				recoil=				"2"
-					
+				recoil=				"1"
+				
 				counter=			"temperature"
 				counterActivate=	"2"
 				counterUpdate=		"-1"
 				counterUpdateRate=	"6"
-
+				
 				effect=				"&efThermoShellDefault;"
 				fireEffect=			"&efThermoFireDefault;"
 				hitEffect=			"&efThermoHitDefault;"
 				sound=				"&snCCHowitzerFireThermoLight;"
-		>
+				>
 		</Weapon>
 		
 		<StaticData>
@@ -418,8 +725,210 @@ Need to create generic plasma and nano effects.
 					{product:&itCCOmniSavoyM56Howitzer;		count:1		extraCost:0}
 					{product:&itCCAdvSavoyM56Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM56Howitzer;		count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
+			
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Scanning Savoy M30 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM30Howitzer;"
+			name=				"scanning Savoy M30 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
+			
+			level=				"7"
+			frequency=			"notRandom"
+			
+			value=				"24000"
+			mass=				"6000"
+			
+			description=		"The Savoy M30 howitzer fires heavy, high-explosive shells. It has a variable fire-rate, though it can overheat if fired too quickly. This model includes a built-in Microsaur scanner that detects Microsaurs within 10 light-seconds."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				damage=				"blast:4d8; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"9"
+				powerUse=			"450"
+				idlePowerUse=		"50"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastHeavy;"
+				>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCMicrosaurScanner 10)
+			</OnUpdate>
+		</Events>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Side-Mounted Savoy M30 Howitzer -->
+
+	<ItemType UNID="&itCCAuxSavoyM30Howitzer;"
+			name=				"side-mounted Savoy M30 howitzer"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"7"
+			frequency=			"veryrare"
+			
+			value=				"32000"
+			mass=				"6000"
+			
+			description=		"This Savoy M30 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires heavy, high-explosive shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				linkedFire=			"always"
+				failureChance=		"1"
+				
+				damage=				"blast:4d8; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"9"
+				powerUse=			"300"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				deviceSlots=		"0"
+				external=			"true"	
+				
+				effect=				"&efBlastShellDefault;"
+				fireEffect=			"&efBlastFireDefault;"
+				hitEffect=			"&efBlastHitDefault;"
+				sound=				"&snCCHowitzerFireBlastHeavy;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL VIII -->
+
+	<!-- Dual Savoy M56 Howitzer -->
+
+	<ItemType UNID="&itCCDualSavoyM56Howitzer;"
+			name=				"dual Savoy M56 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
+			
+			level=				"8"
+			frequency=			"rare"
+			
+			value=				"81000"
+			mass=				"11000"
+			
+			description=		"The dual Savoy M56 howitzer fires light, thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				configuration=		"dual"
+				damage=				"thermo:6d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"10"
+				powerUse=			"1120"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoLight;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Omni Savoy M56 Howitzer -->
+
+	<ItemType UNID="&itCCOmniSavoyM56Howitzer;"
+			name=				"omnidirectional Savoy M56 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
+			
+			level=				"8"
+			frequency=			"veryrare"
+			
+			value=				"160000"
+			mass=				"6000"
+			
+			description=		"The omnidirectional Savoy M56 howitzer fires light, thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				omnidirectional=	"true"
+				damage=				"thermo:6d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"10"
+				powerUse=			"750"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoLight;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
 		</StaticData>
 	</ItemType>
 
@@ -428,39 +937,40 @@ Need to create generic plasma and nano effects.
 	<ItemType UNID="&itCCSavoyM110Howitzer;"
 			name=				"Savoy M110 howitzer"
 			attributes=			"cabbageCorp, howitzer, majorItem, military"
-			 
+			
 			level=				"8"
 			frequency=			"uncommon"
-
+			
 			value=				"84000"
 			mass=				"5500"
-			 
-			description=		"The Savoy M110 howitzer fires thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
+			
+			description=		"The Savoy M110 howitzer fires thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"missile"
-
-				damage=				"thermo:4d13; momentum3; WMD6"
+				failureChance=		"1"
+				
+				damage=				"thermo:4d13; momentum:2; WMD:3"
 				fireRate=			"10"
 				missileSpeed=		"60"
-				lifetime=			"100"
+				lifetime=			"80"
 				hitPoints=			"12"
 				powerUse=			"1100"
-				recoil=				"2"
-					
+				recoil=				"1"
+				
 				counter=			"temperature"
 				counterActivate=	"2"
 				counterUpdate=		"-1"
 				counterUpdateRate=	"6"
-
+				
 				effect=				"&efThermoShellDefault;"
 				fireEffect=			"&efThermoFireDefault;"
 				hitEffect=			"&efThermoHitDefault;"
 				sound=				"&snCCHowitzerFireThermoMedium;"
-		>
+				>
 		</Weapon>
 		
 		<StaticData>
@@ -470,8 +980,210 @@ Need to create generic plasma and nano effects.
 					{product:&itCCOmniSavoyM110Howitzer;	count:1		extraCost:0}
 					{product:&itCCAdvSavoyM110Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM110Howitzer;		count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
+			
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Scanning Savoy M56 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM56Howitzer;"
+			name=				"scanning Savoy M56 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
+			
+			level=				"8"
+			frequency=			"notRandom"
+			
+			value=				"54000"
+			mass=				"6000"
+			
+			description=		"The Savoy M56 howitzer fires light, thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly. This model includes a built-in Microsaur scanner that detects Microsaurs within 13 light-seconds."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				damage=				"thermo:6d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"10"
+				powerUse=			"840"
+				idlePowerUse=		"180"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoLight;"
+				>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCMicrosaurScanner 13)
+			</OnUpdate>
+		</Events>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Side-Mounted Savoy M56 Howitzer -->
+
+	<ItemType UNID="&itCCAuxSavoyM56Howitzer;"
+			name=				"side-mounted Savoy M56 howitzer"
+			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
+			inherit=			"&baStdAuxMountDeviceBase;"
+			
+			level=				"8"
+			frequency=			"veryrare"
+			
+			value=				"71000"
+			mass=				"6000"
+			
+			description=		"This Savoy M56 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires light, thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				linkedFire=			"always"
+				failureChance=		"1"
+				
+				damage=				"thermo:6d6; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"10"
+				powerUse=			"560"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				deviceSlots=		"0"
+				external=			"true"	
+				
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoLight;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL IX -->
+
+	<!-- Dual Savoy M110 Howitzer -->
+
+	<ItemType UNID="&itCCDualSavoyM110Howitzer;"
+			name=				"dual Savoy M110 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
+			
+			level=				"9"
+			frequency=			"rare"
+			
+			value=				"180000"
+			mass=				"12000"
+			
+			description=		"The dual Savoy M110 howitzer fires thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				configuration=		"dual"
+				damage=				"thermo:4d13; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"12"
+				powerUse=			"2200"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoMedium;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Omni Savoy M110 Howitzer -->
+
+	<ItemType UNID="&itCCOmniSavoyM110Howitzer;"
+			name=				"omnidirectional Savoy M110 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
+			
+			level=				"9"
+			frequency=			"veryrare"
+			
+			value=				"360000"
+			mass=				"6500"
+			
+			description=		"The omnidirectional Savoy M110 howitzer fires thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				omnidirectional=	"true"
+				damage=				"thermo:4d13; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"12"
+				powerUse=			"1500"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoMedium;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
 		</StaticData>
 	</ItemType>
 
@@ -480,39 +1192,40 @@ Need to create generic plasma and nano effects.
 	<ItemType UNID="&itCCSavoyM210Howitzer;"
 			name=				"Savoy M210 howitzer"
 			attributes=			"cabbageCorp, howitzer, majorItem, military"
-			 
+			
 			level=				"9"
 			frequency=			"uncommon"
-
+			
 			value=				"190000"
 			mass=				"6000"
-			 
-			description=		"The Savoy M210 howitzer fires heavy, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
+			
+			description=		"The Savoy M210 howitzer fires heavy, thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"missile"
-
-				damage=				"thermo:6d12; momentum3; WMD7"
+				failureChance=		"1"
+				
+				damage=				"thermo:6d12; momentum:2; WMD:3"
 				fireRate=			"10"
 				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"16"
+				lifetime=			"80"
+				hitPoints=			"15"
 				powerUse=			"2100"
-				recoil=				"3"
-					
+				recoil=				"1"
+				
 				counter=			"temperature"
 				counterActivate=	"2"
 				counterUpdate=		"-1"
 				counterUpdateRate=	"6"
-
+				
 				effect=				"&efThermoShellDefault;"
 				fireEffect=			"&efThermoFireDefault;"
 				hitEffect=			"&efThermoHitDefault;"
 				sound=				"&snCCHowitzerFireThermoHeavy;"
-		>
+				>
 		</Weapon>
 		
 		<StaticData>
@@ -522,1929 +1235,11 @@ Need to create generic plasma and nano effects.
 					{product:&itCCOmniSavoyM210Howitzer;	count:1		extraCost:0}
 					{product:&itCCAdvSavoyM210Howitzer;		count:1		extraCost:0}
 					{product:&itCCAuxSavoyM210Howitzer;		count:1		extraCost:0}
-				)
+					)
 			</CCBuyAndModify>
+			
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
 		</StaticData>
-	</ItemType>
-
-	<!-- Savoy M400 Howitzer -->
-
-	<ItemType UNID="&itCCSavoyM400Howitzer;"
-			name=				"Savoy M400 howitzer"
-			attributes=			"cabbageCorp, howitzer, majorItem, military"
-			 
-			level=				"10"
-			frequency=			"uncommon"
-
-			value=				"420000"
-			mass=				"6000"
-			 
-			description=		"The Savoy M400 howitzer fires large plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"plasma:8d12; momentum4; WMD7"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"10"
-				powerUse=			"4000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaLight;"
-		>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualSavoyM400Howitzer;	count:2		extraCost:0}
-					{product:&itCCOmniSavoyM400Howitzer;	count:1		extraCost:0}
-					{product:&itCCAdvSavoyM400Howitzer;		count:1		extraCost:0}
-					{product:&itCCAuxSavoyM400Howitzer;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- Savoy M770 Howitzer -->
-
-	<ItemType UNID="&itCCSavoyM770Howitzer;"
-			name=				"Savoy M770 howitzer"
-			attributes=			"alien, cabbageCorp, howitzer, majorItem"
-			 
-			level=				"11"
-			frequency=			"uncommon"
-
-			value=				"920000"
-			mass=				"6500"
-			 
-			description=		"This alien howitzer appears to fire dense plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"plasma:7d20; momentum4; WMD7; shatter1"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"15"
-				powerUse=			"7700"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaMedium;"
-		>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualSavoyM770Howitzer;	count:2		extraCost:0}
-					{product:&itCCOmniSavoyM770Howitzer;	count:1		extraCost:0}
-					{product:&itCCAdvSavoyM770Howitzer;		count:1		extraCost:0}
-					{product:&itCCAuxSavoyM770Howitzer;		count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- Savoy M1500 Howitzer -->
-
-	<ItemType UNID="&itCCSavoyM1500Howitzer;"
-			name=				"Savoy M1500 howitzer"
-			attributes=			"alien, cabbageCorp, howitzer, majorItem"
-			 
-			level=				"12"
-			frequency=			"uncommon"
-
-			value=				"2100000"
-			mass=				"7000"
-			 
-			description=		"This alien howitzer appears to fire heavy plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"plasma:9d22; momentum4; WMD7; shatter2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"20"
-				powerUse=			"15000"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaHeavy;"
-		>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualSavoyM1500Howitzer;	count:2		extraCost:0}
-					{product:&itCCOmniSavoyM1500Howitzer;	count:1		extraCost:0}
-					{product:&itCCAdvSavoyM1500Howitzer;	count:1		extraCost:0}
-					{product:&itCCAuxSavoyM1500Howitzer;	count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- Savoy M2900 Howitzer -->
-
-	<ItemType UNID="&itCCSavoyM2900Howitzer;"
-			name=				"Savoy M2900 howitzer"
-			attributes=			"alien, cabbageCorp, howitzer, majorItem"
-			 
-			level=				"13"
-			frequency=			"uncommon"
-
-			value=				"4600000"
-			mass=				"7000"
-			 
-			description=		"This alien howitzer appears to fire light nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"nano:9d24; momentum5; WMD7; shatter2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
-				powerUse=			"29000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoLight;"
-		>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualSavoyM2900Howitzer;	count:2		extraCost:0}
-					{product:&itCCOmniSavoyM2900Howitzer;	count:1		extraCost:0}
-					{product:&itCCAdvSavoyM2900Howitzer;	count:1		extraCost:0}
-					{product:&itCCAuxSavoyM2900Howitzer;	count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- Savoy M5600 Howitzer -->
-
-	<ItemType UNID="&itCCSavoyM5600Howitzer;"
-			name=				"Savoy M5600 howitzer"
-			attributes=			"alien, cabbageCorp, howitzer, majorItem"
-			 
-			level=				"14"
-			frequency=			"uncommon"
-
-			value=				"10000000"
-			mass=				"7500"
-			 
-			description=		"This alien howitzer appears to fire dense nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"nano:16d20; momentum5; WMD7; shatter3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"18"
-				powerUse=			"56000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoMedium;"
-		>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualSavoyM5600Howitzer;	count:2		extraCost:0}
-					{product:&itCCOmniSavoyM5600Howitzer;	count:1		extraCost:0}
-					{product:&itCCAdvSavoyM5600Howitzer;	count:1		extraCost:0}
-					{product:&itCCAuxSavoyM5600Howitzer;	count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-
-	<!-- Savoy M11000 Howitzer -->
-
-	<ItemType UNID="&itCCSavoyM11000Howitzer;"
-			name=				"Savoy M11000 howitzer"
-			attributes=			"alien, cabbageCorp, howitzer, majorItem"
-			 
-			level=				"15"
-			frequency=			"uncommon"
-
-			value=				"23000000"
-			mass=				"8000"
-			 
-			description=		"This alien howitzer appears to fire heavy nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"nano:20d24; momentum5; WMD7; shatter4"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"24"
-				powerUse=			"110000"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoHeavy;"
-		>
-		</Weapon>
-		
-		<StaticData>
-			<CCBuyAndModify>
-				(
-					{product:&itCCDualSavoyM11000Howitzer;	count:2		extraCost:0}
-					{product:&itCCOmniSavoyM11000Howitzer;	count:1		extraCost:0}
-					{product:&itCCAdvSavoyM11000Howitzer;	count:1		extraCost:0}
-					{product:&itCCAuxSavoyM11000Howitzer;	count:1		extraCost:0}
-				)
-			</CCBuyAndModify>
-		</StaticData>
-	</ItemType>
-	
-<!-- ======================================================================= -->
-							<!-- Dual Weapons -->								
-<!-- ======================================================================= -->
-
-	<!-- Dual Savoy M1 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM1Howitzer;"
-			name=				"dual Savoy M1 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"2"
-			frequency=			"rare"
-
-			value=				"650"
-			mass=				"7000"
-			 
-			description=		"The dual Savoy M1 howitzer was designed to fire light rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"kinetic:1d6; momentum1; WMD1"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"4"
-				powerUse=			"20"
-				recoil=				"1"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M2 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM2Howitzer;"
-			name=				"dual Savoy M2 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"3"
-			frequency=			"rare"
-
-			value=				"1500"
-			mass=				"8000"
-			 
-			description=		"The dual Savoy M2 howitzer was designed to fire dense rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"kinetic:2d4; momentum1; WMD2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"6"
-				powerUse=			"40"
-				recoil=				"1"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M4 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM4Howitzer;"
-			name=				"dual Savoy M4 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"4"
-			frequency=			"rare"
-
-			value=				"3200"
-			mass=				"9000"
-			 
-			description=		"The dual Savoy M4 howitzer was designed to fire heavy rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"kinetic:2d6; momentum1; WMD3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"8"
-				powerUse=			"80"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M8 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM8Howitzer;"
-			name=				"dual Savoy M8 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"5"
-			frequency=			"rare"
-
-			value=				"7300"
-			mass=				"9000"
-			 
-			description=		"The dual Savoy M8 howitzer was designed to fire explosive shells over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"blast:2d6; momentum2; WMD3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"6"
-				powerUse=			"160"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M15 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM15Howitzer;"
-			name=				"dual Savoy M15 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"6"
-			frequency=			"rare"
-
-			value=				"16000"
-			mass=				"10000"
-			 
-			description=		"The dual Savoy M15 howitzer fires high-explosive shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"blast:4d6; momentum2; WMD4"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"9"
-				powerUse=			"300"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M30 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM30Howitzer;"
-			name=				"dual Savoy M30 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			 
-			level=				"7"
-			frequency=			"rare"
-
-			value=				"36000"
-			mass=				"11000"
-			 
-			description=		"The dual Savoy M30 howitzer fires heavy, high-explosive shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"blast:4d8; momentum2; WMD5"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
-				powerUse=			"600"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M56 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM56Howitzer;"
-			name=				"dual Savoy M56 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			 
-			level=				"8"
-			frequency=			"rare"
-
-			value=				"81000"
-			mass=				"11000"
-			 
-			description=		"The dual Savoy M56 howitzer fires light, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"thermo:6d6; momentum3; WMD5"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"8"
-				powerUse=			"1120"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efThermoHitDefault;"
-				sound=				"&snCCHowitzerFireThermoLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M110 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM110Howitzer;"
-			name=				"dual Savoy M110 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			 
-			level=				"9"
-			frequency=			"rare"
-
-			value=				"180000"
-			mass=				"12000"
-			 
-			description=		"The dual Savoy M110 howitzer fires thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"thermo:4d13; momentum3; WMD6"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
-				powerUse=			"2200"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efThermoHitDefault;"
-				sound=				"&snCCHowitzerFireThermoMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M210 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM210Howitzer;"
-			name=				"dual Savoy M210 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			 
-			level=				"10"
-			frequency=			"rare"
-
-			value=				"410000"
-			mass=				"13000"
-			 
-			description=		"The dual Savoy M210 howitzer fires heavy, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"thermo:6d12; momentum3; WMD7"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"16"
-				powerUse=			"4200"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efThermoHitDefault;"
-				sound=				"&snCCHowitzerFireThermoHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M400 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM400Howitzer;"
-			name=				"dual Savoy M400 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			 
-			level=				"11"
-			frequency=			"rare"
-
-			value=				"900000"
-			mass=				"13000"
-			 
-			description=		"The dual Savoy M400 howitzer fires large plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"plasma:8d12; momentum4; WMD7"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"10"
-				powerUse=			"8000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M770 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM770Howitzer;"
-			name=				"dual Savoy M770 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"12"
-			frequency=			"rare"
-
-			value=				"2000000"
-			mass=				"14000"
-			 
-			description=		"This alien dual howitzer appears to fire dense plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"plasma:7d20; momentum4; WMD7; shatter1"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"15"
-				powerUse=			"15400"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M1500 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM1500Howitzer;"
-			name=				"dual Savoy M1500 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"13"
-			frequency=			"rare"
-
-			value=				"4500000"
-			mass=				"15000"
-			 
-			description=		"This alien dual howitzer appears to fire heavy plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"plasma:9d22; momentum4; WMD7; shatter2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"20"
-				powerUse=			"30000"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M2900 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM2900Howitzer;"
-			name=				"dual Savoy M2900 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"14"
-			frequency=			"rare"
-
-			value=				"10000000"
-			mass=				"15000"
-			 
-			description=		"This alien dual howitzer appears to fire light nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"nano:9d24; momentum5; WMD7; shatter2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
-				powerUse=			"58000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M5600 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM5600Howitzer;"
-			name=				"dual Savoy M5600 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"15"
-			frequency=			"rare"
-
-			value=				"21000000"
-			mass=				"16000"
-			 
-			description=		"This alien dual howitzer appears to fire dense nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"nano:16d20; momentum5; WMD7; shatter3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"18"
-				powerUse=			"112000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Dual Savoy M11000 Howitzer -->
-
-	<ItemType UNID="&itCCDualSavoyM11000Howitzer;"
-			name=				"dual Savoy M11000 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"16"
-			frequency=			"rare"
-
-			value=				"49000000"
-			mass=				"17000"
-			 
-			description=		"This alien dual howitzer appears to fire heavy nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				configuration=		"dual"
-				damage=				"nano:20d24; momentum5; WMD7; shatter4"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"24"
-				powerUse=			"220000"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-	
-<!-- ======================================================================= -->
-						<!-- Omnidirectional Weapons -->						
-<!-- ======================================================================= -->
-
-	<!-- Omni Savoy M1 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM1Howitzer;"
-			name=				"omnidirectional Savoy M1 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"2"
-			frequency=			"veryrare"
-
-			value=				"1300"
-			mass=				"4000"
-			 
-			description=		"The omnidirectional Savoy M1 howitzer was designed to fire light rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"kinetic:1d6; momentum1; WMD1"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"4"
-				powerUse=			"15"
-				recoil=				"1"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M2 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM2Howitzer;"
-			name=				"omnidirectional Savoy M2 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"3"
-			frequency=			"veryrare"
-
-			value=				"3000"
-			mass=				"4500"
-			 
-			description=		"The omnidirectional Savoy M2 howitzer was designed to fire dense rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"kinetic:2d4; momentum1; WMD2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"6"
-				powerUse=			"30"
-				recoil=				"1"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M4 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM4Howitzer;"
-			name=				"omnidirectional Savoy M4 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"4"
-			frequency=			"veryrare"
-
-			value=				"6400"
-			mass=				"5000"
-			 
-			description=		"The omnidirectional Savoy M4 howitzer was designed to fire heavy rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"kinetic:2d6; momentum1; WMD3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"8"
-				powerUse=			"50"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M8 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM8Howitzer;"
-			name=				"omnidirectional Savoy M8 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"5"
-			frequency=			"veryrare"
-
-			value=				"15000"
-			mass=				"5000"
-			 
-			description=		"The omnidirectional Savoy M8 howitzer was designed to fire explosive shells over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"blast:2d6; momentum2; WMD3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"6"
-				powerUse=			"110"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M15 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM15Howitzer;"
-			name=				"omnidirectional Savoy M15 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"6"
-			frequency=			"veryrare"
-
-			value=				"33000"
-			mass=				"5500"
-			 
-			description=		"The omnidirectional Savoy M15 howitzer fires high-explosive shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"blast:4d6; momentum2; WMD4"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"9"
-				powerUse=			"200"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M30 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM30Howitzer;"
-			name=				"omnidirectional Savoy M30 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			 
-			level=				"7"
-			frequency=			"veryrare"
-
-			value=				"73000"
-			mass=				"6000"
-			 
-			description=		"The omnidirectional Savoy M30 howitzer fires heavy, high-explosive shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"blast:4d8; momentum2; WMD5"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
-				powerUse=			"400"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M56 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM56Howitzer;"
-			name=				"omnidirectional Savoy M56 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			 
-			level=				"8"
-			frequency=			"veryrare"
-
-			value=				"160000"
-			mass=				"6000"
-			 
-			description=		"The omnidirectional Savoy M56 howitzer fires light, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"thermo:6d6; momentum3; WMD5"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"8"
-				powerUse=			"750"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efThermoHitDefault;"
-				sound=				"&snCCHowitzerFireThermoLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M110 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM110Howitzer;"
-			name=				"omnidirectional Savoy M110 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			 
-			level=				"9"
-			frequency=			"veryrare"
-
-			value=				"360000"
-			mass=				"6500"
-			 
-			description=		"The omnidirectional Savoy M110 howitzer fires thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"thermo:4d13; momentum3; WMD6"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
-				powerUse=			"1500"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efThermoHitDefault;"
-				sound=				"&snCCHowitzerFireThermoMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M210 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM210Howitzer;"
-			name=				"omnidirectional Savoy M210 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			 
-			level=				"10"
-			frequency=			"veryrare"
-
-			value=				"810000"
-			mass=				"7000"
-			 
-			description=		"The omnidirectional Savoy M210 howitzer fires heavy, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"thermo:6d12; momentum3; WMD7"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"16"
-				powerUse=			"2800"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efThermoHitDefault;"
-				sound=				"&snCCHowitzerFireThermoHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M400 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM400Howitzer;"
-			name=				"omnidirectional Savoy M400 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			 
-			level=				"11"
-			frequency=			"veryrare"
-
-			value=				"1800000"
-			mass=				"7000"
-			 
-			description=		"The omnidirectional Savoy M400 howitzer fires large plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"plasma:8d12; momentum4; WMD7"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"10"
-				powerUse=			"5300"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M770 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM770Howitzer;"
-			name=				"omnidirectional Savoy M770 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"12"
-			frequency=			"veryrare"
-
-			value=				"3900000"
-			mass=				"7500"
-			 
-			description=		"This alien omnidirectional howitzer appears to fire dense plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"plasma:7d20; momentum4; WMD7; shatter1"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"15"
-				powerUse=			"10000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M1500 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM1500Howitzer;"
-			name=				"omnidirectional Savoy M1500 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"13"
-			frequency=			"veryrare"
-
-			value=				"9000000"
-			mass=				"8000"
-			 
-			description=		"This alien omnidirectional howitzer appears to fire heavy plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"plasma:9d22; momentum4; WMD7; shatter2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"20"
-				powerUse=			"20000"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M2900 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM2900Howitzer;"
-			name=				"omnidirectional Savoy M2900 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"14"
-			frequency=			"veryrare"
-
-			value=				"20000000"
-			mass=				"8000"
-			 
-			description=		"This alien omnidirectional howitzer appears to fire light nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"nano:9d24; momentum5; WMD7; shatter2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
-				powerUse=			"39000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M5600 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM5600Howitzer;"
-			name=				"omnidirectional Savoy M5600 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"15"
-			frequency=			"veryrare"
-
-			value=				"43000000"
-			mass=				"8500"
-			 
-			description=		"This alien omnidirectional howitzer appears to fire dense nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"nano:16d20; momentum5; WMD7; shatter3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"18"
-				powerUse=			"75000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Omni Savoy M11000 Howitzer -->
-
-	<ItemType UNID="&itCCOmniSavoyM11000Howitzer;"
-			name=				"omnidirectional Savoy M11000 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			 
-			level=				"16"
-			frequency=			"veryrare"
-
-			value=				"100000000"
-			mass=				"9000"
-			 
-			description=		"This alien omnidirectional howitzer appears to fire heavy nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				omnidirectional=	"true"
-				damage=				"nano:20d24; momentum5; WMD7; shatter4"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"24"
-				powerUse=			"150000"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-	
-<!-- ======================================================================= -->
-							<!-- Scanning Weapons -->							
-<!-- ======================================================================= -->
-
-	<!-- Scanning Savoy M1 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM1Howitzer;"
-			name=				"scanning Savoy M1 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
-			 
-			level=				"2"
-			frequency=			"notRandom"
-
-			value=				"430"
-			mass=				"4000"
-			 
-			description=		"The Savoy M1 howitzer was designed to fire light rounds over long ranges. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 3 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"kinetic:1d6; momentum1; WMD1"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"4"
-				powerUse=			"15"
-				idlePowerUse=		"6"
-				recoil=				"1"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticLight;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 3)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M2 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM2Howitzer;"
-			name=				"scanning Savoy M2 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
-			 
-			level=				"3"
-			frequency=			"notRandom"
-
-			value=				"1000"
-			mass=				"4500"
-			 
-			description=		"The Savoy M2 howitzer was designed to fire dense rounds over long ranges. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 4 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"kinetic:2d4; momentum1; WMD2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"6"
-				powerUse=			"30"
-				idlePowerUse=		"12"
-				recoil=				"1"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticMedium;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 4)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M4 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM4Howitzer;"
-			name=				"scanning Savoy M4 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
-			 
-			level=				"4"
-			frequency=			"notRandom"
-
-			value=				"2150"
-			mass=				"5000"
-			 
-			description=		"The Savoy M4 howitzer was designed to fire heavy rounds over long ranges. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 5 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"kinetic:2d6; momentum1; WMD3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"8"
-				powerUse=			"60"
-				idlePowerUse=		"25"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticHeavy;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 5)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M8 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM8Howitzer;"
-			name=				"scanning Savoy M8 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
-			 
-			level=				"5"
-			frequency=			"notRandom"
-
-			value=				"4900"
-			mass=				"5000"
-			 
-			description=		"The Savoy M8 howitzer was designed to fire explosive shells over long ranges. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 6 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"blast:2d6; momentum2; WMD3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"6"
-				powerUse=			"120"
-				idlePowerUse=		"50"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastLight;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 6)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M15 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM15Howitzer;"
-			name=				"scanning Savoy M15 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
-			 
-			level=				"6"
-			frequency=			"notRandom"
-
-			value=				"11000"
-			mass=				"5500"
-			 
-			description=		"The Savoy M15 howitzer fires high-explosive shells. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 8 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"blast:4d6; momentum2; WMD4"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"9"
-				powerUse=			"225"
-				idlePowerUse=		"50"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastMedium;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 8)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M30 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM30Howitzer;"
-			name=				"scanning Savoy M30 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
-			 
-			level=				"7"
-			frequency=			"notRandom"
-
-			value=				"24000"
-			mass=				"6000"
-			 
-			description=		"The Savoy M30 howitzer fires heavy, high-explosive shells. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 10 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"blast:4d8; momentum2; WMD5"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
-				powerUse=			"450"
-				idlePowerUse=		"50"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastHeavy;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 10)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M56 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM56Howitzer;"
-			name=				"scanning Savoy M56 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
-			 
-			level=				"8"
-			frequency=			"notRandom"
-
-			value=				"54000"
-			mass=				"6000"
-			 
-			description=		"The Savoy M56 howitzer fires light, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 13 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"thermo:6d6; momentum3; WMD5"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"8"
-				powerUse=			"840"
-				idlePowerUse=		"180"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efThermoHitDefault;"
-				sound=				"&snCCHowitzerFireThermoLight;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 13)
-			</OnUpdate>
-		</Events>
 	</ItemType>
 
 	<!-- Scanning Savoy M110 Howitzer -->
@@ -2452,709 +1247,52 @@ Need to create generic plasma and nano effects.
 	<ItemType UNID="&itCCAdvSavoyM110Howitzer;"
 			name=				"scanning Savoy M110 howitzer"
 			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
-			 
+			
 			level=				"9"
 			frequency=			"notRandom"
-
+			
 			value=				"120000"
 			mass=				"6500"
-			 
-			description=		"The Savoy M110 howitzer fires thermonuclear shells. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 16 light-seconds."
-	>
-
+			
+			description=		"The Savoy M110 howitzer fires thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly. This model includes a built-in Microsaur scanner that detects Microsaurs within 16 light-seconds."
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"missile"
-
-				damage=				"thermo:4d13; momentum3; WMD6"
+				failureChance=		"1"
+				
+				damage=				"thermo:4d13; momentum:2; WMD:3"
 				fireRate=			"10"
 				missileSpeed=		"60"
-				lifetime=			"100"
+				lifetime=			"80"
 				hitPoints=			"12"
 				powerUse=			"1650"
 				idlePowerUse=		"400"
-				recoil=				"2"
-					
+				recoil=				"1"
+				
 				counter=			"temperature"
 				counterActivate=	"2"
 				counterUpdate=		"-1"
 				counterUpdateRate=	"6"
-
+				
 				effect=				"&efThermoShellDefault;"
 				fireEffect=			"&efThermoFireDefault;"
 				hitEffect=			"&efThermoHitDefault;"
 				sound=				"&snCCHowitzerFireThermoMedium;"
-		>
+				>
 		</Weapon>
 		
 		<Events>
 			<OnUpdate>
-				(CCAsteroidScanner 16)
+				(CCMicrosaurScanner 16)
 			</OnUpdate>
 		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M210 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM210Howitzer;"
-			name=				"scanning Savoy M210 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
-			 
-			level=				"10"
-			frequency=			"notRandom"
-
-			value=				"270000"
-			mass=				"7000"
-			 
-			description=		"The Savoy M210 howitzer fires heavy, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 20 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"thermo:6d12; momentum3; WMD7"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"16"
-				powerUse=			"3150"
-				idlePowerUse=		"750"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efThermoHitDefault;"
-				sound=				"&snCCHowitzerFireThermoHeavy;"
-		>
-		</Weapon>
 		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 20)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M400 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM400Howitzer;"
-			name=				"scanning Savoy M400 howitzer"
-			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
-			 
-			level=				"11"
-			frequency=			"veryrare"
-
-			value=				"600000"
-			mass=				"7000"
-			 
-			description=		"The Savoy M400 howitzer fires large plasma bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 24 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"plasma:8d12; momentum4; WMD7"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"10"
-				powerUse=			"6000"
-				idlePowerUse=		"1500"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaLight;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 24)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M770 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM770Howitzer;"
-			name=				"scanning Savoy M770 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
-			 
-			level=				"12"
-			frequency=			"notRandom"
-
-			value=				"1300000"
-			mass=				"7500"
-			 
-			description=		"This alien howitzer appears to fire dense plasma bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 30 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"plasma:7d20; momentum4; WMD7; shatter1"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"15"
-				powerUse=			"11500"
-				idlePowerUse=		"3000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaMedium;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 30)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M1500 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM1500Howitzer;"
-			name=				"scanning Savoy M1500 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
-			 
-			level=				"13"
-			frequency=			"notRandom"
-
-			value=				"3000000"
-			mass=				"8000"
-			 
-			description=		"This alien howitzer appears to fire heavy plasma bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 36 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"plasma:9d22; momentum4; WMD7; shatter2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"20"
-				powerUse=			"22500"
-				idlePowerUse=		"5500"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaHeavy;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 36)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M2900 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM2900Howitzer;"
-			name=				"scanning Savoy M2900 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
-			 
-			level=				"14"
-			frequency=			"notRandom"
-
-			value=				"6600000"
-			mass=				"8000"
-			 
-			description=		"This alien howitzer appears to fire light nano bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 42 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"nano:9d24; momentum5; WMD7; shatter2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
-				powerUse=			"44000"
-				idlePowerUse=		"11000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoLight;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 42)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M5600 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM5600Howitzer;"
-			name=				"scanning Savoy M5600 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
-			 
-			level=				"15"
-			frequency=			"notRandom"
-
-			value=				"14000000"
-			mass=				"8500"
-			 
-			description=		"This alien howitzer appears to fire dense nano bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 50 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"nano:16d20; momentum5; WMD7; shatter3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"18"
-				powerUse=			"84000"
-				idlePowerUse=		"21000"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoMedium;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 50)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-
-	<!-- Scanning Savoy M11000 Howitzer -->
-
-	<ItemType UNID="&itCCAdvSavoyM11000Howitzer;"
-			name=				"scanning Savoy M11000 howitzer"
-			attributes=			"alien, cabbageCorp, cabbageNotStandard, howitzer, majorItem, specialty"
-			 
-			level=				"16"
-			frequency=			"notRandom"
-
-			value=				"33000000"
-			mass=				"9000"
-			 
-			description=		"This alien howitzer appears to fire heavy nano bursts. Unfortunately, the weapon overheats if fired continuously. This model includes a built-in Microsaur scanner that detects Microsaurs within 60 light-seconds."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-
-				damage=				"nano:20d24; momentum5; WMD7; shatter4"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"24"
-				powerUse=			"165000"
-				idlePowerUse=		"40000"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoHeavy;"
-		>
-		</Weapon>
-		
-		<Events>
-			<OnUpdate>
-				(CCAsteroidScanner 60)
-			</OnUpdate>
-		</Events>
-	</ItemType>
-	
-<!-- ======================================================================= -->
-						<!-- Side-Mounted Weapons -->							
-<!-- ======================================================================= -->
-
-	<!-- Side-Mounted Savoy M1 Howitzer -->
-
-	<ItemType UNID="&itCCAuxSavoyM1Howitzer;"
-			name=				"side-mounted Savoy M1 howitzer"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"2"
-			frequency=			"veryrare"
-
-			value=				"560"
-			mass=				"4000"
-			 
-			description=		"This Savoy M1 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It was designed to fire light rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"kinetic:1d6; momentum1; WMD1"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"4"
-				powerUse=			"10"
-				recoil=				"1"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted Savoy M2 Howitzer -->
-
-	<ItemType UNID="&itCCAuxSavoyM2Howitzer;"
-			name=				"side-mounted Savoy M2 howitzer"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"3"
-			frequency=			"veryrare"
-
-			value=				"1300"
-			mass=				"4500"
-			 
-			description=		"This Savoy M2 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It was designed to fire dense rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"kinetic:2d4; momentum1; WMD2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"6"
-				powerUse=			"20"
-				recoil=				"1"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted Savoy M4 Howitzer -->
-
-	<ItemType UNID="&itCCAuxSavoyM4Howitzer;"
-			name=				"side-mounted Savoy M4 howitzer"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"4"
-			frequency=			"veryrare"
-
-			value=				"2800"
-			mass=				"5000"
-			 
-			description=		"This Savoy M4 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It was designed to fire heavy rounds over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"kinetic:2d6; momentum1; WMD3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"8"
-				powerUse=			"40"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efKineticBoltDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efKineticHitDefault;"
-				sound=				"&snCCHowitzerFireKineticHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted Savoy M8 Howitzer -->
-
-	<ItemType UNID="&itCCAuxSavoyM8Howitzer;"
-			name=				"side-mounted Savoy M8 howitzer"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"5"
-			frequency=			"veryrare"
-
-			value=				"6300"
-			mass=				"5000"
-			 
-			description=		"This Savoy M8 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It was designed to fire explosive shells over long ranges. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"blast:2d6; momentum2; WMD3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"6"
-				powerUse=			"80"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted Savoy M15 Howitzer -->
-
-	<ItemType UNID="&itCCAuxSavoyM15Howitzer;"
-			name=				"side-mounted Savoy M15 howitzer"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"6"
-			frequency=			"veryrare"
-
-			value=				"14000"
-			mass=				"5500"
-			 
-			description=		"This Savoy M15 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires high-explosive shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"blast:4d6; momentum2; WMD4"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"9"
-				powerUse=			"150"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted Savoy M30 Howitzer -->
-
-	<ItemType UNID="&itCCAuxSavoyM30Howitzer;"
-			name=				"side-mounted Savoy M30 howitzer"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"7"
-			frequency=			"veryrare"
-
-			value=				"32000"
-			mass=				"6000"
-			 
-			description=		"This Savoy M30 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires heavy, high-explosive shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"blast:4d8; momentum2; WMD5"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
-				powerUse=			"300"
-				recoil=				"3"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efBlastShellDefault;"
-				fireEffect=			"&efBlastFireDefault;"
-				hitEffect=			"&efBlastHitDefault;"
-				sound=				"&snCCHowitzerFireBlastHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted Savoy M56 Howitzer -->
-
-	<ItemType UNID="&itCCAuxSavoyM56Howitzer;"
-			name=				"side-mounted Savoy M56 howitzer"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"8"
-			frequency=			"veryrare"
-
-			value=				"71000"
-			mass=				"6000"
-			 
-			description=		"This Savoy M56 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires light, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"thermo:6d6; momentum3; WMD5"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"8"
-				powerUse=			"560"
-				recoil=				"2"
-					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efThermoHitDefault;"
-				sound=				"&snCCHowitzerFireThermoLight;"
-		>
-		</Weapon>
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
 	</ItemType>
 
 	<!-- Side-Mounted Savoy M110 Howitzer -->
@@ -3163,44 +1301,198 @@ Need to create generic plasma and nano effects.
 			name=				"side-mounted Savoy M110 howitzer"
 			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
 			inherit=			"&baStdAuxMountDeviceBase;"
-			 
+			
 			level=				"9"
 			frequency=			"veryrare"
-
+			
 			value=				"160000"
 			mass=				"6500"
-			 
-			description=		"This Savoy M110 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
+			
+			description=		"This Savoy M110 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"missile"
 				linkedFire=			"always"
-
-				damage=				"thermo:4d13; momentum3; WMD6"
+				failureChance=		"1"
+				
+				damage=				"thermo:4d13; momentum:2; WMD:3"
 				fireRate=			"10"
 				missileSpeed=		"60"
-				lifetime=			"100"
+				lifetime=			"80"
 				hitPoints=			"12"
 				powerUse=			"1100"
-				recoil=				"2"
-					
+				recoil=				"1"
+				
 				counter=			"temperature"
 				counterActivate=	"2"
 				counterUpdate=		"-1"
 				counterUpdateRate=	"6"
-
+				
 				deviceSlots=		"0"
 				external=			"true"	
-
+				
 				effect=				"&efThermoShellDefault;"
 				fireEffect=			"&efThermoFireDefault;"
 				hitEffect=			"&efThermoHitDefault;"
 				sound=				"&snCCHowitzerFireThermoMedium;"
-		>
+				>
 		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL X -->
+
+	<!-- Dual Savoy M210 Howitzer -->
+
+	<ItemType UNID="&itCCDualSavoyM210Howitzer;"
+			name=				"dual Savoy M210 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
+			
+			level=				"10"
+			frequency=			"rare"
+			
+			value=				"410000"
+			mass=				"13000"
+			
+			description=		"The dual Savoy M210 howitzer fires heavy, thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				configuration=		"dual"
+				damage=				"thermo:6d12; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"15"
+				powerUse=			"4200"
+				recoil=				"2"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoHeavy;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Omni Savoy M210 Howitzer -->
+
+	<ItemType UNID="&itCCOmniSavoyM210Howitzer;"
+			name=				"omnidirectional Savoy M210 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
+			
+			level=				"10"
+			frequency=			"veryrare"
+			
+			value=				"810000"
+			mass=				"7000"
+			
+			description=		"The omnidirectional Savoy M210 howitzer fires heavy, thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				omnidirectional=	"true"
+				damage=				"thermo:6d12; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"15"
+				powerUse=			"2800"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoHeavy;"
+				>
+		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
+	</ItemType>
+
+	<!-- Scanning Savoy M210 Howitzer -->
+
+	<ItemType UNID="&itCCAdvSavoyM210Howitzer;"
+			name=				"scanning Savoy M210 howitzer"
+			attributes=			"cabbageCorp, cabbageNotStandard, howitzer, majorItem, military, specialty"
+			
+			level=				"10"
+			frequency=			"notRandom"
+			
+			value=				"270000"
+			mass=				"7000"
+			
+			description=		"The Savoy M210 howitzer fires heavy, thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly. This model includes a built-in Microsaur scanner that detects Microsaurs within 20 light-seconds."
+			>
+			
+		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=				"missile"
+				failureChance=		"1"
+				
+				damage=				"thermo:6d12; momentum:2; WMD:3"
+				fireRate=			"10"
+				missileSpeed=		"60"
+				lifetime=			"80"
+				hitPoints=			"15"
+				powerUse=			"3150"
+				idlePowerUse=		"750"
+				recoil=				"1"
+				
+				counter=			"temperature"
+				counterActivate=	"2"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"6"
+				
+				effect=				"&efThermoShellDefault;"
+				fireEffect=			"&efThermoFireDefault;"
+				hitEffect=			"&efThermoHitDefault;"
+				sound=				"&snCCHowitzerFireThermoHeavy;"
+				>
+		</Weapon>
+		
+		<Events>
+			<OnUpdate>
+				(CCMicrosaurScanner 20)
+			</OnUpdate>
+		</Events>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
 	</ItemType>
 
 	<!-- Side-Mounted Savoy M210 Howitzer -->
@@ -3209,338 +1501,344 @@ Need to create generic plasma and nano effects.
 			name=				"side-mounted Savoy M210 howitzer"
 			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
 			inherit=			"&baStdAuxMountDeviceBase;"
-			 
+			
 			level=				"10"
 			frequency=			"veryrare"
-
+			
 			value=				"350000"
 			mass=				"7000"
-			 
-			description=		"This Savoy M210 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires heavy, thermonuclear shells. Unfortunately, the weapon overheats if fired continuously."
-	>
-
+			
+			description=		"This Savoy M210 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires heavy, thermonuclear shells. It has a variable fire-rate, though it can overheat if fired too quickly."
+			>
+			
 		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Weapon
 				type=				"missile"
 				linkedFire=			"always"
-
-				damage=				"thermo:6d12; momentum3; WMD7"
+				failureChance=		"1"
+				
+				damage=				"thermo:6d12; momentum:2; WMD:3"
 				fireRate=			"10"
 				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"16"
+				lifetime=			"80"
+				hitPoints=			"15"
 				powerUse=			"2100"
-				recoil=				"3"
-					
+				recoil=				"1"
+				
 				counter=			"temperature"
 				counterActivate=	"2"
 				counterUpdate=		"-1"
 				counterUpdateRate=	"6"
-
+				
 				deviceSlots=		"0"
 				external=			"true"	
-
+				
 				effect=				"&efThermoShellDefault;"
 				fireEffect=			"&efThermoFireDefault;"
 				hitEffect=			"&efThermoHitDefault;"
 				sound=				"&snCCHowitzerFireThermoHeavy;"
-		>
+				>
 		</Weapon>
+		
+		<StaticData>
+			<useScreen>&dsCCSavoyHowitzers;</useScreen>
+		</StaticData>
 	</ItemType>
 
-	<!-- Side-Mounted Savoy M400 Howitzer -->
+<!-- BASE CLASSES -->
 
-	<ItemType UNID="&itCCAuxSavoyM400Howitzer;"
-			name=				"side-mounted Savoy M400 howitzer"
-			attributes=			"auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem, military"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"11"
-			frequency=			"veryrare"
+	<!-- Microsaur Scanner Base Class -->
 
-			value=				"780000"
-			mass=				"7000"
-			 
-			description=		"This Savoy M400 howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It fires large plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"plasma:8d12; momentum4; WMD7"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"10"
-				powerUse=			"4000"
-				recoil=				"2"
+	<ItemType UNID="&baCCMicrosaurScannerPower;"
+			name=				"(Microsaur warder base class)"
+			virtual=			"true"
+			>
+			
+		<Events>
+			<OnCreateShot>
+				(block Nil
+					(objSetData gSource 'asteroidsFound 0)
+					)
+			</OnCreateShot>
+			
+			<OnDamageAbandoned>
+				(block ((podType (typGetStaticData aWeaponType 'podType)))
 					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaLight;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted Savoy M770 Howitzer -->
-
-	<ItemType UNID="&itCCAuxSavoyM770Howitzer;"
-			name=				"side-mounted Savoy M770 howitzer"
-			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"12"
-			frequency=			"veryrare"
-
-			value=				"1700000"
-			mass=				"7500"
-			 
-			description=		"This alien howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It appears to fire dense plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"plasma:7d20; momentum4; WMD7; shatter1"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"15"
-				powerUse=			"7700"
-				recoil=				"2"
+					(if (CCMicrosaurScanObj gSource podType)
+						(objIncData aCause 'asteroidsFound 1)
+						)
+						
+					; Return Nil to indicate that we want the default damage to apply.
 					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted Savoy M1500 Howitzer -->
-
-	<ItemType UNID="&itCCAuxSavoyM1500Howitzer;"
-			name=				"side-mounted Savoy M1500 howitzer"
-			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"13"
-			frequency=			"veryrare"
-
-			value=				"3900000"
-			mass=				"8000"
-			 
-			description=		"This alien howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It appears to fire heavy plasma bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"plasma:9d22; momentum4; WMD7; shatter2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"20"
-				powerUse=			"15000"
-				recoil=				"3"
+					Nil
+					)
+			</OnDamageAbandoned>
+		
+			<OnDestroyShot>
+				(switch
+					; If we found some Microsaurs, then nothing to do (we've marked the Microsaurs found).
 					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFirePlasmaHeavy;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted Savoy M2900 Howitzer -->
-
-	<ItemType UNID="&itCCAuxSavoyM2900Howitzer;"
-			name=				"side-mounted Savoy M2900 howitzer"
-			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"14"
-			frequency=			"veryrare"
-
-			value=				"8500000"
-			mass=				"8000"
-			 
-			description=		"This alien howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It appears to fire light nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"nano:9d24; momentum5; WMD7; shatter2"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"12"
-				powerUse=			"29000"
-				recoil=				"2"
+					(!= (objGetData gSource 'asteroidsFound) 0)
+						Nil
+						
+					; If we found no Microsaurs, tell the player/orderGiver
 					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoLight;"
-		>
-		</Weapon>
+					(objSendMessage aOrderGiver Nil (typTranslate &ovCCMicrosaurDetectionCount; 'msgNoOreFound))
+					)
+			</OnDestroyShot>
+		</Events>
 	</ItemType>
 
-	<!-- Side-Mounted Savoy M5600 Howitzer -->
+	<!-- Savoy Howitzer Restriction Bolt L1 -->
 
-	<ItemType UNID="&itCCAuxSavoyM5600Howitzer;"
-			name=				"side-mounted Savoy M5600 howitzer"
-			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"15"
-			frequency=			"veryrare"
+	<ItemType UNID="&vtCCHowitzerRestrictionBoltL1;"
+			name=				"(Savoy howitzer restriction bolt)"
+			attributes=			"cabbageCorp, howitzerRestrictionBolt"
+			virtual=			"true"
+			>
+			
+		<MiscellaneousDevice
+		        deviceSlots=    "0"
+				>
+				
+			<EnhancementAbilities>
+				<Enhance type=			"howitzerRestrictionBolt"
+						 criteria=		"w~l +howitzer; +cabbageCorp"
+						 enhancement=	"+speed:60;"	
+						/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
 
-			value=				"19000000"
-			mass=				"8500"
-			 
-			description=		"This alien howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It appears to fire dense nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
+	<!-- Savoy Howitzer Restriction Bolt L2 -->
 
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+	<ItemType UNID="&vtCCHowitzerRestrictionBoltL2;"
+			name=				"(Savoy howitzer restriction bolt)"
+			attributes=			"cabbageCorp, howitzerRestrictionBolt"
+			virtual=			"true"
+			>
+			
+		<MiscellaneousDevice
+		        deviceSlots=    "0"
+				>
+				
+			<EnhancementAbilities>
+				<Enhance type=			"howitzerRestrictionBolt"
+						 criteria=		"w~l +howitzer; +cabbageCorp"
+						 enhancement=	"+speed:120;"	
+						/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Savoy Howitzer Restriction Bolt L3 -->
 
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
+	<ItemType UNID="&vtCCHowitzerRestrictionBoltL3;"
+			name=				"(Savoy howitzer restriction bolt)"
+			attributes=			"cabbageCorp, howitzerRestrictionBolt"
+			virtual=			"true"
+			>
+			
+		<MiscellaneousDevice
+		        deviceSlots=    "0"
+				>
+				
+			<EnhancementAbilities>
+				<Enhance type=			"howitzerRestrictionBolt"
+						 criteria=		"w~l +howitzer; +cabbageCorp"
+						 enhancement=	"+speed:160;"	
+						/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Savoy Howitzer Restriction Bolt L4 -->
 
-				damage=				"nano:16d20; momentum5; WMD7; shatter3"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"18"
-				powerUse=			"56000"
-				recoil=				"2"
+	<ItemType UNID="&vtCCHowitzerRestrictionBoltL4;"
+			name=				"(Savoy howitzer restriction bolt)"
+			attributes=			"cabbageCorp, howitzerRestrictionBolt"
+			virtual=			"true"
+			>
+			
+		<MiscellaneousDevice
+		        deviceSlots=    "0"
+				>
+				
+			<EnhancementAbilities>
+				<Enhance type=			"howitzerRestrictionBolt"
+						 criteria=		"w~l +howitzer; +cabbageCorp"
+						 enhancement=	"+speed:200;"	
+						/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+	
+	<!-- Savoy Howitzer Restriction Bolt L5 -->
+
+	<ItemType UNID="&vtCCHowitzerRestrictionBoltL5;"
+			name=				"(Savoy howitzer restriction bolt)"
+			attributes=			"cabbageCorp, howitzerRestrictionBolt"
+			virtual=			"true"
+			>
+			
+		<MiscellaneousDevice
+		        deviceSlots=    "0"
+				>
+				
+			<EnhancementAbilities>
+				<Enhance type=			"howitzerRestrictionBolt"
+						 criteria=		"w~l +howitzer; +cabbageCorp"
+						 enhancement=	"+speed:240;"	
+						/>
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+	</ItemType>
+
+<!-- Dock Screens -->
+
+	<!-- Savoy Howitzer Modifications -->
+
+	<DockScreen	UNID="&dsCCSavoyHowitzers;"
+			name=				"Ship's Interior"
+			backgroundID=		"&rsShipInterior;"
+			nestedScreen=		"true"
+			>
+			
+		<InitialPane>
+			(switch
+				(itmGetProperty gItem 'damaged)
+					"NoUse"
 					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoMedium;"
-		>
-		</Weapon>
-	</ItemType>
-
-	<!-- Side-Mounted Savoy M11000 Howitzer -->
-
-	<ItemType UNID="&itCCAuxSavoyM11000Howitzer;"
-			name=				"side-mounted Savoy M11000 howitzer"
-			attributes=			"alien, auxMountDevice, cabbageCorp, cabbageNotStandard, howitzer, majorItem"
-			inherit=			"&baStdAuxMountDeviceBase;"
-			 
-			level=				"16"
-			frequency=			"veryrare"
-
-			value=				"43000000"
-			mass=				"9000"
-			 
-			description=		"This alien howitzer has been modified for external mounting, and its fire controls are linked to a ship's primary weapon. It appears to fire heavy nano bursts. Unfortunately, the weapon overheats if fired continuously."
-	>
-
-		<Image imageID="&rsCCGuns;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
-
-		<Weapon
-				type=				"missile"
-				linkedFire=			"always"
-
-				damage=				"nano:20d24; momentum5; WMD7; shatter4"
-				fireRate=			"10"
-				missileSpeed=		"60"
-				lifetime=			"100"
-				hitPoints=			"24"
-				powerUse=			"110000"
-				recoil=				"3"
+				"Default"
+				)
+		</InitialPane>
+		
+		<Panes>
+			<Default>
+				<OnPaneInit>
+					(block Nil
+						(setq desc 
+							(cat "Savoy howitzers are built with variable-speed shell loaders to compensate for overheating."
+								"\n\n"
+								"Yours currently has a delay of "
+								 (switch
+									(itmIsInstalled (itmCreate &vtCCHowitzerRestrictionBoltL1; 1))
+										"60%."
+									(itmIsInstalled (itmCreate &vtCCHowitzerRestrictionBoltL2; 1))
+										"120%."
+									(itmIsInstalled (itmCreate &vtCCHowitzerRestrictionBoltL3; 1))
+										"160%."
+									(itmIsInstalled (itmCreate &vtCCHowitzerRestrictionBoltL4; 1))
+										"200%."
+									(itmIsInstalled (itmCreate &vtCCHowitzerRestrictionBoltL5; 1))
+										"240%."
+									"100%."
+									)
+								"\n\n"
+								"Which mode would you like to set it to?"
+								"\n\n"
+								"Note: Installed Savoy howitzers automatically synchronize theirsame delay settings."
+								)
+							)
+						(scrSetDesc gScreen desc)
+						)
+				</OnPaneInit>
+				
+				<Actions>
+					<Action name="1) Set delay to 100% (default)" default="1" key="1">
+						(block nil
+							(enum (objGetItems gSource "bV; I; +howitzerRestrictionBolt") restrictionBolt
+								(block nil
+									(shpRemoveDevice gSource restrictionBolt)
+									(objRemoveItem gSource restrictionBolt)
+									)
+								)
+							(scrExitScreen gScreen)
+							)
+					</Action>
+					<Action name="2) Set delay to 120%" key="2">
+						(block nil
+							(enum (objGetItems gSource "bV; I; +howitzerRestrictionBolt") restrictionBolt
+								(block nil
+									(shpRemoveDevice gSource restrictionBolt)
+									(objRemoveItem gSource restrictionBolt)
+									)
+								)
+							(objAddItem gSource (itmCreate &vtCCHowitzerRestrictionBoltL2; 1))
+							(shpInstallDevice gSource (itmCreate &vtCCHowitzerRestrictionBoltL2; 1))
+							(scrExitScreen gScreen)
+							)
+					</Action>
+					<Action name="3) Set delay to 160%" key="3">
+						(block nil
+							(enum (objGetItems gSource "bV; I; +howitzerRestrictionBolt") restrictionBolt
+								(block nil
+									(shpRemoveDevice gSource restrictionBolt)
+									(objRemoveItem gSource restrictionBolt)
+									)
+								)
+							(objAddItem gSource (itmCreate &vtCCHowitzerRestrictionBoltL3; 1))
+							(shpInstallDevice gSource (itmCreate &vtCCHowitzerRestrictionBoltL3; 1))
+							(scrExitScreen gScreen)
+							)
+					</Action>
+					<Action name="4) Set delay to 200%" key="4">
+						(block nil
+							(enum (objGetItems gSource "bV; I; +howitzerRestrictionBolt") restrictionBolt
+								(block nil
+									(shpRemoveDevice gSource restrictionBolt)
+									(objRemoveItem gSource restrictionBolt)
+									)
+								)
+							(objAddItem gSource (itmCreate &vtCCHowitzerRestrictionBoltL4; 1))
+							(shpInstallDevice gSource (itmCreate &vtCCHowitzerRestrictionBoltL4; 1))
+							(scrExitScreen gScreen)
+							)
+					</Action>
+					<Action name="5) Set delay to 240% (safest)" key="5">
+						(block nil
+							(enum (objGetItems gSource "bV; I; +howitzerRestrictionBolt") restrictionBolt
+								(block nil
+									(shpRemoveDevice gSource restrictionBolt)
+									(objRemoveItem gSource restrictionBolt)
+									)
+								)
+							(objAddItem gSource (itmCreate &vtCCHowitzerRestrictionBoltL5; 1))
+							(shpInstallDevice gSource (itmCreate &vtCCHowitzerRestrictionBoltL5; 1))
+							(scrExitScreen gScreen)
+							)
+					</Action>
 					
-				counter=			"temperature"
-				counterActivate=	"2"
-				counterUpdate=		"-1"
-				counterUpdateRate=	"6"
-
-				deviceSlots=		"0"
-				external=			"true"	
-
-				effect=				"&efThermoShellDefault;"
-				fireEffect=			"&efThermoFireDefault;"
-				hitEffect=			"&efPlasmaHitDefault;"
-				sound=				"&snCCHowitzerFireNanoHeavy;"
-		>
-		</Weapon>
-	</ItemType>
+					<Action name="Cancel" cancel="1" key="C">
+						(scrExitScreen gScreen)
+					</Action>
+				</Actions>
+			</Default>
+			
+			<NoUse>
+				<OnPaneInit>
+					(scrSetDesc gScreen 
+						"This device is too damaged to further modify."
+						)
+				</OnPaneInit>
+				
+				<Actions>
+					<Action name="Done" cancel="1" default="1" key="D">
+						(scrExitScreen gScreen)
+					</Action>
+				</Actions>
+			</NoUse>
+		</Panes>
+	</DockScreen>
 
 <!-- RESOURCES -->
-	
-	<Sound UNID="&snCCHowitzerFireKineticLight;"	filename="HowitzerFireKinetic1.wav"/>
-	<Sound UNID="&snCCHowitzerFireKineticMedium;"	filename="HowitzerFireKinetic2.wav"/>
-	<Sound UNID="&snCCHowitzerFireKineticHeavy;"	filename="HowitzerFireKinetic3.wav"/>
+
 	<Sound UNID="&snCCHowitzerFireBlastLight;"		filename="HowitzerFireBlast1.wav"/>
 	<Sound UNID="&snCCHowitzerFireBlastMedium;"		filename="HowitzerFireBlast2.wav"/>
 	<Sound UNID="&snCCHowitzerFireBlastHeavy;"		filename="HowitzerFireBlast3.wav"/>
 	<Sound UNID="&snCCHowitzerFireThermoLight;"		filename="HowitzerFireThermo1.wav"/>
 	<Sound UNID="&snCCHowitzerFireThermoMedium;"	filename="HowitzerFireThermo2.wav"/>
 	<Sound UNID="&snCCHowitzerFireThermoHeavy;"		filename="HowitzerFireThermo3.wav"/>
-	<Sound UNID="&snCCHowitzerFirePlasmaLight;"		filename="HowitzerFirePlasma1.wav"/>
-	<Sound UNID="&snCCHowitzerFirePlasmaMedium;"	filename="HowitzerFirePlasma2.wav"/>
-	<Sound UNID="&snCCHowitzerFirePlasmaHeavy;"		filename="HowitzerFirePlasma3.wav"/>
-	<Sound UNID="&snCCHowitzerFireNanoLight;"		filename="HowitzerFireNano1.wav"/>
-	<Sound UNID="&snCCHowitzerFireNanoMedium;"		filename="HowitzerFireNano2.wav"/>
-	<Sound UNID="&snCCHowitzerFireNanoHeavy;"		filename="HowitzerFireNano3.wav"/>
-	
+
 </TranscendenceModule>
