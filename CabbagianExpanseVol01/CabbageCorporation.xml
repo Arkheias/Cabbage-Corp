@@ -92,45 +92,18 @@
 					{ item:&itCCDualKaleM11Repeater;			enhancement:Nil		components:( { item:&itCCKaleM11Repeater; count:2 } )													extraCost:0 }
 					{ item:&itCCDualKaleM20Repeater;			enhancement:Nil		components:( { item:&itCCKaleM20Repeater; count:2 } )													extraCost:0 }
 					{ item:&itCCDualKaleM38Repeater;			enhancement:Nil		components:( { item:&itCCKaleM38Repeater; count:2 } )													extraCost:0 }
-					{ item:&itCCDualKaleM72Repeater;			enhancement:Nil		components:( { item:&itCCKaleM72Repeater; count:2 } )													extraCost:0 }
-					{ item:&itCCDualKaleM140Repeater;			enhancement:Nil		components:( { item:&itCCKaleM140Repeater; count:2 } )													extraCost:0 }
-					{ item:&itCCDualKaleM260Repeater;			enhancement:Nil		components:( { item:&itCCKaleM260Repeater; count:2 } )													extraCost:0 }
-					{ item:&itCCDualKaleM490Repeater;			enhancement:Nil		components:( { item:&itCCKaleM490Repeater; count:2 } )													extraCost:0 }
-					{ item:&itCCDualKaleM920Repeater;			enhancement:Nil		components:( { item:&itCCKaleM920Repeater; count:2 } )													extraCost:0 }
-					{ item:&itCCDualKaleM1700Repeater;			enhancement:Nil		components:( { item:&itCCKaleM1700Repeater; count:2 } )													extraCost:0 }
-					{ item:&itCCDualKaleM3300Repeater;			enhancement:Nil		components:( { item:&itCCKaleM3300Repeater; count:2 } )													extraCost:0 }
-					{ item:&itCCDualKaleM6300Repeater;			enhancement:Nil		components:( { item:&itCCKaleM6300Repeater; count:2 } )													extraCost:0 }
-					{ item:&itCCDualKaleM12000Repeater;			enhancement:Nil		components:( { item:&itCCKaleM12000Repeater; count:2 } )												extraCost:0 }
 					{ item:&itCCOmniKaleM1Repeater;				enhancement:Nil		components:( { item:&itCCKaleM1Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniKaleM3Repeater;				enhancement:Nil		components:( { item:&itCCKaleM3Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniKaleM6Repeater;				enhancement:Nil		components:( { item:&itCCKaleM6Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniKaleM11Repeater;			enhancement:Nil		components:( { item:&itCCKaleM11Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniKaleM20Repeater;			enhancement:Nil		components:( { item:&itCCKaleM20Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCOmniKaleM38Repeater;			enhancement:Nil		components:( { item:&itCCKaleM38Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniKaleM72Repeater;			enhancement:Nil		components:( { item:&itCCKaleM72Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniKaleM140Repeater;			enhancement:Nil		components:( { item:&itCCKaleM140Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniKaleM260Repeater;			enhancement:Nil		components:( { item:&itCCKaleM260Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniKaleM490Repeater;			enhancement:Nil		components:( { item:&itCCKaleM490Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniKaleM920Repeater;			enhancement:Nil		components:( { item:&itCCKaleM920Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniKaleM1700Repeater;			enhancement:Nil		components:( { item:&itCCKaleM1700Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniKaleM3300Repeater;			enhancement:Nil		components:( { item:&itCCKaleM3300Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniKaleM6300Repeater;			enhancement:Nil		components:( { item:&itCCKaleM6300Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCOmniKaleM12000Repeater;			enhancement:Nil		components:( { item:&itCCKaleM12000Repeater; count:1 } )												extraCost:0 }
 					{ item:&itCCAuxKaleM1Repeater;				enhancement:Nil		components:( { item:&itCCKaleM1Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxKaleM3Repeater;				enhancement:Nil		components:( { item:&itCCKaleM3Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxKaleM6Repeater;				enhancement:Nil		components:( { item:&itCCKaleM6Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxKaleM11Repeater;				enhancement:Nil		components:( { item:&itCCKaleM11Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxKaleM20Repeater;				enhancement:Nil		components:( { item:&itCCKaleM20Repeater; count:1 } )													extraCost:0 }
 					{ item:&itCCAuxKaleM38Repeater;				enhancement:Nil		components:( { item:&itCCKaleM38Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxKaleM72Repeater;				enhancement:Nil		components:( { item:&itCCKaleM72Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxKaleM140Repeater;			enhancement:Nil		components:( { item:&itCCKaleM140Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxKaleM260Repeater;			enhancement:Nil		components:( { item:&itCCKaleM260Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxKaleM490Repeater;			enhancement:Nil		components:( { item:&itCCKaleM490Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxKaleM920Repeater;			enhancement:Nil		components:( { item:&itCCKaleM920Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxKaleM1700Repeater;			enhancement:Nil		components:( { item:&itCCKaleM1700Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxKaleM3300Repeater;			enhancement:Nil		components:( { item:&itCCKaleM3300Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxKaleM6300Repeater;			enhancement:Nil		components:( { item:&itCCKaleM6300Repeater; count:1 } )													extraCost:0 }
-					{ item:&itCCAuxKaleM12000Repeater;			enhancement:Nil		components:( { item:&itCCKaleM12000Repeater; count:1 } )												extraCost:0 }
 				)
 			</WeaponRecipes>
 

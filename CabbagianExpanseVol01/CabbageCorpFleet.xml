@@ -190,25 +190,25 @@ other			n-?
 		<Names definiteArticle="true">The Kraken</Names>
 		
 		<Devices>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="-30" posRadius="105"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="-20" posRadius="95"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="20" posRadius="95"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="30" posRadius="105"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="-30" posRadius="105"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="-20" posRadius="95"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="20" posRadius="95"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="-45" maxFireArc="45"  posAngle="30" posRadius="105"/>
 			
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="60" posRadius="105"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="70" posRadius="95"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="110" posRadius="95"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="120" posRadius="105"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="60" posRadius="105"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="70" posRadius="95"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="110" posRadius="95"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="45"  maxFireArc="135" posAngle="120" posRadius="105"/>
 			
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="150" posRadius="105"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="160" posRadius="95"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="200" posRadius="95"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="210" posRadius="105"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="150" posRadius="105"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="160" posRadius="95"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="200" posRadius="95"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="135"  maxFireArc="225" posAngle="210" posRadius="105"/>
 			
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="240" posRadius="105"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="250" posRadius="95"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="290" posRadius="95"/>
-			<Device deviceID="&itCCKaleM490Repeater;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="300" posRadius="105"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="240" posRadius="105"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="250" posRadius="95"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="290" posRadius="95"/>
+			<Device deviceID="&itCCDualSavoyM210Howitzer;" secondaryWeapon="true" minFireArc="225"  maxFireArc="315" posAngle="300" posRadius="105"/>
 			
 			<Device deviceID="&itCCNapaS150Deflector;" charges="4"/>
 			<Device deviceID="&itCCSiva800MWReactor;"/>
@@ -224,6 +224,8 @@ other			n-?
 			<Device deviceID="&vtDamageControlParty;"/>
 			<Device deviceID="&vtDamageControlParty;"/>
 			<Device deviceID="&vtDamageControlParty;"/>
+			
+			<Device deviceID="&vtCCSavoyHowitzerRestrictionBolt;"/>
 		</Devices>
 
 		<Maneuver

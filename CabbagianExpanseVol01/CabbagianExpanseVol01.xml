@@ -582,60 +582,24 @@
 	<!ENTITY itCCKaleM11Repeater					"0xDA27CC54">
 	<!ENTITY itCCKaleM20Repeater					"0xDA27CC55">
 	<!ENTITY itCCKaleM38Repeater					"0xDA27CC56">
-	<!ENTITY itCCKaleM72Repeater					"0xDA27CC57">
-	<!ENTITY itCCKaleM140Repeater					"0xDA27CC58">
-	<!ENTITY itCCKaleM260Repeater					"0xDA27CC59">
-	<!ENTITY itCCKaleM490Repeater					"0xDA27CC5A">
-	<!ENTITY itCCKaleM920Repeater					"0xDA27CC5B">
-	<!ENTITY itCCKaleM1700Repeater					"0xDA27CC5C">
-	<!ENTITY itCCKaleM3300Repeater					"0xDA27CC5D">
-	<!ENTITY itCCKaleM6300Repeater					"0xDA27CC5E">
-	<!ENTITY itCCKaleM12000Repeater					"0xDA27CC5F">
 	<!ENTITY itCCDualKaleM1Repeater					"0xDA27CC61">
 	<!ENTITY itCCDualKaleM3Repeater					"0xDA27CC62">
 	<!ENTITY itCCDualKaleM6Repeater					"0xDA27CC63">
 	<!ENTITY itCCDualKaleM11Repeater				"0xDA27CC64">
 	<!ENTITY itCCDualKaleM20Repeater				"0xDA27CC65">
 	<!ENTITY itCCDualKaleM38Repeater				"0xDA27CC66">
-	<!ENTITY itCCDualKaleM72Repeater				"0xDA27CC67">
-	<!ENTITY itCCDualKaleM140Repeater				"0xDA27CC68">
-	<!ENTITY itCCDualKaleM260Repeater				"0xDA27CC69">
-	<!ENTITY itCCDualKaleM490Repeater				"0xDA27CC6A">
-	<!ENTITY itCCDualKaleM920Repeater				"0xDA27CC6B">
-	<!ENTITY itCCDualKaleM1700Repeater				"0xDA27CC6C">
-	<!ENTITY itCCDualKaleM3300Repeater				"0xDA27CC6D">
-	<!ENTITY itCCDualKaleM6300Repeater				"0xDA27CC6E">
-	<!ENTITY itCCDualKaleM12000Repeater				"0xDA27CC6F">
 	<!ENTITY itCCOmniKaleM1Repeater					"0xDA27CC71">
 	<!ENTITY itCCOmniKaleM3Repeater					"0xDA27CC72">
 	<!ENTITY itCCOmniKaleM6Repeater					"0xDA27CC73">
 	<!ENTITY itCCOmniKaleM11Repeater				"0xDA27CC74">
 	<!ENTITY itCCOmniKaleM20Repeater				"0xDA27CC75">
 	<!ENTITY itCCOmniKaleM38Repeater				"0xDA27CC76">
-	<!ENTITY itCCOmniKaleM72Repeater				"0xDA27CC77">
-	<!ENTITY itCCOmniKaleM140Repeater				"0xDA27CC78">
-	<!ENTITY itCCOmniKaleM260Repeater				"0xDA27CC79">
-	<!ENTITY itCCOmniKaleM490Repeater				"0xDA27CC7A">
-	<!ENTITY itCCOmniKaleM920Repeater				"0xDA27CC7B">
-	<!ENTITY itCCOmniKaleM1700Repeater				"0xDA27CC7C">
-	<!ENTITY itCCOmniKaleM3300Repeater				"0xDA27CC7D">
-	<!ENTITY itCCOmniKaleM6300Repeater				"0xDA27CC7E">
-	<!ENTITY itCCOmniKaleM12000Repeater				"0xDA27CC7F">
 	<!ENTITY itCCAuxKaleM1Repeater					"0xDA27CC81">
 	<!ENTITY itCCAuxKaleM3Repeater					"0xDA27CC82">
 	<!ENTITY itCCAuxKaleM6Repeater					"0xDA27CC83">
 	<!ENTITY itCCAuxKaleM11Repeater					"0xDA27CC84">
 	<!ENTITY itCCAuxKaleM20Repeater					"0xDA27CC85">
 	<!ENTITY itCCAuxKaleM38Repeater					"0xDA27CC86">
-	<!ENTITY itCCAuxKaleM72Repeater					"0xDA27CC87">
-	<!ENTITY itCCAuxKaleM140Repeater				"0xDA27CC88">
-	<!ENTITY itCCAuxKaleM260Repeater				"0xDA27CC89">
-	<!ENTITY itCCAuxKaleM490Repeater				"0xDA27CC8A">
-	<!ENTITY itCCAuxKaleM920Repeater				"0xDA27CC8B">
-	<!ENTITY itCCAuxKaleM1700Repeater				"0xDA27CC8C">
-	<!ENTITY itCCAuxKaleM3300Repeater				"0xDA27CC8D">
-	<!ENTITY itCCAuxKaleM6300Repeater				"0xDA27CC8E">
-	<!ENTITY itCCAuxKaleM12000Repeater				"0xDA27CC8F">
 
 	<!-- CCA0-CCAF MINING LANCES -->
 
