@@ -262,7 +262,7 @@
 			
 			<Device deviceID="&itCCKaleM1Repeater;"/>
 			<Device deviceID="&itCCRadNapaS1Deflector;"/>
-			<Device deviceID="&itCCSiva12MWReactor;"/>
+			<Device deviceID="&itCCSiva1200MWReactor;"/>
 		</Devices>
 		
 		<Maneuver
@@ -273,6 +273,7 @@
 		<Items>
 			<Item count="4d8"	item="&itHelium3FuelRod;"/>
 			<Item count="1"		item="&itCCPersonalBelongings;"/>
+			<Item count="10"		item="&itCCZeroPointCrystal;"/>
 		</Items>
 		
 		<!-- Image and Effects -->
@@ -300,7 +301,7 @@
 			initialClass=       "true"
             startingCredits=    "10d12+80"
 			
-            startingSystem=     "TauCeti"
+            startingSystem=     "Othala"
             startingPos=        "Start"
 			/>
 			

@@ -19,7 +19,7 @@
 			definiteArticle=	"true"
 			>
 			
-		<Image imageID="&rsCCStations;" imageX="100" imageY="0" imageWidth="28" imageHeight="192"/>
+		<Image imageID="&rsCCMassiveRelay;" imageWidth="130" imageHeight="340" imageFrameCount="120" imageTicksPerFrame="1" animationColumns="12"/>
 		
 		<DockScreens>
 			<Main>
@@ -113,12 +113,6 @@
 					<Siblings count="80" distribution="4d20-42">
 						<Station type="&stRockyAsteroidSizeB;"/>
 					</Siblings>
-					
-					<!--
-					<Siblings count="1d6+6" distribution="4d40-82">
-						<Label attributes="asteroids,asteroidbelt"/>
-					</Siblings>
-					-->
 				</Group>
 			</Orbitals>
 			
@@ -126,16 +120,19 @@
 			
 			<Orbitals distance="12" scale="light-minute" angle="random">
 				<Group>
-					<Station type="&stIcePlanet;" 
-							name="Hala"
-							showOrbit="true"
-							/>
+					<Primary>
+						<Station type="&stIcePlanet;" name="Hala" showOrbit="true"/>
+					</Primary>
 							
-					<Orbitals distance="20" angle="equidistant">
-						<Stargate objName="Outbound" to="Othala:Outbound" type="&stCCMassiveRelay;"/>
-						
-						<Marker objName="Start"/>
-					</Orbitals>
+					<Siblings radiusInc="12">
+						<Group>
+							<Station type="&stCCMassiveRelay;"/>
+							
+							<Siblings radiusInc="8">
+								<Marker objName="Start"/>
+							</Siblings>
+						</Group>
+					</Siblings>
 				</Group>
 			</Orbitals>
 		</SystemGroup>
@@ -315,5 +312,6 @@
 
 	<Image UNID="&rsCCCabbagianExpanseSpace;"		bitmap="CabbagianExpanseSpace.jpg"	loadOnUse="true"/>
 	<Image UNID="&rsCCPraclarushHangar;"			bitmap="PraclarushHangar.jpg"		loadOnUse="true" />
+	<Image UNID="&rsCCMassiveRelay;"				bitmap="MassiveRelay.jpg"			bitmask="MassiveRelayMask.jpg"/>
 
 </TranscendenceModule>

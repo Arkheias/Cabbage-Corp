@@ -661,6 +661,7 @@
 	<!ENTITY rsCCFuelDepot							"0xDA27CE14">
 	<!ENTITY rsCCManufacturingPlant					"0xDA27CE15">
 	<!ENTITY rsCCPraclarushHangar					"0xDA27CE16">
+	<!ENTITY rsCCMassiveRelay						"0xDA27CE17">
 
 		<!-- HUD Images-->
 	<!ENTITY rsCCEIArmor6							"0xDA27CE41">
