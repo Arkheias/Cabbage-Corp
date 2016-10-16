@@ -10,11 +10,14 @@
 			<!-- This allows military crew members to have the appropriate tag, but not be confiscated/arrested at stations -->
 			<ItemAttribute label="military"				labelType="advantage"	criteria="* +militaryCrewMember;"/>
 			
-			<!-- Things man was not meant to know -->
+			<!-- Identifies things man was not meant to know -->
 			<ItemAttribute label="political"			labelType="disadvantage"	criteria="* +cabbagePolitical;"/>
 			
-			<!-- Things man was not meant to touch -->
+			<!-- Identifies things man was not meant to touch -->
 			<ItemAttribute label="WARNING: DO NOT ALLOW CONTACT WITH REACTOR FUELS!"			labelType="disadvantage"	criteria="* +protoCabbagium;"/>
+			
+			<!-- Identifies things man was not meant to return for a refund -->
+			<ItemAttribute label="VOID"				labelType="disadvantage"	criteria="* +voidedWarranty;"/>
 		</AttributeDesc>
 	</Type>
 
