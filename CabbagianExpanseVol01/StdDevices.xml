@@ -499,13 +499,12 @@
 			
 		<Events>
 			<CanBeInstalled>
-				(switch
-					(not (not (objGetItems gSource "dI +cabbageDRADIS")))
-						(block Nil
-							(objSendMessage gSource Nil "You cannot install another DRADIS module as it will interfere with the one currently installed.")
-							"You cannot install another DRADIS module as it will interfere with the one currently installed."
-							)
+				(if (not (objGetItems gSource "dI +cabbageDRADIS"))
 					True
+					(block Nil
+						(objSendMessage gSource Nil "You cannot install another DRADIS module as it will interfere with the one currently installed.")
+						"You cannot install another DRADIS module as it will interfere with the one currently installed."
+						)
 					)
 			</CanBeInstalled>
 			
