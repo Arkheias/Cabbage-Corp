@@ -38,7 +38,7 @@
 
 	<ItemType UNID="&itCCAuxSiva8MWReactor;"
 			name=				"auxiliary S&#xed;va-8M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, reactor, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, reactor, specialty"
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"1"
@@ -138,7 +138,7 @@
 
 	<ItemType UNID="&itCCAuxSiva12MWReactor;"
 			name=				"auxiliary S&#xed;va-12M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, reactor, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, reactor, specialty"
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"2"
@@ -238,7 +238,7 @@
 
 	<ItemType UNID="&itCCAuxSiva20MWReactor;"
 			name=				"auxiliary S&#xed;va-20M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, reactor, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, reactor, specialty"
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"3"
@@ -338,7 +338,7 @@
 
 	<ItemType UNID="&itCCAuxSiva40MWReactor;"
 			name=				"auxiliary S&#xed;va-40M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, reactor, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, reactor, specialty"
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"4"
@@ -438,7 +438,7 @@
 
 	<ItemType UNID="&itCCAuxSiva80MWReactor;"
 			name=				"auxiliary S&#xed;va-80M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, reactor, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, reactor, specialty"
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"5"
@@ -538,7 +538,7 @@
 
 	<ItemType UNID="&itCCAuxSiva120MWReactor;"
 			name=				"auxiliary S&#xed;va-120M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, military, reactor, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military, reactor, specialty"
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"6"
@@ -638,7 +638,7 @@
 
 	<ItemType UNID="&itCCAuxSiva200MWReactor;"
 			name=				"auxiliary S&#xed;va-200M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, military, reactor, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military, reactor, specialty"
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"7"
@@ -738,7 +738,7 @@
 
 	<ItemType UNID="&itCCAuxSiva400MWReactor;"
 			name=				"auxiliary S&#xed;va-400M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, military, reactor, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military, reactor, specialty"
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"8"
@@ -838,7 +838,7 @@
 
 	<ItemType UNID="&itCCAuxSiva800MWReactor;"
 			name=				"auxiliary S&#xed;va-800M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, military, reactor, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military, reactor, specialty"
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"9"
@@ -938,7 +938,7 @@
 
 	<ItemType UNID="&itCCAuxSiva1200MWReactor;"
 			name=				"auxiliary S&#xed;va-1200M reactor"
-			attributes=			"cabbageCorp, cabbageNotStandard, cabbageReactor, majorItem, military, reactor, specialty"
+			attributes=			"cabbageCorp, cabbageNotStandard, majorItem, military, reactor, specialty"
 			inherit=			"&baCCAuxReactorBase;"
 			
 			level=				"10"
