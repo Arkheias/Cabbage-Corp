@@ -24,7 +24,6 @@
 <!-- RESOURCES -->
 
 	<!-- Stations-->
-    <Image UNID="&rsCCStations;"					bitmap="Stations.jpg"						bitmask="StationsMask.jpg"/>
     <Image UNID="&rsCCManufacturingPlant;"			bitmap="StationManufacturingPlant.jpg"		bitmask="StationManufacturingPlantMask.jpg"/>
 
 	<!-- Items -->

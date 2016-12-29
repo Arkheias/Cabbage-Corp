@@ -3,11 +3,10 @@
 <!DOCTYPE TranscendenceExtension
 	[
 	<!ENTITY unidCCCabbageCorpExtension				"0xDA27E000">
-	<!ENTITY unidCCCabbagianExpanseTopology			"0xDA27E001">
-	<!ENTITY scCCLampyridaePlayer					"0xDA27E002">
-	<!ENTITY scCCLorryPlayer						"0xDA27E003">
-	<!ENTITY scCCOborogurumaPlayer					"0xDA27E004">
-	<!ENTITY rsCCCabbageCorpCover					"0xDA27E005">
+	<!ENTITY scCCLampyridaePlayer					"0xDA27E001">
+	<!ENTITY scCCLorryPlayer						"0xDA27E002">
+	<!ENTITY scCCOborogurumaPlayer					"0xDA27E003">
+	<!ENTITY rsCCCabbageCorpCover					"0xDA27E004">
 	
 	<!-- LIBRARIES -->
 	
@@ -37,18 +36,6 @@
 
 	<!-- TOPOLOGY -->
 
-	<SystemMap UNID="&unidCCCabbagianExpanseTopology;"
-			displayOn="&smHumanSpace;"
-			>
-			
-		<Uses unid="&unidPartISystemMap;"/>
-		<Uses unid="&unidCCIdaSegment;"/>
-		
-		<TopologyCreator>
-			<Node ID="cabbageIdaSegment"/>
-		</TopologyCreator>
-		
-		
-	</SystemMap>
+	
 
 </TranscendenceExtension>

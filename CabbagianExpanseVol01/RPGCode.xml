@@ -4,7 +4,153 @@
 
 	<Globals>
 		(block nil
-		(setq rpgCalcToolsetModifyFirmwareAction
+			<!-- ===============================================================
+				--------------------- Praclarush Actions -----------------------
+				============================================================ -->
+			
+			(setq rpgCalcPraclarushNetworkAction
+				(lambda nil
+					(switch
+						(objGetData gSource "networkAvailable")
+							{
+								visible: True
+								enabled: True
+								desc: (scrTranslate gScreen "actionNetwork:login")
+								}
+								
+						{
+							visible: Nil
+							}
+						)
+					)
+				)
+				
+			(setq rpgCalcPraclarushEngineeringAction
+				(lambda nil
+					(switch
+						(objGetData gSource "engineeringAvailable")
+							{
+								visible: True
+								enabled: True
+								desc: Nil
+								}
+								
+						{
+							visible: Nil
+							}
+						)
+					)
+				)
+				
+			(setq rpgCalcPraclarushExploreAction
+				(lambda nil
+					(switch
+						(not (objGetData gSource "networkAvailable"))
+							{
+								visible: True
+								enabled: True
+								desc: Nil
+								}
+								
+						{
+							visible: Nil
+							}
+						)
+					)
+				)
+				
+			(setq rpgCalcPraclarushHydroponicsAction
+				(lambda nil
+					(switch
+						(objGetData gSource "hydroponicsAvailable")
+							{
+								visible: True
+								enabled: True
+								desc: Nil
+								}
+								
+						{
+							visible: Nil
+							}
+						)
+					)
+				)
+				
+			(setq rpgCalcPraclarushInfirmaryAction
+				(lambda nil
+					(switch
+						(objGetData gSource "infirmaryAvailable")
+							{
+								visible: True
+								enabled: True
+								desc: Nil
+								}
+								
+						{
+							visible: Nil
+							}
+						)
+					)
+				)
+				
+			(setq rpgCalcPraclarushMaintenanceAction
+				(lambda nil
+					(switch
+						(objGetData gSource "maintenanceAvailable")
+							{
+								visible: True
+								enabled: True
+								desc: Nil
+								}
+								
+						{
+							visible: Nil
+							}
+						)
+					)
+				)
+				
+			(setq rpgCalcPraclarushOperationsAction
+				(lambda nil
+					(switch
+						(objGetData gSource "operationsAvailable")
+							{
+								visible: True
+								enabled: True
+								desc: Nil
+								}
+								
+						{
+							visible: Nil
+							}
+						)
+					)
+				)
+				
+			(setq rpgCalcPraclarushUndockAction
+				(lambda nil
+					(switch
+						(not (objGetData gSource "networkAvailable"))
+							{
+								visible: True
+								enabled: Nil
+								desc: (scrTranslate gScreen "actionUndock:unavailable")
+								}
+								
+						{
+							visible: True
+							enabled: True
+							desc: Nil
+							}
+						)
+					)
+				)
+				
+			<!-- ===============================================================
+				----------------- Cabbage Corp Toolset Actions -----------------
+				============================================================ -->
+			
+			(setq rpgCalcToolsetModifyFirmwareAction
 				(lambda nil
 					(if (itmIsDamaged gItem)
 						{

@@ -67,12 +67,13 @@
 	
 	<!-- C090-C0AF TOPOLOGY -->
 	
-	<!ENTITY unidCCIdaSegment						"0xDA27C090">
+	<!ENTITY smCCCabbagianExpanse					"0xDA27C090">
 	<!ENTITY ssCCOthala				 				"0xDA27C091">
 	
 	<!-- C0B0-C0BF SYSTEM BACKGROUNDS -->
 	
-	<!ENTITY rsCCCabbagianExpanseSpace 				"0xDA27C0B0">
+	<!ENTITY rsCCCabbagianExpanse	 				"0xDA27C0B0">
+	<!ENTITY rsCCCabbagianExpanseSpace 				"0xDA27C0B1">
 
 <!-- ======================================================== -->
 			<!-- C100-C1FF		ARMOR -->						
@@ -654,7 +655,7 @@
 	<!ENTITY rsCCCrewMembers						"0xDA27CE0A">
 
 		<!-- Station Images -->
-	<!ENTITY rsCCStations							"0xDA27CE10">
+	<!ENTITY rsCCPraclarush							"0xDA27CE10">
 	<!ENTITY rsCCFranchise							"0xDA27CE11">
 	<!ENTITY rsCCDealer								"0xDA27CE12">
 	<!ENTITY rsCCFactory							"0xDA27CE13">
@@ -753,6 +754,7 @@
 	<Module fileName="CabbageCorporation.xml"/>
 	<Module fileName="CabbageCorpStations.xml"/>
 	<Module fileName="CabbageMisc.xml"/>
+	<Module fileName="CabbagianExpanseMap.xml"/>
 	<Module fileName="Code.xml"/>
 	<Module fileName="HUD.xml"/>
 	<Module fileName="License.xml"/>
@@ -777,7 +779,6 @@
 	<Module fileName="StdShields.xml"/>
 	<Module fileName="StdTypes.xml"/>
 	<Module fileName="StdWeapons.xml"/>
-	<Module filename="Topology.xml"/>
 	<Module fileName="UsefulItems.xml"/>
 	<Module fileName="Weapons_Howitzers.xml"/>
 	<Module fileName="Weapons_Lances.xml"/>

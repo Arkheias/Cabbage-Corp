@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+	
+	<SystemMap UNID="&smCCCabbagianExpanse;"
+			name=				"Cabbagian Expanse"
+			backgroundImage=	"&rsCCCabbagianExpanse;"
+			initialScale=		"200"
+			minScale=			"100" 
+			maxScale=			"250" 
+            lightYearsPerPixel= "0.4"
+			
+            stargateLineColor=  "#e9edad"
+			>
+			
+		<RootNode ID="Othala"/>
+		
+		<!-- IDA SEGMENT =================================================== -->
+		
+		<TopologyCreator>
+			<Node ID="IdaSegmentCabbagianExpanse"/>
+		</TopologyCreator>
+		
+		<NodeGroup ID="IdaSegmentCabbagianExpanse">
+			<Stargate from="Othala:Coreward"		to="IS1:Edgeward"/>
+			<Stargate from="IS1:Coreward"			to="IS2:Edgeward"/>
+		</NodeGroup>
+		
+		<!-- Othala -->
+		
+		<Node ID="Othala" x="56" y="-66">
+			<System 
+					name=			"Othala"
+					level=			"21"
+					attributes=		"alienSpace, cabbagianExpanse, idaSegment, noAutoGateCreate"
+					>
+				<System UNID="&ssCCOthala;"/>
+			</System>
+
+			<MapEffect>
+				<Group xOffset="194" yOffset="-97">
+					<Text text=				"Ida Segment" 
+							font=			"Title"
+							primaryColor=	"0xff, 0xff, 0xff"
+							opacity=		"20"
+							/>
+				</Group>
+			</MapEffect>
+		</Node>
+		
+		<!-- MINOR IDA SEGMENT SYSTEMS -->
+		
+		<Node ID="IS1" x="18" y="-139">
+			<System
+					level=			"21"
+					attributes=		"alienSpace, cabbagianExpanse, idaSegment"
+					>
+				<Table>
+					<System chance="30" name="1A"			UNID="&ssEarthSpaceStandard;"/>
+					<System chance="40" name="1B"			UNID="&ssEarthSpaceRedDwarf;"/>
+					<System chance="30" name="1C"			UNID="&ssEarthSpaceAsteroids;"/>
+				</Table>
+			</System>
+			
+		</Node>
+		
+		<Node ID="IS2" x="71" y="-189">
+			<System
+					level=			"22"
+					attributes=		"alienSpace, cabbagianExpanse, idaSegment"
+					>
+				<Table>
+					<System chance="25" name="2A"			UNID="&ssEarthSpaceStandard;"/>
+					<System chance="25" name="2B"			UNID="&ssEarthSpaceRedDwarf;"/>
+					<System chance="25" name="2C"			UNID="&ssEarthSpaceAsteroids;"/>
+					<System chance="25" name="2D" 			UNID="&ssEarthSpaceDesert;"/>
+				</Table>
+			</System>
+		</Node>
+	</SystemMap>
+		
+
+<!-- RESOURCES ============================================================= -->
+
+	<Image UNID="&rsCCCabbagianExpanse;" bitmap="CabbagianExpanse.jpg" loadOnUse="true"/>
+
+</TranscendenceModule>

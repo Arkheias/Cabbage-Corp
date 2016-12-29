@@ -5,7 +5,7 @@
 	<!-- Massive Relay -->
 
 	<StationType UNID="&stCCMassiveRelay;"
-			name=				"(relay)"
+			name=				"Unknown Object"
 			sovereign=			"&svIndependent;"
 			dockScreen=			"Main"
 			dockingPorts=		"2"
@@ -70,7 +70,7 @@
 			>
 			
 		<ImageVariants>
-			<Image imageID="&rsCCStations;" imageX="320" imageY="0" imageWidth="270" imageHeight="270"/>
+			<Image imageID="&rsCCPraclarush;" imageX="0" imageY="0" imageWidth="270" imageHeight="270"/>
 		</ImageVariants>
 	</StationType>
 
@@ -89,7 +89,7 @@
 			
 			<!-- Inner Planet -->
 			
-			<Orbitals distance="4" scale="light-minute" angle="random">
+			<Orbitals distance="6" scale="light-minute" angle="12d21+168">
 				<Group>
 					<Station type="&stCCPraclarush;" 
 							name="Praclarush"
@@ -102,23 +102,9 @@
 				</Group>
 			</Orbitals>
 			
-			<!-- Asteroid Belt -->
+			<!-- Outer Planet -->
 			
-			<Orbitals distance="7" scale="light-minute" angle="random">
-				<Group>
-					<Siblings count="600" distribution="4d40-82">
-						<Station type="&stRockyAsteroidSizeA;"/>
-					</Siblings>
-					
-					<Siblings count="80" distribution="4d20-42">
-						<Station type="&stRockyAsteroidSizeB;"/>
-					</Siblings>
-				</Group>
-			</Orbitals>
-			
-			<!-- Hala -->
-			
-			<Orbitals distance="12" scale="light-minute" angle="random">
+			<Orbitals distance="13" scale="light-minute" angle="2d6+293">
 				<Group>
 					<Primary>
 						<Station type="&stIcePlanet;" name="Hala" showOrbit="true"/>
@@ -135,6 +121,22 @@
 					</Siblings>
 				</Group>
 			</Orbitals>
+			
+			<!-- Asteroid Belt -->
+			
+			<Orbitals distance="21" scale="light-minute" angle="random">
+				<Group>
+					<Siblings count="600" distribution="4d40-82">
+						<Station type="&stRockyAsteroidSizeA;"/>
+					</Siblings>
+					
+					<Siblings count="80" distribution="4d20-42">
+						<Station type="&stRockyAsteroidSizeB;"/>
+					</Siblings>
+				</Group>
+			</Orbitals>
+			
+			<!-- Hala -->
 		</SystemGroup>
 	</SystemType>
 
@@ -143,26 +145,24 @@
 	<!-- Praclarush Station-->
 
 	<StationType UNID="&stCCPraclarushStation;"
-			name=				"Praclarush Station"
+			name=				"Ancient Station"
 			sovereign=			"&svIndependent;"
+			
 			dockScreen=			"Main"
             defaultBackgroundID="&rsCCPraclarushHangar;"
 			dockingPorts=		"1"
-			
-			cargoSpace=			"5000"
-			maxCargoSpace=		"5000"
 			
 			multiHull=			"true"
 			immutable=			"true"
 			attributes=			"cabbageCorp"
 			
-			unique=				"inSystem"
+			unique=				"inGame"
 			
 			definiteArticle=	"true"
 			>
 			
 		<ImageVariants>
-			<Image imageID="&rsCCStations;" imageX="320" imageY="0" imageWidth="4" imageHeight="4"/>
+			<Image imageID="&rsCCPraclarush;" imageX="0" imageY="0" imageWidth="4" imageHeight="4"/>
 		</ImageVariants>
 		
 		<DockScreens>
@@ -170,148 +170,271 @@
 				<Panes>
 					<Default>
 						<OnPaneInit>
-							(block (desc)
+							(block (actionStatus desc)
 								(switch
-									(not (objGetData gSource "foundHangarControls"))
-										(scrSetDesc gScreen 
-											(cat 
-												"As your ship lands in the docking bay of the ancient outpost the outer doors suddenly activate and shut, sealing you and your ship inside while the air processors activate and start removing the ash from the air."
-												"\n\n"
-												"It is too dangerous to open the doors manually due to the hostile environment outside.  You need to find a way to control the doors remotely."
-												)
-											)
-									(scrSetDesc gScreen "As your ship lands in the docking bay of the ancient station the outer doors suddenly activate and shut, sealing you and your ship inside.")
+									(not (objGetData gSource "networkAvailable"))
+										(scrSetDescTranslate gScreen 'descHangarSealedInside)
+										
+									(scrSetDescTranslate gScreen 'descHangarDefault)
 									)
-								(if (eq (objGetData gSource 'foundWarehouse) True)
-									(scrAddAction
-										gScreen
-										'Warehouse
-										1
-										"Warehouse"
-										"W"
-										Nil
-										(scrShowPane gScreen "Storage")
-										)
-									)
-								(if (eq (objGetData gSource 'foundControlRoom) True)
-									(scrAddAction
-										gScreen
-										'ControlRoom
-										1
-										"Control Room"
-										"C"
-										Nil
-										(scrShowPane gScreen "Hub")
-										)
-									)
-								(if (not (objGetData gSource 'foundHangarControls))
-									(scrAddAction
-										gScreen
-										'Idiot
-										1
-										"Stand around like an idiot"
-										"S"
-										'cancel
-										(scrShowPane gScreen "Default")
-										)
-									)
-								(if (eq (objGetData gSource 'foundHangarControls) True)
-									(scrAddAction
-										gScreen
-										'Undock
-										-1
-										"Undock"
-										"U"
-										'cancel
-										(scrExitScreen gScreen 'forceUndock)
-										)
-									)
+									
+								;	Access Station Network Action
+								
+								(setq actionStatus (rpgCalcPraclarushNetworkAction))
+								(scrShowAction gScreen 'actionNetwork (@ actionStatus 'visible))
+								(scrEnableAction gScreen 'actionNetwork (@ actionStatus 'enabled))
+								(scrSetActionDesc gScreen 'actionNetwork (@ actionStatus 'desc))
+								
+								;	Engineering Deck Action
+								
+								(setq actionStatus (rpgCalcPraclarushEngineeringAction))
+								(scrShowAction gScreen 'actionEngineering (@ actionStatus 'visible))
+								(scrEnableAction gScreen 'actionEngineering (@ actionStatus 'enabled))
+								(scrSetActionDesc gScreen 'actionEngineering (@ actionStatus 'desc))
+								
+								;	Explore Hangar Action
+								
+								(setq actionStatus (rpgCalcPraclarushExploreAction))
+								(scrShowAction gScreen 'actionExplore (@ actionStatus 'visible))
+								(scrEnableAction gScreen 'actionExplore (@ actionStatus 'enabled))
+								(scrSetActionDesc gScreen 'actionExplore (@ actionStatus 'desc))
+								
+								;	Hydroponics Deck Action
+								
+								(setq actionStatus (rpgCalcPraclarushHydroponicsAction))
+								(scrShowAction gScreen 'actionHydroponics (@ actionStatus 'visible))
+								(scrEnableAction gScreen 'actionHydroponics (@ actionStatus 'enabled))
+								(scrSetActionDesc gScreen 'actionHydroponics (@ actionStatus 'desc))
+								
+								;	Infirmary Deck Action
+								
+								(setq actionStatus (rpgCalcPraclarushInfirmaryAction))
+								(scrShowAction gScreen 'actionInfirmary (@ actionStatus 'visible))
+								(scrEnableAction gScreen 'actionInfirmary (@ actionStatus 'enabled))
+								(scrSetActionDesc gScreen 'actionInfirmary (@ actionStatus 'desc))
+								
+								;	Maintenance Deck Action
+								
+								(setq actionStatus (rpgCalcPraclarushMaintenanceAction))
+								(scrShowAction gScreen 'actionMaintenance (@ actionStatus 'visible))
+								(scrEnableAction gScreen 'actionMaintenance (@ actionStatus 'enabled))
+								(scrSetActionDesc gScreen 'actionMaintenance (@ actionStatus 'desc))
+								
+								;	Operations Deck Action
+								
+								(setq actionStatus (rpgCalcPraclarushOperationsAction))
+								(scrShowAction gScreen 'actionOperations (@ actionStatus 'visible))
+								(scrEnableAction gScreen 'actionOperations (@ actionStatus 'enabled))
+								(scrSetActionDesc gScreen 'actionOperations (@ actionStatus 'desc))
+								
+								;	Undock Action
+								
+								(setq actionStatus (rpgCalcPraclarushUndockAction))
+								(scrShowAction gScreen 'actionUndock True)
+								(scrEnableAction gScreen 'actionUndock True)
+								(scrSetActionDesc gScreen 'actionUndock (@ actionStatus 'desc))
 								)
 						</OnPaneInit>
 						
 						<Actions>
-							<Action name="Explore the station" default="1" key="E">
+							<Action id="actionExplore" default="1">
 								<ShowPane pane="Explore"/>
+							</Action>
+							
+							<Action id="actionNetwork" default="1">
+								<ShowPane pane="Network"/>
+							</Action>
+							
+							<Action id="actionEngineering">
+								<ShowPane pane="Engineering"/>
+							</Action>
+							
+							<Action id="actionHydroponics">
+								<ShowPane pane="Hydroponics"/>
+							</Action>
+							
+							<Action id="actionInfirmary">
+								<ShowPane pane="Infirmary"/>
+							</Action>
+							
+							<Action id="actionMaintenance">
+								<ShowPane pane="Maintenance"/>
+							</Action>
+							
+							<Action id="actionOperations">
+								<ShowPane pane="Operations"/>
+							</Action>
+							
+							<Action id="actionUndock" cancel="1">
+								(if (@ (rpgCalcPraclarushUndockAction) 'enabled)
+									(block Nil
+										(sysStartTime)
+										(scrExitScreen gScreen 'forceUndock)
+										)
+									(scrShowPane gScreen "Default")
+									)
 							</Action>
 						</Actions>
 					</Default>
 					
+					<Engineering>
+					</Engineering>
+					
 					<Explore>
 						<OnPaneInit>
 							(block Nil
-								(switch
-									(eq (objGetData gSource 'successfullyExploredStation) 1)
-										(block Nil
-											(scrSetDesc gScreen 
-												(cat 
-													"After further exploration of the hangar, you find a working console that gives you complete control of the hangar, including doors, device installation and refuelling operations."
-													"\n\n"
-													"You promptly reroute these controls to your ship so you do not have to cross the hangar while the doors are open to the hostile environment whenever you want to leave the station."
-													)
-												)
-											(objSetData gSource "successfullyExploredStation" 2)
-											(objSetData gSource "foundHangarControls" True)
-											)
-										
-									(not (objGetData gSource 'successfullyExploredStation))
-										(block Nil
-											(scrSetDesc gScreen "After checking out the hanger, you find out that the huge inner doors head to a warehouse with all of the equipment necessary to quickly transfer cargo to and from your ship.")
-											(objSetData gSource "successfullyExploredStation" 1)
-											(objSetData gSource "foundWarehouse" True)
-											)
-										
-									(scrSetDesc gScreen "You did not manage to find anything new.")
-									)
+								(scrSetDescTranslate gScreen 'descExploreDefault)
+								(objSetData gSource "networkAvailable" True)
 								)
 						</OnPaneInit>
 						
 						<Actions>
-							<Action name="Done" cancel="1" key="D">
+							<Action id="actionDone" default="1" cancel="1">
 								<ShowPane pane="Default"/>
 							</Action>
 						</Actions>
 					</Explore>
 					
-					<Storage>
+					<Hydroponics>
+					</Hydroponics>
+					
+					<Infirmary>
+					</Infirmary>
+					
+					<Maintenance>
 						<OnPaneInit>
-							(scrSetDesc gScreen
-								(cat "You are in a warehouse adjacent to the docking bay.  The station's loading equipment appears to still be functional and could be used to move cargo to and from your ship."
-									"\n\n"
-									"The warehouse currently has "
-									(objGetCargoSpaceLeft gSource)
-									" tons of cargo space available."
-									"\n"
-									"(Apparently you can not define cargo limits for a station.)"
-									)
-								)
+							(scrSetDescTranslate gScreen 'descMaintenanceDefault)
 						</OnPaneInit>
 						
 						<Actions>
-							<Action name="Store items" key="S" default="1" >
+							<Action id="actionStore" default="1">
 								(scrShowScreen gScreen &dsRPGJettison;)
 							</Action>
-						
-							<Action name="Retrieve items" key="R">
+							
+							<Action id="actionRetrieve">
 								(scrShowScreen gScreen &dsRPGLoot;)
 							</Action>
-
-							<Action name="Back" cancel="1" key="B">
+							
+							<Action id="actionLeave" cancel="1">
 								<ShowPane pane="Default"/>
 							</Action>
 						</Actions>
-					</Storage>
+					</Maintenance>
 					
-					<ControlRoom>
-					</ControlRoom>
+					<Network>
+						<OnPaneInit>
+							(block (actionStatus)
+								(scrSetDescTranslate gScreen 'descNetworkDefault)
+								
+								;	Maintenance Deck Action
+								
+								(setq actionStatus
+									(if (objGetData gSource "maintenanceAvailable")
+										{visible:Nil}
+										{visible:True enabled:True desc:Nil}
+										)
+									)
+								
+								(scrShowAction gScreen 'actionNetworkEnableMaintenance (@ actionStatus 'visible))
+								(scrEnableAction gScreen 'actionNetworkEnableMaintenance (@ actionStatus 'enabled))
+								(scrSetActionDesc gScreen 'actionNetworkEnableMaintenance (@ actionStatus 'desc))
+							)
+						</OnPaneInit>
+						
+						<Actions>
+							<Action id="actionNetworkEnableMaintenance">
+								(block Nil
+									(objSetData gSource "maintenanceAvailable" True)
+									(scrShowPane gScreen "Network")
+									(scrSetDesc gSCreen (cat
+										"Status: CCNet&trade; Online                   CCOS&trade; v1.0.0\n"
+										"  User:  root\n"
+										"\n"
+										"***WARNING***\n"
+										"Terminal insecure, please log out of root soonish.\n"
+										"---------------------------------------------------------------------------\n"
+										"Maintenance bay power has been restored.\n"
+										))
+									)
+							</Action>
+							
+							<Action id="actionDone" cancel="1">
+								<ShowPane pane="Default"/>
+							</Action>
+						</Actions>
+					</Network>
+					
+					<Operations>
+					</Operations>
 				</Panes>
 			</Main>
 		</DockScreens>
+		
+		<Language>
+			<Text id="actionNetwork">"[A]ccess the station network"</Text>
+			<Text id="actionNetwork:unauthorized">"You are not authorized to access this command."</Text>
+			<Text id="actionNetworkEnableMaintenance">"Restore power to [M]aintenance"</Text>
+			<Text id="descNetworkDefault">
+				(cat 
+					"Status: CCNet&trade; Online                   CCOS&trade; v1.0.0\n"
+					"  User:  root\n"
+					"\n"
+					"***WARNING***\n"
+					"Terminal insecure, please log out of root soonish.\n"
+					"---------------------------------------------------------------------------\n"
+					"Please choose an option:"
+					)
+			</Text>
+			
+			<Text id="actionEngineering">"[E]ngineering Deck"</Text>
+			
+			<Text id="actionExplore">"[E]xplore the hangar"</Text>
+			<Text id="descExploreDefault">
+				(cat
+					"After exploring the hangar, you manage to find a working console that gives you control of the hangar containment field, along with limited access to the station's network."
+					)
+			</Text>
+			
+			<Text id="descHangarDefault">
+				(cat
+					"You are currently docked in the hangar of an ancient station.\n\n"
+					"The containment field is active and you can hear the thrum of the air purifiers running."
+					)
+			</Text>
+			<Text id="descHangarSealedInside">
+				(cat
+					"As your ship lands in the hangar of the ancient station, an energy shield activates over the entrance, sealing your ship inside.\n\n"
+					"Suddenly you hear the distant sound of air purifiers activating, removing the ash from the inside air."
+					)
+			</Text>
+			
+			<Text id="actionHydroponics">"[H]ydroponics Deck"</Text>
+			
+			<Text id="actionInfirmary">"[I]nfirmary"</Text>
+			
+			<Text id="actionMaintenance">"[M]aintenance Deck"</Text>
+			<Text id="actionMaintenance:available">"Manage cargo and devices."</Text>
+			<Text id="actionStore">"[S]tore cargo"</Text>
+			<Text id="actionRetrieve">"[R]etrieve cargo"</Text>
+			<Text id="descMaintenanceDefault">
+				(cat
+					"You are in a maintenance bay adjacent to the hangar. The station's loading equipment appears to still be functional and could be used to move cargo to and from your ship.\n\n"
+					"It is unlikely that you would ever run out of space here."
+					)
+			</Text>
+			
+			<Text id="actionDone">"[D]one"</Text>
+			<Text id="actionLeave">"[L]eave"</Text>
+			<Text id="actionUndock">"[U]ndock"</Text>
+			<Text id="actionUndock:unavailable">"You do not have control of the hangar forcefield."</Text>
+		</Language>
 	</StationType>
 
 <!-- RESOURCES -->
 
-	<Image UNID="&rsCCCabbagianExpanseSpace;"		bitmap="CabbagianExpanseSpace.jpg"	loadOnUse="true"/>
-	<Image UNID="&rsCCPraclarushHangar;"			bitmap="PraclarushHangar.jpg"		loadOnUse="true" />
-	<Image UNID="&rsCCMassiveRelay;"				bitmap="MassiveRelay.jpg"			bitmask="MassiveRelayMask.jpg"/>
+	<Image UNID="&rsCCCabbagianExpanseSpace;"	bitmap="CabbagianExpanseSpace.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCPraclarushHangar;"		bitmap="PraclarushHangar.jpg"		loadOnUse="true" />
+    <Image UNID="&rsCCPraclarush;"				bitmap="Praclarush.jpg"				bitmask="PraclarushMask.jpg"/>
+	<Image UNID="&rsCCMassiveRelay;"			bitmap="MassiveRelay.jpg"			bitmask="MassiveRelayMask.jpg"/>
 
 </TranscendenceModule>
