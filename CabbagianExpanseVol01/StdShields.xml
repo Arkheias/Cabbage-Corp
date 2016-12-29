@@ -42,6 +42,12 @@
 				powerBonusPerCharge="5"
 				/>
 				
+		<Components>
+			<Item count="2"		item="&itTitaniumOre;"/>
+			<Item count="1"		item="&itPalladiumOre;"/>
+			<Item count="2"		item="&itNeodymiumMagnet;"/>
+		</Components>
+		
 		<StaticData>
 			<CCItemSwap>&itCCRadNapaS1Deflector;</CCItemSwap>
 			
@@ -59,7 +65,7 @@
 			level=				"1"
 			frequency=			"veryrare"
 			
-			value=				"1000"
+			value=				"750"
 			mass=				"2000"
 			
 			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
@@ -124,6 +130,12 @@
 				powerBonusPerCharge="10"
 				/>
 				
+		<Components>
+			<Item count="2"		item="&itPlasteelOre;"/>
+			<Item count="2"		item="&itPalladiumOre;"/>
+			<Item count="2"		item="&itNeodymiumMagnet;"/>
+		</Components>
+		
 		<StaticData>
 			<CCItemSwap>&itCCRadNapaS2Deflector;</CCItemSwap>
 			
@@ -141,7 +153,7 @@
 			level=				"2"
 			frequency=			"veryrare"
 			
-			value=				"1250"
+			value=				"1000"
 			mass=				"2500"
 			
 			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
@@ -223,7 +235,7 @@
 			level=				"3"
 			frequency=			"veryrare"
 			
-			value=				"2500"
+			value=				"2000"
 			mass=				"2500"
 			
 			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
@@ -305,7 +317,7 @@
 			level=				"4"
 			frequency=			"veryrare"
 			
-			value=				"5000"
+			value=				"4000"
 			mass=				"4000"
 			
 			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
@@ -387,7 +399,7 @@
 			level=				"5"
 			frequency=			"veryrare"
 			
-			value=				"10000"
+			value=				"8000"
 			mass=				"4000"
 			
 			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
@@ -469,7 +481,7 @@
 			level=				"6"
 			frequency=			"veryrare"
 			
-			value=				"20000"
+			value=				"16000"
 			mass=				"6000"
 			
 			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
@@ -551,7 +563,7 @@
 			level=				"7"
 			frequency=			"veryrare"
 			
-			value=				"40000"
+			value=				"32000"
 			mass=				"6000"
 			
 			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
@@ -633,7 +645,7 @@
 			level=				"8"
 			frequency=			"veryrare"
 			
-			value=				"81000"
+			value=				"65000"
 			mass=				"7000"
 			
 			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
@@ -715,7 +727,7 @@
 			level=				"9"
 			frequency=			"veryrare"
 			
-			value=				"150000"
+			value=				"120000"
 			mass=				"8000"
 			
 			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
@@ -797,7 +809,7 @@
 			level=				"10"
 			frequency=			"veryrare"
 			
-			value=				"310000"
+			value=				"250000"
 			mass=				"9000"
 			
 			description=		"The Napa series of deflectors are optimized for fast regeneration though they disable all other ship systems when they collapse. They can be adjusted using the included Cabbage Corp Toolset to increase its strength by up to 200%."
