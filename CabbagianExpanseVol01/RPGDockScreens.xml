@@ -492,7 +492,7 @@
 						)
 					</Action>
 
-					<Action name="Buy Cabbage Corp Diplomatic ID" key="D">
+					<Action name="Buy Cabbage Corp Diplomatic ID" key="B">
 						(block Nil
 							(setq gItem (itmCreate &itCCDiplomaticID; 1))
 							(setq gCheckMilitaryID (not (objGetData gPlayerShip "CCPremiumIDImplant")))
@@ -516,8 +516,8 @@
 						)
 					</Action>
 					
-					<Action name="Done" cancel="1" key="N">
-						(scrExitScreen gSource)
+					<Action name="Done" cancel="1" key="D">
+						(scrExitScreen gScreen)
 					</Action>
 				</Actions>
 			</Default>
@@ -605,7 +605,7 @@
 						)
 					</Action>
 
-					<Action name="Custom Devices" key="D">
+					<Action name="Custom Equipment" key="E">
 						(block Nil
 							(setq gSovereign &svCCCabbageCorp;)
 							(setq gRecipes 'Recipes)
@@ -629,8 +629,8 @@
 						)
 					</Action>
 					
-					<Action name="Done" cancel="1" key="N">
-						(scrExitScreen gSource)
+					<Action name="Done" cancel="1" key="D">
+						(scrExitScreen gScreen)
 					</Action>
 				</Actions>
 			</Default>
