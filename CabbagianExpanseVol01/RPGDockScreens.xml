@@ -488,7 +488,7 @@
 							
 							(setq gCost (add (itmGetPrice gItem) (divide (itmGetInstallCost gItem) 2)))
 							(setq gCheckMilitaryID (not (objGetData gPlayerShip "CCPremiumIDImplant")))
-							(scrShowScreen gScreen "&dsInstallSpecificDevice;")
+							(scrShowPane gScreen "PurchaseSpecificItem")
 						)
 					</Action>
 
@@ -500,7 +500,7 @@
 						)
 					</Action>
 
-					<Action name="Buy Cabbage Corp Premium Membership ID" key="P">
+					<Action name="Buy Premium Membership ID" key="P">
 						(block Nil
 							(setq gItem (itmCreate &itCCPremiumID; 1))
 							(setq gCheckMilitaryID (not (objGetData gPlayerShip "CCPremiumIDImplant")))
@@ -508,7 +508,7 @@
 						)
 					</Action>
 
-					<Action name="Buy Cabbage Corp System Map Access ROM" key="S">
+					<Action name="Buy System Map Access ROM" key="S">
 						(block Nil
 							(setq gItem (itmCreate &itCCSystemMapROM; 1))
 							(setq gCheckMilitaryID (not (objGetData gPlayerShip "CCPremiumIDImplant")))
