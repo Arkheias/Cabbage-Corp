@@ -19,7 +19,7 @@
 			value=				"5000"
 			mass=				"600"
 			 
-			description=		"This shameful civilian crew member crawls inside the ship's hull and repairs armor of up to technology level I."
+			description=		"This shameful civilian crew member can crawl inside a ship's hull to repair armor of up to technology level I."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -48,7 +48,7 @@
 			value=				"7200"
 			mass=				"600"
 			 
-			description=		"This tolerable civilian crew member crawls inside the ship's hull and repairs armor of up to technology level II."
+			description=		"This tolerable civilian crew member can crawl inside a ship's hull to repair armor of up to technology level II."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -77,7 +77,7 @@
 			value=				"10000"
 			mass=				"600"
 			 
-			description=		"This decent civilian crew member crawls inside the ship's hull and repairs armor of up to technology level III."
+			description=		"This decent civilian crew member can crawl inside a ship's hull to repair armor of up to technology level III."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -106,7 +106,7 @@
 			value=				"14000"
 			mass=				"600"
 			 
-			description=		"This skilled civilian crew member crawls inside the ship's hull and repairs armor of up to technology level IV."
+			description=		"This skilled civilian crew member can crawl inside a ship's hull to repair armor of up to technology level IV."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -135,7 +135,7 @@
 			value=				"20000"
 			mass=				"600"
 			 
-			description=		"This exceptional civilian crew member crawls inside the ship's hull and repairs armor of up to technology level V."
+			description=		"This exceptional civilian crew member can crawl inside a ship's hull to repair armor of up to technology level V."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -164,7 +164,7 @@
 			value=				"28000"
 			mass=				"600"
 			 
-			description=		"This shameful military crew member crawls inside the ship's hull and repairs armor of up to technology level VI."
+			description=		"This shameful ex-military crew member can crawl inside a ship's hull to repair armor of up to technology level VI."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -193,7 +193,7 @@
 			value=				"40000"
 			mass=				"600"
 			 
-			description=		"This tolerable military crew member crawls inside the ship's hull and repairs armor of up to technology level VII."
+			description=		"This tolerable military crew member can crawl inside a ship's hull to repair armor of up to technology level VII."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -222,7 +222,7 @@
 			value=				"56000"
 			mass=				"600"
 			 
-			description=		"This decent military crew member crawls inside the ship's hull and repairs armor of up to technology level VIII."
+			description=		"This decent military crew member can crawl inside a ship's hull to repair armor of up to technology level VIII."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -251,7 +251,7 @@
 			value=				"80000"
 			mass=				"600"
 			 
-			description=		"This skilled military crew member crawls inside the ship's hull and repairs armor of up to technology level IX."
+			description=		"This skilled military crew member can crawl inside a ship's hull to repair armor of up to technology level IX."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -280,7 +280,7 @@
 			value=				"110000"
 			mass=				"600"
 			 
-			description=		"This exceptional military crew member crawls inside the ship's hull and repairs armor of up to technology level X."
+			description=		"This exceptional military crew member can crawl inside a ship's hull to repair armor of up to technology level X."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -309,7 +309,7 @@
 			value=				"160000"
 			mass=				"600"
 			 
-			description=		"This shameful alien crew member crawls inside the ship's hull and repairs armor of up to technology level XI."
+			description=		"This shameful alien crew member can crawl inside a ship's hull to repair armor of up to technology level XI."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -338,7 +338,7 @@
 			value=				"220000"
 			mass=				"600"
 			 
-			description=		"This tolerable alien crew member crawls inside the ship's hull and repairs armor of up to technology level XII."
+			description=		"This tolerable alien crew member can crawl inside a ship's hull to repair armor of up to technology level XII."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -367,7 +367,7 @@
 			value=				"320000"
 			mass=				"600"
 			 
-			description=		"This decent alien crew member crawls inside the ship's hull and repairs armor of up to technology level XIII."
+			description=		"This decent alien crew member can crawl inside a ship's hull to repair armor of up to technology level XIII."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -396,7 +396,7 @@
 			value=				"440000"
 			mass=				"600"
 			 
-			description=		"This skilled alien crew member crawls inside the ship's hull and repairs armor of up to technology level XIV."
+			description=		"This skilled alien crew member can crawl inside a ship's hull to repair armor of up to technology level XIV."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
@@ -425,7 +425,7 @@
 			value=				"640000"
 			mass=				"600"
 			 
-			description=		"This exceptional alien crew member crawls inside the ship's hull and repairs armor of up to technology level XV."
+			description=		"This exceptional alien crew member can crawl inside a ship's hull to repair armor of up to technology level XV."
 	>
 	
 		<Image imageID="&rsCCCrewMembers;" imageX="384" imageY="0" imageWidth="96" imageHeight="96"/>
