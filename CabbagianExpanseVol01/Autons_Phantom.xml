@@ -13,49 +13,49 @@ LaserCannon			1		250		1000	common
 MIPhantomAuton		2		240		1000	uncommon
 LightStealthPlating	2		130		2500	rare
 -->
-	
+
 	<!-- Auton, Mark I Phantom -->
 
 	<ShipClass UNID="&scCCMarkIPhantomAuton;"
 			manufacturer=		"CabbageCorp"
 			class=				"mark I Phantom"
 			type=				"auton"
-
+			
 			attributes=			"auton, cabbageCorp, genericClass"
-			inherit=			"&baStdAutonBase;"
-			   
+			inherit=			"&baCCPhantomAutonBase;"
+			
 			mass=				"1"
 			thrustRatio=		"6"
 			maxSpeed=			"25"
 			cargoSpace=			"0"
-
+			
 			reactorPower=		"50"
 			maxArmor=			"2500"
 			maxDevices=			"2"
 			maxWeapons=			"1"
-			   
+			
 			leavesWreck=		"0"
-	>
-
+			>
+			
 		<!-- Configuration -->
 		
 		<Armor
 			armorID=			"&itCCLightStealthPlating;"
 			count=				"1"
 			enhancement=		"0x0B00"
-		/>	;the enhancement is radiation immunity
-
+			/>	;the enhancement is radiation immunity
+			
 		<Maneuver
 			maxRotationRate=	"18.0"
 			rotationAccel=		"6.0"
-		/>
-		
+			/>
+			
 		<!-- Image and Effects -->
-
+		
 		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
-
+		
 		<!-- AI and Behavior -->
-
+		
 		<AISettings
 			fireRateAdj=		"20"
 			fireAccuracy=		"90"
@@ -65,161 +65,6 @@ LightStealthPlating	2		130		2500	rare
 			noNavPaths=			"true"
 			ignoreShieldsDown=	"true"
 		/>
-		
-		<Communications>
-			<Message name="Explore" key="E">
-				<OnShow>
-					(and (eq (objGetData gSource "behavior") 'escorting)
-						(objGetProperty gSource 'playerWingman)
-					)
-				</OnShow>
-				
-				<Invoke>
-					(block 
-						(
-							;	Look for the nearest unknown object
-							
-							(targetObj 
-								(@
-									(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
-										(and 
-											(not (objIsKnown theObj))
-											(objGetProperty theObj 'hasDockingPorts)
-											(objCanAttack theObj)
-										)
-									)
-									0
-								)
-							)
-						)
-						
-						(switch
-							;	If no unknown objects, then say so
-
-							(not targetObj)
-								(objSendMessage gSender gSource (objTranslate gSource 'NoExploreTarget))
-							
-							;	Otherwise, send the auton to the nearest object
-							
-							(block Nil
-								(shpCancelOrders gSource)
-								(shpOrder gSource 'approach targetObj 75)
-								(objSetShowAsDestination gSource)
-								
-								(objSetData gSource 'behavior 'custom)
-								(objSetData gSource 'targetID (objGetID targetObj))
-								(objSendMessage gSender gSource (objTranslate gSource 'ExploreAck))
-							)
-						)
-					)
-				</Invoke>
-			</Message>
-			
-			<Message name="Form up" key="F">
-				<OnShow>
-					(and
-						(objGetProperty gSource 'playerWingman)
-						(or (eq (objGetData gSource 'behavior) 'waiting)
-							(eq (objGetData gSource 'behavior) 'custom)
-							(objCommunicate gSource gSender 'QueryAttackStatus)
-						)
-					)
-				</OnShow>
-
-				<Invoke>
-					(block (behavior)
-						(setq behavior (objGetData gSource 'behavior))
-						(switch
-							(or (not behavior) (eq behavior 'escorting))
-								(block Nil
-									(objCommunicate gSource gSender 'FormUp)
-									(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
-								)
-
-							(block Nil
-								(objClearShowAsDestination gSource)
-								
-								(shpCancelOrders gSource)
-								(shpOrder gSource 'escort gPlayerShip)
-								
-								(objSetData gSource 'behavior 'escorting)
-								(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
-							)
-						)
-					)
-				</Invoke>
-			</Message>
-		</Communications>
-
-		<Events>
-			<OnOrdersCompleted>
-				(block (behavior theTarget)
-					(setq behavior (objGetData gSource 'behavior))
-					
-					(switch
-						;	If we're exploring, then pick a new target
-						
-						(eq behavior 'custom)
-							(block 
-								(
-									(exploredObj (objGetObjByID (objGetData gSource 'targetID)))
-									
-									;	Look for the nearest unknown object
-							
-									(targetObj 
-										(@
-											(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
-												(and (not (objIsKnown theObj))
-														(objGetProperty theObj 'hasDockingPorts)
-														(objCanAttack theObj)
-												)
-											)
-											0
-										)
-									)
-								)
-								
-								;	Explore object
-								
-								(if exploredObj
-									(block Nil
-										(objSetKnown exploredObj)
-										(objSendMessage gSender gSource (objTranslate gSource 'ObjectExplored))
-										
-										(objClearShowAsDestination exploredObj)
-									)
-								)
-								
-								;	Pick a new target
-								
-								(switch
-									;	If no unknown objects, then reconnaissance is done
-									
-									(not targetObj)
-										(block Nil
-											(shpOrder gSource 'escort gPlayerShip)
-											(objClearShowAsDestination gSource)
-								
-											(objSetData gSource 'behavior 'escorting)
-											(objSendMessage gSender gSource (objTranslate gSource 'ExplorationDone))
-										)
-											
-									;	Otherwise, go to new object
-									
-									(block Nil
-										(shpOrder gSource 'approach targetObj 75)
-										(objSetData gSource 'targetID (objGetID targetObj))
-									)
-								)
-							)
-
-						;	Otherwise, let our base class handle it.
-						
-						(typFireEvent &baStdAutonBase; 'OnOrdersCompleted)
-					)
-				)
-			</OnOrdersCompleted>
-		</Events>
 		
 		<Language>
 			<Text id="DeployAck">"\"mark I Phantom-class reconnaissance auton online\""</Text>
@@ -231,10 +76,16 @@ LightStealthPlating	2		130		2500	rare
 					
 					(cat
 						"\"" (objGetName exploredObj 0x01) " found\""
+						)
 					)
-				)
 			</Text>
 		</Language>
+		
+		<!-- Static Data -->
+		
+		<StaticData>
+			<explorerData>{range:75}</explorerData>
+		</StaticData>
 	</ShipClass>
 
 <!--
@@ -248,49 +99,49 @@ MissileDefense		4		5000	1000	uncommon
 MIIPhantomAuton		4		1500	4000	uncommon
 1xStealthArmor		4		1000	5000	uncommon
 -->
-	
+
 	<!-- Auton, Mark II Phantom -->
 
 	<ShipClass UNID="&scCCMarkIIPhantomAuton;"
 			manufacturer=		"CabbageCorp"
 			class=				"mark II Phantom"
 			type=				"auton"
-
+			
 			attributes=			"auton, cabbageCorp, genericClass"
-			inherit=			"&baStdAutonBase;"
-			   
+			inherit=			"&baCCPhantomAutonBase;"
+			
 			mass=				"2"
 			thrustRatio=		"7"
 			maxSpeed=			"26"
 			cargoSpace=			"0"
-
+			
 			reactorPower=		"200"
 			maxArmor=			"5000"
 			maxDevices=			"2"
 			maxWeapons=			"1"
-			   
+			
 			leavesWreck=		"0"
-	>
-
+			>
+			
 		<!-- Configuration -->
 		
 		<Armor
 			armorID=			"&itCC1xStealthArmor;"
 			count=				"1"
 			enhancement=		"0x0B00"
-		/>	;the enhancement is radiation immunity
-
+			/>	;the enhancement is radiation immunity
+			
 		<Maneuver
 			maxRotationRate=	"12.0"
 			rotationAccel=		"4.0"
-		/>
+			/>
 		
 		<!-- Image and Effects -->
-
+		
 		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
-
+		
 		<!-- AI and Behavior -->
-
+		
 		<AISettings
 			fireRateAdj=		"20"
 			fireAccuracy=		"90"
@@ -299,163 +150,8 @@ MIIPhantomAuton		4		1500	4000	uncommon
 			noAttackOnThreat=	"true"
 			noNavPaths=			"true"
 			ignoreShieldsDown=	"true"
-		/>
-		
-		<Communications>
-			<Message name="Explore" key="E">
-				<OnShow>
-					(and (eq (objGetData gSource "behavior") 'escorting)
-						(objGetProperty gSource 'playerWingman)
-					)
-				</OnShow>
-				
-				<Invoke>
-					(block 
-						(
-							;	Look for the nearest unknown object
-							
-							(targetObj 
-								(@
-									(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
-										(and 
-											(not (objIsKnown theObj))
-											(objGetProperty theObj 'hasDockingPorts)
-											(objCanAttack theObj)
-										)
-									)
-									0
-								)
-							)
-						)
-						
-						(switch
-							;	If no unknown objects, then say so
-
-							(not targetObj)
-								(objSendMessage gSender gSource (objTranslate gSource 'NoExploreTarget))
-							
-							;	Otherwise, send the auton to the nearest object
-							
-							(block Nil
-								(shpCancelOrders gSource)
-								(shpOrder gSource 'approach targetObj 75)
-								(objSetShowAsDestination gSource)
-								
-								(objSetData gSource 'behavior 'custom)
-								(objSetData gSource 'targetID (objGetID targetObj))
-								(objSendMessage gSender gSource (objTranslate gSource 'ExploreAck))
-							)
-						)
-					)
-				</Invoke>
-			</Message>
+			/>
 			
-			<Message name="Form up" key="F">
-				<OnShow>
-					(and
-						(objGetProperty gSource 'playerWingman)
-						(or (eq (objGetData gSource 'behavior) 'waiting)
-							(eq (objGetData gSource 'behavior) 'custom)
-							(objCommunicate gSource gSender 'QueryAttackStatus)
-						)
-					)
-				</OnShow>
-
-				<Invoke>
-					(block (behavior)
-						(setq behavior (objGetData gSource 'behavior))
-						(switch
-							(or (not behavior) (eq behavior 'escorting))
-								(block Nil
-									(objCommunicate gSource gSender 'FormUp)
-									(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
-								)
-
-							(block Nil
-								(objClearShowAsDestination gSource)
-								
-								(shpCancelOrders gSource)
-								(shpOrder gSource 'escort gPlayerShip)
-								
-								(objSetData gSource 'behavior 'escorting)
-								(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
-							)
-						)
-					)
-				</Invoke>
-			</Message>
-		</Communications>
-
-		<Events>
-			<OnOrdersCompleted>
-				(block (behavior theTarget)
-					(setq behavior (objGetData gSource 'behavior))
-					
-					(switch
-						;	If we're exploring, then pick a new target
-						
-						(eq behavior 'custom)
-							(block 
-								(
-									(exploredObj (objGetObjByID (objGetData gSource 'targetID)))
-									
-									;	Look for the nearest unknown object
-							
-									(targetObj 
-										(@
-											(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
-												(and (not (objIsKnown theObj))
-														(objGetProperty theObj 'hasDockingPorts)
-														(objCanAttack theObj)
-												)
-											)
-											0
-										)
-									)
-								)
-								
-								;	Explore object
-								
-								(if exploredObj
-									(block Nil
-										(objSetKnown exploredObj)
-										(objSendMessage gSender gSource (objTranslate gSource 'ObjectExplored))
-										
-										(objClearShowAsDestination exploredObj)
-									)
-								)
-								
-								;	Pick a new target
-								
-								(switch
-									;	If no unknown objects, then reconnaissance is done
-									
-									(not targetObj)
-										(block Nil
-											(shpOrder gSource 'escort gPlayerShip)
-											(objClearShowAsDestination gSource)
-								
-											(objSetData gSource 'behavior 'escorting)
-											(objSendMessage gSender gSource (objTranslate gSource 'ExplorationDone))
-										)
-											
-									;	Otherwise, go to new object
-									
-									(block Nil
-										(shpOrder gSource 'approach targetObj 75)
-										(objSetData gSource 'targetID (objGetID targetObj))
-									)
-								)
-							)
-
-						;	Otherwise, let our base class handle it.
-						
-						(typFireEvent &baStdAutonBase; 'OnOrdersCompleted)
-					)
-				)
-			</OnOrdersCompleted>
-		</Events>
-		
 		<Language>
 			<Text id="DeployAck">"\"mark II Phantom-class reconnaissance auton online\""</Text>
 			<Text id="ExplorationDone">"\"Reconnaissance complete\""</Text>
@@ -466,10 +162,16 @@ MIIPhantomAuton		4		1500	4000	uncommon
 					
 					(cat
 						"\"" (objGetName exploredObj 0x01) " found\""
+						)
 					)
-				)
 			</Text>
 		</Language>
+		
+		<!-- Static Data -->
+		
+		<StaticData>
+			<explorerData>{range:75}</explorerData>
+		</StaticData>
 	</ShipClass>
 
 <!--
@@ -484,53 +186,53 @@ MIIIPhantomAuton	6		12000	10000	uncommon
 1xHardStealthArmor	6		3600	5000	uncommon
 MIDRADISModule		5		6000	4000	veryrare
 -->
-	
+
 	<!-- Auton, Mark III Phantom -->
 
 	<ShipClass UNID="&scCCMarkIIIPhantomAuton;"
 			manufacturer=		"CabbageCorp"
 			class=				"mark III Phantom"
 			type=				"auton"
-
+			
 			attributes=			"auton, cabbageCorp, genericClass"
-			inherit=			"&baStdAutonBase;"
-			   
+			inherit=			"&baCCPhantomAutonBase;"
+			
 			mass=				"3"
 			thrustRatio=		"8"
 			maxSpeed=			"29"
 			cargoSpace=			"0"
-
+			
 			reactorPower=		"600"
 			maxArmor=			"5000"
 			maxDevices=			"2"
 			maxWeapons=			"1"
-			   
+			
 			leavesWreck=		"0"
-	>
-
+			>
+			
 		<!-- Configuration -->
 		
 		<Armor
 			armorID=			"&itCC1xHardenedStealthArmor;"
 			count=				"1"
 			enhancement=		"0x0200"
-		/>	;the enhancement is regeneration
-		
+			/>	;the enhancement is regeneration
+			
 		<Devices>
 			<Device deviceID="&itCCMIDRADISModule;"/>
 		</Devices>
-
+		
 		<Maneuver
 			maxRotationRate=	"12.0"
 			rotationAccel=		"6.0"
-		/>
-		
+			/>
+			
 		<!-- Image and Effects -->
-
+		
 		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
-
+		
 		<!-- AI and Behavior -->
-
+		
 		<AISettings
 			fireRateAdj=		"20"
 			fireAccuracy=		"90"
@@ -539,163 +241,8 @@ MIDRADISModule		5		6000	4000	veryrare
 			noAttackOnThreat=	"true"
 			noNavPaths=			"true"
 			ignoreShieldsDown=	"true"
-		/>
-		
-		<Communications>
-			<Message name="Explore" key="E">
-				<OnShow>
-					(and (eq (objGetData gSource "behavior") 'escorting)
-						(objGetProperty gSource 'playerWingman)
-					)
-				</OnShow>
-				
-				<Invoke>
-					(block 
-						(
-							;	Look for the nearest unknown object
-							
-							(targetObj 
-								(@
-									(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
-										(and 
-											(not (objIsKnown theObj))
-											(objGetProperty theObj 'hasDockingPorts)
-											(objCanAttack theObj)
-										)
-									)
-									0
-								)
-							)
-						)
-						
-						(switch
-							;	If no unknown objects, then say so
-
-							(not targetObj)
-								(objSendMessage gSender gSource (objTranslate gSource 'NoExploreTarget))
-							
-							;	Otherwise, send the auton to the nearest object
-							
-							(block Nil
-								(shpCancelOrders gSource)
-								(shpOrder gSource 'approach targetObj 110)
-								(objSetShowAsDestination gSource)
-								
-								(objSetData gSource 'behavior 'custom)
-								(objSetData gSource 'targetID (objGetID targetObj))
-								(objSendMessage gSender gSource (objTranslate gSource 'ExploreAck))
-							)
-						)
-					)
-				</Invoke>
-			</Message>
+			/>
 			
-			<Message name="Form up" key="F">
-				<OnShow>
-					(and
-						(objGetProperty gSource 'playerWingman)
-						(or (eq (objGetData gSource 'behavior) 'waiting)
-							(eq (objGetData gSource 'behavior) 'custom)
-							(objCommunicate gSource gSender 'QueryAttackStatus)
-						)
-					)
-				</OnShow>
-
-				<Invoke>
-					(block (behavior)
-						(setq behavior (objGetData gSource 'behavior))
-						(switch
-							(or (not behavior) (eq behavior 'escorting))
-								(block Nil
-									(objCommunicate gSource gSender 'FormUp)
-									(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
-								)
-
-							(block Nil
-								(objClearShowAsDestination gSource)
-								
-								(shpCancelOrders gSource)
-								(shpOrder gSource 'escort gPlayerShip)
-								
-								(objSetData gSource 'behavior 'escorting)
-								(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
-							)
-						)
-					)
-				</Invoke>
-			</Message>
-		</Communications>
-
-		<Events>
-			<OnOrdersCompleted>
-				(block (behavior theTarget)
-					(setq behavior (objGetData gSource 'behavior))
-					
-					(switch
-						;	If we're exploring, then pick a new target
-						
-						(eq behavior 'custom)
-							(block 
-								(
-									(exploredObj (objGetObjByID (objGetData gSource 'targetID)))
-									
-									;	Look for the nearest unknown object
-							
-									(targetObj 
-										(@
-											(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
-												(and (not (objIsKnown theObj))
-														(objGetProperty theObj 'hasDockingPorts)
-														(objCanAttack theObj)
-												)
-											)
-											0
-										)
-									)
-								)
-								
-								;	Explore object
-								
-								(if exploredObj
-									(block Nil
-										(objSetKnown exploredObj)
-										(objSendMessage gSender gSource (objTranslate gSource 'ObjectExplored))
-										
-										(objClearShowAsDestination exploredObj)
-									)
-								)
-								
-								;	Pick a new target
-								
-								(switch
-									;	If no unknown objects, then reconnaissance is done
-									
-									(not targetObj)
-										(block Nil
-											(shpOrder gSource 'escort gPlayerShip)
-											(objClearShowAsDestination gSource)
-								
-											(objSetData gSource 'behavior 'escorting)
-											(objSendMessage gSender gSource (objTranslate gSource 'ExplorationDone))
-										)
-											
-									;	Otherwise, go to new object
-									
-									(block Nil
-										(shpOrder gSource 'approach targetObj 110)
-										(objSetData gSource 'targetID (objGetID targetObj))
-									)
-								)
-							)
-
-						;	Otherwise, let our base class handle it.
-						
-						(typFireEvent &baStdAutonBase; 'OnOrdersCompleted)
-					)
-				)
-			</OnOrdersCompleted>
-		</Events>
-		
 		<Language>
 			<Text id="DeployAck">"\"mark III Phantom-class reconnaissance auton online\""</Text>
 			<Text id="ExplorationDone">"\"Reconnaissance complete\""</Text>
@@ -706,10 +253,16 @@ MIDRADISModule		5		6000	4000	veryrare
 					
 					(cat
 						"\"" (objGetName exploredObj 0x01) " found\""
+						)
 					)
-				)
 			</Text>
 		</Language>
+		
+		<!-- Static Data -->
+		
+		<StaticData>
+			<explorerData>{range:110}</explorerData>
+		</StaticData>
 	</ShipClass>
 
 <!--
@@ -724,53 +277,53 @@ MIVPhantomAuton		8		12000	10000	uncommon
 1xHardStealthArmor	8		13000	5000	uncommon
 MIIDRADISModule		7		21000	4500	veryrare
 -->
-	
+
 	<!-- Auton, Mark IV Phantom -->
 
 	<ShipClass UNID="&scCCMarkIVPhantomAuton;"
 			manufacturer=		"CabbageCorp"
 			class=				"mark IV Phantom"
 			type=				"auton"
-
+			
 			attributes=			"auton, cabbageCorp, genericClass"
-			inherit=			"&baStdAutonBase;"
-			   
+			inherit=			"&baCCPhantomAutonBase;"
+			
 			mass=				"4"
 			thrustRatio=		"9"
 			maxSpeed=			"32"
 			cargoSpace=			"0"
-
+			
 			reactorPower=		"2000"
 			maxArmor=			"5000"
 			maxDevices=			"2"
 			maxWeapons=			"1"
-			   
+			
 			leavesWreck=		"0"
-	>
-
+			>
+			
 		<!-- Configuration -->
 		
 		<Armor
 			armorID=			"&itCC1xAdvancedStealthArmor;"
 			count=				"1"
 			enhancement=		"0x0200"
-		/>	;the enhancement is regeneration
-		
+			/>	;the enhancement is regeneration
+			
 		<Devices>
 			<Device deviceID="&itCCMIIDRADISModule;"/>
 		</Devices>
-
+		
 		<Maneuver
 			maxRotationRate=	"15.0"
 			rotationAccel=		"7.5"
-		/>
-		
+			/>
+			
 		<!-- Image and Effects -->
-
+		
 		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
-
+		
 		<!-- AI and Behavior -->
-
+		
 		<AISettings
 			fireRateAdj=		"20"
 			fireAccuracy=		"90"
@@ -779,163 +332,8 @@ MIIDRADISModule		7		21000	4500	veryrare
 			noAttackOnThreat=	"true"
 			noNavPaths=			"true"
 			ignoreShieldsDown=	"true"
-		/>
-		
-		<Communications>
-			<Message name="Explore" key="E">
-				<OnShow>
-					(and (eq (objGetData gSource "behavior") 'escorting)
-						(objGetProperty gSource 'playerWingman)
-					)
-				</OnShow>
-				
-				<Invoke>
-					(block 
-						(
-							;	Look for the nearest unknown object
-							
-							(targetObj 
-								(@
-									(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
-										(and 
-											(not (objIsKnown theObj))
-											(objGetProperty theObj 'hasDockingPorts)
-											(objCanAttack theObj)
-										)
-									)
-									0
-								)
-							)
-						)
-						
-						(switch
-							;	If no unknown objects, then say so
-
-							(not targetObj)
-								(objSendMessage gSender gSource (objTranslate gSource 'NoExploreTarget))
-							
-							;	Otherwise, send the auton to the nearest object
-							
-							(block Nil
-								(shpCancelOrders gSource)
-								(shpOrder gSource 'approach targetObj 165)
-								(objSetShowAsDestination gSource)
-								
-								(objSetData gSource 'behavior 'custom)
-								(objSetData gSource 'targetID (objGetID targetObj))
-								(objSendMessage gSender gSource (objTranslate gSource 'ExploreAck))
-							)
-						)
-					)
-				</Invoke>
-			</Message>
+			/>
 			
-			<Message name="Form up" key="F">
-				<OnShow>
-					(and
-						(objGetProperty gSource 'playerWingman)
-						(or (eq (objGetData gSource 'behavior) 'waiting)
-							(eq (objGetData gSource 'behavior) 'custom)
-							(objCommunicate gSource gSender 'QueryAttackStatus)
-						)
-					)
-				</OnShow>
-
-				<Invoke>
-					(block (behavior)
-						(setq behavior (objGetData gSource 'behavior))
-						(switch
-							(or (not behavior) (eq behavior 'escorting))
-								(block Nil
-									(objCommunicate gSource gSender 'FormUp)
-									(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
-								)
-
-							(block Nil
-								(objClearShowAsDestination gSource)
-								
-								(shpCancelOrders gSource)
-								(shpOrder gSource 'escort gPlayerShip)
-								
-								(objSetData gSource 'behavior 'escorting)
-								(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
-							)
-						)
-					)
-				</Invoke>
-			</Message>
-		</Communications>
-
-		<Events>
-			<OnOrdersCompleted>
-				(block (behavior theTarget)
-					(setq behavior (objGetData gSource 'behavior))
-					
-					(switch
-						;	If we're exploring, then pick a new target
-						
-						(eq behavior 'custom)
-							(block 
-								(
-									(exploredObj (objGetObjByID (objGetData gSource 'targetID)))
-									
-									;	Look for the nearest unknown object
-							
-									(targetObj 
-										(@
-											(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
-												(and (not (objIsKnown theObj))
-														(objGetProperty theObj 'hasDockingPorts)
-														(objCanAttack theObj)
-												)
-											)
-											0
-										)
-									)
-								)
-								
-								;	Explore object
-								
-								(if exploredObj
-									(block Nil
-										(objSetKnown exploredObj)
-										(objSendMessage gSender gSource (objTranslate gSource 'ObjectExplored))
-										
-										(objClearShowAsDestination exploredObj)
-									)
-								)
-								
-								;	Pick a new target
-								
-								(switch
-									;	If no unknown objects, then reconnaissance is done
-									
-									(not targetObj)
-										(block Nil
-											(shpOrder gSource 'escort gPlayerShip)
-											(objClearShowAsDestination gSource)
-								
-											(objSetData gSource 'behavior 'escorting)
-											(objSendMessage gSender gSource (objTranslate gSource 'ExplorationDone))
-										)
-											
-									;	Otherwise, go to new object
-									
-									(block Nil
-										(shpOrder gSource 'approach targetObj 165)
-										(objSetData gSource 'targetID (objGetID targetObj))
-									)
-								)
-							)
-
-						;	Otherwise, let our base class handle it.
-						
-						(typFireEvent &baStdAutonBase; 'OnOrdersCompleted)
-					)
-				)
-			</OnOrdersCompleted>
-		</Events>
-		
 		<Language>
 			<Text id="DeployAck">"\"mark IV Phantom-class reconnaissance auton online\""</Text>
 			<Text id="ExplorationDone">"\"Reconnaissance complete\""</Text>
@@ -946,10 +344,16 @@ MIIDRADISModule		7		21000	4500	veryrare
 					
 					(cat
 						"\"" (objGetName exploredObj 0x01) " found\""
+						)
 					)
-				)
 			</Text>
 		</Language>
+		
+		<!-- Static Data -->
+		
+		<StaticData>
+			<explorerData>{range:165}</explorerData>
+		</StaticData>
 	</ShipClass>
 
 <!--
@@ -964,53 +368,53 @@ MVPhantomAuton		10		150000	10000	uncommon
 1xExpStealthArmor	10		50000	5000	uncommon
 MIIIDRADISModule	9		80000	4500	veryrare
 -->
-	
+
 	<!-- Auton, Mark V Phantom -->
 
 	<ShipClass UNID="&scCCMarkVPhantomAuton;"
 			manufacturer=		"CabbageCorp"
 			class=				"mark V Phantom"
 			type=				"auton"
-
+			
 			attributes=			"auton, cabbageCorp, genericClass"
-			inherit=			"&baStdAutonBase;"
-			   
+			inherit=			"&baCCPhantomAutonBase;"
+			
 			mass=				"5"
 			thrustRatio=		"10"
 			maxSpeed=			"35"
 			cargoSpace=			"0"
-
+			
 			reactorPower=		"2000"
 			maxArmor=			"5000"
 			maxDevices=			"2"
 			maxWeapons=			"1"
-			   
+			
 			leavesWreck=		"0"
-	>
-
+			>
+			
 		<!-- Configuration -->
 		
 		<Armor
 			armorID=			"&itCC1xExperimentalStealthArmor;"
 			count=				"1"
 			enhancement=		"0x0200"
-		/>	;the enhancement is regeneration
-		
+			/>	;the enhancement is regeneration
+			
 		<Devices>
 			<Device deviceID="&itCCMIIIDRADISModule;"/>
 		</Devices>
-
+		
 		<Maneuver
 			maxRotationRate=	"18.0"
 			rotationAccel=		"9.0"
-		/>
-		
+			/>
+			
 		<!-- Image and Effects -->
-
+		
 		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
-
+		
 		<!-- AI and Behavior -->
-
+		
 		<AISettings
 			fireRateAdj=		"20"
 			fireAccuracy=		"90"
@@ -1019,163 +423,8 @@ MIIIDRADISModule	9		80000	4500	veryrare
 			noAttackOnThreat=	"true"
 			noNavPaths=			"true"
 			ignoreShieldsDown=	"true"
-		/>
-		
-		<Communications>
-			<Message name="Explore" key="E">
-				<OnShow>
-					(and (eq (objGetData gSource "behavior") 'escorting)
-						(objGetProperty gSource 'playerWingman)
-					)
-				</OnShow>
-				
-				<Invoke>
-					(block 
-						(
-							;	Look for the nearest unknown object
-							
-							(targetObj 
-								(@
-									(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
-										(and 
-											(not (objIsKnown theObj))
-											(objGetProperty theObj 'hasDockingPorts)
-											(objCanAttack theObj)
-										)
-									)
-									0
-								)
-							)
-						)
-						
-						(switch
-							;	If no unknown objects, then say so
-
-							(not targetObj)
-								(objSendMessage gSender gSource (objTranslate gSource 'NoExploreTarget))
-							
-							;	Otherwise, send the auton to the nearest object
-							
-							(block Nil
-								(shpCancelOrders gSource)
-								(shpOrder gSource 'approach targetObj 250)
-								(objSetShowAsDestination gSource)
-								
-								(objSetData gSource 'behavior 'custom)
-								(objSetData gSource 'targetID (objGetID targetObj))
-								(objSendMessage gSender gSource (objTranslate gSource 'ExploreAck))
-							)
-						)
-					)
-				</Invoke>
-			</Message>
+			/>
 			
-			<Message name="Form up" key="F">
-				<OnShow>
-					(and
-						(objGetProperty gSource 'playerWingman)
-						(or (eq (objGetData gSource 'behavior) 'waiting)
-							(eq (objGetData gSource 'behavior) 'custom)
-							(objCommunicate gSource gSender 'QueryAttackStatus)
-						)
-					)
-				</OnShow>
-
-				<Invoke>
-					(block (behavior)
-						(setq behavior (objGetData gSource 'behavior))
-						(switch
-							(or (not behavior) (eq behavior 'escorting))
-								(block Nil
-									(objCommunicate gSource gSender 'FormUp)
-									(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
-								)
-
-							(block Nil
-								(objClearShowAsDestination gSource)
-								
-								(shpCancelOrders gSource)
-								(shpOrder gSource 'escort gPlayerShip)
-								
-								(objSetData gSource 'behavior 'escorting)
-								(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
-							)
-						)
-					)
-				</Invoke>
-			</Message>
-		</Communications>
-
-		<Events>
-			<OnOrdersCompleted>
-				(block (behavior theTarget)
-					(setq behavior (objGetData gSource 'behavior))
-					
-					(switch
-						;	If we're exploring, then pick a new target
-						
-						(eq behavior 'custom)
-							(block 
-								(
-									(exploredObj (objGetObjByID (objGetData gSource 'targetID)))
-									
-									;	Look for the nearest unknown object
-							
-									(targetObj 
-										(@
-											(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
-												(and (not (objIsKnown theObj))
-														(objGetProperty theObj 'hasDockingPorts)
-														(objCanAttack theObj)
-												)
-											)
-											0
-										)
-									)
-								)
-								
-								;	Explore object
-								
-								(if exploredObj
-									(block Nil
-										(objSetKnown exploredObj)
-										(objSendMessage gSender gSource (objTranslate gSource 'ObjectExplored))
-										
-										(objClearShowAsDestination exploredObj)
-									)
-								)
-								
-								;	Pick a new target
-								
-								(switch
-									;	If no unknown objects, then reconnaissance is done
-									
-									(not targetObj)
-										(block Nil
-											(shpOrder gSource 'escort gPlayerShip)
-											(objClearShowAsDestination gSource)
-								
-											(objSetData gSource 'behavior 'escorting)
-											(objSendMessage gSender gSource (objTranslate gSource 'ExplorationDone))
-										)
-											
-									;	Otherwise, go to new object
-									
-									(block Nil
-										(shpOrder gSource 'approach targetObj 250)
-										(objSetData gSource 'targetID (objGetID targetObj))
-									)
-								)
-							)
-
-						;	Otherwise, let our base class handle it.
-						
-						(typFireEvent &baStdAutonBase; 'OnOrdersCompleted)
-					)
-				)
-			</OnOrdersCompleted>
-		</Events>
-		
 		<Language>
 			<Text id="DeployAck">"\"mark V Phantom-class reconnaissance auton online\""</Text>
 			<Text id="ExplorationDone">"\"Reconnaissance complete\""</Text>
@@ -1186,10 +435,16 @@ MIIIDRADISModule	9		80000	4500	veryrare
 					
 					(cat
 						"\"" (objGetName exploredObj 0x01) " found\""
+						)
 					)
-				)
 			</Text>
 		</Language>
+		
+		<!-- Static Data -->
+		
+		<StaticData>
+			<explorerData>{range:250}</explorerData>
+		</StaticData>
 	</ShipClass>
 
 <!-- ITEMS -->
@@ -1199,21 +454,21 @@ MIIIDRADISModule	9		80000	4500	veryrare
 	<ItemType UNID="&itCCMarkIPhantomAuton;"
 			name=				"mark I Phantom auton"
 			attributes=			"auton, cabbageCorp, minorItem"
-			  
+			
 			level=				"2"
 			frequency=			"rare"
 			unknownType=		"&itUnknownAuton;"
-			  
+			
 			value=				"240"
 			mass=				"1500"
 			charges=			"0"
 			massBonusPerCharge=	"1000"
-
+			
 			description=		"This auton is programmed to explore and document all unknown objects of interest in any given star system. By deploying this auton you are agreeing to return legal ownership of this auton and all information discovered by this auton to Cabbage Corp in exchange for limited access to said information."
-	>
-
+			>
+			
 		<Image imageID="&rsCCShipIcons;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Invoke key="A">
 			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
 		</Invoke>
@@ -1228,21 +483,21 @@ MIIIDRADISModule	9		80000	4500	veryrare
 	<ItemType UNID="&itCCMarkIIPhantomAuton;"
 			name=				"mark II Phantom auton"
 			attributes=			"auton, cabbageCorp, minorItem"
-			  
+			
 			level=				"4"
 			frequency=			"veryrare"
 			unknownType=		"&itUnknownAuton;"
-			  
+			
 			value=				"1500"
 			mass=				"3500"
 			charges=			"0"
 			massBonusPerCharge=	"1000"
-
+			
 			description=		"This auton is programmed to explore and document all unknown objects of interest in any given star system. By deploying this auton you are agreeing to return legal ownership of this auton and all information discovered by this auton to Cabbage Corp in exchange for limited access to said information."
-	>
-
+			>
+			
 		<Image imageID="&rsCCShipIcons;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Invoke key="A">
 			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
 		</Invoke>
@@ -1257,21 +512,21 @@ MIIIDRADISModule	9		80000	4500	veryrare
 	<ItemType UNID="&itCCMarkIIIPhantomAuton;"
 			name=				"mark III Phantom auton"
 			attributes=			"auton, cabbageCorp, minorItem"
-			  
+			
 			level=				"6"
 			frequency=			"veryrare"
 			unknownType=		"&itUnknownAuton;"
-			  
+			
 			value=				"10000"
 			mass=				"4500"
 			charges=			"0"
 			massBonusPerCharge=	"1000"
-
+			
 			description=		"This auton is programmed to explore and document all unknown objects of interest in any given star system. By deploying this auton you are agreeing to return legal ownership of this auton and all information discovered by this auton to Cabbage Corp in exchange for limited access to said information."
-	>
-
+			>
+			
 		<Image imageID="&rsCCShipIcons;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Invoke key="A">
 			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
 		</Invoke>
@@ -1286,20 +541,20 @@ MIIIDRADISModule	9		80000	4500	veryrare
 	<ItemType UNID="&itCCMarkIVPhantomAuton;"
 			name=				"mark IV Phantom auton"
 			attributes=			"auton, cabbageCorp, minorItem"
-			  
+			
 			level=				"8"
 			frequency=			"veryrare"
-			  
+			
 			value=				"45000"
 			mass=				"5500"
 			charges=			"0"
 			massBonusPerCharge=	"1000"
-
+			
 			description=		"This auton is programmed to explore and document all unknown objects of interest in any given star system. By deploying this auton you are agreeing to return legal ownership of this auton and all information discovered by this auton to Cabbage Corp in exchange for limited access to said information."
-	>
-
+			>
+			
 		<Image imageID="&rsCCShipIcons;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Invoke key="A">
 			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
 		</Invoke>
@@ -1314,20 +569,20 @@ MIIIDRADISModule	9		80000	4500	veryrare
 	<ItemType UNID="&itCCMarkVPhantomAuton;"
 			name=				"mark V Phantom auton"
 			attributes=			"auton, cabbageCorp, minorItem"
-			  
+			
 			level=				"10"
 			frequency=			"veryrare"
-			  
+			
 			value=				"150000"
 			mass=				"6000"
 			charges=			"0"
 			massBonusPerCharge=	"1000"
-
+			
 			description=		"This auton is programmed to explore and document all unknown objects of interest in any given star system. By deploying this auton you are agreeing to return legal ownership of this auton and all information discovered by this auton to Cabbage Corp in exchange for limited access to said information."
-	>
-
+			>
+			
 		<Image imageID="&rsCCShipIcons;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
-
+		
 		<Invoke key="A">
 			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
 		</Invoke>
@@ -1336,6 +591,165 @@ MIIIDRADISModule	9		80000	4500	veryrare
 			<AutonShipClass>&scCCMarkVPhantomAuton;</AutonShipClass>
 		</StaticData>
 	</ItemType>
+
+<!-- BASE CLASSES -->
+
+	<ShipClass UNID="&baCCPhantomAutonBase;"
+			class=				"(Phantom Auton base class)"
+			inherit=			"&baStdAutonBase;"
+			virtual=			"true"
+			
+			attributes=			"baseClass"
+			>
+			
+		<!-- AI and Behavior -->
+		
+		<Communications>
+			<Message name="Explore" key="E">
+				<OnShow>
+					(and (eq (objGetData gSource "behavior") 'escorting)
+						(objGetProperty gSource 'playerWingman)
+						)
+				</OnShow>
+				
+				<Invoke>
+					(block (
+						;	Look for the nearest unknown object
+						
+						(targetObj (@
+							(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
+								(and (not (objIsKnown theObj))
+										(objGetProperty theObj 'hasDockingPorts)
+										(or (objCanAttack theObj) (objMatches theObj gSource "G"))
+										)
+								)
+							0))
+						)
+						
+						(switch
+							;	If no unknown objects, then say so
+							
+							(not targetObj)
+								(objSendMessage gSender gSource (objTranslate gSource 'NoExploreTarget))
+							
+							;	Otherwise, send the auton to the nearest object
+							
+							(block Nil
+								(shpCancelOrders gSource)
+								(shpOrder gSource 'approach targetObj (@ (objGetStaticData gSource 'explorerData) 'range))
+								(objSetShowAsDestination gSource)
+								
+								(objSetData gSource 'behavior 'custom)
+								(objSetData gSource 'targetID (objGetID targetObj))
+								(objSendMessage gSender gSource (objTranslate gSource 'ExploreAck))
+								)
+							)
+						)
+				</Invoke>
+			</Message>
+			
+			<Message name="Form up" key="F">
+				<OnShow>
+					(and
+						(objGetProperty gSource 'playerWingman)
+						(or (eq (objGetData gSource 'behavior) 'waiting)
+							(eq (objGetData gSource 'behavior) 'custom)
+							(objCommunicate gSource gSender 'QueryAttackStatus)
+							)
+						)
+				</OnShow>
+				
+				<Invoke>
+					(block (behavior)
+						(setq behavior (objGetData gSource 'behavior))
+						(switch
+							(or (not behavior) (eq behavior 'escorting))
+								(block Nil
+									(objCommunicate gSource gSender 'FormUp)
+									(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
+									)
+									
+							(block Nil
+								(objClearShowAsDestination gSource)
+								
+								(shpCancelOrders gSource)
+								(shpOrder gSource 'escort gPlayerShip)
+								
+								(objSetData gSource 'behavior 'escorting)
+								(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
+								)
+							)
+						)
+				</Invoke>
+			</Message>
+		</Communications>
+		
+		<Events>
+			<OnOrdersCompleted>
+				(block (behavior theTarget)
+					(setq behavior (objGetData gSource 'behavior))
+					
+					(switch
+						;	If we're exploring, then pick a new target
+						
+						(eq behavior 'custom)
+							(block (
+								(exploredObj (objGetObjByID (objGetData gSource 'targetID)))
+								
+								;	Look for the nearest unknown object
+								
+								(targetObj (@
+									(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
+										(and (not (objIsKnown theObj))
+												(objGetProperty theObj 'hasDockingPorts)
+												(or (objCanAttack theObj) (objMatches theObj gSource "G"))
+												)
+										)
+									0))
+								)
+								
+								;	Explore object
+								
+								(if exploredObj
+									(block Nil
+										(objSetKnown exploredObj)
+										(objSendMessage gPlayerShip gSource (objTranslate gSource 'ObjectExplored))
+										
+										(objClearShowAsDestination exploredObj)
+										)
+									)
+								
+								;	Pick a new target
+								
+								(switch
+									;	If no unknown objects, then exploration is done
+									
+									(not targetObj)
+										(block Nil
+											(shpOrder gSource 'escort gPlayerShip)
+											(objClearShowAsDestination gSource)
+								
+											(objSetData gSource 'behavior 'escorting)
+											(objSendMessage gPlayerShip gSource (objTranslate gSource 'ExplorationDone))
+											)
+											
+									;	Otherwise, go to new object
+									
+									(block Nil
+										(shpOrder gSource 'approach targetObj (@ (objGetStaticData gSource 'explorerData) 'range))
+										(objSetData gSource 'targetID (objGetID targetObj))
+										)
+									)
+								)
+								
+						;	Otherwise, let our base class handle it.
+						
+						(typFireEvent &baStdAutonBase; 'OnOrdersCompleted)
+						)
+					)
+			</OnOrdersCompleted>
+		</Events>
+	</ShipClass>
 
 <!-- RESOURCES -->
 

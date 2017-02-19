@@ -709,19 +709,20 @@
 	<!ENTITY rsCCShadeArmorHUD						"0xDA27CEBB">
 	<!ENTITY rsCCShadeHD							"0xDA27CEBC">
 	
-	<!ENTITY itCCMarkIPhantomAuton					"0xDA27CEC0">
-	<!ENTITY scCCMarkIPhantomAuton					"0xDA27CEC1">
-	<!ENTITY itCCMarkIIPhantomAuton					"0xDA27CEC2">
-	<!ENTITY scCCMarkIIPhantomAuton					"0xDA27CEC3">
-	<!ENTITY itCCMarkIIIPhantomAuton				"0xDA27CEC4">
-	<!ENTITY scCCMarkIIIPhantomAuton				"0xDA27CEC5">
-	<!ENTITY itCCMarkIVPhantomAuton					"0xDA27CEC6">
-	<!ENTITY scCCMarkIVPhantomAuton					"0xDA27CEC7">
-	<!ENTITY itCCMarkVPhantomAuton					"0xDA27CEC8">
-	<!ENTITY scCCMarkVPhantomAuton					"0xDA27CEC9">
-	<!ENTITY rsCCPhantomLarge						"0xDA27CECA">
-	<!ENTITY rsCCPhantomArmorHUD					"0xDA27CECB">
-	<!ENTITY rsCCPhantomHD							"0xDA27CECC">
+	<!ENTITY baCCPhantomAutonBase					"0xDA27CEC0">
+	<!ENTITY itCCMarkIPhantomAuton					"0xDA27CEC1">
+	<!ENTITY scCCMarkIPhantomAuton					"0xDA27CEC2">
+	<!ENTITY itCCMarkIIPhantomAuton					"0xDA27CEC3">
+	<!ENTITY scCCMarkIIPhantomAuton					"0xDA27CEC4">
+	<!ENTITY itCCMarkIIIPhantomAuton				"0xDA27CEC5">
+	<!ENTITY scCCMarkIIIPhantomAuton				"0xDA27CEC6">
+	<!ENTITY itCCMarkIVPhantomAuton					"0xDA27CEC7">
+	<!ENTITY scCCMarkIVPhantomAuton					"0xDA27CEC8">
+	<!ENTITY itCCMarkVPhantomAuton					"0xDA27CEC9">
+	<!ENTITY scCCMarkVPhantomAuton					"0xDA27CECA">
+	<!ENTITY rsCCPhantomLarge						"0xDA27CECB">
+	<!ENTITY rsCCPhantomArmorHUD					"0xDA27CECC">
+	<!ENTITY rsCCPhantomHD							"0xDA27CECD">
 	
 	<!-- LIBRARIES -->
 	
