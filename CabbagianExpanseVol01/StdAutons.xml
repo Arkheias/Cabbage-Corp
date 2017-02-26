@@ -1,0 +1,1650 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+<!-- SHIP CLASSES -->
+
+<!-- LEVEL II -->
+
+	<!-- Auton, Mark I Phantom -->
+
+	<ShipClass UNID="&scCCMarkIPhantomAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark I Phantom"
+			type=				"auton"
+			
+			attributes=			"auton, cabbageCorp, genericClass"
+			inherit=			"&baCCPhantomAutonBase;"
+			
+			mass=				"1"
+			thrustRatio=		"6"
+			maxSpeed=			"25"
+			cargoSpace=			"0"
+			
+			reactorPower=		"50"
+			maxArmor=			"2500"
+			maxDevices=			"2"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"0"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCCLightStealthPlating;"
+			count=				"1"
+			enhancement=		"0x0B00"
+			/>	;the enhancement is radiation immunity
+			
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"6.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+		
+		<Language>
+			<Text id="DeployAck">"\"mark I Phantom-class reconnaissance auton online\""</Text>
+			<Text id="ExplorationDone">"\"Reconnaissance complete\""</Text>
+			<Text id="ExploreAck">"\"Commencing reconnaissance\""</Text>
+			<Text id="NoExploreTarget">"\"No unexplored objects in system.\""</Text>
+			<Text id="ObjectExplored">
+				(block ((exploredObj (objGetObjByID (objGetData gSource 'targetID))))
+					
+					(cat
+						"\"" (objGetName exploredObj 0x01) " found\""
+						)
+					)
+			</Text>
+		</Language>
+		
+		<!-- Static Data -->
+		
+		<StaticData>
+			<explorerData>{range:75}</explorerData>
+		</StaticData>
+	</ShipClass>
+
+	<!-- Auton, Mark I Shade -->
+
+	<ShipClass UNID="&scCCMarkIShadeAuton;"
+			manufacturer=		"Cabbage Corp"
+			class=				"mark I Shade"
+			type=				"auton"
+			
+			attributes=			"auton, genericClass"
+			inherit=			"&baCCShadeAutonBase;"
+			
+			mass=				"3"
+			thrustRatio=		"6"
+			maxSpeed=			"20"
+			cargoSpace=			"50"
+			maxCargoSpace=		"100"
+			
+			reactorPower=		"50"
+			maxArmor=			"2500"
+			maxDevices=			"2"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"95"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCCLightStealthPlating;"
+			count=				"2"
+			enhancement=		"0x0200"
+			/>	;the enhancement is regeneration
+		
+		<Maneuver
+			maxRotationRate=	"4.0"
+			rotationAccel=		"1.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCShadeHD;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+		
+		<Language>
+			<Text id="DeployAck">"\"mark I Shade-class transport auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+	<!-- Auton, Mark I Wraith -->
+
+	<ShipClass UNID="&scCCMarkIWraithAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark I Wraith"
+			type=				"auton"
+			
+			attributes=			"auton, genericClass"
+			inherit=			"&baStdAutonBase;"
+			
+			mass=				"1"
+			thrustRatio=		"6"
+			maxSpeed=			"25"
+			cargoSpace=			"0"
+			
+			reactorPower=		"50"
+			maxArmor=			"2500"
+			maxDevices=			"3"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"0"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCCLightStealthPlating;"
+			count=				"1"
+			enhancement=		"0x0B00"
+			/>	;the enhancement is radiation immunity
+			
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="6"/>
+			
+			<Device deviceID="&itCCKaleM1Repeater;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"6.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCWraithHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+		
+		<AISettings
+			fireRateAdj=		"15"
+			fireAccuracy=		"75"
+			perception=			"4"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			ignoreShieldsDown=	"true"
+			/>
+			
+		<Language>
+			<Text id="DeployAck">"\"mark I Wraith-class assault auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+<!-- LEVEL IV -->
+
+	<!-- Auton, Mark II Phantom -->
+
+	<ShipClass UNID="&scCCMarkIIPhantomAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark II Phantom"
+			type=				"auton"
+			
+			attributes=			"auton, cabbageCorp, genericClass"
+			inherit=			"&baCCPhantomAutonBase;"
+			
+			mass=				"2"
+			thrustRatio=		"7"
+			maxSpeed=			"26"
+			cargoSpace=			"0"
+			
+			reactorPower=		"200"
+			maxArmor=			"5000"
+			maxDevices=			"2"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"0"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0B00"
+			/>	;the enhancement is radiation immunity
+			
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"6.0"
+			/>
+		
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+			
+		<Language>
+			<Text id="DeployAck">"\"mark II Phantom-class reconnaissance auton online\""</Text>
+			<Text id="ExplorationDone">"\"Reconnaissance complete\""</Text>
+			<Text id="ExploreAck">"\"Commencing reconnaissance\""</Text>
+			<Text id="NoExploreTarget">"\"No unexplored objects in system.\""</Text>
+			<Text id="ObjectExplored">
+				(block ((exploredObj (objGetObjByID (objGetData gSource 'targetID))))
+					
+					(cat
+						"\"" (objGetName exploredObj 0x01) " found\""
+						)
+					)
+			</Text>
+		</Language>
+		
+		<!-- Static Data -->
+		
+		<StaticData>
+			<explorerData>{range:75}</explorerData>
+		</StaticData>
+	</ShipClass>
+
+	<!-- Auton, Mark II Shade -->
+
+	<ShipClass UNID="&scCCMarkIIShadeAuton;"
+			manufacturer=		"Cabbage Corp"
+			class=				"mark II Shade"
+			type=				"auton"
+			
+			attributes=			"auton, genericClass"
+			inherit=			"&baCCShadeAutonBase;"
+			
+			mass=				"4"
+			thrustRatio=		"7"
+			maxSpeed=			"19"
+			cargoSpace=			"75"
+			maxCargoSpace=		"150"
+			
+			reactorPower=		"200"
+			maxArmor=			"5000"
+			maxDevices=			"2"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"95"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xStealthArmor;"
+			count=				"2"
+			enhancement=		"0x0B00"
+			/>	;the enhancement is radiation immunity
+		
+		<Devices>
+			<Device deviceID="&itCCNapaS4Deflector;" charges="4"/>
+			<Device deviceID="&itArmorRepairDevice;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"4.0"
+			rotationAccel=		"1.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCShadeHD;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+		
+		<Language>
+			<Text id="DeployAck">"\"mark II Shade-class transport auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+	<!-- Auton, Mark II Wraith -->
+
+	<ShipClass UNID="&scCCMarkIIWraithAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark II Wraith"
+			type=				"auton"
+			
+			attributes=			"auton, genericClass"
+			inherit=			"&baStdAutonBase;"
+			
+			mass=				"2"
+			thrustRatio=		"7"
+			maxSpeed=			"24"
+			cargoSpace=			"0"
+			
+			reactorPower=		"200"
+			maxArmor=			"5000"
+			maxDevices=			"3"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"0"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0B00"
+			/>	;the enhancement is radiation immunity
+			
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="6"/>
+			
+			<Device deviceID="&itCCKaleM6Repeater;"/>
+			<Device deviceID="&itCCNapaS2Deflector;" charges="4"/>
+			<Device deviceID="&itArmorRepairDevice;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"12.0"
+			rotationAccel=		"4.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCWraithHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+		
+		<AISettings
+			fireRateAdj=		"15"
+			fireAccuracy=		"80"
+			perception=			"4"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			ignoreShieldsDown=	"true"
+			/>
+			
+		<Language>
+			<Text id="DeployAck">"\"mark II Wraith-class assault auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+<!-- LEVEL VI -->
+
+	<!-- Auton, Mark III Phantom -->
+
+	<ShipClass UNID="&scCCMarkIIIPhantomAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark III Phantom"
+			type=				"auton"
+			
+			attributes=			"auton, cabbageCorp, genericClass"
+			inherit=			"&baCCPhantomAutonBase;"
+			
+			mass=				"3"
+			thrustRatio=		"8"
+			maxSpeed=			"29"
+			cargoSpace=			"0"
+			
+			reactorPower=		"600"
+			maxArmor=			"5000"
+			maxDevices=			"2"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"0"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xHardenedStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0200"
+			/>	;the enhancement is regeneration
+			
+		<Devices>
+			<Device deviceID="&itCCMIDRADISModule;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"6.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+			
+		<Language>
+			<Text id="DeployAck">"\"mark III Phantom-class reconnaissance auton online\""</Text>
+			<Text id="ExplorationDone">"\"Reconnaissance complete\""</Text>
+			<Text id="ExploreAck">"\"Commencing reconnaissance\""</Text>
+			<Text id="NoExploreTarget">"\"No unexplored objects in system.\""</Text>
+			<Text id="ObjectExplored">
+				(block ((exploredObj (objGetObjByID (objGetData gSource 'targetID))))
+					
+					(cat
+						"\"" (objGetName exploredObj 0x01) " found\""
+						)
+					)
+			</Text>
+		</Language>
+		
+		<!-- Static Data -->
+		
+		<StaticData>
+			<explorerData>{range:110}</explorerData>
+		</StaticData>
+	</ShipClass>
+
+	<!-- Auton, Mark III Shade -->
+
+	<ShipClass UNID="&scCCMarkIIIShadeAuton;"
+			manufacturer=		"Cabbage Corp"
+			class=				"mark III Shade"
+			type=				"auton"
+			
+			attributes=			"auton, genericClass"
+			inherit=			"&baCCShadeAutonBase;"
+			
+			mass=				"6"
+			thrustRatio=		"8"
+			maxSpeed=			"21"
+			cargoSpace=			"100"
+			maxCargoSpace=		"200"
+			
+			reactorPower=		"600"
+			maxArmor=			"5000"
+			maxDevices=			"2"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"95"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xHardenedStealthArmor;"
+			count=				"2"
+			enhancement=		"0x0200"
+			/>	;the enhancement is regeneration
+			
+		<Devices>
+			<Device 
+				deviceID=		"&itCCNapaS20Deflector;"
+				charges=		"3"
+				enhancement=	"0x0103"
+				/>
+			<Device deviceID="&itArmorRepairDevice;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"4.0"
+			rotationAccel=		"1.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCShadeHD;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+		
+		<Language>
+			<Text id="DeployAck">"\"mark III Shade-class transport auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+	<!-- Auton, Mark III Wraith -->
+
+	<ShipClass UNID="&scCCMarkIIIWraithAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark III Wraith"
+			type=				"auton"
+			
+			attributes=			"auton, genericClass"
+			inherit=			"&baStdAutonBase;"
+			
+			mass=				"3"
+			thrustRatio=		"8"
+			maxSpeed=			"26"
+			cargoSpace=			"0"
+			
+			reactorPower=		"600"
+			maxArmor=			"5000"
+			maxDevices=			"3"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"0"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xHardenedStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0200"
+			/>	;the enhancement is regeneration
+			
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="6"/>
+			
+			<Device deviceID="&itCCKaleM20Repeater;"/>
+			<Device 
+				deviceID=		"&itCCNapaS8Deflector;"
+				charges=		"4"
+				enhancement=	"0x0103"
+				/>
+			<Device deviceID="&itArmorRepairDevice;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"12.0"
+			rotationAccel=		"6.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCWraithHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+		
+		<AISettings
+			fireRateAdj=		"15"
+			fireAccuracy=		"85"
+			perception=			"4"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			ignoreShieldsDown=	"true"
+			/>
+			
+		<Language>
+			<Text id="DeployAck">"\"mark III Wraith-class assault auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+<!-- LEVEL VIII -->
+
+	<!-- Auton, Mark IV Phantom -->
+
+	<ShipClass UNID="&scCCMarkIVPhantomAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark IV Phantom"
+			type=				"auton"
+			
+			attributes=			"auton, cabbageCorp, genericClass"
+			inherit=			"&baCCPhantomAutonBase;"
+			
+			mass=				"4"
+			thrustRatio=		"9"
+			maxSpeed=			"32"
+			cargoSpace=			"0"
+			
+			reactorPower=		"2000"
+			maxArmor=			"5000"
+			maxDevices=			"2"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"0"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xAdvancedStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0200"
+			/>	;the enhancement is regeneration
+			
+		<Devices>
+			<Device deviceID="&itCCMIIDRADISModule;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"6.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+			
+		<Language>
+			<Text id="DeployAck">"\"mark IV Phantom-class reconnaissance auton online\""</Text>
+			<Text id="ExplorationDone">"\"Reconnaissance complete\""</Text>
+			<Text id="ExploreAck">"\"Commencing reconnaissance\""</Text>
+			<Text id="NoExploreTarget">"\"No unexplored objects in system.\""</Text>
+			<Text id="ObjectExplored">
+				(block ((exploredObj (objGetObjByID (objGetData gSource 'targetID))))
+					
+					(cat
+						"\"" (objGetName exploredObj 0x01) " found\""
+						)
+					)
+			</Text>
+		</Language>
+		
+		<!-- Static Data -->
+		
+		<StaticData>
+			<explorerData>{range:165}</explorerData>
+		</StaticData>
+	</ShipClass>
+
+	<!-- Auton, Mark IV Shade -->
+
+	<ShipClass UNID="&scCCMarkIVShadeAuton;"
+			manufacturer=		"Cabbage Corp"
+			class=				"mark IV Shade"
+			type=				"auton"
+			
+			attributes=			"auton, genericClass"
+			inherit=			"&baCCShadeAutonBase;"
+			
+			mass=				"8"
+			thrustRatio=		"9"
+			maxSpeed=			"23"
+			cargoSpace=			"125"
+			maxCargoSpace=		"250"
+			
+			reactorPower=		"2000"
+			maxArmor=			"5000"
+			maxDevices=			"2"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"95"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xAdvancedStealthArmor;"
+			count=				"2"
+			enhancement=		"0x0200"
+			/>	;the enhancement is regeneration
+			
+		<Devices>
+			<Device 
+				deviceID=		"&itCCNapaS50Deflector;"
+				charges=		"4"
+				enhancement=	"0x0103"
+				/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"4.0"
+			rotationAccel=		"1.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCShadeHD;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+		
+		<Language>
+			<Text id="DeployAck">"\"mark IV Shade-class transport auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+	<!-- Auton, Mark IV Wraith -->
+
+	<ShipClass UNID="&scCCMarkIVWraithAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark IV Wraith"
+			type=				"auton"
+			
+			attributes=			"auton, genericClass"
+			inherit=			"&baStdAutonBase;"
+			
+			mass=				"4"
+			thrustRatio=		"9"
+			maxSpeed=			"28"
+			cargoSpace=			"0"
+			
+			reactorPower=		"2000"
+			maxArmor=			"5000"
+			maxDevices=			"3"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"0"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xAdvancedStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0200"
+			/>	;the enhancement is regeneration
+			
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="6"/>
+			
+			<Device deviceID="&itCCSavoyM56Howitzer;"/>
+			<Device 
+				deviceID=		"&itCCNapaS30Deflector;"
+				charges=		"4"
+				enhancement=	"0x0103"
+				/>
+			<Device deviceID="&itCCMIDRADISModule;"/>
+			
+			<Device deviceID="&vtCCHowitzerRestrictionBoltL5;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"15.0"
+			rotationAccel=		"7.5"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCWraithHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+		
+		<AISettings
+			fireRateAdj=		"15"
+			fireAccuracy=		"90"
+			perception=			"4"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			ignoreShieldsDown=	"true"
+			/>
+		
+		<Language>
+			<Text id="DeployAck">"\"mark IV Wraith-class assault auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+<!-- LEVEL X -->
+
+	<!-- Auton, Mark V Phantom -->
+
+	<ShipClass UNID="&scCCMarkVPhantomAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark V Phantom"
+			type=				"auton"
+			
+			attributes=			"auton, cabbageCorp, genericClass"
+			inherit=			"&baCCPhantomAutonBase;"
+			
+			mass=				"5"
+			thrustRatio=		"10"
+			maxSpeed=			"35"
+			cargoSpace=			"0"
+			
+			reactorPower=		"2000"
+			maxArmor=			"5000"
+			maxDevices=			"2"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"0"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xExperimentalStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0200"
+			/>	;the enhancement is regeneration
+			
+		<Devices>
+			<Device deviceID="&itCCMIIIDRADISModule;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"6.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCPhantomHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+			
+		<Language>
+			<Text id="DeployAck">"\"mark V Phantom-class reconnaissance auton online\""</Text>
+			<Text id="ExplorationDone">"\"Reconnaissance complete\""</Text>
+			<Text id="ExploreAck">"\"Commencing reconnaissance\""</Text>
+			<Text id="NoExploreTarget">"\"No unexplored objects in system.\""</Text>
+			<Text id="ObjectExplored">
+				(block ((exploredObj (objGetObjByID (objGetData gSource 'targetID))))
+					
+					(cat
+						"\"" (objGetName exploredObj 0x01) " found\""
+						)
+					)
+			</Text>
+		</Language>
+		
+		<!-- Static Data -->
+		
+		<StaticData>
+			<explorerData>{range:250}</explorerData>
+		</StaticData>
+	</ShipClass>
+
+	<!-- Auton, Mark V Shade -->
+
+	<ShipClass UNID="&scCCMarkVShadeAuton;"
+			manufacturer=		"Cabbage Corp"
+			class=				"mark V Shade"
+			type=				"auton"
+			
+			attributes=			"auton, genericClass"
+			inherit=			"&baCCShadeAutonBase;"
+			
+			mass=				"10"
+			thrustRatio=		"10"
+			maxSpeed=			"25"
+			cargoSpace=			"150"
+			maxCargoSpace=		"300"
+			
+			reactorPower=		"6500"
+			maxArmor=			"5000"
+			maxDevices=			"2"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"95"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xExperimentalStealthArmor;"
+			count=				"2"
+			enhancement=		"0x0200"
+			/>	;the enhancement is regeneration
+			
+		<Devices>
+			<Device 
+				deviceID=		"&itCCNapaS120Deflector;"
+				charges=		"4"
+				enhancement=	"0x0105"
+				/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"4.0"
+			rotationAccel=		"1.0"
+			/>
+			
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCShadeHD;" imageWidth="48" imageHeight="48" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+		
+		<Language>
+			<Text id="DeployAck">"\"mark V Shade-class transport auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+	<!-- Auton, Mark V Wraith -->
+
+	<ShipClass UNID="&scCCMarkVWraithAuton;"
+			manufacturer=		"CabbageCorp"
+			class=				"mark V Wraith"
+			type=				"auton"
+			
+			attributes=			"auton, genericClass"
+			inherit=			"&baStdAutonBase;"
+			
+			mass=				"5"
+			thrustRatio=		"10"
+			maxSpeed=			"30"
+			cargoSpace=			"0"
+			
+			reactorPower=		"6500"
+			maxArmor=			"5000"
+			maxDevices=			"3"
+			maxWeapons=			"1"
+			
+			leavesWreck=		"0"
+			>
+			
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itCC1xExperimentalStealthArmor;"
+			count=				"1"
+			enhancement=		"0x0200"
+			/>	;the enhancement is regeneration
+			
+		<Devices>
+			<DeviceSlot criteria="w" posAngle="0" posRadius="6"/>
+			
+			<Device deviceID="&itCCSavoyM110Howitzer;"/>
+			<Device 
+				deviceID=		"&itCCNapaS100Deflector;"
+				charges=		"4"
+				enhancement=	"0x0103"
+				/>
+			<Device deviceID="&itCCMIIDRADISModule;"/>
+			
+			<Device deviceID="&vtCCHowitzerRestrictionBoltL5;"/>
+		</Devices>
+		
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"9.0"
+			/>
+		
+		<!-- Image and Effects -->
+		
+		<Image imageID="&rsCCWraithHD;" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+		
+		<!-- AI and Behavior -->
+		
+		<AISettings
+			fireRateAdj=		"15"
+			fireAccuracy=		"95"
+			perception=			"4"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			ignoreShieldsDown=	"true"
+			/>
+			
+		<Language>
+			<Text id="DeployAck">"\"mark V Wraith-class assault auton online\""</Text>
+		</Language>
+	</ShipClass>
+
+<!-- ITEMS -->
+
+<!-- LEVEL II -->
+
+	<!-- Auton, Mark I Phantom -->
+
+	<ItemType UNID="&itCCMarkIPhantomAuton;"
+			name=				"mark I Phantom auton"
+			attributes=			"auton, cabbageCorp, minorItem"
+			
+			level=				"2"
+			frequency=			"rare"
+			unknownType=		"&itUnknownAuton;"
+			
+			value=				"240"
+			mass=				"1500"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"This auton is programmed to explore and document all unknown objects of interest in any given star system. By deploying this auton you are agreeing to return legal ownership of this auton and all information discovered by this auton to Cabbage Corp in exchange for limited access to said information."
+			>
+			
+		<Image imageID="&rsCCShipIcons;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIPhantomAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark I Shade -->
+
+	<ItemType UNID="&itCCMarkIShadeAuton;"
+			name=				"mark I Shade auton"
+			attributes=			"auton, cabbageCorp, minorItem"
+			
+			level=				"2"
+			frequency=			"rare"
+			unknownType=		"&itUnknownAuton;"
+			
+			value=				"650"
+			mass=				"3000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 50 tons of cargo."
+			>
+			
+		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIShadeAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark I Wraith -->
+
+	<ItemType UNID="&itCCMarkIWraithAuton;"
+			name=				"mark I Wraith auton"
+			attributes=			"auton, cabbageCorp, minorItem"
+			
+			level=				"2"
+			frequency=			"uncommon"
+			unknownType=		"&itUnknownAuton;"
+			
+			value=				"380"
+			mass=				"1500"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"For around 400 credits, Cabbage Corp's Wraith auton keeps you and your loved ones safe from harm. NOTE: For professional security needs, order the mark III version or higher."
+			>
+		
+		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<autonShipClass>&scCCMarkIWraithAuton;</autonShipClass>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL IV -->
+
+	<!-- Auton, Mark II Phantom -->
+
+	<ItemType UNID="&itCCMarkIIPhantomAuton;"
+			name=				"mark II Phantom auton"
+			attributes=			"auton, cabbageCorp, minorItem"
+			
+			level=				"4"
+			frequency=			"veryrare"
+			unknownType=		"&itUnknownAuton;"
+			
+			value=				"1500"
+			mass=				"3500"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"This auton is programmed to explore and document all unknown objects of interest in any given star system. By deploying this auton you are agreeing to return legal ownership of this auton and all information discovered by this auton to Cabbage Corp in exchange for limited access to said information."
+			>
+			
+		<Image imageID="&rsCCShipIcons;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIIPhantomAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark II Shade -->
+
+	<ItemType UNID="&itCCMarkIIShadeAuton;"
+			name=				"mark II Shade auton"
+			attributes=			"auton, cabbageCorp, minorItem"
+			
+			level=				"4"
+			frequency=			"veryrare"
+			unknownType=		"&itUnknownAuton;"
+			
+			value=				"2600"
+			mass=				"6000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 75 tons of cargo."
+			>
+		
+		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIIShadeAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark II Wraith -->
+
+	<ItemType UNID="&itCCMarkIIWraithAuton;"
+			name=				"mark II Wraith auton"
+			attributes=			"auton, commonwealth, minorItem"
+			
+			level=				"4"
+			frequency=			"veryrare"
+			unknownType=		"&itUnknownAuton;"
+			
+			value=				"2450"
+			mass=				"4000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"This commercial auton is primarily used for defending small stations. NOTE: For professional security needs, order the mark III version or higher."
+			>
+		
+		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIIWraithAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL VI -->
+
+	<!-- Auton, Mark III Phantom -->
+
+	<ItemType UNID="&itCCMarkIIIPhantomAuton;"
+			name=				"mark III Phantom auton"
+			attributes=			"auton, cabbageCorp, minorItem"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			unknownType=		"&itUnknownAuton;"
+			
+			value=				"10000"
+			mass=				"4500"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"This auton is programmed to explore and document all unknown objects of interest in any given star system. By deploying this auton you are agreeing to return legal ownership of this auton and all information discovered by this auton to Cabbage Corp in exchange for limited access to said information."
+			>
+			
+		<Image imageID="&rsCCShipIcons;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIIIPhantomAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark III Shade -->
+
+	<ItemType UNID="&itCCMarkIIIShadeAuton;"
+			name=				"mark III Shade auton"
+			attributes=			"auton, cabbageCorp, military, minorItem"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"12000"
+			mass=				"7000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 100 tons of cargo."
+			>
+		
+		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIIIShadeAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark III Wraith -->
+
+	<ItemType UNID="&itCCMarkIIIWraithAuton;"
+			name=				"mark III Wraith auton"
+			attributes=			"auton, commonwealth, military, minorItem"
+			
+			level=				"6"
+			frequency=			"veryrare"
+			
+			value=				"12000"
+			mass=				"5000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"The mark III Wraith auton was designed to provide security to stations in regions with high pirate activity. Commonwealth law restricts ownership of these autons without a military ID."
+			>
+		
+		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIIIWraithAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+	
+<!-- LEVEL VIII -->
+
+	<!-- Auton, Mark IV Phantom -->
+
+	<ItemType UNID="&itCCMarkIVPhantomAuton;"
+			name=				"mark IV Phantom auton"
+			attributes=			"auton, cabbageCorp, minorItem"
+			
+			level=				"8"
+			frequency=			"veryrare"
+			
+			value=				"45000"
+			mass=				"5500"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"This auton is programmed to explore and document all unknown objects of interest in any given star system. By deploying this auton you are agreeing to return legal ownership of this auton and all information discovered by this auton to Cabbage Corp in exchange for limited access to said information."
+			>
+			
+		<Image imageID="&rsCCShipIcons;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIVPhantomAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark IV Shade -->
+
+	<ItemType UNID="&itCCMarkIVShadeAuton;"
+			name=				"mark IV Shade auton"
+			attributes=			"auton, cabbageCorp, military, minorItem"
+			
+			level=				"8"
+			frequency=			"veryrare"
+			
+			value=				"50000"
+			mass=				"10000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 125 tons of cargo."
+			>
+			
+		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIVShadeAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark IV Wraith -->
+
+	<ItemType UNID="&itCCMarkIVWraithAuton;"
+			name=				"mark IV Wraith auton"
+			attributes=			"auton, commonwealth, military, minorItem"
+			
+			level=				"8"
+			frequency=			"veryrare"
+			
+			value=				"55000"
+			mass=				"7000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"The mark IV Wraith auton was designed to provide protection for stations in regions with hostile alien activity. It utilizes a dedicated DRADIS system to aid in detecting hostile ships."
+			>
+			
+		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkIVWraithAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+<!-- LEVEL X -->
+
+	<!-- Auton, Mark V Phantom -->
+
+	<ItemType UNID="&itCCMarkVPhantomAuton;"
+			name=				"mark V Phantom auton"
+			attributes=			"auton, cabbageCorp, minorItem"
+			
+			level=				"10"
+			frequency=			"veryrare"
+			
+			value=				"150000"
+			mass=				"6000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"This auton is programmed to explore and document all unknown objects of interest in any given star system. By deploying this auton you are agreeing to return legal ownership of this auton and all information discovered by this auton to Cabbage Corp in exchange for limited access to said information."
+			>
+			
+		<Image imageID="&rsCCShipIcons;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkVPhantomAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark V Shade -->
+
+	<ItemType UNID="&itCCMarkVShadeAuton;"
+			name=				"mark V Shade auton"
+			attributes=			"auton, cabbageCorp, military, minorItem"
+			
+			level=				"10"
+			frequency=			"veryrare"
+			
+			value=				"150000"
+			mass=				"11000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"Dock with this auton to store supplies on its cargo platform. This model is designed to carry 150 tons of cargo."
+			>
+			
+		<Image imageID="&rsCCShipIcons;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkVShadeAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+	<!-- Auton, Mark V Wraith -->
+
+	<ItemType UNID="&itCCMarkVWraithAuton;"
+			name=				"mark V Wraith auton"
+			attributes=			"auton, commonwealth, military, minorItem"
+			
+			level=				"10"
+			frequency=			"veryrare"
+			
+			value=				"250000"
+			mass=				"8000"
+			charges=			"0"
+			massBonusPerCharge=	"1000"
+			
+			description=		"This experimental auton was designed to provide protection for reconnaissance vessels. It uses an advanced DRADIS system to aid in detecting hostile ships and experimental stealth armor to help avoid them."
+			>
+			
+		<Image imageID="&rsCCShipIcons;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Invoke key="A">
+			(rpgDeployAutonFromItem gSource (itmGetStaticData gItem 'autonShipClass) gItem)
+		</Invoke>
+		
+		<StaticData>
+			<AutonShipClass>&scCCMarkVWraithAuton;</AutonShipClass>
+		</StaticData>
+	</ItemType>
+
+<!-- BASE CLASSES -->
+
+	<!-- Phantom Auton Base Class -->
+
+	<ShipClass UNID="&baCCPhantomAutonBase;"
+			class=				"(Phantom Auton base class)"
+			inherit=			"&baStdAutonBase;"
+			virtual=			"true"
+			
+			attributes=			"baseClass"
+			>
+			
+		<!-- AI and Behavior -->
+		
+		<AISettings
+			fireRateAdj=		"20"
+			fireAccuracy=		"90"
+			perception=			"4"
+			nonCombatant=		"true"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			ignoreShieldsDown=	"true"
+			/>
+		
+		<Communications>
+			<Message name="Explore" key="E">
+				<OnShow>
+					(and (eq (objGetData gSource "behavior") 'escorting)
+						(objGetProperty gSource 'playerWingman)
+						)
+				</OnShow>
+				
+				<Invoke>
+					(block (
+						;	Look for the nearest unknown object
+						
+						(targetObj (@
+							(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
+								(and (not (objIsKnown theObj))
+										(objGetProperty theObj 'hasDockingPorts)
+										(or (objCanAttack theObj) (objMatches theObj gSource "G"))
+										)
+								)
+							0))
+						)
+						
+						(switch
+							;	If no unknown objects, then say so
+							
+							(not targetObj)
+								(objSendMessage gSender gSource (objTranslate gSource 'NoExploreTarget))
+							
+							;	Otherwise, send the auton to the nearest object
+							
+							(block Nil
+								(shpCancelOrders gSource)
+								(shpOrder gSource 'approach targetObj (@ (objGetStaticData gSource 'explorerData) 'range))
+								(objSetShowAsDestination gSource)
+								
+								(objSetData gSource 'behavior 'custom)
+								(objSetData gSource 'targetID (objGetID targetObj))
+								(objSendMessage gSender gSource (objTranslate gSource 'ExploreAck))
+								)
+							)
+						)
+				</Invoke>
+			</Message>
+			
+			<Message name="Form up" key="F">
+				<OnShow>
+					(and
+						(objGetProperty gSource 'playerWingman)
+						(or (eq (objGetData gSource 'behavior) 'waiting)
+							(eq (objGetData gSource 'behavior) 'custom)
+							(objCommunicate gSource gSender 'QueryAttackStatus)
+							)
+						)
+				</OnShow>
+				
+				<Invoke>
+					(block (behavior)
+						(setq behavior (objGetData gSource 'behavior))
+						(switch
+							(or (not behavior) (eq behavior 'escorting))
+								(block Nil
+									(objCommunicate gSource gSender 'FormUp)
+									(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
+									)
+									
+							(block Nil
+								(objClearShowAsDestination gSource)
+								
+								(shpCancelOrders gSource)
+								(shpOrder gSource 'escort gPlayerShip)
+								
+								(objSetData gSource 'behavior 'escorting)
+								(objSendMessage gSender gSource (objTranslate gSource 'FormUpAck "\"Auton order acknowledged\""))
+								)
+							)
+						)
+				</Invoke>
+			</Message>
+		</Communications>
+		
+		<Events>
+			<OnOrdersCompleted>
+				(block (behavior theTarget)
+					(setq behavior (objGetData gSource 'behavior))
+					
+					(switch
+						;	If we're exploring, then pick a new target
+						
+						(eq behavior 'custom)
+							(block (
+								(exploredObj (objGetObjByID (objGetData gSource 'targetID)))
+								
+								;	Look for the nearest unknown object
+								
+								(targetObj (@
+									(filter (sysFindObject gSource "Ts -uncharted; S:d;") theObj
+										(and (not (objIsKnown theObj))
+												(objGetProperty theObj 'hasDockingPorts)
+												(or (objCanAttack theObj) (objMatches theObj gSource "G"))
+												)
+										)
+									0))
+								)
+								
+								;	Explore object
+								
+								(if exploredObj
+									(block Nil
+										(objSetKnown exploredObj)
+										(objSendMessage gPlayerShip gSource (objTranslate gSource 'ObjectExplored))
+										
+										(objClearShowAsDestination exploredObj)
+										)
+									)
+								
+								;	Pick a new target
+								
+								(switch
+									;	If no unknown objects, then exploration is done
+									
+									(not targetObj)
+										(block Nil
+											(shpOrder gSource 'escort gPlayerShip)
+											(objClearShowAsDestination gSource)
+								
+											(objSetData gSource 'behavior 'escorting)
+											(objSendMessage gPlayerShip gSource (objTranslate gSource 'ExplorationDone))
+											)
+											
+									;	Otherwise, go to new object
+									
+									(block Nil
+										(shpOrder gSource 'approach targetObj (@ (objGetStaticData gSource 'explorerData) 'range))
+										(objSetData gSource 'targetID (objGetID targetObj))
+										)
+									)
+								)
+								
+						;	Otherwise, let our base class handle it.
+						
+						(typFireEvent &baStdAutonBase; 'OnOrdersCompleted)
+						)
+					)
+			</OnOrdersCompleted>
+		</Events>
+	</ShipClass>
+
+	<!-- Shade Auton Base Class -->
+
+	<ShipClass UNID="&baCCShadeAutonBase;"
+			class=				"(Shade Auton base class)"
+			inherit=			"&baStdAutonBase;"
+			virtual=			"true"
+			
+			attributes=			"baseClass"
+			
+			dockScreen=			"Main"
+			>
+		
+		<!-- AI and Behavior -->
+		
+		<AISettings
+			fireRateAdj=		"20"
+			fireAccuracy=		"90"
+			perception=			"4"
+			nonCombatant=		"true"
+			noAttackOnThreat=	"true"
+			noNavPaths=			"true"
+			/>
+			
+		<!-- Docking -->
+		
+		<DockScreens>
+			<Main
+				name=			"Shade-class transport auton"
+				>
+				
+				<Panes>
+					<Default>
+						<OnPaneInit>
+							(block Nil
+								(setq desc 
+									(cat "You are docked with a Shade-class auton."
+										"\n\n"
+										"Cargo Space: "
+										(objGetCargoSpaceLeft gSource)
+										(if (eq (objGetCargoSpaceLeft gSource) 1)
+											" kg"
+											" kgs"
+											)
+										)
+									)
+								(scrSetDesc gScreen desc)
+								)
+						</OnPaneInit>
+						
+						<Actions>
+							<Action name="Loot" key="L" default="1" >
+								(scrShowScreen gScreen &dsRPGLoot;)
+							</Action>
+							
+							<Action name="Jettison" key="J">
+								(scrShowScreen gScreen &dsRPGJettison;)
+							</Action>
+							
+							<Action name="Undock" cancel="1" key="U">
+								<Exit/>
+							</Action>
+						</Actions>
+					</Default>
+				</Panes>
+			</Main>
+		</DockScreens>
+		
+		<DockingPorts>
+			<Port x="0"		y="40" />
+			<Port x="0"		y="-40" />
+			<Port x="40"	y="0" />
+			<Port x="-40"	y="0" />
+		</DockingPorts>
+	</ShipClass>
+
+<!-- RESOURCES -->
+
+	<Image UNID="&rsCCPhantomLarge;"			bitmap="PhantomLarge.jpg"			bitmask="PhantomLargeMask.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCPhantomArmorHud;"			bitmap="PhantomArmorHud.jpg"/>
+	<Image UNID="&rsCCPhantomHD;"				bitmap="PhantomHD.jpg"				bitmask="PhantomHDMask.jpg"/>
+	<Image UNID="&rsCCShadeLarge;"				bitmap="ShadeLarge.jpg"				bitmask="ShadeLargeMask.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCShadeArmorHUD;"			bitmap="ShadeArmorHud.jpg"/>
+	<Image UNID="&rsCCShadeHD;"					bitmap="ShadeHD.jpg"				bitmask="ShadeHDMask.jpg"/>
+	<Image UNID="&rsCCWraithLarge;"				bitmap="WraithLarge.jpg"			bitmask="WraithLargeMask.jpg"	loadOnUse="true"/>
+	<Image UNID="&rsCCWraithArmorHud;"			bitmap="WraithArmorHud.jpg"/>
+	<Image UNID="&rsCCWraithHD;"				bitmap="WraithHD.jpg"				bitmask="WraithHDMask.jpg"/>
+
+</TranscendenceModule>

@@ -695,19 +695,20 @@
 	<!ENTITY rsCCWraithArmorHUD						"0xDA27CEAB">
 	<!ENTITY rsCCWraithHD							"0xDA27CEAC">
 	
-	<!ENTITY itCCMarkIShadeAuton					"0xDA27CEB0">
-	<!ENTITY scCCMarkIShadeAuton					"0xDA27CEB1">
-	<!ENTITY itCCMarkIIShadeAuton					"0xDA27CEB2">
-	<!ENTITY scCCMarkIIShadeAuton					"0xDA27CEB3">
-	<!ENTITY itCCMarkIIIShadeAuton					"0xDA27CEB4">
-	<!ENTITY scCCMarkIIIShadeAuton					"0xDA27CEB5">
-	<!ENTITY itCCMarkIVShadeAuton					"0xDA27CEB6">
-	<!ENTITY scCCMarkIVShadeAuton					"0xDA27CEB7">
-	<!ENTITY itCCMarkVShadeAuton					"0xDA27CEB8">
-	<!ENTITY scCCMarkVShadeAuton					"0xDA27CEB9">
-	<!ENTITY rsCCShadeLarge							"0xDA27CEBA">
-	<!ENTITY rsCCShadeArmorHUD						"0xDA27CEBB">
-	<!ENTITY rsCCShadeHD							"0xDA27CEBC">
+	<!ENTITY baCCShadeAutonBase						"0xDA27CEB0">
+	<!ENTITY itCCMarkIShadeAuton					"0xDA27CEB1">
+	<!ENTITY scCCMarkIShadeAuton					"0xDA27CEB2">
+	<!ENTITY itCCMarkIIShadeAuton					"0xDA27CEB3">
+	<!ENTITY scCCMarkIIShadeAuton					"0xDA27CEB4">
+	<!ENTITY itCCMarkIIIShadeAuton					"0xDA27CEB5">
+	<!ENTITY scCCMarkIIIShadeAuton					"0xDA27CEB6">
+	<!ENTITY itCCMarkIVShadeAuton					"0xDA27CEB7">
+	<!ENTITY scCCMarkIVShadeAuton					"0xDA27CEB8">
+	<!ENTITY itCCMarkVShadeAuton					"0xDA27CEB9">
+	<!ENTITY scCCMarkVShadeAuton					"0xDA27CEBA">
+	<!ENTITY rsCCShadeLarge							"0xDA27CEBB">
+	<!ENTITY rsCCShadeArmorHUD						"0xDA27CEBC">
+	<!ENTITY rsCCShadeHD							"0xDA27CEBD">
 	
 	<!ENTITY baCCPhantomAutonBase					"0xDA27CEC0">
 	<!ENTITY itCCMarkIPhantomAuton					"0xDA27CEC1">
@@ -748,9 +749,6 @@
 	<Module fileName="Armor_Cabbagium.xml"/>
 	<Module fileName="Armor_Sivaya.xml"/>
 	<Module fileName="Armor_Stealth.xml"/>
-	<Module fileName="Autons_Phantom.xml"/>
-	<Module fileName="Autons_Shade.xml"/>
-	<Module fileName="Autons_Wraith.xml"/>
 	<Module fileName="CabbageCorpFleet.xml"/>
 	<Module fileName="CabbageCorporation.xml"/>
 	<Module fileName="CabbageCorpStations.xml"/>
@@ -766,6 +764,7 @@
 	<Module fileName="RPGDockScreens.xml"/>
 	<Module fileName="RPGShipScreens.xml"/>
 	<Module fileName="RPGUnshieldedDevices.xml"/>
+	<Module fileName="StdAutons.xml"/>
 	<Module fileName="StdCargoHolds.xml"/>
 	<Module fileName="StdCrew.xml"/>
 	<Module fileName="StdDevices.xml"/>
